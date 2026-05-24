@@ -35,15 +35,15 @@
     /* Role Modal */
     .role-modal-overlay { position:fixed; inset:0; background:rgba(11,26,44,0.72); z-index:9000; display:flex; align-items:center; justify-content:center; padding:20px; opacity:0; pointer-events:none; transition:opacity .3s ease; backdrop-filter:blur(4px); }
     .role-modal-overlay.open { opacity:1; pointer-events:auto; }
-    .role-modal-box { background:white; border-radius:var(--radius-xl); max-width:880px; width:100%; max-height:88vh; overflow:hidden; position:relative; transform:translateY(28px); transition:transform .35s cubic-bezier(0.16,1,0.3,1); display:grid; grid-template-rows:auto 1fr auto; }
+    .role-modal-box { background:white; border-radius:var(--radius-xl); max-width:880px; width:100%; max-height:88vh; overflow-y:auto; scrollbar-width:thin; position:relative; transform:translateY(28px); transition:transform .35s cubic-bezier(0.16,1,0.3,1); }
     .role-modal-overlay.open .role-modal-box { transform:translateY(0); }
-    .role-modal-head { padding:32px 36px 0; display:flex; justify-content:space-between; align-items:center; gap:16px; }
+    .role-modal-head { padding:32px 36px 0; display:flex; justify-content:space-between; align-items:center; gap:16px; position:sticky; top:0; background:white; z-index:2; }
     /* Icon bubble */
     .role-modal-icon-wrap { width:56px; height:56px; background:var(--green-soft); border-radius:16px; display:flex; align-items:center; justify-content:center; flex-shrink:0; }
     .role-modal-icon { font-size:1.9rem; line-height:1; }
     .role-modal-close-btn { width:36px; height:36px; border:none; border-radius:10px; background:var(--bg-soft); cursor:pointer; font-size:1rem; color:var(--ink-ghost); display:flex; align-items:center; justify-content:center; flex-shrink:0; transition:background .2s, color .2s; }
     .role-modal-close-btn:hover { background:var(--border-soft); color:var(--ink); }
-    .role-modal-body { padding:18px 36px 28px; overflow-y:auto; scrollbar-width:thin; min-height:0; }
+    .role-modal-body { padding:18px 36px 0; }
     .role-modal-title { font-family:var(--font-display); font-size:1.5rem; letter-spacing:-0.018em; font-weight:700; margin:14px 0 8px; color:var(--ink); }
     .role-modal-badge { display:inline-flex; align-items:center; gap:6px; background:transparent; border:1.5px solid var(--border-soft); color:var(--ink-muted); font-size:0.78rem; font-weight:600; padding:5px 13px; border-radius:var(--radius-full); margin-bottom:22px; }
     /* Sections */
@@ -68,7 +68,7 @@
     .role-modal-col-right { border-left:1px solid var(--border-soft); padding-left:28px; display:flex; flex-direction:column; }
     .role-modal-col-right > .role-modal-section { border-top:none; padding-top:0; margin-top:0; }
     .role-modal-col-right > .role-modal-section + .role-modal-section { margin-top:22px; padding-top:18px; border-top:1px solid var(--border-soft); }
-    .role-modal-footer { padding:16px 36px; border-top:1px solid var(--border-soft); background:white; flex-shrink:0; border-radius:0 0 var(--radius-xl) var(--radius-xl); }
+    .role-modal-footer { padding:20px 36px 28px; border-top:1px solid var(--border-soft); background:white; position:sticky; bottom:0; z-index:2; border-radius:0 0 var(--radius-xl) var(--radius-xl); }
     .role-modal-apply { display:block; width:100%; border:none; cursor:pointer; box-sizing:border-box; padding:15px 0; background:var(--green); color:white; font-weight:700; font-size:0.92rem; border-radius:var(--radius-md); text-align:center; text-decoration:none; transition:background .2s; letter-spacing:0.2px; }
     .role-modal-apply:hover { background:var(--green-dark); }
     .remote-notice { display:inline-flex; align-items:center; gap:8px; background:var(--green-soft); border:1px solid var(--green-muted, #bbf7d0); color:var(--green-deep); font-size:0.82rem; font-weight:600; padding:8px 18px; border-radius:var(--radius-full); margin-top:16px; }
@@ -128,10 +128,11 @@
         transform: translateY(100%);
         transition: transform .42s cubic-bezier(0.16,1,0.3,1);
         box-shadow: 0 -10px 48px rgba(11,26,44,0.20);
-        grid-template-rows: auto auto 1fr auto;
       }
+      .role-modal-head { top: 0; }
       .role-modal-footer {
         border-radius: 0;
+        bottom: 0;
       }
       .role-modal-overlay.open .role-modal-box { transform: translateY(0); }
 
@@ -162,7 +163,7 @@
       }
 
       /* Body */
-      .role-modal-body { padding: 12px 20px 16px; }
+      .role-modal-body { padding: 12px 20px 0; }
       .role-modal-title { font-size: 1.22rem; margin: 12px 0 6px; }
       .role-modal-badge { font-size: 0.75rem; padding: 5px 12px; margin-bottom: 16px; }
       .role-modal-section { margin-top: 18px; padding-top: 15px; }
@@ -191,13 +192,12 @@
 
       /* Apply button footer — mobile */
       .role-modal-footer {
-        padding: 12px 20px;
-        padding-bottom: calc(12px + env(safe-area-inset-bottom, 0px));
-        border-radius: 0;
-        box-shadow: 0 -1px 0 rgba(0,0,0,0.07), 0 -6px 20px rgba(0,0,0,0.08);
+        padding: 14px 20px;
+        padding-bottom: calc(14px + env(safe-area-inset-bottom, 0px));
+        box-shadow: 0 -4px 20px rgba(11,26,44,0.10);
       }
       .role-modal-apply {
-        padding: 14px 0;
+        padding: 15px 0;
         font-size: 1rem;
         border-radius: var(--radius-md);
       }
