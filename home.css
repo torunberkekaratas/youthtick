@@ -990,8 +990,16 @@
 
 @media (max-width: 1024px) {
   .hero-inner { grid-template-columns: 1fr; gap: 0; }
-  .hero-visual { display: none; }
-  .hero { min-height: auto; padding: calc(var(--nav-h) + 60px) 0 88px; }
+  .hero { min-height: auto; padding: calc(var(--nav-h) + 60px) 0 80px; }
+
+  /* Mobilde sadece ana görseli göster */
+  .hero-visual {
+    display: block;
+    margin-top: 44px;
+  }
+  .hero-imgs-grid { display: none; }        /* mini grid gizle */
+  .hero-badge     { display: none; }        /* yüzen badge'ler gizle */
+  .hero-img       { aspect-ratio: 16 / 9; } /* yatay kırpma mobil için daha iyi */
   .about-teaser-grid { grid-template-columns: 1fr; gap: 36px; }
   .focus-cards { grid-template-columns: repeat(2, 1fr); }
   .project-cards-grid { grid-template-columns: repeat(2, 1fr); }
@@ -1004,7 +1012,8 @@
 }
 
 @media (max-width: 640px) {
-  .hero { min-height: auto; padding: calc(var(--nav-h) + 52px) 0 72px; }
+  .hero { min-height: auto; padding: calc(var(--nav-h) + 52px) 0 64px; }
+  .hero-visual { margin-top: 36px; }
   .hero-sub { font-size: 0.95rem; line-height: 1.68; }
   .hero-ctas { flex-direction: column; gap: 12px; }
   .hero-ctas .btn { width: 100%; justify-content: center; min-height: 48px; }
