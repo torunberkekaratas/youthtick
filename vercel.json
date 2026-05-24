@@ -1,6 +1,4 @@
 {
-  "cleanUrls": true,
-  "trailingSlash": false,
   "headers": [
     {
       "source": "/(.*)",
@@ -10,10 +8,6 @@
         { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" }
       ]
     }
-  ],
-  "redirects": [
-    { "source": "/tr", "destination": "/tr/index.html", "permanent": false },
-    { "source": "/de", "destination": "/de/index.html", "permanent": false }
   ],
   "rewrites": [
     { "source": "/tr/:path*", "destination": "/:path*" },
