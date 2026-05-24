@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>YouthTICK — Admin Sign In</title>
+  <meta name="robots" content="noindex, nofollow"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"/>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { height: 100%; -webkit-font-smoothing: antialiased; }
+    body {
+      font-family: 'Manrope', system-ui, sans-serif;
+      min-height: 100vh;
+      background: #0B0D14;
+      display: flex; align-items: center; justify-content: center;
+      padding: 24px;
+      position: relative; overflow: hidden;
+    }
+
+    /* Atmospheric background */
+    body::before {
+      content: '';
+      position: fixed; inset: 0;
+      background:
+        radial-gradient(ellipse 60% 70% at 15% 40%, rgba(37,99,235,0.14) 0%, transparent 60%),
+        radial-gradient(ellipse 50% 60% at 88% 70%, rgba(26,75,138,0.10) 0%, transparent 60%);
+      pointer-events: none;
+    }
+    body::after {
+      content: '';
+      position: fixed; inset: 0;
+      background-image: radial-gradient(circle, rgba(255,255,255,0.025) 1px, transparent 1px);
+      background-size: 32px 32px;
+      pointer-events: none;
+    }
+
+    .login-card {
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 20px;
+      padding: 48px;
+      width: 100%; max-width: 420px;
+      position: relative; z-index: 1;
+      backdrop-filter: blur(20px);
+    }
+
+    .login-logo {
+      display: flex; align-items: center; gap: 12px;
+      margin-bottom: 36px;
+    }
+    .login-logo-mark {
+      width: 40px; height: 40px;
+      background: #2563EB;
+      border-radius: 10px;
+      display: flex; align-items: center; justify-content: center;
+      font-weight: 800; font-size: 13px; color: white;
+      letter-spacing: -0.5px;
+    }
+    .login-logo-text { font-size: 16px; font-weight: 700; color: rgba(255,255,255,0.88); letter-spacing: -0.3px; }
+    .login-logo-sub  { font-size: 10.5px; color: rgba(255,255,255,0.36); font-weight: 600; letter-spacing: 0.8px; text-transform: uppercase; margin-top: 1px; }
+
+    .login-heading { font-size: 22px; font-weight: 700; color: rgba(255,255,255,0.92); letter-spacing: -0.5px; margin-bottom: 6px; }
+    .login-sub     { font-size: 13.5px; color: rgba(255,255,255,0.38); margin-bottom: 32px; }
+
+    .form-group { margin-bottom: 16px; }
+    .form-label {
+      display: block; margin-bottom: 6px;
+      font-size: 12px; font-weight: 600; color: rgba(255,255,255,0.50);
+      letter-spacing: 0.2px;
+    }
+    .form-input {
+      width: 100%; padding: 11px 14px;
+      background: rgba(255,255,255,0.05);
+      border: 1.5px solid rgba(255,255,255,0.10);
+      border-radius: 10px;
+      font-family: inherit; font-size: 14px; color: rgba(255,255,255,0.88);
+      outline: none;
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+    .form-input::placeholder { color: rgba(255,255,255,0.22); }
+    .form-input:focus {
+      border-color: rgba(37,99,235,0.70);
+      box-shadow: 0 0 0 3px rgba(37,99,235,0.18);
+    }
+    .form-input.error { border-color: rgba(220,38,38,0.60); }
+
+    .submit-btn {
+      width: 100%; padding: 12px;
+      background: #2563EB; color: white;
+      border: none; border-radius: 10px;
+      font-family: inherit; font-size: 14px; font-weight: 700;
+      cursor: pointer;
+      transition: all 0.2s;
+      margin-top: 8px;
+      display: flex; align-items: center; justify-content: center; gap: 8px;
+      position: relative; overflow: hidden;
+    }
+    .submit-btn:hover { background: #1D4ED8; transform: translateY(-1px); box-shadow: 0 8px 24px rgba(37,99,235,0.40); }
+    .submit-btn:disabled { opacity: 0.55; cursor: not-allowed; transform: none; }
+
+    .error-alert {
+      background: rgba(220,38,38,0.12);
+      border: 1px solid rgba(220,38,38,0.24);
+      border-radius: 10px;
+      padding: 12px 14px;
+      font-size: 13px; color: #FCA5A5;
+      display: none; margin-bottom: 16px;
+      display: none; align-items: center; gap: 8px;
+    }
+    .error-alert.show { display: flex; }
+
+    .locked-alert {
+      background: rgba(217,119,6,0.12);
+      border: 1px solid rgba(217,119,6,0.24);
+      border-radius: 10px;
+      padding: 12px 14px;
+      font-size: 13px; color: #FCD34D;
+      display: none; margin-bottom: 16px;
+      align-items: center; gap: 8px;
+    }
+    .locked-alert.show { display: flex; }
+
+    .expired-alert {
+      background: rgba(37,99,235,0.12);
+      border: 1px solid rgba(37,99,235,0.24);
+      border-radius: 10px;
+      padding: 12px 14px;
+      font-size: 13px; color: #93C5FD;
+      display: none; margin-bottom: 16px;
+      align-items: center; gap: 8px;
+    }
+    .expired-alert.show { display: flex; }
+
+    .login-footer {
+      margin-top: 28px;
+      padding-top: 20px;
+      border-top: 1px solid rgba(255,255,255,0.06);
+      display: flex; align-items: center; justify-content: space-between;
+    }
+    .login-footer-text { font-size: 11px; color: rgba(255,255,255,0.22); }
+    .back-link { font-size: 12px; color: rgba(255,255,255,0.35); transition: color 0.2s; }
+    .back-link:hover { color: rgba(255,255,255,0.60); }
+
+    .spinner {
+      width: 16px; height: 16px;
+      border: 2px solid rgba(255,255,255,0.3);
+      border-top-color: white;
+      border-radius: 50%;
+      animation: spin 0.7s linear infinite;
+      display: none;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    .credentials-hint {
+      margin-top: 20px;
+      padding: 12px;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.07);
+      border-radius: 8px;
+      font-size: 11.5px; color: rgba(255,255,255,0.30);
+      line-height: 1.6;
+    }
+    .credentials-hint code { color: rgba(255,255,255,0.50); background: rgba(255,255,255,0.08); padding: 1px 5px; border-radius: 4px; font-size: 11px; }
+  </style>
+</head>
+<body>
+
+<div class="login-card">
+  <div class="login-logo">
+    <div class="login-logo-mark">YT</div>
+    <div>
+      <div class="login-logo-text">YouthTICK</div>
+      <div class="login-logo-sub">Admin Panel</div>
+    </div>
+  </div>
+
+  <div class="login-heading">Sign in to continue</div>
+  <div class="login-sub">Institutional access only. Unauthorized access is prohibited.</div>
+
+  <div class="expired-alert" id="expired-alert">
+    <svg width="15" height="15" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+    Your session expired. Please sign in again.
+  </div>
+
+  <div class="error-alert" id="error-alert">
+    <svg width="15" height="15" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+    <span id="error-msg">Invalid credentials.</span>
+  </div>
+
+  <div class="locked-alert" id="locked-alert">
+    <svg width="15" height="15" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+    <span id="locked-msg">Account temporarily locked.</span>
+  </div>
+
+  <form id="login-form">
+    <div class="form-group">
+      <label class="form-label" for="email">Admin Email</label>
+      <input class="form-input" type="email" id="email" placeholder="admin@youthtick.org" autocomplete="email" required/>
+    </div>
+    <div class="form-group">
+      <label class="form-label" for="password">Password</label>
+      <input class="form-input" type="password" id="password" placeholder="••••••••••••" autocomplete="current-password" required/>
+    </div>
+    <button type="submit" class="submit-btn" id="submit-btn">
+      <div class="spinner" id="spinner"></div>
+      <span id="btn-text">Sign In</span>
+    </button>
+  </form>
+
+
+  <div class="login-footer">
+    <span class="login-footer-text">© 2026 YouthTICK</span>
+    <a href="../index.html" class="back-link">← Back to website</a>
+  </div>
+</div>
+
+<script src="store.js"></script>
+<script src="auth.js"></script>
+<script>
+(async () => {
+  // Initialize default users on first run
+  await AUTH.initialize();
+
+  // Check if already logged in
+  if (AUTH.getSession()) {
+    window.location.href = 'dashboard.html';
+    return;
+  }
+
+  // Show expired notice
+  const params = new URLSearchParams(location.search);
+  if (params.get('expired')) {
+    document.getElementById('expired-alert').classList.add('show');
+  }
+
+  const form      = document.getElementById('login-form');
+  const spinner   = document.getElementById('spinner');
+  const btnText   = document.getElementById('btn-text');
+  const submitBtn = document.getElementById('submit-btn');
+  const errorEl   = document.getElementById('error-alert');
+  const errorMsg  = document.getElementById('error-msg');
+  const lockedEl  = document.getElementById('locked-alert');
+  const lockedMsg = document.getElementById('locked-msg');
+
+  function setLoading(on) {
+    submitBtn.disabled = on;
+    spinner.style.display = on ? 'block' : 'none';
+    btnText.textContent = on ? 'Signing in…' : 'Sign In';
+  }
+
+  function showError(msg) {
+    errorMsg.textContent = msg;
+    errorEl.classList.add('show');
+    lockedEl.classList.remove('show');
+  }
+
+  function showLocked(msg) {
+    lockedMsg.textContent = msg;
+    lockedEl.classList.add('show');
+    errorEl.classList.remove('show');
+  }
+
+  function clearAlerts() {
+    errorEl.classList.remove('show');
+    lockedEl.classList.remove('show');
+    document.getElementById('expired-alert').classList.remove('show');
+  }
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    clearAlerts();
+
+    const email    = document.getElementById('email').value.trim();
+    const password = document.getElementById('password').value;
+
+    if (!email || !password) { showError('Please fill in all fields.'); return; }
+
+    // Check lockout before even trying
+    if (AUTH.isLockedOut(email)) {
+      const secs = AUTH.getLockoutRemaining(email);
+      showLocked(`Account locked. Try again in ${secs} seconds.`);
+      return;
+    }
+
+    setLoading(true);
+    // Artificial delay for UX (prevents timing attacks)
+    await new Promise(r => setTimeout(r, 680));
+
+    const result = await AUTH.login(email, password);
+    setLoading(false);
+
+    if (result.success) {
+      btnText.textContent = '✓ Success';
+      submitBtn.style.background = '#059669';
+      setTimeout(() => { window.location.href = 'dashboard.html'; }, 400);
+    } else if (result.locked) {
+      showLocked(result.error);
+    } else {
+      showError(result.error);
+      document.getElementById('password').value = '';
+    }
+  });
+})();
+</script>
+</body>
+</html>

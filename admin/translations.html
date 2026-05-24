@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Translations — YouthTICK Admin</title>
+  <meta name="robots" content="noindex, nofollow"/>
+  <link rel="stylesheet" href="admin.css"/>
+</head>
+<body>
+<div class="admin-layout">
+
+  <main class="admin-main">
+    <header class="admin-header">
+      <div>
+        <div class="admin-header-title">Translation Manager</div>
+        <div class="admin-header-subtitle">Manage EN · TR · DE content side by side</div>
+      </div>
+      <div class="admin-header-actions">
+        <button class="btn btn-secondary btn-sm" onclick="exportTranslations()">
+          <svg width="13" height="13" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Export
+        </button>
+        <button class="btn btn-primary btn-sm" onclick="saveAll()">
+          <svg width="13" height="13" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"/><polyline points="17 21 17 13 7 13 7 21"/><polyline points="7 3 7 8 15 8"/></svg>
+          Save All
+        </button>
+      </div>
+    </header>
+
+    <div class="admin-content">
+
+      <!-- Stats bar -->
+      <div style="display:grid; grid-template-columns: repeat(4, 1fr); gap:12px; margin-bottom:20px;">
+        <div class="stat-card" style="padding:14px 16px;">
+          <div class="stat-card-label">🇬🇧 English</div>
+          <div class="stat-card-value" style="font-size:22px;" id="stat-en">—</div>
+          <div class="stat-card-change">Base language</div>
+        </div>
+        <div class="stat-card" style="padding:14px 16px;">
+          <div class="stat-card-label">🇹🇷 Turkish</div>
+          <div class="stat-card-value" style="font-size:22px;" id="stat-tr">—</div>
+          <div class="stat-card-change" id="stat-tr-pct">overrides</div>
+        </div>
+        <div class="stat-card" style="padding:14px 16px;">
+          <div class="stat-card-label">🇩🇪 German</div>
+          <div class="stat-card-value" style="font-size:22px;" id="stat-de">—</div>
+          <div class="stat-card-change" id="stat-de-pct">overrides</div>
+        </div>
+        <div class="stat-card" style="padding:14px 16px;">
+          <div class="stat-card-label">📋 Total Keys</div>
+          <div class="stat-card-value" style="font-size:22px;" id="stat-total">—</div>
+          <div class="stat-card-change">Translatable strings</div>
+        </div>
+      </div>
+
+      <!-- Filter bar -->
+      <div class="card" style="margin-bottom:16px;">
+        <div class="card-body" style="padding:12px 16px;">
+          <div style="display:flex; align-items:center; gap:10px; flex-wrap:wrap;">
+            <div class="search-box" style="flex:1; min-width:200px;">
+              <svg class="search-icon" width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+              <input type="text" placeholder="Search translation keys…" id="search-input" oninput="renderTable()" style="width:100%;"/>
+            </div>
+            <select id="section-filter" class="form-select" style="width:160px;" onchange="renderTable()">
+              <option value="">All Sections</option>
+              <!-- Populated by JS -->
+            </select>
+            <select id="status-filter" class="form-select" style="width:160px;" onchange="renderTable()">
+              <option value="">All Status</option>
+              <option value="overridden">Has Override</option>
+              <option value="default">Using Default</option>
+              <option value="missing-tr">Missing TR</option>
+              <option value="missing-de">Missing DE</option>
+            </select>
+            <label style="display:flex;align-items:center;gap:6px;font-size:12.5px;color:var(--ink-muted);cursor:pointer;">
+              <input type="checkbox" id="show-keys" onchange="renderTable()"/> Show keys
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <!-- Translation Table -->
+      <div class="card">
+        <div style="overflow-x:auto;">
+          <table id="trans-table" style="width:100%; border-collapse:collapse; min-width:700px;">
+            <thead>
+              <tr style="border-bottom:1px solid var(--border-soft);">
+                <th style="padding:10px 16px; text-align:left; font-size:11px; font-weight:700; color:var(--ink-ghost); text-transform:uppercase; letter-spacing:0.5px; width:22%; background:var(--bg);">Section / Key</th>
+                <th style="padding:10px 16px; text-align:left; font-size:11px; font-weight:700; color:var(--ink-ghost); text-transform:uppercase; letter-spacing:0.5px; width:26%; background:var(--bg);">🇬🇧 English</th>
+                <th style="padding:10px 16px; text-align:left; font-size:11px; font-weight:700; color:var(--ink-ghost); text-transform:uppercase; letter-spacing:0.5px; width:26%; background:var(--bg);">🇹🇷 Turkish</th>
+                <th style="padding:10px 16px; text-align:left; font-size:11px; font-weight:700; color:var(--ink-ghost); text-transform:uppercase; letter-spacing:0.5px; width:26%; background:var(--bg);">🇩🇪 German</th>
+              </tr>
+            </thead>
+            <tbody id="trans-body">
+              <!-- Injected by JS -->
+            </tbody>
+          </table>
+        </div>
+        <div id="trans-empty" style="display:none; padding:48px; text-align:center;">
+          <div style="font-size:13px;font-weight:600;color:var(--ink-muted);">No matching keys</div>
+          <div style="font-size:12px;color:var(--ink-ghost);margin-top:4px;">Try a different search or filter.</div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+</div>
+
+<style>
+.trans-row {
+  border-bottom: 1px solid var(--border-soft);
+  transition: background 0.12s;
+}
+.trans-row:last-child { border-bottom: none; }
+.trans-row:hover { background: var(--bg); }
+.trans-row td { padding: 0; vertical-align: top; }
+
+.trans-key-cell {
+  padding: 10px 16px;
+  background: var(--bg);
+  border-right: 1px solid var(--border-soft);
+}
+.trans-section-badge {
+  font-size: 10px; font-weight: 700; color: var(--blue);
+  text-transform: uppercase; letter-spacing: 0.4px;
+  background: rgba(37,99,235,0.08); border-radius: 4px;
+  padding: 1px 6px; display: inline-block; margin-bottom: 3px;
+}
+.trans-key { font-size: 11px; color: var(--ink-ghost); font-family: monospace; }
+.trans-label { font-size: 12.5px; font-weight: 600; color: var(--ink-muted); }
+
+.trans-edit-cell {
+  padding: 6px 8px;
+  border-right: 1px solid var(--border-soft);
+  position: relative;
+}
+.trans-edit-cell:last-child { border-right: none; }
+
+.trans-input {
+  width: 100%;
+  border: none;
+  background: transparent;
+  font-family: inherit;
+  font-size: 12.5px;
+  color: var(--ink);
+  padding: 6px 8px;
+  border-radius: 6px;
+  resize: vertical;
+  min-height: 36px;
+  transition: background 0.15s, box-shadow 0.15s;
+  outline: none;
+  line-height: 1.5;
+}
+.trans-input:focus {
+  background: white;
+  box-shadow: 0 0 0 2px rgba(37,99,235,0.18);
+}
+.trans-input.overridden { color: var(--blue-dark); }
+.trans-input.placeholder-text { color: var(--ink-ghost); font-style: italic; }
+
+.trans-override-dot {
+  width: 6px; height: 6px; border-radius: 50%;
+  background: var(--blue);
+  position: absolute; top: 12px; right: 10px;
+  display: none;
+}
+.trans-override-dot.show { display: block; }
+
+.trans-actions-cell {
+  display: flex; gap: 4px; padding: 4px 6px;
+  justify-content: flex-end;
+}
+
+.section-header-row td {
+  padding: 12px 16px 6px;
+  font-size: 11px; font-weight: 800;
+  text-transform: uppercase; letter-spacing: 1px;
+  color: var(--ink-ghost);
+  background: var(--bg);
+  border-bottom: 1px solid var(--border-soft);
+}
+</style>
+
+<script src="store.js"></script>
+<script src="auth.js"></script>
+<script src="admin.js"></script>
+<script>
+const session = AUTH.requireAuth();
+if (session) {
+  renderSidebar(session, 'translations.html');
+  init();
+}
+
+// Pending changes buffer
+let pendingChanges = { en: {}, tr: {}, de: {} };
+
+// All translation keys from the i18n system (defined inline for the admin)
+// These mirror the TRANSLATIONS object in i18n.js
+const BASE_TRANSLATIONS = {
+  en: {
+    'nav.about': 'About',
+    'nav.programs': 'Programs',
+    'nav.projects': 'Projects',
+    'nav.partnerships': 'Partnerships',
+    'nav.research': 'Research',
+    'nav.blog': 'Blog',
+    'nav.contact': 'Contact',
+
+    'hero.eyebrow': 'A European Youth Initiative',
+    'hero.heading': 'Shaping Tomorrow\'s Europe',
+    'hero.heading.em': 'Together',
+    'hero.body': 'YouthTICK connects young Europeans across borders — building skills, fostering dialogue, and creating lasting change in communities across the continent.',
+    'hero.cta.primary': 'Discover Our Work',
+    'hero.cta.secondary': 'Join the Network',
+    'hero.badge.countries': 'Countries',
+    'hero.badge.young_leaders': 'Young Leaders',
+    'hero.badge.programs': 'Active Programs',
+
+    'about.eyebrow': 'Our Mission',
+    'about.heading': 'Building bridges across European youth',
+    'about.body': 'We are a transnational youth organization committed to democratic participation, intercultural dialogue, and European identity.',
+    'about.cta': 'Learn More About Us',
+
+    'manifesto.eyebrow': 'Manifesto',
+    'manifesto.heading': 'We believe in the power of young Europeans',
+    'manifesto.body': 'Our generation inherits both the promise and the challenges of a united Europe. We choose to act.',
+
+    'stats.countries': 'Countries',
+    'stats.young_people': 'Young People',
+    'stats.projects': 'Projects',
+    'stats.years': 'Years Active',
+
+    'focus.eyebrow': 'Focus Areas',
+    'focus.heading': 'What We Work On',
+    'focus.card1.title': 'Democratic Participation',
+    'focus.card1.body': 'Empowering young people to engage in democratic processes at local, national, and European levels.',
+    'focus.card2.title': 'Intercultural Dialogue',
+    'focus.card2.body': 'Building understanding and collaboration across different cultures and communities within Europe.',
+    'focus.card3.title': 'Skills & Leadership',
+    'focus.card3.body': 'Developing the next generation of European leaders through training, mentorship, and hands-on projects.',
+
+    'projects.eyebrow': 'Projects',
+    'projects.heading': 'Work in Action',
+    'projects.cta': 'View All Projects',
+
+    'network.eyebrow': 'European Network',
+    'network.heading': 'Pan-European reach, local impact',
+    'network.body': 'From Lisbon to Tallinn, our network spans 40+ countries with active youth chapters driving change at the grassroots level.',
+
+    'blog.eyebrow': 'Insights',
+    'blog.heading': 'From the YouthTICK Community',
+    'blog.cta': 'View All Articles',
+
+    'cta.heading': 'Ready to make a difference?',
+    'cta.body': 'Join thousands of young Europeans shaping the future of our continent.',
+    'cta.primary': 'Get Involved',
+    'cta.secondary': 'Contact Us',
+
+    'footer.tagline': 'A European youth initiative for democratic change.',
+    'footer.copyright': '© 2026 YouthTICK. All rights reserved.',
+    'footer.rights': 'Serving youth across Europe',
+  },
+  tr: {},
+  de: {}
+};
+
+// Sections for grouping
+const SECTIONS = {
+  nav: 'Navigation',
+  hero: 'Hero Section',
+  about: 'About Teaser',
+  manifesto: 'Manifesto',
+  stats: 'Statistics',
+  focus: 'Focus Areas',
+  projects: 'Projects',
+  network: 'European Network',
+  blog: 'Blog Preview',
+  cta: 'CTA Banner',
+  footer: 'Footer',
+};
+
+function getSection(key) {
+  const prefix = key.split('.')[0];
+  return SECTIONS[prefix] || 'Other';
+}
+
+function init() {
+  updateStats();
+  populateSectionFilter();
+  renderTable();
+}
+
+function updateStats() {
+  const content = STORE.getContent();
+  const allKeys = Object.keys(BASE_TRANSLATIONS.en);
+  const enOverrides = Object.keys(content.en || {}).length;
+  const trOverrides = Object.keys(content.tr || {}).length;
+  const deOverrides = Object.keys(content.de || {}).length;
+
+  document.getElementById('stat-en').textContent = enOverrides || '—';
+  document.getElementById('stat-tr').textContent = trOverrides || '—';
+  document.getElementById('stat-de').textContent = deOverrides || '—';
+  document.getElementById('stat-total').textContent = allKeys.length;
+  document.getElementById('stat-tr-pct').textContent = `${Math.round(trOverrides / allKeys.length * 100)}% overridden`;
+  document.getElementById('stat-de-pct').textContent = `${Math.round(deOverrides / allKeys.length * 100)}% overridden`;
+}
+
+function populateSectionFilter() {
+  const select = document.getElementById('section-filter');
+  const sections = [...new Set(Object.keys(BASE_TRANSLATIONS.en).map(k => getSection(k)))];
+  sections.sort();
+  sections.forEach(s => {
+    const opt = document.createElement('option');
+    opt.value = s; opt.textContent = s;
+    select.appendChild(opt);
+  });
+}
+
+function renderTable() {
+  const q = document.getElementById('search-input').value.toLowerCase().trim();
+  const sectionFilter = document.getElementById('section-filter').value;
+  const statusFilter = document.getElementById('status-filter').value;
+  const showKeys = document.getElementById('show-keys').checked;
+  const content = STORE.getContent();
+  const tbody = document.getElementById('trans-body');
+
+  let keys = Object.keys(BASE_TRANSLATIONS.en);
+
+  // Apply filters
+  keys = keys.filter(key => {
+    const label = key.replace(/\./g, ' ').replace(/_/g, ' ');
+    const enVal = getResolvedValue('en', key, content);
+    const trVal = getResolvedValue('tr', key, content);
+    const deVal = getResolvedValue('de', key, content);
+
+    if (q && !key.toLowerCase().includes(q) && !enVal.toLowerCase().includes(q) && !trVal.toLowerCase().includes(q) && !deVal.toLowerCase().includes(q)) return false;
+    if (sectionFilter && getSection(key) !== sectionFilter) return false;
+
+    if (statusFilter === 'overridden') {
+      if (!content.en?.[key] && !content.tr?.[key] && !content.de?.[key]) return false;
+    } else if (statusFilter === 'default') {
+      if (content.en?.[key] || content.tr?.[key] || content.de?.[key]) return false;
+    } else if (statusFilter === 'missing-tr') {
+      if (!content.tr?.[key] && BASE_TRANSLATIONS.tr?.[key]) return false;
+      if (BASE_TRANSLATIONS.tr?.[key]) return false;
+    } else if (statusFilter === 'missing-de') {
+      if (BASE_TRANSLATIONS.de?.[key]) return false;
+    }
+
+    return true;
+  });
+
+  if (!keys.length) {
+    tbody.innerHTML = '';
+    document.getElementById('trans-empty').style.display = 'block';
+    return;
+  }
+  document.getElementById('trans-empty').style.display = 'none';
+
+  // Group by section
+  const grouped = {};
+  keys.forEach(key => {
+    const section = getSection(key);
+    if (!grouped[section]) grouped[section] = [];
+    grouped[section].push(key);
+  });
+
+  let html = '';
+  Object.entries(grouped).forEach(([section, sectionKeys]) => {
+    html += `<tr class="section-header-row"><td colspan="4">${section}</td></tr>`;
+    sectionKeys.forEach(key => {
+      const enVal = getResolvedValue('en', key, content);
+      const trVal = getResolvedValue('tr', key, content);
+      const deVal = getResolvedValue('de', key, content);
+      const enOverridden = !!content.en?.[key];
+      const trOverridden = !!content.tr?.[key];
+      const deOverridden = !!content.de?.[key];
+
+      const keyLabel = key.split('.').slice(1).join('.').replace(/_/g, ' ');
+
+      html += `
+        <tr class="trans-row">
+          <td class="trans-key-cell">
+            <div class="trans-label">${capitalizeFirst(keyLabel)}</div>
+            ${showKeys ? `<div class="trans-key">${key}</div>` : ''}
+          </td>
+          <td class="trans-edit-cell">
+            <textarea class="trans-input ${enOverridden ? 'overridden' : ''}"
+              data-key="${key}" data-lang="en"
+              placeholder="${STORE.escapeHtml(BASE_TRANSLATIONS.en[key] || '')}"
+              oninput="markChanged(this)"
+              rows="2">${enOverridden ? STORE.escapeHtml(content.en[key]) : ''}</textarea>
+            <div class="trans-override-dot ${enOverridden ? 'show' : ''}" title="Has override"></div>
+          </td>
+          <td class="trans-edit-cell">
+            <textarea class="trans-input ${trOverridden ? 'overridden' : ''}"
+              data-key="${key}" data-lang="tr"
+              placeholder="${STORE.escapeHtml(BASE_TRANSLATIONS.tr?.[key] || '(not translated)')}"
+              oninput="markChanged(this)"
+              rows="2">${trOverridden ? STORE.escapeHtml(content.tr[key]) : ''}</textarea>
+            <div class="trans-override-dot ${trOverridden ? 'show' : ''}" title="Has override"></div>
+          </td>
+          <td class="trans-edit-cell">
+            <textarea class="trans-input ${deOverridden ? 'overridden' : ''}"
+              data-key="${key}" data-lang="de"
+              placeholder="${STORE.escapeHtml(BASE_TRANSLATIONS.de?.[key] || '(not translated)')}"
+              oninput="markChanged(this)"
+              rows="2">${deOverridden ? STORE.escapeHtml(content.de[key]) : ''}</textarea>
+            <div class="trans-override-dot ${deOverridden ? 'show' : ''}" title="Has override"></div>
+          </td>
+        </tr>
+      `;
+    });
+  });
+
+  tbody.innerHTML = html;
+
+  // Auto-resize textareas
+  document.querySelectorAll('.trans-input').forEach(ta => {
+    autoResizeTextarea(ta);
+    ta.addEventListener('input', () => autoResizeTextarea(ta));
+  });
+}
+
+function autoResizeTextarea(el) {
+  el.style.height = 'auto';
+  el.style.height = Math.max(36, el.scrollHeight) + 'px';
+}
+
+function getResolvedValue(lang, key, content) {
+  return content?.[lang]?.[key] || BASE_TRANSLATIONS[lang]?.[key] || '';
+}
+
+function markChanged(el) {
+  const key = el.dataset.key;
+  const lang = el.dataset.lang;
+  if (!pendingChanges[lang]) pendingChanges[lang] = {};
+  pendingChanges[lang][key] = el.value;
+
+  // Show override dot
+  const dot = el.parentElement.querySelector('.trans-override-dot');
+  if (dot) dot.classList.toggle('show', el.value.length > 0);
+  el.classList.toggle('overridden', el.value.length > 0);
+}
+
+function saveAll() {
+  let count = 0;
+  ['en', 'tr', 'de'].forEach(lang => {
+    const inputs = document.querySelectorAll(`.trans-input[data-lang="${lang}"]`);
+    const updates = {};
+    inputs.forEach(inp => {
+      const key = inp.dataset.key;
+      const val = inp.value.trim();
+      if (val) { updates[key] = val; count++; }
+    });
+    if (Object.keys(updates).length) {
+      STORE.setContentBatch(lang, updates);
+    }
+  });
+  STORE.logActivity('update', `Saved translation overrides (${count} strings)`, session.user.name);
+  Toast.success(`Translations saved.`);
+  pendingChanges = { en: {}, tr: {}, de: {} };
+  updateStats();
+  renderTable();
+}
+
+function exportTranslations() {
+  const content = STORE.getContent();
+  const allKeys = Object.keys(BASE_TRANSLATIONS.en);
+  const exportData = { en: {}, tr: {}, de: {} };
+
+  allKeys.forEach(key => {
+    ['en', 'tr', 'de'].forEach(lang => {
+      exportData[lang][key] = content?.[lang]?.[key] || BASE_TRANSLATIONS[lang]?.[key] || '';
+    });
+  });
+
+  const blob = new Blob([JSON.stringify(exportData, null, 2)], { type: 'application/json' });
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = `youthtick-translations-${new Date().toISOString().slice(0,10)}.json`;
+  a.click();
+  Toast.success('Translations exported.');
+}
+
+function capitalizeFirst(str) {
+  return str.charAt(0).toUpperCase() + str.slice(1);
+}
+</script>
+</body>
+</html>

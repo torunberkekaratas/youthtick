@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Site Settings — YouthTICK Admin</title>
+  <meta name="robots" content="noindex, nofollow"/>
+  <link rel="stylesheet" href="admin.css"/>
+</head>
+<body>
+<div class="admin-layout">
+
+  <main class="admin-main">
+    <header class="admin-header">
+      <div>
+        <div class="admin-header-title">Site Settings</div>
+        <div class="admin-header-subtitle">Site bilgileri, iletişim, sosyal medya ve güvenlik ayarları</div>
+      </div>
+      <div class="admin-header-actions">
+        <button class="btn btn-ghost btn-sm" onclick="resetSettings()">Sıfırla</button>
+        <button class="btn btn-primary" onclick="saveAllSettings()">
+          <svg width="13" height="13" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"/><polyline points="17 21 17 13 7 13 7 21"/><polyline points="7 3 7 8 15 8"/></svg>
+          Tüm Ayarları Kaydet
+        </button>
+      </div>
+    </header>
+
+    <div class="admin-content">
+      <div style="display:grid;grid-template-columns:220px 1fr;gap:20px;align-items:start;">
+
+        <!-- Section Nav -->
+        <div class="card" style="position:sticky;top:24px;">
+          <div class="card-body" style="padding:8px;">
+            <div style="font-size:10.5px;font-weight:700;color:var(--ink-ghost);text-transform:uppercase;letter-spacing:0.6px;padding:8px 10px 4px;">Bölümler</div>
+            <nav id="settings-nav">
+              <a class="design-nav-item active" href="#site-info"    onclick="scrollToSection('site-info')">Site Bilgileri</a>
+              <a class="design-nav-item"         href="#contact"     onclick="scrollToSection('contact')">İletişim & Adres</a>
+              <a class="design-nav-item"         href="#social"      onclick="scrollToSection('social')">Sosyal Medya</a>
+              <a class="design-nav-item"         href="#analytics"   onclick="scrollToSection('analytics')">Analytics & SEO</a>
+              <a class="design-nav-item"         href="#security"    onclick="scrollToSection('security')">Güvenlik & Şifre</a>
+              <a class="design-nav-item"         href="#danger"      onclick="scrollToSection('danger')">Tehlikeli Alan</a>
+            </nav>
+          </div>
+        </div>
+
+        <!-- Settings Panels -->
+        <div style="display:flex;flex-direction:column;gap:20px;">
+
+          <!-- ── Site Info ──────────────────────────────────── -->
+          <div class="card" id="site-info">
+            <div class="card-header">
+              <div class="card-title">
+                <svg width="15" height="15" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+                Site Bilgileri
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="form-row-2">
+                <div class="form-group">
+                  <label class="form-label">Site Adı *</label>
+                  <input class="form-input" type="text" id="s-siteName" placeholder="YouthTICK"/>
+                  <div class="form-hint">Tarayıcı sekmesinde ve header'da görünür.</div>
+                </div>
+                <div class="form-group">
+                  <label class="form-label">Site Tagline</label>
+                  <input class="form-input" type="text" id="s-siteTagline" placeholder="European Youth Network"/>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="form-label">Site Açıklaması (Meta Description)</label>
+                <textarea class="form-textarea" id="s-siteDesc" rows="3" placeholder="150–160 karakter. Arama motorlarında görünür."></textarea>
+                <div class="form-hint" id="s-siteDesc-count">0 / 160 karakter</div>
+              </div>
+              <div class="form-row-2">
+                <div class="form-group">
+                  <label class="form-label">Kuruluş Yılı</label>
+                  <input class="form-input" type="text" id="s-established" placeholder="2026"/>
+                </div>
+                <div class="form-group">
+                  <label class="form-label">Dil (Varsayılan)</label>
+                  <select class="form-select" id="s-defaultLang">
+                    <option value="en">English</option>
+                    <option value="tr">Türkçe</option>
+                    <option value="de">Deutsch</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="form-label">Site URL</label>
+                <input class="form-input" type="url" id="s-siteUrl" placeholder="https://youthtick.org"/>
+                <div class="form-hint">Canonical ve OG URL'leri için kullanılır.</div>
+              </div>
+              <div class="form-group">
+                <label class="form-label">OG / Sosyal Paylaşım Görseli URL</label>
+                <div style="display:flex;gap:10px;align-items:flex-start;">
+                  <input class="form-input" type="url" id="s-ogImage" placeholder="https://youthtick.org/og-image.jpg" style="flex:1;"/>
+                  <img id="s-ogImage-preview" src="" style="width:80px;height:50px;object-fit:cover;border-radius:6px;border:1px solid var(--border);display:none;flex-shrink:0;"/>
+                </div>
+                <div class="form-hint">1200×630 px önerilir. Twitter Card, Facebook ve WhatsApp paylaşımlarında kullanılır.</div>
+              </div>
+              <div class="form-group mb-0">
+                <label class="form-label">Favicon URL</label>
+                <input class="form-input" type="url" id="s-favicon" placeholder="https://youthtick.org/favicon.ico"/>
+              </div>
+            </div>
+          </div>
+
+          <!-- ── Contact & Address ──────────────────────────── -->
+          <div class="card" id="contact">
+            <div class="card-header">
+              <div class="card-title">
+                <svg width="15" height="15" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.69 3.38 2 2 0 0 1 3.68 1h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                İletişim & Adres
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="form-row-2">
+                <div class="form-group">
+                  <label class="form-label">E-posta Adresi</label>
+                  <input class="form-input" type="email" id="s-email" placeholder="info@youthtick.org"/>
+                </div>
+                <div class="form-group">
+                  <label class="form-label">Basın / Medya E-postası</label>
+                  <input class="form-input" type="email" id="s-emailPress" placeholder="press@youthtick.org"/>
+                </div>
+              </div>
+              <div class="form-row-2">
+                <div class="form-group">
+                  <label class="form-label">Telefon</label>
+                  <input class="form-input" type="tel" id="s-phone" placeholder="+90 XXX XXX XX XX"/>
+                </div>
+                <div class="form-group">
+                  <label class="form-label">WhatsApp (isteğe bağlı)</label>
+                  <input class="form-input" type="tel" id="s-whatsapp" placeholder="+90 XXX XXX XX XX"/>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="form-label">Ana Adres — Yalova, Türkiye</label>
+                <input class="form-input" type="text" id="s-addressYalova" placeholder="Yalova, Türkiye"/>
+              </div>
+              <div class="form-row-2">
+                <div class="form-group">
+                  <label class="form-label">Uluslararası Ofis 1</label>
+                  <input class="form-input" type="text" id="s-addressBerlin" placeholder="Berlin, Germany"/>
+                </div>
+                <div class="form-group">
+                  <label class="form-label">Uluslararası Ofis 2</label>
+                  <input class="form-input" type="text" id="s-addressIstanbul" placeholder="Istanbul, Turkey"/>
+                </div>
+              </div>
+              <div class="form-group mb-0">
+                <label class="form-label">Konum Tagline</label>
+                <input class="form-input" type="text" id="s-locationTagline" placeholder="Based in Yalova, Türkiye · Building international connections"/>
+              </div>
+            </div>
+          </div>
+
+          <!-- ── Social Media ───────────────────────────────── -->
+          <div class="card" id="social">
+            <div class="card-header">
+              <div class="card-title">
+                <svg width="15" height="15" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                Sosyal Medya Bağlantıları
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="form-row-2">
+                <div class="form-group">
+                  <label class="form-label">Instagram</label>
+                  <div style="display:flex;align-items:center;gap:8px;">
+                    <span style="font-size:12px;color:var(--ink-ghost);white-space:nowrap;">instagram.com/</span>
+                    <input class="form-input" type="text" id="s-instagram" placeholder="youthtick" style="flex:1;"/>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="form-label">LinkedIn</label>
+                  <div style="display:flex;align-items:center;gap:8px;">
+                    <span style="font-size:12px;color:var(--ink-ghost);white-space:nowrap;">linkedin.com/company/</span>
+                    <input class="form-input" type="text" id="s-linkedin" placeholder="youthtick" style="flex:1;"/>
+                  </div>
+                </div>
+              </div>
+              <div class="form-row-2">
+                <div class="form-group">
+                  <label class="form-label">Twitter / X</label>
+                  <div style="display:flex;align-items:center;gap:8px;">
+                    <span style="font-size:12px;color:var(--ink-ghost);">x.com/</span>
+                    <input class="form-input" type="text" id="s-twitter" placeholder="youthtick" style="flex:1;"/>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="form-label">YouTube</label>
+                  <div style="display:flex;align-items:center;gap:8px;">
+                    <span style="font-size:12px;color:var(--ink-ghost);">youtube.com/@</span>
+                    <input class="form-input" type="text" id="s-youtube" placeholder="youthtick" style="flex:1;"/>
+                  </div>
+                </div>
+              </div>
+              <div class="form-row-2">
+                <div class="form-group">
+                  <label class="form-label">Facebook</label>
+                  <div style="display:flex;align-items:center;gap:8px;">
+                    <span style="font-size:12px;color:var(--ink-ghost);">facebook.com/</span>
+                    <input class="form-input" type="text" id="s-facebook" placeholder="youthtick" style="flex:1;"/>
+                  </div>
+                </div>
+                <div class="form-group mb-0">
+                  <label class="form-label">TikTok</label>
+                  <div style="display:flex;align-items:center;gap:8px;">
+                    <span style="font-size:12px;color:var(--ink-ghost);">tiktok.com/@</span>
+                    <input class="form-input" type="text" id="s-tiktok" placeholder="youthtick" style="flex:1;"/>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ── Analytics & SEO ────────────────────────────── -->
+          <div class="card" id="analytics">
+            <div class="card-header">
+              <div class="card-title">
+                <svg width="15" height="15" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+                Analytics & SEO
+              </div>
+            </div>
+            <div class="card-body">
+              <!-- GA4 -->
+              <div style="padding:14px;background:var(--bg);border-radius:10px;border:1px solid var(--border-soft);margin-bottom:16px;">
+                <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px;">
+                  <div>
+                    <div style="font-size:13px;font-weight:700;color:var(--ink);">Google Analytics 4</div>
+                    <div style="font-size:11.5px;color:var(--ink-ghost);">Ziyaretçi istatistiklerini takip eder</div>
+                  </div>
+                  <label class="switch">
+                    <input type="checkbox" id="s-ga-enabled"/>
+                    <div class="switch-track"></div>
+                    <div class="switch-thumb"></div>
+                  </label>
+                </div>
+                <div class="form-group mb-0">
+                  <label class="form-label">Measurement ID</label>
+                  <input class="form-input" type="text" id="s-ga-id" placeholder="G-XXXXXXXXXX"/>
+                  <div class="form-hint">Google Analytics → Admin → Data Streams'den alınır.</div>
+                </div>
+              </div>
+              <!-- Plausible -->
+              <div style="padding:14px;background:var(--bg);border-radius:10px;border:1px solid var(--border-soft);margin-bottom:16px;">
+                <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px;">
+                  <div>
+                    <div style="font-size:13px;font-weight:700;color:var(--ink);">Plausible Analytics</div>
+                    <div style="font-size:11.5px;color:var(--ink-ghost);">Gizlilik odaklı, cookie-free analitik</div>
+                  </div>
+                  <label class="switch">
+                    <input type="checkbox" id="s-plausible-enabled"/>
+                    <div class="switch-track"></div>
+                    <div class="switch-thumb"></div>
+                  </label>
+                </div>
+                <div class="form-group mb-0">
+                  <label class="form-label">Alan Adı (domain)</label>
+                  <input class="form-input" type="text" id="s-plausible-domain" placeholder="youthtick.org"/>
+                </div>
+              </div>
+              <!-- Maintenance -->
+              <div style="padding:14px;background:var(--bg);border-radius:10px;border:1px solid var(--border-soft);">
+                <div style="display:flex;align-items:center;justify-content:space-between;">
+                  <div>
+                    <div style="font-size:13px;font-weight:700;color:var(--ink);">Bakım Modu</div>
+                    <div style="font-size:11.5px;color:var(--ink-ghost);">Aktifken ziyaretçilere "Çok yakında" sayfası gösterilir</div>
+                  </div>
+                  <label class="switch">
+                    <input type="checkbox" id="s-maintenance"/>
+                    <div class="switch-track"></div>
+                    <div class="switch-thumb"></div>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ── Security & Password ────────────────────────── -->
+          <div class="card" id="security">
+            <div class="card-header">
+              <div class="card-title">
+                <svg width="15" height="15" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                Güvenlik & Şifre Değiştirme
+              </div>
+            </div>
+            <div class="card-body">
+              <div style="background:var(--bg);border:1px solid var(--border-soft);border-radius:10px;padding:16px;margin-bottom:20px;">
+                <div style="font-size:12px;font-weight:700;color:var(--ink-muted);margin-bottom:12px;text-transform:uppercase;letter-spacing:0.6px;">Mevcut Admin Hesabı</div>
+                <div id="current-user-info" style="font-size:13px;color:var(--ink-muted);">Yükleniyor…</div>
+              </div>
+              <div class="form-group">
+                <label class="form-label">Mevcut Şifre</label>
+                <input class="form-input" type="password" id="s-current-pw" placeholder="Mevcut şifrenizi girin"/>
+              </div>
+              <div class="form-row-2">
+                <div class="form-group">
+                  <label class="form-label">Yeni Şifre</label>
+                  <input class="form-input" type="password" id="s-new-pw" placeholder="En az 8 karakter"/>
+                </div>
+                <div class="form-group">
+                  <label class="form-label">Yeni Şifre (Tekrar)</label>
+                  <input class="form-input" type="password" id="s-new-pw2" placeholder="Şifreyi tekrar girin"/>
+                </div>
+              </div>
+              <div style="display:flex;gap:10px;">
+                <button class="btn btn-primary btn-sm" onclick="changePassword()">
+                  <svg width="13" height="13" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                  Şifreyi Değiştir
+                </button>
+                <button class="btn btn-secondary btn-sm" onclick="generateNewPassword()">Otomatik Oluştur</button>
+              </div>
+              <div style="margin-top:20px;padding-top:20px;border-top:1px solid var(--border-soft);">
+                <div style="font-size:12px;font-weight:700;color:var(--ink-muted);margin-bottom:10px;text-transform:uppercase;letter-spacing:0.6px;">Oturum Güvenliği</div>
+                <div style="display:flex;align-items:center;justify-content:space-between;padding:10px 0;border-bottom:1px solid var(--border-soft);">
+                  <span style="font-size:13px;color:var(--ink-muted);">Oturum Süresi</span>
+                  <span class="badge badge-blue">8 Saat</span>
+                </div>
+                <div style="display:flex;align-items:center;justify-content:space-between;padding:10px 0;border-bottom:1px solid var(--border-soft);">
+                  <span style="font-size:13px;color:var(--ink-muted);">Maks. Başarısız Giriş</span>
+                  <span class="badge badge-amber">5 Deneme</span>
+                </div>
+                <div style="display:flex;align-items:center;justify-content:space-between;padding:10px 0;">
+                  <span style="font-size:13px;color:var(--ink-muted);">Kilitlenme Süresi</span>
+                  <span class="badge badge-grey">10 Dakika</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ── Danger Zone ─────────────────────────────────── -->
+          <div class="card" id="danger" style="border-color:#FECACA;">
+            <div class="card-header" style="background:#FEF2F2;border-bottom-color:#FECACA;">
+              <div class="card-title" style="color:#991B1B;">
+                <svg width="15" height="15" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                Tehlikeli Alan
+              </div>
+            </div>
+            <div class="card-body">
+              <div style="display:flex;flex-direction:column;gap:14px;">
+                <div style="display:flex;align-items:center;justify-content:space-between;padding:14px;border:1px solid #FECACA;border-radius:10px;background:#FEF9F9;">
+                  <div>
+                    <div style="font-size:13px;font-weight:700;color:var(--ink);">Tüm İçerik Geçersiz Kılmalarını Sıfırla</div>
+                    <div style="font-size:11.5px;color:var(--ink-ghost);margin-top:2px;">Admin panelinden yapılan tüm metin düzenlemeleri silinir, varsayılan i18n metinleri geri gelir.</div>
+                  </div>
+                  <button class="btn btn-sm" style="background:#DC2626;color:white;border-color:#DC2626;white-space:nowrap;margin-left:16px;" onclick="dangerResetContent()">İçeriği Sıfırla</button>
+                </div>
+                <div style="display:flex;align-items:center;justify-content:space-between;padding:14px;border:1px solid #FECACA;border-radius:10px;background:#FEF9F9;">
+                  <div>
+                    <div style="font-size:13px;font-weight:700;color:var(--ink);">Tasarım Token'larını Sıfırla</div>
+                    <div style="font-size:11.5px;color:var(--ink-ghost);margin-top:2px;">Renk, tipografi ve boyut değişiklikleri varsayılana döner.</div>
+                  </div>
+                  <button class="btn btn-sm" style="background:#DC2626;color:white;border-color:#DC2626;white-space:nowrap;margin-left:16px;" onclick="dangerResetDesign()">Tasarımı Sıfırla</button>
+                </div>
+                <div style="display:flex;align-items:center;justify-content:space-between;padding:14px;border:1px solid #FECACA;border-radius:10px;background:#FEF9F9;">
+                  <div>
+                    <div style="font-size:13px;font-weight:700;color:var(--ink);">Blog Yazılarını Sil</div>
+                    <div style="font-size:11.5px;color:var(--ink-ghost);margin-top:2px;">Admin panelinde oluşturulan tüm blog yazıları kalıcı olarak silinir.</div>
+                  </div>
+                  <button class="btn btn-sm" style="background:#DC2626;color:white;border-color:#DC2626;white-space:nowrap;margin-left:16px;" onclick="dangerDeleteBlog()">Blog'u Sil</button>
+                </div>
+                <div style="display:flex;align-items:center;justify-content:space-between;padding:14px;border:1px solid #FECACA;border-radius:10px;background:#FEF9F9;">
+                  <div>
+                    <div style="font-size:13px;font-weight:700;color:var(--ink);">Tüm Admin Verilerini Sıfırla</div>
+                    <div style="font-size:11.5px;color:var(--ink-ghost);margin-top:2px;">İçerik, tasarım, blog, medya ve ayarlar dahil tüm veriler silinir. Geri alınamaz!</div>
+                  </div>
+                  <button class="btn btn-sm" style="background:#7F1D1D;color:white;border-color:#7F1D1D;white-space:nowrap;margin-left:16px;" onclick="dangerResetAll()">TÜMÜNÜ SİL</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+
+<style>
+.design-nav-item {
+  display: block; padding: 7px 10px;
+  font-size: 12.5px; font-weight: 500; color: var(--ink-muted);
+  border-radius: 7px; transition: all 0.14s; cursor: pointer;
+  text-decoration: none;
+}
+.design-nav-item:hover { background: var(--bg); color: var(--ink); }
+.design-nav-item.active { background: var(--blue-soft); color: var(--blue); font-weight: 700; }
+
+.form-row-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+
+.switch { position: relative; display: inline-flex; align-items: center; gap: 8px; cursor: pointer; }
+.switch input { position: absolute; opacity: 0; width: 0; height: 0; }
+.switch-track {
+  width: 40px; height: 22px; background: var(--border);
+  border-radius: 11px; transition: background 0.2s; flex-shrink: 0;
+}
+.switch input:checked ~ .switch-track { background: var(--blue); }
+.switch-thumb {
+  position: absolute; left: 3px; width: 16px; height: 16px;
+  background: white; border-radius: 50%;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+  transition: transform 0.2s;
+}
+.switch input:checked ~ .switch-track ~ .switch-thumb { transform: translateX(18px); }
+</style>
+
+<script src="store.js"></script>
+<script src="auth.js"></script>
+<script src="admin.js"></script>
+<script>
+const session = AUTH.requireAuth();
+if (session) {
+  renderSidebar(session, 'settings.html');
+  initSettings();
+}
+
+/* ── LOAD SETTINGS ──────────────────────────────────────────── */
+function initSettings() {
+  const s = STORE.getSettings();
+  const intg = JSON.parse(localStorage.getItem('yt-admin-integrations') || '{}');
+
+  /* Site Info */
+  document.getElementById('s-siteName').value       = s.siteName      || 'YouthTICK';
+  document.getElementById('s-siteTagline').value    = s.siteTagline   || '';
+  document.getElementById('s-siteDesc').value       = s.siteDesc      || '';
+  document.getElementById('s-established').value    = s.established   || '2026';
+  document.getElementById('s-defaultLang').value    = s.defaultLang   || 'en';
+  document.getElementById('s-siteUrl').value        = s.siteUrl       || '';
+  document.getElementById('s-ogImage').value        = s.ogImage       || '';
+  document.getElementById('s-favicon').value        = s.favicon       || '';
+
+  /* Contact */
+  document.getElementById('s-email').value          = s.email         || '';
+  document.getElementById('s-emailPress').value     = s.emailPress    || '';
+  document.getElementById('s-phone').value          = s.phone         || '';
+  document.getElementById('s-whatsapp').value       = s.whatsapp      || '';
+  document.getElementById('s-addressYalova').value  = s.addressYalova || '';
+  document.getElementById('s-addressBerlin').value  = s.addressBerlin || '';
+  document.getElementById('s-addressIstanbul').value= s.addressIstanbul || '';
+  document.getElementById('s-locationTagline').value= s.locationTagline || '';
+
+  /* Social — strip domain prefixes, only store handles */
+  document.getElementById('s-instagram').value = s.instagram || '';
+  document.getElementById('s-linkedin').value  = s.linkedin  || '';
+  document.getElementById('s-twitter').value   = s.twitter   || '';
+  document.getElementById('s-youtube').value   = s.youtube   || '';
+  document.getElementById('s-facebook').value  = s.facebook  || '';
+  document.getElementById('s-tiktok').value    = s.tiktok    || '';
+
+  /* Analytics */
+  document.getElementById('s-ga-enabled').checked        = intg.ga?.enabled        || false;
+  document.getElementById('s-ga-id').value               = intg.ga?.id             || '';
+  document.getElementById('s-plausible-enabled').checked = intg.plausible?.enabled || false;
+  document.getElementById('s-plausible-domain').value    = intg.plausible?.domain  || '';
+  document.getElementById('s-maintenance').checked       = s.maintenanceMode       || false;
+
+  /* OG image preview */
+  updateOgPreview();
+  document.getElementById('s-ogImage').addEventListener('input', updateOgPreview);
+
+  /* Char counter */
+  updateDescCount();
+  document.getElementById('s-siteDesc').addEventListener('input', updateDescCount);
+
+  /* Current user info */
+  document.getElementById('current-user-info').innerHTML = `
+    <strong>${STORE.escapeHtml(session.name)}</strong>
+    &nbsp;·&nbsp; ${STORE.escapeHtml(session.email)}
+    &nbsp;·&nbsp; <span style="text-transform:capitalize;">${session.role}</span>
+  `;
+}
+
+function updateOgPreview() {
+  const url = document.getElementById('s-ogImage').value.trim();
+  const el  = document.getElementById('s-ogImage-preview');
+  if (url) { el.src = url; el.style.display = 'block'; }
+  else el.style.display = 'none';
+}
+
+function updateDescCount() {
+  const len = document.getElementById('s-siteDesc').value.length;
+  const el  = document.getElementById('s-siteDesc-count');
+  el.textContent = `${len} / 160 karakter`;
+  el.style.color = len > 160 ? 'var(--red)' : 'var(--ink-ghost)';
+}
+
+/* ── SAVE ALL ───────────────────────────────────────────────── */
+function saveAllSettings() {
+  const settings = {
+    siteName:        document.getElementById('s-siteName').value.trim(),
+    siteTagline:     document.getElementById('s-siteTagline').value.trim(),
+    siteDesc:        document.getElementById('s-siteDesc').value.trim(),
+    established:     document.getElementById('s-established').value.trim(),
+    defaultLang:     document.getElementById('s-defaultLang').value,
+    siteUrl:         document.getElementById('s-siteUrl').value.trim(),
+    ogImage:         document.getElementById('s-ogImage').value.trim(),
+    favicon:         document.getElementById('s-favicon').value.trim(),
+    email:           document.getElementById('s-email').value.trim(),
+    emailPress:      document.getElementById('s-emailPress').value.trim(),
+    phone:           document.getElementById('s-phone').value.trim(),
+    whatsapp:        document.getElementById('s-whatsapp').value.trim(),
+    addressYalova:   document.getElementById('s-addressYalova').value.trim(),
+    addressBerlin:   document.getElementById('s-addressBerlin').value.trim(),
+    addressIstanbul: document.getElementById('s-addressIstanbul').value.trim(),
+    locationTagline: document.getElementById('s-locationTagline').value.trim(),
+    instagram:       document.getElementById('s-instagram').value.trim(),
+    linkedin:        document.getElementById('s-linkedin').value.trim(),
+    twitter:         document.getElementById('s-twitter').value.trim(),
+    youtube:         document.getElementById('s-youtube').value.trim(),
+    facebook:        document.getElementById('s-facebook').value.trim(),
+    tiktok:          document.getElementById('s-tiktok').value.trim(),
+    maintenanceMode: document.getElementById('s-maintenance').checked,
+  };
+
+  STORE.saveSettings(settings);
+
+  /* Save integrations separately (content-bridge.js reads from here) */
+  const intg = {
+    ga: {
+      enabled: document.getElementById('s-ga-enabled').checked,
+      id:      document.getElementById('s-ga-id').value.trim(),
+    },
+    plausible: {
+      enabled: document.getElementById('s-plausible-enabled').checked,
+      domain:  document.getElementById('s-plausible-domain').value.trim(),
+    }
+  };
+  localStorage.setItem('yt-admin-integrations', JSON.stringify(intg));
+
+  /* Also push social & contact into i18n content overrides so they appear on pages */
+  if (settings.email) {
+    STORE.setContentBatch('en', { 'contact.email': settings.email });
+    STORE.setContentBatch('tr', { 'contact.email': settings.email });
+    STORE.setContentBatch('de', { 'contact.email': settings.email });
+  }
+  if (settings.locationTagline) {
+    STORE.setContentBatch('en', { 'contact.map.sub': settings.locationTagline });
+  }
+
+  STORE.logActivity('settings', 'Site settings updated', session.name);
+  Toast.success('Tüm ayarlar başarıyla kaydedildi.');
+}
+
+/* ── RESET SETTINGS ─────────────────────────────────────────── */
+function resetSettings() {
+  if (!confirm('Ayarları varsayılana döndürmek istiyor musunuz?')) return;
+  localStorage.removeItem(STORE.KEYS.SETTINGS);
+  initSettings();
+  Toast.info('Ayarlar sıfırlandı.');
+}
+
+/* ── SCROLL TO SECTION ──────────────────────────────────────── */
+function scrollToSection(id) {
+  document.querySelectorAll('.design-nav-item').forEach(a => a.classList.remove('active'));
+  event.target.classList.add('active');
+  const el = document.getElementById(id);
+  if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  return false;
+}
+
+/* ── CHANGE PASSWORD ────────────────────────────────────────── */
+async function changePassword() {
+  const currentPw = document.getElementById('s-current-pw').value;
+  const newPw     = document.getElementById('s-new-pw').value;
+  const newPw2    = document.getElementById('s-new-pw2').value;
+
+  if (!currentPw || !newPw || !newPw2) { Toast.error('Tüm şifre alanlarını doldurun.'); return; }
+  if (newPw !== newPw2)                 { Toast.error('Yeni şifreler eşleşmiyor.');      return; }
+  if (newPw.length < 8)                 { Toast.error('Şifre en az 8 karakter olmalı.'); return; }
+
+  const users = JSON.parse(localStorage.getItem('yt-admin-users') || '[]');
+  const user  = users.find(u => u.email === session.email);
+  if (!user)  { Toast.error('Kullanıcı bulunamadı.'); return; }
+
+  const currentHash = await AUTH.hashPassword(currentPw);
+  if (currentHash !== user.passwordHash) { Toast.error('Mevcut şifre hatalı.'); return; }
+
+  user.passwordHash = await AUTH.hashPassword(newPw);
+  user.updatedAt    = new Date().toISOString();
+  localStorage.setItem('yt-admin-users', JSON.stringify(users));
+
+  document.getElementById('s-current-pw').value = '';
+  document.getElementById('s-new-pw').value      = '';
+  document.getElementById('s-new-pw2').value     = '';
+
+  STORE.logActivity('security', 'Admin şifre değiştirdi', session.name);
+  Toast.success('Şifre başarıyla değiştirildi!');
+}
+
+function generateNewPassword() {
+  const chars = 'ABCDEFGHJKMNPQRSTUVWXYZabcdefghjkmnpqrstuvwxyz23456789!@#$%';
+  let pw = '';
+  for (let i = 0; i < 14; i++) pw += chars[Math.floor(Math.random() * chars.length)];
+  document.getElementById('s-new-pw').value  = pw;
+  document.getElementById('s-new-pw2').value = pw;
+  document.getElementById('s-new-pw').type   = 'text';
+  setTimeout(() => { document.getElementById('s-new-pw').type = 'password'; }, 3000);
+  copyToClipboard(pw);
+  Toast.success('Şifre oluşturuldu ve panoya kopyalandı!');
+}
+
+/* ── DANGER ZONE ────────────────────────────────────────────── */
+function dangerResetContent() {
+  if (!confirm('TÜM içerik düzenlemelerini silmek istediğinizden emin misiniz? Bu işlem geri alınamaz.')) return;
+  localStorage.removeItem(STORE.KEYS.CONTENT);
+  STORE.logActivity('danger', 'Tüm içerik sıfırlandı', session.name);
+  Toast.success('İçerik başarıyla sıfırlandı.');
+}
+
+function dangerResetDesign() {
+  if (!confirm('Tüm tasarım token değişikliklerini sıfırlamak istediğinizden emin misiniz?')) return;
+  localStorage.removeItem(STORE.KEYS.DESIGN);
+  STORE.logActivity('danger', 'Tasarım token\'ları sıfırlandı', session.name);
+  Toast.success('Tasarım sıfırlandı.');
+}
+
+function dangerDeleteBlog() {
+  if (!confirm('TÜM blog yazılarını kalıcı olarak silmek istediğinizden emin misiniz?')) return;
+  localStorage.removeItem(STORE.KEYS.BLOG);
+  STORE.logActivity('danger', 'Tüm blog yazıları silindi', session.name);
+  Toast.success('Blog yazıları silindi.');
+}
+
+function dangerResetAll() {
+  const confirm1 = confirm('DİKKAT: Tüm admin verileri silinecek!\n\nİçerik, tasarım, blog, medya ve ayarlar dahil her şey silinir.\n\nBu işlem GERİ ALINAMAZ.\n\nDevam etmek istiyor musunuz?');
+  if (!confirm1) return;
+  const confirm2 = confirm('Son uyarı: Bu işlemi gerçekten yapmak istiyor musunuz?\n\nONAYLAMAK için Tamam\'a basın.');
+  if (!confirm2) return;
+
+  Object.values(STORE.KEYS).forEach(k => localStorage.removeItem(k));
+  localStorage.removeItem('yt-admin-integrations');
+  localStorage.removeItem('yt-admin-init-version');
+  Toast.success('Tüm veriler silindi. Sayfa yeniden başlatılıyor…');
+  setTimeout(() => { window.location.href = 'index.html'; }, 2000);
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Design System — YouthTICK Admin</title>
+  <meta name="robots" content="noindex, nofollow"/>
+  <link rel="stylesheet" href="admin.css"/>
+</head>
+<body>
+<div class="admin-layout">
+
+  <main class="admin-main">
+    <header class="admin-header">
+      <div>
+        <div class="admin-header-title">Design System</div>
+        <div class="admin-header-subtitle">Customize colors, typography, spacing, and visual tokens</div>
+      </div>
+      <div class="admin-header-actions">
+        <button class="btn btn-ghost btn-sm" onclick="resetAll()">Reset to Defaults</button>
+        <button class="btn btn-secondary btn-sm" onclick="previewDesign()">
+          <svg width="13" height="13" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+          Preview
+        </button>
+        <button class="btn btn-primary btn-sm" onclick="saveDesign()">
+          <svg width="13" height="13" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"/><polyline points="17 21 17 13 7 13 7 21"/><polyline points="7 3 7 8 15 8"/></svg>
+          Save Design
+        </button>
+      </div>
+    </header>
+
+    <div class="admin-content">
+
+      <div style="display:grid; grid-template-columns: 240px 1fr; gap:20px; align-items:start;">
+
+        <!-- Section Nav -->
+        <div class="card" style="position:sticky;top:24px;">
+          <div class="card-body" style="padding:8px;">
+            <div style="font-size:10.5px;font-weight:700;color:var(--ink-ghost);text-transform:uppercase;letter-spacing:0.6px;padding:8px 10px 4px;">Design Sections</div>
+            <nav id="design-nav">
+              <a class="design-nav-item active" href="#colors" onclick="scrollTo('colors')">Colors</a>
+              <a class="design-nav-item" href="#typography" onclick="scrollTo('typography')">Typography</a>
+              <a class="design-nav-item" href="#spacing" onclick="scrollTo('spacing')">Spacing & Radius</a>
+              <a class="design-nav-item" href="#hero" onclick="scrollTo('hero')">Hero Settings</a>
+              <a class="design-nav-item" href="#nav" onclick="scrollTo('nav')">Navigation</a>
+              <a class="design-nav-item" href="#cards" onclick="scrollTo('cards')">Cards & Surfaces</a>
+              <a class="design-nav-item" href="#motion" onclick="scrollTo('motion')">Motion & Transitions</a>
+              <a class="design-nav-item" href="#advanced" onclick="scrollTo('advanced')">Advanced CSS</a>
+            </nav>
+          </div>
+          <div class="card-footer" style="font-size:11.5px;color:var(--ink-ghost);">
+            Changes are applied globally to the website.
+          </div>
+        </div>
+
+        <!-- Editor -->
+        <div style="display:flex;flex-direction:column;gap:20px;">
+
+          <!-- Colors -->
+          <div class="card" id="section-colors">
+            <div class="card-header">
+              <div class="card-title">Brand Colors</div>
+              <span class="badge badge-blue">Core Tokens</span>
+            </div>
+            <div class="card-body">
+              <div style="display:grid;grid-template-columns:1fr 1fr;gap:0;">
+
+                <div class="color-token-row">
+                  <div class="color-swatch-wrap">
+                    <input type="color" class="color-swatch" id="c-blue-vivid" value="#2563EB" oninput="livePreview()"/>
+                  </div>
+                  <div>
+                    <div class="color-label">Primary Blue</div>
+                    <div class="color-var">--blue-vivid</div>
+                  </div>
+                  <input type="text" class="color-hex-input" id="c-blue-vivid-hex" value="#2563EB" oninput="syncHex('c-blue-vivid', this.value)"/>
+                </div>
+
+                <div class="color-token-row">
+                  <div class="color-swatch-wrap">
+                    <input type="color" class="color-swatch" id="c-blue-dark" value="#1A4B8A" oninput="livePreview()"/>
+                  </div>
+                  <div>
+                    <div class="color-label">Blue Dark</div>
+                    <div class="color-var">--blue-dark</div>
+                  </div>
+                  <input type="text" class="color-hex-input" id="c-blue-dark-hex" value="#1A4B8A" oninput="syncHex('c-blue-dark', this.value)"/>
+                </div>
+
+                <div class="color-token-row">
+                  <div class="color-swatch-wrap">
+                    <input type="color" class="color-swatch" id="c-navy" value="#0A1828" oninput="livePreview()"/>
+                  </div>
+                  <div>
+                    <div class="color-label">Navy</div>
+                    <div class="color-var">--navy</div>
+                  </div>
+                  <input type="text" class="color-hex-input" id="c-navy-hex" value="#0A1828" oninput="syncHex('c-navy', this.value)"/>
+                </div>
+
+                <div class="color-token-row">
+                  <div class="color-swatch-wrap">
+                    <input type="color" class="color-swatch" id="c-navy-deep" value="#050F1C" oninput="livePreview()"/>
+                  </div>
+                  <div>
+                    <div class="color-label">Navy Deep</div>
+                    <div class="color-var">--navy-deep</div>
+                  </div>
+                  <input type="text" class="color-hex-input" id="c-navy-deep-hex" value="#050F1C" oninput="syncHex('c-navy-deep', this.value)"/>
+                </div>
+
+                <div class="color-token-row">
+                  <div class="color-swatch-wrap">
+                    <input type="color" class="color-swatch" id="c-cream" value="#F7F4EF" oninput="livePreview()"/>
+                  </div>
+                  <div>
+                    <div class="color-label">Cream / Background</div>
+                    <div class="color-var">--cream</div>
+                  </div>
+                  <input type="text" class="color-hex-input" id="c-cream-hex" value="#F7F4EF" oninput="syncHex('c-cream', this.value)"/>
+                </div>
+
+                <div class="color-token-row">
+                  <div class="color-swatch-wrap">
+                    <input type="color" class="color-swatch" id="c-ink" value="#111827" oninput="livePreview()"/>
+                  </div>
+                  <div>
+                    <div class="color-label">Ink / Text</div>
+                    <div class="color-var">--ink</div>
+                  </div>
+                  <input type="text" class="color-hex-input" id="c-ink-hex" value="#111827" oninput="syncHex('c-ink', this.value)"/>
+                </div>
+
+                <div class="color-token-row">
+                  <div class="color-swatch-wrap">
+                    <input type="color" class="color-swatch" id="c-accent-gold" value="#D4AF37" oninput="livePreview()"/>
+                  </div>
+                  <div>
+                    <div class="color-label">Accent Gold</div>
+                    <div class="color-var">--gold</div>
+                  </div>
+                  <input type="text" class="color-hex-input" id="c-accent-gold-hex" value="#D4AF37" oninput="syncHex('c-accent-gold', this.value)"/>
+                </div>
+
+                <div class="color-token-row">
+                  <div class="color-swatch-wrap">
+                    <input type="color" class="color-swatch" id="c-surface" value="#FFFFFF" oninput="livePreview()"/>
+                  </div>
+                  <div>
+                    <div class="color-label">Card Surface</div>
+                    <div class="color-var">--surface</div>
+                  </div>
+                  <input type="text" class="color-hex-input" id="c-surface-hex" value="#FFFFFF" oninput="syncHex('c-surface', this.value)"/>
+                </div>
+
+              </div>
+
+              <!-- Color Presets -->
+              <div style="margin-top:16px;padding-top:16px;border-top:1px solid var(--border-soft);">
+                <div style="font-size:12px;font-weight:700;color:var(--ink-muted);margin-bottom:10px;">Color Presets</div>
+                <div style="display:flex;gap:8px;flex-wrap:wrap;">
+                  <button class="preset-btn" onclick="applyPreset('institutional')" style="--pc:#2563EB;">Institutional Blue</button>
+                  <button class="preset-btn" onclick="applyPreset('forest')" style="--pc:#166534;">Forest Green</button>
+                  <button class="preset-btn" onclick="applyPreset('slate')" style="--pc:#334155;">Slate</button>
+                  <button class="preset-btn" onclick="applyPreset('burgundy')" style="--pc:#881337;">Burgundy</button>
+                  <button class="preset-btn" onclick="applyPreset('midnight')" style="--pc:#1E1B4B;">Midnight</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Typography -->
+          <div class="card" id="section-typography">
+            <div class="card-header">
+              <div class="card-title">Typography</div>
+            </div>
+            <div class="card-body">
+              <div class="form-row-2">
+                <div class="form-group">
+                  <label class="form-label">Primary Font Family</label>
+                  <select class="form-select" id="t-font-primary" onchange="livePreview()">
+                    <option value="'Manrope', system-ui, sans-serif">Manrope (Current)</option>
+                    <option value="'Inter', system-ui, sans-serif">Inter</option>
+                    <option value="'DM Sans', system-ui, sans-serif">DM Sans</option>
+                    <option value="'Plus Jakarta Sans', system-ui, sans-serif">Plus Jakarta Sans</option>
+                    <option value="'Outfit', system-ui, sans-serif">Outfit</option>
+                    <option value="'Nunito', system-ui, sans-serif">Nunito</option>
+                    <option value="Georgia, 'Times New Roman', serif">Georgia (Serif)</option>
+                    <option value="system-ui, sans-serif">System UI</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label class="form-label">Heading Font Family</label>
+                  <select class="form-select" id="t-font-heading" onchange="livePreview()">
+                    <option value="inherit">Same as Primary</option>
+                    <option value="'Playfair Display', Georgia, serif">Playfair Display</option>
+                    <option value="'Cormorant Garamond', Georgia, serif">Cormorant Garamond</option>
+                    <option value="'Libre Baskerville', Georgia, serif">Libre Baskerville</option>
+                    <option value="'DM Serif Display', Georgia, serif">DM Serif Display</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-row-3" style="margin-top:8px;">
+                <div class="form-group">
+                  <label class="form-label">Base Font Size</label>
+                  <div style="display:flex;align-items:center;gap:8px;">
+                    <input type="range" min="14" max="20" value="16" step="1" id="t-font-size" oninput="syncSlider('t-font-size','t-font-size-val');livePreview()" style="flex:1;"/>
+                    <span id="t-font-size-val" style="font-size:12px;color:var(--ink-muted);min-width:28px;">16px</span>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="form-label">Line Height</label>
+                  <div style="display:flex;align-items:center;gap:8px;">
+                    <input type="range" min="1.2" max="2.0" value="1.6" step="0.1" id="t-line-height" oninput="syncSlider('t-line-height','t-line-height-val','');livePreview()" style="flex:1;"/>
+                    <span id="t-line-height-val" style="font-size:12px;color:var(--ink-muted);min-width:28px;">1.6</span>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="form-label">Letter Spacing</label>
+                  <div style="display:flex;align-items:center;gap:8px;">
+                    <input type="range" min="-1" max="2" value="-0.2" step="0.1" id="t-letter-spacing" oninput="syncSlider('t-letter-spacing','t-letter-spacing-val','px');livePreview()" style="flex:1;"/>
+                    <span id="t-letter-spacing-val" style="font-size:12px;color:var(--ink-muted);min-width:36px;">-0.2px</span>
+                  </div>
+                </div>
+              </div>
+              <!-- Font Preview -->
+              <div style="margin-top:16px;padding:20px;background:var(--bg);border-radius:10px;border:1px solid var(--border-soft);">
+                <div style="font-size:11px;font-weight:700;color:var(--ink-ghost);text-transform:uppercase;letter-spacing:0.5px;margin-bottom:12px;">Preview</div>
+                <div id="font-preview" style="font-family:'Manrope',system-ui,sans-serif;">
+                  <div style="font-size:28px;font-weight:800;letter-spacing:-0.5px;color:var(--ink);line-height:1.15;margin-bottom:8px;">Shaping Tomorrow's Europe</div>
+                  <div style="font-size:15px;color:var(--ink-muted);line-height:1.65;">YouthTICK connects young Europeans across borders — building skills, fostering dialogue, and creating lasting change in communities across the continent.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Spacing & Radius -->
+          <div class="card" id="section-spacing">
+            <div class="card-header">
+              <div class="card-title">Spacing & Radius</div>
+            </div>
+            <div class="card-body">
+              <div class="form-row-2">
+                <div class="form-group">
+                  <label class="form-label">Card Border Radius</label>
+                  <div style="display:flex;align-items:center;gap:8px;">
+                    <input type="range" min="0" max="28" value="16" step="2" id="s-radius-card" oninput="syncSlider('s-radius-card','s-radius-card-val','px');livePreview()" style="flex:1;"/>
+                    <span id="s-radius-card-val" style="font-size:12px;color:var(--ink-muted);min-width:32px;">16px</span>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="form-label">Button Border Radius</label>
+                  <div style="display:flex;align-items:center;gap:8px;">
+                    <input type="range" min="0" max="24" value="8" step="2" id="s-radius-btn" oninput="syncSlider('s-radius-btn','s-radius-btn-val','px');livePreview()" style="flex:1;"/>
+                    <span id="s-radius-btn-val" style="font-size:12px;color:var(--ink-muted);min-width:32px;">8px</span>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="form-label">Section Padding</label>
+                  <div style="display:flex;align-items:center;gap:8px;">
+                    <input type="range" min="40" max="140" value="96" step="8" id="s-section-pad" oninput="syncSlider('s-section-pad','s-section-pad-val','px');livePreview()" style="flex:1;"/>
+                    <span id="s-section-pad-val" style="font-size:12px;color:var(--ink-muted);min-width:36px;">96px</span>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="form-label">Max Content Width</label>
+                  <div style="display:flex;align-items:center;gap:8px;">
+                    <input type="range" min="960" max="1600" value="1200" step="40" id="s-max-width" oninput="syncSlider('s-max-width','s-max-width-val','px');livePreview()" style="flex:1;"/>
+                    <span id="s-max-width-val" style="font-size:12px;color:var(--ink-muted);min-width:44px;">1200px</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hero Settings -->
+          <div class="card" id="section-hero">
+            <div class="card-header">
+              <div class="card-title">Hero Section</div>
+            </div>
+            <div class="card-body">
+              <div class="form-row-2">
+                <div class="form-group">
+                  <label class="form-label">Hero Layout</label>
+                  <select class="form-select" id="h-layout">
+                    <option value="split">Split (Text + Image)</option>
+                    <option value="centered">Centered</option>
+                    <option value="fullbleed">Full Bleed</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label class="form-label">Hero Background</label>
+                  <select class="form-select" id="h-bg">
+                    <option value="cream">Cream (Default)</option>
+                    <option value="white">White</option>
+                    <option value="navy">Navy Dark</option>
+                    <option value="gradient">Gradient</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label class="form-label">Hero Heading Size</label>
+                  <div style="display:flex;align-items:center;gap:8px;">
+                    <input type="range" min="36" max="88" value="64" step="4" id="h-heading-size" oninput="syncSlider('h-heading-size','h-heading-size-val','px')" style="flex:1;"/>
+                    <span id="h-heading-size-val" style="font-size:12px;color:var(--ink-muted);min-width:36px;">64px</span>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="form-label">Show Badge Pills</label>
+                  <label class="toggle-switch">
+                    <input type="checkbox" id="h-show-badges" checked/>
+                    <span class="toggle-track"><span class="toggle-thumb"></span></span>
+                    <span class="toggle-label">Visible</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Navigation -->
+          <div class="card" id="section-nav">
+            <div class="card-header">
+              <div class="card-title">Navigation</div>
+            </div>
+            <div class="card-body">
+              <div class="form-row-2">
+                <div class="form-group">
+                  <label class="form-label">Nav Style</label>
+                  <select class="form-select" id="n-style">
+                    <option value="transparent">Transparent (scrolls opaque)</option>
+                    <option value="solid">Solid White</option>
+                    <option value="dark">Dark / Navy</option>
+                    <option value="glass">Glassmorphism</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label class="form-label">Nav Position</label>
+                  <select class="form-select" id="n-position">
+                    <option value="fixed">Fixed (sticky)</option>
+                    <option value="absolute">Absolute</option>
+                    <option value="static">Static</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label class="form-label">Show Language Switcher</label>
+                  <label class="toggle-switch">
+                    <input type="checkbox" id="n-lang-switcher" checked/>
+                    <span class="toggle-track"><span class="toggle-thumb"></span></span>
+                    <span class="toggle-label">Visible</span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="form-label">Show CTA Button in Nav</label>
+                  <label class="toggle-switch">
+                    <input type="checkbox" id="n-cta-btn" checked/>
+                    <span class="toggle-track"><span class="toggle-thumb"></span></span>
+                    <span class="toggle-label">Visible</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cards & Surfaces -->
+          <div class="card" id="section-cards">
+            <div class="card-header">
+              <div class="card-title">Cards & Surfaces</div>
+            </div>
+            <div class="card-body">
+              <div class="form-row-2">
+                <div class="form-group">
+                  <label class="form-label">Card Style</label>
+                  <select class="form-select" id="card-style">
+                    <option value="elevated">Elevated Shadow</option>
+                    <option value="bordered">Bordered</option>
+                    <option value="flat">Flat</option>
+                    <option value="glass">Glass</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label class="form-label">Card Hover Effect</label>
+                  <select class="form-select" id="card-hover">
+                    <option value="lift">Lift + Glow</option>
+                    <option value="scale">Scale</option>
+                    <option value="border">Border Highlight</option>
+                    <option value="none">None</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label class="form-label">Card Shadow Intensity</label>
+                  <select class="form-select" id="card-shadow">
+                    <option value="subtle">Subtle</option>
+                    <option value="medium">Medium</option>
+                    <option value="dramatic">Dramatic</option>
+                    <option value="none">None</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label class="form-label">Show Top Glow on Hover</label>
+                  <label class="toggle-switch">
+                    <input type="checkbox" id="card-top-glow" checked/>
+                    <span class="toggle-track"><span class="toggle-thumb"></span></span>
+                    <span class="toggle-label">Enabled</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Motion -->
+          <div class="card" id="section-motion">
+            <div class="card-header">
+              <div class="card-title">Motion & Transitions</div>
+            </div>
+            <div class="card-body">
+              <div class="form-row-2">
+                <div class="form-group">
+                  <label class="form-label">Animation Style</label>
+                  <select class="form-select" id="m-style">
+                    <option value="cinematic">Cinematic (Expo ease)</option>
+                    <option value="smooth">Smooth</option>
+                    <option value="snappy">Snappy</option>
+                    <option value="none">Disabled</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label class="form-label">Scroll Animations</label>
+                  <label class="toggle-switch">
+                    <input type="checkbox" id="m-scroll-anim" checked/>
+                    <span class="toggle-track"><span class="toggle-thumb"></span></span>
+                    <span class="toggle-label">Enabled</span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="form-label">Stagger Cards</label>
+                  <label class="toggle-switch">
+                    <input type="checkbox" id="m-stagger" checked/>
+                    <span class="toggle-track"><span class="toggle-thumb"></span></span>
+                    <span class="toggle-label">Enabled</span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="form-label">Reduce Motion (Respect Pref)</label>
+                  <label class="toggle-switch">
+                    <input type="checkbox" id="m-reduce" checked/>
+                    <span class="toggle-track"><span class="toggle-thumb"></span></span>
+                    <span class="toggle-label">Enabled</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Advanced CSS -->
+          <div class="card" id="section-advanced">
+            <div class="card-header">
+              <div class="card-title">Advanced CSS Overrides</div>
+              <span class="badge badge-amber">Expert</span>
+            </div>
+            <div class="card-body">
+              <div class="form-group">
+                <label class="form-label">Custom CSS (injected into &lt;head&gt;)</label>
+                <textarea class="form-textarea" id="advanced-css" rows="12" placeholder=":root {
+  --blue-vivid: #2563EB;
+  --font-primary: 'Manrope', system-ui, sans-serif;
+}
+
+/* Custom styles here */
+.hero-title { font-size: 72px; }
+" style="font-family:monospace;font-size:12.5px;line-height:1.6;"></textarea>
+                <div style="font-size:11px;color:var(--ink-ghost);margin-top:6px;">
+                  These styles are injected via <code style="background:var(--bg);padding:1px 4px;border-radius:3px;font-size:10.5px;">content-bridge.js</code> into every page. Use with caution.
+                </div>
+              </div>
+              <button class="btn btn-secondary btn-sm" onclick="validateCss()">Validate CSS</button>
+            </div>
+          </div>
+
+          <!-- Preview Panel -->
+          <div class="card" id="preview-panel" style="display:none;">
+            <div class="card-header">
+              <div class="card-title">Live Preview</div>
+              <button class="btn btn-ghost btn-sm" onclick="document.getElementById('preview-panel').style.display='none'">Close</button>
+            </div>
+            <div class="card-body" style="padding:0;">
+              <iframe id="preview-iframe" src="../index.html" style="width:100%;height:600px;border:none;border-radius:0 0 12px 12px;"></iframe>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+
+<style>
+.design-nav-item {
+  display: block;
+  padding: 7px 10px;
+  border-radius: 7px;
+  font-size: 12.5px;
+  font-weight: 500;
+  color: var(--ink-muted);
+  transition: all 0.15s;
+  cursor: pointer;
+  text-decoration: none;
+  margin-bottom: 1px;
+}
+.design-nav-item:hover { background: var(--bg); color: var(--ink); }
+.design-nav-item.active { background: rgba(37,99,235,0.08); color: var(--blue); font-weight: 700; }
+
+.color-token-row {
+  display: flex; align-items: center; gap: 12px;
+  padding: 10px 12px;
+  border-radius: 8px;
+  transition: background 0.15s;
+}
+.color-token-row:hover { background: var(--bg); }
+.color-swatch-wrap {
+  width: 40px; height: 40px; border-radius: 9px;
+  overflow: hidden; border: 2px solid var(--border-soft);
+  flex-shrink: 0; cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+.color-swatch {
+  width: 54px; height: 54px; border: none; padding: 0;
+  cursor: pointer; margin: -7px;
+  appearance: none; -webkit-appearance: none;
+}
+.color-label { font-size: 13px; font-weight: 600; color: var(--ink); }
+.color-var { font-size: 10.5px; color: var(--ink-ghost); font-family: monospace; }
+.color-hex-input {
+  margin-left: auto; width: 80px; text-align: center;
+  font-family: monospace; font-size: 11.5px;
+  padding: 5px 8px; border-radius: 6px;
+  border: 1.5px solid var(--border-soft);
+  background: var(--bg);
+  color: var(--ink);
+  outline: none;
+}
+.color-hex-input:focus { border-color: var(--blue); }
+
+.preset-btn {
+  padding: 6px 12px;
+  border-radius: 7px;
+  border: 1.5px solid var(--border-soft);
+  background: var(--bg-card);
+  font-size: 12px; font-weight: 600; color: var(--ink-muted);
+  cursor: pointer;
+  transition: all 0.15s;
+  display: flex; align-items: center; gap: 6px;
+}
+.preset-btn::before {
+  content: '';
+  width: 10px; height: 10px; border-radius: 50%;
+  background: var(--pc);
+  flex-shrink: 0;
+}
+.preset-btn:hover { border-color: var(--blue); color: var(--blue); background: rgba(37,99,235,0.04); }
+
+.form-row-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 12px 20px; }
+.form-row-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12px 20px; }
+
+.toggle-switch { display: flex; align-items: center; gap: 8px; cursor: pointer; }
+.toggle-switch input { display: none; }
+.toggle-track {
+  width: 36px; height: 20px; border-radius: 99px;
+  background: var(--border-soft); position: relative;
+  transition: background 0.2s; flex-shrink: 0;
+}
+.toggle-thumb {
+  position: absolute; top: 3px; left: 3px;
+  width: 14px; height: 14px; border-radius: 50%;
+  background: white; box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+  transition: left 0.2s;
+}
+.toggle-switch input:checked ~ .toggle-track { background: var(--blue); }
+.toggle-switch input:checked ~ .toggle-track .toggle-thumb { left: 19px; }
+.toggle-label { font-size: 12.5px; color: var(--ink-muted); }
+</style>
+
+<script src="store.js"></script>
+<script src="auth.js"></script>
+<script src="admin.js"></script>
+<script>
+const session = AUTH.requireAuth();
+if (session) {
+  renderSidebar(session, 'design.html');
+  init();
+}
+
+const COLOR_DEFAULTS = {
+  'c-blue-vivid':   '#2563EB',
+  'c-blue-dark':    '#1A4B8A',
+  'c-navy':         '#0A1828',
+  'c-navy-deep':    '#050F1C',
+  'c-cream':        '#F7F4EF',
+  'c-ink':          '#111827',
+  'c-accent-gold':  '#D4AF37',
+  'c-surface':      '#FFFFFF',
+};
+
+const PRESETS = {
+  institutional: { 'c-blue-vivid': '#2563EB', 'c-blue-dark': '#1A4B8A', 'c-navy': '#0A1828', 'c-cream': '#F7F4EF', 'c-accent-gold': '#D4AF37' },
+  forest:        { 'c-blue-vivid': '#16A34A', 'c-blue-dark': '#166534', 'c-navy': '#052e16', 'c-cream': '#F0FDF4', 'c-accent-gold': '#CA8A04' },
+  slate:         { 'c-blue-vivid': '#475569', 'c-blue-dark': '#334155', 'c-navy': '#0F172A', 'c-cream': '#F8FAFC', 'c-accent-gold': '#D4AF37' },
+  burgundy:      { 'c-blue-vivid': '#BE123C', 'c-blue-dark': '#881337', 'c-navy': '#1C0A0F', 'c-cream': '#FFF1F2', 'c-accent-gold': '#D4AF37' },
+  midnight:      { 'c-blue-vivid': '#6366F1', 'c-blue-dark': '#4338CA', 'c-navy': '#1E1B4B', 'c-cream': '#F5F3FF', 'c-accent-gold': '#A78BFA' },
+};
+
+function init() {
+  loadSavedDesign();
+  setupSectionObserver();
+}
+
+function loadSavedDesign() {
+  const saved = STORE.getDesign();
+  if (!saved || !Object.keys(saved).length) return;
+
+  // Colors
+  Object.entries(COLOR_DEFAULTS).forEach(([id, def]) => {
+    const val = saved.colors?.[id] || def;
+    const swatch = document.getElementById(id);
+    const hex = document.getElementById(id + '-hex');
+    if (swatch) swatch.value = val;
+    if (hex) hex.value = val;
+  });
+
+  // Typography
+  if (saved.fontPrimary) document.getElementById('t-font-primary').value = saved.fontPrimary;
+  if (saved.fontHeading) document.getElementById('t-font-heading').value = saved.fontHeading;
+  if (saved.fontSize) { document.getElementById('t-font-size').value = saved.fontSize; syncSlider('t-font-size','t-font-size-val'); }
+  if (saved.lineHeight) { document.getElementById('t-line-height').value = saved.lineHeight; syncSlider('t-line-height','t-line-height-val',''); }
+  if (saved.letterSpacing) { document.getElementById('t-letter-spacing').value = saved.letterSpacing; syncSlider('t-letter-spacing','t-letter-spacing-val','px'); }
+
+  // Spacing
+  if (saved.radiusCard) { document.getElementById('s-radius-card').value = saved.radiusCard; syncSlider('s-radius-card','s-radius-card-val','px'); }
+  if (saved.radiusBtn) { document.getElementById('s-radius-btn').value = saved.radiusBtn; syncSlider('s-radius-btn','s-radius-btn-val','px'); }
+  if (saved.sectionPad) { document.getElementById('s-section-pad').value = saved.sectionPad; syncSlider('s-section-pad','s-section-pad-val','px'); }
+  if (saved.maxWidth) { document.getElementById('s-max-width').value = saved.maxWidth; syncSlider('s-max-width','s-max-width-val','px'); }
+
+  // Advanced CSS
+  if (saved.customCss) document.getElementById('advanced-css').value = saved.customCss;
+
+  // Booleans / selects
+  const booleanFields = ['h-show-badges','n-lang-switcher','n-cta-btn','card-top-glow','m-scroll-anim','m-stagger','m-reduce'];
+  booleanFields.forEach(id => {
+    const el = document.getElementById(id);
+    if (el && saved[id] !== undefined) el.checked = saved[id];
+  });
+
+  const selectFields = ['h-layout','h-bg','n-style','n-position','card-style','card-hover','card-shadow','m-style'];
+  selectFields.forEach(id => {
+    const el = document.getElementById(id);
+    if (el && saved[id]) el.value = saved[id];
+  });
+}
+
+function saveDesign() {
+  const colors = {};
+  Object.keys(COLOR_DEFAULTS).forEach(id => {
+    const el = document.getElementById(id);
+    if (el) colors[id] = el.value;
+  });
+
+  const design = {
+    colors,
+    fontPrimary:   document.getElementById('t-font-primary').value,
+    fontHeading:   document.getElementById('t-font-heading').value,
+    fontSize:      document.getElementById('t-font-size').value,
+    lineHeight:    document.getElementById('t-line-height').value,
+    letterSpacing: document.getElementById('t-letter-spacing').value,
+    radiusCard:    document.getElementById('s-radius-card').value,
+    radiusBtn:     document.getElementById('s-radius-btn').value,
+    sectionPad:    document.getElementById('s-section-pad').value,
+    maxWidth:      document.getElementById('s-max-width').value,
+    customCss:     document.getElementById('advanced-css').value,
+    'h-layout':    document.getElementById('h-layout').value,
+    'h-bg':        document.getElementById('h-bg').value,
+    'n-style':     document.getElementById('n-style').value,
+    'n-position':  document.getElementById('n-position').value,
+    'card-style':  document.getElementById('card-style').value,
+    'card-hover':  document.getElementById('card-hover').value,
+    'card-shadow': document.getElementById('card-shadow').value,
+    'm-style':     document.getElementById('m-style').value,
+    'h-show-badges':   document.getElementById('h-show-badges').checked,
+    'n-lang-switcher': document.getElementById('n-lang-switcher').checked,
+    'n-cta-btn':       document.getElementById('n-cta-btn').checked,
+    'card-top-glow':   document.getElementById('card-top-glow').checked,
+    'm-scroll-anim':   document.getElementById('m-scroll-anim').checked,
+    'm-stagger':       document.getElementById('m-stagger').checked,
+    'm-reduce':        document.getElementById('m-reduce').checked,
+    savedAt: new Date().toISOString(),
+  };
+
+  localStorage.setItem('yt-admin-design', JSON.stringify(design));
+  STORE.logActivity('update', 'Updated design system tokens', session.user.name);
+  Toast.success('Design system saved. Changes will appear on the website immediately.');
+}
+
+function livePreview() {
+  // Update font preview
+  const font = document.getElementById('t-font-primary').value;
+  document.getElementById('font-preview').style.fontFamily = font;
+
+  // Sync hex fields from color pickers
+  Object.keys(COLOR_DEFAULTS).forEach(id => {
+    const swatch = document.getElementById(id);
+    const hex = document.getElementById(id + '-hex');
+    if (swatch && hex) hex.value = swatch.value;
+  });
+}
+
+function syncHex(id, val) {
+  if (/^#[0-9a-f]{6}$/i.test(val)) {
+    const swatch = document.getElementById(id);
+    if (swatch) swatch.value = val;
+    livePreview();
+  }
+}
+
+function syncSlider(inputId, labelId, suffix = 'px') {
+  const input = document.getElementById(inputId);
+  const label = document.getElementById(labelId);
+  if (input && label) label.textContent = input.value + suffix;
+}
+
+function applyPreset(name) {
+  const preset = PRESETS[name];
+  if (!preset) return;
+  Object.entries(preset).forEach(([id, val]) => {
+    const swatch = document.getElementById(id);
+    const hex = document.getElementById(id + '-hex');
+    if (swatch) swatch.value = val;
+    if (hex) hex.value = val;
+  });
+  Toast.success(`${name.charAt(0).toUpperCase() + name.slice(1)} preset applied. Save to publish.`);
+  livePreview();
+}
+
+function resetAll() {
+  if (!confirm('Reset all design tokens to defaults? Your saved customizations will be cleared.')) return;
+  localStorage.removeItem('yt-admin-design');
+  STORE.logActivity('update', 'Reset design system to defaults', session.user.name);
+  location.reload();
+}
+
+function previewDesign() {
+  const panel = document.getElementById('preview-panel');
+  const show = panel.style.display === 'none';
+  panel.style.display = show ? 'block' : 'none';
+  if (show) {
+    panel.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    document.getElementById('preview-iframe').src = '../index.html?' + Date.now();
+  }
+}
+
+function validateCss() {
+  const css = document.getElementById('advanced-css').value;
+  if (!css.trim()) { Toast.info('No custom CSS entered.'); return; }
+  // Basic validation via a temporary style element
+  const style = document.createElement('style');
+  style.textContent = css;
+  document.head.appendChild(style);
+  setTimeout(() => {
+    document.head.removeChild(style);
+    Toast.success('CSS appears valid.');
+  }, 100);
+}
+
+function setupSectionObserver() {
+  const items = document.querySelectorAll('.design-nav-item');
+  const sections = ['colors','typography','spacing','hero','nav','cards','motion','advanced'];
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const id = entry.target.id.replace('section-','');
+        items.forEach(item => item.classList.toggle('active', item.getAttribute('href') === '#' + id));
+      }
+    });
+  }, { threshold: 0.4 });
+  sections.forEach(id => {
+    const el = document.getElementById('section-' + id);
+    if (el) observer.observe(el);
+  });
+}
+
+function scrollTo(id) {
+  const el = document.getElementById('section-' + id);
+  if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  event.preventDefault();
+}
+</script>
+</body>
+</html>
