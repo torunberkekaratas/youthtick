@@ -222,6 +222,26 @@
     }
     .form-section { padding:80px 0; }
     .form-container { max-width:680px; margin:0 auto; }
+    /* ── Role Banner (after Apply for this role) ── */
+    .form-role-banner { margin-bottom:28px; }
+    .frb-inner { display:flex; align-items:center; gap:14px; padding:14px 18px; background:linear-gradient(135deg,var(--green-soft) 0%,rgba(220,252,231,0.4) 100%); border:1.5px solid rgba(22,163,74,0.25); border-radius:var(--radius-md); }
+    .frb-icon { font-size:1.6rem; flex-shrink:0; }
+    .frb-info { flex:1; min-width:0; }
+    .frb-tag { font-size:0.62rem; font-weight:800; text-transform:uppercase; letter-spacing:0.9px; color:var(--green-dark); margin-bottom:2px; }
+    .frb-name { font-size:0.92rem; font-weight:700; color:var(--green-deep); white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+    .frb-clear { width:28px; height:28px; border:none; background:rgba(22,163,74,0.12); border-radius:8px; cursor:pointer; font-size:0.75rem; color:var(--green-dark); display:flex; align-items:center; justify-content:center; flex-shrink:0; transition:background .2s; }
+    .frb-clear:hover { background:rgba(22,163,74,0.22); }
+    /* ── General Volunteer Choice ── */
+    .form-general-choice { margin-bottom:28px; }
+    .fgc-btn { display:flex; align-items:center; gap:16px; width:100%; padding:18px 20px; background:white; border:2px solid var(--border-soft); border-radius:var(--radius-md); cursor:pointer; text-align:left; transition:border-color .2s, background .2s; }
+    .fgc-btn:hover { border-color:var(--blue-vivid); background:var(--blue-soft); }
+    .fgc-icon { font-size:1.8rem; flex-shrink:0; }
+    .fgc-text { flex:1; display:flex; flex-direction:column; gap:3px; }
+    .fgc-text strong { font-size:0.92rem; font-weight:700; color:var(--ink); }
+    .fgc-text span { font-size:0.82rem; color:var(--ink-muted); line-height:1.5; }
+    .fgc-arrow { font-size:1.1rem; color:var(--blue-vivid); font-weight:700; flex-shrink:0; }
+    .fgc-hint { margin-top:10px; font-size:0.78rem; color:var(--ink-ghost); text-align:center; }
+    .fgc-hint a { color:var(--blue); text-decoration:underline; }
     .steps-bar { display:flex; gap:0; margin-bottom:48px; }
     .step { flex:1; display:flex; flex-direction:column; align-items:center; gap:8px; position:relative; }
     .step::after { content:''; position:absolute; top:16px; left:50%; width:100%; height:2px; background:var(--border); z-index:0; }
@@ -967,6 +987,51 @@ function applyForRole() {
 }
 
 // ── Populate the smart role selector ──────────────────
+function _showRoleBanner(icon, name) {
+  document.getElementById('frb-icon').textContent = icon;
+  document.getElementById('frb-name').textContent = name;
+  document.getElementById('form-role-banner').style.display = 'block';
+  document.getElementById('form-general-choice').style.display = 'none';
+}
+
+function clearApplyRole() {
+  document.getElementById('form-role-banner').style.display = 'none';
+  document.getElementById('form-general-choice').style.display = 'block';
+  // Reset step 2 selector back to classic dropdown
+  document.getElementById('primary-role-display').style.display = 'none';
+  document.getElementById('role-select-fallback').style.display = 'block';
+  const fallbackSel = document.getElementById('vol-role');
+  if (fallbackSel) fallbackSel.setAttribute('data-required', 'true');
+  document.getElementById('vol-primary-role').value = '';
+  _additionalRoleIds.clear();
+  _applyingRoleId = null;
+}
+
+function applyGeneral() {
+  const lang = document.documentElement.lang || 'en';
+  const icon = '🌱';
+  const name = lang==='tr' ? 'Genel Gönüllü — Yoğun görev almak istemiyorum' :
+                lang==='de' ? 'Allgemeiner Freiwilliger' :
+                'General Volunteer — No heavy role';
+  const label = lang==='tr' ? 'Genel Başvuru' : lang==='de' ? 'Allgemeine Bewerbung' : 'General Application';
+  _showRoleBanner(icon, name);
+  // Fill smart selector
+  document.getElementById('primary-role-display').style.display = 'block';
+  document.getElementById('role-select-fallback').style.display = 'none';
+  document.getElementById('form-primary-icon').textContent = icon;
+  document.getElementById('form-primary-name').textContent = lang==='tr' ? 'Genel Gönüllü' : 'General Volunteer';
+  document.getElementById('form-primary-label').textContent = label;
+  document.getElementById('vol-primary-role').value = lang==='tr' ? 'Genel Gönüllü' : 'General Volunteer';
+  document.getElementById('vol-additional-roles').value = '';
+  const fallbackSel = document.getElementById('vol-role');
+  if (fallbackSel) fallbackSel.setAttribute('data-required', 'false');
+  _additionalRoleIds.clear();
+  const addMoreLabel = document.getElementById('add-more-label');
+  if (addMoreLabel) addMoreLabel.textContent = lang==='tr' ? '+ Belirli bir role de başvur?' : '+ Also apply for a specific role?';
+  _buildAdditionalRolesPanel(0, obj => obj[lang] || obj['en']);
+  _updateRolesSummary(lang==='tr' ? 'Genel Gönüllü' : 'General Volunteer', obj => obj[lang] || obj['en']);
+}
+
 function _selectPrimaryRole(id) {
   const lang = document.documentElement.lang || 'en';
   const l = obj => obj[lang] || obj['en'];
@@ -974,6 +1039,9 @@ function _selectPrimaryRole(id) {
   if (!r) return;
 
   _additionalRoleIds.clear();
+
+  // Update top banner
+  _showRoleBanner(r.icon, l(r.title));
 
   // Show smart selector, hide classic select
   document.getElementById('primary-role-display').style.display = 'block';
@@ -1083,7 +1151,32 @@ document.addEventListener('keydown', e => { if(e.key === 'Escape') closeRoleModa
   <div class="container">
     <div class="form-container">
       <div class="section-label" data-anim><span class="section-label-line"></span><span class="section-label-text" data-i18n="vol.form.title">Apply Now</span></div>
-      <h2 class="display-md" data-anim style="margin-top:16px;margin-bottom:48px;" data-i18n="vol.form.title">Volunteer application.</h2>
+      <h2 class="display-md" data-anim style="margin-top:16px;margin-bottom:32px;" data-i18n="vol.form.title">Volunteer application.</h2>
+
+      <!-- ── Role context: shown after clicking "Apply for this role" ── -->
+      <div id="form-role-banner" class="form-role-banner" style="display:none;">
+        <div class="frb-inner">
+          <span class="frb-icon" id="frb-icon">📋</span>
+          <div class="frb-info">
+            <div class="frb-tag" data-i18n="vol.frb.label">Başvurulan Rol</div>
+            <div class="frb-name" id="frb-name"></div>
+          </div>
+          <button type="button" class="frb-clear" onclick="clearApplyRole()" title="Rolü kaldır" aria-label="Rolü kaldır">✕</button>
+        </div>
+      </div>
+
+      <!-- ── General volunteer: shown on direct form access ── -->
+      <div id="form-general-choice" class="form-general-choice">
+        <button type="button" class="fgc-btn" id="fgc-btn" onclick="applyGeneral()">
+          <span class="fgc-icon">🌱</span>
+          <div class="fgc-text">
+            <strong data-i18n="vol.general.title">Genel gönüllü olarak başvur</strong>
+            <span data-i18n="vol.general.sub">Yoğun bir rol almadan YouthTICK etkinliklerine ve projelerine katıl</span>
+          </div>
+          <span class="fgc-arrow">→</span>
+        </button>
+        <p class="fgc-hint" data-i18n="vol.general.hint">ya da yukarıdan belirli bir role tıklayıp oradan başvur</p>
+      </div>
 
       <div class="steps-bar" id="steps-bar">
         <div class="step active" id="step-ind-1"><div class="step-dot">1</div><div class="step-label" data-i18n="vol.step.personal">Personal</div></div>
