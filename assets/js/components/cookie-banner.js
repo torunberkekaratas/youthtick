@@ -1,3 +1,5 @@
+import { applyAnalyticsIntegrations } from '../core/content-bridge.js';
+
 export function initCookieBanner() {
   const KEY = 'ytck_consent';
   if (localStorage.getItem(KEY)) return;
@@ -26,6 +28,8 @@ export function initCookieBanner() {
   function dismiss(value) {
     localStorage.setItem(KEY, value);
     banner.classList.remove('visible');
+    // If user just accepted all, activate analytics immediately (no page reload needed)
+    if (value === 'all') applyAnalyticsIntegrations();
     setTimeout(function () { banner.remove(); }, 400);
   }
 

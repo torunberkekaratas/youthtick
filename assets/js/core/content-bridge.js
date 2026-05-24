@@ -104,7 +104,14 @@ function applyDesignOverrides() {
 // ─────────────────────────────────────────
 // 3. ANALYTICS INTEGRATIONS
 // ─────────────────────────────────────────
-function applyAnalyticsIntegrations() {
+// Only loads analytics scripts when the user has explicitly accepted all cookies
+// (GDPR: no analytics without consent).
+let _analyticsLoaded = false;
+
+export function applyAnalyticsIntegrations() {
+  if (_analyticsLoaded) return;                        // run only once
+  if (localStorage.getItem('ytck_consent') !== 'all') return; // consent required
+
   try {
     const raw = localStorage.getItem(KEYS.integrations);
     if (!raw) return;
@@ -120,6 +127,7 @@ function applyAnalyticsIntegrations() {
         const s2 = document.createElement('script');
         s2.textContent = `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','${gId}');`;
         document.head.appendChild(s2);
+        _analyticsLoaded = true;
       }
     }
 
@@ -130,6 +138,7 @@ function applyAnalyticsIntegrations() {
       s.dataset.domain = domain;
       s.src = 'https://plausible.io/js/plausible.js';
       document.head.appendChild(s);
+      _analyticsLoaded = true;
     }
 
     if (integrations.fathom?.enabled && integrations.fathom?.id) {
@@ -140,6 +149,7 @@ function applyAnalyticsIntegrations() {
         s.dataset.site = fId;
         s.defer = true;
         document.head.appendChild(s);
+        _analyticsLoaded = true;
       }
     }
   } catch (e) {}
@@ -220,7 +230,7 @@ function exposeMediaData() {
 
 export function initContentBridge() {
   applyDesignOverrides();
-  applyAnalyticsIntegrations();
+  applyAnalyticsIntegrations(); // runs only if ytck_consent === 'all'
   exposeBlogData();
   exposeMediaData();
   renderPublicBlogPosts();

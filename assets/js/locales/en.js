@@ -919,6 +919,8 @@ export default {
     "blog.search.placeholder": "Search articles…",
     "blog.search.empty": "No articles match your search. Try a different keyword or category.",
 
+    "footer.cookies": "Cookie Preferences",
+
     "e404.title": "This page doesn't exist.",
     "e404.desc": "The page you are looking for may have been moved, renamed or removed. Let's get you back on track.",
     "e404.home": "Go to Homepage",

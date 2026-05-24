@@ -916,6 +916,8 @@ export default {
     "blog.search.placeholder": "Artikel suchen…",
     "blog.search.empty": "Keine Artikel gefunden. Versuche ein anderes Stichwort oder eine andere Kategorie.",
 
+    "footer.cookies": "Cookie-Einstellungen",
+
     "e404.title": "Diese Seite existiert nicht.",
     "e404.desc": "Die gesuchte Seite wurde möglicherweise verschoben, umbenannt oder entfernt. Wir helfen dir zurück.",
     "e404.home": "Zur Startseite",

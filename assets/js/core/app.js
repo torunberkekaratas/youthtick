@@ -15,6 +15,12 @@ window.setLanguage = setLanguage;
 window.renderNav   = () => {};  // no-op (already rendered by module)
 window.renderFooter = () => {}; // no-op (already rendered by module)
 
+// Cookie consent reset — called from footer "Cookie Preferences" link
+window.resetCookieConsent = function() {
+  localStorage.removeItem('ytck_consent');
+  location.reload(); // banner reappears on reload
+};
+
 function initLucide() {
   if (window.lucide) {
     window.lucide.createIcons();

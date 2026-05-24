@@ -916,6 +916,8 @@ export default {
     "blog.search.placeholder": "Makale ara…",
     "blog.search.empty": "Aramanızla eşleşen makale bulunamadı. Farklı bir kelime veya kategori deneyin.",
 
+    "footer.cookies": "Çerez Tercihleri",
+
     "e404.title": "Bu sayfa mevcut değil.",
     "e404.desc": "Aradığınız sayfa taşınmış, yeniden adlandırılmış veya kaldırılmış olabilir. Sizi doğru yere yönlendirelim.",
     "e404.home": "Ana Sayfaya Git",

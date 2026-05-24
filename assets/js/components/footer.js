@@ -54,6 +54,7 @@ export function renderFooter() {
             <li><a href="partnership.html" data-i18n="nav.partnership">Partnerships</a></li>
             <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
             <li><a href="privacy.html" data-i18n="footer.privacy">Privacy Policy</a></li>
+            <li><a href="#" onclick="resetCookieConsent();return false;" data-i18n="footer.cookies">Cookie Preferences</a></li>
           </ul>
         </div>
 
