@@ -1,6 +1,8 @@
 export function renderNav() {
-  const currentPath = window.location.pathname.split('/').pop() || 'index.html';
-  const activePage = currentPath === '' ? 'index.html' : currentPath;
+  // Strip /tr/ or /de/ prefix before taking the filename for active-state detection
+  const strippedPath = window.location.pathname.replace(/^\/(tr|de)(\/|$)/, '/');
+  const currentPath  = strippedPath.split('/').pop() || 'index.html';
+  const activePage   = currentPath === '' ? 'index.html' : currentPath;
 
   const links = [
     { href: 'about.html', key: 'nav.about' },

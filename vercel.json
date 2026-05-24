@@ -11,8 +11,13 @@
       ]
     }
   ],
-  "redirects": [],
+  "redirects": [
+    { "source": "/tr", "destination": "/tr/index.html", "permanent": false },
+    { "source": "/de", "destination": "/de/index.html", "permanent": false }
+  ],
   "rewrites": [
-    { "source": "/404", "destination": "/404.html" }
+    { "source": "/tr/:path*", "destination": "/:path*" },
+    { "source": "/de/:path*", "destination": "/:path*" },
+    { "source": "/404",       "destination": "/404.html" }
   ]
 }
