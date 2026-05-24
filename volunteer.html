@@ -35,7 +35,7 @@
     /* Role Modal */
     .role-modal-overlay { position:fixed; inset:0; background:rgba(11,26,44,0.72); z-index:9000; display:flex; align-items:center; justify-content:center; padding:20px; opacity:0; pointer-events:none; transition:opacity .3s ease; backdrop-filter:blur(4px); }
     .role-modal-overlay.open { opacity:1; pointer-events:auto; }
-    .role-modal-box { background:white; border-radius:var(--radius-xl); max-width:880px; width:100%; max-height:88vh; overflow:hidden; position:relative; transform:translateY(28px); transition:transform .35s cubic-bezier(0.16,1,0.3,1); display:flex; flex-direction:column; }
+    .role-modal-box { background:white; border-radius:var(--radius-xl); max-width:880px; width:100%; max-height:88vh; overflow:hidden; position:relative; transform:translateY(28px); transition:transform .35s cubic-bezier(0.16,1,0.3,1); display:grid; grid-template-rows:auto 1fr auto; }
     .role-modal-overlay.open .role-modal-box { transform:translateY(0); }
     .role-modal-head { padding:32px 36px 0; display:flex; justify-content:space-between; align-items:center; gap:16px; }
     /* Icon bubble */
@@ -43,7 +43,7 @@
     .role-modal-icon { font-size:1.9rem; line-height:1; }
     .role-modal-close-btn { width:36px; height:36px; border:none; border-radius:10px; background:var(--bg-soft); cursor:pointer; font-size:1rem; color:var(--ink-ghost); display:flex; align-items:center; justify-content:center; flex-shrink:0; transition:background .2s, color .2s; }
     .role-modal-close-btn:hover { background:var(--border-soft); color:var(--ink); }
-    .role-modal-body { padding:18px 36px 28px; flex:1; overflow-y:auto; scrollbar-width:thin; }
+    .role-modal-body { padding:18px 36px 28px; overflow-y:auto; scrollbar-width:thin; min-height:0; }
     .role-modal-title { font-family:var(--font-display); font-size:1.5rem; letter-spacing:-0.018em; font-weight:700; margin:14px 0 8px; color:var(--ink); }
     .role-modal-badge { display:inline-flex; align-items:center; gap:6px; background:transparent; border:1.5px solid var(--border-soft); color:var(--ink-muted); font-size:0.78rem; font-weight:600; padding:5px 13px; border-radius:var(--radius-full); margin-bottom:22px; }
     /* Sections */
@@ -128,6 +128,7 @@
         transform: translateY(100%);
         transition: transform .42s cubic-bezier(0.16,1,0.3,1);
         box-shadow: 0 -10px 48px rgba(11,26,44,0.20);
+        grid-template-rows: auto auto 1fr auto;
       }
       .role-modal-footer {
         border-radius: 0;
