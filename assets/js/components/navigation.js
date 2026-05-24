@@ -1,4 +1,13 @@
 export function renderNav() {
+  // Inject GSC verification meta tag (HTML-file method already deployed;
+  // meta tag is a belt-and-suspenders fallback)
+  if (!document.querySelector('meta[name="google-site-verification"]')) {
+    const gsv = document.createElement('meta');
+    gsv.name    = 'google-site-verification';
+    gsv.content = '4b845199cb82da28';
+    document.head.appendChild(gsv);
+  }
+
   // Strip /tr/ or /de/ prefix before taking the filename for active-state detection
   const strippedPath = window.location.pathname.replace(/^\/(tr|de)(\/|$)/, '/');
   const currentPath  = strippedPath.split('/').pop() || 'index.html';

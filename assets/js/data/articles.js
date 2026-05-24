@@ -2650,5 +2650,245 @@ const ARTICLES = {
       <h2>Ein Jugend-PB in Ihrem Kontext starten</h2>
       <p>Für Jugendorganisationen, die für Jugend-PB in ihrer Kommune eintreten, ist der effektivste Ansatz, mit einem kleinen, erfolgreichen Pilotprojekt zu beginnen. Finden Sie einen sympathischen lokalen Stadtrat, identifizieren Sie ein bescheidenes Budget (sogar 5.000–10.000 € kann einen bedeutungsvollen ersten Prozess ermöglichen), gestalten Sie einen einfachen, zugänglichen Prozess und setzen Sie ihn rigoros um.</p>
     `
+  },
+  '47': {
+    category: 'Erasmus+', catClass: 'tag-green',
+    title: 'How to Apply for Erasmus+: Step-by-Step Guide 2026',
+    title_tr: 'Erasmus+ Başvurusu Nasıl Yapılır: 2026 Adım Adım Rehber',
+    title_de: 'Wie man sich für Erasmus+ bewirbt: Schritt-für-Schritt-Leitfaden 2026',
+    author: 'Elif Yıldız', authorRole: 'Programme Lead', authorImg: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?w=80&q=80&auto=format&fit=crop&crop=face',
+    date: 'May 2026', readTime: '9 min',
+    img: 'https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=1200&q=85&auto=format&fit=crop',
+    excerpt: 'Erasmus+ başvuru sürecinin tüm aşamalarını adım adım açıklıyoruz — hangi program türünü seçeceğinizden başvuruyu tamamlamaya kadar.',
+    status: 'published', publishedAt: '2026-05-20',
+    content: `
+      <p>Applying for Erasmus+ can feel overwhelming the first time. Multiple programme types, national agency websites, project forms — it is a lot. But once you understand the structure, the process becomes much more manageable. This guide walks you through every step, from choosing the right programme to submitting your application.</p>
+      <h2>Step 1: Identify Your Programme Type</h2>
+      <p>Erasmus+ is not a single programme — it is a family of actions. For young people and youth organisations, the most relevant are:</p>
+      <ul>
+        <li><strong>KA1 — Youth Mobility:</strong> Youth exchanges (groups of young people), volunteering (European Solidarity Corps), and training courses for youth workers.</li>
+        <li><strong>KA2 — Cooperation Projects:</strong> Larger-scale projects that produce tangible outputs like toolkits, platforms or research.</li>
+        <li><strong>KA3 — Support for Policy Reform:</strong> Dialogue between young people and decision-makers.</li>
+      </ul>
+      <p>For most first-time applicants, KA1 is the right starting point — specifically, a youth exchange or a training course.</p>
+      <h2>Step 2: Find a Partner Organisation</h2>
+      <p>Erasmus+ KA1 youth exchanges require a minimum of two organisations from two different programme countries. Finding the right partner is often the hardest part. Use the SALTO Youth partner-finding tools, post in Erasmus+ Facebook groups, or reach out to national agencies directly — they sometimes maintain lists of organisations looking for partners.</p>
+      <blockquote>The quality of your project depends more on the quality of your partnership than on the quality of your writing. Choose partners you can trust and work with honestly.</blockquote>
+      <h2>Step 3: Design Your Project</h2>
+      <p>Before touching the application form, design the project itself. What is the theme? Why is it relevant to your participants? What will they learn and how? What non-formal methods will you use? What will happen after the exchange — how will learning be disseminated? Answering these questions thoroughly will make the application almost write itself.</p>
+      <h2>Step 4: Register on the Funding &amp; Tenders Portal</h2>
+      <p>All Erasmus+ applications are submitted through the European Commission's Funding &amp; Tenders Portal. Both the lead applicant organisation and all partner organisations must be registered and have a valid PIC (Participant Identification Code). Register early — the process can take a few days.</p>
+      <h2>Step 5: Complete the Application Form</h2>
+      <p>Application forms are available in the EU Login system. Key sections include: organisational profile, project description, objectives and methodology, participants profile, budget breakdown, and dissemination plan. The budget section is formula-based — most costs are covered by unit contributions defined by the European Commission, so there is less room for error than it might seem.</p>
+      <h2>Step 6: Submit Before the Deadline</h2>
+      <p>Erasmus+ has fixed annual deadlines — typically in February and April for youth actions. Missing the deadline by even one second means waiting six months for the next round. Set calendar reminders, submit a draft version the day before, and do the final submission on a stable internet connection.</p>
+      <h2>After Submission</h2>
+      <p>Evaluation takes approximately three to four months. If selected, you will receive a grant agreement that must be signed before any activity can start. If rejected, you will receive an evaluation report — use it. Most successful projects were not funded on their first application.</p>
+    `,
+    content_tr: `
+      <p>Erasmus+ başvurusu ilk kez yapıldığında bunaltıcı hissedebilir. Birden fazla program türü, ulusal ajans web siteleri, proje formları — gerçekten çok şey var. Ancak yapıyı anladığınızda süreç çok daha yönetilebilir hale gelir. Bu rehber, doğru programı seçmekten başvuruyu tamamlamaya kadar her adımı anlatıyor.</p>
+      <h2>1. Adım: Program Türünüzü Belirleyin</h2>
+      <p>Erasmus+ tek bir program değil — bir eylem ailesidir. Gençler ve gençlik kuruluşları için en ilgili olanlar:</p>
+      <ul>
+        <li><strong>KA1 — Gençlik Hareketliliği:</strong> Gençlik değişimleri (genç grupları), gönüllülük (Avrupa Dayanışma Birliği) ve gençlik çalışanları için eğitim kursları.</li>
+        <li><strong>KA2 — İşbirliği Projeleri:</strong> Araç kitapları, platformlar veya araştırmalar gibi somut çıktılar üreten daha büyük ölçekli projeler.</li>
+        <li><strong>KA3 — Politika Reformu Desteği:</strong> Gençler ile karar vericiler arasındaki diyalog.</li>
+      </ul>
+      <p>İlk kez başvuran çoğu kişi için KA1 doğru başlangıç noktasıdır — özellikle bir gençlik değişimi veya eğitim kursu.</p>
+      <h2>2. Adım: Ortak Kuruluş Bulun</h2>
+      <p>Erasmus+ KA1 gençlik değişimleri, iki farklı program ülkesinden en az iki kuruluş gerektirir. Doğru ortağı bulmak genellikle en zor kısımdır. SALTO Youth ortak bulma araçlarını kullanın, Erasmus+ Facebook gruplarında paylaşım yapın veya doğrudan ulusal ajanslarla iletişime geçin — zaman zaman ortak arayan kuruluşların listelerini tutarlar.</p>
+      <blockquote>Projenizin kalitesi, yazınızın kalitesinden çok ortaklığınızın kalitesine bağlıdır. Güvenebileceğiniz ve dürüstçe çalışabileceğiniz ortaklar seçin.</blockquote>
+      <h2>3. Adım: Projenizi Tasarlayın</h2>
+      <p>Başvuru formuna dokunmadan önce projeyi tasarlayın. Tema ne? Katılımcılarınız için neden önemli? Ne öğrenecekler ve nasıl? Hangi yaygın eğitim yöntemlerini kullanacaksınız? Değişimden sonra ne olacak — öğrenme nasıl yaygınlaştırılacak? Bu soruları kapsamlı biçimde yanıtlamak başvuruyu neredeyse kendiliğinden yazdırır.</p>
+      <h2>4. Adım: Fon ve İhaleler Portalı'na Kayıt Olun</h2>
+      <p>Tüm Erasmus+ başvuruları Avrupa Komisyonu'nun Fon ve İhaleler Portalı üzerinden sunulur. Hem baş başvurucu kuruluş hem de tüm ortak kuruluşların kayıtlı olması ve geçerli bir PIC'e (Katılımcı Kimlik Kodu) sahip olması gerekir. Erken kayıt olun — süreç birkaç gün alabilir.</p>
+      <h2>5. Adım: Başvuru Formunu Doldurun</h2>
+      <p>Başvuru formları AB Girişi sisteminde mevcuttur. Temel bölümler şunlardır: kurumsal profil, proje açıklaması, hedefler ve metodoloji, katılımcı profili, bütçe dökümü ve yaygınlaştırma planı. Bütçe bölümü formül tabanlıdır — çoğu maliyet Avrupa Komisyonu tarafından tanımlanan birim katkılarla karşılanır, bu nedenle göründüğünden daha az hata payı vardır.</p>
+      <h2>6. Adım: Son Tarihten Önce Gönderin</h2>
+      <p>Erasmus+, sabit yıllık son tarihlere sahiptir — gençlik eylemleri için genellikle Şubat ve Nisan. Son tarihi bir saniye bile kaçırmak altı ay beklemeniz anlamına gelir. Takvim hatırlatıcıları ayarlayın, bir önceki gün taslak sürüm gönderin ve son başvuruyu güvenilir bir internet bağlantısıyla yapın.</p>
+      <h2>Başvurudan Sonra</h2>
+      <p>Değerlendirme yaklaşık üç ile dört ay sürer. Seçilirseniz, herhangi bir faaliyet başlamadan önce imzalanması gereken bir hibe sözleşmesi alırsınız. Reddedilirseniz, değerlendirme raporu alırsınız — bunu kullanın. Başarılı projelerin çoğu ilk başvuruda finanse edilmedi.</p>
+    `,
+    content_de: `
+      <p>Eine Erasmus+ Bewerbung kann beim ersten Mal überwältigend wirken. Mehrere Programmtypen, Websites der Nationalen Agenturen, Projektformulare — es ist wirklich viel. Aber sobald man die Struktur versteht, wird der Prozess viel überschaubarer. Dieser Leitfaden führt Sie durch jeden Schritt, von der Wahl des richtigen Programms bis zur Einreichung Ihrer Bewerbung.</p>
+      <h2>Schritt 1: Identifizieren Sie Ihren Programmtyp</h2>
+      <p>Erasmus+ ist kein einzelnes Programm — es ist eine Familie von Aktionen. Für junge Menschen und Jugendorganisationen sind die relevantesten:</p>
+      <ul>
+        <li><strong>KA1 — Jugendmobilität:</strong> Jugendaustausche (Gruppen junger Menschen), Freiwilligentätigkeit (Europäisches Solidaritätskorps) und Schulungskurse für Jugendarbeiter.</li>
+        <li><strong>KA2 — Kooperationsprojekte:</strong> Größere Projekte, die greifbare Ergebnisse wie Toolkits, Plattformen oder Forschungen produzieren.</li>
+        <li><strong>KA3 — Unterstützung der Politikreform:</strong> Dialog zwischen jungen Menschen und Entscheidungsträgern.</li>
+      </ul>
+      <p>Für die meisten Erstbewerber ist KA1 der richtige Ausgangspunkt — insbesondere ein Jugendaustausch oder ein Schulungskurs.</p>
+      <h2>Schritt 2: Finden Sie eine Partnerorganisation</h2>
+      <p>Erasmus+ KA1 Jugendaustausche erfordern mindestens zwei Organisationen aus zwei verschiedenen Programmländern. Den richtigen Partner zu finden ist oft der schwierigste Teil. Nutzen Sie die SALTO Youth Partnersuche-Tools, posten Sie in Erasmus+ Facebook-Gruppen oder wenden Sie sich direkt an die Nationalen Agenturen — sie führen manchmal Listen von Organisationen, die Partner suchen.</p>
+      <blockquote>Die Qualität Ihres Projekts hängt mehr von der Qualität Ihrer Partnerschaft ab als von der Qualität Ihres Schreibens. Wählen Sie Partner, denen Sie vertrauen und mit denen Sie ehrlich zusammenarbeiten können.</blockquote>
+      <h2>Schritt 3: Gestalten Sie Ihr Projekt</h2>
+      <p>Bevor Sie das Antragsformular berühren, gestalten Sie das Projekt selbst. Was ist das Thema? Warum ist es für Ihre Teilnehmer relevant? Was werden sie lernen und wie? Welche non-formalen Methoden werden Sie verwenden? Was passiert nach dem Austausch — wie wird das Lernen verbreitet? Diese Fragen gründlich zu beantworten, wird den Antrag fast von selbst schreiben lassen.</p>
+      <h2>Schritt 4: Registrieren Sie sich im Förder- und Ausschreibungsportal</h2>
+      <p>Alle Erasmus+ Anträge werden über das Förder- und Ausschreibungsportal der Europäischen Kommission eingereicht. Sowohl die federführende antragstellende Organisation als auch alle Partnerorganisationen müssen registriert sein und einen gültigen PIC (Participant Identification Code) haben. Registrieren Sie sich frühzeitig — der Prozess kann einige Tage dauern.</p>
+      <h2>Schritt 5: Füllen Sie das Antragsformular aus</h2>
+      <p>Antragsformulare sind im EU-Login-System verfügbar. Wichtige Abschnitte umfassen: Organisationsprofil, Projektbeschreibung, Ziele und Methodik, Teilnehmerprofil, Budgetaufstellung und Verbreitungsplan. Der Budgetabschnitt ist formelbasiert — die meisten Kosten werden durch von der Europäischen Kommission festgelegte Einheitsbeiträge gedeckt, sodass es weniger Fehlerspielraum gibt, als es scheinen mag.</p>
+      <h2>Schritt 6: Vor der Deadline einreichen</h2>
+      <p>Erasmus+ hat feste jährliche Fristen — in der Regel im Februar und April für Jugendaktionen. Die Frist auch nur um eine Sekunde zu verpassen bedeutet, sechs Monate auf die nächste Runde zu warten. Stellen Sie Kalendererinnerungen ein, reichen Sie am Vortag eine Entwurfsversion ein und führen Sie die endgültige Einreichung über eine stabile Internetverbindung durch.</p>
+      <h2>Nach der Einreichung</h2>
+      <p>Die Bewertung dauert etwa drei bis vier Monate. Wenn Sie ausgewählt werden, erhalten Sie einen Fördervertrag, der unterzeichnet werden muss, bevor Aktivitäten beginnen können. Wenn Sie abgelehnt werden, erhalten Sie einen Bewertungsbericht — nutzen Sie ihn. Die meisten erfolgreichen Projekte wurden beim ersten Antrag nicht finanziert.</p>
+    `
+  },
+  '48': {
+    category: 'Erasmus+', catClass: 'tag-green',
+    title: 'What Is a Youth Exchange? Everything You Need to Know',
+    title_tr: 'Gençlik Değişimi Nedir? Bilmeniz Gereken Her Şey',
+    title_de: 'Was ist ein Jugendaustausch? Alles was Sie wissen müssen',
+    author: 'Kerem Aydın', authorRole: 'Youth Worker', authorImg: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&q=80&auto=format&fit=crop&crop=face',
+    date: 'May 2026', readTime: '7 min',
+    img: 'https://images.unsplash.com/photo-1511632765486-a01980e01a18?w=1200&q=85&auto=format&fit=crop',
+    excerpt: 'Gençlik değişimi nedir, kimler katılabilir, masraflar nasıl karşılanır? Tüm sorularınıza net ve dürüst yanıtlar.',
+    status: 'published', publishedAt: '2026-05-18',
+    content: `
+      <p>Every year, tens of thousands of young Europeans participate in Erasmus+ youth exchanges — yet most young people outside active NGO circles have never heard of them. This guide answers the most common questions honestly, without the marketing spin.</p>
+      <h2>What Actually Is a Youth Exchange?</h2>
+      <p>A youth exchange is a short-term international programme — typically 6 to 21 days — where groups of young people from different countries come together to explore a shared theme. Past themes have included climate activism, mental health, digital rights, intercultural dialogue, and democratic participation.</p>
+      <p>It is not a holiday, though you will have fun. It is not a conference, though you will have discussions. It is experiential, non-formal education: you learn by doing, discussing, creating, and living alongside people who grew up very differently from you.</p>
+      <h2>Who Can Participate?</h2>
+      <p>Youth exchanges under Erasmus+ KA1 are open to young people aged 13 to 30. There is no requirement for prior experience, specific education level, or language skills — though the programme language is usually English. The only prerequisite is being part of a group organised by a participating NGO or youth organisation.</p>
+      <h2>How Much Does It Cost?</h2>
+      <p>Almost nothing. The Erasmus+ grant covers travel (up to a distance-based maximum), accommodation, food, and programme activities for all participants. Organisations typically ask participants to pay a small contribution — €20 to €40 — as a commitment fee. That is usually the only cost to the participant.</p>
+      <blockquote>Many young people assume Erasmus+ is only for university students. It is not. The youth exchange strand was designed specifically for young people who are not in higher education — including those who left school early, are unemployed, or come from disadvantaged backgrounds.</blockquote>
+      <h2>What Is a Typical Day Like?</h2>
+      <p>Mornings usually start with energisers — short, physical ice-breaking games that help multilingual groups wake up and connect. The main sessions follow: workshops, simulations, creative exercises, debates. Afternoons might involve field visits or outdoor activities. Evenings are cultural exchanges — each national group presents something from home.</p>
+      <p>The programme runs from early morning to late evening. It is intense. It is also, for most participants, unforgettable.</p>
+      <h2>What Will I Actually Learn?</h2>
+      <p>This depends on the project theme — but across all exchanges, certain competences consistently develop: intercultural communication, the ability to navigate unfamiliar social contexts, non-formal facilitation skills, project-thinking, and — critically — European civic identity. Many alumni describe their exchange as a turning point in how they think about their place in the world.</p>
+      <h2>How Do I Find One?</h2>
+      <p>The most reliable route is through local youth organisations and NGOs. Follow organisations active in youth work on social media — most post open calls when they have participant spots to fill. SALTO Youth Tools and the Erasmus+ Project Results Platform also list upcoming exchanges. You can also contact your national Erasmus+ agency directly and ask for a list of accredited organisations in your region.</p>
+      <h2>What About YouthTICK?</h2>
+      <p>YouthTICK is building its first Erasmus+ partnerships now. If you want to be among the first participants in a YouthTICK exchange, register your interest through our volunteer and opportunities page — we will contact you when our first open calls go live.</p>
+    `,
+    content_tr: `
+      <p>Her yıl on binlerce Avrupalı genç Erasmus+ gençlik değişimlerine katılıyor — ancak aktif STK çevrelerinin dışındaki gençlerin büyük çoğunluğu bunlardan hiç haberdar olmamış. Bu rehber en sık sorulan soruları dürüstçe yanıtlıyor, pazarlama söylemi olmadan.</p>
+      <h2>Gençlik Değişimi Tam Olarak Nedir?</h2>
+      <p>Gençlik değişimi, farklı ülkelerden genç gruplarının ortak bir temayı keşfetmek için bir araya geldiği kısa süreli uluslararası bir programdır — genellikle 6 ila 21 gün. Geçmişteki temalar arasında iklim aktivizmi, ruh sağlığı, dijital haklar, kültürlerarası diyalog ve demokratik katılım yer almıştır.</p>
+      <p>Eğlenceli olsa da tatil değildir. Tartışmalar yapılsa da konferans değildir. Deneyimsel, yaygın eğitimdir: sizden çok farklı büyümüş insanlarla yaparak, tartışarak, yaratarak ve birlikte yaşayarak öğrenirsiniz.</p>
+      <h2>Kimler Katılabilir?</h2>
+      <p>Erasmus+ KA1 kapsamındaki gençlik değişimleri, 13 ila 30 yaş arası gençlere açıktır. Önceden deneyim, belirli bir eğitim düzeyi veya dil becerisi gerekmez — ancak program dili genellikle İngilizce'dir. Tek ön koşul, katılımcı bir STK veya gençlik kuruluşu tarafından organize edilen bir grubun parçası olmaktır.</p>
+      <h2>Maliyeti Ne Kadar?</h2>
+      <p>Neredeyse hiç. Erasmus+ hibesi; seyahat (mesafeye dayalı bir maksimuma kadar), konaklama, yemek ve tüm katılımcılar için program aktivitelerini karşılar. Kuruluşlar genellikle katılımcılardan taahhüt ücreti olarak küçük bir katkı payı ister — 20 ila 40 €. Katılımcı için genellikle tek maliyet budur.</p>
+      <blockquote>Pek çok genç Erasmus+'ın yalnızca üniversite öğrencileri için olduğunu varsayar. Öyle değil. Gençlik değişimi bölümü özellikle yükseköğretimde olmayan gençler için tasarlandı — erken okul terk edenler, işsizler veya dezavantajlı geçmişlerden gelenler dahil.</blockquote>
+      <h2>Tipik Bir Gün Nasıl Geçer?</h2>
+      <p>Sabahlar genellikle enerji yükleyicilerle başlar — çok dilli grupların uyanmasına ve bağlantı kurmasına yardımcı olan kısa, fiziksel buz kırıcı oyunlar. Ardından ana oturumlar gelir: atölye çalışmaları, simülasyonlar, yaratıcı egzersizler, tartışmalar. Öğleden sonralar saha ziyaretleri veya açık hava aktivitelerini içerebilir. Akşamlar kültürel değişimlerdir — her ulusal grup evinden bir şeyler sunar.</p>
+      <p>Program sabahın erkeninden geç akşama kadar sürer. Yoğundur. Aynı zamanda çoğu katılımcı için unutulmazdır.</p>
+      <h2>Gerçekte Ne Öğreneceğim?</h2>
+      <p>Bu proje temasına bağlıdır — ancak tüm değişimlerde belirli yetkinlikler tutarlı biçimde gelişir: kültürlerarası iletişim, tanıdık olmayan sosyal bağlamlarda yol bulabilme, yaygın kolaylaştırma becerileri, proje düşüncesi ve — kritik olarak — Avrupa sivil kimliği. Pek çok mezun değişimini, dünyada kendi yerlerini düşünme biçimlerinde bir dönüm noktası olarak tanımlar.</p>
+      <h2>Nasıl Bulabilirim?</h2>
+      <p>En güvenilir yol yerel gençlik kuruluşları ve STK'lar aracılığıyladır. Sosyal medyada gençlik çalışmaları alanında aktif kuruluşları takip edin — çoğu doldurulacak katılımcı yerleri olduğunda açık çağrılar yayınlar. SALTO Youth Araçları ve Erasmus+ Proje Sonuçları Platformu da yaklaşan değişimleri listeler. Ayrıca ulusal Erasmus+ ajansınızla doğrudan iletişime geçerek bölgenizdeki akredite kuruluşların listesini isteyebilirsiniz.</p>
+      <h2>YouthTICK Hakkında Ne Bilinmeli?</h2>
+      <p>YouthTICK şu anda ilk Erasmus+ ortaklıklarını oluşturuyor. Bir YouthTICK değişiminin ilk katılımcıları arasında yer almak istiyorsanız, gönüllü ve fırsatlar sayfamız aracılığıyla ilginizi kaydedin — ilk açık çağrılarımız yayınlandığında sizinle iletişime geçeceğiz.</p>
+    `,
+    content_de: `
+      <p>Jedes Jahr nehmen Zehntausende junger Europäer an Erasmus+ Jugendaustauschen teil — doch die meisten jungen Menschen außerhalb aktiver NGO-Kreise haben noch nie davon gehört. Dieser Leitfaden beantwortet die häufigsten Fragen ehrlich, ohne Marketingsprache.</p>
+      <h2>Was ist eigentlich ein Jugendaustausch?</h2>
+      <p>Ein Jugendaustausch ist ein kurzfristiges internationales Programm — typischerweise 6 bis 21 Tage —, bei dem sich Gruppen junger Menschen aus verschiedenen Ländern treffen, um ein gemeinsames Thema zu erkunden. Vergangene Themen umfassten Klimaaktivismus, psychische Gesundheit, digitale Rechte, interkulturellen Dialog und demokratische Beteiligung.</p>
+      <p>Es ist kein Urlaub, obwohl Sie Spaß haben werden. Es ist keine Konferenz, obwohl Sie Diskussionen führen werden. Es ist erfahrungsbasierte, non-formale Bildung: Sie lernen durch Handeln, Diskutieren, Kreieren und Zusammenleben mit Menschen, die sehr anders aufgewachsen sind als Sie.</p>
+      <h2>Wer kann teilnehmen?</h2>
+      <p>Jugendaustausche unter Erasmus+ KA1 stehen jungen Menschen im Alter von 13 bis 30 Jahren offen. Es gibt keine Anforderungen an Vorerfahrungen, einen bestimmten Bildungsgrad oder Sprachkenntnisse — obwohl die Programmsprache normalerweise Englisch ist. Die einzige Voraussetzung ist, Teil einer Gruppe zu sein, die von einer teilnehmenden NGO oder Jugendorganisation organisiert wird.</p>
+      <h2>Was kostet es?</h2>
+      <p>Fast nichts. Der Erasmus+ Zuschuss deckt Reisekosten (bis zu einem entfernungsbasierten Maximum), Unterkunft, Verpflegung und Programmaktivitäten für alle Teilnehmer. Organisationen bitten Teilnehmer in der Regel, einen kleinen Beitrag zu zahlen — 20 bis 40 € — als Engagement-Gebühr. Das ist normalerweise die einzige Kosten für den Teilnehmer.</p>
+      <blockquote>Viele junge Menschen nehmen an, Erasmus+ sei nur für Universitätsstudenten. Das ist es nicht. Der Jugendaustausch-Bereich wurde speziell für junge Menschen konzipiert, die nicht im Hochschulbereich sind — einschließlich derer, die die Schule früh verlassen haben, arbeitslos sind oder aus benachteiligten Verhältnissen kommen.</blockquote>
+      <h2>Wie sieht ein typischer Tag aus?</h2>
+      <p>Morgen beginnen normalerweise mit Energizern — kurzen, körperlichen Eis-brecher-Spielen, die mehrsprachigen Gruppen helfen aufzuwachen und sich zu verbinden. Es folgen die Hauptsitzungen: Workshops, Simulationen, kreative Übungen, Debatten. Nachmittage können Exkursionen oder Outdoor-Aktivitäten beinhalten. Abende sind kulturelle Austausche — jede nationale Gruppe präsentiert etwas aus der Heimat.</p>
+      <p>Das Programm läuft von früh morgens bis spät abends. Es ist intensiv. Es ist auch für die meisten Teilnehmer unvergesslich.</p>
+      <h2>Was werde ich wirklich lernen?</h2>
+      <p>Das hängt vom Projektthema ab — aber bei allen Austauschen entwickeln sich bestimmte Kompetenzen konstant: interkulturelle Kommunikation, die Fähigkeit, sich in unbekannten sozialen Kontexten zurechtzufinden, non-formale Moderationsfähigkeiten, Projektdenken und — kritisch — europäische Staatsbürgeridentität. Viele Alumni beschreiben ihren Austausch als Wendepunkt in der Art, wie sie über ihren Platz in der Welt nachdenken.</p>
+      <h2>Wie finde ich einen?</h2>
+      <p>Der zuverlässigste Weg führt über lokale Jugendorganisationen und NGOs. Folgen Sie in sozialen Medien aktiven Organisationen in der Jugendarbeit — die meisten veröffentlichen offene Ausschreibungen, wenn sie Teilnehmerplätze zu vergeben haben. SALTO Youth Tools und die Erasmus+ Projektergebnisse-Plattform listen auch bevorstehende Austausche auf. Sie können sich auch direkt an Ihre nationale Erasmus+ Agentur wenden und um eine Liste akkreditierter Organisationen in Ihrer Region bitten.</p>
+      <h2>Was ist mit YouthTICK?</h2>
+      <p>YouthTICK baut derzeit seine ersten Erasmus+ Partnerschaften auf. Wenn Sie zu den ersten Teilnehmern eines YouthTICK-Austauschs gehören möchten, registrieren Sie Ihr Interesse über unsere Freiwilligen- und Gelegenheitsseite — wir werden Sie kontaktieren, wenn unsere ersten offenen Aufrufe live gehen.</p>
+    `
+  },
+  '49': {
+    category: 'Erasmus+', catClass: 'tag-green',
+    title: 'Erasmus+ in Turkey: What Young People Need to Know in 2026',
+    title_tr: 'Türkiye\'de Erasmus+: 2026\'da Gençlerin Bilmesi Gereken Her Şey',
+    title_de: 'Erasmus+ in der Türkei: Was junge Menschen 2026 wissen müssen',
+    author: 'Ayşe Kaya', authorRole: 'Partnerships Coordinator', authorImg: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=80&q=80&auto=format&fit=crop&crop=face',
+    date: 'May 2026', readTime: '8 min',
+    img: 'https://images.unsplash.com/photo-1529156069898-dc5da33e4378?w=1200&q=85&auto=format&fit=crop',
+    excerpt: 'Türkiye Erasmus+ program ülkesi olarak ne anlama gelir? Türk gençlerin ve kuruluşların bilmesi gereken özel koşullar ve fırsatlar.',
+    status: 'published', publishedAt: '2026-05-15',
+    content: `
+      <p>Turkey has been an Erasmus+ programme country since 2014 — meaning Turkish young people and organisations can participate in the full range of Erasmus+ actions on equal terms with EU member states. This is not widely understood, even among young people in Turkey. This article explains what that means in practice, and what opportunities exist for Turkish youth organisations in 2026.</p>
+      <h2>Turkey's Status in Erasmus+</h2>
+      <p>Programme country status means Turkish organisations can lead Erasmus+ projects — not just participate as partners. A Turkish NGO can write and submit a KA1 application to the Turkish National Agency (Türkiye Ulusal Ajansı — TUA), receive funding, and host international participants in Turkey. This is a significant distinction from third countries, which can only participate in certain actions under specific conditions.</p>
+      <h2>The Turkish National Agency</h2>
+      <p>The Turkish National Agency (TUA) is the body responsible for managing Erasmus+ funds in Turkey. Based in Ankara, it handles applications, evaluations, monitoring, and payments for all Erasmus+ actions in the country. For youth actions, TUA publishes calls for proposals two to three times per year, aligned with the European Commission's deadlines.</p>
+      <blockquote>Turkish organisations have been consistently competitive in Erasmus+ evaluation rounds. TUA reports strong absorption rates — meaning Turkish organisations successfully spend the grants they receive, which is a positive signal for future funding allocations.</blockquote>
+      <h2>Which Actions Are Open to Turkish Organisations?</h2>
+      <p>As a programme country, Turkey participates in:</p>
+      <ul>
+        <li><strong>KA1 Youth Exchanges:</strong> Turkish organisations can lead or partner. Groups of 13–30 year olds travel between countries.</li>
+        <li><strong>KA1 European Solidarity Corps (ESC):</strong> Young Turks aged 18–30 can volunteer abroad for 2–12 months; foreign volunteers can come to Turkey.</li>
+        <li><strong>KA1 Training Courses:</strong> Turkish youth workers can attend short training courses across Europe, or Turkish organisations can host them.</li>
+        <li><strong>KA2 Strategic Partnerships:</strong> Turkish NGOs can join or lead collaborative projects with partners across Europe.</li>
+      </ul>
+      <h2>Practical Considerations for Turkish Applicants</h2>
+      <p>Language: Applications to TUA are submitted in Turkish, which removes a significant barrier for smaller organisations. Partnership: Finding international partners is often the hardest step. The SALTO Resource Centre for Eastern Europe and the Caucasus (based in Warsaw) specifically supports partnerships involving Turkish organisations.</p>
+      <p>Registration: Turkish organisations must be registered with TUA and have a valid PIC on the EU Funding and Tenders Portal. This process is free but takes time — allow at least two weeks before a deadline.</p>
+      <h2>Challenges Specific to Turkey</h2>
+      <p>Despite programme country status, Turkish organisations sometimes face practical challenges: visa requirements for participants traveling to certain EU countries (though programme funding can cover visa costs), exchange rate fluctuations affecting the real value of grants, and finding Turkish young people without prior international experience who are willing to commit to a 1–3 week programme abroad. These are manageable but worth planning for.</p>
+      <h2>The Opportunity in 2026</h2>
+      <p>The 2021–2027 Erasmus+ programme budget is the largest in the programme's history — €26.2 billion across all sectors. Youth organisations in Turkey that build their capacity now — by securing accreditations, developing partnerships, and submitting their first applications — are well positioned to grow significantly over the next three years. The pipeline from first application to established programme typically takes 18–36 months.</p>
+      <h2>YouthTICK and Turkey</h2>
+      <p>YouthTICK was founded by young people with roots in Turkey and a commitment to building bridges between Turkish civil society and the wider European youth sector. We are actively developing our first Erasmus+ applications and building a partnership network. If you are a young person or youth organisation in Turkey interested in Erasmus+, we want to hear from you.</p>
+    `,
+    content_tr: `
+      <p>Türkiye, 2014'ten bu yana bir Erasmus+ program ülkesidir — bu, Türk gençlerin ve kuruluşların AB üye devletleriyle eşit koşullarda Erasmus+ eylemlerinin tamamına katılabileceği anlamına gelir. Türkiye'deki gençler arasında bile bu durum yaygın olarak bilinmiyor. Bu makale bunun pratikte ne anlama geldiğini ve 2026'da Türk gençlik kuruluşları için hangi fırsatların mevcut olduğunu açıklıyor.</p>
+      <h2>Türkiye'nin Erasmus+'daki Statüsü</h2>
+      <p>Program ülkesi statüsü, Türk kuruluşların Erasmus+ projelerine yalnızca katılımcı olarak değil, lider olarak da başvurabileceği anlamına gelir. Bir Türk STK'sı, Türkiye Ulusal Ajansı'na (TUA) KA1 başvurusu yazıp sunabilir, finansman alabilir ve Türkiye'de uluslararası katılımcılara ev sahipliği yapabilir. Bu, yalnızca belirli koşullar altında belirli eylemlere katılabilen üçüncü ülkelerden önemli bir farklılıktır.</p>
+      <h2>Türkiye Ulusal Ajansı</h2>
+      <p>Türkiye Ulusal Ajansı (TUA), Erasmus+ fonlarını Türkiye'de yönetmekten sorumlu kurumdur. Ankara'da bulunan TUA, ülkedeki tüm Erasmus+ eylemleri için başvuruları, değerlendirmeleri, izlemeyi ve ödemeleri yürütür. Gençlik eylemleri için TUA, Avrupa Komisyonu'nun son tarihleriyle uyumlu olarak yılda iki ile üç kez teklif çağrısı yayınlar.</p>
+      <blockquote>Türk kuruluşlar Erasmus+ değerlendirme turlarında tutarlı biçimde rekabetçi olmuştur. TUA güçlü emilim oranları bildiriyor — yani Türk kuruluşlar aldıkları hibeleri başarıyla harcıyor, bu da gelecekteki finansman tahsisleri için olumlu bir sinyal.</blockquote>
+      <h2>Türk Kuruluşlarına Hangi Eylemler Açık?</h2>
+      <p>Program ülkesi olarak Türkiye şu eylemlere katılıyor:</p>
+      <ul>
+        <li><strong>KA1 Gençlik Değişimleri:</strong> Türk kuruluşlar lider veya ortak olabilir. 13–30 yaş arası gruplar ülkeler arasında seyahat eder.</li>
+        <li><strong>KA1 Avrupa Dayanışma Birliği (ADB):</strong> 18–30 yaş arası Türk gençler 2–12 ay süreyle yurt dışında gönüllü olabilir; yabancı gönüllüler Türkiye'ye gelebilir.</li>
+        <li><strong>KA1 Eğitim Kursları:</strong> Türk gençlik çalışanları Avrupa genelinde kısa eğitim kurslarına katılabilir ya da Türk kuruluşlar bunlara ev sahipliği yapabilir.</li>
+        <li><strong>KA2 Stratejik Ortaklıklar:</strong> Türk STK'lar Avrupa genelindeki ortaklarla işbirliği projelerinde yer alabilir veya lider olabilir.</li>
+      </ul>
+      <h2>Türk Başvuru Sahipleri İçin Pratik Hususlar</h2>
+      <p>Dil: TUA'ya başvurular Türkçe yapılır, bu küçük kuruluşlar için önemli bir engeli ortadan kaldırır. Ortaklık: Uluslararası ortak bulmak genellikle en zor adımdır. Doğu Avrupa ve Kafkasya için SALTO Kaynak Merkezi (Varşova merkezli), özellikle Türk kuruluşları içeren ortaklıkları destekler.</p>
+      <p>Kayıt: Türk kuruluşların TUA'ya kayıtlı olması ve AB Fon ve İhaleler Portalı'nda geçerli bir PIC'e sahip olması gerekir. Bu süreç ücretsizdir ancak zaman alır — son tarihten en az iki hafta önce başlanmalıdır.</p>
+      <h2>Türkiye'ye Özgü Zorluklar</h2>
+      <p>Program ülkesi statüsüne rağmen Türk kuruluşlar zaman zaman pratik zorluklarla karşılaşır: belirli AB ülkelerine seyahat eden katılımcılar için vize gereklilikleri (program finansmanı vize masraflarını karşılayabilse de), hibe gerçek değerini etkileyen döviz kuru dalgalanmaları ve yurt dışında 1–3 haftalık bir programa katılmaya istekli, önceden uluslararası deneyimi olmayan Türk gençler bulma. Bunlar yönetilebilir ancak planlama gerektiren konulardır.</p>
+      <h2>2026'daki Fırsat</h2>
+      <p>2021–2027 Erasmus+ program bütçesi programın tarihindeki en büyük bütçedir — tüm sektörler genelinde 26,2 milyar €. Türkiye'deki gençlik kuruluşları şu anda kapasitelerini geliştirerek — akreditasyonlar alarak, ortaklıklar geliştirerek ve ilk başvurularını yaparak — önümüzdeki üç yılda önemli ölçüde büyümek için iyi bir konumdalar. İlk başvurudan köklü bir programa giden süreç tipik olarak 18–36 ay sürer.</p>
+      <h2>YouthTICK ve Türkiye</h2>
+      <p>YouthTICK, Türkiye'de kökleri olan ve Türk sivil toplumu ile daha geniş Avrupa gençlik sektörü arasında köprüler kurmaya kararlı gençler tarafından kuruldu. İlk Erasmus+ başvurularımızı aktif olarak geliştiriyor ve bir ortaklık ağı oluşturuyoruz. Erasmus+ ile ilgilenen Türkiye'deki bir genç veya gençlik kuruluşuysanız, sizden haber almak istiyoruz.</p>
+    `,
+    content_de: `
+      <p>Die Türkei ist seit 2014 ein Erasmus+ Programmland — das bedeutet, dass junge Türken und türkische Organisationen an der gesamten Palette von Erasmus+ Aktionen zu gleichen Bedingungen wie EU-Mitgliedstaaten teilnehmen können. Das ist selbst unter jungen Menschen in der Türkei nicht weithin bekannt. Dieser Artikel erklärt, was das in der Praxis bedeutet, und welche Möglichkeiten für türkische Jugendorganisationen im Jahr 2026 bestehen.</p>
+      <h2>Der Status der Türkei in Erasmus+</h2>
+      <p>Programmlandes-Status bedeutet, dass türkische Organisationen Erasmus+ Projekte leiten können — nicht nur als Partner teilnehmen. Eine türkische NGO kann einen KA1-Antrag bei der Türkischen Nationalen Agentur (TUA) einreichen, Förderung erhalten und internationale Teilnehmer in der Türkei aufnehmen. Dies ist ein wesentlicher Unterschied zu Drittländern, die nur unter bestimmten Bedingungen an bestimmten Aktionen teilnehmen können.</p>
+      <h2>Die Türkische Nationale Agentur</h2>
+      <p>Die Türkische Nationale Agentur (TUA) ist die Einrichtung, die für die Verwaltung der Erasmus+ Mittel in der Türkei zuständig ist. Die in Ankara ansässige TUA bearbeitet Anträge, Bewertungen, Monitoring und Zahlungen für alle Erasmus+ Aktionen im Land. Für Jugendaktionen veröffentlicht TUA zwei bis drei Mal pro Jahr Aufforderungen zur Einreichung von Vorschlägen, abgestimmt auf die Fristen der Europäischen Kommission.</p>
+      <blockquote>Türkische Organisationen waren in Erasmus+ Bewertungsrunden konsistent wettbewerbsfähig. TUA berichtet von starken Absorptionsraten — das bedeutet, türkische Organisationen geben die erhaltenen Zuschüsse erfolgreich aus, was ein positives Signal für zukünftige Mittelzuweisungen ist.</blockquote>
+      <h2>Welche Aktionen stehen türkischen Organisationen offen?</h2>
+      <p>Als Programmland nimmt die Türkei teil an:</p>
+      <ul>
+        <li><strong>KA1 Jugendaustausche:</strong> Türkische Organisationen können führen oder als Partner fungieren. Gruppen von 13–30-Jährigen reisen zwischen Ländern.</li>
+        <li><strong>KA1 Europäisches Solidaritätskorps (ESK):</strong> Junge Türken im Alter von 18–30 können für 2–12 Monate im Ausland freiwillig tätig sein; ausländische Freiwillige können in die Türkei kommen.</li>
+        <li><strong>KA1 Schulungskurse:</strong> Türkische Jugendarbeiter können an kurzen Schulungskursen in ganz Europa teilnehmen, oder türkische Organisationen können sie ausrichten.</li>
+        <li><strong>KA2 Strategische Partnerschaften:</strong> Türkische NGOs können an Kooperationsprojekten mit Partnern in ganz Europa teilnehmen oder sie leiten.</li>
+      </ul>
+      <h2>Praktische Überlegungen für türkische Antragsteller</h2>
+      <p>Sprache: Anträge an TUA werden auf Türkisch eingereicht, was eine erhebliche Hürde für kleinere Organisationen beseitigt. Partnerschaft: Das Finden internationaler Partner ist oft der schwierigste Schritt. Das SALTO-Ressourcenzentrum für Osteuropa und den Kaukasus (mit Sitz in Warschau) unterstützt speziell Partnerschaften mit türkischen Organisationen.</p>
+      <p>Registrierung: Türkische Organisationen müssen bei TUA registriert sein und einen gültigen PIC auf dem EU-Förder- und Ausschreibungsportal haben. Dieser Prozess ist kostenlos, dauert aber eine Weile — planen Sie mindestens zwei Wochen vor einer Frist ein.</p>
+      <h2>Herausforderungen spezifisch für die Türkei</h2>
+      <p>Trotz Programmlandes-Status stehen türkische Organisationen manchmal vor praktischen Herausforderungen: Visaanforderungen für Teilnehmer, die in bestimmte EU-Länder reisen (obwohl Programmförderung Visakosten abdecken kann), Wechselkursschwankungen, die den realen Wert der Zuschüsse beeinflussen, und das Finden türkischer junger Menschen ohne vorherige internationale Erfahrung, die bereit sind, sich für ein 1–3-wöchiges Programm im Ausland zu verpflichten. Diese sind handhabbar, erfordern aber Planung.</p>
+      <h2>Die Gelegenheit im Jahr 2026</h2>
+      <p>Das Erasmus+ Programmbudget 2021–2027 ist das größte in der Geschichte des Programms — 26,2 Milliarden € über alle Sektoren. Jugendorganisationen in der Türkei, die jetzt ihre Kapazitäten aufbauen — durch Akkreditierungen, die Entwicklung von Partnerschaften und die Einreichung ihrer ersten Anträge — sind gut positioniert, um in den nächsten drei Jahren erheblich zu wachsen. Die Pipeline vom ersten Antrag bis zum etablierten Programm dauert typischerweise 18–36 Monate.</p>
+      <h2>YouthTICK und die Türkei</h2>
+      <p>YouthTICK wurde von jungen Menschen mit Wurzeln in der Türkei gegründet, die sich dafür einsetzen, Brücken zwischen der türkischen Zivilgesellschaft und dem breiteren europäischen Jugendsektor zu bauen. Wir entwickeln aktiv unsere ersten Erasmus+ Anträge und bauen ein Partnernetzwerk auf. Wenn Sie ein junger Mensch oder eine Jugendorganisation in der Türkei sind, die an Erasmus+ interessiert ist, möchten wir von Ihnen hören.</p>
+    `
   }
 };

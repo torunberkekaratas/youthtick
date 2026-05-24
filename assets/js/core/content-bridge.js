@@ -102,6 +102,12 @@ function applyDesignOverrides() {
 }
 
 // ─────────────────────────────────────────
+// GA4 Measurement ID — replace with your real ID from analytics.google.com
+// Format: G-XXXXXXXXXX
+// ─────────────────────────────────────────
+const GA4_ID = window.YT_GA4_ID || 'G-JD1LX1KFJQ';
+
+// ─────────────────────────────────────────
 // 3. ANALYTICS INTEGRATIONS
 // ─────────────────────────────────────────
 // Only loads analytics scripts when the user has explicitly accepted all cookies
@@ -111,6 +117,19 @@ let _analyticsLoaded = false;
 export function applyAnalyticsIntegrations() {
   if (_analyticsLoaded) return;                        // run only once
   if (localStorage.getItem('ytck_consent') !== 'all') return; // consent required
+
+  // Direct GA4 via hardcoded ID or window.YT_GA4_ID
+  if (GA4_ID && /^G-[A-Z0-9]+$/.test(GA4_ID)) {
+    const s1 = document.createElement('script');
+    s1.async = true;
+    s1.src = `https://www.googletagmanager.com/gtag/js?id=${GA4_ID}`;
+    document.head.appendChild(s1);
+    const s2 = document.createElement('script');
+    s2.textContent = `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','${GA4_ID}');`;
+    document.head.appendChild(s2);
+    _analyticsLoaded = true;
+    return;
+  }
 
   try {
     const raw = localStorage.getItem(KEYS.integrations);
