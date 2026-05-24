@@ -106,7 +106,7 @@ const ARTICLES = {
     title: 'The Green Generation: How Young People Are Driving Climate Policy',
     author: 'Ayşe Kaya', authorRole: 'Programme Lead Türkiye', authorImg: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=80&q=80&auto=format&fit=crop&crop=face',
     date: 'March 2026', readTime: '5 min',
-    img: 'https://images.unsplash.com/photo-1542601906897-692f85a87df2?w=1200&q=85&auto=format&fit=crop',
+    img: 'https://images.unsplash.com/photo-1466611653911-95081537e5b7?w=1200&q=85&auto=format&fit=crop',
     content: `
       <p>Youth climate advocacy has spent years being dismissed as symbolic — emotionally powerful, politically marginal. That is changing. Young climate advocates are now sitting in formal negotiations, advising government ministries, and leading organisations that receive EU-level funding.</p>
       <h2>From Streets to Institutions</h2>
@@ -1037,7 +1037,7 @@ const ARTICLES = {
     title: 'Multilingualism as a Superpower: Language Learning in Youth Programmes',
     author: 'Luca Ferreira', authorRole: 'Community Coordinator', authorImg: 'https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?w=80&q=80&auto=format&fit=crop&crop=face',
     date: 'October 2024', readTime: '7 min',
-    img: 'https://images.unsplash.com/photo-1559523161-0fc0d8b814f4?w=1200&q=85&auto=format&fit=crop',
+    img: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=1200&q=85&auto=format&fit=crop',
     content: `
       <p>There is a paradox at the heart of international youth exchange: it is an inherently multilingual activity that often operates as if everyone speaks English. Most Erasmus+ exchanges use English as the working language — which means that the participants with the weakest English spend the whole event struggling, while the ones with the strongest English dominate discussions. This is not intercultural learning. It is linguistic inequality reproduced in a new setting.</p>
       <h2>Why Language Matters More Than We Acknowledge</h2>
