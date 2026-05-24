@@ -23,7 +23,21 @@
   <script src="assets/js/data/articles.js"></script>
         <style>
     .blog-hero { padding:calc(var(--nav-h) + 80px) 0 80px; border-bottom:1px solid var(--border-soft); }
-    .blog-categories { display:flex; gap:10px; flex-wrap:wrap; margin-top:36px; }
+    .blog-search-wrap { position:relative; margin-top:32px; max-width:420px; }
+    .blog-search-input {
+      width:100%; padding:12px 18px 12px 44px; border-radius:var(--radius-full);
+      border:1.5px solid var(--border); background:white; font-family:var(--font-body);
+      font-size:0.9rem; color:var(--ink); outline:none; transition:border-color .2s, box-shadow .2s;
+      box-sizing:border-box;
+    }
+    .blog-search-input:focus { border-color:var(--blue); box-shadow:0 0 0 3px var(--blue-soft); }
+    .blog-search-input::placeholder { color:var(--ink-ghost); }
+    .blog-search-icon { position:absolute; left:16px; top:50%; transform:translateY(-50%); color:var(--ink-ghost); pointer-events:none; }
+    .blog-search-clear { position:absolute; right:14px; top:50%; transform:translateY(-50%); background:none; border:none; cursor:pointer; color:var(--ink-ghost); font-size:1rem; padding:2px; display:none; }
+    .blog-search-clear.visible { display:block; }
+    .blog-no-results { display:none; text-align:center; padding:60px 20px; color:var(--ink-faint); font-size:0.9rem; grid-column:1/-1; }
+    .blog-no-results.visible { display:block; }
+    .blog-categories { display:flex; gap:10px; flex-wrap:wrap; margin-top:20px; }
     .cat-btn { padding:8px 18px; border-radius:var(--radius-full); font-size:0.82rem; font-weight:600; border:1.5px solid var(--border); background:white; color:var(--ink-faint); cursor:pointer; transition:all .2s; }
     .cat-btn.active,.cat-btn:hover { background:var(--ink); color:white; border-color:var(--ink); }
     .blog-featured { padding:80px 0; background:var(--bg-soft); border-bottom:1px solid var(--border-soft); }
@@ -78,6 +92,11 @@
     <div class="section-label" data-anim><span class="section-label-line"></span><span class="section-label-text" data-i18n="blog.hub">Knowledge Hub</span></div>
     <h1 class="display-lg" data-anim style="margin-top:20px;max-width:640px;" data-i18n="blog.h1">YouthTICK Blog — Erasmus+, Civic Participation &amp; Youth Innovation</h1>
     <p class="text-xl" data-anim style="max-width:540px;margin-top:20px;color:var(--ink-muted);" data-i18n="blog.hero.sub">Erasmus+ guides, youth innovation perspectives, sustainability thinking and cultural intelligence — from the people doing the work.</p>
+    <div class="blog-search-wrap" data-anim>
+      <svg class="blog-search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+      <input type="search" id="blog-search" class="blog-search-input" placeholder="Search articles…" data-i18n-placeholder="blog.search.placeholder" autocomplete="off" oninput="handleBlogSearch(this.value)"/>
+      <button class="blog-search-clear" id="blog-search-clear" onclick="clearBlogSearch()" aria-label="Clear search">✕</button>
+    </div>
     <div class="blog-categories" data-anim>
       <button class="cat-btn active" onclick="filterBlog('all', this)" id="cat-all" data-i18n="blog.cat.all">All Topics</button>
       <button class="cat-btn" onclick="filterBlog('erasmus', this)" id="cat-erasmus" data-i18n="blog.cat.erasmus">Erasmus+</button>
@@ -115,7 +134,9 @@
 
 <section class="blog-grid-section">
   <div class="container">
-    <div class="blog-grid" id="blog-grid"></div>
+    <div class="blog-grid" id="blog-grid">
+      <div class="blog-no-results" id="blog-no-results" data-i18n="blog.search.empty">No articles match your search. Try a different keyword or category.</div>
+    </div>
   </div>
 </section>
 
@@ -166,25 +187,71 @@ function handleNewsletter(e) {
 }
 </script>
 <script>
+var _activeBlogCategory = 'all';
+var _activeBlogQuery    = '';
+
+function handleBlogSearch(q) {
+  _activeBlogQuery = q.trim().toLowerCase();
+  var clearBtn = document.getElementById('blog-search-clear');
+  if (clearBtn) clearBtn.classList.toggle('visible', _activeBlogQuery.length > 0);
+  applyBlogFilters();
+}
+
+function clearBlogSearch() {
+  _activeBlogQuery = '';
+  var inp = document.getElementById('blog-search');
+  if (inp) inp.value = '';
+  var clearBtn = document.getElementById('blog-search-clear');
+  if (clearBtn) clearBtn.classList.remove('visible');
+  applyBlogFilters();
+}
+
+function applyBlogFilters() {
+  var lang = window.currentLang || 'en';
+  var q    = _activeBlogQuery;
+  var cat  = _activeBlogCategory;
+
+  // Featured section
+  var featuredSection = document.querySelector('.blog-featured');
+  var featuredItem    = document.getElementById('featured-article');
+  if (featuredSection && featuredItem) {
+    var fCat = featuredItem.getAttribute('data-category');
+    var fTitle = (document.querySelector('.featured-title') || {}).textContent || '';
+    var fExcerpt = (document.querySelector('.featured-excerpt') || {}).textContent || '';
+    var fText = (fTitle + ' ' + fExcerpt).toLowerCase();
+    var catOk = (cat === 'all' || fCat === cat);
+    var qOk   = (!q || fText.includes(q));
+    var show  = catOk && qOk;
+    featuredSection.style.display = show ? '' : 'none';
+    if (show) featuredItem.style.display = 'grid';
+  }
+
+  // Blog cards
+  var cards = document.querySelectorAll('.blog-card.blog-item');
+  var visibleCount = 0;
+  cards.forEach(function(card) {
+    var cardCat   = card.getAttribute('data-category');
+    var catOk     = (cat === 'all' || cardCat === cat);
+    var titleEl   = card.querySelector('.blog-card-title');
+    var excerptEl = card.querySelector('.blog-card-excerpt');
+    var cardText  = ((titleEl ? titleEl.textContent : '') + ' ' + (excerptEl ? excerptEl.textContent : '')).toLowerCase();
+    var qOk       = (!q || cardText.includes(q));
+    var show      = catOk && qOk;
+    card.style.display = show ? '' : 'none';
+    if (show) visibleCount++;
+  });
+
+  // No results message
+  var noRes = document.getElementById('blog-no-results');
+  var featVisible = featuredSection && featuredSection.style.display !== 'none';
+  if (noRes) noRes.classList.toggle('visible', visibleCount === 0 && !featVisible);
+}
+
 function filterBlog(category, btn) {
   document.querySelectorAll('.cat-btn').forEach(el => el.classList.remove('active'));
   btn.classList.add('active');
-
-  // Handle featured article section separately
-  const featuredSection = document.querySelector('.blog-featured');
-  const featuredItem    = document.getElementById('featured-article');
-  if (featuredSection && featuredItem) {
-    const featMatch = category === 'all' || featuredItem.getAttribute('data-category') === category;
-    featuredSection.style.display = featMatch ? '' : 'none';
-    // Restore display:grid when re-showing (JS display='' wipes the inline grid value)
-    if (featMatch) featuredItem.style.display = 'grid';
-  }
-
-  // Filter blog grid cards
-  document.querySelectorAll('.blog-card.blog-item').forEach(item => {
-    const match = category === 'all' || item.getAttribute('data-category') === category;
-    item.style.display = match ? '' : 'none';
-  });
+  _activeBlogCategory = category;
+  applyBlogFilters();
 }
 
 function renderBlogCards() {
