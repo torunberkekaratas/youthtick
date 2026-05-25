@@ -1300,7 +1300,10 @@ document.addEventListener('keydown', e => { if(e.key === 'Escape') closeRoleModa
         <div class="success-icon">✓</div>
         <h2 class="display-sm" data-i18n="vol.success.title">Application received!</h2>
         <p class="text-lg" style="color:var(--ink-muted);margin-top:12px;max-width:400px;margin-left:auto;margin-right:auto;" data-i18n="vol.success.sub">We'll review your application and get back to you within 7 working days. Welcome to the YouthTICK community.</p>
-        <a href="index.html" class="btn btn-primary btn-lg" style="margin-top:32px;display:inline-flex;" data-i18n="vol.success.back">Back to Home</a>
+        <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-top:32px;">
+          <a href="index.html" class="btn btn-primary btn-lg" style="display:inline-flex;" data-i18n="vol.success.back">Back to Home</a>
+          <a href="status.html" class="btn btn-secondary btn-lg" style="display:inline-flex;" data-i18n="vol.success.status">Check Application Status</a>
+        </div>
       </div>
     </div>
   </div>

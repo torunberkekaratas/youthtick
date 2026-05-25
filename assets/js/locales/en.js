@@ -920,6 +920,9 @@ export default {
     "blog.search.empty": "No articles match your search. Try a different keyword or category.",
 
     "footer.cookies": "Cookie Preferences",
+    "footer.status": "Application Status",
+    "footer.rss": "RSS Feed",
+    "vol.success.status": "Check Application Status",
 
     "e404.title": "This page doesn't exist.",
     "e404.desc": "The page you are looking for may have been moved, renamed or removed. Let's get you back on track.",

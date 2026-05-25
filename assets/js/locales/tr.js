@@ -917,6 +917,9 @@ export default {
     "blog.search.empty": "Aramanızla eşleşen makale bulunamadı. Farklı bir kelime veya kategori deneyin.",
 
     "footer.cookies": "Çerez Tercihleri",
+    "footer.status": "Başvuru Durumu",
+    "footer.rss": "RSS Akışı",
+    "vol.success.status": "Başvuru Durumunu Kontrol Et",
 
     "e404.title": "Bu sayfa mevcut değil.",
     "e404.desc": "Aradığınız sayfa taşınmış, yeniden adlandırılmış veya kaldırılmış olabilir. Sizi doğru yere yönlendirelim.",

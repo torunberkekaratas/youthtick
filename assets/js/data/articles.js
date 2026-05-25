@@ -6,6 +6,7 @@ const ARTICLES = {
     title_de: 'Der vollständige Leitfaden für deinen ersten Erasmus+ Jugendaustausch 2026',
     author: 'Elif Yıldız', authorRole: 'Programme Lead', authorImg: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?w=80&q=80&auto=format&fit=crop&crop=face',
     date: 'May 2026', readTime: '12 min',
+    publishedAt: '2026-05-15',
     img: 'https://images.unsplash.com/photo-1521737852567-6949f3f9f2b5?w=1200&q=85&auto=format&fit=crop',
     content: `
       <p>Erasmus+ youth exchanges are one of the most transformative experiences available to young people aged 13–30 in Europe — and the surrounding countries. They are free to participate in, funded by the European Union, and they create connections that last decades. So why do so few young people actually manage to do one?</p>
@@ -61,6 +62,7 @@ const ARTICLES = {
     title: 'Youth-Led Startups Are Redefining Social Impact in Europe',
     author: 'Jonas Weber', authorRole: 'Head of Projects', authorImg: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&q=80&auto=format&fit=crop&crop=face',
     date: 'April 2026', readTime: '8 min',
+    publishedAt: '2026-04-15',
     img: 'https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&q=85&auto=format&fit=crop',
     content: `
       <p>Something is shifting in European youth entrepreneurship. A new wave of founders — many of them under 25 — is building companies that treat profit and purpose not as opposites, but as partners. This is not idealism. It is strategy.</p>
@@ -106,6 +108,7 @@ const ARTICLES = {
     title: 'The Green Generation: How Young People Are Driving Climate Policy',
     author: 'Ayşe Kaya', authorRole: 'Programme Lead Türkiye', authorImg: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=80&q=80&auto=format&fit=crop&crop=face',
     date: 'March 2026', readTime: '5 min',
+    publishedAt: '2026-03-15',
     img: 'https://images.unsplash.com/photo-1466611653911-95081537e5b7?w=1200&q=85&auto=format&fit=crop',
     content: `
       <p>Youth climate advocacy has spent years being dismissed as symbolic — emotionally powerful, politically marginal. That is changing. Young climate advocates are now sitting in formal negotiations, advising government ministries, and leading organisations that receive EU-level funding.</p>
@@ -151,6 +154,7 @@ const ARTICLES = {
     title: 'What Intercultural Dialogue Actually Looks Like (Hint: It\'s Messy)',
     author: 'Nikos Papadopoulos', authorRole: 'Youth Worker & Trainer', authorImg: 'https://images.unsplash.com/photo-1552058544-f2b08422138a?w=80&q=80&auto=format&fit=crop&crop=face',
     date: 'February 2026', readTime: '7 min',
+    publishedAt: '2026-02-15',
     img: 'https://images.unsplash.com/photo-1511632765486-a01980e01a18?w=1200&q=85&auto=format&fit=crop',
     content: `
       <p>I have been a youth trainer for eight years. I have facilitated exchanges in twelve countries, with participants from over forty. And the thing I tell every group before we start is this: intercultural dialogue is not a feel-good exercise. It is a practice. And practices are uncomfortable.</p>
@@ -199,6 +203,7 @@ const ARTICLES = {
     title: 'AI Literacy as a Youth Right: Why We Need Digital Equity Now',
     author: 'Sofia Nowak', authorRole: 'Communications Lead', authorImg: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=80&q=80&auto=format&fit=crop&crop=face',
     date: 'January 2026', readTime: '9 min',
+    publishedAt: '2026-01-15',
     img: 'https://images.unsplash.com/photo-1531482615713-2afd69097998?w=1200&q=85&auto=format&fit=crop',
     content: `
       <p>Artificial intelligence is no longer a future technology. It is already reshaping hiring, education, healthcare, credit access, and civic participation. And access to AI literacy — the ability to understand, use and critically evaluate AI systems — is becoming the defining inequality of our generation.</p>
@@ -244,6 +249,7 @@ const ARTICLES = {
     title: 'Why Gen Z Is More Politically Active Than Any Generation Since the 1960s',
     author: 'Mia Schneider', authorRole: 'Research Coordinator', authorImg: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=80&q=80&auto=format&fit=crop&crop=face',
     date: 'December 2025', readTime: '6 min',
+    publishedAt: '2025-12-15',
     img: 'https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=1200&q=85&auto=format&fit=crop',
     content: `
       <p>The narrative about young people and politics has been stubbornly persistent: Generation Z is apathetic, distracted by social media, uninterested in civic life. New research suggests this narrative is not only wrong — it is precisely backwards.</p>
@@ -289,6 +295,7 @@ const ARTICLES = {
     title: 'How to Find the Right Erasmus+ Partners (Without Wasting 6 Months)',
     author: 'Elif Yıldız', authorRole: 'Programme Lead', authorImg: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?w=80&q=80&auto=format&fit=crop&crop=face',
     date: 'November 2025', readTime: '10 min',
+    publishedAt: '2025-11-15',
     img: 'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=1200&q=85&auto=format&fit=crop',
     content: `
       <p>Building international partnerships for Erasmus+ projects is one of the most rewarding — and most frustrating — parts of youth work. Done well, it creates relationships that last years and projects that genuinely change participants' lives. Done poorly, it wastes months of email exchanges and results in a project that falls apart before submission.</p>
@@ -355,6 +362,7 @@ const ARTICLES = {
     title: 'How to Write a Strong Erasmus+ KA1 Application That Gets Funded',
     author: 'Jonas Weber', authorRole: 'Head of Projects', authorImg: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&q=80&auto=format&fit=crop&crop=face',
     date: 'October 2025', readTime: '11 min',
+    publishedAt: '2025-10-15',
     img: 'https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=1200&q=85&auto=format&fit=crop',
     content: `
       <p>Every year, thousands of youth organisations across Europe submit Erasmus+ KA1 applications. A significant portion are rejected — not because the ideas are bad, but because the applications fail to communicate their quality in the language that evaluators are trained to read. Here is what separates funded applications from the rest.</p>
@@ -423,6 +431,7 @@ const ARTICLES = {
     title: 'What Is Non-Formal Education — and Why Erasmus+ Is Built Around It',
     author: 'Ayşe Kaya', authorRole: 'Programme Lead Türkiye', authorImg: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=80&q=80&auto=format&fit=crop&crop=face',
     date: 'September 2025', readTime: '8 min',
+    publishedAt: '2025-09-15',
     img: 'https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=1200&q=85&auto=format&fit=crop',
     content: `
       <p>If you have spent time in Erasmus+ circles, you have heard the term "non-formal education" used constantly. But what does it actually mean — and why has the European youth sector organised so much of its practice around it?</p>
@@ -473,6 +482,7 @@ const ARTICLES = {
     title: 'The Youthpass: Making Your Erasmus+ Learning Visible',
     author: 'Nikos Papadopoulos', authorRole: 'Youth Worker & Trainer', authorImg: 'https://images.unsplash.com/photo-1552058544-f2b08422138a?w=80&q=80&auto=format&fit=crop&crop=face',
     date: 'August 2025', readTime: '7 min',
+    publishedAt: '2025-08-15',
     img: 'https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=1200&q=85&auto=format&fit=crop',
     content: `
       <p>The Youthpass is Erasmus+'s answer to a persistent problem: how do you make non-formal learning legible? How do you help a young person show a future employer, university, or community organisation what they actually learned during three weeks in another country — when there was no exam, no grade, and no formal certificate?</p>
@@ -524,6 +534,7 @@ const ARTICLES = {
     title: 'Understanding Erasmus+ KA2: Cooperation Projects for NGOs',
     author: 'Sofia Nowak', authorRole: 'Research Coordinator', authorImg: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=80&q=80&auto=format&fit=crop&crop=face',
     date: 'July 2025', readTime: '9 min',
+    publishedAt: '2025-07-15',
     img: 'https://images.unsplash.com/photo-1515187029135-18ee286d815b?w=1200&q=85&auto=format&fit=crop',
     content: `
       <p>If KA1 is Erasmus+'s mobility strand — funding people to travel and learn — then KA2 is its innovation strand. Cooperation Projects bring together organisations from multiple countries to develop something new: a curriculum, a methodology, a tool, a policy recommendation. They are more complex to manage and harder to win, but for organisations ready to engage with them, they are transformative.</p>
@@ -575,6 +586,7 @@ const ARTICLES = {
     title: 'Design Thinking for Youth Workers: A 5-Step Practical Guide',
     author: 'Mia Schneider', authorRole: 'Research Coordinator', authorImg: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=80&q=80&auto=format&fit=crop&crop=face',
     date: 'June 2025', readTime: '10 min',
+    publishedAt: '2025-06-15',
     img: 'https://images.unsplash.com/photo-1497366216548-37526070297c?w=1200&q=85&auto=format&fit=crop',
     content: `
       <p>Design thinking has become one of the most widely taught frameworks in business schools, innovation labs, and corporate training programmes. Youth work has been slower to adopt it — which is unfortunate, because the design thinking process maps almost perfectly onto the way good youth work already operates.</p>
@@ -642,6 +654,7 @@ const ARTICLES = {
     title: 'Social Enterprise vs NGO: Which Model Fits Your Youth Initiative?',
     author: 'Luca Ferreira', authorRole: 'Community Coordinator', authorImg: 'https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?w=80&q=80&auto=format&fit=crop&crop=face',
     date: 'May 2025', readTime: '8 min',
+    publishedAt: '2025-05-15',
     img: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1200&q=85&auto=format&fit=crop',
     content: `
       <p>You have an idea for a youth initiative. Maybe it is a community café run by young people, a skills training programme, a peer mentoring network, or an app connecting volunteers with local organisations. Now comes the structural question that many founders find bewildering: should this be an NGO, an association, a social enterprise, or a cooperative?</p>
@@ -696,6 +709,7 @@ const ARTICLES = {
     title: 'From Local Idea to European Scale: Lessons from Youth-Led Organisations',
     author: 'Elif Yıldız', authorRole: 'Programme Lead', authorImg: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?w=80&q=80&auto=format&fit=crop&crop=face',
     date: 'April 2025', readTime: '9 min',
+    publishedAt: '2025-04-15',
     img: 'https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1200&q=85&auto=format&fit=crop',
     content: `
       <p>Most successful European youth organisations started in a room with three people, a shared problem, and no money. The ones that grew to operate across borders, attract EU funding, and influence policy did not do so by following a business school playbook. They did it by staying close to their original insight while being relentlessly open about what was and was not working.</p>
@@ -743,6 +757,7 @@ const ARTICLES = {
     title: 'The European Green Deal: What It Means for Youth Organisations',
     author: 'Jonas Weber', authorRole: 'Head of Projects', authorImg: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&q=80&auto=format&fit=crop&crop=face',
     date: 'March 2025', readTime: '8 min',
+    publishedAt: '2025-03-15',
     img: 'https://images.unsplash.com/photo-1484981184820-2e84ea0af397?w=1200&q=85&auto=format&fit=crop',
     content: `
       <p>The European Green Deal — the EU's flagship policy framework for achieving climate neutrality by 2050 — is not primarily a youth policy. But its implications for youth organisations, youth work practice, and the young people organisations work with are substantial. If your organisation has not yet engaged with it, this is where to start.</p>
@@ -791,6 +806,7 @@ const ARTICLES = {
     title: 'Climate Anxiety in Young People: Turning Eco-Fear into Action',
     author: 'Ayşe Kaya', authorRole: 'Programme Lead Türkiye', authorImg: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=80&q=80&auto=format&fit=crop&crop=face',
     date: 'February 2025', readTime: '7 min',
+    publishedAt: '2025-02-15',
     img: 'https://images.unsplash.com/photo-1569025743873-ea3a9ade89f9?w=1200&q=85&auto=format&fit=crop',
     content: `
       <p>In 2021, a landmark study published in The Lancet surveyed 10,000 young people aged 16–25 across ten countries. More than half — 56% — said they believed "humanity is doomed." Nearly three-quarters said the future was "frightening." This is not a niche finding. Climate anxiety has become one of the defining psychological realities of growing up in the 2020s.</p>
@@ -854,6 +870,7 @@ const ARTICLES = {
     title: 'Sustainable Event Planning for Youth Groups: A Practical Checklist',
     author: 'Nikos Papadopoulos', authorRole: 'Youth Worker & Trainer', authorImg: 'https://images.unsplash.com/photo-1552058544-f2b08422138a?w=80&q=80&auto=format&fit=crop&crop=face',
     date: 'January 2025', readTime: '6 min',
+    publishedAt: '2025-01-15',
     img: 'https://images.unsplash.com/photo-1491438590914-bc09fcaaf77a?w=1200&q=85&auto=format&fit=crop',
     content: `
       <p>Erasmus+ now requires applicants to address the environmental impact of their projects. Beyond the funding requirements, there is a straightforward ethical dimension: if your organisation's programmes are about sustainability, the way you run those programmes should reflect that. Here is a practical guide to making your events and exchanges more sustainable — without sacrificing quality.</p>
@@ -934,6 +951,7 @@ const ARTICLES = {
     title: 'The Circular Economy and Youth: Skills for Tomorrow\'s Green Jobs',
     author: 'Sofia Nowak', authorRole: 'Research Coordinator', authorImg: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=80&q=80&auto=format&fit=crop&crop=face',
     date: 'December 2024', readTime: '8 min',
+    publishedAt: '2024-12-15',
     img: 'https://images.unsplash.com/photo-1495364141860-b0d03eccd065?w=1200&q=85&auto=format&fit=crop',
     content: `
       <p>The circular economy is one of the central concepts in Europe's green transition — and one that is genuinely reshaping what skills the labour market will reward in the coming decade. For youth workers preparing young people for economic futures, understanding the circular economy is no longer optional background knowledge. It is essential.</p>
@@ -994,6 +1012,7 @@ const ARTICLES = {
     title: 'Turkish-German Youth Dialogue: Breaking Stereotypes Through Exchange',
     author: 'Mia Schneider', authorRole: 'Research Coordinator', authorImg: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=80&q=80&auto=format&fit=crop&crop=face',
     date: 'November 2024', readTime: '9 min',
+    publishedAt: '2024-11-15',
     img: 'https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=1200&q=85&auto=format&fit=crop',
     content: `
       <p>The relationship between Türkiye and Germany is one of the most complex and consequential bilateral relationships in European history. Shaped by decades of labour migration, deep family ties across two countries, shared NATO membership, contested EU accession, and persistent cultural misunderstanding on both sides, it is a relationship that needs more genuine dialogue — not less. Youth exchange is one of the most effective tools available for creating it.</p>
@@ -1037,6 +1056,7 @@ const ARTICLES = {
     title: 'Multilingualism as a Superpower: Language Learning in Youth Programmes',
     author: 'Luca Ferreira', authorRole: 'Community Coordinator', authorImg: 'https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?w=80&q=80&auto=format&fit=crop&crop=face',
     date: 'October 2024', readTime: '7 min',
+    publishedAt: '2024-10-15',
     img: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=1200&q=85&auto=format&fit=crop',
     content: `
       <p>There is a paradox at the heart of international youth exchange: it is an inherently multilingual activity that often operates as if everyone speaks English. Most Erasmus+ exchanges use English as the working language — which means that the participants with the weakest English spend the whole event struggling, while the ones with the strongest English dominate discussions. This is not intercultural learning. It is linguistic inequality reproduced in a new setting.</p>
@@ -1076,6 +1096,7 @@ const ARTICLES = {
     title: 'Cultural Identity in a Global Age: What Young Europeans Are Saying',
     author: 'Elif Yıldız', authorRole: 'Programme Lead', authorImg: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?w=80&q=80&auto=format&fit=crop&crop=face',
     date: 'September 2024', readTime: '8 min',
+    publishedAt: '2024-09-15',
     img: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&q=85&auto=format&fit=crop',
     content: `
       <p>Ask a young person in Yalova what their identity is, and you will likely get a more complex answer than the question seems to invite. Turkish, yes — but also European, also a fan of K-pop, also a supporter of a German football club, also part of a generation that communicates globally and experiences its cultural identity as layered, contested, and constantly evolving.</p>
@@ -1120,6 +1141,7 @@ const ARTICLES = {
     title: 'How AI Tools Are Transforming Youth Work Practice',
     author: 'Jonas Weber', authorRole: 'Head of Projects', authorImg: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&q=80&auto=format&fit=crop&crop=face',
     date: 'August 2024', readTime: '9 min',
+    publishedAt: '2024-08-15',
     img: 'https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=1200&q=85&auto=format&fit=crop',
     content: `
       <p>The arrival of accessible, powerful AI tools has been one of the most significant developments in professional practice across almost every field. Youth work is no exception. From programme design to grant writing, from participant communication to impact evaluation, AI tools are changing the way youth organisations operate — faster than most professional development conversations have been able to keep up with.</p>
@@ -1179,6 +1201,7 @@ const ARTICLES = {
     title: 'Deepfakes, Disinformation and Democracy: What Youth Workers Must Know',
     author: 'Ayşe Kaya', authorRole: 'Programme Lead Türkiye', authorImg: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=80&q=80&auto=format&fit=crop&crop=face',
     date: 'July 2024', readTime: '10 min',
+    publishedAt: '2024-07-15',
     img: 'https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=1200&q=85&auto=format&fit=crop',
     content: `
       <p>The 2024 election cycle was described by analysts as "the most information-disordered election year in history." More than four billion people voted in national elections across the world. AI-generated disinformation — fake videos, fabricated quotes, synthetic news — was used as a political weapon in dozens of countries. Youth workers preparing young people for democratic participation must now understand this landscape.</p>
@@ -1236,6 +1259,7 @@ const ARTICLES = {
     title: 'The Algorithm and the Young Person: Social Media\'s Hidden Architecture',
     author: 'Nikos Papadopoulos', authorRole: 'Youth Worker & Trainer', authorImg: 'https://images.unsplash.com/photo-1552058544-f2b08422138a?w=80&q=80&auto=format&fit=crop&crop=face',
     date: 'June 2024', readTime: '8 min',
+    publishedAt: '2024-06-15',
     img: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&q=85&auto=format&fit=crop',
     content: `
       <p>Young people spend an average of 4-6 hours per day on social media platforms. Most of them have almost no understanding of how those platforms decide what they see, why they see it, and what that selection process is designed to achieve. This ignorance is not accidental. It is a design choice by platforms whose business model depends on it.</p>
@@ -1297,6 +1321,7 @@ const ARTICLES = {
     title: 'Youth Councils That Actually Work: Lessons from Across Europe',
     author: 'Sofia Nowak', authorRole: 'Research Coordinator', authorImg: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=80&q=80&auto=format&fit=crop&crop=face',
     date: 'May 2024', readTime: '9 min',
+    publishedAt: '2024-05-15',
     img: 'https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=1200&q=85&auto=format&fit=crop',
     content: `
       <p>Youth councils — formal bodies through which young people participate in local or national governance — exist in almost every European country. Most of them do not work. They are tokenistic, poorly resourced, dominated by adult agendas, and attended by a narrow demographic of already-engaged young people who quickly become disillusioned and leave. But some do work. And the ones that work share identifiable characteristics.</p>
@@ -1362,6 +1387,7 @@ const ARTICLES = {
     title: 'How to Run a Meaningful Youth Consultation Process',
     author: 'Mia Schneider', authorRole: 'Research Coordinator', authorImg: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=80&q=80&auto=format&fit=crop&crop=face',
     date: 'April 2024', readTime: '7 min',
+    publishedAt: '2024-04-15',
     img: 'https://images.unsplash.com/photo-1536148935331-408321065b18?w=1200&q=85&auto=format&fit=crop',
     content: `
       <p>Youth consultation has a credibility problem. Young people have been "consulted" enough times — through online surveys, tokenistic focus groups, and staged events — to know when a process is designed to generate legitimacy for decisions already made, rather than to genuinely inform decisions yet to be taken. Running a meaningful consultation requires addressing this credibility gap head-on.</p>
@@ -1430,6 +1456,7 @@ const ARTICLES = {
     title: 'Local Democracy and Young People: A Guide to Getting Involved',
     author: 'Luca Ferreira', authorRole: 'Community Coordinator', authorImg: 'https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?w=80&q=80&auto=format&fit=crop&crop=face',
     date: 'March 2024', readTime: '8 min',
+    publishedAt: '2024-03-15',
     img: 'https://images.unsplash.com/photo-1551818255-e6e10975bc17?w=1200&q=85&auto=format&fit=crop',
     content: `
       <p>Local government is where most of the decisions that actually affect daily life are made. Transport, housing, parks, youth services, cultural facilities, local planning — these are determined at the municipal level, by local councillors and administrators who are, in theory, accountable to local residents. Young people are local residents. And local democracy is one of the most accessible entry points to meaningful civic participation.</p>
@@ -1497,6 +1524,7 @@ const ARTICLES = {
     title: 'Erasmus+ Youth Exchange vs. ESC: Which EU Programme Is Right for You?',
     author: 'Jonas Weber', authorRole: 'Head of Projects', authorImg: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&q=80&auto=format&fit=crop&crop=face',
     date: 'June 2024', readTime: '9 min',
+    publishedAt: '2024-06-15',
     img: 'https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=1200&q=85&auto=format&fit=crop',
     content: `
       <p>If you are a young person or a youth organisation exploring EU-funded mobility, you will quickly encounter two main options: Erasmus+ Youth Exchanges under KA1, and the European Solidarity Corps (ESC). Both are funded by the EU. Both involve young people crossing borders. But their purposes, structures, and eligibility criteria are meaningfully different — and choosing the wrong one wastes time and creates frustration for everyone involved.</p>
@@ -1564,6 +1592,7 @@ const ARTICLES = {
     title: 'How National Agencies Evaluate Erasmus+ Youth Applications',
     author: 'Ayşe Kaya', authorRole: 'Programme Lead Türkiye', authorImg: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=80&q=80&auto=format&fit=crop&crop=face',
     date: 'July 2024', readTime: '10 min',
+    publishedAt: '2024-07-15',
     img: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1200&q=85&auto=format&fit=crop',
     content: `
       <p>Erasmus+ applications are evaluated by National Agencies — the bodies in each country responsible for managing EU youth funding. Understanding how they assess applications is one of the highest-leverage things a first-time or returning applicant can do. Yet most guides focus on what to write rather than on how evaluators read what you have written.</p>
@@ -1648,6 +1677,7 @@ const ARTICLES = {
     title: 'Building Your First Erasmus+ Project: A Step-by-Step Timeline',
     author: 'Elif Yıldız', authorRole: 'Programme Lead', authorImg: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?w=80&q=80&auto=format&fit=crop&crop=face',
     date: 'August 2024', readTime: '11 min',
+    publishedAt: '2024-08-15',
     img: 'https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=1200&q=85&auto=format&fit=crop',
     content: `
       <p>Running your first Erasmus+ project is significantly more time-consuming than most people expect. The timeline from "we want to do an exchange" to "participants are on a plane" is typically 12–18 months. Understanding this timeline in advance — and where the critical decision points are — is one of the most valuable things a new organisation can do.</p>
@@ -1704,6 +1734,7 @@ const ARTICLES = {
     title: 'Impact Measurement in Youth Work: Proving What You Do Works',
     author: 'Sofia Nowak', authorRole: 'Research Coordinator', authorImg: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=80&q=80&auto=format&fit=crop&crop=face',
     date: 'September 2024', readTime: '8 min',
+    publishedAt: '2024-09-15',
     img: 'https://images.unsplash.com/photo-1551836022-deb4988cc6c0?w=1200&q=85&auto=format&fit=crop',
     content: `
       <p>Youth work has an impact problem — not because it lacks impact, but because it has historically been poor at demonstrating it. Funders are increasingly demanding evidence. Policymakers want data. And young people deserve organisations that are honest about what is and is not working. Building basic impact measurement into your youth projects is now a professional necessity, not a nice-to-have.</p>
@@ -1766,6 +1797,7 @@ const ARTICLES = {
     title: 'Grant Writing for Beginners: Your First European Youth Funding Application',
     author: 'Nikos Papadopoulos', authorRole: 'Youth Worker & Trainer', authorImg: 'https://images.unsplash.com/photo-1552058544-f2b08422138a?w=80&q=80&auto=format&fit=crop&crop=face',
     date: 'October 2024', readTime: '10 min',
+    publishedAt: '2024-10-15',
     img: 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=1200&q=85&auto=format&fit=crop',
     content: `
       <p>Grant writing is a learned skill. Nobody is born knowing how to do it — and most people who become good at it do so through a combination of reading successful applications, getting feedback on unsuccessful ones, and gradually developing an understanding of what evaluators are looking for. This guide is for people at the beginning of that journey.</p>
@@ -1832,6 +1864,7 @@ const ARTICLES = {
     title: 'Project Management for Youth Organisations: Tools and Methods That Work',
     author: 'Mia Schneider', authorRole: 'Research Coordinator', authorImg: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=80&q=80&auto=format&fit=crop&crop=face',
     date: 'November 2024', readTime: '9 min',
+    publishedAt: '2024-11-15',
     img: 'https://images.unsplash.com/photo-1507925921958-8a62f3d1a50d?w=1200&q=85&auto=format&fit=crop',
     content: `
       <p>Most youth organisations manage projects informally for years — and it works, until it suddenly does not. A missed deadline, a confused partner, a financial discrepancy, a team member leaving and taking all the project knowledge with them — these are the crises that informal management eventually produces. Building basic project management structures does not mean becoming bureaucratic. It means being reliable enough to do the work you have promised to do.</p>
@@ -1895,6 +1928,7 @@ const ARTICLES = {
     title: 'How to Retain Volunteers: Strategies That Actually Keep People Engaged',
     author: 'Luca Ferreira', authorRole: 'Community Coordinator', authorImg: 'https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?w=80&q=80&auto=format&fit=crop&crop=face',
     date: 'December 2024', readTime: '8 min',
+    publishedAt: '2024-12-15',
     img: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=1200&q=85&auto=format&fit=crop',
     content: `
       <p>The average volunteer tenure at a small NGO is less than 18 months. Most organisations treat this as an inevitable feature of voluntary work. The organisations that retain volunteers for 3, 5, or 10 years treat it as a management challenge — and they have developed practices that genuinely address it.</p>
@@ -1960,6 +1994,7 @@ const ARTICLES = {
     title: 'Green Skills for Young People: What They Are and Why They Matter',
     author: 'Elif Yıldız', authorRole: 'Programme Lead', authorImg: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?w=80&q=80&auto=format&fit=crop&crop=face',
     date: 'January 2025', readTime: '8 min',
+    publishedAt: '2025-01-15',
     img: 'https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=1200&q=85&auto=format&fit=crop',
     content: `
       <p>The European Commission's Green Skills Agenda, launched in 2022, identified the development of green skills across the European workforce as one of the most urgent labour market priorities of the coming decade. For youth organisations, understanding what green skills actually are — and how to help young people develop them — is becoming an essential part of being relevant in the current policy environment.</p>
@@ -2020,6 +2055,7 @@ const ARTICLES = {
     title: 'How to Start a Youth-Led Environmental Project in Your Community',
     author: 'Jonas Weber', authorRole: 'Head of Projects', authorImg: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&q=80&auto=format&fit=crop&crop=face',
     date: 'February 2025', readTime: '7 min',
+    publishedAt: '2025-02-15',
     img: 'https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?w=1200&q=85&auto=format&fit=crop',
     content: `
       <p>You do not need a formal organisation, EU funding, or expert credentials to start a youth-led environmental project. Some of the most effective local environmental initiatives in Europe started with three or four young people, a real problem they could see in their own neighbourhood, and the willingness to take one concrete step. Here is how to take that step — and the steps after it.</p>
@@ -2069,6 +2105,7 @@ const ARTICLES = {
     title: 'Net Zero and Youth: Understanding Europe\'s 2050 Climate Roadmap',
     author: 'Ayşe Kaya', authorRole: 'Programme Lead Türkiye', authorImg: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=80&q=80&auto=format&fit=crop&crop=face',
     date: 'March 2025', readTime: '9 min',
+    publishedAt: '2025-03-15',
     img: 'https://images.unsplash.com/photo-1611273426858-450d8e3c9fce?w=1200&q=85&auto=format&fit=crop',
     content: `
       <p>The European Union's commitment to climate neutrality — net zero greenhouse gas emissions — by 2050 is the most ambitious long-term policy target in European history. For young people who will live most of their lives in the period this roadmap covers, understanding what it means in practice is not optional background knowledge. It is civic literacy.</p>
@@ -2116,6 +2153,7 @@ const ARTICLES = {
     title: 'Biodiversity Loss and Youth Work: Why Nature Belongs in Your Programmes',
     author: 'Nikos Papadopoulos', authorRole: 'Youth Worker & Trainer', authorImg: 'https://images.unsplash.com/photo-1552058544-f2b08422138a?w=80&q=80&auto=format&fit=crop&crop=face',
     date: 'April 2025', readTime: '7 min',
+    publishedAt: '2025-04-15',
     img: 'https://images.unsplash.com/photo-1466611653911-95081537e5b7?w=1200&q=85&auto=format&fit=crop',
     content: `
       <p>Climate change dominates public environmental discourse — and for good reason. But the biodiversity crisis is equally urgent, equally human-caused, and in some respects more immediately threatening to human wellbeing. Youth work has been slow to engage with it. This is a mistake worth correcting.</p>
@@ -2177,6 +2215,7 @@ const ARTICLES = {
     title: 'What Does It Mean to Be European? Young People\'s Answers in 2025',
     author: 'Sofia Nowak', authorRole: 'Research Coordinator', authorImg: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=80&q=80&auto=format&fit=crop&crop=face',
     date: 'May 2025', readTime: '8 min',
+    publishedAt: '2025-05-15',
     img: 'https://images.unsplash.com/photo-1467803738586-46b7eb7b16a1?w=1200&q=85&auto=format&fit=crop',
     content: `
       <p>Every generation redefines what it means to belong to Europe. For young people in 2025 — the first generation that has never known a Europe without a common currency in much of the continent, never known a Europe without Erasmus+, and that has grown up navigating simultaneously digital global and intensely local identities — the answers to that question are more nuanced, and more interesting, than political debate typically allows for.</p>
@@ -2220,6 +2259,7 @@ const ARTICLES = {
     title: 'Navigating Religious Diversity in Youth Work: A Practical Guide',
     author: 'Mia Schneider', authorRole: 'Research Coordinator', authorImg: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=80&q=80&auto=format&fit=crop&crop=face',
     date: 'June 2025', readTime: '9 min',
+    publishedAt: '2025-06-15',
     img: 'https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=1200&q=85&auto=format&fit=crop',
     content: `
       <p>Religion shapes the lives of a significant proportion of young people — their values, their practices, their sense of community, and their understanding of the world. Yet youth work in much of Europe treats religion as a topic to be carefully avoided: too sensitive, too divisive, too likely to create conflict. This avoidance is understandable. It is also a failure of the field.</p>
@@ -2283,6 +2323,7 @@ const ARTICLES = {
     title: 'Second-Generation Youth and Cultural Identity: Between Two Worlds',
     author: 'Luca Ferreira', authorRole: 'Community Coordinator', authorImg: 'https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?w=80&q=80&auto=format&fit=crop&crop=face',
     date: 'July 2025', readTime: '8 min',
+    publishedAt: '2025-07-15',
     img: 'https://images.unsplash.com/photo-1536856136534-bb679c52a9aa?w=1200&q=85&auto=format&fit=crop',
     content: `
       <p>Young people of migrant heritage — those who grew up in a country that was not their parents' birthplace — occupy a particular position in European society. They hold multiple cultural affiliations simultaneously, often navigate conflicting expectations from their family and the wider society, and frequently find that neither their "home" culture nor the culture they grew up in fully claims them. Youth work has both an opportunity and a responsibility to engage this experience honestly.</p>
@@ -2324,6 +2365,7 @@ const ARTICLES = {
     title: 'Digital Citizenship in the AI Era: A Guide for Youth Workers',
     author: 'Elif Yıldız', authorRole: 'Programme Lead', authorImg: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?w=80&q=80&auto=format&fit=crop&crop=face',
     date: 'August 2025', readTime: '10 min',
+    publishedAt: '2025-08-15',
     img: 'https://images.unsplash.com/photo-1573164713988-8665fc963095?w=1200&q=85&auto=format&fit=crop',
     content: `
       <p>Digital citizenship education has existed for about two decades. Its core curriculum — online safety, privacy settings, cyberbullying awareness, fact-checking — was developed for a digital environment that no longer exists. The rise of generative AI, algorithmic recommendation systems, and AI-powered disinformation has transformed the landscape faster than educational frameworks have adapted. Youth workers who are teaching digital citizenship need a curriculum update.</p>
@@ -2384,6 +2426,7 @@ const ARTICLES = {
     title: 'Using AI Tools in Youth Programme Design: A Practical Guide',
     author: 'Jonas Weber', authorRole: 'Head of Projects', authorImg: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&q=80&auto=format&fit=crop&crop=face',
     date: 'September 2025', readTime: '9 min',
+    publishedAt: '2025-09-15',
     img: 'https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=1200&q=85&auto=format&fit=crop',
     content: `
       <p>AI tools have become genuinely useful for youth programme design — not as replacements for human expertise and creativity, but as accelerators that reduce the time cost of certain tasks significantly. For small, under-resourced youth organisations, this matters. Time saved on drafting session plans or writing grant proposals is time available for being with young people. Here is how to use these tools effectively and responsibly.</p>
@@ -2440,6 +2483,7 @@ const ARTICLES = {
     title: 'The Future of Youth Work in an AI World: What Changes, What Stays',
     author: 'Ayşe Kaya', authorRole: 'Programme Lead Türkiye', authorImg: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=80&q=80&auto=format&fit=crop&crop=face',
     date: 'October 2025', readTime: '10 min',
+    publishedAt: '2025-10-15',
     img: 'https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=1200&q=85&auto=format&fit=crop',
     content: `
       <p>AI will change youth work. The question is not whether this will happen, but how — and what youth workers and organisations need to do now to navigate the change well. Some things will be automated. Some things will be amplified. And some things will become more important precisely because AI cannot do them.</p>
@@ -2504,6 +2548,7 @@ const ARTICLES = {
     title: 'The European Citizens\' Initiative: A Guide for Young Advocates',
     author: 'Nikos Papadopoulos', authorRole: 'Youth Worker & Trainer', authorImg: 'https://images.unsplash.com/photo-1552058544-f2b08422138a?w=80&q=80&auto=format&fit=crop&crop=face',
     date: 'November 2025', readTime: '9 min',
+    publishedAt: '2025-11-15',
     img: 'https://images.unsplash.com/photo-1541849546-216549ae216d?w=1200&q=85&auto=format&fit=crop',
     content: `
       <p>The European Citizens' Initiative (ECI) is one of the most remarkable — and least used — tools in European democracy. It allows one million EU citizens from at least seven member states to invite the European Commission to propose legislation on any matter within the EU's competence. For young advocates who want to shape EU policy, understanding how the ECI works — and when it is and is not the right tool — is genuine civic knowledge.</p>
@@ -2548,6 +2593,7 @@ const ARTICLES = {
     title: 'How to Contact Your MEP: A Practical Advocacy Guide for Young Europeans',
     author: 'Sofia Nowak', authorRole: 'Research Coordinator', authorImg: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=80&q=80&auto=format&fit=crop&crop=face',
     date: 'December 2025', readTime: '7 min',
+    publishedAt: '2025-12-15',
     img: 'https://images.unsplash.com/photo-1558008258-3256797b43f3?w=1200&q=85&auto=format&fit=crop',
     content: `
       <p>Members of the European Parliament are, on average, more accessible than most citizens realise — and more responsive to constituent contact than most people expect. With 720 MEPs representing approximately 450 million EU citizens, the individual MEP-to-constituent ratio is more favourable than in most national parliaments. Yet MEPs receive relatively little direct contact from young people. This is an opportunity.</p>
@@ -2609,6 +2655,7 @@ const ARTICLES = {
     title: 'Participatory Budgeting: When Young People Control Local Spending',
     author: 'Mia Schneider', authorRole: 'Research Coordinator', authorImg: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=80&q=80&auto=format&fit=crop&crop=face',
     date: 'January 2026', readTime: '8 min',
+    publishedAt: '2026-01-15',
     img: 'https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=1200&q=85&auto=format&fit=crop',
     content: `
       <p>Participatory budgeting (PB) is a democratic process in which community members directly decide how to allocate a portion of a public budget. First developed in Porto Alegre, Brazil, in 1989, it has since spread to more than 3,000 cities across the world — including many European municipalities. When designed well, it is one of the most powerful tools available for meaningful youth participation in local governance.</p>
