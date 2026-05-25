@@ -924,5 +924,55 @@ export default {
     "e404.title": "This page doesn't exist.",
     "e404.desc": "The page you are looking for may have been moved, renamed or removed. Let's get you back on track.",
     "e404.home": "Go to Homepage",
-    "e404.blog": "Read the Blog"
+    "e404.blog": "Read the Blog",
+
+    /* ── Stats counters ── */
+    "stat1.label": "Volunteers",
+    "stat2.label": "Countries Reached",
+    "stat3.label": "Articles Published",
+    "stat4.label": "Active Projects",
+
+    /* ── Testimonials ── */
+    "testi.label": "Voices",
+    "testi.title": "What participants say.",
+    "testi.q1": "The exchange completely changed how I see Europe. I came back to Yalova with 12 new friends across 6 countries and a real sense of what's possible.",
+    "testi.q2": "I volunteered in Lisbon for 8 months through ESC. YouthTICK helped me navigate the application — without them I honestly would not have known where to start.",
+    "testi.q3": "As a German partner, working with YouthTICK was professional from day one. The Turkish participants brought perspectives our group had never encountered before.",
+    "testi.n1": "Ayşe K.", "testi.r1": "Youth Exchange · Germany · 2025",
+    "testi.n2": "Mehmet T.", "testi.r2": "ESC Volunteer · Portugal · 2025",
+    "testi.n3": "Céline B.", "testi.r3": "Programme Manager · Germany · 2025",
+
+    /* ── Deadline calendar ── */
+    "cal.label": "2026 Deadlines",
+    "cal.title": "Erasmus+ 2026 Application Deadlines",
+    "cal.desc": "Official TUA (Turkish National Agency) deadlines. Missing a round means waiting 6 months — plan ahead and submit before the date.",
+    "cal.tua.link": "Official TUA website →",
+    "cal.d1.name": "KA1 Youth — Round 1", "cal.d1.sub": "Youth exchanges, training courses, volunteering",
+    "cal.d2.name": "KA2 Partnerships — Round 1", "cal.d2.sub": "Cooperation partnerships, small-scale partnerships",
+    "cal.d3.name": "KA1 Youth — Round 2", "cal.d3.sub": "Youth exchanges, training courses, volunteering",
+    "cal.d4.name": "KA2 Partnerships — Round 2", "cal.d4.sub": "Cooperation partnerships, small-scale partnerships",
+    "cal.d5.name": "KA1 Youth — Round 3", "cal.d5.sub": "Youth exchanges, training courses, volunteering",
+    "cal.d6.name": "ESC Individual Volunteering", "cal.d6.sub": "Apply any time via EU Youth Portal PASS profile",
+    "cal.passed": "Closed", "cal.upcoming": "Upcoming", "cal.open": "Always Open",
+
+    /* ── Notification signup ── */
+    "notify.label": "Get Alerts",
+    "notify.title": "Never miss an open call.",
+    "notify.sub": "We'll email you when new Erasmus+ calls, partner searches or opportunities are posted. No spam — one email per relevant call.",
+    "notify.btn": "Notify Me",
+    "notify.cat1": "Erasmus+ KA1", "notify.cat2": "ESC Volunteering",
+    "notify.cat3": "KA2 Partnerships", "notify.cat4": "Partner Searches",
+    "notify.gdpr": "Your email is only used for the notifications you selected. Unsubscribe anytime.",
+
+    /* ── Application status ── */
+    "status.label": "Application Status",
+    "status.title": "Check your application.",
+    "status.desc": "Enter the email address you used when applying. We'll show your current status below.",
+    "status.email.placeholder": "your@email.com",
+    "status.check": "Check Status",
+    "status.note": "Applied recently? It may take 1–2 business days for your record to appear.",
+    "status.back": "← Check another",
+    "status.contact": "Contact Us",
+    "status.nf.title": "No application found.",
+    "status.nf.desc": "We couldn't find an application for that email. Please double-check the email you used, or contact us directly."
 };

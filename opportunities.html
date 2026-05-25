@@ -600,6 +600,153 @@
   </div>
 </section>
 
+<!-- ── DEADLINE CALENDAR ── -->
+<section style="padding:80px 0;background:white;border-bottom:1px solid var(--border-soft);">
+  <style>
+    .deadline-list { display:flex; flex-direction:column; gap:14px; }
+    .deadline-row {
+      display:grid; grid-template-columns:90px 1fr auto;
+      align-items:center; gap:16px;
+      padding:18px 22px; border-radius:var(--radius-md);
+      border:1.5px solid var(--border-soft); background:var(--bg-soft);
+      transition:border-color .2s, box-shadow .2s;
+    }
+    .deadline-row:hover { border-color:var(--blue); box-shadow:0 2px 12px rgba(37,99,235,0.08); }
+    .deadline-row.passed { opacity:0.45; }
+    .deadline-row.upcoming { border-color:var(--green-dark,#2D6A4F); background:#f0fdf4; }
+    .deadline-date { font-weight:800; font-size:0.82rem; color:var(--ink); text-align:center; line-height:1.3; }
+    .deadline-date span { display:block; font-size:1.2rem; }
+    .deadline-name { font-weight:600; font-size:0.9rem; color:var(--ink); }
+    .deadline-sub  { font-size:0.78rem; color:var(--ink-ghost); margin-top:3px; }
+    .deadline-badge { font-size:0.68rem; font-weight:700; padding:4px 10px; border-radius:var(--radius-full); white-space:nowrap; }
+    .badge-passed   { background:#f1f5f9; color:#64748b; }
+    .badge-upcoming { background:#dcfce7; color:#15803d; }
+    .badge-open     { background:#dbeafe; color:#1d4ed8; }
+    .cal-intro-grid { display:grid; grid-template-columns:1fr 1fr; gap:48px; align-items:start; margin-top:32px; }
+    @media(max-width:768px){ .cal-intro-grid{grid-template-columns:1fr;} .deadline-row{grid-template-columns:70px 1fr;} .deadline-badge{display:none;} }
+  </style>
+  <div class="container">
+    <div class="section-label" data-anim>
+      <span class="section-label-line"></span>
+      <span class="section-label-text" data-i18n="cal.label">2026 Deadlines</span>
+    </div>
+    <div class="cal-intro-grid" data-anim>
+      <div>
+        <h2 class="display-md" data-i18n="cal.title">Erasmus+ 2026 Application Deadlines</h2>
+        <p style="color:var(--ink-muted);margin-top:16px;line-height:1.7;" data-i18n="cal.desc">Official TUA (Turkish National Agency) deadlines. Missing a round means waiting 6 months — plan ahead and submit before the date.</p>
+        <a href="https://www.ua.gov.tr" target="_blank" rel="noopener" class="btn btn-ghost" style="margin-top:24px;" data-i18n="cal.tua.link">Official TUA website →</a>
+      </div>
+      <div class="deadline-list">
+        <div class="deadline-row passed">
+          <div class="deadline-date"><span>05</span>Feb 2026</div>
+          <div>
+            <div class="deadline-name" data-i18n="cal.d1.name">KA1 Youth — Round 1</div>
+            <div class="deadline-sub" data-i18n="cal.d1.sub">Youth exchanges, training courses, volunteering</div>
+          </div>
+          <span class="deadline-badge badge-passed" data-i18n="cal.passed">Closed</span>
+        </div>
+        <div class="deadline-row passed">
+          <div class="deadline-date"><span>05</span>Mar 2026</div>
+          <div>
+            <div class="deadline-name" data-i18n="cal.d2.name">KA2 Partnerships — Round 1</div>
+            <div class="deadline-sub" data-i18n="cal.d2.sub">Cooperation partnerships, small-scale partnerships</div>
+          </div>
+          <span class="deadline-badge badge-passed" data-i18n="cal.passed">Closed</span>
+        </div>
+        <div class="deadline-row passed">
+          <div class="deadline-date"><span>23</span>Apr 2026</div>
+          <div>
+            <div class="deadline-name" data-i18n="cal.d3.name">KA1 Youth — Round 2</div>
+            <div class="deadline-sub" data-i18n="cal.d3.sub">Youth exchanges, training courses, volunteering</div>
+          </div>
+          <span class="deadline-badge badge-passed" data-i18n="cal.passed">Closed</span>
+        </div>
+        <div class="deadline-row upcoming">
+          <div class="deadline-date"><span>04</span>Sep 2026</div>
+          <div>
+            <div class="deadline-name" data-i18n="cal.d4.name">KA2 Partnerships — Round 2</div>
+            <div class="deadline-sub" data-i18n="cal.d4.sub">Cooperation partnerships, small-scale partnerships</div>
+          </div>
+          <span class="deadline-badge badge-upcoming" data-i18n="cal.upcoming">Upcoming</span>
+        </div>
+        <div class="deadline-row upcoming">
+          <div class="deadline-date"><span>01</span>Oct 2026</div>
+          <div>
+            <div class="deadline-name" data-i18n="cal.d5.name">KA1 Youth — Round 3</div>
+            <div class="deadline-sub" data-i18n="cal.d5.sub">Youth exchanges, training courses, volunteering</div>
+          </div>
+          <span class="deadline-badge badge-upcoming" data-i18n="cal.upcoming">Upcoming</span>
+        </div>
+        <div class="deadline-row">
+          <div class="deadline-date"><span>🔄</span>Rolling</div>
+          <div>
+            <div class="deadline-name" data-i18n="cal.d6.name">ESC Individual Volunteering</div>
+            <div class="deadline-sub" data-i18n="cal.d6.sub">Apply any time via EU Youth Portal PASS profile</div>
+          </div>
+          <span class="deadline-badge badge-open" data-i18n="cal.open">Always Open</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── NOTIFICATION SIGNUP ── -->
+<section style="padding:72px 0;background:var(--ink);border-bottom:1px solid rgba(255,255,255,0.06);">
+  <style>
+    .notify-inner { max-width:640px; margin:0 auto; text-align:center; }
+    .notify-form  { display:flex; gap:12px; margin-top:28px; }
+    .notify-input { flex:1; padding:13px 18px; border-radius:var(--radius-md); border:1.5px solid rgba(255,255,255,0.15); background:rgba(255,255,255,0.08); color:white; font-family:var(--font-body); font-size:0.9rem; outline:none; }
+    .notify-input::placeholder { color:rgba(255,255,255,0.3); }
+    .notify-input:focus { border-color:var(--green); background:rgba(255,255,255,0.12); }
+    .notify-cats  { display:flex; flex-wrap:wrap; gap:10px; justify-content:center; margin-top:20px; }
+    .notify-cat   { display:flex; align-items:center; gap:7px; font-size:0.8rem; color:rgba(255,255,255,0.55); cursor:pointer; }
+    .notify-cat input { accent-color:var(--green); }
+    @media(max-width:600px){ .notify-form{flex-direction:column;} }
+  </style>
+  <div class="container">
+    <div class="notify-inner" data-anim>
+      <div class="section-label" style="justify-content:center;">
+        <span class="section-label-line" style="background:var(--green);"></span>
+        <span class="section-label-text" style="color:var(--green);" data-i18n="notify.label">Get Alerts</span>
+      </div>
+      <h2 class="display-sm" style="color:white;margin-top:16px;" data-i18n="notify.title">Never miss an open call.</h2>
+      <p style="color:rgba(255,255,255,0.45);margin-top:10px;font-size:0.88rem;line-height:1.65;" data-i18n="notify.sub">We'll email you when new Erasmus+ calls, partner searches or opportunities are posted. No spam — one email per relevant call.</p>
+      <form onsubmit="handleNotifySignup(event)" class="notify-form">
+        <input type="email" name="Notify Email" class="notify-input" id="notify-email" placeholder="your@email.com" required/>
+        <button type="submit" class="btn btn-primary" id="notify-submit" data-i18n="notify.btn">Notify Me</button>
+      </form>
+      <div class="notify-cats">
+        <label class="notify-cat"><input type="checkbox" name="cat_erasmus" checked/> <span data-i18n="notify.cat1">Erasmus+ KA1</span></label>
+        <label class="notify-cat"><input type="checkbox" name="cat_esc" checked/> <span data-i18n="notify.cat2">ESC Volunteering</span></label>
+        <label class="notify-cat"><input type="checkbox" name="cat_ka2"/> <span data-i18n="notify.cat3">KA2 Partnerships</span></label>
+        <label class="notify-cat"><input type="checkbox" name="cat_partner"/> <span data-i18n="notify.cat4">Partner Searches</span></label>
+      </div>
+      <p style="color:rgba(255,255,255,0.25);font-size:0.73rem;margin-top:18px;" data-i18n="notify.gdpr">Your email is only used for the notifications you selected. Unsubscribe anytime.</p>
+    </div>
+  </div>
+</section>
+<script>
+function handleNotifySignup(e) {
+  e.preventDefault();
+  const btn  = document.getElementById('notify-submit');
+  const lang = document.documentElement.lang || 'en';
+  const okTxt   = lang==='tr'?'✓ Kaydedildi!':lang==='de'?'✓ Gespeichert!':'✓ Saved!';
+  const waitTxt = lang==='tr'?'Bekleyin…':lang==='de'?'Warten…':'Please wait…';
+  const errTxt  = lang==='tr'?'Hata, tekrar dene.':lang==='de'?'Fehler!':'Error, retry.';
+  const orig = btn.textContent;
+  btn.textContent = waitTxt; btn.disabled = true;
+  const fd = new FormData(e.target);
+  fd.set('_subject','Opportunity alert signup — YouthTICK');
+  fd.set('_captcha','false');
+  fetch('https://formsubmit.co/ajax/torunberkekaratas@gmail.com',{
+    method:'POST', headers:{'Accept':'application/json'}, body:fd
+  })
+  .then(r=>r.json())
+  .then(()=>{ btn.textContent=okTxt; btn.style.background='#16a34a'; e.target.reset(); })
+  .catch(()=>{ btn.textContent=errTxt; btn.disabled=false; setTimeout(()=>{btn.textContent=orig;},3000); });
+}
+</script>
+
 <!-- ── CTA ── -->
 <section class="opp-cta">
   <div class="container">

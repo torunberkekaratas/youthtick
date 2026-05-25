@@ -73,7 +73,36 @@
     }, { passive: true });
   }
 
-  /* ── 5. MANIFESTO CANVAS PARTICLES ──────────────────────────── */
+  /* ── 5. ANIMATED STAT COUNTERS ──────────────────────────────── */
+  function initCounters() {
+    var stats = document.getElementById('manifesto-stats');
+    if (!stats) return;
+    var counters = stats.querySelectorAll('[data-count]');
+    if (!counters.length) return;
+    var done = false;
+    var obs = new IntersectionObserver(function (entries) {
+      if (done || !entries[0].isIntersecting) return;
+      done = true;
+      obs.disconnect();
+      counters.forEach(function (el) {
+        var target   = parseInt(el.dataset.count, 10);
+        var suffix   = el.dataset.suffix || '';
+        var duration = 1400;
+        var start    = null;
+        function step(ts) {
+          if (!start) start = ts;
+          var progress = Math.min((ts - start) / duration, 1);
+          var eased    = 1 - Math.pow(1 - progress, 3);
+          el.textContent = Math.round(eased * target) + suffix;
+          if (progress < 1) requestAnimationFrame(step);
+        }
+        requestAnimationFrame(step);
+      });
+    }, { threshold: 0.6 });
+    obs.observe(stats);
+  }
+
+  /* ── 6. MANIFESTO CANVAS PARTICLES ──────────────────────────── */
   function initManifestoParticles() {
     var canvas = document.getElementById('manifesto-canvas');
     if (!canvas) return;
@@ -142,6 +171,7 @@
     /* Home-specific interactions only */
     initParallax();
     initManifestoParticles();
+    initCounters();
 
     /* Lucide (second pass — components.js fires first) */
     setTimeout(function () { if (window.lucide) lucide.createIcons(); }, 250);

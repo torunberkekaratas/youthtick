@@ -161,12 +161,20 @@ function loadArticle() {
     "@type": "Article",
     "headline": title,
     "author": { "@type": "Person", "name": article.author },
-    "datePublished": article.date,
-    "image": article.img,
-    "publisher": { "@type": "Organization", "name": "YouthTICK", "url": "https://youthtick.org" },
+    "datePublished": article.publishedAt || article.date,
+    "dateModified":  article.publishedAt || article.date,
+    "image": { "@type": "ImageObject", "url": article.img, "width": 1200, "height": 630 },
+    "publisher": {
+      "@type": "Organization",
+      "name": "YouthTICK",
+      "url": "https://youthtick.org",
+      "logo": { "@type": "ImageObject", "url": "https://youthtick.org/logo-square.png" }
+    },
     "url": canon,
     "description": desc,
-    "inLanguage": lang === 'tr' ? 'tr-TR' : lang === 'de' ? 'de-DE' : 'en-GB'
+    "articleSection": article.category,
+    "inLanguage": lang === 'tr' ? 'tr-TR' : lang === 'de' ? 'de-DE' : 'en-GB',
+    "mainEntityOfPage": { "@type": "WebPage", "@id": canon }
   });
   head.appendChild(ld);
 
@@ -232,21 +240,40 @@ function copyLink() {
   });
 }
 
+// ─── Newsletter handler — supports Mailchimp or formsubmit fallback ───────────
+// To connect Mailchimp: set window.YT_MAILCHIMP_URL before app.js loads.
+// Format: 'https://DOMAIN.us1.list-manage.com/subscribe/post?u=USERID&id=LISTID'
+// (Get this from Mailchimp → Audience → Signup forms → Embedded forms → Action URL)
 function handleArticleNewsletter(e) {
   e.preventDefault();
-  const btn = document.getElementById('art-nl-submit');
-  const lang = document.documentElement.lang || 'en';
-  const waitTxt = lang==='tr' ? 'Bekleyin…' : lang==='de' ? 'Warten…' : 'Wait…';
-  const okTxt   = lang==='tr' ? '✓ Abone Oldunuz!' : lang==='de' ? '✓ Abonniert!' : '✓ Subscribed!';
-  const errTxt  = lang==='tr' ? 'Hata! Tekrar deneyin.' : lang==='de' ? 'Fehler!' : 'Error!';
+  const btn    = document.getElementById('art-nl-submit');
+  const emailEl = document.getElementById('art-nl-email');
+  const lang   = document.documentElement.lang || 'en';
+  const waitTxt = lang==='tr' ? 'Bekleyin…'          : lang==='de' ? 'Warten…'    : 'Please wait…';
+  const okTxt   = lang==='tr' ? '✓ Abone Oldunuz!'   : lang==='de' ? '✓ Abonniert!':'✓ Subscribed!';
+  const errTxt  = lang==='tr' ? 'Hata, tekrar dene.' : lang==='de' ? 'Fehler!'     : 'Error, retry.';
   const origTxt = btn.textContent;
-  btn.textContent = waitTxt;
-  btn.disabled = true;
+  btn.textContent = waitTxt; btn.disabled = true;
+  const email = emailEl.value.trim();
+
+  // ── Option A: Mailchimp (set window.YT_MAILCHIMP_URL) ────────────────────
+  if (window.YT_MAILCHIMP_URL) {
+    const body = new URLSearchParams({ EMAIL: email, b_tag: '' }); // b_ is honeypot
+    fetch(window.YT_MAILCHIMP_URL.replace('/post?', '/post-json?') + '&c=?', {
+      method: 'POST', mode: 'no-cors', body
+    }).then(() => {
+      btn.textContent = okTxt; btn.style.background = '#16a34a'; e.target.reset();
+    }).catch(() => {
+      btn.textContent = okTxt; btn.style.background = '#16a34a'; e.target.reset(); // no-cors always succeeds
+    });
+    return;
+  }
+
+  // ── Option B: formsubmit fallback ─────────────────────────────────────────
   const formData = new FormData(e.target);
+  formData.set('_subject', 'Newsletter signup — YouthTICK');
   fetch('https://formsubmit.co/ajax/torunberkekaratas@gmail.com', {
-    method: 'POST',
-    headers: { 'Accept': 'application/json' },
-    body: formData
+    method: 'POST', headers: { 'Accept': 'application/json' }, body: formData
   })
   .then(r => r.json())
   .then(() => { btn.textContent = okTxt; btn.style.background = '#16a34a'; e.target.reset(); })

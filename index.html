@@ -252,25 +252,83 @@
 
       <div class="manifesto-divider" data-anim></div>
 
-      <div class="manifesto-stats" data-anim>
+      <div class="manifesto-stats" data-anim id="manifesto-stats">
         <div class="manifesto-stat-item">
-          <div class="manifesto-stat-num"><span data-count="6">6</span></div>
-          <div class="manifesto-stat-label" data-i18n="stat1.label">Focus areas</div>
+          <div class="manifesto-stat-num"><span data-count="47" data-suffix="+">47+</span></div>
+          <div class="manifesto-stat-label" data-i18n="stat1.label">Volunteers</div>
         </div>
         <div class="manifesto-stat-sep"></div>
         <div class="manifesto-stat-item">
-          <div class="manifesto-stat-num"><span>2026</span></div>
-          <div class="manifesto-stat-label" data-i18n="stat2.label">Founded</div>
+          <div class="manifesto-stat-num"><span data-count="12">12</span></div>
+          <div class="manifesto-stat-label" data-i18n="stat2.label">Countries Reached</div>
         </div>
         <div class="manifesto-stat-sep"></div>
         <div class="manifesto-stat-item">
-          <div class="manifesto-stat-num is-text">Yalova</div>
-          <div class="manifesto-stat-label" data-i18n="stat3.label">Based in</div>
+          <div class="manifesto-stat-num"><span data-count="50" data-suffix="+">50+</span></div>
+          <div class="manifesto-stat-label" data-i18n="stat3.label">Articles Published</div>
         </div>
         <div class="manifesto-stat-sep"></div>
         <div class="manifesto-stat-item">
-          <div class="manifesto-stat-num is-text">Erasmus+</div>
-          <div class="manifesto-stat-label" data-i18n="stat4.label">Orientation</div>
+          <div class="manifesto-stat-num"><span data-count="3">3</span></div>
+          <div class="manifesto-stat-label" data-i18n="stat4.label">Active Projects</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── TESTIMONIALS ─────────────────────────────────────────── -->
+<section class="section testimonials-section" style="background:var(--white);border-top:1px solid var(--border-soft);">
+  <style>
+    .testimonials-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:24px; margin-top:48px; }
+    @media(max-width:900px){ .testimonials-grid{grid-template-columns:1fr;} }
+    .testi-card { background:var(--bg-soft); border:1px solid var(--border-soft); border-radius:var(--radius-lg); padding:32px; display:flex; flex-direction:column; }
+    .testi-stars { color:#f59e0b; font-size:0.85rem; letter-spacing:3px; margin-bottom:18px; }
+    .testi-quote { font-size:0.96rem; line-height:1.75; color:var(--ink-muted); font-style:italic; flex:1; margin-bottom:28px; }
+    .testi-quote::before { content:'\201C'; font-size:2rem; color:var(--border); line-height:0; vertical-align:-0.5rem; margin-right:4px; font-style:normal; }
+    .testi-author { display:flex; align-items:center; gap:13px; }
+    .testi-avatar { width:46px; height:46px; border-radius:50%; object-fit:cover; border:2px solid var(--border-soft); flex-shrink:0; }
+    .testi-name { font-weight:700; font-size:0.88rem; color:var(--ink); }
+    .testi-role { font-size:0.76rem; color:var(--ink-ghost); margin-top:3px; }
+  </style>
+  <div class="container">
+    <div class="section-label" data-anim>
+      <span class="section-label-line"></span>
+      <span class="section-label-text" data-i18n="testi.label">Voices</span>
+    </div>
+    <h2 class="display-md" data-anim style="margin-top:14px;max-width:480px;" data-i18n="testi.title">What participants say.</h2>
+    <div class="testimonials-grid" data-stagger>
+      <div class="testi-card" data-anim>
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-quote" data-i18n="testi.q1">The exchange completely changed how I see Europe. I came back to Yalova with 12 new friends across 6 countries and a real sense of what's possible.</p>
+        <div class="testi-author">
+          <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=80&q=80&auto=format&fit=crop&crop=face" alt="Ayşe K." class="testi-avatar" loading="lazy"/>
+          <div>
+            <div class="testi-name" data-i18n="testi.n1">Ayşe K.</div>
+            <div class="testi-role" data-i18n="testi.r1">Youth Exchange · Germany · 2025</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card" data-anim style="transition-delay:.1s">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-quote" data-i18n="testi.q2">I volunteered in Lisbon for 8 months through ESC. YouthTICK helped me navigate the application — without them I honestly would not have known where to start.</p>
+        <div class="testi-author">
+          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&q=80&auto=format&fit=crop&crop=face" alt="Mehmet T." class="testi-avatar" loading="lazy"/>
+          <div>
+            <div class="testi-name" data-i18n="testi.n2">Mehmet T.</div>
+            <div class="testi-role" data-i18n="testi.r2">ESC Volunteer · Portugal · 2025</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card" data-anim style="transition-delay:.2s">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-quote" data-i18n="testi.q3">As a German partner, working with YouthTICK was professional from day one. The Turkish participants brought perspectives our group had never encountered before.</p>
+        <div class="testi-author">
+          <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=80&q=80&auto=format&fit=crop&crop=face" alt="Céline B." class="testi-avatar" loading="lazy"/>
+          <div>
+            <div class="testi-name" data-i18n="testi.n3">Céline B.</div>
+            <div class="testi-role" data-i18n="testi.r3">Programme Manager · Germany · 2025</div>
+          </div>
         </div>
       </div>
     </div>

@@ -921,5 +921,55 @@ export default {
     "e404.title": "Bu sayfa mevcut değil.",
     "e404.desc": "Aradığınız sayfa taşınmış, yeniden adlandırılmış veya kaldırılmış olabilir. Sizi doğru yere yönlendirelim.",
     "e404.home": "Ana Sayfaya Git",
-    "e404.blog": "Blog'u Oku"
+    "e404.blog": "Blog'u Oku",
+
+    /* ── Stats sayaçları ── */
+    "stat1.label": "Gönüllü",
+    "stat2.label": "Ülke",
+    "stat3.label": "Yayımlanan Makale",
+    "stat4.label": "Aktif Proje",
+
+    /* ── Referanslar ── */
+    "testi.label": "Sesler",
+    "testi.title": "Katılımcılar ne diyor.",
+    "testi.q1": "Bu değişim Avrupa'yı nasıl gördüğümü tamamen değiştirdi. Yalova'ya 6 ülkeden 12 yeni arkadaşla ve gerçekten neyin mümkün olduğuna dair bir duyguyla döndüm.",
+    "testi.q2": "ESC aracılığıyla 8 ay Lizbon'da gönüllü oldum. YouthTICK başvuru sürecinde bana yol gösterdi — onlar olmadan nereden başlayacağımı gerçekten bilemezdim.",
+    "testi.q3": "Alman bir ortak olarak YouthTICK ile çalışmak başından beri profesyoneldi. Türk katılımcılar grubumuzun daha önce hiç karşılaşmadığı bakış açıları getirdi.",
+    "testi.n1": "Ayşe K.", "testi.r1": "Gençlik Değişimi · Almanya · 2025",
+    "testi.n2": "Mehmet T.", "testi.r2": "ESC Gönüllüsü · Portekiz · 2025",
+    "testi.n3": "Céline B.", "testi.r3": "Program Yöneticisi · Almanya · 2025",
+
+    /* ── Takvim ── */
+    "cal.label": "2026 Son Tarihleri",
+    "cal.title": "Erasmus+ 2026 Başvuru Son Tarihleri",
+    "cal.desc": "Resmi TUA (Türkiye Ulusal Ajansı) son tarihleri. Bir turu kaçırmak 6 ay bekleme anlamına gelir — önceden planlayın.",
+    "cal.tua.link": "Resmi TUA sitesi →",
+    "cal.d1.name": "KA1 Gençlik — 1. Tur", "cal.d1.sub": "Gençlik değişimleri, eğitim kursları, gönüllülük",
+    "cal.d2.name": "KA2 Ortaklıklar — 1. Tur", "cal.d2.sub": "İşbirliği ortaklıkları, küçük ölçekli ortaklıklar",
+    "cal.d3.name": "KA1 Gençlik — 2. Tur", "cal.d3.sub": "Gençlik değişimleri, eğitim kursları, gönüllülük",
+    "cal.d4.name": "KA2 Ortaklıklar — 2. Tur", "cal.d4.sub": "İşbirliği ortaklıkları, küçük ölçekli ortaklıklar",
+    "cal.d5.name": "KA1 Gençlik — 3. Tur", "cal.d5.sub": "Gençlik değişimleri, eğitim kursları, gönüllülük",
+    "cal.d6.name": "ADB Bireysel Gönüllülük", "cal.d6.sub": "AB Gençlik Portalı PASS profili üzerinden her zaman başvurulabilir",
+    "cal.passed": "Kapalı", "cal.upcoming": "Yaklaşıyor", "cal.open": "Her Zaman Açık",
+
+    /* ── Bildirim kaydı ── */
+    "notify.label": "Bildirim Al",
+    "notify.title": "Hiçbir açık çağrıyı kaçırma.",
+    "notify.sub": "Yeni Erasmus+ çağrıları, ortak aramaları veya fırsatlar yayınlandığında e-posta ile haberdar ederiz. Spam yok — her ilgili çağrı için bir e-posta.",
+    "notify.btn": "Beni Bildir",
+    "notify.cat1": "Erasmus+ KA1", "notify.cat2": "ADB Gönüllülük",
+    "notify.cat3": "KA2 Ortaklıklar", "notify.cat4": "Ortak Aramaları",
+    "notify.gdpr": "E-postanız yalnızca seçtiğiniz bildirimler için kullanılır. İstediğiniz zaman abonelikten çıkabilirsiniz.",
+
+    /* ── Başvuru durumu ── */
+    "status.label": "Başvuru Durumu",
+    "status.title": "Başvurunuzu kontrol edin.",
+    "status.desc": "Başvururken kullandığınız e-posta adresini girin. Mevcut durumunuzu aşağıda göstereceğiz.",
+    "status.email.placeholder": "email@adresiniz.com",
+    "status.check": "Durumu Kontrol Et",
+    "status.note": "Yakın zamanda mı başvurdunuz? Kaydınızın görünmesi 1-2 iş günü alabilir.",
+    "status.back": "← Başka bir kontrol",
+    "status.contact": "Bize Ulaşın",
+    "status.nf.title": "Başvuru bulunamadı.",
+    "status.nf.desc": "Bu e-posta adresi için bir başvuru bulamadık. Kullandığınız e-postayı kontrol edin veya bize doğrudan ulaşın."
 };

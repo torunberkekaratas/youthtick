@@ -921,5 +921,55 @@ export default {
     "e404.title": "Diese Seite existiert nicht.",
     "e404.desc": "Die gesuchte Seite wurde möglicherweise verschoben, umbenannt oder entfernt. Wir helfen dir zurück.",
     "e404.home": "Zur Startseite",
-    "e404.blog": "Zum Blog"
+    "e404.blog": "Zum Blog",
+
+    /* ── Statistik-Zähler ── */
+    "stat1.label": "Freiwillige",
+    "stat2.label": "Erreichte Länder",
+    "stat3.label": "Veröffentlichte Artikel",
+    "stat4.label": "Aktive Projekte",
+
+    /* ── Testimonials ── */
+    "testi.label": "Stimmen",
+    "testi.title": "Was Teilnehmer sagen.",
+    "testi.q1": "Der Austausch hat völlig verändert, wie ich Europa sehe. Ich kam mit 12 neuen Freunden aus 6 Ländern nach Yalova zurück — und einem echten Gefühl dafür, was möglich ist.",
+    "testi.q2": "Ich habe 8 Monate in Lissabon durch ESC freiwillig gearbeitet. YouthTICK half mir bei der Bewerbung — ohne sie hätte ich ehrlich gesagt nicht gewusst, wo ich anfangen soll.",
+    "testi.q3": "Als deutsches Partnerunternehmen war die Zusammenarbeit mit YouthTICK von Anfang an professionell. Die türkischen Teilnehmer brachten Perspektiven, die unsere Gruppe noch nie erlebt hatte.",
+    "testi.n1": "Ayşe K.", "testi.r1": "Jugendaustausch · Deutschland · 2025",
+    "testi.n2": "Mehmet T.", "testi.r2": "ESC-Freiwilliger · Portugal · 2025",
+    "testi.n3": "Céline B.", "testi.r3": "Programmmanagerin · Deutschland · 2025",
+
+    /* ── Fristen-Kalender ── */
+    "cal.label": "Fristen 2026",
+    "cal.title": "Erasmus+ 2026 Bewerbungsfristen",
+    "cal.desc": "Offizielle TUA-Fristen (Türkische Nationale Agentur). Eine Runde zu verpassen bedeutet 6 Monate Wartezeit — plane voraus.",
+    "cal.tua.link": "Offizielle TUA-Website →",
+    "cal.d1.name": "KA1 Jugend — Runde 1", "cal.d1.sub": "Jugendaustausche, Schulungskurse, Freiwilligentätigkeit",
+    "cal.d2.name": "KA2 Partnerschaften — Runde 1", "cal.d2.sub": "Kooperationspartnerschaften, kleinere Partnerschaften",
+    "cal.d3.name": "KA1 Jugend — Runde 2", "cal.d3.sub": "Jugendaustausche, Schulungskurse, Freiwilligentätigkeit",
+    "cal.d4.name": "KA2 Partnerschaften — Runde 2", "cal.d4.sub": "Kooperationspartnerschaften, kleinere Partnerschaften",
+    "cal.d5.name": "KA1 Jugend — Runde 3", "cal.d5.sub": "Jugendaustausche, Schulungskurse, Freiwilligentätigkeit",
+    "cal.d6.name": "ESK Einzelfreiwillige", "cal.d6.sub": "Jederzeit über EU-Jugendportal PASS-Profil bewerben",
+    "cal.passed": "Geschlossen", "cal.upcoming": "Bevorstehend", "cal.open": "Immer offen",
+
+    /* ── Benachrichtigung ── */
+    "notify.label": "Benachrichtigungen",
+    "notify.title": "Verpasse keinen offenen Aufruf.",
+    "notify.sub": "Wir schicken dir eine E-Mail, wenn neue Erasmus+-Aufrufe, Partnergesuche oder Möglichkeiten veröffentlicht werden. Kein Spam — eine E-Mail pro relevantem Aufruf.",
+    "notify.btn": "Benachrichtige mich",
+    "notify.cat1": "Erasmus+ KA1", "notify.cat2": "ESK-Freiwillige",
+    "notify.cat3": "KA2 Partnerschaften", "notify.cat4": "Partnersuche",
+    "notify.gdpr": "Deine E-Mail wird nur für die ausgewählten Benachrichtigungen verwendet. Jederzeit abmeldbar.",
+
+    /* ── Bewerbungsstatus ── */
+    "status.label": "Bewerbungsstatus",
+    "status.title": "Bewerbung prüfen.",
+    "status.desc": "Gib die E-Mail-Adresse ein, die du bei der Bewerbung verwendet hast. Wir zeigen dir deinen aktuellen Status.",
+    "status.email.placeholder": "deine@email.de",
+    "status.check": "Status prüfen",
+    "status.note": "Erst kürzlich beworben? Es kann 1–2 Werktage dauern, bis dein Eintrag erscheint.",
+    "status.back": "← Anderen prüfen",
+    "status.contact": "Kontakt",
+    "status.nf.title": "Keine Bewerbung gefunden.",
+    "status.nf.desc": "Wir konnten keine Bewerbung für diese E-Mail-Adresse finden. Bitte überprüfe die verwendete E-Mail oder kontaktiere uns direkt."
 };

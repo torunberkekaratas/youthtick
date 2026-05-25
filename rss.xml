@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>YouthTICK Blog</title>
+    <link>https://youthtick.org/blog.html</link>
+    <description>In-depth articles on Erasmus+, youth participation, sustainability and intercultural dialogue — by the YouthTICK team in Yalova, Türkiye.</description>
+    <language>en</language>
+    <copyright>YouthTICK 2026</copyright>
+    <lastBuildDate>Sun, 25 May 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://youthtick.org/rss.xml" rel="self" type="application/rss+xml"/>
+    <image>
+      <url>https://youthtick.org/logo-square.png</url>
+      <title>YouthTICK Blog</title>
+      <link>https://youthtick.org/blog.html</link>
+    </image>
+
+    <item>
+      <title>Erasmus+ in Turkey: What Young People Need to Know in 2026</title>
+      <link>https://youthtick.org/article.html?id=49</link>
+      <guid isPermaLink="true">https://youthtick.org/article.html?id=49</guid>
+      <pubDate>Thu, 15 May 2026 08:00:00 +0000</pubDate>
+      <description>Turkey has been an Erasmus+ programme country since 2014 — meaning Turkish young people and organisations can participate in the full range of Erasmus+ actions on equal terms with EU member states.</description>
+      <dc:creator>Ayşe Kaya</dc:creator>
+      <category>Erasmus+</category>
+    </item>
+
+    <item>
+      <title>What Is a Youth Exchange? Everything You Need to Know</title>
+      <link>https://youthtick.org/article.html?id=48</link>
+      <guid isPermaLink="true">https://youthtick.org/article.html?id=48</guid>
+      <pubDate>Sun, 18 May 2026 08:00:00 +0000</pubDate>
+      <description>Every year, tens of thousands of young Europeans participate in Erasmus+ youth exchanges — yet most young people outside active NGO circles have never heard of them. This guide answers the most common questions honestly.</description>
+      <dc:creator>Kerem Aydın</dc:creator>
+      <category>Erasmus+</category>
+    </item>
+
+    <item>
+      <title>How to Apply for Erasmus+: Step-by-Step Guide 2026</title>
+      <link>https://youthtick.org/article.html?id=47</link>
+      <guid isPermaLink="true">https://youthtick.org/article.html?id=47</guid>
+      <pubDate>Wed, 20 May 2026 08:00:00 +0000</pubDate>
+      <description>Applying for Erasmus+ can feel overwhelming the first time. Multiple programme types, national agency websites, project forms — this guide walks you through every step.</description>
+      <dc:creator>Elif Yıldız</dc:creator>
+      <category>Erasmus+</category>
+    </item>
+
+    <item>
+      <title>Youth Participatory Budgeting: A Practical Guide for Youth Organisations</title>
+      <link>https://youthtick.org/article.html?id=46</link>
+      <guid isPermaLink="true">https://youthtick.org/article.html?id=46</guid>
+      <pubDate>Mon, 11 May 2026 08:00:00 +0000</pubDate>
+      <description>Participatory budgeting (PB) is a democratic process where community members directly decide how part of a public budget is allocated. This guide explains how to start a youth PB process in your context.</description>
+      <dc:creator>YouthTICK Team</dc:creator>
+      <category>Youth Participation</category>
+    </item>
+
+    <item>
+      <title>The Erasmus+ Programme 2021–2027: What's New and What Matters</title>
+      <link>https://youthtick.org/article.html?id=45</link>
+      <guid isPermaLink="true">https://youthtick.org/article.html?id=45</guid>
+      <pubDate>Fri, 08 May 2026 08:00:00 +0000</pubDate>
+      <description>The current Erasmus+ programme runs from 2021 to 2027 with a record budget of €26.2 billion. Here's what changed from the previous programme and what youth organisations need to know.</description>
+      <dc:creator>YouthTICK Team</dc:creator>
+      <category>Erasmus+</category>
+    </item>
+
+    <item>
+      <title>How Youth Organisations Can Contribute to the EU Youth Strategy</title>
+      <link>https://youthtick.org/article.html?id=44</link>
+      <guid isPermaLink="true">https://youthtick.org/article.html?id=44</guid>
+      <pubDate>Tue, 05 May 2026 08:00:00 +0000</pubDate>
+      <description>The EU Youth Strategy 2019–2027 sets out a framework for youth policy across Europe. This article explains what it means in practice and how small organisations can align with it.</description>
+      <dc:creator>YouthTICK Team</dc:creator>
+      <category>Youth Participation</category>
+    </item>
+
+    <item>
+      <title>Intercultural Dialogue in Youth Work: Methods That Actually Work</title>
+      <link>https://youthtick.org/article.html?id=43</link>
+      <guid isPermaLink="true">https://youthtick.org/article.html?id=43</guid>
+      <pubDate>Sat, 02 May 2026 08:00:00 +0000</pubDate>
+      <description>Intercultural dialogue is a cornerstone of Erasmus+ youth work — but it can easily become superficial. This article reviews the non-formal methods that produce genuine cross-cultural understanding.</description>
+      <dc:creator>YouthTICK Team</dc:creator>
+      <category>Cultural Interaction</category>
+    </item>
+
+    <item>
+      <title>Understanding the European Solidarity Corps: A Complete Guide</title>
+      <link>https://youthtick.org/article.html?id=42</link>
+      <guid isPermaLink="true">https://youthtick.org/article.html?id=42</guid>
+      <pubDate>Wed, 29 Apr 2026 08:00:00 +0000</pubDate>
+      <description>The European Solidarity Corps gives young people aged 18–30 the chance to volunteer across Europe — fully funded. This guide explains every strand and how to apply.</description>
+      <dc:creator>YouthTICK Team</dc:creator>
+      <category>Erasmus+</category>
+    </item>
+
+    <item>
+      <title>The Complete Guide to Your First Erasmus+ Youth Exchange in 2026</title>
+      <link>https://youthtick.org/article.html?id=0</link>
+      <guid isPermaLink="true">https://youthtick.org/article.html?id=0</guid>
+      <pubDate>Mon, 01 Apr 2026 08:00:00 +0000</pubDate>
+      <description>Erasmus+ youth exchanges are one of the most transformative experiences available to young people aged 13–30 in Europe. They are free, EU-funded and create connections that last decades.</description>
+      <dc:creator>Elif Yıldız</dc:creator>
+      <category>Erasmus+</category>
+    </item>
+
+  </channel>
+</rss>

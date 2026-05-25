@@ -50,6 +50,16 @@ function initApp() {
 
     // 4. Lucide icons
     initLucide();
+
+    // 5. RSS autodiscovery link (once, for all pages)
+    if (!document.querySelector('link[type="application/rss+xml"]')) {
+        const rssLink = document.createElement('link');
+        rssLink.rel   = 'alternate';
+        rssLink.type  = 'application/rss+xml';
+        rssLink.title = 'YouthTICK Blog RSS';
+        rssLink.href  = 'https://youthtick.org/rss.xml';
+        document.head.appendChild(rssLink);
+    }
 }
 
 if (document.readyState === 'loading') {
