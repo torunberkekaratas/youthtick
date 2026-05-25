@@ -39,7 +39,7 @@ export function renderFooter() {
         <div class="footer-links">
           <h4 data-i18n="footer.action">Action</h4>
           <ul>
-            <li><a href="programs.html" data-i18n="nav.programs">Programs</a></li>
+            <li><a href="focus.html" data-i18n="nav.programs">Programs</a></li>
             <li><a href="projects.html" data-i18n="nav.projects">Projects</a></li>
             <li><a href="opportunities.html" data-i18n="nav.opportunities">Opportunities</a></li>
             <li><a href="events.html" data-i18n="nav.events">Events</a></li>
