@@ -5,37 +5,40 @@ Amaç: Yalova topic-cluster (hub + 7 spoke) URL'lerini hızlı indeksleyip otori
 
 ## P0 (Aynı Gün Gönder)
 1. https://youthtick.org/sitemap.xml
-2. https://youthtick.org/blog.html
-3. https://youthtick.org/article.html?id=50&slug=youthtick-yalova-genclik-erasmus-ve-uluslararasi-firsatlar-rehberi
-4. https://youthtick.org/article.html?id=51&slug=youthtick-yalova-erasmus-basvuru-rehberi-2026
-5. https://youthtick.org/article.html?id=52&slug=youthtick-yalova-universite-ogrencileri-icin-erasmus-firsatlari
-6. https://youthtick.org/article.html?id=53&slug=youthtick-yalova-genclik-topluluklari-ve-gonulluluk-rehberi
-7. https://youthtick.org/article.html?id=54&slug=youthtick-yalova-dil-okulu-ve-yurtdisi-egitim-alternatifleri
-8. https://youthtick.org/article.html?id=55&slug=youthtick-yalova-genc-girisimcilik-ekosistemi-rehberi
-9. https://youthtick.org/article.html?id=56&slug=youthtick-yalova-tekmer-osb-ve-teknopark-firsatlari
-10. https://youthtick.org/article.html?id=57&slug=youthtick-yalova-stk-ve-genclik-kuruluslari-rehberi
+2. https://youthtick.org/yalova-erasmus
+3. https://youthtick.org/blog.html
+4. https://youthtick.org/article.html?id=50&slug=youthtick-yalova-genclik-erasmus-ve-uluslararasi-firsatlar-rehberi
+5. https://youthtick.org/article.html?id=51&slug=youthtick-yalova-erasmus-basvuru-rehberi-2026
+6. https://youthtick.org/article.html?id=52&slug=youthtick-yalova-universite-ogrencileri-icin-erasmus-firsatlari
+7. https://youthtick.org/article.html?id=53&slug=youthtick-yalova-genclik-topluluklari-ve-gonulluluk-rehberi
+8. https://youthtick.org/article.html?id=54&slug=youthtick-yalova-dil-okulu-ve-yurtdisi-egitim-alternatifleri
+9. https://youthtick.org/article.html?id=55&slug=youthtick-yalova-genc-girisimcilik-ekosistemi-rehberi
+10. https://youthtick.org/article.html?id=56&slug=youthtick-yalova-tekmer-osb-ve-teknopark-firsatlari
+11. https://youthtick.org/article.html?id=57&slug=youthtick-yalova-stk-ve-genclik-kuruluslari-rehberi
 
 ## P1 (24 Saat İçinde Gönder)
-1. https://youthtick.org/tr/blog.html
-2. https://youthtick.org/tr/article.html?id=50&slug=youthtick-yalova-genclik-erasmus-ve-uluslararasi-firsatlar-rehberi
-3. https://youthtick.org/tr/article.html?id=51&slug=youthtick-yalova-erasmus-basvuru-rehberi-2026
-4. https://youthtick.org/tr/article.html?id=52&slug=youthtick-yalova-universite-ogrencileri-icin-erasmus-firsatlari
-5. https://youthtick.org/tr/article.html?id=53&slug=youthtick-yalova-genclik-topluluklari-ve-gonulluluk-rehberi
-6. https://youthtick.org/tr/article.html?id=54&slug=youthtick-yalova-dil-okulu-ve-yurtdisi-egitim-alternatifleri
-7. https://youthtick.org/tr/article.html?id=55&slug=youthtick-yalova-genc-girisimcilik-ekosistemi-rehberi
-8. https://youthtick.org/tr/article.html?id=56&slug=youthtick-yalova-tekmer-osb-ve-teknopark-firsatlari
-9. https://youthtick.org/tr/article.html?id=57&slug=youthtick-yalova-stk-ve-genclik-kuruluslari-rehberi
+1. https://youthtick.org/tr/yalova-erasmus
+2. https://youthtick.org/tr/blog.html
+3. https://youthtick.org/tr/article.html?id=50&slug=youthtick-yalova-genclik-erasmus-ve-uluslararasi-firsatlar-rehberi
+4. https://youthtick.org/tr/article.html?id=51&slug=youthtick-yalova-erasmus-basvuru-rehberi-2026
+5. https://youthtick.org/tr/article.html?id=52&slug=youthtick-yalova-universite-ogrencileri-icin-erasmus-firsatlari
+6. https://youthtick.org/tr/article.html?id=53&slug=youthtick-yalova-genclik-topluluklari-ve-gonulluluk-rehberi
+7. https://youthtick.org/tr/article.html?id=54&slug=youthtick-yalova-dil-okulu-ve-yurtdisi-egitim-alternatifleri
+8. https://youthtick.org/tr/article.html?id=55&slug=youthtick-yalova-genc-girisimcilik-ekosistemi-rehberi
+9. https://youthtick.org/tr/article.html?id=56&slug=youthtick-yalova-tekmer-osb-ve-teknopark-firsatlari
+10. https://youthtick.org/tr/article.html?id=57&slug=youthtick-yalova-stk-ve-genclik-kuruluslari-rehberi
 
 ## P2 (48 Saat İçinde Gönder)
-1. https://youthtick.org/de/blog.html
-2. https://youthtick.org/de/article.html?id=50&slug=youthtick-yalova-genclik-erasmus-ve-uluslararasi-firsatlar-rehberi
-3. https://youthtick.org/de/article.html?id=51&slug=youthtick-yalova-erasmus-basvuru-rehberi-2026
-4. https://youthtick.org/de/article.html?id=52&slug=youthtick-yalova-universite-ogrencileri-icin-erasmus-firsatlari
-5. https://youthtick.org/de/article.html?id=53&slug=youthtick-yalova-genclik-topluluklari-ve-gonulluluk-rehberi
-6. https://youthtick.org/de/article.html?id=54&slug=youthtick-yalova-dil-okulu-ve-yurtdisi-egitim-alternatifleri
-7. https://youthtick.org/de/article.html?id=55&slug=youthtick-yalova-genc-girisimcilik-ekosistemi-rehberi
-8. https://youthtick.org/de/article.html?id=56&slug=youthtick-yalova-tekmer-osb-ve-teknopark-firsatlari
-9. https://youthtick.org/de/article.html?id=57&slug=youthtick-yalova-stk-ve-genclik-kuruluslari-rehberi
+1. https://youthtick.org/de/yalova-erasmus
+2. https://youthtick.org/de/blog.html
+3. https://youthtick.org/de/article.html?id=50&slug=youthtick-yalova-genclik-erasmus-ve-uluslararasi-firsatlar-rehberi
+4. https://youthtick.org/de/article.html?id=51&slug=youthtick-yalova-erasmus-basvuru-rehberi-2026
+5. https://youthtick.org/de/article.html?id=52&slug=youthtick-yalova-universite-ogrencileri-icin-erasmus-firsatlari
+6. https://youthtick.org/de/article.html?id=53&slug=youthtick-yalova-genclik-topluluklari-ve-gonulluluk-rehberi
+7. https://youthtick.org/de/article.html?id=54&slug=youthtick-yalova-dil-okulu-ve-yurtdisi-egitim-alternatifleri
+8. https://youthtick.org/de/article.html?id=55&slug=youthtick-yalova-genc-girisimcilik-ekosistemi-rehberi
+9. https://youthtick.org/de/article.html?id=56&slug=youthtick-yalova-tekmer-osb-ve-teknopark-firsatlari
+10. https://youthtick.org/de/article.html?id=57&slug=youthtick-yalova-stk-ve-genclik-kuruluslari-rehberi
 
 ## Takip KPI (İlk 14 Gün)
 1. URL Inspection -> "URL is on Google" oranı (P0 > P1 > P2)
