@@ -181,10 +181,11 @@ function exposeBlogData() {
   try {
     const raw = localStorage.getItem(KEYS.blog);
     if (!raw) { window.YT_BLOG_POSTS = []; return; }
-    const posts = JSON.parse(raw);
-    window.YT_BLOG_POSTS = Array.isArray(posts)
-      ? posts.filter(p => p.status === 'published').sort((a, b) => new Date(b.publishedAt || b.createdAt) - new Date(a.publishedAt || a.createdAt))
-      : [];
+    const parsed = JSON.parse(raw);
+    const posts = Array.isArray(parsed) ? parsed : (parsed && Array.isArray(parsed.posts) ? parsed.posts : []);
+    window.YT_BLOG_POSTS = posts
+      .filter(p => p.status === 'published')
+      .sort((a, b) => new Date(b.publishedAt || b.createdAt) - new Date(a.publishedAt || a.createdAt));
   } catch (e) {
     window.YT_BLOG_POSTS = [];
   }

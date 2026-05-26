@@ -1,4 +1,13 @@
 export default {
+    /* ── Page Titles (SEO) ────────────────────────────────────────────── */
+    "home.pageTitle": "YouthTICK — Yalova Erasmus+ Gençlik İnisiyatifi | Yalova, Türkiye",
+    "about.pageTitle": "Yalova Gençlik İnisiyatifi Hakkında — YouthTICK | Misyon & Değerler",
+    "events.pageTitle": "Yalova Gençlik Etkinlikleri — Erasmus+ Atölyeleri 2026 | YouthTICK",
+    "opp.pageTitle": "Yalova Erasmus+ Başvurusu — Avrupa Gençlik Fırsatları | YouthTICK",
+    "vol.pageTitle": "Yalova'da Gönüllü Ol — YouthTICK Erasmus+ Gençlik Programı",
+    "proj.pageTitle": "Yalova Gençlik Projeleri — Erasmus+ Girişimleri | YouthTICK",
+    "blog.pageTitle": "YouthTICK Blog — Yalova Erasmus+, Gençlik İnovasyonu & Politika",
+    "contact.pageTitle": "İletişim — YouthTICK Yalova Gençlik İnisiyatifi | Erasmus+ Ortaklık",
     /* ── Navigation ─────────────────────────────────── */
     "nav.home": "Ana Sayfa",
     "nav.about": "Hakkımızda",
@@ -559,6 +568,7 @@ export default {
     "blog.hero.title": "Ekibimizden perspektifler.",
     "blog.hero.sub": "Erasmus+, gençlik katılımı, sürdürülebilirlik ve kültürlerarası diyalog üzerine yazıyor, YouthTICK'i inşa ederken öğrendiklerimizi paylaşıyoruz.",
     "blog.cat.all": "Tüm Konular",
+    "blog.cat.yalova": "Yalova Ekosistemi",
     "blog.cat.erasmus": "Erasmus+",
     "blog.cat.innovation": "İnovasyon",
     "blog.cat.sustainability": "Sürdürülebilirlik",

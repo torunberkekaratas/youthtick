@@ -6,13 +6,94 @@
     <description>In-depth articles on Erasmus+, youth participation, sustainability and intercultural dialogue — by the YouthTICK team in Yalova, Türkiye.</description>
     <language>en</language>
     <copyright>YouthTICK 2026</copyright>
-    <lastBuildDate>Sun, 25 May 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 26 May 2026 16:30:00 +0000</lastBuildDate>
     <atom:link href="https://youthtick.org/rss.xml" rel="self" type="application/rss+xml"/>
     <image>
-      <url>https://youthtick.org/logo-square.png</url>
+      <url>https://youthtick.org/logoalt.png</url>
       <title>YouthTICK Blog</title>
       <link>https://youthtick.org/blog.html</link>
     </image>
+
+    <item>
+      <title>Youthtick Rehberi: Yalova’daki STK ve Gençlik Kuruluşları</title>
+      <link>https://youthtick.org/article.html?id=57&amp;slug=youthtick-yalova-stk-ve-genclik-kuruluslari-rehberi</link>
+      <guid isPermaLink="true">https://youthtick.org/article.html?id=57&amp;slug=youthtick-yalova-stk-ve-genclik-kuruluslari-rehberi</guid>
+      <pubDate>Tue, 26 May 2026 16:00:00 +0000</pubDate>
+      <description>Yalova’daki STK yapıları ve gençlik kuruluşları için Youthtick yerel rehberi: katılım kanalları, kurumsal okuryazarlık ve yapıcı etkileşim modeli.</description>
+      <dc:creator>Elif Yıldız</dc:creator>
+      <category>Yalova Ecosystem</category>
+    </item>
+
+    <item>
+      <title>Youthtick Rehberi: Yalova’da Tekmer, OSB ve Teknopark Fırsatları</title>
+      <link>https://youthtick.org/article.html?id=56&amp;slug=youthtick-yalova-tekmer-osb-ve-teknopark-firsatlari</link>
+      <guid isPermaLink="true">https://youthtick.org/article.html?id=56&amp;slug=youthtick-yalova-tekmer-osb-ve-teknopark-firsatlari</guid>
+      <pubDate>Tue, 26 May 2026 15:30:00 +0000</pubDate>
+      <description>Yalova Tekmer, OSB ve Teknopark fırsatlarına hazırlık için Youthtick rehberi: beceri seti, rol hazırlığı, proje dili ve ekosisteme giriş stratejileri.</description>
+      <dc:creator>Selin Acar</dc:creator>
+      <category>Yalova Ecosystem</category>
+    </item>
+
+    <item>
+      <title>Youthtick Rehberi: Yalova Genç Girişimcilik Ekosistemi</title>
+      <link>https://youthtick.org/article.html?id=55&amp;slug=youthtick-yalova-genc-girisimcilik-ekosistemi-rehberi</link>
+      <guid isPermaLink="true">https://youthtick.org/article.html?id=55&amp;slug=youthtick-yalova-genc-girisimcilik-ekosistemi-rehberi</guid>
+      <pubDate>Tue, 26 May 2026 15:00:00 +0000</pubDate>
+      <description>Yalova genç girişimcilik için Youthtick yol haritası: fikir doğrulama, ağ erişimi, ekip kurma, finansmana hazırlık ve yerel ekosistem iş birlikleri.</description>
+      <dc:creator>Mert Can</dc:creator>
+      <category>Yalova Ecosystem</category>
+    </item>
+
+    <item>
+      <title>Youthtick Rehberi: Yalova’da Dil Okulu ve Yurtdışı Eğitim Alternatifleri</title>
+      <link>https://youthtick.org/article.html?id=54&amp;slug=youthtick-yalova-dil-okulu-ve-yurtdisi-egitim-alternatifleri</link>
+      <guid isPermaLink="true">https://youthtick.org/article.html?id=54&amp;slug=youthtick-yalova-dil-okulu-ve-yurtdisi-egitim-alternatifleri</guid>
+      <pubDate>Tue, 26 May 2026 14:30:00 +0000</pubDate>
+      <description>Yalova dil okulu ve yurtdışı eğitim kararları için tarafsız Youthtick rehberi: seçenek karşılaştırması, bütçe, takvim ve hazırlık kriterleri.</description>
+      <dc:creator>Zeynep Demir</dc:creator>
+      <category>Yalova Ecosystem</category>
+    </item>
+
+    <item>
+      <title>Youthtick Rehberi: Yalova Gençlik Toplulukları ve Gönüllülük Yolları</title>
+      <link>https://youthtick.org/article.html?id=53&amp;slug=youthtick-yalova-genclik-topluluklari-ve-gonulluluk-rehberi</link>
+      <guid isPermaLink="true">https://youthtick.org/article.html?id=53&amp;slug=youthtick-yalova-genclik-topluluklari-ve-gonulluluk-rehberi</guid>
+      <pubDate>Tue, 26 May 2026 14:00:00 +0000</pubDate>
+      <description>Yalova gençlik toplulukları ve gönüllülük için Youthtick yol haritası: başlangıç adımları, sürdürülebilir katılım, etki ölçümü ve iş birliği modelleri.</description>
+      <dc:creator>Ayşe Kaya</dc:creator>
+      <category>Yalova Ecosystem</category>
+    </item>
+
+    <item>
+      <title>Youthtick Rehberi: Yalova’daki Üniversite Öğrencileri İçin Erasmus+ Fırsatları</title>
+      <link>https://youthtick.org/article.html?id=52&amp;slug=youthtick-yalova-universite-ogrencileri-icin-erasmus-firsatlari</link>
+      <guid isPermaLink="true">https://youthtick.org/article.html?id=52&amp;slug=youthtick-yalova-universite-ogrencileri-icin-erasmus-firsatlari</guid>
+      <pubDate>Tue, 26 May 2026 13:30:00 +0000</pubDate>
+      <description>Yalova’daki üniversite öğrencileri için Youthtick Erasmus+ yol haritası: öğrenim hareketliliği, staj, gençlik değişimi, dil planı ve kariyer odaklı uluslararasılaşma.</description>
+      <dc:creator>Kerem Aydın</dc:creator>
+      <category>Yalova Ecosystem</category>
+    </item>
+
+    <item>
+      <title>Youthtick Yalova Erasmus Başvuru Rehberi 2026: Takvim, Belgeler ve Strateji</title>
+      <link>https://youthtick.org/article.html?id=51&amp;slug=youthtick-yalova-erasmus-basvuru-rehberi-2026</link>
+      <guid isPermaLink="true">https://youthtick.org/article.html?id=51&amp;slug=youthtick-yalova-erasmus-basvuru-rehberi-2026</guid>
+      <pubDate>Tue, 26 May 2026 13:00:00 +0000</pubDate>
+      <description>Yalova Erasmus başvuru süreci için Youthtick tarafından hazırlanan kapsamlı rehber: takvim planı, belgeler, motivasyon metni, mülakat hazırlığı ve kabul sonrası yol haritası.</description>
+      <dc:creator>Elif Yıldız</dc:creator>
+      <category>Yalova Ecosystem</category>
+    </item>
+
+
+    <item>
+      <title>Youthtick Yalova Gençlik, Erasmus+ ve Uluslararası Fırsatlar Rehberi (2026)</title>
+      <link>https://youthtick.org/article.html?id=50&amp;slug=youthtick-yalova-genclik-erasmus-ve-uluslararasi-firsatlar-rehberi</link>
+      <guid isPermaLink="true">https://youthtick.org/article.html?id=50&amp;slug=youthtick-yalova-genclik-erasmus-ve-uluslararasi-firsatlar-rehberi</guid>
+      <pubDate>Tue, 26 May 2026 09:00:00 +0000</pubDate>
+      <description>Yalova gençlik ekosistemi için Erasmus+, gönüllülük, üniversite fırsatları, girişimcilik, STK ağları ve Youthtick içerik kümelerini birleştiren kapsamlı rehber.</description>
+      <dc:creator>Elif Yıldız</dc:creator>
+      <category>Yalova Ecosystem</category>
+    </item>
 
     <item>
       <title>Erasmus+ in Turkey: What Young People Need to Know in 2026</title>

@@ -10,6 +10,10 @@
     }
   ],
   "rewrites": [
+    { "source": "/tr",       "destination": "/" },
+    { "source": "/tr/",      "destination": "/" },
+    { "source": "/de",       "destination": "/" },
+    { "source": "/de/",      "destination": "/" },
     { "source": "/tr/:path*", "destination": "/:path*" },
     { "source": "/de/:path*", "destination": "/:path*" },
     { "source": "/404",       "destination": "/404.html" }

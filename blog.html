@@ -4,8 +4,9 @@
   <link rel="icon" type="image/svg+xml" href="favicon.svg" />
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width,initial-scale=1"/>
-  <title>YouthTICK Blog — Erasmus+, Youth Innovation & Policy</title>
-  <meta name="description" content="YouthTICK Blog: in-depth articles on Erasmus+, youth innovation, sustainability, AI, cultural diplomacy and European youth policy written by practitioners."/>
+  <title data-titlekey="blog.pageTitle">YouthTICK Blog — Yalova Erasmus+, Gençlik İnovasyonu & Politika</title>
+  <meta name="description" content="YouthTICK Blog: Yalova perspektifinden Erasmus+, gençlik inovasyonu, sürdürülebilirlik, yapay zeka ve Avrupa gençlik politikası üzerine derinlemesine makaleler."/>
+  <meta name="keywords" content="yalova erasmus blog, yalova gençlik haberleri, yalova avrupa gençlik, yalova gençlik inovasyon, erasmus başvuru rehberi yalova"/>
   <link rel="canonical" href="https://youthtick.org/blog.html"/>
   <meta property="og:type" content="website"/>
   <meta property="og:url" content="https://youthtick.org/blog.html"/>
@@ -99,6 +100,7 @@
     </div>
     <div class="blog-categories" data-anim>
       <button class="cat-btn active" onclick="filterBlog('all', this)" id="cat-all" data-i18n="blog.cat.all">All Topics</button>
+      <button class="cat-btn" onclick="filterBlog('yalova-ekosistem', this)" id="cat-yalova" data-i18n="blog.cat.yalova">Yalova Ecosystem</button>
       <button class="cat-btn" onclick="filterBlog('erasmus', this)" id="cat-erasmus" data-i18n="blog.cat.erasmus">Erasmus+</button>
       <button class="cat-btn" onclick="filterBlog('innovation', this)" id="cat-innovation" data-i18n="blog.cat.innovation">Innovation</button>
       <button class="cat-btn" onclick="filterBlog('sustainability', this)" id="cat-sustainability" data-i18n="blog.cat.sustainability">Sustainability</button>
@@ -190,6 +192,20 @@ function handleNewsletter(e) {
 var _activeBlogCategory = 'all';
 var _activeBlogQuery    = '';
 
+function resolveCategoryKey(article) {
+  if (article && article.categoryKey) return article.categoryKey;
+  const raw = (article && article.category) ? article.category : 'article';
+  return raw.toLowerCase()
+    .replace(/&/g, 'and')
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-+|-+$/g, '');
+}
+
+function buildArticleHref(id, article) {
+  const slug = article && article.slug ? '&slug=' + encodeURIComponent(article.slug) : '';
+  return `article.html?id=${id}${slug}`;
+}
+
 function handleBlogSearch(q) {
   _activeBlogQuery = q.trim().toLowerCase();
   var clearBtn = document.getElementById('blog-search-clear');
@@ -207,7 +223,6 @@ function clearBlogSearch() {
 }
 
 function applyBlogFilters() {
-  var lang = window.currentLang || 'en';
   var q    = _activeBlogQuery;
   var cat  = _activeBlogCategory;
 
@@ -261,35 +276,38 @@ function renderBlogCards() {
 
   const lang = window.currentLang || 'en';
   let html = '';
-  
-  // Skip article 0 which is the featured one
-  const ids = Object.keys(ARTICLES).filter(id => id !== '0');
-  
+
+  const featuredId = ARTICLES['50'] ? '50' : '0';
+  const ids = Object.keys(ARTICLES).filter(id => id !== featuredId);
+
   ids.forEach((id, index) => {
     const art = ARTICLES[id];
     const catClass = art.catClass || 'tag-blue';
     const categoryName = art.category || 'Article';
-    const filterCat = categoryName.toLowerCase().split(' ')[0];
-    
+    const filterCat = resolveCategoryKey(art);
+
     // Fallbacks for translation
     const title = art['title_' + lang] || art.title;
     let contentStr = art['content_' + lang] || art.content;
-    
+    const customExcerpt = art['excerpt_' + lang] || art.excerpt || '';
+
     // Extract a brief excerpt from content
     const plainText = contentStr.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim();
-    const excerpt = plainText.length > 120 ? plainText.slice(0, 117) + '...' : plainText;
-    
+    const excerptSource = customExcerpt || plainText;
+    const excerpt = excerptSource.length > 155 ? excerptSource.slice(0, 152) + '...' : excerptSource;
+
     const col = index % 3;
     const delayStyle = col === 0 ? '' : ` style="transition-delay:${col * 80}ms"`;
+    const readLabel = lang === 'tr' ? 'Oku →' : lang === 'de' ? 'Lesen →' : 'Read →';
 
     html += `
-      <a href="article.html?id=${id}" class="blog-card blog-item" data-category="${filterCat}" data-blog-anim${delayStyle} id="blog-${id}">
+      <a href="${buildArticleHref(id, art)}" class="blog-card blog-item" data-category="${filterCat}" data-blog-anim${delayStyle} id="blog-${id}">
         <img class="blog-card-img" src="${art.img}" alt="${title}" loading="lazy" width="600" height="450"/>
         <div class="blog-card-body">
           <span class="tag ${catClass}">${categoryName}</span>
           <h2 class="blog-card-title">${title}</h2>
           <div class="blog-card-excerpt">${excerpt}</div>
-          <div class="blog-card-meta"><span>${art.readTime} · ${art.date}</span><span style="color:var(--green-dark);">Read →</span></div>
+          <div class="blog-card-meta"><span>${art.readTime} · ${art.date}</span><span style="color:var(--green-dark);">${readLabel}</span></div>
         </div>
       </a>
     `;
@@ -315,13 +333,30 @@ function renderBlogCards() {
   // Also update featured article if it's there
   const featuredTitle = document.querySelector('.featured-title');
   const featuredExcerpt = document.querySelector('.featured-excerpt');
-  if (featuredTitle && ARTICLES['0']) {
-    const fArt = ARTICLES['0'];
-    featuredTitle.textContent = fArt['title_' + lang] || fArt.title;
+  const featuredLink = document.getElementById('featured-article');
+  const featuredTag = document.querySelector('.featured-tag .tag');
+  const featuredImg = document.querySelector('.featured-img img');
+  if (featuredTitle && ARTICLES[featuredId]) {
+    const fArt = ARTICLES[featuredId];
+    const fTitle = fArt['title_' + lang] || fArt.title;
+    const fCat = resolveCategoryKey(fArt);
+    const fExcerptRaw = (fArt['excerpt_' + lang] || fArt.excerpt || '').trim();
+    let cStr = fArt['content_' + lang] || fArt.content;
+    const pText = cStr.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim();
+    const fExcerpt = fExcerptRaw || pText;
+
+    if (featuredLink) {
+      featuredLink.href = buildArticleHref(featuredId, fArt);
+      featuredLink.setAttribute('data-category', fCat);
+    }
+    if (featuredTag) featuredTag.textContent = fArt.category || 'Article';
+    if (featuredImg) {
+      featuredImg.src = fArt.img;
+      featuredImg.alt = fTitle;
+    }
+    featuredTitle.textContent = fTitle;
     if (featuredExcerpt) {
-      let cStr = fArt['content_' + lang] || fArt.content;
-      const pText = cStr.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim();
-      featuredExcerpt.textContent = pText.length > 150 ? pText.slice(0, 147) + '...' : pText;
+      featuredExcerpt.textContent = fExcerpt.length > 190 ? fExcerpt.slice(0, 187) + '...' : fExcerpt;
     }
   }
 }

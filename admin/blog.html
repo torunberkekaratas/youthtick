@@ -115,9 +115,26 @@
           <div class="rte-content" id="rte-content" contenteditable="true" data-placeholder="Start writing…"></div>
         </div>
 
+        <div class="card" style="margin-top:14px;">
+          <div class="card-header" style="padding:12px 14px;">
+            <div class="card-title" style="font-size:12px;">Auto Table of Contents</div>
+          </div>
+          <div class="card-body" id="toc-preview" style="padding:14px;font-size:12.5px;color:var(--ink-faint);line-height:1.6;">
+            Add H2/H3 headings to generate TOC automatically.
+          </div>
+        </div>
+
         <!-- SEO -->
         <div style="margin-top:24px;padding-top:20px;border-top:1px solid var(--border-soft);">
           <div style="font-size:12px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:var(--ink-ghost);margin-bottom:14px;">SEO Settings</div>
+          <div class="form-group">
+            <label class="form-label">Slug</label>
+            <input class="form-input" id="post-slug" type="text" placeholder="yalova-erasmus-basvuru-rehberi"/>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Canonical URL</label>
+            <input class="form-input" id="post-canonical" type="url" placeholder="https://youthtick.org/article.html?id=..."/>
+          </div>
           <div class="form-group">
             <label class="form-label">Meta Title</label>
             <input class="form-input" id="post-seo-title" type="text" placeholder="SEO title (defaults to post title)…"/>
@@ -125,6 +142,14 @@
           <div class="form-group">
             <label class="form-label">Meta Description</label>
             <textarea class="form-textarea" id="post-seo-desc" placeholder="150–160 characters…" rows="2"></textarea>
+          </div>
+          <div class="form-group">
+            <label class="form-label">OpenGraph Title</label>
+            <input class="form-input" id="post-og-title" type="text" placeholder="Used in social shares"/>
+          </div>
+          <div class="form-group mb-0">
+            <label class="form-label">OpenGraph Description</label>
+            <textarea class="form-textarea" id="post-og-desc" placeholder="Social snippet description…" rows="2"></textarea>
           </div>
         </div>
       </div>
@@ -163,15 +188,19 @@
             <div class="form-group">
               <label class="form-label">Category</label>
               <select class="form-select" id="post-category">
-                <option value="insights">Insights</option>
-                <option value="erasmus">Erasmus+</option>
-                <option value="innovation">Innovation</option>
-                <option value="sustainability">Sustainability</option>
-                <option value="culture">Culture</option>
-                <option value="ai-youth">AI & Youth</option>
-                <option value="news">News</option>
-                <option value="events">Events</option>
-                <option value="announcements">Announcements</option>
+                <option value="Yalova Ecosystem">Yalova’da gençlik, Erasmus+ ve uluslararası fırsatlar</option>
+                <option value="Yalova Erasmus Guide">Yalova Erasmus Başvuru Rehberi</option>
+                <option value="Yalova University">Yalova’daki Üniversite Öğrencileri İçin Erasmus+ Fırsatları</option>
+                <option value="Yalova Youth Communities">Yalova Gençlik Toplulukları ve Gönüllülük Rehberi</option>
+                <option value="Yalova Language">Yalova’da Dil Okulu ve Yurtdışı Eğitim Alternatifleri</option>
+                <option value="Yalova Entrepreneurship">Yalova Genç Girişimcilik Ekosistemi</option>
+                <option value="Yalova Industry">Yalova’da Tekmer, OSB ve Teknopark Fırsatları</option>
+                <option value="Yalova NGO">Yalova’daki STK ve Gençlik Kuruluşları</option>
+                <option value="Erasmus+">Erasmus+</option>
+                <option value="Innovation">Innovation</option>
+                <option value="Sustainability">Sustainability</option>
+                <option value="Culture">Culture</option>
+                <option value="AI & Youth">AI & Youth</option>
               </select>
             </div>
             <div class="form-group mb-0">
@@ -222,6 +251,34 @@
                 <div class="switch-thumb"></div>
               </label>
             </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header" style="padding:12px 14px;"><div class="card-title" style="font-size:12px;">SEO Score</div></div>
+          <div class="card-body" style="padding:14px;">
+            <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:10px;">
+              <span style="font-size:12px;color:var(--ink-faint);">Current Score</span>
+              <strong id="seo-score-pill" class="badge badge-amber">0/100</strong>
+            </div>
+            <div id="seo-score-hints" style="font-size:12px;color:var(--ink-faint);line-height:1.55;">Fill title, meta and structured headings to improve score.</div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header" style="padding:12px 14px;"><div class="card-title" style="font-size:12px;">Readability</div></div>
+          <div class="card-body" style="padding:14px;font-size:12px;color:var(--ink-faint);line-height:1.55;">
+            <div style="display:flex;justify-content:space-between;"><span>Word Count</span><strong id="rd-word-count">0</strong></div>
+            <div style="display:flex;justify-content:space-between;margin-top:6px;"><span>Headings (H2/H3)</span><strong id="rd-heading-count">0</strong></div>
+            <div style="display:flex;justify-content:space-between;margin-top:6px;"><span>Avg. Sentence</span><strong id="rd-sentence-len">0</strong></div>
+            <div style="display:flex;justify-content:space-between;margin-top:6px;"><span>Read Time</span><strong id="rd-read-time">0 min</strong></div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header" style="padding:12px 14px;"><div class="card-title" style="font-size:12px;">Internal Link Suggestions</div></div>
+          <div class="card-body" id="internal-link-hints" style="padding:14px;font-size:12px;color:var(--ink-faint);line-height:1.55;">
+            Start writing to get suggested internal links.
           </div>
         </div>
 
@@ -317,17 +374,32 @@ function openEditor(id = null) {
   document.getElementById('post-excerpt').value      = currentPost?.excerpt  || '';
   document.getElementById('rte-content').innerHTML   = currentPost?.content  || '';
   document.getElementById('post-status').value       = currentPost?.status   || 'draft';
-  document.getElementById('post-category').value     = currentPost?.category || 'insights';
+  const catSelect = document.getElementById('post-category');
+  const incomingCategory = currentPost?.category || 'Yalova Ecosystem';
+  if (![...catSelect.options].some(opt => opt.value === incomingCategory)) {
+    const opt = document.createElement('option');
+    opt.value = incomingCategory;
+    opt.textContent = incomingCategory;
+    catSelect.appendChild(opt);
+  }
+  catSelect.value = incomingCategory;
   document.getElementById('post-lang').value         = currentPost?.lang     || 'en';
   document.getElementById('post-tags').value         = (currentPost?.tags || []).join(', ');
   document.getElementById('post-featured').checked   = currentPost?.featured || false;
   document.getElementById('post-comments').checked   = currentPost?.allowComments !== false;
   document.getElementById('post-featured-img').value = currentPost?.featuredImg || '';
+  document.getElementById('post-slug').value         = currentPost?.slug || '';
+  document.getElementById('post-canonical').value    = currentPost?.canonical || '';
   document.getElementById('post-seo-title').value    = currentPost?.seoTitle || '';
   document.getElementById('post-seo-desc').value     = currentPost?.seoDesc  || '';
+  document.getElementById('post-og-title').value     = currentPost?.ogTitle || '';
+  document.getElementById('post-og-desc').value      = currentPost?.ogDesc || '';
   document.getElementById('post-schedule').value     = currentPost?.scheduledAt || '';
+  document.getElementById('schedule-group').style.display = (currentPost?.status || 'draft') === 'scheduled' ? 'block' : 'none';
 
   updateFeaturedPreview();
+  updateTocPreview();
+  updateSeoInsights();
   Modal.open('editor-modal');
 }
 
@@ -347,8 +419,13 @@ function savePost(forceStatus = null) {
     featured:     document.getElementById('post-featured').checked,
     allowComments:document.getElementById('post-comments').checked,
     featuredImg:  document.getElementById('post-featured-img').value.trim(),
+    slug:         document.getElementById('post-slug').value.trim() || slugify(title),
+    canonical:    document.getElementById('post-canonical').value.trim(),
     seoTitle:     document.getElementById('post-seo-title').value.trim(),
     seoDesc:      document.getElementById('post-seo-desc').value.trim(),
+    ogTitle:      document.getElementById('post-og-title').value.trim(),
+    ogDesc:       document.getElementById('post-og-desc').value.trim(),
+    toc:          extractHeadings(document.getElementById('rte-content').innerHTML),
     scheduledAt:  document.getElementById('post-schedule').value || null,
     createdAt:    currentPost?.createdAt || new Date().toISOString(),
     updatedAt:    new Date().toISOString(),
@@ -360,6 +437,103 @@ function savePost(forceStatus = null) {
   Modal.close('editor-modal');
   renderPostList();
   Toast.success(`Post ${post.status === 'published' ? 'published' : 'saved'} successfully.`);
+}
+
+function slugify(str) {
+  return String(str || '')
+    .toLowerCase()
+    .normalize('NFD').replace(/[\u0300-\u036f]/g, '')
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-+|-+$/g, '')
+    .slice(0, 90);
+}
+
+function extractHeadings(html) {
+  const temp = document.createElement('div');
+  temp.innerHTML = html || '';
+  const items = [];
+  temp.querySelectorAll('h2, h3').forEach((el, i) => {
+    const txt = (el.textContent || '').trim();
+    if (!txt) return;
+    items.push({ level: el.tagName.toLowerCase(), text: txt, anchor: slugify(txt) || ('section-' + i) });
+  });
+  return items;
+}
+
+function updateTocPreview() {
+  const html = document.getElementById('rte-content').innerHTML || '';
+  const items = extractHeadings(html);
+  const el = document.getElementById('toc-preview');
+  if (!el) return;
+  if (!items.length) {
+    el.textContent = 'Add H2/H3 headings to generate TOC automatically.';
+    return;
+  }
+  el.innerHTML = items.map(item => {
+    const pad = item.level === 'h3' ? 'style="padding-left:14px;"' : '';
+    return `<div ${pad}>• ${STORE.escapeHtml(item.text)}</div>`;
+  }).join('');
+}
+
+function updateSeoInsights() {
+  const title = document.getElementById('post-title').value.trim();
+  const slug = document.getElementById('post-slug').value.trim();
+  const seoTitle = document.getElementById('post-seo-title').value.trim() || title;
+  const seoDesc = document.getElementById('post-seo-desc').value.trim();
+  const html = document.getElementById('rte-content').innerHTML || '';
+  const plain = html.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim();
+  const words = plain ? plain.split(' ').length : 0;
+  const headings = extractHeadings(html);
+  const sentenceCount = Math.max(1, (plain.match(/[.!?]+/g) || []).length);
+  const avgSentence = Math.round(words / sentenceCount);
+  const readMinutes = Math.max(1, Math.round(words / 190));
+
+  let score = 0;
+  const hints = [];
+
+  if (title.length >= 45 && title.length <= 70) score += 20; else hints.push('Title should be 45–70 characters.');
+  if (seoTitle.length >= 45 && seoTitle.length <= 65) score += 20; else hints.push('Meta title should be 45–65 characters.');
+  if (seoDesc.length >= 135 && seoDesc.length <= 165) score += 20; else hints.push('Meta description should be 135–165 characters.');
+  if (words >= 900) score += 20; else hints.push('Content should be at least 900 words for cornerstone quality.');
+  if (headings.length >= 6) score += 10; else hints.push('Use at least 6 H2/H3 headings for scanability.');
+  if (slug.length >= 8) score += 10; else hints.push('Add an SEO-friendly slug.');
+
+  const scorePill = document.getElementById('seo-score-pill');
+  if (scorePill) {
+    scorePill.textContent = `${score}/100`;
+    scorePill.className = 'badge ' + (score >= 80 ? 'badge-green' : score >= 60 ? 'badge-blue' : 'badge-amber');
+  }
+
+  const hintsEl = document.getElementById('seo-score-hints');
+  if (hintsEl) {
+    hintsEl.innerHTML = hints.length
+      ? hints.map(h => `• ${STORE.escapeHtml(h)}`).join('<br/>')
+      : 'Looks strong. Keep internal links and factual depth high.';
+  }
+
+  document.getElementById('rd-word-count').textContent = words.toLocaleString();
+  document.getElementById('rd-heading-count').textContent = String(headings.length);
+  document.getElementById('rd-sentence-len').textContent = String(avgSentence);
+  document.getElementById('rd-read-time').textContent = `${readMinutes} min`;
+
+  const hintLinks = [
+    { key: 'erasmus', href: '/opportunities.html', text: '/opportunities.html' },
+    { key: 'gönüll', href: '/volunteer.html', text: '/volunteer.html' },
+    { key: 'etkinlik', href: '/events.html', text: '/events.html' },
+    { key: 'proje', href: '/projects.html', text: '/projects.html' },
+    { key: 'partner', href: '/partnership.html', text: '/partnership.html' },
+    { key: 'hakkımızda', href: '/about.html', text: '/about.html' }
+  ];
+  const lower = plain.toLowerCase();
+  const suggested = hintLinks.filter(item => lower.includes(item.key));
+  const linksEl = document.getElementById('internal-link-hints');
+  if (linksEl) {
+    if (!suggested.length) {
+      linksEl.textContent = 'No obvious suggestions yet. Mention Erasmus+, volunteering, projects or partnerships.';
+    } else {
+      linksEl.innerHTML = suggested.map(item => `• Link to <code>${item.text}</code> when context fits.`).join('<br/>');
+    }
+  }
 }
 
 /* ── RTE HELPERS ────────────────────────────────────────────── */
@@ -379,6 +553,25 @@ function initScheduleToggle() {
   });
   document.getElementById('post-featured-img').addEventListener('change', updateFeaturedPreview);
   document.getElementById('post-featured-img').addEventListener('blur', updateFeaturedPreview);
+
+  const titleInput = document.getElementById('post-title');
+  const slugInput = document.getElementById('post-slug');
+  const seoTitleInput = document.getElementById('post-seo-title');
+  const seoDescInput = document.getElementById('post-seo-desc');
+  const contentInput = document.getElementById('rte-content');
+
+  titleInput.addEventListener('input', function() {
+    if (!currentPost && !slugInput.value.trim()) slugInput.value = slugify(this.value);
+    if (!seoTitleInput.value.trim()) seoTitleInput.placeholder = this.value;
+    updateSeoInsights();
+  });
+  slugInput.addEventListener('input', updateSeoInsights);
+  seoTitleInput.addEventListener('input', updateSeoInsights);
+  seoDescInput.addEventListener('input', updateSeoInsights);
+  contentInput.addEventListener('input', function() {
+    updateTocPreview();
+    updateSeoInsights();
+  });
 }
 function updateFeaturedPreview() {
   const url = document.getElementById('post-featured-img').value.trim();

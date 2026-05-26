@@ -559,6 +559,7 @@ export default {
     "blog.hero.title": "Insights from the network.",
     "blog.hero.sub": "Erasmus+ guides, youth innovation perspectives, sustainability thinking and cultural intelligence — from the people doing the work.",
     "blog.cat.all": "All Topics",
+    "blog.cat.yalova": "Yalova Ecosystem",
     "blog.cat.erasmus": "Erasmus+",
     "blog.cat.innovation": "Innovation",
     "blog.cat.sustainability": "Sustainability",

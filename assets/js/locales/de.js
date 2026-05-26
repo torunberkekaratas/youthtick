@@ -559,6 +559,7 @@ export default {
     "blog.hero.title": "Perspektiven aus unserem Team.",
     "blog.hero.sub": "Wir schreiben über Erasmus+, Jugendbeteiligung, Nachhaltigkeit und interkulturellen Dialog und teilen, was wir beim Aufbau von YouthTICK lernen.",
     "blog.cat.all": "Alle Themen",
+    "blog.cat.yalova": "Yalova Ökosystem",
     "blog.cat.erasmus": "Erasmus+",
     "blog.cat.innovation": "Innovation",
     "blog.cat.sustainability": "Nachhaltigkeit",
