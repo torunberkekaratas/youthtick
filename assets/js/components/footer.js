@@ -48,6 +48,18 @@ export function renderFooter() {
         </div>
 
         <div class="footer-links">
+
+        <div class="footer-links">
+          <h4>Yalova Rehberleri</h4>
+          <ul>
+            <li><a href="yalova-erasmus.html">Yalova Erasmus Başvuru</a></li>
+            <li><a href="yalova-genclik-toplulugu.html">Gençlik Toplulukları</a></li>
+            <li><a href="yalova-girisimcilik.html">Girişimcilik Ekosistemi</a></li>
+            <li><a href="yalova-universite.html">Üniversite Rehberi</a></li>
+            <li><a href="yalova-erasmus-istatistik.html">📊 İstatistik Dashboard</a></li>
+          </ul>
+        </div>
+
           <h4 data-i18n="footer.resources">Resources</h4>
           <ul>
             <li><a href="blog.html" data-i18n="nav.blog">Blog & News</a></li>
