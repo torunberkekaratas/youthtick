@@ -3163,23 +3163,23 @@ const ARTICLES = {
     seoDesc_tr: 'Yalova Erasmus başvuru süreci için Youthtick tarafından hazırlanan kapsamlı rehber: takvim planı, belgeler, motivasyon metni, mülakat hazırlığı ve kabul sonrası yol haritası.',
     seoDesc_de: 'Komplette Youthtick-Roadmap für Erasmus-Bewerbungen in Yalova: Zeitplan, Unterlagen, Motivationsschreiben, Interviewvorbereitung und Planung nach der Zusage.',
     author: 'Elif Yıldız', authorRole: 'Programme Lead', authorImg: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?w=80&q=80&auto=format&fit=crop&crop=face',
-    date: 'May 2026', readTime: '17 min',
+    date: 'May 2026', readTime: '8 min',
     publishedAt: '2026-05-26',
     img: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1200&q=85&auto=format&fit=crop',
-    excerpt: 'Yalova Erasmus başvuru sürecini baştan sona anlatan, gerçekçi takvim ve belge yönetimi odaklı Youthtick rehberi.',
+    excerpt: 'Yalova Erasmus başvuru süreci için 90 günlük takvim, belgeler ve motivasyon metni rehberi.',
     faq: {
       tr: [
-        { q: 'Yalova Erasmus başvuru sürecine kaç ay önce başlamalıyım?', a: 'İdeal başlangıç en az altı ay öncedir. İlk iki ay hedef program ve uygunluk kontrolüne, sonraki dönemler belge hazırlığı ve metin kalitesine ayrılmalıdır.' },
+        { q: 'Yalova Erasmus başvuru sürecine kaç ay önce başlamalıyım?', a: 'İdeal başlangıç 90 gün (3 ay) öncedir. İlk 4 hafta hedef program ve belge hazırlığı, sonraki 4 hafta motivasyon metni, son 4 hafta revizyon ve teslime ayrılmalıdır.' },
         { q: 'Başvuruda en çok hata yapılan alan neresi?', a: 'Takvim ve metin uyumsuzluğu. Belgeler tamam gibi görünse de motivasyon, öğrenme hedefi ve proje planı birbiriyle tutarlı değilse kalite düşer.' },
         { q: 'Kabul aldıktan sonra neye odaklanmalıyım?', a: 'Dil, bütçe ve öğrenme çıktısı planına. Program başlamadan önce ölçülebilir kişisel hedefler belirlemek, dönüşte etkiyi görünür kılar.' }
       ],
       en: [
-        { q: 'When should I start preparing for Erasmus applications in Yalova?', a: 'Start at least six months in advance. Use the first phase for eligibility mapping and the second phase for document quality and narrative consistency.' },
+        { q: 'When should I start preparing for Erasmus applications in Yalova?', a: 'Start 90 days (3 months) in advance. First 4 weeks for documents, next 4 weeks for motivation text, final 4 weeks for revision and submission.' },
         { q: 'What is the most common application mistake?', a: 'A mismatch between timeline and narrative quality. Applicants often complete paperwork but fail to align motivation, learning goals, and realistic planning.' },
         { q: 'What should I do after acceptance?', a: 'Build a clear pre-departure plan around language, budget, learning outcomes, and practical logistics so your mobility period delivers measurable value.' }
       ],
       de: [
-        { q: 'Wann sollte ich mit der Erasmus-Bewerbung in Yalova beginnen?', a: 'Idealerweise mindestens sechs Monate vorher. Zuerst Eignung und Programmziele klären, dann Unterlagen und Textqualität systematisch ausarbeiten.' },
+        { q: 'Wann sollte ich mit der Erasmus-Bewerbung in Yalova beginnen?', a: 'Idealerweise 90 Tage (3 Monate) vorher. Erste 4 Wochen Unterlagen, nächste 4 Wochen Motivation, letzte 4 Wochen Revision.' },
         { q: 'Was ist der häufigste Fehler?', a: 'Inkonsistenz zwischen Zeitplan und Inhalt. Formale Dokumente sind vorhanden, aber Motivation, Lernziele und Umsetzungsplan passen nicht zusammen.' },
         { q: 'Was ist nach der Zusage wichtig?', a: 'Sprachplanung, Budget, Lernziele und Logistik. Früh definierte messbare Ziele erhöhen den tatsächlichen Mehrwert der Mobilität.' }
       ]
@@ -3191,7 +3191,7 @@ const ARTICLES = {
       'article.html?id=54&slug=youthtick-yalova-dil-okulu-ve-yurtdisi-egitim-alternatifleri'
     ],
     content: `
-      <p>This long-form guide is designed for users searching around Yalova Erasmus application intent and trying to move from scattered information to a practical plan. Youthtick focuses on execution quality, not only on application theory. The core principle is simple: good candidates lose opportunities when timeline discipline, document quality, and learning strategy are treated separately. This article connects all three into one process.</p>
+      <p>Yalova Erasmus başvuru rehberi — 90 günlük takvim, belgeler ve motivasyon metni için pratik adımlar.</p>
       <h2>Why this guide matters for Yalova-based applicants</h2>
       <p>Many applicants in Yalova start with the right motivation but without an integrated workflow. They gather documents too late, underestimate language preparation, and submit generic motivation texts. Youthtick recommends an end-to-end application cycle with measurable checkpoints. A better process improves acceptance probability and also creates long-term personal growth after the mobility period.</p>
       <h2>Step 1: Define your Erasmus path clearly</h2>
