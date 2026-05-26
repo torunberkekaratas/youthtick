@@ -15,6 +15,11 @@
   <meta property="og:description" content="Yalova Erasmus mobilite verileri, partner üniversite karşılaştırması ve fakülte bazlı analiz."/>
   <meta property="og:image" content="https://youthtick.org/og-data.jpg"/>
   <meta name="twitter:card" content="summary_large_image"/>
+  <!-- Hreflang Tags -->
+  <link rel="alternate" hreflang="en" href="https://youthtick.org/yalova-erasmus-istatistik.html"/>
+  <link rel="alternate" hreflang="tr" href="https://youthtick.org/tr/yalova-erasmus-istatistik.html"/>
+  <link rel="alternate" hreflang="de" href="https://youthtick.org/de/yalova-erasmus-istatistik.html"/>
+  <link rel="alternate" hreflang="x-default" href="https://youthtick.org/yalova-erasmus-istatistik.html"/>
   <link rel="stylesheet" href="styles.css"/>
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
   <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
@@ -56,15 +61,38 @@
     .source-note h3 { font-size:1rem; margin-bottom:12px; color:var(--ink); }
     .source-note ul { margin:0; padding-left:20px; }
     .source-note li { margin-bottom:8px; font-size:.9rem; color:var(--ink-muted); }
+    .breadcrumbs { padding:20px 0 16px; font-size:.88rem; color:rgba(255,255,255,0.6); }
+    .breadcrumbs a { color:rgba(255,255,255,0.8); text-decoration:none; }
+    .breadcrumbs a:hover { color:white; text-decoration:underline; }
+    .author-meta { display:flex; align-items:center; gap:16px; padding:20px; background:rgba(255,255,255,0.1); border-radius:12px; margin:24px 0; border:1px solid rgba(255,255,255,0.2); }
+    .author-meta img { width:52px; height:52px; border-radius:50%; object-fit:cover; border:2px solid rgba(255,255,255,0.3); }
+    .author-info { flex:1; }
+    .author-name { font-weight:700; color:white; font-size:1.05rem; }
+    .author-role { font-size:.88rem; color:rgba(255,255,255,0.7); margin-top:2px; }
+    .publish-date { font-size:.88rem; color:rgba(255,255,255,0.6); text-align:right; }
     @media(max-width:960px){ .stat-grid { grid-template-columns:1fr; } .comparison-table { font-size:.85rem; } .comparison-table th, .comparison-table td { padding:10px 12px; } }
   </style>
 </head>
 <body>
 <section class="data-hero">
   <div class="container">
-    <span class="data-kicker">📊 YouthTICK Data Center</span>
+    <nav class="breadcrumbs">
+      <a href="/">Ana Sayfa</a> / <a href="/blog.html">Blog</a> / <span>Yalova Erasmus İstatistik</span>
+    </nav>
+    <span class="data-kicker">📊 YouthTICK Veri Merkezi</span>
     <h1 class="data-title">Yalova Erasmus+ İstatistik Dashboard 2024-2026</h1>
     <p class="data-sub">Yalova Üniversitesi Erasmus mobilite verileri, partner üniversite karşılaştırması, fakülte bazlı analiz ve Türkiye ortalaması ile kıyaslama — akademik referans için kaynak gösterilebilir.</p>
+    <div class="author-meta">
+      <img src="https://ui-avatars.com/api/?name=Dr+Mehmet+Koc&background=38bdf8&color=fff&size=128" alt="Dr. Mehmet Koç" loading="lazy"/>
+      <div class="author-info">
+        <div class="author-name">Dr. Mehmet Koç</div>
+        <div class="author-role">Veri Analisti, YouthTICK</div>
+      </div>
+      <div class="publish-date">
+        <time datetime="2026-05-26">26 Mayıs 2026</time>
+        <div style="font-size:.78rem;margin-top:2px;">Son Güncelleme: 26 Mayıs 2026</div>
+      </div>
+    </div>
     <div class="data-meta">
       <span class="data-pill">📈 Güncel Veri (Mayıs 2026)</span>
       <span class="data-pill">🎓 9 Fakülte</span>

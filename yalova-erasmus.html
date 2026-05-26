@@ -13,6 +13,11 @@
   <meta property="og:description" content="Yalova'dan Erasmus hedefleyen öğrenciler ve genç profesyoneller için adım adım başvuru planı."/>
   <meta property="og:image" content="https://youthtick.org/og-blog.jpg"/>
   <meta name="twitter:card" content="summary_large_image"/>
+  <!-- Hreflang Tags -->
+  <link rel="alternate" hreflang="en" href="https://youthtick.org/yalova-erasmus.html"/>
+  <link rel="alternate" hreflang="tr" href="https://youthtick.org/tr/yalova-erasmus.html"/>
+  <link rel="alternate" hreflang="de" href="https://youthtick.org/de/yalova-erasmus.html"/>
+  <link rel="alternate" hreflang="x-default" href="https://youthtick.org/yalova-erasmus.html"/>
   <link rel="stylesheet" href="styles.css"/>
   <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
   <style>
@@ -37,15 +42,38 @@
     .faq-item { border:1px solid var(--border-soft); border-radius:10px; padding:14px 16px; margin-bottom:10px; background:white; }
     .faq-item summary { cursor:pointer; font-weight:700; }
     .faq-item p { margin-top:10px; margin-bottom:0; color:var(--ink-muted); }
+    .breadcrumbs { padding:20px 0; font-size:.88rem; color:var(--ink-muted); }
+    .breadcrumbs a { color:var(--blue); text-decoration:none; }
+    .breadcrumbs a:hover { text-decoration:underline; }
+    .author-meta { display:flex; align-items:center; gap:16px; padding:20px; background:var(--bg-soft); border-radius:12px; margin:24px 0; }
+    .author-meta img { width:52px; height:52px; border-radius:50%; object-fit:cover; }
+    .author-info { flex:1; }
+    .author-name { font-weight:700; color:var(--ink); font-size:1.05rem; }
+    .author-role { font-size:.88rem; color:var(--ink-muted); margin-top:2px; }
+    .publish-date { font-size:.88rem; color:var(--ink-faint); }
     @media(max-width:960px){ .landing-grid { grid-template-columns: 1fr; } .quick-nav { position:relative; top:0; } }
   </style>
 </head>
 <body>
 <section class="landing-hero">
   <div class="container">
-    <span class="landing-kicker" id="kicker">YouthTICK Local SEO Guide</span>
+    <nav class="breadcrumbs">
+      <a href="/">Ana Sayfa</a> / <a href="/blog.html">Blog</a> / <span>Yalova Erasmus Rehberi</span>
+    </nav>
+    <span class="landing-kicker" id="kicker">YouthTICK Yalova Erasmus+ Rehberi</span>
     <h1 class="landing-title" id="title">Yalova Erasmus Başvuru Rehberi 2026</h1>
     <p class="landing-sub" id="sub">Yalova'dan Erasmus hedefleyen öğrenciler ve genç profesyoneller için gerçekçi takvim, belge yönetimi, dil hazırlığı ve kabul sonrası etki planı.</p>
+    <div class="author-meta">
+      <img src="https://ui-avatars.com/api/?name=Kerem+Aydin&background=2563eb&color=fff&size=128" alt="Kerem Aydın" loading="lazy"/>
+      <div class="author-info">
+        <div class="author-name">Kerem Aydın</div>
+        <div class="author-role">Erasmus+ Koordinatörü, YouthTICK</div>
+      </div>
+      <div class="publish-date">
+        <time datetime="2026-05-26">26 Mayıs 2026</time>
+        <div style="font-size:.78rem;margin-top:2px;">Son Güncelleme: 26 Mayıs 2026</div>
+      </div>
+    </div>
     <div class="landing-meta" id="meta-tags"></div>
   </div>
 </section>

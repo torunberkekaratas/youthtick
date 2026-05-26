@@ -17,6 +17,11 @@ teklerine kapsamlı rehber: T3 Vakfı, YTSO, Yalova Tekmer, OSB, Teknopark progr
   <meta property="og:description" content="T3, YTSO, Tekmer, OSB — Yalova genç girişimci destek programları rehberi."/>
   <meta property="og:image" content="https://youthtick.org/og-blog.jpg"/>
   <meta name="twitter:card" content="summary_large_image"/>
+  <!-- Hreflang Tags -->
+  <link rel="alternate" hreflang="en" href="https://youthtick.org/yalova-girisimcilik.html"/>
+  <link rel="alternate" hreflang="tr" href="https://youthtick.org/tr/yalova-girisimcilik.html"/>
+  <link rel="alternate" hreflang="de" href="https://youthtick.org/de/yalova-girisimcilik.html"/>
+  <link rel="alternate" hreflang="x-default" href="https://youthtick.org/yalova-girisimcilik.html"/>
   <link rel="stylesheet" href="styles.css"/>
   <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
   <style>
@@ -50,14 +55,37 @@ teklerine kapsamlı rehber: T3 Vakfı, YTSO, Yalova Tekmer, OSB, Teknopark progr
     .warning-box strong { color:#dc2626; }
     .success-box { background:#d1fae5; border-left:4px solid #10b981; padding:20px; border-radius:8px; margin:28px 0; }
     .success-box strong { color:#059669; }
+    .breadcrumbs { padding:20px 0; font-size:.88rem; color:var(--ink-muted); }
+    .breadcrumbs a { color:var(--blue); text-decoration:none; }
+    .breadcrumbs a:hover { text-decoration:underline; }
+    .author-meta { display:flex; align-items:center; gap:16px; padding:20px; background:white; border-radius:12px; margin:24px 0; border:1px solid var(--border-soft); }
+    .author-meta img { width:52px; height:52px; border-radius:50%; object-fit:cover; }
+    .author-info { flex:1; }
+    .author-name { font-weight:700; color:var(--ink); font-size:1.05rem; }
+    .author-role { font-size:.88rem; color:var(--ink-muted); margin-top:2px; }
+    .publish-date { font-size:.88rem; color:var(--ink-faint); text-align:right; }
     @media(max-width:960px){ .landing-grid { grid-template-columns: 1fr; } .quick-nav { position:relative; top:0; margin-bottom:32px; } }
   </style>
 </head>
 <body>
 <section class="landing-hero">
   <div class="container">
-    <span class="landing-kicker">Yalova Startup Ecosystem</span>
+    <nav class="breadcrumbs">
+      <a href="/">Ana Sayfa</a> / <a href="/blog.html">Blog</a> / <span>Yalova Girişimcilik</span>
+    </nav>
+    <span class="landing-kicker">Yalova Girişimcilik Rehberi</span>
     <h1 class="landing-title">Yalova Girişimcilik Ekosistemi: T3, YTSO, Tekmer, OSB Rehberi 2026</h1>
+    <div class="author-meta" style="margin:24px 0;">
+      <img src="https://ui-avatars.com/api/?name=Ahmet+Demir&background=d97706&color=fff&size=128" alt="Ahmet Demir" loading="lazy"/>
+      <div class="author-info">
+        <div class="author-name">Ahmet Demir</div>
+        <div class="author-role">Girişimcilik Mentörü, YouthTICK</div>
+      </div>
+      <div class="publish-date">
+        <time datetime="2026-05-26">26 Mayıs 2026</time>
+        <div style="font-size:.78rem;margin-top:2px;">Son Güncelleme: 26 Mayıs 2026</div>
+      </div>
+    </div>
     <p class="landing-sub">Yalova'da genç girişimcilere sunulan destek programları, fonlama fırsatları ve mentoring ağlarına kapsamlı rehber.</p>
     <div class="landing-meta">
       <span class="landing-pill">🚀 4 Ana Destek Kuruluşu</span>

@@ -15,6 +15,11 @@
   <meta property="og:description" content="Yalova'da aktif gençlik toplulukları, STK'lar ve gönüllülük fırsatları rehberi."/>
   <meta property="og:image" content="https://youthtick.org/og-blog.jpg"/>
   <meta name="twitter:card" content="summary_large_image"/>
+  <!-- Hreflang Tags -->
+  <link rel="alternate" hreflang="en" href="https://youthtick.org/yalova-genclik-toplulugu.html"/>
+  <link rel="alternate" hreflang="tr" href="https://youthtick.org/tr/yalova-genclik-toplulugu.html"/>
+  <link rel="alternate" hreflang="de" href="https://youthtick.org/de/yalova-genclik-toplulugu.html"/>
+  <link rel="alternate" hreflang="x-default" href="https://youthtick.org/yalova-genclik-toplulugu.html"/>
   <link rel="stylesheet" href="styles.css"/>
   <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
   <style>
@@ -47,15 +52,38 @@
     .cta-box h3 { margin:0 0 12px; color:var(--green-deep); font-size:1.15rem; }
     .cta-box p { margin:0 0 16px; color:var(--ink-muted); }
     .cta-box a { color:var(--green-dark); font-weight:700; }
+    .breadcrumbs { padding:20px 0; font-size:.88rem; color:var(--ink-muted); }
+    .breadcrumbs a { color:var(--blue); text-decoration:none; }
+    .breadcrumbs a:hover { text-decoration:underline; }
+    .author-meta { display:flex; align-items:center; gap:16px; padding:20px; background:white; border-radius:12px; margin:24px 0; border:1px solid var(--border-soft); }
+    .author-meta img { width:52px; height:52px; border-radius:50%; object-fit:cover; }
+    .author-info { flex:1; }
+    .author-name { font-weight:700; color:var(--ink); font-size:1.05rem; }
+    .author-role { font-size:.88rem; color:var(--ink-muted); margin-top:2px; }
+    .publish-date { font-size:.88rem; color:var(--ink-faint); text-align:right; }
     @media(max-width:960px){ .landing-grid { grid-template-columns: 1fr; } .quick-nav { position:relative; top:0; margin-bottom:32px; } }
   </style>
 </head>
 <body>
 <section class="landing-hero">
   <div class="container">
-    <span class="landing-kicker">Yalova Local Ecosystem Map</span>
+    <nav class="breadcrumbs">
+      <a href="/">Ana Sayfa</a> / <a href="/blog.html">Blog</a> / <span>Yalova Gençlik Toplulukları</span>
+    </nav>
+    <span class="landing-kicker">Yalova Gençlik Ekosistem Haritası</span>
     <h1 class="landing-title">Yalova Gençlik Toplulukları ve STK Rehberi 2026</h1>
     <p class="landing-sub">Yalova'da aktif gençlik örgütleri, üniversite kulüpleri, sivil toplum kuruluşları ve gönüllülük fırsatları — YouthTICK ekosistem haritası.</p>
+    <div class="author-meta">
+      <img src="https://ui-avatars.com/api/?name=Elif+Kaya&background=10b981&color=fff&size=128" alt="Elif Kaya" loading="lazy"/>
+      <div class="author-info">
+        <div class="author-name">Elif Kaya</div>
+        <div class="author-role">Topluluk Koordinatörü, YouthTICK</div>
+      </div>
+      <div class="publish-date">
+        <time datetime="2026-05-26">26 Mayıs 2026</time>
+        <div style="font-size:.78rem;margin-top:2px;">Son Güncelleme: 26 Mayıs 2026</div>
+      </div>
+    </div>
     <div class="landing-meta">
       <span class="landing-pill">🎯 15+ Aktif Topluluk</span>
       <span class="landing-pill">🤝 STK Haritası</span>

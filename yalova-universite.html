@@ -15,6 +15,11 @@
   <meta property="og:description" content="Yalova Üniversitesi öğrencilerine özel Erasmus ve uluslararası fırsatlar rehberi."/>
   <meta property="og:image" content="https://youthtick.org/og-blog.jpg"/>
   <meta name="twitter:card" content="summary_large_image"/>
+  <!-- Hreflang Tags -->
+  <link rel="alternate" hreflang="en" href="https://youthtick.org/yalova-universite.html"/>
+  <link rel="alternate" hreflang="tr" href="https://youthtick.org/tr/yalova-universite.html"/>
+  <link rel="alternate" hreflang="de" href="https://youthtick.org/de/yalova-universite.html"/>
+  <link rel="alternate" hreflang="x-default" href="https://youthtick.org/yalova-universite.html"/>
   <link rel="stylesheet" href="styles.css"/>
   <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
   <style>
@@ -45,15 +50,38 @@
     .timeline-item::before { content:''; position:absolute; left:-7px; top:4px; width:12px; height:12px; border-radius:50%; background:#2563eb; }
     .timeline-item h4 { margin:0 0 8px; font-size:1.05rem; color:var(--ink); }
     .timeline-item p { margin:0; font-size:.92rem; color:var(--ink-muted); }
+    .breadcrumbs { padding:20px 0; font-size:.88rem; color:var(--ink-muted); }
+    .breadcrumbs a { color:var(--blue); text-decoration:none; }
+    .breadcrumbs a:hover { text-decoration:underline; }
+    .author-meta { display:flex; align-items:center; gap:16px; padding:20px; background:white; border-radius:12px; margin:24px 0; border:1px solid var(--border-soft); }
+    .author-meta img { width:52px; height:52px; border-radius:50%; object-fit:cover; }
+    .author-info { flex:1; }
+    .author-name { font-weight:700; color:var(--ink); font-size:1.05rem; }
+    .author-role { font-size:.88rem; color:var(--ink-muted); margin-top:2px; }
+    .publish-date { font-size:.88rem; color:var(--ink-faint); text-align:right; }
     @media(max-width:960px){ .landing-grid { grid-template-columns: 1fr; } .quick-nav { position:relative; top:0; margin-bottom:32px; } }
   </style>
 </head>
 <body>
 <section class="landing-hero">
   <div class="container">
-    <span class="landing-kicker">Yalova Uni Student Guide</span>
+    <nav class="breadcrumbs">
+      <a href="/">Ana Sayfa</a> / <a href="/blog.html">Blog</a> / <span>Yalova Üniversitesi Erasmus</span>
+    </nav>
+    <span class="landing-kicker">Yalova Üni Öğrenci Rehberi</span>
     <h1 class="landing-title">Yalova Üniversitesi Erasmus ve Uluslararası Fırsatlar 2026</h1>
     <p class="landing-sub">Yalova Üniversitesi öğrencilerine özel Erasmus başvuru rehberi, kulüp yapısı, değişim programları ve YouthTICK işbirliği fırsatları.</p>
+    <div class="author-meta">
+      <img src="https://ui-avatars.com/api/?name=Zeynep+Yilmaz&background=2563eb&color=fff&size=128" alt="Zeynep Yılmaz" loading="lazy"/>
+      <div class="author-info">
+        <div class="author-name">Zeynep Yılmaz</div>
+        <div class="author-role">Üniversite İlişkileri Koordinatörü, YouthTICK</div>
+      </div>
+      <div class="publish-date">
+        <time datetime="2026-05-26">26 Mayıs 2026</time>
+        <div style="font-size:.78rem;margin-top:2px;">Son Güncelleme: 26 Mayıs 2026</div>
+      </div>
+    </div>
     <div class="landing-meta">
       <span class="landing-pill">🎓 Yalova Üni Öğrencileri</span>
       <span class="landing-pill">✈️ Erasmus+ Rehberi</span>
