@@ -2133,7 +2133,7 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://youthtick.org/article.html?id=57&amp;slug=youthtick-yalova-stk-ve-genclik-kuruluslari-rehberi"/>
   </url>
   <url>
-    <loc>https://youthtick.org/yalova-erasmus</loc>
+    <loc>https://youthtick.org/yalova-erasmus.html</loc>
     <lastmod>2026-05-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
@@ -2143,7 +2143,7 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://youthtick.org/yalova-erasmus"/>
   </url>
   <url>
-    <loc>https://youthtick.org/tr/yalova-erasmus</loc>
+    <loc>https://youthtick.org/tr/yalova-erasmus.html</loc>
     <lastmod>2026-05-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
@@ -2153,7 +2153,7 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://youthtick.org/yalova-erasmus"/>
   </url>
   <url>
-    <loc>https://youthtick.org/de/yalova-erasmus</loc>
+    <loc>https://youthtick.org/de/yalova-erasmus.html</loc>
     <lastmod>2026-05-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
@@ -2163,7 +2163,7 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://youthtick.org/yalova-erasmus"/>
   </url>
   <url>
-    <loc>https://youthtick.org/yalova-genclik-toplulugu</loc>
+    <loc>https://youthtick.org/yalova-genclik-toplulugu.html</loc>
     <lastmod>2026-05-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
@@ -2173,7 +2173,7 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://youthtick.org/yalova-genclik-toplulugu"/>
   </url>
   <url>
-    <loc>https://youthtick.org/tr/yalova-genclik-toplulugu</loc>
+    <loc>https://youthtick.org/tr/yalova-genclik-toplulugu.html</loc>
     <lastmod>2026-05-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
@@ -2183,7 +2183,7 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://youthtick.org/yalova-genclik-toplulugu"/>
   </url>
   <url>
-    <loc>https://youthtick.org/de/yalova-genclik-toplulugu</loc>
+    <loc>https://youthtick.org/de/yalova-genclik-toplulugu.html</loc>
     <lastmod>2026-05-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
@@ -2193,7 +2193,7 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://youthtick.org/yalova-genclik-toplulugu"/>
   </url>
   <url>
-    <loc>https://youthtick.org/yalova-girisimcilik</loc>
+    <loc>https://youthtick.org/yalova-girisimcilik.html</loc>
     <lastmod>2026-05-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
@@ -2203,7 +2203,7 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://youthtick.org/yalova-girisimcilik"/>
   </url>
   <url>
-    <loc>https://youthtick.org/tr/yalova-girisimcilik</loc>
+    <loc>https://youthtick.org/tr/yalova-girisimcilik.html</loc>
     <lastmod>2026-05-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
@@ -2213,7 +2213,7 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://youthtick.org/yalova-girisimcilik"/>
   </url>
   <url>
-    <loc>https://youthtick.org/de/yalova-girisimcilik</loc>
+    <loc>https://youthtick.org/de/yalova-girisimcilik.html</loc>
     <lastmod>2026-05-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
@@ -2223,7 +2223,7 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://youthtick.org/yalova-girisimcilik"/>
   </url>
   <url>
-    <loc>https://youthtick.org/yalova-universite</loc>
+    <loc>https://youthtick.org/yalova-universite.html</loc>
     <lastmod>2026-05-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
@@ -2233,7 +2233,7 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://youthtick.org/yalova-universite"/>
   </url>
   <url>
-    <loc>https://youthtick.org/tr/yalova-universite</loc>
+    <loc>https://youthtick.org/tr/yalova-universite.html</loc>
     <lastmod>2026-05-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
@@ -2243,9 +2243,9 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://youthtick.org/yalova-universite"/>
   </url>
   <url>
-    <loc>https://youthtick.org/de/yalova-universite</loc>
+    <loc>https://youthtick.org/de/yalova-universite.html</loc>
   <url>
-    <loc>https://youthtick.org/yalova-erasmus-istatistik</loc>
+    <loc>https://youthtick.org/yalova-erasmus-istatistik.html</loc>
     <lastmod>2026-05-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.95</priority>
@@ -2255,7 +2255,7 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://youthtick.org/yalova-erasmus-istatistik"/>
   </url>
   <url>
-    <loc>https://youthtick.org/tr/yalova-erasmus-istatistik</loc>
+    <loc>https://youthtick.org/tr/yalova-erasmus-istatistik.html</loc>
     <lastmod>2026-05-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.95</priority>
@@ -2265,7 +2265,7 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://youthtick.org/yalova-erasmus-istatistik"/>
   </url>
   <url>
-    <loc>https://youthtick.org/de/yalova-erasmus-istatistik</loc>
+    <loc>https://youthtick.org/de/yalova-erasmus-istatistik.html</loc>
     <lastmod>2026-05-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.95</priority>
