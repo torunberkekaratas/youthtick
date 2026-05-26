@@ -3163,23 +3163,23 @@ const ARTICLES = {
     seoDesc_tr: 'Yalova Erasmus başvuru süreci için Youthtick tarafından hazırlanan kapsamlı rehber: takvim planı, belgeler, motivasyon metni, mülakat hazırlığı ve kabul sonrası yol haritası.',
     seoDesc_de: 'Komplette Youthtick-Roadmap für Erasmus-Bewerbungen in Yalova: Zeitplan, Unterlagen, Motivationsschreiben, Interviewvorbereitung und Planung nach der Zusage.',
     author: 'Elif Yıldız', authorRole: 'Programme Lead', authorImg: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?w=80&q=80&auto=format&fit=crop&crop=face',
-    date: 'May 2026', readTime: '8 min',
+    date: 'May 2026', readTime: '17 min',
     publishedAt: '2026-05-26',
     img: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1200&q=85&auto=format&fit=crop',
-    excerpt: 'Yalova Erasmus başvuru süreci için 90 günlük takvim, belgeler ve motivasyon metni rehberi.',
+    excerpt: 'Yalova Erasmus başvuru sürecini baştan sona anlatan, gerçekçi takvim ve belge yönetimi odaklı Youthtick rehberi.',
     faq: {
       tr: [
-        { q: 'Yalova Erasmus başvuru sürecine kaç ay önce başlamalıyım?', a: 'İdeal başlangıç 90 gün (3 ay) öncedir. İlk 4 hafta hedef program ve belge hazırlığı, sonraki 4 hafta motivasyon metni, son 4 hafta revizyon ve teslime ayrılmalıdır.' },
+        { q: 'Yalova Erasmus başvuru sürecine kaç ay önce başlamalıyım?', a: 'İdeal başlangıç en az altı ay öncedir. İlk iki ay hedef program ve uygunluk kontrolüne, sonraki dönemler belge hazırlığı ve metin kalitesine ayrılmalıdır.' },
         { q: 'Başvuruda en çok hata yapılan alan neresi?', a: 'Takvim ve metin uyumsuzluğu. Belgeler tamam gibi görünse de motivasyon, öğrenme hedefi ve proje planı birbiriyle tutarlı değilse kalite düşer.' },
         { q: 'Kabul aldıktan sonra neye odaklanmalıyım?', a: 'Dil, bütçe ve öğrenme çıktısı planına. Program başlamadan önce ölçülebilir kişisel hedefler belirlemek, dönüşte etkiyi görünür kılar.' }
       ],
       en: [
-        { q: 'When should I start preparing for Erasmus applications in Yalova?', a: 'Start 90 days (3 months) in advance. First 4 weeks for documents, next 4 weeks for motivation text, final 4 weeks for revision and submission.' },
+        { q: 'When should I start preparing for Erasmus applications in Yalova?', a: 'Start at least six months in advance. Use the first phase for eligibility mapping and the second phase for document quality and narrative consistency.' },
         { q: 'What is the most common application mistake?', a: 'A mismatch between timeline and narrative quality. Applicants often complete paperwork but fail to align motivation, learning goals, and realistic planning.' },
         { q: 'What should I do after acceptance?', a: 'Build a clear pre-departure plan around language, budget, learning outcomes, and practical logistics so your mobility period delivers measurable value.' }
       ],
       de: [
-        { q: 'Wann sollte ich mit der Erasmus-Bewerbung in Yalova beginnen?', a: 'Idealerweise 90 Tage (3 Monate) vorher. Erste 4 Wochen Unterlagen, nächste 4 Wochen Motivation, letzte 4 Wochen Revision.' },
+        { q: 'Wann sollte ich mit der Erasmus-Bewerbung in Yalova beginnen?', a: 'Idealerweise mindestens sechs Monate vorher. Zuerst Eignung und Programmziele klären, dann Unterlagen und Textqualität systematisch ausarbeiten.' },
         { q: 'Was ist der häufigste Fehler?', a: 'Inkonsistenz zwischen Zeitplan und Inhalt. Formale Dokumente sind vorhanden, aber Motivation, Lernziele und Umsetzungsplan passen nicht zusammen.' },
         { q: 'Was ist nach der Zusage wichtig?', a: 'Sprachplanung, Budget, Lernziele und Logistik. Früh definierte messbare Ziele erhöhen den tatsächlichen Mehrwert der Mobilität.' }
       ]
@@ -3191,7 +3191,7 @@ const ARTICLES = {
       'article.html?id=54&slug=youthtick-yalova-dil-okulu-ve-yurtdisi-egitim-alternatifleri'
     ],
     content: `
-      <p>Yalova Erasmus başvuru rehberi — 90 günlük takvim, belgeler ve motivasyon metni için pratik adımlar.</p>
+      <p>This long-form guide is designed for users searching around Yalova Erasmus application intent and trying to move from scattered information to a practical plan. Youthtick focuses on execution quality, not only on application theory. The core principle is simple: good candidates lose opportunities when timeline discipline, document quality, and learning strategy are treated separately. This article connects all three into one process.</p>
       <h2>Why this guide matters for Yalova-based applicants</h2>
       <p>Many applicants in Yalova start with the right motivation but without an integrated workflow. They gather documents too late, underestimate language preparation, and submit generic motivation texts. Youthtick recommends an end-to-end application cycle with measurable checkpoints. A better process improves acceptance probability and also creates long-term personal growth after the mobility period.</p>
       <h2>Step 1: Define your Erasmus path clearly</h2>
@@ -4096,7 +4096,7 @@ const ARTICLES = {
     seoTitle_tr: 'Yalova Dijital Beceriler ve Uzaktan Çalışma Rehberi | YouthTICK',
     seoTitle_de: 'Digitale Kompetenzen für Yalova | YouthTICK',
     seoDesc: 'Learn digital skills, find remote work opportunities, build online portfolios and freelance careers from Yalova — practical roadmap for digital-first youth.',
-    seoDesc_tr: 'Yalova'dan dijital beceri kazanın, uzaktan çalışma fırsatları keşfedin, online portföy oluşturun ve freelance kariyer başlatın — dijital odaklı gençler için pratik rehber.',
+    seoDesc_tr: "Yalova'dan dijital beceri kazanın, uzaktan çalışma fırsatları keşfedin, online portföy oluşturun ve freelance kariyer başlatın — dijital odaklı gençler için pratik rehber.",
     seoDesc_de: 'Digitale Kompetenzen erwerben, Remote-Chancen nutzen, Online-Portfolio aufbauen — praktischer Leitfaden für digital-orientierte Jugendliche aus Yalova.',
     author: 'Can Yılmaz', authorRole: 'Digital Skills Trainer', authorImg: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&q=80&auto=format&fit=crop&crop=face',
     date: 'May 2026', readTime: '8 min',
@@ -4106,8 +4106,8 @@ const ARTICLES = {
     faq: {
       tr: [
         { q: 'Hangi dijital becer başlamalıyım?', a: 'İlgi alanınıza göre seçin: içerik üretimi (yazı, grafik, video), veri analizi, kodlama (web, mobil) veya dijital pazarlama. En hızlı başlangıç için ücretsiz online kurslarla 30 günlük mini proje oluşturun.' },
-        { q: 'Yalova'dan uzaktan çalışma gerçekçi mi?', a: 'Evet. İnternet bağlantısı, temel ekipman (laptop) ve disiplinli çalışma alışkanlığı yeterli. Freelance platformlarda (Upwork, Fiverr, Bionluk) küçük projelerle başlayıp portföy oluşturun.' },
-        { q: 'Portföy nasıl oluşturulur?', a: 'Gerçek projeleri çözün: yerel işletmelere ücretsiz dijital destek, kişisel blog, GitHub'da kod paylaşımı veya Behance'te tasarım çalışmaları. Kanıt üretin, gösterin.' }
+        { q: "Yalova'dan uzaktan çalışma gerçekçi mi?", a: "Evet. İnternet bağlantısı, temel ekipman (laptop) ve disiplinli çalışma alışkanlığı yeterli. Freelance platformlarda (Upwork, Fiverr, Bionluk) küçük projelerle başlayıp portföy oluşturun." },
+        { q: 'Portföy nasıl oluşturulur?', a: "Gerçek projeleri çözün: yerel işletmelere ücretsiz dijital destek, kişisel blog, GitHub'da kod paylaşımı veya Behance'te tasarım çalışmaları. Kanıt üretin, gösterin." }
       ],
       en: [
         { q: 'Which digital skills should I start with?', a: 'Choose based on interest: content creation (writing, design, video), data analysis, coding (web, mobile), or digital marketing. Start with free online courses and a 30-day mini project.' },
@@ -4179,7 +4179,7 @@ const ARTICLES = {
     category: 'Sustainability', catClass: 'tag-green', categoryKey: 'surdurulebilirlik',
     slug: 'yalova-surdurulebilir-yasam-yesil-projeler',
     title: 'Sustainable Living & Green Projects in Yalova',
-    title_tr: 'Yalova'da Sürdürülebilir Yaşam ve Yeşil Projeler',
+    title_tr: "Yalova'da Sürdürülebilir Yaşam ve Yeşil Projeler",
     title_de: 'Nachhaltiges Leben & Grüne Projekte in Yalova',
     seoTitle: 'Yalova Sustainable Living & Green Projects | YouthTICK',
     seoTitle_tr: 'Yalova Sürdürülebilir Yaşam ve Yeşil Projeler | YouthTICK',
@@ -4191,10 +4191,10 @@ const ARTICLES = {
     date: 'May 2026', readTime: '7 min',
     publishedAt: '2026-05-26',
     img: 'https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=1200&q=85&auto=format&fit=crop',
-    excerpt: 'Yalova'da sürdürülebilir yaşam, çevre projeleri ve yeşil girişimler için gençlik rehberi.',
+    excerpt: "Yalova'da sürdürülebilir yaşam, çevre projeleri ve yeşil girişimler için gençlik rehberi.",
     faq: {
       tr: [
-        { q: 'Yalova'da çevre projelerine nasıl katılabilirim?', a: 'Yerel belediye, Kent Konseyi Çevre Komisyonu, Yeşilay, ilçe milli eğitim ve üniversite topluluklarıyla iletişime geçin. Gönüllü temizlik etkinlikleri, ağaç dikimi ve farkındalık kampanyalarına katılabilirsiniz.' },
+        { q: "Yalova'da çevre projelerine nasıl katılabilirim?", a: "Yerel belediye, Kent Konseyi Çevre Komisyonu, Yeşilay, ilçe milli eğitim ve üniversite topluluklarıyla iletişime geçin. Gönüllü temizlik etkinlikleri, ağaç dikimi ve farkındalık kampanyalarına katılabilirsiniz." },
         { q: 'Kişisel karbon ayak izimi nasıl azaltırım?', a: 'Üç temel adım: tek kullanımlık plastikleri azaltın, toplu taşıma/bisiklet kullanın, yerel/mevsimlik ürün tüketin. Aylık izleme ile ilerlemenizi ölçün.' },
         { q: 'Yeşil girişim fikirleri neler olabilir?', a: 'Sıfır atık market, organik ürün kooperatifi, geri dönüşüm atölyesi, bisiklet paylaşım sistemi, çevre eğitimi platformu. Yerel ihtiyaç analizi ile başlayın.' }
       ],
@@ -4275,7 +4275,7 @@ const ARTICLES = {
     seoTitle_tr: 'Yalova Kültür, Sanat ve Yaratıcı Ağlar | YouthTICK',
     seoTitle_de: 'Kultur & Kreativ-Netzwerke Yalova | YouthTICK',
     seoDesc: 'Discover cultural events, art workshops, creative spaces and cultural networks in Yalova — guide for young artists and culture enthusiasts.',
-    seoDesc_tr: 'Yalova'da kültürel etkinlikler, sanat atölyeleri, yaratıcı mekanlar ve kültür ağları keşfedin — genç sanatçılar ve kültür meraklıları için rehber.',
+    seoDesc_tr: "Yalova'da kültürel etkinlikler, sanat atölyeleri, yaratıcı mekanlar ve kültür ağları keşfedin — genç sanatçılar ve kültür meraklıları için rehber.",
     seoDesc_de: 'Kulturelle Events, Kunst-Workshops, Kreativräume und Kulturnetzwerke in Yalova — Leitfaden für junge Künstler.',
     author: 'Ayşe Kara', authorRole: 'Cultural Programs Coordinator', authorImg: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=80&q=80&auto=format&fit=crop&crop=face',
     date: 'May 2026', readTime: '7 min',
@@ -4323,7 +4323,7 @@ const ARTICLES = {
     seoTitle_tr: 'Yalova Genç Spor ve Aktif Yaşam | YouthTICK',
     seoTitle_de: 'Sport für Jugend Yalova | YouthTICK',
     seoDesc: 'Sports facilities, fitness programs, outdoor activities and active lifestyle opportunities for young people in Yalova.',
-    seoDesc_tr: 'Yalova'da spor tesisleri, fitness programları, açık hava etkinlikleri ve aktif yaşam fırsatları.',
+    seoDesc_tr: "Yalova'da spor tesisleri, fitness programları, açık hava etkinlikleri ve aktif yaşam fırsatları.",
     seoDesc_de: 'Sportanlagen, Fitness-Programme, Outdoor-Aktivitäten für Jugendliche in Yalova.',
     author: 'Serkan Aydın', authorRole: 'Sports Coordinator', authorImg: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=80&q=80&auto=format&fit=crop&crop=face',
     date: 'May 2026', readTime: '6 min',
@@ -4341,13 +4341,13 @@ const ARTICLES = {
     category: 'Education Support', catClass: 'tag-blue', categoryKey: 'egitim-destek',
     slug: 'yalova-egitim-destek-mentorluk',
     title: 'Educational Support & Mentoring in Yalova',
-    title_tr: 'Yalova'da Eğitim Desteği ve Mentorluk',
+    title_tr: "Yalova'da Eğitim Desteği ve Mentorluk",
     title_de: 'Bildungsunterstützung & Mentoring in Yalova',
     seoTitle: 'Yalova Educational Support & Mentoring | YouthTICK',
     seoTitle_tr: 'Yalova Eğitim Desteği ve Mentorluk | YouthTICK',
     seoTitle_de: 'Bildung & Mentoring Yalova | YouthTICK',
     seoDesc: 'Free tutoring, mentoring programs, study groups and educational resources for students in Yalova.',
-    seoDesc_tr: 'Yalova'da ücretsiz ders desteği, mentorluk programları, çalışma grupları ve eğitim kaynakları.',
+    seoDesc_tr: "Yalova'da ücretsiz ders desteği, mentorluk programları, çalışma grupları ve eğitim kaynakları.",
     seoDesc_de: 'Kostenlose Nachhilfe, Mentoring-Programme, Lerngruppen für Schüler in Yalova.',
     author: 'Öğretmen Fatma Yıldız', authorRole: 'Education Coordinator', authorImg: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=80&q=80&auto=format&fit=crop&crop=face',
     date: 'May 2026', readTime: '7 min',
@@ -4365,7 +4365,7 @@ const ARTICLES = {
     category: 'Social Enterprise', catClass: 'tag-green', categoryKey: 'sosyal-girisim',
     slug: 'yalova-sosyal-girisim-etki-startuplari',
     title: 'Social Enterprise & Impact Startups in Yalova',
-    title_tr: 'Yalova'da Sosyal Girişimcilik ve Etki Odaklı Startuplar',
+    title_tr: "Yalova'da Sosyal Girişimcilik ve Etki Odaklı Startuplar",
     title_de: 'Sozialunternehmertum & Impact-Startups in Yalova',
     seoTitle: 'Yalova Social Enterprise & Impact Startups | YouthTICK',
     seoTitle_tr: 'Yalova Sosyal Girişim ve Etki Startupları | YouthTICK',
