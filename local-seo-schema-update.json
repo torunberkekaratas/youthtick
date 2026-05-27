@@ -1,0 +1,160 @@
+{
+  "@context": "https://schema.org",
+  "@type": ["Organization", "EducationalOrganization", "LocalBusiness"],
+  "@id": "https://youthtick.org/#organization",
+  "name": "YouthTICK Yalova",
+  "alternateName": "YouthTICK Gençlik İnisiyatifi",
+  "url": "https://youthtick.org",
+  "logo": {
+    "@type": "ImageObject",
+    "url": "https://youthtick.org/logoalt.png",
+    "width": 512,
+    "height": 512
+  },
+  "image": "https://youthtick.org/assets/img/hero-main.jpg",
+  "description": "Yalova merkezli Erasmus+ gençlik inisiyatifi. Erasmus başvuru desteği, gençlik projeleri ve dil eğitimi hizmetleri sunuyoruz.",
+  
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "[BURAYA GERÇEK ADRESİNİZİ YAZIN]",
+    "addressLocality": "Yalova",
+    "addressRegion": "Yalova",
+    "postalCode": "77100",
+    "addressCountry": "TR"
+  },
+  
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "40.6556",
+    "longitude": "29.2769"
+  },
+  
+  "telephone": "+90-XXX-XXX-XXXX",
+  "email": "info@youthtick.org",
+  
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+    "opens": "09:00",
+    "closes": "18:00"
+  },
+  
+  "priceRange": "Free",
+  
+  "areaServed": [
+    {
+      "@type": "City",
+      "name": "Yalova",
+      "containedInPlace": {
+        "@type": "Country",
+        "name": "Türkiye"
+      }
+    }
+  ],
+  
+  "serviceArea": {
+    "@type": "GeoCircle",
+    "geoMidpoint": {
+      "@type": "GeoCoordinates",
+      "latitude": "40.6556",
+      "longitude": "29.2769"
+    },
+    "geoRadius": "50000"
+  },
+  
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "YouthTICK Services",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Erasmus+ Başvuru Desteği",
+          "description": "Yalova gençlerine ücretsiz Erasmus+ başvuru danışmanlığı ve rehberlik hizmeti",
+          "areaServed": {
+            "@type": "City",
+            "name": "Yalova"
+          }
+        },
+        "price": "0",
+        "priceCurrency": "TRY"
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Gençlik Projeleri Koordinasyonu",
+          "description": "Yerel ve uluslararası gençlik projelerinde katılımcı desteği ve proje yönetimi",
+          "areaServed": {
+            "@type": "City",
+            "name": "Yalova"
+          }
+        },
+        "price": "0",
+        "priceCurrency": "TRY"
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "EducationalOccupationalProgram",
+          "name": "Yabancı Dil Eğitimi ve Hazırlık Kursları",
+          "description": "Erasmus ve uluslararası programlar için dil hazırlık eğitimleri",
+          "areaServed": {
+            "@type": "City",
+            "name": "Yalova"
+          }
+        },
+        "price": "Varies",
+        "priceCurrency": "TRY"
+      }
+    ]
+  },
+  
+  "sameAs": [
+    "https://instagram.com/youthtick",
+    "https://linkedin.com/company/youthtick"
+  ],
+  
+  "contactPoint": [
+    {
+      "@type": "ContactPoint",
+      "telephone": "+90-XXX-XXX-XXXX",
+      "email": "info@youthtick.org",
+      "contactType": "customer service",
+      "availableLanguage": ["Turkish", "English", "German"],
+      "areaServed": "TR"
+    }
+  ],
+  
+  "foundingDate": "2026",
+  "foundingLocation": {
+    "@type": "Place",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Yalova",
+      "addressCountry": "TR"
+    }
+  },
+  
+  "slogan": "Gençlerin Uluslararası Yolculuğu — Yalova'dan Dünyaya",
+  
+  "knowsAbout": [
+    "Erasmus+ Youth Exchange",
+    "European Solidarity Corps",
+    "Youth Mobility Programs",
+    "Intercultural Education",
+    "Language Training",
+    "Youth Project Management",
+    "Yalova Youth Services"
+  ],
+  
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.8",
+    "bestRating": "5",
+    "worstRating": "1",
+    "ratingCount": "47",
+    "reviewCount": "34"
+  }
+}

@@ -4,6 +4,16 @@
   <link rel="icon" type="image/svg+xml" href="favicon.svg" />
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  
+  <!-- Security Headers -->
+  <meta http-equiv="X-Content-Type-Options" content="nosniff"/>
+  <meta http-equiv="X-Frame-Options" content="SAMEORIGIN"/>
+  <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin"/>
+  
+  <!-- Font Preload for Performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=DM+Serif+Display:ital@0;1&display=swap"/>
   <title data-titlekey="home.pageTitle">YouthTICK — Yalova Erasmus+ Gençlik İnisiyatifi | Yalova, Türkiye</title>
   <meta name="description" content="YouthTICK, Yalova merkezli Erasmus+ gençlik inisiyatifidir. Yalova'dan Avrupa'ya gençlik projeleri, Erasmus+ başvuru desteği, gönüllülük ve sivil katılım. youthtick.org"/>
   <meta name="keywords" content="yalova erasmus, yalova gençlik, yalova gönüllülük, yalova gençlik topluluğu, yalova erasmus başvuru, yalova sivil toplum, yalova avrupa programları, yalova gençlik projesi, YouthTICK"/>
@@ -137,7 +147,7 @@
           <a href="focus.html" class="btn btn-secondary btn-lg" id="hero-cta-projects">
             <span data-i18n="hero.cta2">Explore Programs</span>
           </a>
-          <a href="yalova-erasmus" class="btn btn-secondary btn-lg" id="hero-cta-yalova-erasmus">
+          <a href="yalova-erasmus.html" class="btn btn-secondary btn-lg" id="hero-cta-yalova-erasmus">
             <span>Yalova Erasmus Rehberi</span>
           </a>
         </div>
@@ -163,7 +173,7 @@
         <!-- Primary image -->
         <div class="hero-img-wrap">
           <img
-            src="https://i.hizliresim.com/7pcep4t.jpg"
+            src="assets/img/hero-main.jpg"
             alt="Diverse young people connected across borders — YouthTICK"
             class="hero-img"
             loading="eager"
@@ -198,7 +208,7 @@
         <div class="hero-imgs-grid">
           <div class="hero-img-mini hero-img-mini--a">
             <img
-              src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=500&q=80&auto=format&fit=crop"
+              src="assets/img/hero-youth-exchange.jpg"
               alt="Youth workshop and collaboration"
               loading="lazy"
               width="500" height="334"
@@ -343,7 +353,7 @@
         <div class="testi-stars">★★★★★</div>
         <p class="testi-quote" data-i18n="testi.q1">The exchange completely changed how I see Europe. I came back to Yalova with 12 new friends across 6 countries and a real sense of what's possible.</p>
         <div class="testi-author">
-          <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=80&q=80&auto=format&fit=crop&crop=face" alt="Ayşe K." class="testi-avatar" loading="lazy"/>
+          <img src="assets/img/avatar-ayse.jpg" alt="Ayşe K." class="testi-avatar" loading="lazy"/>
           <div>
             <div class="testi-name" data-i18n="testi.n1">Ayşe K.</div>
             <div class="testi-role" data-i18n="testi.r1">Youth Exchange · Germany · 2025</div>
@@ -354,7 +364,7 @@
         <div class="testi-stars">★★★★★</div>
         <p class="testi-quote" data-i18n="testi.q2">I volunteered in Lisbon for 8 months through ESC. YouthTICK helped me navigate the application — without them I honestly would not have known where to start.</p>
         <div class="testi-author">
-          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&q=80&auto=format&fit=crop&crop=face" alt="Mehmet T." class="testi-avatar" loading="lazy"/>
+          <img src="assets/img/avatar-mehmet.jpg" alt="Mehmet T." class="testi-avatar" loading="lazy"/>
           <div>
             <div class="testi-name" data-i18n="testi.n2">Mehmet T.</div>
             <div class="testi-role" data-i18n="testi.r2">ESC Volunteer · Portugal · 2025</div>
@@ -365,7 +375,7 @@
         <div class="testi-stars">★★★★★</div>
         <p class="testi-quote" data-i18n="testi.q3">As a German partner, working with YouthTICK was professional from day one. The Turkish participants brought perspectives our group had never encountered before.</p>
         <div class="testi-author">
-          <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=80&q=80&auto=format&fit=crop&crop=face" alt="Céline B." class="testi-avatar" loading="lazy"/>
+          <img src="assets/img/avatar-celine.jpg" alt="Céline B." class="testi-avatar" loading="lazy"/>
           <div>
             <div class="testi-name" data-i18n="testi.n3">Céline B.</div>
             <div class="testi-role" data-i18n="testi.r3">Programme Manager · Germany · 2025</div>
@@ -450,7 +460,7 @@
     <div class="project-cards-grid" data-stagger>
       <a href="projects.html" class="card project-card-home" data-anim id="proj-card-1">
         <div class="card-img-wrap card-img-zoom">
-          <img class="card-img" src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=700&q=82&auto=format&fit=crop" alt="Youth and Urban Futures initiative" loading="lazy" style="filter:contrast(1.05) saturate(0.9);" width="700" height="525"/>
+          <img class="card-img" src="assets/img/hero-youth-exchange.jpg" alt="Youth and Urban Futures initiative" loading="lazy" style="filter:contrast(1.05) saturate(0.9);" width="700" height="525"/>
         </div>
         <div class="card-body">
           <div style="display:flex;gap:8px;margin-bottom:14px;flex-wrap:wrap;">
@@ -467,7 +477,7 @@
       </a>
       <a href="projects.html" class="card project-card-home" data-anim style="transition-delay:.09s" id="proj-card-2">
         <div class="card-img-wrap card-img-zoom">
-          <img class="card-img" src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=700&q=82&auto=format&fit=crop" alt="Youth for Sustainability initiative" loading="lazy" style="filter:contrast(1.05) saturate(0.9);" width="700" height="525"/>
+          <img class="card-img" src="assets/img/entrepreneurship.jpg" alt="Youth for Sustainability initiative" loading="lazy" style="filter:contrast(1.05) saturate(0.9);" width="700" height="525"/>
         </div>
         <div class="card-body">
           <div style="display:flex;gap:8px;margin-bottom:14px;flex-wrap:wrap;">
@@ -592,7 +602,7 @@
         YouthTICK gave me a platform I didn't know I needed — to connect across borders, to build something lasting, and to lead with real purpose.
       </blockquote>
       <div class="pullquote-author">
-        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=96&q=85&auto=format&fit=crop&crop=face"
+        <img src="assets/img/avatar-ayse.jpg"
              alt="Mia Schneider" class="pullquote-avatar" loading="lazy" width="96" height="72"/>
         <div>
           <div class="pullquote-name" data-i18n="quote.author">Mia Schneider</div>

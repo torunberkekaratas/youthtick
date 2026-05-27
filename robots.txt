@@ -4,4 +4,35 @@ Allow: /
 Disallow: /admin/
 Disallow: /admin
 
+# AI Search Engines - Explicitly Allowed
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+# Block AI Training Crawlers (optional)
+User-agent: CCBot
+Disallow: /
+
+User-agent: ChatGPT-User
+Disallow: /
+
+User-agent: cohere-ai
+Disallow: /
+
+# Sitemaps
 Sitemap: https://youthtick.org/sitemap.xml
+Sitemap: https://youthtick.org/rss.xml

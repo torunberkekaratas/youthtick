@@ -1,0 +1,122 @@
+<!-- 
+  GOOGLE MAPS EMBED SECTİON
+  
+  Kullanım: index.html'e ekleyin (contact section'dan önce veya sonra)
+  
+  ADIMLAR:
+  1. Google Maps'e gidin: https://www.google.com/maps
+  2. Adresinizi arayın
+  3. "Share" butonuna tıklayın
+  4. "Embed a map" seçin
+  5. İframe kodunu kopyalayın
+  6. Aşağıdaki [GOOGLE_MAPS_EMBED_URL] yerine yapıştırın
+-->
+
+<section class="google-maps-section" style="padding:80px 20px; background:var(--bg-soft);">
+  <div style="max-width:1200px; margin:0 auto;">
+    
+    <h2 style="text-align:center; margin-bottom:16px; font-size:2rem; color:var(--ink);">
+      📍 Bizi Bulun — Yalova Merkez
+    </h2>
+    
+    <p style="text-align:center; color:var(--ink-muted); margin-bottom:40px; font-size:1.1rem;">
+      Ofisimize uğrayın veya online destek alın
+    </p>
+    
+    <!-- Google Maps Embed -->
+    <iframe 
+      src="[GOOGLE_MAPS_EMBED_URL]" 
+      width="100%" 
+      height="450" 
+      style="border:0; border-radius:16px; box-shadow:0 4px 20px rgba(0,0,0,0.1);" 
+      allowfullscreen="" 
+      loading="lazy" 
+      referrerpolicy="no-referrer-when-downgrade"
+      title="YouthTICK Yalova Ofis Konumu">
+    </iframe>
+    
+    <!-- İletişim Bilgileri -->
+    <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:24px; margin-top:40px;">
+      
+      <!-- Adres Kartı -->
+      <div style="background:white; padding:24px; border-radius:12px; box-shadow:0 2px 10px rgba(0,0,0,0.08);">
+        <strong style="display:block; margin-bottom:12px; font-size:1.1rem; color:var(--primary);">
+          📍 Adres
+        </strong>
+        <p style="color:var(--ink-muted); font-size:0.95rem; line-height:1.6;">
+          [BURAYA TAM ADRESİNİZİ YAZIN]<br/>
+          [Sokak Adı, Numara]<br/>
+          Yalova Merkez, 77100<br/>
+          Yalova, Türkiye
+        </p>
+        <a href="https://maps.google.com/?q=[ADRESİNİZ]" 
+           target="_blank" 
+           style="display:inline-block; margin-top:12px; color:var(--primary); text-decoration:none; font-weight:500;">
+          Yol Tarifi Al →
+        </a>
+      </div>
+      
+      <!-- İletişim Kartı -->
+      <div style="background:white; padding:24px; border-radius:12px; box-shadow:0 2px 10px rgba(0,0,0,0.08);">
+        <strong style="display:block; margin-bottom:12px; font-size:1.1rem; color:var(--primary);">
+          📞 İletişim
+        </strong>
+        <p style="color:var(--ink-muted); font-size:0.95rem; line-height:1.6;">
+          <strong>Telefon:</strong><br/>
+          <a href="tel:+90XXXXXXXXXX" style="color:var(--primary); text-decoration:none;">
+            +90 XXX XXX XX XX
+          </a>
+          <br/><br/>
+          <strong>Email:</strong><br/>
+          <a href="mailto:info@youthtick.org" style="color:var(--primary); text-decoration:none;">
+            info@youthtick.org
+          </a>
+        </p>
+      </div>
+      
+      <!-- Çalışma Saatleri Kartı -->
+      <div style="background:white; padding:24px; border-radius:12px; box-shadow:0 2px 10px rgba(0,0,0,0.08);">
+        <strong style="display:block; margin-bottom:12px; font-size:1.1rem; color:var(--primary);">
+          🕒 Çalışma Saatleri
+        </strong>
+        <p style="color:var(--ink-muted); font-size:0.95rem; line-height:1.6;">
+          <strong>Hafta İçi:</strong><br/>
+          Pazartesi - Cuma<br/>
+          09:00 - 18:00
+          <br/><br/>
+          <strong>Hafta Sonu:</strong><br/>
+          Cumartesi - Pazar<br/>
+          Kapalı
+        </p>
+        <p style="margin-top:12px; padding:12px; background:var(--bg-soft); border-radius:8px; font-size:0.9rem; color:var(--ink-muted);">
+          💡 Randevu almak için önceden email atmanızı öneririz
+        </p>
+      </div>
+      
+    </div>
+    
+    <!-- Ek Bilgi Banner -->
+    <div style="margin-top:40px; padding:24px; background:linear-gradient(135deg, var(--primary), #2563eb); border-radius:12px; text-align:center; color:white;">
+      <h3 style="margin-bottom:12px; font-size:1.3rem;">
+        🚀 Ücretsiz Erasmus Danışmanlığı
+      </h3>
+      <p style="margin-bottom:20px; opacity:0.9; font-size:1rem;">
+        Yalova'da yaşıyorsanız, ofisimize gelerek yüz yüze danışmanlık alabilirsiniz!
+      </p>
+      <a href="volunteer.html" 
+         style="display:inline-block; padding:12px 32px; background:white; color:var(--primary); border-radius:8px; text-decoration:none; font-weight:600; box-shadow:0 4px 12px rgba(0,0,0,0.2);">
+        Başvur →
+      </a>
+    </div>
+    
+  </div>
+</section>
+
+<!-- 
+  NOT: Bu section'ı index.html'e ekledikten sonra:
+  1. [GOOGLE_MAPS_EMBED_URL] yerine gerçek embed URL'i yazın
+  2. [BURAYA TAM ADRESİNİZİ YAZIN] yerine gerçek adresi yazın
+  3. +90 XXX XXX XX XX yerine gerçek telefon numarasını yazın
+  4. Çalışma saatlerini güncelleyin
+  5. Gerekirse renk değişkenleri ile oynayın (var(--primary) vs.)
+-->
