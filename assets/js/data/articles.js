@@ -4456,6 +4456,242 @@ const ARTICLES = {
       <h2>Soft skills nedir ve neden önemli?</h2>
       <p>Teknik beceriler "ne" yaptığınızı, soft skills "nasıl" yaptığınızı belirler. Ekip çalışması, problem çözme, uyum yeteneği, empati gibi beceriler iş dünyasında aranan yetkinliklerdir.</p>
     `
+  },
+  '68': {
+    category: 'Erasmus+', catClass: 'tag-blue', categoryKey: 'erasmus',
+    slug: 'yalova-erasmus-butce-ulke-secimi-hazirlik-rehberi',
+    title: 'Yalova Erasmus 2026: Budget Planning, Country Selection and the Real Student Journey',
+    title_tr: 'Yalova Erasmus 2026: Bütçe, Ülke Seçimi ve Hazırlık Rehberi',
+    title_de: 'Yalova Erasmus 2026: Budgetplanung, Länderwahl und Vorbereitungsguide',
+    seoTitle: 'Yalova Erasmus 2026: Budget, Country & Prep Guide | YouthTICK',
+    seoTitle_tr: 'Yalova Erasmus 2026: Bütçe, Ülke Seçimi ve Hazırlık | YouthTICK',
+    seoTitle_de: 'Yalova Erasmus 2026: Budget, Länderwahl & Vorbereitung | YouthTICK',
+    seoDesc: 'Real budget figures, country selection strategy and a step-by-step pre-departure checklist for Yalova students going on Erasmus+ in 2026.',
+    seoDesc_tr: 'Yalova Erasmus öğrencileri için gerçek bütçe rakamları, ülke seçimi stratejisi ve adım adım hazırlık planı. YouthTICK\'in 2026 içgüdümlü rehberi.',
+    seoDesc_de: 'Reale Budgetzahlen, Länderwahlstrategie und Schritt-für-Schritt-Vorbereitung für Yalova-Studierende im Erasmus+ 2026.',
+    author: 'Elif Yıldız', authorRole: 'Programme Lead', authorImg: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?w=80&q=80&auto=format&fit=crop&crop=face',
+    date: 'May 2026', readTime: '11 min',
+    publishedAt: '2026-05-28',
+    img: 'https://images.unsplash.com/photo-1488085061387-422e29b40080?w=1200&q=85&auto=format&fit=crop',
+    excerpt: 'Yalova\'dan Erasmus\'a gidecekler için resmi kılavuzların atladığı şeyler: gerçek bütçe, ülke karşılaştırması ve dönüş sonrası ne yapmalısın.',
+    faq: {
+      tr: [
+        { q: 'Yalova\'dan Erasmus\'a gitmek için ne kadar bütçe ayırmalıyım?', a: 'Erasmus hibesi ülkeye ve programa göre değişir; 2025-26 döneminde Grup 1 ülkeleri (Almanya, İsveç, Danimarka vb.) için aylık ortalama 670-820 Euro hibe verilmektedir. Ancak bu miktar çoğunlukla masrafların tamamını karşılamaz. Yalova\'dan gidecek öğrenciler için konut, ulaşım ve ilk kurulum masraflarını hesaba katarak ek 1.500-2.500 Euro biriktirmesi önerilir.' },
+        { q: 'Yalova Üniversitesi\'nin Erasmus anlaşması olan ülkeler hangileri?', a: 'Yalova Üniversitesi başta Almanya, Polonya, Çek Cumhuriyeti, Romanya ve Portekiz olmak üzere 20+ Avrupa ülkesiyle ikili anlaşmaya sahiptir. Güncel liste için Uluslararası İlişkiler Ofisi\'ne danışmanız ve YouthTICK\'in Erasmus rehberini takip etmeniz önerilir.' },
+        { q: 'Yalova Erasmus başvurusunda en çok hangi belge eksikliği oluyor?', a: 'En sık yaşanan sorunlar: süresi geçmiş transkript, zayıf motivasyon mektubu ve dil belgesinin geç temin edilmesi. YouthTICK belgeler kontrol listesini kullanarak bu üç alanda en az 4 hafta erken hazırlık yapmanızı öneririz.' },
+        { q: 'Erasmus\'tan döndükten sonra ne yapmalıyım?', a: 'Youthpass belgeni oluştur, deneyimini LinkedIn ve CV\'ye yansıt, Yalova\'daki genç girişimcilik veya STK ağına katkı sunmak için YouthTICK toplantılarına katıl. Dönüş motivasyonu, gidiş kadar önemlidir.' },
+        { q: 'Yalova\'da Erasmus danışmanlığı nereden alınır?', a: 'YouthTICK, Yalova merkezli gençlere ücretsiz Erasmus ön danışmanlık hizmeti sunmaktadır. Ayrıca Yalova Üniversitesi Uluslararası İlişkiler Ofisi resmi başvuru süreçlerinde birincil muhatap kurumdur.' }
+      ],
+      en: [
+        { q: 'How much budget should a Yalova student save for Erasmus?', a: 'The Erasmus grant for Group 1 countries (Germany, Sweden, Denmark etc.) averages €670-820/month in 2025-26. This often does not cover all costs. Students from Yalova should budget an additional €1,500-2,500 for housing deposits, travel, and first-month setup.' },
+        { q: 'Which countries does Yalova University have Erasmus agreements with?', a: 'Yalova University holds bilateral agreements with 20+ European countries, including Germany, Poland, Czech Republic, Romania and Portugal. Check the International Relations Office for the current list and follow YouthTICK\'s Erasmus guide for updates.' },
+        { q: 'What documents are most often missing in Yalova Erasmus applications?', a: 'The three most common gaps: an outdated transcript, a weak motivation letter, and a language certificate obtained too late. Use YouthTICK\'s document checklist and start at least 4 weeks ahead of the deadline.' },
+        { q: 'What should I do after returning from Erasmus?', a: 'Generate your Youthpass, update your LinkedIn and CV, and join YouthTICK meetups to contribute to Yalova\'s youth and entrepreneurship networks. The return phase determines long-term value as much as the exchange itself.' }
+      ],
+      de: [
+        { q: 'Wie viel Budget sollten Studierende aus Yalova für Erasmus einplanen?', a: 'Die Erasmus-Förderung für Gruppe-1-Länder beträgt 2025-26 durchschnittlich 670-820 Euro/Monat. Da dies oft nicht alle Kosten deckt, empfehlen wir, zusätzlich 1.500-2.500 Euro für Kaution, Reise und Erstausstattung einzuplanen.' },
+        { q: 'Mit welchen Ländern hat die Universität Yalova Erasmus-Vereinbarungen?', a: 'Die Universität Yalova hat bilaterale Abkommen mit über 20 europäischen Ländern, darunter Deutschland, Polen, Tschechien, Rumänien und Portugal. Aktuelles beim Büro für internationale Beziehungen erfragen.' }
+      ]
+    },
+    internalLinks: [
+      'article.html?id=50&slug=youthtick-yalova-erasmus-genclik-uluslararasi-firsatlar-rehberi-2026',
+      'article.html?id=51&slug=youthtick-yalova-erasmus-basvuru-rehberi-2026',
+      'article.html?id=52&slug=youthtick-yalova-universite-ogrencileri-icin-erasmus-firsatlari',
+      'article.html?id=1&slug=erasmus-youth-exchange-complete-guide-2026',
+      'article.html?id=10&slug=youthpass-erasmus-learning-visible',
+      'article.html?id=29&slug=how-national-agencies-evaluate-erasmus-youth-applications'
+    ],
+    content: `
+      <p>There is a version of the Erasmus story that appears in every official brochure: smiling students in front of European landmarks, a life-changing semester, a fluent new language. That version is partially true. What it leaves out is everything that actually determines whether your exchange goes well — the budget decisions you make in October that affect your January, the country choice that shapes who you meet, and the re-entry plan that decides what your Erasmus experience is worth on the day you land back in Yalova.</p>
+      <p>This guide was written specifically for students and young people based in Yalova. The information here goes beyond the standard Yalova Erasmus application checklist — you can find that in <a href="article.html?id=51&slug=youthtick-yalova-erasmus-basvuru-rehberi-2026">our application guide</a>. Here, the focus is on the decisions that most guides skip: financial planning that actually matches reality, how to choose your partner country strategically, and how to make the journey count when you come home.</p>
+
+      <h2>The Real Numbers: Erasmus Budget Planning for Yalova Students</h2>
+      <p>The question every student asks — and almost no official source answers honestly — is: will the Erasmus grant actually cover my costs? The short answer is: probably not on its own. Here is a realistic breakdown for 2025-26.</p>
+
+      <h3>How the Erasmus grant works</h3>
+      <p>Erasmus+ divides partner countries into three cost-of-living groups. The monthly grant you receive depends on which group your destination falls into, and your Turkish national agency (TCA) sets the final amounts. For the 2025-26 academic year, approximate monthly rates are:</p>
+      <ul>
+        <li><strong>Group 1</strong> (Denmark, Finland, Iceland, Ireland, Luxembourg, Sweden, UK, Liechtenstein, Norway): €820/month</li>
+        <li><strong>Group 2</strong> (Austria, Belgium, Cyprus, France, Germany, Italy, Malta, Netherlands, Portugal, Spain): €670-750/month</li>
+        <li><strong>Group 3</strong> (Bulgaria, Croatia, Czech Republic, Estonia, Hungary, Latvia, Lithuania, North Macedonia, Poland, Romania, Serbia, Slovakia, Slovenia, Turkey, Republic of North Macedonia): €520-600/month</li>
+      </ul>
+      <p>For Yalova University students specifically, the grant is disbursed by the International Relations Office in two instalments: 80% at departure and 20% upon return after submitting your required reports.</p>
+
+      <h3>What the grant does not cover</h3>
+      <p>Several costs catch first-time Erasmus students off guard. These are the ones that matter most for students travelling from Yalova:</p>
+      <ul>
+        <li><strong>Housing deposit</strong>: Most private accommodation in Western Europe requires one to three months' deposit upfront. On a Group 2 destination, that can mean €700-1,500 out of pocket before your first grant instalment arrives.</li>
+        <li><strong>Travel costs</strong>: A return flight from Istanbul (IST or SAW) to a Western European capital typically costs €150-400 depending on season and how early you book. From Yalova, add an additional bus or ferry connection to Istanbul.</li>
+        <li><strong>Bureaucratic costs</strong>: Health insurance top-ups, residence registration fees, bank account opening costs, and local transport cards in the first month add up to €100-250.</li>
+        <li><strong>Communication and setup</strong>: SIM cards, adapters, basic household items — another €80-150 if your accommodation is not fully furnished.</li>
+      </ul>
+      <p>A practical rule for Yalova students: assume you need an additional €1,500-2,500 in personal savings before departure, regardless of which country you are going to. This is not pessimism — it is the cushion that lets you focus on your experience instead of your bank account.</p>
+
+      <h3>Monthly living costs by destination type</h3>
+      <table>
+        <thead><tr><th>City Type</th><th>Rent (shared flat)</th><th>Food</th><th>Transport</th><th>Total est./month</th></tr></thead>
+        <tbody>
+          <tr><td>Large capital (Berlin, Madrid, Amsterdam)</td><td>€550-800</td><td>€200-280</td><td>€80-100</td><td>€830-1,180</td></tr>
+          <tr><td>Mid-size city (Kraków, Porto, Brno)</td><td>€300-450</td><td>€160-220</td><td>€30-60</td><td>€490-730</td></tr>
+          <tr><td>Small university town</td><td>€250-380</td><td>€140-200</td><td>€20-40</td><td>€410-620</td></tr>
+        </tbody>
+      </table>
+      <p>This table shows why country selection matters financially, not just academically. A student going to Warsaw on a Group 3 grant of €550/month has a better chance of living comfortably than a student going to Amsterdam on €750/month facing €900+ rent.</p>
+
+      <h2>Choosing Your Destination: A Strategic Framework for Yalova Students</h2>
+      <p>Most students choose their Erasmus country based on reputation, language familiarity, or where their friends want to go. These are not bad reasons — but they are incomplete ones. Here is a more deliberate framework that has worked well for young people in Yalova.</p>
+
+      <h3>Start with Yalova University's bilateral agreements</h3>
+      <p>You can only apply to universities that Yalova Üniversitesi has an active Erasmus+ bilateral agreement with. The International Relations Office maintains the current list, and it changes each academic year as agreements are renewed, added, or suspended. Before you fall in love with a destination, confirm the agreement is active and that your faculty is included — not all agreements cover all departments.</p>
+      <p>Common agreement countries for Yalova University students in recent cycles include Germany, Poland, Czech Republic, Romania, Spain, and Portugal. Germany and Poland tend to have the most slots; competition for them is accordingly higher.</p>
+
+      <h3>The five questions that should guide your choice</h3>
+      <p>Rather than just picking a country you find exciting, work through these five questions:</p>
+      <ol>
+        <li><strong>Does the cost-of-living match my grant group?</strong> Use the table above. If the rent alone will exceed your grant, you need either strong personal savings or a cheaper city within the same country.</li>
+        <li><strong>What language will you use day-to-day?</strong> Most Erasmus programs teach in English, but daily life — housing, healthcare, bureaucracy — happens in the local language. Consider how much that matters to your experience and stress levels.</li>
+        <li><strong>What is the academic quality and credit recognition?</strong> Credits earned abroad must be recognized by Yalova University upon return. Work this out in writing with your faculty coordinator <em>before</em> you depart. Ambiguity here has ended some otherwise excellent exchanges badly.</li>
+        <li><strong>Does the destination serve a long-term goal?</strong> If you are considering graduate study in Germany, an Erasmus year there builds language, network, and institutional familiarity. If you plan to work in Yalova's entrepreneurship ecosystem, a semester at a technically strong Polish or Czech university might be more useful than a prestigious but disconnected western program.</li>
+        <li><strong>What is the Yalova student community like there?</strong> This is an underrated factor. A city with an active Turkish student community means easier adjustment, a built-in support network, and shortcuts for finding housing. It also means less pressure to integrate — which cuts both ways.</li>
+      </ol>
+
+      <h3>Germany: the Yalova default — and why it may not be right for you</h3>
+      <p>Germany is the most popular Erasmus destination for students from Turkey overall, and Yalova is no exception. The reasons are real: strong universities, a large Turkish diaspora, post-exchange career opportunities, and a language that many students have already started learning.</p>
+      <p>The downsides are equally real. Rents in major German cities have increased sharply. The bureaucratic registration process (Anmeldung) takes time and requires a confirmed address before you can open a German bank account. English-language course availability varies significantly by university and department. And the competitive pressure for slots — both at the application stage and during the semester — is higher than at comparable programs in Poland or the Czech Republic.</p>
+      <p>The point is not that Germany is a bad choice. It is that going to Germany should be a deliberate decision, not the default because it feels safe.</p>
+
+      <h2>The Pre-Departure Checklist Yalova Students Actually Need</h2>
+      <p>The official pre-departure checklist from your International Relations Office covers the essentials: Learning Agreement, insurance card, and grant contract. This section covers what they do not tell you — the practical steps that make your first month functional rather than chaotic.</p>
+
+      <h3>Twelve weeks before departure</h3>
+      <ul>
+        <li>Confirm your Learning Agreement is signed by all three parties: you, your home faculty, and the host institution. Do not leave this for the last month.</li>
+        <li>Book accommodation. University dormitories tend to fill up fast; apply immediately after receiving your acceptance letter. If you use a private platform, verify landlord identity and read reviews from other international students specifically.</li>
+        <li>Book your flights. Prices increase significantly in the final six weeks. Set a price alert and buy when you find something reasonable.</li>
+        <li>Check your European Health Insurance Card (EHIC). As a Turkish citizen, you do not qualify for the EHIC. Ensure your health insurance explicitly covers EU countries for the full duration of your stay, and get written confirmation.</li>
+      </ul>
+
+      <h3>Four weeks before departure</h3>
+      <ul>
+        <li>Open a digital bank account that works in Europe. Revolut and Wise are used by most Yalova students going abroad because they avoid conversion fees and work immediately upon arrival without a local address.</li>
+        <li>Download your university's student portal app, your health insurance app, and any tenant communication platform your landlord uses.</li>
+        <li>Contact your host university's buddy program or Erasmus Student Network (ESN) chapter. They know the local system and can answer practical questions faster than any official office.</li>
+        <li>Notify YouthTICK. We track Yalova students abroad and connect outgoing students with recent returnees from the same destination.</li>
+      </ul>
+
+      <h3>One week before departure</h3>
+      <ul>
+        <li>Photograph all important documents: passport, visa (if applicable), health insurance card, Learning Agreement, housing contract. Store copies in cloud storage, not just on your phone.</li>
+        <li>Confirm housing arrival logistics. Many landlords only hand over keys at specific times and expect advance notice.</li>
+        <li>Pack a copy of your TCA grant contract. Some host institutions ask to verify this at check-in.</li>
+      </ul>
+
+      <h2>During Your Exchange: Making It Count Beyond the Classroom</h2>
+      <p>The students who extract the most from Yalova Erasmus exchanges share one habit: intentionality. They do not just let the semester happen to them. Here is what intentional exchange participation looks like in practice.</p>
+
+      <h3>Build a network, not just friendships</h3>
+      <p>Your fellow Erasmus students are an extraordinary concentration of motivated young people from across Europe and beyond. They will scatter after the semester ends. The ones you keep in touch with professionally — through LinkedIn, through shared projects, through the Youthpass community — become a European network you could not build any other way. Treat your Erasmus cohort as future colleagues, not just party companions.</p>
+
+      <h3>Document your learning from week one</h3>
+      <p>Youthpass is the EU's official tool for documenting non-formal and informal learning outcomes. You can and should start filling it during your exchange, not just at the end. <a href="article.html?id=10&slug=youthpass-erasmus-learning-visible">Our Youthpass guide</a> explains how to frame your competency development in language that translates directly to job applications and graduate school statements.</p>
+
+      <h3>Stay connected to Yalova</h3>
+      <p>The most common regret among returning Yalova students is losing touch with local networks while abroad. Follow YouthTICK updates, stay in the university's student group chats, and keep tracking opportunities in Yalova's entrepreneurship and youth ecosystem — so you return ready to act rather than needing to catch up from scratch.</p>
+
+      <h2>The Return: What Happens After You Land Back in Yalova</h2>
+      <p>The official obligations after your Erasmus exchange are straightforward: submit your final report to the TCA, ensure your credits are transferred, and collect the remaining 20% of your grant. But the real work of extracting long-term value from your Yalova student exchange starts here.</p>
+
+      <h3>Credit recognition — follow up immediately</h3>
+      <p>Credit recognition failures happen almost entirely because students assume the process is automatic. It is not. Within two weeks of returning, confirm in writing with your faculty that all agreed courses have been recorded. If there are discrepancies, address them immediately — they are much harder to resolve after six months.</p>
+
+      <h3>Update your professional profile</h3>
+      <p>Your LinkedIn profile and CV should reflect not just that you did Erasmus, but what you produced there: coursework completed in a foreign language, projects you contributed to, competencies you built. Vague statements like "studied abroad in Germany" are worth almost nothing; specific ones like "developed a market entry analysis for a circular economy startup, presented in English to a panel of three faculty members from four countries" are worth a great deal.</p>
+
+      <h3>Bring it back to Yalova</h3>
+      <p>This is where YouthTICK fits into your return plan. Yalova's youth opportunities ecosystem — the Gençlik Meclisi, T3 Vakfı, the YTSO young entrepreneur network, local NGOs — is actively looking for young people who have international experience and want to contribute locally. Your Erasmus experience is an asset here. Offer a workshop, join a project, mentor next year's Erasmus candidates. The Yalova youth opportunities landscape rewards people who show up with something to give, not just something to take.</p>
+      <p>If entrepreneurship is your direction, the path from Erasmus to Yalova's startup ecosystem runs through TEKMER, Yalova Teknopark, and the networks we cover in <a href="article.html?id=55&slug=youthtick-yalova-genc-girisimcilik-ekosistemi-rehberi">our entrepreneurship guide</a>. Your network from abroad, your language skills, and your cross-cultural experience are legitimate differentiators in that environment.</p>
+
+      <h2>A Note on Yalova Youth Opportunities Beyond Erasmus</h2>
+      <p>Erasmus+ gets most of the attention, but it is one programme within a broader landscape of Yalova youth opportunities. The European Solidarity Corps (ESC) offers longer-term volunteering placements across Europe. KA2 strategic partnership projects allow Yalova-based NGOs to co-develop programmes with European counterparts, sometimes without any individual mobility at all. And the Gençlik Meclisi and Kent Konseyi youth tracks offer civic participation pathways that build a different but equally valuable set of competencies.</p>
+      <p>YouthTICK's role is to map these options and help Yalova students navigate among them based on their actual goals — not just push everyone toward the most famous programme. If Erasmus is not the right fit for you right now, there are other paths worth knowing. <a href="article.html?id=50&slug=youthtick-yalova-erasmus-genclik-uluslararasi-firsatlari-rehberi-2026">Our Yalova youth opportunities hub</a> covers the full landscape.</p>
+
+      <h2>Summary</h2>
+      <p>The gap between a difficult Erasmus experience and a genuinely transformative one usually comes down to preparation quality, not luck. For Yalova students, that means building a realistic budget before you apply, choosing your destination for strategic reasons rather than default assumptions, doing the pre-departure logistics without shortcuts, and entering the return phase with a plan. None of this requires exceptional resources or connections. It requires the same deliberate approach to planning that strong students bring to everything else they do.</p>
+      <p>If you have questions about your specific situation — faculty, destination, timing, or funding — YouthTICK offers free pre-application guidance sessions for Yalova-based students. Reach out through the contact page or attend one of our monthly open sessions.</p>
+    `,
+    content_tr: `
+      <p>Her resmi Erasmus broşüründe benzer bir sahne vardır: Avrupa şehirlerinin önünde gülümseyen öğrenciler, hayat değiştiren bir dönem, akıcı bir yeni dil. Bu sahnenin bir kısmı gerçek. Atlanan kısımlar ise tam da değişimin kalitesini belirleyen kısımlardır — Ekim'de verdiğiniz bütçe kararı Ocak'ınızı nasıl etkiler, ülke seçimi kimleri tanıyacağınızı nasıl şekillendirir, dönüş planı Erasmus deneyiminizin gerçek değerini nasıl belirler.</p>
+      <p>Bu rehber Yalova merkezli öğrenciler ve gençler için yazıldı. Standart Yalova Erasmus başvuru kontrol listesinin ötesine geçiyor — o listeyi <a href="article.html?id=51&slug=youthtick-yalova-erasmus-basvuru-rehberi-2026">başvuru rehberimizde</a> bulabilirsiniz. Buradaki odak; çoğu kılavuzun atladığı kararlardır: gerçeklikle örtüşen finansal planlama, stratejik ülke seçimi ve eve döndüğünüzde deneyimi nasıl işe dönüştüreceğiniz.</p>
+
+      <h2>Gerçek Rakamlar: Yalova Erasmus Öğrencisi İçin Bütçe Planlaması</h2>
+      <p>Her öğrencinin sorduğu ama hiçbir resmi kaynağın dürüstçe yanıtlamadığı soru: Erasmus hibesi masraflarımı gerçekten karşılar mı? Kısa cevap: tek başına, büyük ihtimalle hayır. 2025-26 dönemi için gerçekçi bir döküm şu şekilde:</p>
+
+      <h3>Erasmus hibesi nasıl işliyor?</h3>
+      <p>Erasmus+, gidilen ülkeleri yaşam pahalılığına göre üç gruba ayırıyor. Alacağınız aylık hibe, hedef ülkenin hangi gruba girdiğine ve Türkiye Ulusal Ajansı'nın (TCA) belirlediği oranlara göre şekilleniyor. 2025-26 akademik yılı için yaklaşık aylık oranlar şöyle:</p>
+      <ul>
+        <li><strong>Grup 1</strong> (Danimarka, Finlandiya, İzlanda, İrlanda, Lüksemburg, İsveç, Lihtenştayn, Norveç): Aylık ~820 Euro</li>
+        <li><strong>Grup 2</strong> (Avusturya, Belçika, Kıbrıs, Fransa, Almanya, İtalya, Malta, Hollanda, Portekiz, İspanya): Aylık ~670-750 Euro</li>
+        <li><strong>Grup 3</strong> (Bulgaristan, Hırvatistan, Çek Cumhuriyeti, Estonya, Macaristan, Letonya, Litvanya, Polonya, Romanya, Sırbistan, Slovakya, Slovenya): Aylık ~520-600 Euro</li>
+      </ul>
+      <p>Yalova Üniversitesi öğrencileri için hibe, Uluslararası İlişkiler Ofisi aracılığıyla iki taksitte ödeniyor: %80 gidişte, %20 dönüşte raporlar teslim edildikten sonra.</p>
+
+      <h3>Hibenin karşılamadığı masraflar</h3>
+      <p>İlk kez Erasmus'a giden öğrencileri en çok şaşırtan masraflar şunlar. Yalova'dan gidecekler için özellikle önemli:</p>
+      <ul>
+        <li><strong>Konut depozitesi</strong>: Batı Avrupa'da çoğu özel kiralık konut bir ila üç aylık depozit istiyor. Grup 2 bir ülkede bu, hibe ilk taksidiniz gelmeden önce 700-1.500 Euro peşin harcamak anlamına gelebilir.</li>
+        <li><strong>Uçak bileti</strong>: İstanbul'dan (IST veya SAW) bir Batı Avrupa başkentine gidiş-dönüş uçuş, sezana ve ne kadar erken aldığınıza göre 150-400 Euro arasında. Yalova'dan İstanbul'a bağlantı masrafını da ekleyin.</li>
+        <li><strong>Bürokratik masraflar</strong>: İkamet kaydı, banka hesabı açma ücretleri, sağlık sigortası tamamlama masrafları ilk ayda 100-250 Euro arasında tutabiliyor.</li>
+        <li><strong>Kurulum ve haberleşme</strong>: SIM kart, adaptörler, temel ev eşyaları — daire tam döşenmiş değilse 80-150 Euro daha.</li>
+      </ul>
+      <p>Yalova öğrencileri için pratik kural: gideceğiniz ülkeden bağımsız olarak 1.500-2.500 Euro kişisel birikim yapmanız gerektiğini varsayın. Bu kötümserlik değil — banka hesabınız yerine deneyiminize odaklanmanızı sağlayan tampondur.</p>
+
+      <h3>Hedef şehir tipine göre aylık yaşam maliyeti</h3>
+      <table>
+        <thead><tr><th>Şehir Tipi</th><th>Kira (paylaşımlı)</th><th>Yemek</th><th>Ulaşım</th><th>Tahmini toplam/ay</th></tr></thead>
+        <tbody>
+          <tr><td>Büyük başkent (Berlin, Madrid, Amsterdam)</td><td>550-800 €</td><td>200-280 €</td><td>80-100 €</td><td>830-1.180 €</td></tr>
+          <tr><td>Orta büyüklükte şehir (Kraków, Porto, Brno)</td><td>300-450 €</td><td>160-220 €</td><td>30-60 €</td><td>490-730 €</td></tr>
+          <tr><td>Küçük üniversite şehri</td><td>250-380 €</td><td>140-200 €</td><td>20-40 €</td><td>410-620 €</td></tr>
+        </tbody>
+      </table>
+      <p>Bu tablo ülke seçiminin neden finansal olarak da önemli olduğunu gösteriyor. Varşova'ya Grup 3 hibesiyle (aylık 550 Euro) giden öğrenci, Amsterdam'a 750 Euro hibe alarak ama 900+ Euro kira ödeyerek giden öğrenciden çok daha rahat yaşayabilir.</p>
+
+      <h2>Ülke Seçimi: Yalova Öğrencileri İçin Stratejik Bir Çerçeve</h2>
+      <p>Çoğu öğrenci Erasmus ülkesini ünlülük, dil aşinalığı veya arkadaşların gitmek istediği yere göre seçiyor. Bunlar kötü sebepler değil — ama eksik sebepler. Yalova'daki gençler için iyi işleyen daha bilinçli bir çerçeve şu soruları içeriyor:</p>
+      <ol>
+        <li><strong>Yaşam pahalılığı hibe grubunuzla uyuşuyor mu?</strong> Yukarıdaki tabloyu kullanın. Kira tek başına hibenizi aşıyorsa güçlü kişisel birikime ihtiyacınız var.</li>
+        <li><strong>Günlük hayatta hangi dili kullanacaksınız?</strong> Çoğu Erasmus programı İngilizce öğretiyor; ancak konut, sağlık ve bürokrasi yerel dilde yürüyor.</li>
+        <li><strong>Akademik kalite ve kredi tanıma nasıl?</strong> Yurt dışında alınan kredilerin Yalova Üniversitesi tarafından tanınması gerekiyor. Bunu gitmeden önce yazılı olarak netleştirin.</li>
+        <li><strong>Bu hedef uzun vadeli hedefinize hizmet ediyor mu?</strong> Almanya'da yüksek lisans yapmayı düşünüyorsanız bir Erasmus yılı orada dil, ağ ve kurumsal alışkanlık kazandırır. Yalova girişimcilik ekosistemine katkı sunmayı planlıyorsanız, teknik açıdan güçlü bir Polonya veya Çek üniversitesi daha işlevsel olabilir.</li>
+        <li><strong>O şehirdeki Türk/Yalovalı öğrenci topluluğu nasıl?</strong> Aktif bir Türk öğrenci topluluğu konut bulma ve uyum sürecini kolaylaştırır — ama aynı zamanda entegrasyon baskısını düşürür; bu iki yönlü bir kılıç.</li>
+      </ol>
+
+      <h2>Gidişten Önce: Yalova Öğrencilerinin Gerçekten İhtiyaç Duyduğu Kontrol Listesi</h2>
+      <p>Resmi hazırlık listesi — Öğrenim Anlaşması, sigorta kartı, hibe sözleşmesi — zorunluları kapsıyor. Bu bölüm söylenmeyen kısmı kapsıyor: ilk ayın kaotik değil, işlevsel geçmesini sağlayan adımlar.</p>
+      <ul>
+        <li><strong>12 hafta önce</strong>: Öğrenim Anlaşmasını üç tarafça imzalayın. Konaklamayı kabul mektubu gelir gelmez ayarlayın. Uçuşu erken alın.</li>
+        <li><strong>4 hafta önce</strong>: Avrupa'da çalışan dijital bir banka hesabı açın (Revolut veya Wise). Ev sahibi iletişim kanalını öğrenin. Erasmus Öğrenci Ağı (ESN) üyesiyle iletişime geçin. YouthTICK'e haber verin — yurt dışındaki Yalovalıları takip ediyoruz.</li>
+        <li><strong>1 hafta önce</strong>: Tüm önemli belgeleri fotoğraflayın ve bulut depolamaya yükleyin. Konut teslim lojistiğini doğrulayın. TCA hibe sözleşmesinin bir kopyasını yanınıza alın.</li>
+      </ul>
+
+      <h2>Değişim Sırasında: Sınıfın Ötesine Geçmek</h2>
+      <p>Yalova merkezli Erasmus öğrencileri arasında deneyimden en çok katma değer üreten kişilerin ortak bir alışkanlığı var: kasıtlılık. Sadece sömestrin geçmesine izin vermiyorlar.</p>
+      <ul>
+        <li><strong>Ağ kurun, sadece arkadaş edinmeyin.</strong> Erasmus arkadaşlarınız Avrupa'ya dağılacak. LinkedIn üzerinden ve ortak projeler aracılığıyla bağlı kalabildiğiniz kişiler, başka türlü inşa edemeyeceğiniz bir Avrupa ağı olur.</li>
+        <li><strong>Youthpass'ı birinci haftadan doldurmaya başlayın.</strong> Sona bırakmayın. <a href="article.html?id=10&slug=youthpass-erasmus-learning-visible">Youthpass rehberimiz</a> öğrenme çıktılarını iş başvurusuna dönüştürme dilini anlatıyor.</li>
+        <li><strong>Yalova ile bağlantıyı koruyun.</strong> YouthTICK güncellemelerini takip edin, üniversite gruplarında aktif kalın. Döndüğünüzde sıfırdan başlamamak için yurt dışındayken de yerel ekosistemi izlemeye devam edin.</li>
+      </ul>
+
+      <h2>Dönüş: Yalova'ya İndiğinizde Ne Yapmalısınız</h2>
+      <p>Resmi zorunluluklar nettir: nihai raporunuzu TCA'ya gönderin, kredilerin aktarıldığını doğrulayın, hibenizin kalan %20'sini alın. Ama Yalova öğrenci değişiminden uzun vadeli değer üretmenin asıl çalışması burada başlıyor.</p>
+      <p><strong>Kredi tanıma:</strong> İki hafta içinde fakültenizle yazışın, anlaşmalı derslerin kaydedildiğini doğrulayın. Bu sorunu altı ay sonra çözmek çok daha zordur.</p>
+      <p><strong>Profesyonel profilinizi güncelleyin:</strong> LinkedIn ve CV'nizdeki Erasmus girişi somut olsun. "Almanya'da okudum" değil; "dört farklı ülkeden öğretim üyeleri önünde İngilizce pazar analizi sundum" türünde ifadeler çok daha değerli.</p>
+      <p><strong>Yalova'ya geri getirin:</strong> Gençlik Meclisi, T3 Vakfı, YTSO genç girişimci ağı ve yerel STK'lar, uluslararası deneyimli ve yerel katkıya istekli gençleri arıyor. Bir atölye önerin, projeye katılın, gelecek yılın Erasmus adaylarına mentorluk yapın. Girişimcilik hedefliyorsanız, <a href="article.html?id=55&slug=youthtick-yalova-genc-girisimcilik-ekosistemi-rehberi">girişimcilik rehberimiz</a> TEKMER, Teknopark ve YTSO ağını anlatıyor.</p>
+
+      <h2>Sonuç</h2>
+      <p>Zorlu bir Erasmus deneyimi ile gerçekten dönüştürücü bir deneyim arasındaki fark çoğunlukla hazırlık kalitesinden kaynaklanıyor, şanstan değil. Yalova öğrencileri için bu; başvurmadan önce gerçekçi bir bütçe kurmak, varsayıma değil stratejiye dayalı ülke seçimi yapmak, hazırlık lojistiğinde kısa yol kullanmamak ve eve dönüş aşamasına planlı girmek demek.</p>
+      <p>Belirli durumunuz hakkında sorularınız varsa — fakülte, hedef ülke, zamanlama veya finansman — YouthTICK, Yalovalı öğrenciler için ücretsiz ön danışmanlık görüşmeleri sunuyor. İletişim sayfamızdan ulaşın veya aylık açık oturumlarımıza katılın.</p>
+    `
   }
 };
 

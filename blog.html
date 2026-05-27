@@ -293,7 +293,7 @@ function renderBlogCards() {
 
     // Fallbacks for translation
     const title = art['title_' + lang] || art.title;
-    let contentStr = art['content_' + lang] || art.content;
+    let contentStr = art['content_' + lang] || art.content || art.content_tr || '';
     const customExcerpt = art['excerpt_' + lang] || art.excerpt || '';
 
     // Extract a brief excerpt from content
