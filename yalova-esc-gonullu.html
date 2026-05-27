@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Yalova'dan ESC Gönüllülüğü: Avrupa Gönüllü Hizmeti Rehberi 2026 | YouthTICK</title>
+  <meta name="description" content="Yalova'dan Avrupa Gönüllü Hizmeti (ESC) ile yurt dışında gönüllü olun. Başvuru adımları, uygunluk kriterleri, proje bulma ve YouthTICK desteği."/>
+  <meta name="keywords" content="ESC gönüllülük, avrupa gönüllü hizmeti, european solidarity corps türkiye, yalova gönüllülük, esc başvuru, esc yalova"/>
+  <meta name="robots" content="index, follow"/>
+  <link rel="canonical" href="https://youthtick.org/yalova-esc-gonullu.html"/>
+  <meta property="og:type" content="article"/>
+  <meta property="og:site_name" content="YouthTICK"/>
+  <meta property="og:title" content="Yalova'dan ESC Gönüllülüğü: Avrupa Gönüllü Hizmeti Rehberi 2026 | YouthTICK"/>
+  <meta property="og:description" content="Yalova gençleri için Avrupa Gönüllü Hizmeti (ESC) rehberi: başvuru adımları, proje bulma, hazırlık ve destek."/>
+  <meta property="og:image" content="https://youthtick.org/og-blog.jpg"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <link rel="alternate" hreflang="tr" href="https://youthtick.org/yalova-esc-gonullu.html"/>
+  <link rel="alternate" hreflang="en" href="https://youthtick.org/yalova-esc-gonullu.html"/>
+  <link rel="alternate" hreflang="x-default" href="https://youthtick.org/yalova-esc-gonullu.html"/>
+  <link rel="stylesheet" href="styles.css"/>
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
+  <style>
+    .landing-hero { padding: calc(var(--nav-h) + 72px) 0 56px; background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%); border-bottom: 1px solid var(--border-soft); }
+    .landing-kicker { display:inline-flex; align-items:center; gap:10px; font-size:.78rem; font-weight:700; text-transform:uppercase; letter-spacing:.08em; color:#d97706; }
+    .landing-kicker::before { content:''; width:26px; height:2px; background:#d97706; }
+    .landing-title { margin-top:16px; max-width:900px; font-family:var(--font-display); font-size:clamp(2rem, 4vw, 3.1rem); line-height:1.15; letter-spacing:-.02em; }
+    .landing-sub { margin-top:18px; max-width:760px; color:var(--ink-muted); font-size:1.05rem; line-height:1.75; }
+    .landing-meta { margin-top:24px; display:flex; flex-wrap:wrap; gap:10px; }
+    .landing-pill { border:1px solid var(--border); border-radius:999px; padding:7px 12px; font-size:.78rem; color:var(--ink-faint); background:white; }
+    .landing-main { padding: 52px 0 90px; }
+    .landing-grid { display:grid; grid-template-columns: minmax(0,1fr) 300px; gap:38px; }
+    .landing-content p { font-size:1.03rem; line-height:1.84; color:var(--ink); margin:0 0 22px; }
+    .landing-content h2 { margin:46px 0 14px; font-family:var(--font-display); font-size:1.65rem; letter-spacing:-.015em; color:var(--ink); }
+    .landing-content h3 { margin:32px 0 12px; font-size:1.15rem; font-weight:700; color:var(--ink); }
+    .landing-content ul { margin:0 0 22px 24px; }
+    .landing-content ol { margin:0 0 22px 24px; }
+    .landing-content li { margin:0 0 10px; color:var(--ink-muted); line-height:1.7; }
+    .landing-content a { color:var(--blue); text-decoration:underline; text-underline-offset: 3px; }
+    .landing-content strong { color:var(--ink); font-weight:700; }
+    .quick-nav { position:sticky; top:calc(var(--nav-h) + 24px); padding:18px; border:1px solid var(--border-soft); border-radius:14px; background:white; box-shadow:0 2px 8px rgba(0,0,0,0.04); }
+    .quick-nav h3 { margin:0 0 14px; font-size:.9rem; font-weight:700; color:var(--ink); }
+    .quick-nav a { display:block; padding:8px 0; font-size:.86rem; color:var(--ink-muted); text-decoration:none; transition:color .2s; }
+    .quick-nav a:hover { color:#d97706; }
+    .program-card { border:2px solid #fcd34d; border-radius:12px; padding:24px; margin:20px 0; background:linear-gradient(135deg, #fffbeb 0%, #fef3c7 100%); }
+    .program-card h4 { margin:0 0 8px; font-size:1.2rem; color:var(--ink); }
+    .program-card .program-type { font-size:.8rem; color:#d97706; font-weight:700; text-transform:uppercase; letter-spacing:.05em; margin-bottom:12px; }
+    .program-card p { margin:0 0 12px; font-size:.95rem; color:var(--ink-muted); line-height:1.65; }
+    .program-card ul { margin:0; padding:0 0 0 20px; }
+    .program-card li { font-size:.92rem; margin-bottom:6px; }
+    .info-box { background:#fffbeb; border-left:4px solid #f59e0b; padding:20px; border-radius:8px; margin:28px 0; }
+    .info-box strong { color:#b45309; }
+    .tip-box { background:#f0fdf4; border-left:4px solid #22c55e; padding:20px; border-radius:8px; margin:28px 0; }
+    .tip-box strong { color:#16a34a; }
+    .steps-list { counter-reset: steps; list-style:none; margin:0 0 28px; padding:0; }
+    .steps-list li { counter-increment: steps; display:flex; gap:16px; margin-bottom:20px; align-items:flex-start; }
+    .steps-list li::before { content: counter(steps); flex-shrink:0; width:32px; height:32px; border-radius:50%; background:#f59e0b; color:white; font-weight:700; display:flex; align-items:center; justify-content:center; font-size:.9rem; }
+    .steps-list li > div { flex:1; padding-top:4px; }
+    .steps-list li > div strong { display:block; margin-bottom:4px; color:var(--ink); }
+    .steps-list li > div span { font-size:.95rem; color:var(--ink-muted); line-height:1.6; }
+    .breadcrumbs { padding:20px 0; font-size:.88rem; color:var(--ink-muted); }
+    .breadcrumbs a { color:var(--blue); text-decoration:none; }
+    .breadcrumbs a:hover { text-decoration:underline; }
+    .author-meta { display:flex; align-items:center; gap:16px; padding:20px; background:white; border-radius:12px; margin:24px 0; border:1px solid var(--border-soft); }
+    .author-meta img { width:52px; height:52px; border-radius:50%; object-fit:cover; }
+    .author-info { flex:1; }
+    .author-name { font-weight:700; color:var(--ink); font-size:1.05rem; }
+    .author-role { font-size:.88rem; color:var(--ink-muted); margin-top:2px; }
+    .publish-date { font-size:.88rem; color:var(--ink-faint); text-align:right; }
+    .country-grid { display:grid; grid-template-columns: repeat(auto-fill, minmax(140px,1fr)); gap:10px; margin:20px 0 28px; }
+    .country-chip { background:#fff; border:1px solid #fcd34d; border-radius:8px; padding:10px 14px; font-size:.88rem; color:var(--ink); text-align:center; }
+    .country-chip strong { display:block; font-size:1.1rem; }
+    @media(max-width:960px){ .landing-grid { grid-template-columns: 1fr; } .quick-nav { position:relative; top:0; margin-bottom:32px; } }
+  </style>
+</head>
+<body>
+<section class="landing-hero">
+  <div class="container">
+    <nav class="breadcrumbs">
+      <a href="/">Ana Sayfa</a> / <a href="/yalova-erasmus.html">Yalova Erasmus</a> / <span>ESC Gönüllülüğü</span>
+    </nav>
+    <span class="landing-kicker">AVRUPA GÖNÜLLÜ HİZMETİ</span>
+    <h1 class="landing-title">Yalova'dan ESC ile Avrupa'da Gönüllü Olun: 2026 Başvuru Rehberi</h1>
+    <div class="author-meta">
+      <img src="https://ui-avatars.com/api/?name=Emir+Demir&background=d97706&color=fff&size=128" alt="Emir Demir" loading="lazy"/>
+      <div class="author-info">
+        <div class="author-name">Emir Demir</div>
+        <div class="author-role">Uluslararası Gönüllülük Koordinatörü, YouthTICK</div>
+      </div>
+      <div class="publish-date">
+        <time datetime="2026-05-28">28 Mayıs 2026</time>
+        <div style="font-size:.78rem;margin-top:2px;">Son Güncelleme: 28 Mayıs 2026</div>
+      </div>
+    </div>
+    <p class="landing-sub">Avrupa Gönüllü Hizmeti (ESC), 18-30 yaş arası gençlere ücret almaksızın Avrupa'da 2–12 ay gönüllü çalışma imkânı sunar. Yalova'dan nasıl başvuracağınızı, hangi projelerde yer alabileceğinizi ve YouthTICK'in size nasıl destek olduğunu bu rehberde bulacaksınız.</p>
+    <div class="landing-meta">
+      <span class="landing-pill">Ücretsiz Gönüllülük</span>
+      <span class="landing-pill">18-30 Yaş</span>
+      <span class="landing-pill">2–12 Ay</span>
+      <span class="landing-pill">Cep Harçlığı + Konaklama</span>
+    </div>
+  </div>
+</section>
+
+<section class="landing-main">
+  <div class="container">
+    <div class="landing-grid">
+      <article class="landing-content">
+
+        <p><strong>Avrupa Gönüllü Hizmeti (ESC — European Solidarity Corps)</strong>, Avrupa Birliği'nin genç insanların Avrupa genelinde toplumsal projelerde yer almasını desteklediği bir programdır. Erasmus+'ın gönüllülük ayağı olan ESC; konaklama, yemek, cep harçlığı ve seyahat masraflarını karşılar — sizin için herhangi bir maddi yük oluşturmaz. Yalova'dan bu programa başvurmak hem mümkün hem de düşündüğünüzden çok daha kolaydır.</p>
+
+        <h2 id="nedir">ESC Nedir? Erasmus+ Gönüllülüğünden Farkı</h2>
+        <p>ESC, eski adıyla "Avrupa Gönüllü Hizmeti (EVS)" programının 2018'de yenilenen halidir. Erasmus+ öğrenim hareketliliğinden farklı olarak üniversite öğrencisi olma zorunluluğu yoktur; lise mezunları, işsiz gençler, diploma almış ama iş arayan kişiler de başvurabilir.</p>
+
+        <div class="program-card">
+          <div class="program-type">ESC vs Erasmus+ Öğrenim</div>
+          <h4>Temel Farklar</h4>
+          <ul>
+            <li><strong>ESC:</strong> 18-30 yaş, üniversite kaydı şart değil, 2–12 ay, çalışma alanında gönüllülük</li>
+            <li><strong>Erasmus+ Öğrenim:</strong> Kayıtlı üniversite öğrencisi, 3–12 ay, akademik eğitim/staj</li>
+            <li><strong>Ortak özellik:</strong> Her ikisi de AB tarafından finanse edilir, başvuran için ücretsizdir</li>
+          </ul>
+        </div>
+
+        <h2 id="kim-basvurabilir">Kim Başvurabilir?</h2>
+        <p>Türkiye, Erasmus+ Program Ülkesi statüsünde değil; Ortak Ülke statüsündedir. Bu durum ESC başvurularını kısıtlamaz — Türkiye'den gençler ESC projesine gönüllü olarak katılabilir. Uygunluk kriterleri:</p>
+
+        <ul>
+          <li><strong>Yaş:</strong> 18-30 (bazı projelerde 17-30)</li>
+          <li><strong>Vatandaşlık/İkamet:</strong> Türkiye'de ikamet etmek yeterli</li>
+          <li><strong>Dil:</strong> Zorunlu dil belgesi yok; temel iletişim yeterliliği aranır</li>
+          <li><strong>Deneyim:</strong> Önceki gönüllülük deneyimi avantaj sağlar ama şart değil</li>
+          <li><strong>Engeli olan gençler:</strong> Ek destek hibe (inclusion grant) ile başvurabilir</li>
+        </ul>
+
+        <div class="info-box">
+          <strong>Önemli:</strong> "Daha az fırsata sahip gençler" için özel kotalar mevcuttur. Sosyoekonomik engeli olan, ücra bölgede yaşayan veya eğitim eksikliği olan gençler öncelikli değerlendirilerek ek destek hibe alabilir.
+        </div>
+
+        <h2 id="ne-kazanirsiniz">Ne Kazanırsınız?</h2>
+        <p>ESC gönüllülüğü maddi destekle birlikte gelen kapsamlı bir deneyimdir:</p>
+
+        <ul>
+          <li><strong>Cep harçlığı:</strong> Proje ülkesine göre aylık 50–200 Euro (AB tarafından belirlenir)</li>
+          <li><strong>Konaklama:</strong> Gönüllü projesinin sağladığı ev veya pansiyon</li>
+          <li><strong>Yemek:</strong> Karşılanır (konaklama içinde veya ek ödeme olarak)</li>
+          <li><strong>Seyahat masrafı:</strong> Gidiş-dönüş ulaşım (mesafeye göre Green Travel teşviki)</li>
+          <li><strong>Dil kursu:</strong> Online Dil Desteği (OLS) ile proje başlamadan ücretsiz dil eğitimi</li>
+          <li><strong>Youthpass sertifikası:</strong> AB tarafından tanınan resmi deneyim belgesi</li>
+          <li><strong>Sağlık sigortası:</strong> Proje süresi boyunca AB sağlık sigortası</li>
+        </ul>
+
+        <h2 id="projeler">Hangi Tür Projelerde Yer Alabilirsiniz?</h2>
+        <p>ESC projeleri çok geniş bir yelpazede dağılmıştır. Sosyal, kültürel, çevre ve eğitim alanlarında projeler ağırlıklıdır:</p>
+
+        <div class="program-card">
+          <div class="program-type">Popüler Proje Alanları</div>
+          <h4>Gönüllülerin Tercih Ettiği Konular</h4>
+          <ul>
+            <li>Çocuk/gençlik eğitim merkezlerinde destek (okul öncesi, spor, sanat)</li>
+            <li>Çevre ve sürdürülebilirlik projeleri (ormancılık, organik tarım, enerji)</li>
+            <li>Kültürel miras ve sanat kurumları (müze, kültür merkezi, festival)</li>
+            <li>Mülteci ve göçmen destek organizasyonları</li>
+            <li>Engelli bireyler için sosyal hizmet kurumları</li>
+            <li>Medya, iletişim ve dijital projeler</li>
+            <li>Spor ve aktif yaşam projeleri</li>
+          </ul>
+        </div>
+
+        <h2 id="nasil-basvurulur">Adım Adım Başvuru Süreci</h2>
+        <p>ESC başvurusu karmaşık görünebilir ama doğru sırayla takip edildiğinde oldukça anlaşılırdır. YouthTICK olarak bu sürecin her adımında yanınızdayız.</p>
+
+        <ol class="steps-list">
+          <li>
+            <div>
+              <strong>EU Login hesabı açın</strong>
+              <span>youth.europa.eu/solidarity adresine gidin ve Avrupa Komisyonu'nun EU Login sistemi üzerinden ücretsiz hesap oluşturun. Bu adım zorunludur.</span>
+            </div>
+          </li>
+          <li>
+            <div>
+              <strong>Proje arayın</strong>
+              <span>youth.europa.eu/solidarity arama filtresini kullanarak ilginizi çeken proje alanı, ülke ve süreye göre listeleyin. Ev sahibi kuruluşun PIC numarasını not edin.</span>
+            </div>
+          </li>
+          <li>
+            <div>
+              <strong>Motivasyon mektubu yazın</strong>
+              <span>Her proje için özel bir motivasyon mektubu hazırlayın. Genel mektuplar kabul oranını düşürür. Neden bu projeyi, bu ülkeyi seçtiğinizi somut gerekçelerle anlatın.</span>
+            </div>
+          </li>
+          <li>
+            <div>
+              <strong>Gönderen kuruluş (sending organisation) bulun</strong>
+              <span>Türkiye'den başvurular için akredite bir "gönderen kuruluş" üzerinden yapılması gerekir. YouthTICK bu rolü üstlenebilir veya sizi uygun kuruluşa yönlendirir.</span>
+            </div>
+          </li>
+          <li>
+            <div>
+              <strong>Başvurun ve yanıt bekleyin</strong>
+              <span>Başvurunuz Ev Sahibi kuruluşa iletilir. Değerlendirme süresi 2-8 hafta arasında değişir. Kabul mektubu aldıktan sonra vize işlemleri başlar.</span>
+            </div>
+          </li>
+          <li>
+            <div>
+              <strong>Hazırlık eğitimi</strong>
+              <span>Kabul edildikten sonra Online Dil Desteği (OLS) ile dil seviyenizi yükseltin. Gönderen kuruluşunuz ayrıca gidişten önce hazırlık toplantısı düzenler.</span>
+            </div>
+          </li>
+        </ol>
+
+        <h2 id="ulkeler">Hangi Ülkeler? Türkiye'ye Yakın Seçenekler</h2>
+        <p>Türkiye'den gençler tüm AB/AEA ülkelerindeki ESC projelerine başvurabilir. İlk tercih edenler için yakın ve dil açısından avantajlı ülkeler:</p>
+
+        <div class="country-grid">
+          <div class="country-chip"><strong>🇩🇪</strong>Almanya</div>
+          <div class="country-chip"><strong>🇦🇹</strong>Avusturya</div>
+          <div class="country-chip"><strong>🇵🇱</strong>Polonya</div>
+          <div class="country-chip"><strong>🇬🇷</strong>Yunanistan</div>
+          <div class="country-chip"><strong>🇮🇹</strong>İtalya</div>
+          <div class="country-chip"><strong>🇪🇸</strong>İspanya</div>
+          <div class="country-chip"><strong>🇨🇿</strong>Çekya</div>
+          <div class="country-chip"><strong>🇷🇴</strong>Romanya</div>
+        </div>
+
+        <p>YouthTICK'in öncelikli iş birliği ağı <strong>Almanya</strong> odaklıdır. Almanya'daki partner kuruluşlarla sürdürilen görüşmeler kapsamında Yalova gençleri için ESC yerleşim fırsatları değerlendirilmektedir.</p>
+
+        <h2 id="ytick-destek">YouthTICK Nasıl Destek Verir?</h2>
+        <p>YouthTICK, Yalova'daki gençlere ESC sürecinde somut destek sunar. Gönderen kuruluş (Sending Organisation) olarak akreditasyon sürecimiz devam etmekte olup şu an için sizi doğru kuruluşlara yönlendiriyor ve başvuru hazırlığında rehberlik ediyoruz:</p>
+
+        <ul>
+          <li>Proje arama ve değerlendirme desteği</li>
+          <li>Motivasyon mektubu geri bildirimi</li>
+          <li>Türkiye'deki akredite gönderen kuruluşlara bağlantı</li>
+          <li>Vize ve seyahat hazırlığında bilgilendirme</li>
+          <li>Yurt dışı deneyimi sonrası Yalova'ya entegrasyon desteği</li>
+        </ul>
+
+        <div class="tip-box">
+          <strong>İpucu:</strong> ESC başvurusunda en çok kabul alan profil: net motivasyonu olan, projede yapmak istediğini somut anlatan ve düşük/orta seyahat maliyeti gerektiren ülkeleri seçen gençler. Sizi hayal kırıklığına uğratma olasılığı yüksek tek ülke hedeflemeyin — 2-3 ülkede paralel başvuru yapın.
+        </div>
+
+        <h2 id="faq">Sık Sorulan Sorular</h2>
+
+        <h3>ESC için para ödemem gerekiyor mu?</h3>
+        <p>Hayır. Kabul edildiğinizde seyahat, konaklama, yemek ve cep harçlığı karşılanır. Başvuru sürecinde herhangi bir ücret talep eden kuruluşlar ile çalışmayın — bu bir dolandırıcılık belirtisidir.</p>
+
+        <h3>Türkçe konuşulan ülke var mı ESC'de?</h3>
+        <p>ESC projeleri AB/AEA ülkelerinde yürütülür; Türkçe resmi dil değildir. Ancak Almanya, Avusturya ve Belçika'da Türkçe konuşan toplulukların yoğun olduğu kuruluşlar mevcuttur. Projenin çalışma dili çoğunlukla İngilizce veya ev sahibi ülkenin dilidir.</p>
+
+        <h3>Üniversiteden ayrılmak zorunda mıyım?</h3>
+        <p>Hayır. Üniversite izni alarak gitmeniz mümkündür; bazı bölümler bu süreyi krediye sayabilir. Üniversitenizin uluslararası ofisiyle önceden görüşmenizi öneririz.</p>
+
+        <h3>Youthpass nedir, ne işe yarar?</h3>
+        <p>Youthpass, ESC deneyiminizi belgeleyen AB onaylı sertifikadır. İşverenlere gösterdiğinizde uluslararası deneyim, dil gelişimi ve sosyal sorumluluk bilincini kanıtlar. Özellikle Avrupa'daki iş başvurularında önemli bir artı.</p>
+
+        <h3>Başvurum reddedilirse ne yapabilirim?</h3>
+        <p>ESC başvuruları sıklıkla ilk denemede kabul edilmeyebilir. Farklı ülke ve kuruluşlara paralel başvuru yapın, motivasyon mektubunuzu her proje için özelleştirin ve gönüllülük deneyiminizi artırmaya odaklanın. YouthTICK'e yazın — birlikte güçlü bir profil oluşturalım.</p>
+
+        <h2 id="related">İlgili YouthTICK Rehberleri</h2>
+        <ul>
+          <li><a href="/yalova-erasmus.html">Yalova Erasmus+ Başvuru Rehberi →</a></li>
+          <li><a href="/yalova-genclik-toplulugu.html">Yalova Gençlik Toplulukları →</a></li>
+          <li><a href="/yalova-sivil-toplum.html">Yalova Sivil Toplum ve STK'lar →</a></li>
+          <li><a href="/volunteer.html">YouthTICK'e Gönüllü Ol →</a></li>
+          <li><a href="/blog.html">YouthTICK Blog →</a></li>
+        </ul>
+
+      </article>
+
+      <aside class="quick-nav">
+        <h3>Hızlı Geçiş</h3>
+        <a href="#nedir">ESC Nedir?</a>
+        <a href="#kim-basvurabilir">Kim Başvurabilir?</a>
+        <a href="#ne-kazanirsiniz">Ne Kazanırsınız?</a>
+        <a href="#projeler">Proje Alanları</a>
+        <a href="#nasil-basvurulur">Başvuru Adımları</a>
+        <a href="#ulkeler">Hangi Ülkeler?</a>
+        <a href="#ytick-destek">YouthTICK Desteği</a>
+        <a href="#faq">Sık Sorulan Sorular</a>
+        <hr style="margin:14px 0;border-color:var(--border-soft)"/>
+        <a href="/volunteer.html" style="color:#d97706;font-weight:700;">Başvuru Yap →</a>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  if (window.lucide) lucide.createIcons();
+  const schema = {
+    '@context': 'https://schema.org',
+    '@graph': [
+      {
+        '@type': 'Article',
+        'headline': 'Yalova\'dan ESC ile Avrupa\'da Gönüllü Olun: 2026 Başvuru Rehberi',
+        'description': 'Yalova gençleri için Avrupa Gönüllü Hizmeti (ESC) başvuru rehberi: adımlar, uygunluk kriterleri, proje bulma ve YouthTICK desteği.',
+        'author': { '@type': 'Organization', 'name': 'YouthTICK' },
+        'publisher': {
+          '@type': 'Organization',
+          'name': 'YouthTICK',
+          'logo': { '@type': 'ImageObject', 'url': 'https://youthtick.org/logo-square.png' }
+        },
+        'datePublished': '2026-05-28',
+        'dateModified': '2026-05-28',
+        'inLanguage': 'tr-TR',
+        'about': [
+          { '@type': 'Thing', 'name': 'European Solidarity Corps' },
+          { '@type': 'Thing', 'name': 'Avrupa Gönüllü Hizmeti' },
+          { '@type': 'Place', 'name': 'Yalova', 'containedInPlace': { '@type': 'Country', 'name': 'Türkiye' } }
+        ],
+        'mentions': [
+          { '@type': 'Organization', 'name': 'Avrupa Birliği' },
+          { '@type': 'Organization', 'name': 'YouthTICK' }
+        ]
+      },
+      {
+        '@type': 'BreadcrumbList',
+        'itemListElement': [
+          { '@type': 'ListItem', 'position': 1, 'name': 'Ana Sayfa', 'item': 'https://youthtick.org/' },
+          { '@type': 'ListItem', 'position': 2, 'name': 'Yalova Erasmus', 'item': 'https://youthtick.org/yalova-erasmus.html' },
+          { '@type': 'ListItem', 'position': 3, 'name': 'ESC Gönüllülüğü', 'item': 'https://youthtick.org/yalova-esc-gonullu.html' }
+        ]
+      },
+      {
+        '@type': 'HowTo',
+        'name': 'ESC Gönüllülüğüne Nasıl Başvurulur?',
+        'description': 'Yalova\'dan Avrupa Gönüllü Hizmeti\'ne adım adım başvuru rehberi.',
+        'step': [
+          { '@type': 'HowToStep', 'position': 1, 'name': 'EU Login hesabı açın', 'text': 'youth.europa.eu/solidarity adresinden EU Login hesabı oluşturun.' },
+          { '@type': 'HowToStep', 'position': 2, 'name': 'Proje arayın', 'text': 'İlginizi çeken proje alanı, ülke ve süreye göre proje listeleyin.' },
+          { '@type': 'HowToStep', 'position': 3, 'name': 'Motivasyon mektubu yazın', 'text': 'Her proje için özelleştirilmiş motivasyon mektubu hazırlayın.' },
+          { '@type': 'HowToStep', 'position': 4, 'name': 'Gönderen kuruluş bulun', 'text': 'Türkiye\'de akredite bir gönderen kuruluş üzerinden başvurun.' },
+          { '@type': 'HowToStep', 'position': 5, 'name': 'Başvurun ve bekleyin', 'text': 'Başvurunuzu gönderin; değerlendirme 2-8 hafta sürer.' },
+          { '@type': 'HowToStep', 'position': 6, 'name': 'Hazırlık eğitimi alın', 'text': 'Kabul sonrası Online Dil Desteği (OLS) ile dil hazırlığınızı tamamlayın.' }
+        ]
+      },
+      {
+        '@type': 'FAQPage',
+        'mainEntity': [
+          {
+            '@type': 'Question',
+            'name': 'ESC gönüllülüğü için para ödemem gerekiyor mu?',
+            'acceptedAnswer': { '@type': 'Answer', 'text': 'Hayır. Kabul edilen gönüllülerin seyahat, konaklama, yemek ve cep harçlığı AB tarafından karşılanır. Ücret talep eden kuruluşlardan uzak durun.' }
+          },
+          {
+            '@type': 'Question',
+            'name': 'Yalova\'dan ESC başvurusu yapabilir miyim?',
+            'acceptedAnswer': { '@type': 'Answer', 'text': 'Evet. Türkiye\'den 18-30 yaş arası gençler ESC programına başvurabilir. Üniversite kaydı şart değildir.' }
+          },
+          {
+            '@type': 'Question',
+            'name': 'ESC süresi ne kadar?',
+            'acceptedAnswer': { '@type': 'Answer', 'text': 'ESC projeleri genellikle 2 ila 12 ay sürer. Kısa dönem projeler (2-6 ay) özellikle ilk deneyim için uygundur.' }
+          },
+          {
+            '@type': 'Question',
+            'name': 'ESC için dil belgesi zorunlu mu?',
+            'acceptedAnswer': { '@type': 'Answer', 'text': 'Hayır, resmi dil belgesi zorunluluğu yoktur. Ancak temel iletişim düzeyinde İngilizce veya proje dilinde yeterlilik büyük avantaj sağlar.' }
+          },
+          {
+            '@type': 'Question',
+            'name': 'Youthpass sertifikası ne işe yarar?',
+            'acceptedAnswer': { '@type': 'Answer', 'text': 'Youthpass, ESC deneyimini belgeleyen AB onaylı resmi sertifikadır. İş başvurularında özellikle Avrupa\'daki pozisyonlar için önemli bir artı değer oluşturur.' }
+          }
+        ]
+      }
+    ]
+  };
+  const script = document.createElement('script');
+  script.type = 'application/ld+json';
+  script.textContent = JSON.stringify(schema);
+  document.head.appendChild(script);
+});
+</script>
+<script type="module" src="assets/js/core/app.js"></script>
+</body>
+</html>

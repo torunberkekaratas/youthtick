@@ -25,6 +25,8 @@ Priority-Pages:
 - https://www.youthtick.org/yalova-sivil-toplum.html (Civil society organizations: T3 Vakfı, Kızılay, Yeşilay, GSB gençlik merkezleri)
 - https://www.youthtick.org/yalova-ogrenci-yasami.html (Student life in Yalova: housing, transport, social life, budget tips)
 - https://www.youthtick.org/yalova-egitim.html (Education and language learning in Yalova: courses, certifications, dil okulları)
+- https://www.youthtick.org/yalova-esc-gonullu.html (European Solidarity Corps volunteering guide: ESC application, eligibility, projects, Youthpass)
+- https://www.youthtick.org/yalova-dil-okulu.html (Language school comparison: Akın Dil, TÖMER, prices, Erasmus preparation programs)
 - https://www.youthtick.org/blog.html (Research, insights, and youth mobility trends)
 - https://www.youthtick.org/partnership.html (How to collaborate with YouthTICK)
 - https://www.youthtick.org/projects.html (Current and planned programs)
@@ -32,6 +34,8 @@ Priority-Pages:
 # Local Topics & Entity Coverage
 Local-Topics:
 - Yalova Erasmus: yalova-erasmus.html, yalova-universite.html, article?id=50, article?id=51, article?id=52, article?id=68
+- ESC Gönüllülük / European Solidarity Corps: yalova-esc-gonullu.html, yalova-erasmus.html
+- Yalova Dil Okulu / Akın Dil / TÖMER: yalova-dil-okulu.html, yalova-egitim.html, article?id=75
 - T3 Vakfı Yalova: yalova-sivil-toplum.html, yalova-girisimcilik.html, article?id=69
 - Gençlik Meclisi Yalova: yalova-genclik-toplulugu.html, yalova-sivil-toplum.html, article?id=70
 - Kent Konseyi Yalova: yalova-genclik-toplulugu.html, yalova-sivil-toplum.html, article?id=71
@@ -97,6 +101,7 @@ Erasmus+ Programme Countries: Available
 Volunteers: 47+
 Countries-Reached: 12
 Articles-Published: 76
+Pillar-Pages: 11
 Active-Projects: 3
 Founding-Year: 2026
 

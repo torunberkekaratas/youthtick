@@ -1841,4 +1841,20 @@
     <xhtml:link rel="alternate" hreflang="tr" href="https://youthtick.org/article.html?id=75&amp;slug=yalova-akin-dil-dil-okullari-rehberi"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://youthtick.org/article.html?id=75&amp;slug=yalova-akin-dil-dil-okullari-rehberi"/>
   </url>
+  <url>
+    <loc>https://youthtick.org/yalova-esc-gonullu.html</loc>
+    <lastmod>2026-05-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.82</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://youthtick.org/yalova-esc-gonullu.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://youthtick.org/yalova-esc-gonullu.html"/>
+  </url>
+  <url>
+    <loc>https://youthtick.org/yalova-dil-okulu.html</loc>
+    <lastmod>2026-05-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.82</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://youthtick.org/yalova-dil-okulu.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://youthtick.org/yalova-dil-okulu.html"/>
+  </url>
 </urlset>
