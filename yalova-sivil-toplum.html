@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Yalova Sivil Toplum ve STK Rehberi 2026 | YouthTICK</title>
+  <meta name="description" content="Yalova'da T3 Vakfı, Kızılay, Yeşilay, Kent Konseyi, GSB gençlik merkezleri ve sivil toplum kuruluşları hakkında kapsamlı rehber."/>
+  <meta name="keywords" content="T3 Yalova, yalova kızılay, yalova yeşilay, kent konseyi yalova, yalova GSB, yalova sivil toplum, gençlik meclisi yalova"/>
+  <meta name="robots" content="index, follow"/>
+  <link rel="canonical" href="https://youthtick.org/yalova-sivil-toplum"/>
+  <meta property="og:type" content="article"/>
+  <meta property="og:site_name" content="YouthTICK"/>
+  <meta property="og:title" content="Yalova Sivil Toplum ve STK Rehberi 2026 | YouthTICK"/>
+  <meta property="og:description" content="T3 Vakfı, Kızılay, Yeşilay, Kent Konseyi, GSB gençlik merkezleri — Yalova sivil toplum ekosistemi rehberi."/>
+  <meta property="og:image" content="https://youthtick.org/og-blog.jpg"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <!-- Hreflang Tags -->
+  <link rel="alternate" hreflang="en" href="https://youthtick.org/yalova-sivil-toplum.html"/>
+  <link rel="alternate" hreflang="tr" href="https://youthtick.org/tr/yalova-sivil-toplum.html"/>
+  <link rel="alternate" hreflang="de" href="https://youthtick.org/de/yalova-sivil-toplum.html"/>
+  <link rel="alternate" hreflang="x-default" href="https://youthtick.org/yalova-sivil-toplum.html"/>
+  <link rel="stylesheet" href="styles.css"/>
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
+  <style>
+    .landing-hero { padding: calc(var(--nav-h) + 72px) 0 56px; background: linear-gradient(135deg, #d1fae5 0%, #a7f3d0 100%); border-bottom: 1px solid var(--border-soft); }
+    .landing-kicker { display:inline-flex; align-items:center; gap:10px; font-size:.78rem; font-weight:700; text-transform:uppercase; letter-spacing:.08em; color:#10b981; }
+    .landing-kicker::before { content:''; width:26px; height:2px; background:#10b981; }
+    .landing-title { margin-top:16px; max-width:900px; font-family:var(--font-display); font-size:clamp(2rem, 4vw, 3.1rem); line-height:1.15; letter-spacing:-.02em; }
+    .landing-sub { margin-top:18px; max-width:760px; color:var(--ink-muted); font-size:1.05rem; line-height:1.75; }
+    .landing-meta { margin-top:24px; display:flex; flex-wrap:wrap; gap:10px; }
+    .landing-pill { border:1px solid var(--border); border-radius:999px; padding:7px 12px; font-size:.78rem; color:var(--ink-faint); background:white; }
+    .landing-main { padding: 52px 0 90px; }
+    .landing-grid { display:grid; grid-template-columns: minmax(0,1fr) 300px; gap:38px; }
+    .landing-content p { font-size:1.03rem; line-height:1.84; color:var(--ink); margin:0 0 22px; }
+    .landing-content h2 { margin:46px 0 14px; font-family:var(--font-display); font-size:1.65rem; letter-spacing:-.015em; color:var(--ink); }
+    .landing-content h3 { margin:32px 0 12px; font-size:1.15rem; font-weight:700; color:var(--ink); }
+    .landing-content ul { margin:0 0 22px 24px; }
+    .landing-content li { margin:0 0 10px; color:var(--ink-muted); line-height:1.7; }
+    .landing-content a { color:var(--blue); text-decoration:underline; text-underline-offset: 3px; }
+    .landing-content strong { color:var(--ink); font-weight:700; }
+    .quick-nav { position:sticky; top:calc(var(--nav-h) + 24px); padding:18px; border:1px solid var(--border-soft); border-radius:14px; background:white; box-shadow:0 2px 8px rgba(0,0,0,0.04); }
+    .quick-nav h3 { margin:0 0 14px; font-size:.9rem; font-weight:700; color:var(--ink); }
+    .quick-nav a { display:block; padding:8px 0; font-size:.86rem; color:var(--ink-muted); text-decoration:none; transition:color .2s; }
+    .quick-nav a:hover { color:#10b981; }
+    .program-card { border:2px solid #6ee7b7; border-radius:12px; padding:24px; margin:20px 0; background:linear-gradient(135deg, #f0fdf4 0%, #d1fae5 100%); }
+    .program-card h4 { margin:0 0 8px; font-size:1.2rem; color:var(--ink); }
+    .program-card .program-type { font-size:.8rem; color:#10b981; font-weight:700; text-transform:uppercase; letter-spacing:.05em; margin-bottom:12px; }
+    .program-card p { margin:0 0 12px; font-size:.95rem; color:var(--ink-muted); line-height:1.65; }
+    .program-card ul { margin:0; padding:0 0 0 20px; }
+    .program-card li { font-size:.92rem; margin-bottom:6px; }
+    .info-box { background:#ecfdf5; border-left:4px solid #10b981; padding:20px; border-radius:8px; margin:28px 0; }
+    .info-box strong { color:#059669; }
+    .breadcrumbs { padding:20px 0; font-size:.88rem; color:var(--ink-muted); }
+    .breadcrumbs a { color:var(--blue); text-decoration:none; }
+    .breadcrumbs a:hover { text-decoration:underline; }
+    .author-meta { display:flex; align-items:center; gap:16px; padding:20px; background:white; border-radius:12px; margin:24px 0; border:1px solid var(--border-soft); }
+    .author-meta img { width:52px; height:52px; border-radius:50%; object-fit:cover; }
+    .author-info { flex:1; }
+    .author-name { font-weight:700; color:var(--ink); font-size:1.05rem; }
+    .author-role { font-size:.88rem; color:var(--ink-muted); margin-top:2px; }
+    .publish-date { font-size:.88rem; color:var(--ink-faint); text-align:right; }
+    @media(max-width:960px){ .landing-grid { grid-template-columns: 1fr; } .quick-nav { position:relative; top:0; margin-bottom:32px; } }
+  </style>
+</head>
+<body>
+<section class="landing-hero">
+  <div class="container">
+    <nav class="breadcrumbs">
+      <a href="/">Ana Sayfa</a> / <a href="/blog.html">Blog</a> / <span>Yalova Sivil Toplum</span>
+    </nav>
+    <span class="landing-kicker">STK &amp; SİVİL KATILIM</span>
+    <h1 class="landing-title">Yalova'da Sivil Toplum: T3, Kızılay, Yeşilay ve Gençlik Ağı Rehberi</h1>
+    <div class="author-meta" style="margin:24px 0;">
+      <img src="https://ui-avatars.com/api/?name=Selin+Yilmaz&background=10b981&color=fff&size=128" alt="Selin Yılmaz" loading="lazy"/>
+      <div class="author-info">
+        <div class="author-name">Selin Yılmaz</div>
+        <div class="author-role">Sivil Toplum Uzmanı, YouthTICK</div>
+      </div>
+      <div class="publish-date">
+        <time datetime="2026-05-28">28 Mayıs 2026</time>
+        <div style="font-size:.78rem;margin-top:2px;">Son Güncelleme: 28 Mayıs 2026</div>
+      </div>
+    </div>
+    <p class="landing-sub">T3 Vakfı'ndan Kent Konseyi'ne, Kızılay'dan Yeşilay'a — Yalova'nın sivil toplum ekosistemini ve gençlerin katılım yollarını anlatan YouthTICK rehberi.</p>
+    <div class="landing-meta">
+      <span class="landing-pill">8 STK ve Kurum</span>
+      <span class="landing-pill">Gönüllülük Fırsatları</span>
+      <span class="landing-pill">Gençlik Meclisi</span>
+      <span class="landing-pill">Ücretsiz Etkinlikler</span>
+    </div>
+  </div>
+</section>
+
+<section class="landing-main">
+  <div class="container">
+    <div class="landing-grid">
+      <article class="landing-content">
+
+        <p>Yalova, nüfusuyla orantısız biçimde güçlü bir sivil toplum dokusuna sahip. T3 Vakfı'nın aktif yerel ofisinden Gençlik Meclisi'ne, Kızılay gönüllülüğünden GSB'nin ücretsiz etkinliklerine kadar uzanan bu ekosistem, şehirde aktif kalmak isteyen her gencin radarında olması gereken kaynaklarla dolu. Bu rehber, Yalova sivil toplumunun hangi bileşenlerden oluştuğunu ve gençlerin bu yapılara nasıl dahil olabileceğini açıklıyor.</p>
+
+        <h2 id="t3">T3 Vakfı Yalova: Teknoloji ve Girişimcilik Ağı</h2>
+        <p><strong>T3 Vakfı</strong> (Türkiye Teknoloji Geliştirme Vakfı), yalnızca bir girişimcilik destek kuruluşu değil; aynı zamanda Yalova'nın en aktif sivil toplum aktörlerinden biri. 2019'da açılan Yalova ofisi, düzenli etkinlikler, atölye çalışmaları ve topluluk buluşmalarıyla şehrin sivil katılım mekanına dönüşmüş durumda.</p>
+
+        <div class="program-card">
+          <div class="program-type">T3 Vakfı — Topluluk Programları</div>
+          <h4>Gençlere Açık Etkinlikler</h4>
+          <p>T3 Yalova, sivil toplum boyutunu girişimcilik programlarıyla harmanlıyor. Düzenli olarak gerçekleştirilen topluluk etkinlikleri şunları kapsıyor:</p>
+          <ul>
+            <li>Aylık Teknoloji ve Toplum buluşmaları (açık katılım)</li>
+            <li>Üniversite öğrencilerine yönelik kariyer atölyeleri</li>
+            <li>Lise gençliği için kodlama ve inovasyon günleri</li>
+            <li>Kadın girişimciler ve sivil aktörler için özel oturumlar</li>
+          </ul>
+          <p><strong>Başvuru:</strong> t3.org.tr üzerinden veya yalova@t3vakfi.org adresine e-posta ile ulaşabilirsiniz.</p>
+        </div>
+
+        <p>T3'ün güçlü yanı, ulusal ağını yerel ölçeğe taşımasıdır. Ankara ve İstanbul'daki kuruluşlarla köprü kurarak Yalova gençliğini daha geniş fırsat havuzlarına bağlamaktadır. Girişimcilik ekosistemiyle bağlantısı için <a href="/yalova-girisimcilik.html">Yalova Girişimcilik Ekosistemi rehberimizi</a> inceleyebilirsiniz.</p>
+
+        <h2 id="kizilav">Yalova Kızılay: Gönüllülük ve İnsani Yardım</h2>
+        <p><strong>Türk Kızılay Yalova Şubesi</strong>, şehrin en köklü sivil toplum kuruluşlarından biri. Afet müdahalesinden kan bağışına, sosyal yardımdan ilk yardım eğitimine kadar geniş bir yelpazede faaliyet gösteriyor. Gençler için bu yapı, hem anlam dolu gönüllülük deneyimi hem de pratik beceriler kazanma fırsatı sunuyor.</p>
+
+        <h3>Gönüllü olma alanları:</h3>
+        <ul>
+          <li><strong>Kan bağışı organizasyonu:</strong> Kampüs ve mahallelerde bağış seferberliği koordinasyonu</li>
+          <li><strong>Afet ve acil yardım:</strong> AFAD ile ortak tatbikatlar ve gerçek müdahaleler</li>
+          <li><strong>Sosyal yardım:</strong> Gıda, kıyafet ve okul malzemesi dağıtımı projeleri</li>
+          <li><strong>İlk yardım eğitimi:</strong> Topluma açık ücretsiz eğitim programları</li>
+          <li><strong>Gençlik kolları:</strong> 14-30 yaş arası gençlere özel alt yapı ve projeler</li>
+        </ul>
+
+        <div class="info-box">
+          <strong>Gönüllü başvurusu:</strong> Yalova Kızılay Şubesi'ne gönüllü başvurusu için şube iletişim kanalları üzerinden ulaşabilirsiniz. Kimlik fotokopisi ve başvuru formu yeterli; ek şart aranmıyor.
+        </div>
+
+        <h2 id="yesilay">Yalova Yeşilay: Sağlıklı Yaşam ve Bağımlılık Önleme</h2>
+        <p><strong>Yeşilay Yalova</strong>, bağımlılık önleme ve sağlıklı yaşam konularında faaliyet gösteren köklü bir sivil toplum kuruluşu. Okullarda farkındalık programları, gençlik kampları ve topluluk etkinlikleri aracılığıyla Yalova'da görünür bir varlık sürdürüyor.</p>
+        <p>Yeşilay'ın gönüllülük programı, özellikle eğitim, psikoloji veya sosyal hizmetler alanında kariyer hedefleyen gençler için değerli bir alan deneyimi sunuyor. yesilayalova.org.tr veya yerel şube üzerinden başvuru yapılabiliyor.</p>
+
+        <h3>Yeşilay gönüllülerine tanınan fırsatlar:</h3>
+        <ul>
+          <li>Bağımlılık önleme eğitimlerine katılım sertifikası</li>
+          <li>Okul ziyaretlerinde akran eğitmen rolü</li>
+          <li>Ulusal Yeşilay konferanslarına katılım imkânı</li>
+          <li>Sosyal projelerde takım liderliği deneyimi</li>
+        </ul>
+
+        <h2 id="kent-konseyi">Kent Konseyi Yalova: Demokratik Katılım</h2>
+        <p><strong>Kent Konseyi Yalova</strong>, yerel yönetişime sivil katılımın en yapısal yollarından birini sunuyor. 5393 sayılı Belediye Kanunu çerçevesinde oluşturulan bu yapı, Yalova'da farklı toplum kesimlerinin belediye süreçlerine ortak olmasını sağlıyor.</p>
+
+        <h3>Kent Konseyi'nin faaliyet komisyonları:</h3>
+        <ul>
+          <li><strong>Gençlik Meclisi:</strong> 15-30 yaş grubuna yönelik kararlar ve projeler</li>
+          <li><strong>Kadın Meclisi:</strong> Toplumsal cinsiyet eşitliği ve kadın hakları gündemleri</li>
+          <li><strong>Engelli Meclisi:</strong> Erişilebilirlik ve engelli hakları çalışmaları</li>
+          <li><strong>Çevre Meclisi:</strong> Sürdürülebilirlik, atık yönetimi ve yeşil alan projeleri</li>
+          <li><strong>Sağlık Meclisi:</strong> Toplum sağlığı farkındalık çalışmaları</li>
+        </ul>
+
+        <p>Kent Konseyi toplantıları halka açık olup, herhangi bir vatandaş gözlemci sıfatıyla katılabilir. Üyelik için ilgili meclisin başvuru dönemlerini takip etmek gerekiyor.</p>
+
+        <h2 id="genclik-meclisi">Gençlik Meclisi Yalova: Gençlerin Sesi</h2>
+        <p><strong>Yalova Gençlik Meclisi</strong>, Kent Konseyi bünyesinde faaliyet gösteriyor ve şehirdeki en yapısal gençlik katılım platformu olma özelliği taşıyor. Meclis üyeleri; şehir planlaması, kültür etkinlikleri ve gençlik politikaları konularında belediyeyle doğrudan diyalog kurabiliyor.</p>
+
+        <div class="program-card">
+          <div class="program-type">Gençlik Meclisi — Üyelik Bilgileri</div>
+          <h4>Kimler Başvurabilir?</h4>
+          <p><strong>Yaş aralığı:</strong> 15-30 yaş arası Yalova'da ikamet eden veya öğrenim gören gençler.<br/>
+          <strong>Başvuru dönemi:</strong> Her yıl Eylül-Ekim aylarında.<br/>
+          <strong>Başvuru yolu:</strong> Yalova Belediyesi web sitesi üzerinden online form.<br/>
+          <strong>Meclis döngüsü:</strong> Bir dönem iki yıl sürer; görev başında seçim yapılır.</p>
+        </div>
+
+        <p>Gençlik Meclisi deneyimi, yerel yönetim süreçlerini içeriden görme, proje geliştirme ve temsil becerileri açısından özgün bir öğrenme ortamı sunuyor. <a href="/yalova-genclik-toplulugu.html">Yalova Gençlik Toplulukları rehberimizde</a> bu yapıya ek topluluk önerileri bulabilirsiniz.</p>
+
+        <h2 id="gsb">GSB Yalova Gençlik Merkezleri: Ücretsiz Etkinlikler</h2>
+        <p><strong>Gençlik ve Spor Bakanlığı (GSB)</strong> bünyesindeki Yalova Gençlik Merkezi, şehrin en erişilebilir sivil katılım mekânlarından biri. Tamamen ücretsiz hizmet veriyor ve geniş bir etkinlik yelpazesi sunuyor.</p>
+
+        <h3>GSB Yalova Gençlik Merkezi'nde neler var?</h3>
+        <ul>
+          <li>Kültür-sanat atölyeleri (resim, müzik, tiyatro, fotoğrafçılık)</li>
+          <li>Liderlik ve girişimcilik eğitimleri</li>
+          <li>Spor tesisleri ve turnuvalar</li>
+          <li>Yaz kampları ve şehir dışı etkinlikler</li>
+          <li>Uluslararası gençlik projeleri (Avrupa Gönüllü Hizmeti ile iş birliği)</li>
+        </ul>
+
+        <div class="info-box">
+          <strong>Kayıt nasıl yapılır?</strong> 14-29 yaş arası gençler TC kimlik numarası ile en yakın GSB Gençlik Merkezi'ne başvurarak ücretsiz kayıt yaptırabilir. Herhangi bir ücret veya aidat söz konusu değil.
+        </div>
+
+        <h2 id="musiad">Yalova MÜSİAD: İş Dünyası ve Sivil Toplum Bağlantısı</h2>
+        <p><strong>Yalova MÜSİAD</strong> (Müstakil Sanayici ve İşadamları Derneği), iş dünyasını sivil toplumla buluşturan önemli bir köprü kuruluşu. Yalova şubesi, ekonomi kulüpleri öğrencilerine ve genç profesyonellere networking, konferans ve mentorluk imkânları sunuyor.</p>
+
+        <p>MÜSİAD'ın Genç MÜSİAD kolu, 18-35 yaş aralığındaki genç işadayları ve profesyonellere özel etkinlikler düzenliyor. İş dünyasını sivil sorumlulukla birleştirmek isteyen gençler için değerli bir platform.</p>
+
+        <h2 id="katilim">Nasıl Dahil Olursunuz?</h2>
+        <p>Yalova sivil toplumuna katılmak için seçenekler farklı ilgi alanlarına ve zaman kapasitelerine göre değişiyor. Başlangıç için bazı pratik öneriler:</p>
+
+        <ul>
+          <li><strong>Hemen başlamak istiyorsanız:</strong> GSB Gençlik Merkezi'ne kayıt yaptırın — ücretsiz ve herhangi bir taahhüt gerektirmiyor.</li>
+          <li><strong>Gönüllülük odaklıysanız:</strong> Kızılay veya Yeşilay şubelerine yazın; haftada 2-3 saatlik taahhütle başlayabilirsiniz.</li>
+          <li><strong>Yerel politikayla ilgileniyorsanız:</strong> Kent Konseyi toplantılarını gözlemleyerek başlayın, ardından Gençlik Meclisi'ne başvurun.</li>
+          <li><strong>Teknoloji ve inovasyona ilginiz varsa:</strong> T3 Vakfı etkinlik takvimine abone olun.</li>
+          <li><strong>Kariyer ağı oluşturmak istiyorsanız:</strong> MÜSİAD Genç etkinliklerini takip edin.</li>
+        </ul>
+
+        <div class="info-box">
+          <strong>YouthTICK'in rolü:</strong> YouthTICK olarak Yalova sivil toplum ekosistemi ile Avrupa gençlik ağları arasında köprü kuruyoruz. Erasmus+, Avrupa Gönüllü Hizmeti ve uluslararası gençlik projeleri hakkında bilgi almak için <a href="/yalova-erasmus.html">Yalova Erasmus Rehberimizi</a> inceleyebilirsiniz.
+        </div>
+
+        <h2 id="related">İlgili YouthTICK Rehberleri</h2>
+        <ul>
+          <li><a href="/yalova-girisimcilik.html">Yalova Girişimcilik Ekosistemi →</a></li>
+          <li><a href="/yalova-genclik-toplulugu.html">Yalova Gençlik Toplulukları →</a></li>
+          <li><a href="/yalova-erasmus.html">Yalova Erasmus Rehberi →</a></li>
+          <li><a href="/blog.html">YouthTICK Blog →</a></li>
+        </ul>
+
+      </article>
+
+      <aside class="quick-nav">
+        <h3>Hızlı Geçiş</h3>
+        <a href="#t3">T3 Vakfı</a>
+        <a href="#kizilav">Yalova Kızılay</a>
+        <a href="#yesilay">Yalova Yeşilay</a>
+        <a href="#kent-konseyi">Kent Konseyi</a>
+        <a href="#genclik-meclisi">Gençlik Meclisi</a>
+        <a href="#gsb">GSB Gençlik Merkezleri</a>
+        <a href="#musiad">Yalova MÜSİAD</a>
+        <a href="#katilim">Nasıl Dahil Olursunuz?</a>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  if (window.lucide) lucide.createIcons();
+  const schema = {
+    '@context': 'https://schema.org',
+    '@graph': [
+      {
+        '@type': 'Article',
+        'headline': 'Yalova\'da Sivil Toplum: T3, Kızılay, Yeşilay ve Gençlik Ağı Rehberi',
+        'description': 'Yalova\'da T3 Vakfı, Kızılay, Yeşilay, Kent Konseyi, GSB gençlik merkezleri ve sivil toplum kuruluşları hakkında kapsamlı rehber.',
+        'author': { '@type': 'Organization', 'name': 'YouthTICK' },
+        'publisher': {
+          '@type': 'Organization',
+          'name': 'YouthTICK',
+          'logo': { '@type': 'ImageObject', 'url': 'https://youthtick.org/logo-square.png' }
+        },
+        'datePublished': '2026-05-28',
+        'dateModified': '2026-05-28',
+        'inLanguage': 'tr-TR',
+        'about': [
+          { '@type': 'Thing', 'name': 'Yalova sivil toplum' },
+          { '@type': 'Organization', 'name': 'T3 Vakfı' },
+          { '@type': 'Organization', 'name': 'Türk Kızılay Yalova Şubesi' },
+          { '@type': 'Organization', 'name': 'Yeşilay Yalova' },
+          { '@type': 'Organization', 'name': 'Kent Konseyi Yalova' }
+        ],
+        'mentions': [
+          { '@type': 'Organization', 'name': 'T3 Vakfı' },
+          { '@type': 'Organization', 'name': 'Türk Kızılay' },
+          { '@type': 'Organization', 'name': 'Yeşilay' },
+          { '@type': 'Organization', 'name': 'Kent Konseyi Yalova' },
+          { '@type': 'Organization', 'name': 'GSB Gençlik Merkezi' },
+          { '@type': 'Organization', 'name': 'MÜSİAD Yalova' }
+        ]
+      },
+      {
+        '@type': 'BreadcrumbList',
+        'itemListElement': [
+          { '@type': 'ListItem', 'position': 1, 'name': 'Ana Sayfa', 'item': 'https://youthtick.org/' },
+          { '@type': 'ListItem', 'position': 2, 'name': 'Yalova Rehberleri', 'item': 'https://youthtick.org/blog.html' },
+          { '@type': 'ListItem', 'position': 3, 'name': 'Yalova Sivil Toplum', 'item': 'https://youthtick.org/yalova-sivil-toplum' }
+        ]
+      },
+      {
+        '@type': 'FAQPage',
+        'mainEntity': [
+          {
+            '@type': 'Question',
+            'name': 'T3 Yalova\'da hangi programları sunuyor?',
+            'acceptedAnswer': { '@type': 'Answer', 'text': 'T3 Vakfı Yalova\'da teknoloji atölyeleri, girişimcilik eğitimleri ve hackathon etkinlikleri düzenlemektedir. Başvurular t3.org.tr üzerinden yapılabilir.' }
+          },
+          {
+            '@type': 'Question',
+            'name': 'Yalova Kızılay\'a nasıl gönüllü olunur?',
+            'acceptedAnswer': { '@type': 'Answer', 'text': 'Yalova Kızılay Şubesi\'ne gönüllü başvurusu için şube iletişim kanalları üzerinden ulaşabilirsiniz. Kan bağışı, afet ve sosyal yardım alanlarında fırsatlar mevcuttur.' }
+          },
+          {
+            '@type': 'Question',
+            'name': 'Gençlik Meclisi Yalova\'ya nasıl üye olunur?',
+            'acceptedAnswer': { '@type': 'Answer', 'text': '15-30 yaş arası gençler Eylül-Ekim döneminde Yalova Belediyesi web sitesi üzerinden başvurabilir.' }
+          },
+          {
+            '@type': 'Question',
+            'name': 'Kent Konseyi Yalova ne iş yapar?',
+            'acceptedAnswer': { '@type': 'Answer', 'text': 'Kent konseyi yerel yönetişime sivil katılım sağlar; gençlik, kadın, engelli ve çevre komisyonları ile çalışır.' }
+          },
+          {
+            '@type': 'Question',
+            'name': 'Yalova GSB gençlik merkezine nasıl kayıt olunur?',
+            'acceptedAnswer': { '@type': 'Answer', 'text': '14-29 yaş arası gençler kimlikle başvurarak ücretsiz kayıt yaptırabilir.' }
+          },
+          {
+            '@type': 'Question',
+            'name': 'Yalova Yeşilay gönüllülüğe nasıl katılınır?',
+            'acceptedAnswer': { '@type': 'Answer', 'text': 'yesilayalova.org.tr veya yerel şube üzerinden başvurabilirsiniz.' }
+          }
+        ]
+      }
+    ]
+  };
+  const script = document.createElement('script');
+  script.type = 'application/ld+json';
+  script.textContent = JSON.stringify(schema);
+  document.head.appendChild(script);
+});
+</script>
+<script type="module" src="assets/js/core/app.js"></script>
+</body>
+</html>

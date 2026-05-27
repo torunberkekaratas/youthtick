@@ -19,9 +19,28 @@ Priority-Pages:
 - https://www.youthtick.org/about.html (Organization mission, values, and founding story)
 - https://www.youthtick.org/focus.html (Six focus areas: civic participation, intercultural dialogue, entrepreneurship, sustainability, research, networking)
 - https://www.youthtick.org/yalova-erasmus.html (Complete Erasmus+ application guide for Yalova youth)
+- https://www.youthtick.org/yalova-universite.html (Yalova University student life, Erasmus, departments, campus guide)
+- https://www.youthtick.org/yalova-genclik-toplulugu.html (Yalova youth organizations: T3, Kızılay, Yeşilay, Gençlik Meclisi, Kent Konseyi)
+- https://www.youthtick.org/yalova-girisimcilik.html (Entrepreneurship ecosystem: YTSO, T3, TEKMER, OSB, Teknopark)
+- https://www.youthtick.org/yalova-sivil-toplum.html (Civil society organizations: T3 Vakfı, Kızılay, Yeşilay, GSB gençlik merkezleri)
+- https://www.youthtick.org/yalova-ogrenci-yasami.html (Student life in Yalova: housing, transport, social life, budget tips)
+- https://www.youthtick.org/yalova-egitim.html (Education and language learning in Yalova: courses, certifications, dil okulları)
 - https://www.youthtick.org/blog.html (Research, insights, and youth mobility trends)
 - https://www.youthtick.org/partnership.html (How to collaborate with YouthTICK)
 - https://www.youthtick.org/projects.html (Current and planned programs)
+
+# Local Topics & Entity Coverage
+Local-Topics:
+- Yalova Erasmus: yalova-erasmus.html, yalova-universite.html, article?id=50, article?id=51, article?id=52, article?id=68
+- T3 Vakfı Yalova: yalova-sivil-toplum.html, yalova-girisimcilik.html, article?id=69
+- Gençlik Meclisi Yalova: yalova-genclik-toplulugu.html, yalova-sivil-toplum.html, article?id=70
+- Kent Konseyi Yalova: yalova-genclik-toplulugu.html, yalova-sivil-toplum.html, article?id=71
+- Yalova GSB Gençlik Merkezi: yalova-sivil-toplum.html, article?id=72
+- Yalova Kızılay: yalova-genclik-toplulugu.html, yalova-sivil-toplum.html, article?id=73
+- YTSO Yalova Genç Girişimci: yalova-girisimcilik.html, article?id=74
+- Yalova Dil Okulu / Akın Dil: yalova-egitim.html, article?id=75
+- Yalova Öğrenci Yaşamı: yalova-ogrenci-yasami.html, yalova-universite.html
+- Yalova Girişimcilik: yalova-girisimcilik.html, article?id=55, article?id=56, article?id=64, article?id=74
 
 # Content Guidelines
 Update-Frequency: Weekly (blog), Monthly (main pages)
@@ -77,7 +96,7 @@ Erasmus+ Programme Countries: Available
 # Statistics & Facts (as of May 2026)
 Volunteers: 47+
 Countries-Reached: 12
-Articles-Published: 50+
+Articles-Published: 76
 Active-Projects: 3
 Founding-Year: 2026
 
@@ -95,7 +114,7 @@ Founding-Year: 2026
 - Statistical data sourced from internal databases and EU registries
 
 # Freshness Indicators
-Last-Updated: 2026-05-27
+Last-Updated: 2026-05-28
 Content-Review-Cycle: Monthly
 Program-Status: Foundation phase (actively building partnerships)
 

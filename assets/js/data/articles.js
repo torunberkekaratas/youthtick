@@ -4692,6 +4692,471 @@ const ARTICLES = {
       <p>Zorlu bir Erasmus deneyimi ile gerçekten dönüştürücü bir deneyim arasındaki fark çoğunlukla hazırlık kalitesinden kaynaklanıyor, şanstan değil. Yalova öğrencileri için bu; başvurmadan önce gerçekçi bir bütçe kurmak, varsayıma değil stratejiye dayalı ülke seçimi yapmak, hazırlık lojistiğinde kısa yol kullanmamak ve eve dönüş aşamasına planlı girmek demek.</p>
       <p>Belirli durumunuz hakkında sorularınız varsa — fakülte, hedef ülke, zamanlama veya finansman — YouthTICK, Yalovalı öğrenciler için ücretsiz ön danışmanlık görüşmeleri sunuyor. İletişim sayfamızdan ulaşın veya aylık açık oturumlarımıza katılın.</p>
     `
+  },
+
+  '69': {
+    category: 'Yalova Ecosystem', catClass: 'tag-green', categoryKey: 'yalova-ekosistem',
+    slug: 't3-vakfi-yalova-rehberi',
+    title: 'T3 Foundation Yalova: Technology, Entrepreneurship and Youth Programs',
+    title_tr: 'T3 Vakfı Yalova: Teknoloji, Girişimcilik ve Gençlik Programları Rehberi',
+    title_de: 'T3 Stiftung Yalova: Technologie, Unternehmertum und Jugendprogramme',
+    seoTitle: 'T3 Yalova: Technology Foundation Programs Guide | YouthTICK',
+    seoTitle_tr: 'T3 Yalova Nedir? Teknoloji Vakfı Rehberi 2026 | YouthTICK',
+    seoTitle_de: 'T3 Yalova: Technologiestiftung Programme | YouthTICK',
+    seoDesc: 'Complete guide to T3 Foundation Yalova: programs, how to apply, youth opportunities, and connection to local entrepreneurship ecosystem.',
+    seoDesc_tr: 'T3 Vakfı Yalova nedir, hangi programları sunuyor, nasıl başvurulur? Yalova gençleri için kapsamlı T3 rehberi.',
+    seoDesc_de: 'Vollständiger Leitfaden zur T3-Stiftung Yalova: Programme, Bewerbung und Verbindung zum lokalen Ökosystem.',
+    author: 'Elif Yıldız', authorRole: 'Programme Lead', authorImg: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?w=80&q=80&auto=format&fit=crop&crop=face',
+    date: 'May 2026', readTime: '7 min',
+    publishedAt: '2026-05-28',
+    img: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1200&q=85&auto=format&fit=crop',
+    excerpt: 'T3 Vakfı Yalova\'da ne sunuyor? Teknoloji atölyelerinden girişimcilik eğitimlerine, hackathon\'lardan mentorluk ağına — Yalova gençleri için kapsamlı T3 rehberi.',
+    faq: {
+      tr: [
+        { q: 'T3 Yalova\'da hangi programları sunuyor?', a: 'T3 Vakfı Yalova\'da teknoloji atölyeleri, girişimcilik eğitimleri, hackathon etkinlikleri ve mentorluk programları düzenlemektedir. Ulusal T3 ağıyla bağlantılı olan yerel ofis, iş bağlantısı ve yatırımcı erişimi de sağlamaktadır.' },
+        { q: 'T3 Vakfı Yalova\'ya nasıl başvurulur?', a: 'T3 Vakfı programlarına t3.org.tr üzerinden online başvuru yapılabilir. Ayrıca yerel etkinlik ve duyurular için T3\'ün sosyal medya hesaplarını takip etmek önerilir.' },
+        { q: 'T3 Vakfı ücretsiz mi?', a: 'T3 Vakfı\'nın gençlere yönelik çoğu etkinlik ve programı ücretsiz veya çok düşük ücretlidir. Bazı özel eğitim programları için ücret alınabilir; detaylar programa göre değişir.' }
+      ],
+      en: [
+        { q: 'What programs does T3 Yalova offer?', a: 'T3 Foundation Yalova runs technology workshops, entrepreneurship training, hackathon events, and mentoring programs. The local office connects participants with the national T3 network, investor access, and business partnerships.' },
+        { q: 'How do you apply to T3 Foundation Yalova?', a: 'Applications can be made online at t3.org.tr. Follow T3\'s social media for local event announcements and open call notifications.' }
+      ]
+    },
+    internalLinks: ['article.html?id=55', 'article.html?id=56', 'article.html?id=50'],
+    content_tr: `
+      <p>Yalova'da "T3 Yalova" araması yapan gençlerin büyük çoğunluğu şu soruyu soruyor: Bu vakıf nedir, bana ne sağlar ve nasıl dahil olabilirim? Bu rehber bu üç soruya net yanıt verir.</p>
+
+      <h2>T3 Vakfı nedir?</h2>
+      <p>T3 Vakfı (Teknoloji Transfer ve Ticarileştirme Vakfı), Türkiye genelinde teknoloji, girişimcilik ve inovasyon ekosistemini güçlendirmek amacıyla kurulmuş bir sivil toplum kuruluşudur. İstanbul merkezli olan vakıf, Ankara, İzmir, Bursa ve Yalova dahil pek çok ilde yerel ofis ve program yürütmektedir.</p>
+      <p>Temel misyonu: gençleri ve girişimcileri teknoloji alanında eğitmek, ulusal ve uluslararası ağlarla buluşturmak ve fikir aşamasındaki projelerin ticarileşmesine destek olmak.</p>
+
+      <h2>T3 Yalova'da ne sunuyor?</h2>
+      <p>Yalova'daki T3 ofisi ulusal programların yerel yansımasını sunar. Düzenli olarak gerçekleştirilen etkinlikler arasında şunlar yer almaktadır:</p>
+      <ul>
+        <li><strong>Teknoloji atölyeleri</strong>: Yazılım, yapay zeka, siber güvenlik, veri bilimi gibi alanlarda pratik eğitimler</li>
+        <li><strong>Girişimcilik bootcamp'leri</strong>: Fikir validasyonu, iş modeli geliştirme, sunum hazırlığı</li>
+        <li><strong>Hackathon etkinlikleri</strong>: 24-48 saatlik yoğun proje geliştirme yarışmaları</li>
+        <li><strong>Mentorluk programı</strong>: Sektör deneyimi olan profesyonellerle birebir görüşme fırsatı</li>
+        <li><strong>Yatırımcı buluşmaları</strong>: Erken aşama girişimler için demo day ve pitch etkinlikleri</li>
+      </ul>
+
+      <h2>T3 ile Yalova Girişimcilik Ekosistemi arasındaki bağ</h2>
+      <p>T3 Vakfı Yalova, <a href="/yalova-girisimcilik.html">Yalova girişimcilik ekosistemi</a>nin önemli bir parçasıdır. YTSO, TEKMER ve Yalova Üniversitesi ile koordineli çalışarak Yalova'daki girişimcilik süreçlerini destekler. Özellikle üniversite öğrencileri için T3 ile Yalova Üniversitesi iş birliği, kampüs içi etkinlikler ve ortak projeler üretmektedir.</p>
+
+      <h2>Nasıl başvurulur?</h2>
+      <p>T3 Vakfı'nın programlarına katılmak için:</p>
+      <ol>
+        <li><strong>t3.org.tr</strong> adresine girin ve "Etkinlikler" bölümünü kontrol edin</li>
+        <li>Yalova'ya özel etkinlikler için T3'ün Instagram ve LinkedIn hesaplarını takip edin</li>
+        <li>Çoğu etkinlik için kayıt ücretsizdir, sadece online form doldurulması yeterlidir</li>
+        <li>Mentorluk programı için profil oluşturup başvuru yapabilirsiniz</li>
+      </ol>
+
+      <h2>T3 ve Erasmus bağlantısı</h2>
+      <p>T3 deneyimi, <a href="/yalova-erasmus.html">Erasmus+ başvurusu</a>nda motivasyon mektubunu güçlendirir. Uluslararası ağlara açık bir vakfın etkinliklerine katılmış olmak, değişim programı başvurularında özgün ve somut bir deneyim olarak öne çıkar.</p>
+
+      <h2>Sonuç</h2>
+      <p>T3 Vakfı Yalova, şehrin teknoloji ve girişimcilik sahnesinin en erişilebilir giriş noktalarından biridir. Ücretsiz programları, mentorluk ağı ve ulusal bağlantıları sayesinde Yalova gençleri için değerli bir kaynak olmaya devam etmektedir. YouthTICK olarak T3 etkinliklerini duyuruyoruz; bültenimize abone olarak haberdar olabilirsiniz.</p>
+    `
+  },
+
+  '70': {
+    category: 'Yalova Ecosystem', catClass: 'tag-green', categoryKey: 'yalova-ekosistem',
+    slug: 'genclik-meclisi-yalova-uyelik-rehberi',
+    title: 'Yalova Youth Council: How to Join and What You Gain',
+    title_tr: 'Gençlik Meclisi Yalova: Nasıl Üye Olunur ve Neler Kazanılır?',
+    title_de: 'Jugendrat Yalova: Mitgliedschaft und Vorteile',
+    seoTitle: 'Gençlik Meclisi Yalova 2026: Üyelik ve Katılım Rehberi | YouthTICK',
+    seoTitle_tr: 'Gençlik Meclisi Yalova 2026: Üyelik Rehberi | YouthTICK',
+    seoTitle_de: 'Jugendrat Yalova 2026: Mitgliedschaftsguide | YouthTICK',
+    seoDesc: 'Gençlik Meclisi Yalova\'ya nasıl üye olunur? Başvuru süreci, yaş kriteri, görevler ve sivil katılım fırsatları hakkında kapsamlı rehber.',
+    seoDesc_tr: 'Gençlik Meclisi Yalova üyelik başvurusu, yaş koşulları, görevler ve katılım süreciyle ilgili her şey.',
+    seoDesc_de: 'Jugendrat Yalova Mitgliedschaft: Bewerbung, Altersvoraussetzungen, Aufgaben und Teilnahmemöglichkeiten.',
+    author: 'Ahmet Yılmaz', authorRole: 'Civic Engagement', authorImg: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=80&q=80&auto=format&fit=crop&crop=face',
+    date: 'May 2026', readTime: '6 min',
+    publishedAt: '2026-05-28',
+    img: 'https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=1200&q=85&auto=format&fit=crop',
+    excerpt: 'Gençlik Meclisi Yalova\'ya üye olmak için gereken şartlar, başvuru takvimi ve meclis üyeliğinin gençlere sunduğu somut kazanımlar.',
+    faq: {
+      tr: [
+        { q: 'Gençlik Meclisi Yalova\'ya nasıl üye olunur?', a: '15-30 yaş arası Yalova\'da ikamet eden veya okuyan gençler başvurabilir. Başvurular Eylül-Ekim döneminde Yalova Belediyesi web sitesi üzerinden açılır.' },
+        { q: 'Gençlik Meclisi Yalova üyeliği ne kazandırır?', a: 'Liderlik, iletişim ve proje yönetimi deneyimi; yerel yönetimle doğrudan çalışma fırsatı; CV ve Erasmus başvurularında güçlü bir sivil katılım referansı.' },
+        { q: 'Gençlik Meclisi Kent Konseyi\'nden farklı mı?', a: 'Evet. Gençlik Meclisi Yalova Belediyesi bünyesinde çalışırken, Kent Konseyi daha geniş kapsamlı bir sivil toplum platformudur. İkisi birbirini tamamlar ancak yapısal olarak ayrıdır.' }
+      ],
+      en: [
+        { q: 'How do you join the Yalova Youth Council?', a: 'Young people aged 15-30 living or studying in Yalova can apply. Applications open in September-October via the Yalova Municipality website.' },
+        { q: 'What do you gain from membership?', a: 'Leadership, communication and project management experience; direct work with local government; strong civic engagement reference for CV and Erasmus applications.' }
+      ]
+    },
+    internalLinks: ['article.html?id=71', 'article.html?id=53', 'article.html?id=50'],
+    content_tr: `
+      <p>Gençlik Meclisi Yalova, şehrin genç nüfusunun yerel yönetim süreçlerine katılımını sağlamak amacıyla Yalova Belediyesi bünyesinde kurulan bir sivil yapıdır. Bu rehber, üyelik sürecini, beklentileri ve somut kazanımları açıklamaktadır.</p>
+
+      <h2>Gençlik Meclisi nedir?</h2>
+      <p>Gençlik meclisleri, Türkiye'de belediyelerin gençlik katılımını teşvik etmek amacıyla kurduğu danışma ve karar destek organlarıdır. Yalova Gençlik Meclisi, şehrin sosyal, kültürel ve kentsel gelişim süreçlerine gençlerin görüşünü taşır.</p>
+      <p>Meclis; çevre, kültür, spor, eğitim ve sosyal dayanışma gibi tematik komisyonlar aracılığıyla çalışır. Her komisyon, ilgili belediye birimiyle koordineli projeler yürütür.</p>
+
+      <h2>Üyelik şartları</h2>
+      <ul>
+        <li>15-30 yaş arasında olmak</li>
+        <li>Yalova'da ikamet etmek, okumak veya çalışmak</li>
+        <li>T.C. kimlik belgesi</li>
+        <li>Motivasyon formu veya kısa dilekçe</li>
+      </ul>
+      <p>Bazı dönemlerde sözlü değerlendirme veya tanışma toplantısı da sürecin parçası olabilir. Kesin başvuru koşulları için Yalova Belediyesi'nin güncel duyurularını takip edin.</p>
+
+      <h2>Başvuru takvimi</h2>
+      <p>Gençlik Meclisi üyelik başvuruları genellikle <strong>Eylül-Ekim</strong> aylarında açılır. Yeni dönem başlangıcı Kasım ya da Aralık ayında gerçekleşir. Görev süresi bir akademik yıl olmakla birlikte yenilenebilir.</p>
+
+      <h2>Üye olarak ne yapıyorsunuz?</h2>
+      <ul>
+        <li>Aylık meclis toplantılarına katılım</li>
+        <li>Komisyon çalışmalarında aktif görev alma</li>
+        <li>Yerel projelerde gönüllü uygulayıcı olma</li>
+        <li>Şehirdeki gençlik sorunlarını belgelemek ve çözüm önerisi sunmak</li>
+        <li>Belediye etkinliklerinde temsil görevi üstlenmek</li>
+      </ul>
+
+      <h2>Neler kazanılır?</h2>
+      <p>Gençlik Meclisi üyeliği somut kazanımlar sunar:</p>
+      <ul>
+        <li><strong>Liderlik deneyimi</strong>: Komisyon başkanlığı veya sözcülük gibi sorumluluklar</li>
+        <li><strong>CV ve Erasmus başvurusu</strong>: Sivil katılım deneyimi, <a href="/yalova-erasmus.html">Erasmus motivasyon mektupları</a>nda güçlü referans oluşturur</li>
+        <li><strong>Ağ oluşturma</strong>: Belediye yöneticileri, STK temsilcileri ve diğer gençlerle bağlantı</li>
+        <li><strong>Proje deneyimi</strong>: Gerçek bir proje sürecinde rol alarak edinilen pratik beceriler</li>
+      </ul>
+
+      <h2>Kent Konseyi ile farkı</h2>
+      <p>Gençlik Meclisi doğrudan Yalova Belediyesi'ne bağlıyken, <a href="/yalova-genclik-toplulugu.html">Kent Konseyi</a> daha geniş kapsamlı bir sivil platform olup STK'lar, meslek odaları ve bireylerden oluşur. İkisi birbirini dışlamaz; pek çok aktif genç her ikisinde de yer almaktadır.</p>
+
+      <h2>Başvuru için ne yapmalısınız?</h2>
+      <ol>
+        <li>Yalova Belediyesi web sitesini Eylül ayında kontrol edin</li>
+        <li>Başvuru formunu doldurun ve motivasyon mektubunuzu hazırlayın</li>
+        <li>YouthTICK bültenine abone olarak başvuru açıldığında bildirim alın</li>
+      </ol>
+    `
+  },
+
+  '71': {
+    category: 'Yalova Ecosystem', catClass: 'tag-green', categoryKey: 'yalova-ekosistem',
+    slug: 'kent-konseyi-yalova-genclik',
+    title: 'Yalova City Council Youth: Civic Participation Guide',
+    title_tr: 'Kent Konseyi Yalova: Gençlik Katılımı ve Sivil Demokrasi Rehberi',
+    title_de: 'Stadtrat Yalova Jugend: Bürgerbeteiligung und Demokratie',
+    seoTitle: 'Kent Konseyi Yalova: Gençlik Katılımı Rehberi 2026 | YouthTICK',
+    seoTitle_tr: 'Kent Konseyi Yalova Gençlik 2026 | YouthTICK',
+    seoTitle_de: 'Stadtrat Yalova Jugend 2026 | YouthTICK',
+    seoDesc: 'Kent Konseyi Yalova nedir, nasıl çalışır ve gençler nasıl katılabilir? Sivil demokrasi, gençlik komisyonu ve katılım fırsatları rehberi.',
+    seoDesc_tr: 'Kent Konseyi Yalova\'nın yapısı, gençlik komisyonu ve sivil katılım fırsatları hakkında kapsamlı rehber.',
+    seoDesc_de: 'Was ist der Stadtrat Yalova, wie funktioniert er und wie können Jugendliche teilnehmen? Leitfaden zu Bürgerbeteiligung.',
+    author: 'Elif Yıldız', authorRole: 'Civic Engagement', authorImg: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?w=80&q=80&auto=format&fit=crop&crop=face',
+    date: 'May 2026', readTime: '5 min',
+    publishedAt: '2026-05-28',
+    img: 'https://images.unsplash.com/photo-1571902943202-507ec2618e8f?w=1200&q=85&auto=format&fit=crop',
+    excerpt: 'Kent Konseyi Yalova nedir ve gençler nasıl aktif rol alabilir? Sivil demokratik katılımın Yalova ayağını anlatan YouthTICK rehberi.',
+    faq: {
+      tr: [
+        { q: 'Kent Konseyi Yalova nedir?', a: 'Kent Konseyi, yerel halkın, STK\'ların ve meslek kuruluşlarının bir araya gelerek şehrin yönetimine katkı sunduğu sivil bir platformdur. Yalova Kent Konseyi kadın, gençlik, engelli ve çevre komisyonlarıyla çalışmaktadır.' },
+        { q: 'Gençler Kent Konseyi\'ne nasıl katılabilir?', a: 'Kent Konseyi gençlik komisyonuna katılmak için yerel STK aracılığıyla veya doğrudan Kent Konseyi sekreteryasına başvurulabilir. Bireysel katılım da mümkündür.' },
+        { q: 'Kent Konseyi Gençlik Meclisi\'nden farklı mı?', a: 'Evet. Kent Konseyi daha geniş sivil toplum katılımına dayanırken, Gençlik Meclisi doğrudan belediyeye bağlı resmi bir yapıdır. İkisi farklı ama tamamlayıcı mecralardır.' }
+      ],
+      en: [
+        { q: 'What is the Yalova City Council?', a: 'The city council is a civic platform where residents, NGOs and professional chambers contribute to local governance. It operates through youth, women, disability and environment commissions.' },
+        { q: 'How can youth participate?', a: 'Young people can join through a local NGO or apply directly to the council secretariat. Individual participation is also accepted.' }
+      ]
+    },
+    internalLinks: ['article.html?id=70', 'article.html?id=53', 'article.html?id=26'],
+    content_tr: `
+      <p>Kent Konseyi Yalova, şehrin sivil demokratik katılım platformlarından biridir. Belediyelerin yanı sıra STK'lar, meslek odaları ve bireylerden oluşan bu yapı, yerel yönetişime katkı sağlar. Bu rehber, gençlerin Kent Konseyi'ne nasıl dahil olabileceğini açıklar.</p>
+
+      <h2>Kent Konseyi nedir?</h2>
+      <p>Kent konseyleri, 5393 sayılı Belediye Kanunu çerçevesinde Türkiye'de zorunlu olarak kurulan sivil katılım organlarıdır. Yalova Kent Konseyi; gençlik, kadın, engelli bireyler, çevre ve esnaf gibi farklı toplumsal kesimleri temsil eden komisyonlar aracılığıyla çalışır.</p>
+      <p>Konseyin kararları bağlayıcı olmamakla birlikte, belediye yönetimine önemli sivil geri bildirim sağlar. Özellikle kentsel dönüşüm, yeşil alan, ulaşım ve gençlik projeleri gibi konularda aktif rol oynar.</p>
+
+      <h2>Gençlik Komisyonu ne yapar?</h2>
+      <p>Kent Konseyi Gençlik Komisyonu, Yalova'daki 15-35 yaş arası gençlerin sorunlarını ve taleplerini konseye taşır. Düzenli toplantılar, proje önerileri ve etkinlik organizasyonu bu komisyonun temel faaliyetleridir.</p>
+      <ul>
+        <li>Gençlik sorunlarını araştırma ve raporlama</li>
+        <li>Belediyeye proje önerileri sunma</li>
+        <li>Gençlik etkinlikleri organize etme</li>
+        <li>Ulusal gençlik platformlarıyla iletişim kurma</li>
+      </ul>
+
+      <h2>Nasıl dahil olunur?</h2>
+      <p>Kent Konseyi'ne katılım birkaç farklı yoldan gerçekleşebilir:</p>
+      <ol>
+        <li><strong>STK aracılığıyla</strong>: YouthTICK gibi bir derneğin temsilcisi olarak oy hakkına sahip katılımcı olunabilir</li>
+        <li><strong>Bireysel başvuru</strong>: Gençlik komisyonuna doğrudan başvuru yapılabilir</li>
+        <li><strong>Toplantı gözlemcisi</strong>: Kent Konseyi toplantıları genellikle herkese açıktır</li>
+      </ol>
+      <p>Başvuru için Yalova Kent Konseyi sekreterlik birimiyle iletişime geçin.</p>
+
+      <h2>Kent Konseyi deneyiminin değeri</h2>
+      <p>Kent Konseyi katılımı; <a href="/yalova-erasmus.html">Erasmus+ başvurularında</a> sivil katılım kanıtı olarak güçlü bir yer tutar. Ayrıca yerel yönetim, politika yapımı ve proje savunuculuğu konularında pratik deneyim kazandırır.</p>
+    `
+  },
+
+  '72': {
+    category: 'Yalova Ecosystem', catClass: 'tag-green', categoryKey: 'yalova-ekosistem',
+    slug: 'yalova-gsb-genclik-merkezleri',
+    title: 'GSB Youth Centers in Yalova: Free Programs and How to Join',
+    title_tr: 'Yalova GSB Gençlik Merkezleri: Ücretsiz Programlar ve Kayıt Rehberi',
+    title_de: 'GSB Jugendzentren in Yalova: Kostenlose Programme und Anmeldung',
+    seoTitle: 'Yalova GSB Gençlik Merkezleri 2026 | YouthTICK',
+    seoTitle_tr: 'Yalova GSB Gençlik Merkezi: Kayıt ve Programlar | YouthTICK',
+    seoTitle_de: 'Yalova GSB Jugendzentrum 2026 | YouthTICK',
+    seoDesc: 'Yalova GSB gençlik merkezleri hakkında her şey: ücretsiz programlar, kayıt koşulları, spor-sanat-kişisel gelişim etkinlikleri rehberi.',
+    seoDesc_tr: 'Gençlik ve Spor Bakanlığı\'na bağlı Yalova gençlik merkezlerinde ücretsiz sunulan programlar ve kayıt süreci.',
+    seoDesc_de: 'Alles über die GSB-Jugendzentren in Yalova: kostenlose Programme, Anmeldevoraussetzungen, Sport- und Kulturangebote.',
+    author: 'Ahmet Yılmaz', authorRole: 'Youth Programs', authorImg: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=80&q=80&auto=format&fit=crop&crop=face',
+    date: 'May 2026', readTime: '5 min',
+    publishedAt: '2026-05-28',
+    img: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=1200&q=85&auto=format&fit=crop',
+    excerpt: 'Yalova\'daki GSB gençlik merkezleri 14-29 yaş arası gençlere ücretsiz spor, sanat ve kişisel gelişim programları sunuyor. Kayıt koşulları ve programlar hakkında her şey.',
+    faq: {
+      tr: [
+        { q: 'Yalova GSB gençlik merkezine nasıl kayıt olunur?', a: '14-29 yaş arası gençler kimlik belgesiyle ilgili gençlik merkezi binasına başvurarak ücretsiz kayıt yaptırabilir. Ek belge gerektirmeyen programlar da mevcuttur.' },
+        { q: 'Yalova GSB gençlik merkezinde hangi programlar var?', a: 'Spor kursları, müzik atölyeleri, resim-heykel dersleri, dil kursları, liderlik eğitimleri ve kişisel gelişim seminerleri sunulmaktadır. Programlar dönemsel olarak değişir.' },
+        { q: 'GSB gençlik merkezi ücretsiz mi?', a: 'Evet. GSB Gençlik Merkezleri\'nin temel programları 14-29 yaş arası Türk vatandaşlarına ücretsiz sunulmaktadır.' }
+      ],
+      en: [
+        { q: 'How do you register at the Yalova GSB youth center?', a: 'Young people aged 14-29 can register for free at the center with their ID. No additional documents required for basic programs.' },
+        { q: 'What programs are available at Yalova GSB?', a: 'Sports courses, music workshops, art classes, language courses, leadership training and personal development seminars are offered, varying by semester.' }
+      ]
+    },
+    internalLinks: ['article.html?id=70', 'article.html?id=71', 'article.html?id=53'],
+    content_tr: `
+      <p>Gençlik ve Spor Bakanlığı'na (GSB) bağlı gençlik merkezleri, Türkiye genelinde 14-29 yaş arası gençlere ücretsiz programlar sunan devlet destekli yapılardır. Yalova'daki GSB gençlik merkezi de bu hizmetin yerel ayağını oluşturmaktadır.</p>
+
+      <h2>Yalova GSB Gençlik Merkezi nedir?</h2>
+      <p>GSB Yalova Gençlik Merkezi, Gençlik ve Spor Bakanlığı'nın il müdürlüğüne bağlı olarak faaliyet gösteren, gençlerin boş zamanlarını verimli geçirmesine, sosyal becerilerini geliştirmesine ve sivil katılımını artırmasına destek olmayı amaçlayan bir kurumdur.</p>
+
+      <h2>Sunulan programlar</h2>
+      <p>Yalova GSB Gençlik Merkezi'nde dönemsel olarak şu programlar sunulmaktadır:</p>
+      <ul>
+        <li><strong>Spor kursları</strong>: Voleybol, basketbol, yüzme, masa tenisi, jimnastik</li>
+        <li><strong>Sanat atölyeleri</strong>: Resim, heykel, seramik, fotoğrafçılık</li>
+        <li><strong>Müzik eğitimi</strong>: Gitar, bağlama, keman, şan</li>
+        <li><strong>Dil kursları</strong>: İngilizce, Almanca (dönemsel)</li>
+        <li><strong>Kişisel gelişim</strong>: Liderlik, iletişim, zaman yönetimi seminerleri</li>
+        <li><strong>Gönüllülük programları</strong>: Toplum yararına projeler</li>
+      </ul>
+
+      <h2>Kayıt şartları</h2>
+      <ul>
+        <li>14-29 yaş arası olmak</li>
+        <li>T.C. kimlik belgesi ile başvurmak</li>
+        <li>Bazı programlar için ön kayıt formu doldurulması</li>
+      </ul>
+      <p>Kayıt tamamen ücretsizdir. Merkez kapasitesine göre erken başvuru avantajlı olabilir.</p>
+
+      <h2>GSB ve Erasmus bağlantısı</h2>
+      <p>GSB gençlik merkezi deneyimi, <a href="/yalova-erasmus.html">Erasmus+ başvurularında</a> ve Avrupa Dayanışma Külliyatı (ESC) başvurularında sivil katılım ve gönüllülük deneyimi olarak belgelenebilir. Youthpass formatında kayıt tutmanız önerilir.</p>
+
+      <h2>Merkeze nasıl ulaşılır?</h2>
+      <p>Yalova GSB İl Müdürlüğü ve bağlı gençlik merkezi için Gençlik ve Spor Bakanlığı'nın resmi web sitesinden güncel adres ve iletişim bilgilerini edinebilirsiniz. YouthTICK olarak GSB etkinliklerini düzenli olarak duyuruyoruz.</p>
+    `
+  },
+
+  '73': {
+    category: 'Yalova Ecosystem', catClass: 'tag-green', categoryKey: 'yalova-ekosistem',
+    slug: 'yalova-kizilav-gonulluluk',
+    title: 'Yalova Red Crescent: Volunteering Guide and How to Join',
+    title_tr: 'Yalova Kızılay: Gönüllülük Rehberi ve Başvuru Adımları',
+    title_de: 'Yalova Rotes Kreuz: Freiwilligenguide und Anmeldung',
+    seoTitle: 'Yalova Kızılay Gönüllülük 2026: Başvuru Rehberi | YouthTICK',
+    seoTitle_tr: 'Yalova Kızılay Gönüllü Ol: Başvuru ve Programlar 2026 | YouthTICK',
+    seoTitle_de: 'Yalova Rotes Kreuz Freiwillige 2026 | YouthTICK',
+    seoDesc: 'Yalova Kızılay şubesinde gönüllü olmak isteyenler için başvuru süreci, görev alanları ve kazanımlar hakkında kapsamlı rehber.',
+    seoDesc_tr: 'Yalova Kızılay gönüllülük başvurusu, kan bağışı, afet destek, sosyal yardım görevleri ve gönüllü olmak için adımlar.',
+    seoDesc_de: 'Alles über die Freiwilligenarbeit beim Roten Kreuz in Yalova: Bewerbung, Aufgabenbereiche und Vorteile.',
+    author: 'Elif Yıldız', authorRole: 'Community Engagement', authorImg: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?w=80&q=80&auto=format&fit=crop&crop=face',
+    date: 'May 2026', readTime: '5 min',
+    publishedAt: '2026-05-28',
+    img: 'https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=1200&q=85&auto=format&fit=crop',
+    excerpt: 'Yalova Kızılay şubesinde gönüllü olmak için başvuru adımları, görev alanları ve bu deneyimin gençlere sunduğu kazanımlar.',
+    faq: {
+      tr: [
+        { q: 'Yalova Kızılay\'a nasıl gönüllü olunur?', a: 'Yalova Kızılay Şubesi\'ne gönüllü başvurusu için kizilayalova.org.tr veya şube iletişim kanalları üzerinden başvurabilirsiniz. Kimlik belgesi ile şube ziyareti de mümkündür.' },
+        { q: 'Yalova Kızılay gönüllülüğünde hangi görevler var?', a: 'Kan bağışı organizasyonu, afet müdahale destek ekibi, sosyal yardım dağıtımı, gençlik programları ve farkındalık kampanyaları temel görev alanlarıdır.' },
+        { q: 'Kızılay gönüllülüğü Erasmus başvurusunu güçlendirir mi?', a: 'Evet. Kızılay gönüllülük deneyimi, Erasmus+ ve ESC başvurularında sivil katılım ve toplumsal sorumluluk kanıtı olarak güçlü bir yer tutar.' }
+      ],
+      en: [
+        { q: 'How do you volunteer at Yalova Red Crescent?', a: 'Apply via kizilayalova.org.tr or visit the branch with your ID. Online applications are also accepted.' },
+        { q: 'What volunteer roles are available?', a: 'Blood donation campaigns, disaster response support, social aid distribution, youth programs and awareness campaigns are the main areas.' }
+      ]
+    },
+    internalLinks: ['article.html?id=53', 'article.html?id=70', 'article.html?id=69'],
+    content_tr: `
+      <p>Türk Kızılay'ın Yalova şubesi, insani yardım, afet yönetimi ve toplumsal dayanışma alanlarında önemli bir rol üstlenmektedir. Gençler için anlamlı gönüllülük deneyimi arayanların ilk başvuru noktalarından biri olan Yalova Kızılay, aynı zamanda Erasmus+ ve ESC başvurularında güçlü bir sivil katılım referansı oluşturur.</p>
+
+      <h2>Yalova Kızılay kimdir?</h2>
+      <p>Türk Kızılay 1868'den bu yana Türkiye'de insani yardım hizmetleri sunan bir sivil toplum kuruluşudur. Yalova şubesi; kan bağışı, afet müdahalesi, sosyal yardım ve gençlik programları alanlarında il genelinde faaliyet göstermektedir.</p>
+
+      <h2>Gönüllü görev alanları</h2>
+      <ul>
+        <li><strong>Kan bağışı kampanyaları</strong>: Organizasyon, lojistik ve bağışçı iletişimi</li>
+        <li><strong>Afet destek ekibi</strong>: Doğal afet ve olağanüstü hallerde sahadaki destek hizmetleri</li>
+        <li><strong>Sosyal yardım</strong>: Kıyafet, gıda ve temel ihtiyaç yardımlarının organizasyonu</li>
+        <li><strong>Gençlik programları</strong>: Liderlik kampları, eğitimler ve sosyal sorumluluk projeleri</li>
+        <li><strong>Farkındalık kampanyaları</strong>: Okul ziyaretleri, sosyal medya ve toplumsal duyarlılık etkinlikleri</li>
+      </ul>
+
+      <h2>Nasıl başvurulur?</h2>
+      <ol>
+        <li>Yalova Kızılay şubesi ile iletişime geçin (telefon, e-posta veya yüz yüze)</li>
+        <li>Gönüllü kayıt formunu doldurun</li>
+        <li>Yönlendirme toplantısına katılın</li>
+        <li>İlgi alanınıza göre görev ekibine dahil olun</li>
+      </ol>
+
+      <h2>Erasmus ve Avrupa programlarıyla bağlantısı</h2>
+      <p>Kızılay gönüllülük deneyimi, <a href="/yalova-erasmus.html">Erasmus+ başvurularında</a> ve Avrupa Dayanışma Külliyatı (ESC) başvurularında yüksek değer taşır. Deneyiminizi Youthpass formatında belgelemenizi öneririz. Ayrıca Kızılay'ın uluslararası ağı (IFRC) aracılığıyla yurt dışı gönüllülük fırsatlarına da erişilebilir.</p>
+
+      <h2>Kızılay gönüllülüğünün sağladığı kazanımlar</h2>
+      <ul>
+        <li>Gerçek bir insani yardım ağında aktif deneyim</li>
+        <li>Afet yönetimi ve kriz iletişimi becerileri</li>
+        <li>Resmi gönüllülük sertifikası</li>
+        <li>Uluslararası başvurularda güçlü sivil katılım referansı</li>
+      </ul>
+    `
+  },
+
+  '74': {
+    category: 'Yalova Ecosystem', catClass: 'tag-green', categoryKey: 'yalova-ekosistem',
+    slug: 'ytso-yalova-genc-girisimci-rehberi',
+    title: 'YTSO Yalova: Young Entrepreneur Membership and Support Guide',
+    title_tr: 'YTSO Yalova Genç Girişimci: Üyelik ve Destek Rehberi',
+    title_de: 'YTSO Yalova: Jungunternehmer-Mitgliedschaft und Unterstützung',
+    seoTitle: 'YTSO Yalova Genç Girişimci 2026: Üyelik Rehberi | YouthTICK',
+    seoTitle_tr: 'YTSO Yalova Nedir? Genç Girişimci Üyelik ve Destek | YouthTICK',
+    seoTitle_de: 'YTSO Yalova 2026: Jungunternehmer Guide | YouthTICK',
+    seoDesc: 'YTSO Yalova Ticaret ve Sanayi Odası nedir? Genç girişimci üyelik koşulları, avantajlar ve Yalova iş dünyasına giriş rehberi.',
+    seoDesc_tr: 'Yalova Ticaret ve Sanayi Odası (YTSO) genç girişimci programı: üyelik, danışmanlık, ağ ve destek fırsatları.',
+    seoDesc_de: 'Yalova Handels- und Industriekammer (YTSO): Mitgliedschaft für Jungunternehmer, Vorteile und lokales Netzwerk.',
+    author: 'Ahmet Yılmaz', authorRole: 'Entrepreneurship', authorImg: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=80&q=80&auto=format&fit=crop&crop=face',
+    date: 'May 2026', readTime: '6 min',
+    publishedAt: '2026-05-28',
+    img: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=1200&q=85&auto=format&fit=crop',
+    excerpt: 'YTSO\'nun Yalova\'daki genç girişimcilere sunduğu üyelik avantajları, danışmanlık hizmetleri ve iş dünyasına giriş fırsatları.',
+    faq: {
+      tr: [
+        { q: 'YTSO nedir?', a: 'YTSO (Yalova Ticaret ve Sanayi Odası), Yalova\'daki ticari ve sanayi işletmelerini temsil eden zorunlu üyelik esasına dayalı bir meslek kuruluşudur. Hukuki destek, eğitim ve iş bağlantısı hizmetleri sunar.' },
+        { q: 'YTSO genç girişimci üyeliği için yaş sınırı var mı?', a: 'YTSO Genç Girişimciler programı genel olarak 18-35 yaş arası girişimcilere yönelik olmakla birlikte, ticaret siciline kayıtlı her girişimci üyelik başvurusunda bulunabilir.' },
+        { q: 'YTSO üyeliği ne sağlar?', a: 'Yasal ticari faaliyet izni, oda belgesi, hukuki danışmanlık, eğitim programları ve yerel iş ağına erişim. Yurt dışı ticaret için ihracat belgeleri de YTSO üzerinden temin edilir.' }
+      ],
+      en: [
+        { q: 'What is YTSO?', a: 'YTSO (Yalova Chamber of Commerce and Industry) is the mandatory chamber representing Yalova\'s commercial and industrial businesses. It provides legal support, training and business networking services.' },
+        { q: 'What does YTSO membership provide?', a: 'Legal commercial activity authorization, chamber certificate, legal consulting, training programs and access to the local business network. Export documents for international trade are also issued through YTSO.' }
+      ]
+    },
+    internalLinks: ['article.html?id=55', 'article.html?id=69', 'article.html?id=56'],
+    content_tr: `
+      <p>Yalova Ticaret ve Sanayi Odası (YTSO), şehirdeki ticari ve sanayi girişimlerin resmi temsil kuruluşudur. Genç girişimciler için hem yasal bir zorunluluk hem de değerli bir kaynak olan YTSO üyeliği, Yalova iş dünyasına giriş sürecinin temel adımlarından biridir.</p>
+
+      <h2>YTSO nedir?</h2>
+      <p>Türkiye'deki ticaret ve sanayi odaları, 5174 sayılı Türkiye Odalar ve Borsalar Birliği Kanunu çerçevesinde kurulmuştur. Ticaret siciline kayıtlı her işletme, bulunduğu ilin odasına üye olmak zorundadır. YTSO bu zorunlu üyelik esasıyla çalışmakla birlikte, üyelerine çeşitli ek hizmetler ve programlar da sunar.</p>
+
+      <h2>YTSO Genç Girişimciler programı</h2>
+      <p>YTSO bünyesindeki Genç Girişimciler Kurulu, 18-35 yaş arası genç iş insanlarına yönelik özel etkinlikler, eğitimler ve networking faaliyetleri organize etmektedir. Bu platform aracılığıyla:</p>
+      <ul>
+        <li>Deneyimli iş insanlarından mentorluk alma</li>
+        <li>Yerel iş ağlarına katılım</li>
+        <li>Sektör toplantıları ve panel etkinliklerine erişim</li>
+        <li>Yurt dışı ticaret ve ihracat konularında destek</li>
+      </ul>
+
+      <h2>Üyelik süreci</h2>
+      <ol>
+        <li>Ticaret siciline kaydını tamamlayın (noter veya e-devlet)</li>
+        <li>YTSO'ya üyelik başvurusu yapın</li>
+        <li>Zorunlu belgeler: vergi levhası, kimlik, imza beyanı</li>
+        <li>Üyelik aidat ödemesini gerçekleştirin</li>
+        <li>Oda siciline kaydınız tamamlanır</li>
+      </ol>
+
+      <h2>T3 ve YTSO birlikteliği</h2>
+      <p>Yalova'da <a href="/yalova-girisimcilik.html">girişimcilik ekosistemi</a>nin iki önemli ayağı olan T3 Vakfı ve YTSO, genç girişimciler için birbirini tamamlayan roller üstlenmektedir. T3 mentorluk ve ağ geliştirme, YTSO ise resmi ticari yapı ve iş dünyası bağlantısı sağlar.</p>
+
+      <h2>YTSO iletişim ve başvuru</h2>
+      <p>Güncel iletişim bilgileri, üyelik aidat tutarları ve program takvimi için YTSO'nun resmi web sitesini ziyaret edin veya Yalova'daki oda binasına başvurun. YouthTICK olarak girişimcilik sürecinizde rehberlik için <a href="/contact.html">bizimle iletişime</a> geçebilirsiniz.</p>
+    `
+  },
+
+  '75': {
+    category: 'Yalova Ecosystem', catClass: 'tag-green', categoryKey: 'yalova-ekosistem',
+    slug: 'yalova-akin-dil-dil-okullari-rehberi',
+    title: 'Yalova Language Schools 2026: Akın Dil and Your Options',
+    title_tr: 'Yalova Dil Okulları 2026: Akın Dil ve Seçenekleriniz',
+    title_de: 'Yalova Sprachschulen 2026: Akın Dil und Ihre Optionen',
+    seoTitle: 'Yalova Dil Okulu & Akın Dil 2026: Rehber | YouthTICK',
+    seoTitle_tr: 'Yalova Akın Dil ve Dil Okulları Rehberi 2026 | YouthTICK',
+    seoTitle_de: 'Yalova Sprachschule Akın Dil 2026: Leitfaden | YouthTICK',
+    seoDesc: 'Yalova Akın Dil ve diğer dil okulları hakkında: kurslar, fiyatlar, Erasmus için dil sertifikası ve seçim rehberi 2026.',
+    seoDesc_tr: 'Yalova\'daki dil kursları: Akın Dil dahil seçenekler, fiyat aralıkları ve Erasmus için hangi sertifikanın gerektiği.',
+    seoDesc_de: 'Yalovas Sprachkurse: Akın Dil und andere Optionen, Preisbereiche und welches Zertifikat für Erasmus erforderlich ist.',
+    author: 'Psk. Deniz Arslan', authorRole: 'Education Advisor', authorImg: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=80&q=80&auto=format&fit=crop&crop=face',
+    date: 'May 2026', readTime: '6 min',
+    publishedAt: '2026-05-28',
+    img: 'https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=1200&q=85&auto=format&fit=crop',
+    excerpt: 'Yalova\'da dil öğrenmek isteyenler için: Akın Dil ve diğer dil okulları, Erasmus sertifika şartları ve 2026 rehberi.',
+    faq: {
+      tr: [
+        { q: 'Yalova\'da en iyi dil okulu hangisi?', a: 'Yalova Akın Dil merkezi şehrin yaygın tercihlerinden biridir. Seçim yaparken kurs programı, öğretmen kalitesi, sertifika geçerliliği ve fiyat/performans oranını karşılaştırmanızı öneririz.' },
+        { q: 'Yalova Akın Dil fiyatları 2026\'da ne kadar?', a: 'Fiyatlar kurs türüne, süresine ve seviyeye göre değişmektedir. Güncel fiyat listesi için doğrudan Akın Dil Yalova şubesiyle iletişime geçmenizi öneririz.' },
+        { q: 'Erasmus için hangi dil belgesi gerekiyor?', a: 'Hedef üniversiteye ve programa göre değişir. Çoğu program B1-B2 İngilizce arar; bazı programlar IELTS, TOEFL veya üniversite dil sınavını kabul eder.' },
+        { q: 'Yalova\'da online dil kursu var mı?', a: 'Evet. Akın Dil dahil bazı yerel merkezler online program sunmaktadır. Ayrıca Coursera, British Council ve Duolingo gibi platformlar Yalova\'dan erişilebilir.' }
+      ],
+      en: [
+        { q: 'What is the best language school in Yalova?', a: 'Akın Dil Yalova is among the popular choices. Compare course programs, teacher quality, certificate validity and price-performance before deciding.' },
+        { q: 'Which language certificate is required for Erasmus?', a: 'It varies by university and program. Most require B1-B2 English; some accept IELTS, TOEFL or a university language exam.' }
+      ]
+    },
+    internalLinks: ['article.html?id=51', 'article.html?id=52', 'article.html?id=68'],
+    content_tr: `
+      <p>Yalova'da dil eğitimi almak isteyenler için doğru kurs ve kurumu seçmek, hem zaman hem bütçe açısından kritik bir karardır. Bu rehber, Yalova'daki başlıca dil eğitimi seçeneklerini — Akın Dil dahil — karşılaştırıp Erasmus ve kariyer hedefleriyle nasıl hizalayacağınızı anlatır.</p>
+
+      <h2>Yalova Akın Dil nedir?</h2>
+      <p>Akın Dil, Türkiye genelinde birden fazla şehirde faaliyet gösteren bir dil eğitimi zinciridir. Yalova şubesi, özellikle İngilizce kurslarıyla tanınan, bireysel ve grup eğitimi seçenekleri sunan bir merkezdir. Kurs programları; başlangıç seviyesinden ileri düzeye, yoğun haftalık programdan hafta sonu kurslarına kadar çeşitlilik göstermektedir.</p>
+
+      <h2>Yalova'daki diğer dil eğitimi seçenekleri</h2>
+      <ul>
+        <li><strong>Üniversite dil merkezi</strong>: Yalova Üniversitesi Hazırlık ve Yabancı Diller birimleri öğrencilere destek sunar</li>
+        <li><strong>GSB gençlik merkezi dil kursları</strong>: Dönemsel olarak ücretsiz kurs programları açılmaktadır</li>
+        <li><strong>Özel öğretmen</strong>: Bireysel ders için online platformlar (Preply, italki) aracılığıyla Yalova'da veya online hoca bulunabilir</li>
+        <li><strong>Online platformlar</strong>: Duolingo, Babbel, British Council ve Coursera ücretsiz veya düşük maliyetli seçenekler sunar</li>
+      </ul>
+
+      <h2>Erasmus için hangi sertifika gerekiyor?</h2>
+      <p>Bu sorunun yanıtı hedef üniversiteye ve bölüme göre değişir. Genel kural şöyledir:</p>
+      <ul>
+        <li>Çoğu Avrupa üniversitesi İngilizce programları için <strong>B1-B2 yeterliliği</strong> arar</li>
+        <li>Almanya için Almanca bilgisi avantajlıdır (bazı programlarda zorunlu)</li>
+        <li>Kabul edilen belgeler: IELTS, TOEFL, Cambridge PET/FCE, üniversite dil sınavı</li>
+        <li>Yalova Üniversitesi kendi dil sınavını kabul eden partnerleri için ayrıca sınav düzenleyebilir</li>
+      </ul>
+      <p>Detaylı bilgi için <a href="/yalova-erasmus.html">Yalova Erasmus Başvuru Rehberi</a>'ne bakın.</p>
+
+      <h2>6 aylık Erasmus dil hazırlık planı</h2>
+      <p>B2 seviyesine ulaşmak için ortalama 300-400 saat çalışma gerekmektedir. Altı ay içinde bunu başarmak için haftalık 12-16 saat hedefleyin:</p>
+      <ul>
+        <li><strong>1-2. ay</strong>: Kur sınavı → boşluk analizi → temel dilbilgisi pekiştirme</li>
+        <li><strong>3-4. ay</strong>: Dinleme ve okuma pratiği, günlük İngilizce kullanımı</li>
+        <li><strong>5. ay</strong>: Konuşma pratiği (language exchange, online partner)</li>
+        <li><strong>6. ay</strong>: Sınav simülasyonu ve motivasyon mektubu yazımı</li>
+      </ul>
+
+      <h2>Maliyet karşılaştırması</h2>
+      <p>Yalova'da dil kursları fiyatları program türüne göre değişmekle birlikte genel aralıklar şöyledir:</p>
+      <ul>
+        <li>Akın Dil grup kursu: Aylık 1.500-3.500 TL (güncel fiyat için şubeye sorun)</li>
+        <li>Bireysel özel ders: Saatlik 300-600 TL</li>
+        <li>GSB gençlik merkezi kursları: Ücretsiz (dönemsel)</li>
+        <li>Online platformlar: Aylık 0-200 TL (birçok kaynak ücretsiz)</li>
+      </ul>
+    `
   }
 };
 
