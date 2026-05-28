@@ -10,10 +10,11 @@
   <meta http-equiv="X-Frame-Options" content="SAMEORIGIN"/>
   <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin"/>
   
-  <!-- Font Preload for Performance -->
+  <!-- Font: async load to prevent render-blocking -->
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=DM+Serif+Display:ital@0;1&display=swap"/>
+  <link rel="stylesheet" media="print" onload="this.media='all'" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=DM+Serif+Display:ital@0;1&display=swap"/>
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=DM+Serif+Display:ital@0;1&display=swap"/></noscript>
   <title data-titlekey="home.pageTitle">YouthTICK — Yalova Erasmus+ Gençlik İnisiyatifi | Yalova, Türkiye</title>
   <meta name="description" content="YouthTICK, Yalova merkezli Erasmus+ gençlik inisiyatifidir. Yalova'dan Avrupa'ya gençlik projeleri, Erasmus+ başvuru desteği, gönüllülük ve sivil katılım. youthtick.org"/>
   <meta name="keywords" content="yalova erasmus, yalova gençlik, yalova gönüllülük, yalova gençlik topluluğu, yalova erasmus başvuru, yalova sivil toplum, yalova avrupa programları, yalova gençlik projesi, YouthTICK, tick youth, youth tick, youthtick yalova"/>
@@ -121,7 +122,7 @@
   </script>
   <link rel="stylesheet" href="assets/css/main.css"/>
   <link rel="stylesheet" href="assets/css/home.css"/>
-  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
+  <script src="assets/js/lucide.min.js" defer></script>
   <script src="assets/js/home.js" defer></script>
   <script type="module" src="assets/js/core/app.js"></script>
 </head>
