@@ -3,6 +3,7 @@
 
 # Organization Information
 Organization: YouthTICK
+Also-Known-As: Tick Youth, Youth TICK, YouthTick, tick youth
 Description: Youth organization focused on Erasmus+ programs, civic participation, and intercultural dialogue connecting young people in Türkiye with European opportunities
 Location: Yalova, Türkiye
 Founded: 2026
