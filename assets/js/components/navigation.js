@@ -80,8 +80,9 @@ export function renderNav() {
     nav.classList.toggle('scrolled', window.scrollY > 24);
   };
   window.addEventListener('scroll', onScroll, { passive: true });
-  // Defer initial scrollY read to rAF — avoids forced reflow after insertAdjacentHTML
-  requestAnimationFrame(onScroll);
+  // No initial onScroll() call needed — nav is always un-scrolled at mount
+  // (page starts at top). Calling it here read window.scrollY right after
+  // insertAdjacentHTML which forced a 18ms layout recalculation.
 
   const hamburger = document.getElementById('nav-hamburger');
   const mobileMenu = document.getElementById('mobile-menu');

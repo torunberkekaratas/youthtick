@@ -128,9 +128,10 @@
        (≈980ms delay). Preloading here cuts that to ~0ms resource load delay. -->
   <link rel="preload" as="image" href="logo.svg" fetchpriority="high">
   <!-- Preload LCP hero image before HTML parser reaches <img>.
-       Three srcset breakpoints match the <picture> sizes below:
-       ≤480px → 720w, ≤768px (Lighthouse 3×DPR ≈ 945px) → 1080w, desktop → 1440w -->
-  <link rel="preload" href="assets/img/hero-main-720.webp"  as="image" type="image/webp" fetchpriority="high" media="(max-width: 480px)">
+       Four srcset breakpoints match the <picture> sizes below:
+       ≤390px → 760w (2×DPR), ≤480px → 720w, ≤768px → 1080w, desktop → 1440w -->
+  <link rel="preload" href="assets/img/hero-main-760.webp"  as="image" type="image/webp" fetchpriority="high" media="(max-width: 390px)">
+  <link rel="preload" href="assets/img/hero-main-720.webp"  as="image" type="image/webp" fetchpriority="high" media="(min-width: 391px) and (max-width: 480px)">
   <link rel="preload" href="assets/img/hero-main-1080.webp" as="image" type="image/webp" fetchpriority="high" media="(min-width: 481px) and (max-width: 768px)">
   <link rel="preload" href="assets/img/hero-main.webp"      as="image" type="image/webp" fetchpriority="high" media="(min-width: 769px)">
   <!-- Preload world-atlas data so map fetch starts before JS runs -->
@@ -255,7 +256,7 @@
           <picture>
             <!-- Mobile: 720px WebP (52KB) — Desktop: 1440px WebP (162KB) -->
             <source
-              srcset="assets/img/hero-main-720.webp 720w, assets/img/hero-main-1080.webp 1080w, assets/img/hero-main.webp 1440w"
+              srcset="assets/img/hero-main-720.webp 720w, assets/img/hero-main-760.webp 760w, assets/img/hero-main-1080.webp 1080w, assets/img/hero-main.webp 1440w"
               sizes="(max-width: 480px) 100vw, (max-width: 768px) 100vw, 1440px"
               type="image/webp"
             >
