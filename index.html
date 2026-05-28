@@ -125,6 +125,34 @@
   <script src="assets/js/lucide.min.js" defer></script>
   <script src="assets/js/home.js" defer></script>
   <script type="module" src="assets/js/core/app.js"></script>
+  <!-- Network world-map dependencies -->
+  <script src="https://cdn.jsdelivr.net/npm/topojson-client@3/dist/topojson-client.min.js" defer></script>
+  <style>
+    /* ── YouthTICK Network Map ──────────────────────── */
+    .yt-map-card{
+      position:relative;width:100%;aspect-ratio:2/1;
+      background:#0b1623;border-radius:14px;overflow:hidden;
+      box-shadow:0 6px 28px rgba(0,0,0,.25);
+    }
+    .yt-map-card canvas,.yt-map-card svg{
+      position:absolute;inset:0;width:100%;height:100%;display:block;
+    }
+    #yt-tip{
+      position:absolute;pointer-events:none;opacity:0;transition:opacity .15s;
+      background:rgba(10,20,40,.92);color:#e2e8f0;
+      font:600 11px/1 Manrope,sans-serif;letter-spacing:.3px;
+      padding:5px 10px;border-radius:6px;white-space:nowrap;
+      transform:translateX(-50%) translateY(-120%);
+      border:1px solid rgba(255,255,255,.12);z-index:5;
+    }
+    @keyframes yt-arc{to{stroke-dashoffset:0}}
+    @keyframes yt-ring{
+      0%  {transform:scale(1);opacity:.7}
+      100%{transform:scale(3.2);opacity:0}
+    }
+    .yt-ring{transform-box:fill-box;transform-origin:center}
+    .network-visual{display:flex;flex-direction:column;gap:0;}
+  </style>
 </head>
 <body>
 <!-- Studio UI chrome -->
@@ -587,22 +615,18 @@
         </div>
       </div>
 
-      <!-- Right: Statement -->
+      <!-- Right: Interactive Europe Network Map -->
       <div class="network-visual" data-anim="left">
-        <span class="network-big-num" aria-hidden="true">5</span>
-        <h3 class="network-statement" data-i18n="network.statement">
-          Honest, step-by-step international engagement.
-        </h3>
-        <p class="network-desc" data-i18n="network.desc">
-          YouthTICK is in its foundation phase, concentrating on building genuine relationships with partner organisations before scaling. Our priority is the Germany–Türkiye youth corridor — where cultural ties and shared civic interests create a natural foundation for exchange.
-        </p>
-        <div class="network-tags">
-          <span class="tag tag-blue" data-i18n="tag.gt">Germany–Türkiye Focus</span>
-          <span class="tag tag-grey" data-i18n="tag.found">Foundation Phase</span>
-          <span class="tag tag-green" data-i18n="tag.erasmus">Erasmus+ Interested</span>
-          <span class="tag tag-grey" data-i18n="tag.partners">Open to Partners</span>
+        <div class="yt-map-card">
+          <canvas id="yt-world-canvas" aria-hidden="true"></canvas>
+          <svg id="yt-map-svg" viewBox="0 0 800 400"
+               preserveAspectRatio="xMidYMid meet"
+               xmlns="http://www.w3.org/2000/svg"
+               role="img"
+               aria-label="YouthTICK European network: HQ in Yalova, active partner in Berlin, exploring in Athens, Warsaw and Madrid"></svg>
+          <div id="yt-tip" aria-live="polite" aria-atomic="true"></div>
         </div>
-        <a href="partnership.html" class="btn btn-secondary" style="margin-top:28px;" id="network-partnership-cta">
+        <a href="partnership.html" class="btn btn-secondary" style="margin-top:24px;" id="network-partnership-cta">
           <span data-i18n="network.cta">Explore Collaboration</span>
           <i data-lucide="arrow-right"></i>
         </a>
@@ -732,6 +756,223 @@
     </div>
   </div>
 </section>
+
+<!-- ── NETWORK MAP INIT ──────────────────────────────────────── -->
+<script>
+(function(){
+  'use strict';
+
+  /* ── Viewport: Europe + Turkey + North Africa ─────────── */
+  var W=800, H=400;
+  var VB={minLng:-25,maxLng:55,minLat:25,maxLat:75};
+
+  function proj(lat,lng){
+    return {
+      x:(lng-VB.minLng)/(VB.maxLng-VB.minLng)*W,
+      y:(VB.maxLat-lat)/(VB.maxLat-VB.minLat)*H
+    };
+  }
+
+  /* ── City data ──────────────────────────────────────────── */
+  var CITIES=[
+    {id:'yalova',label:'Yalova, Türkiye', lat:40.655,lng:29.272,role:'hq',        color:'#f87171'},
+    {id:'berlin',label:'Berlin, Germany', lat:52.520,lng:13.405,role:'active',    color:'#4ade80'},
+    {id:'athens',label:'Athens, Greece',  lat:37.983,lng:23.727,role:'exploring', color:'#60a5fa'},
+    {id:'warsaw',label:'Warsaw, Poland',  lat:52.237,lng:21.012,role:'exploring', color:'#60a5fa'},
+    {id:'madrid',label:'Madrid, Spain',   lat:40.416,lng:-3.703,role:'exploring', color:'#60a5fa'}
+  ];
+
+  /* ── GeoJSON polygon → Path2D (Europe-viewport projection) */
+  function geoToPath(geometry){
+    if(!geometry)return null;
+    var p=new Path2D();
+    function ring(coords){
+      coords.forEach(function(c,i){
+        var pt=proj(c[1],c[0]);
+        i===0?p.moveTo(pt.x,pt.y):p.lineTo(pt.x,pt.y);
+      });
+      p.closePath();
+    }
+    if(geometry.type==='Polygon') geometry.coordinates.forEach(ring);
+    else if(geometry.type==='MultiPolygon')
+      geometry.coordinates.forEach(function(poly){poly.forEach(ring);});
+    return p;
+  }
+
+  /* ── Curved arc path between two projected points ─────── */
+  function arcPath(p1,p2){
+    var mx=(p1.x+p2.x)/2;
+    var my=(p1.y+p2.y)/2;
+    var dx=p2.x-p1.x, dy=p2.y-p1.y;
+    var len=Math.sqrt(dx*dx+dy*dy);
+    /* Control point arcs upward (northward on map) */
+    var cpx=mx, cpy=my-len*0.38;
+    return 'M'+p1.x+','+p1.y+' Q'+cpx+','+cpy+' '+p2.x+','+p2.y;
+  }
+
+  /* ── Main init ──────────────────────────────────────────── */
+  function initMap(){
+    var canvas=document.getElementById('yt-world-canvas');
+    var svgEl=document.getElementById('yt-map-svg');
+    var tipEl=document.getElementById('yt-tip');
+    if(!canvas||!svgEl)return;
+
+    /* Set up canvas at device pixel ratio */
+    var dpr=Math.min(window.devicePixelRatio||1,2);
+    canvas.width=W*dpr; canvas.height=H*dpr;
+    var ctx=canvas.getContext('2d');
+    ctx.scale(dpr,dpr);
+
+    /* ── Draw dotted land map ──────────────────────────── */
+    fetch('https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json')
+      .then(function(r){return r.json();})
+      .then(function(topo){
+        var countries=topojson.feature(topo,topo.objects.countries);
+
+        /* Rasterise land onto temp canvas */
+        var tmp=document.createElement('canvas');
+        tmp.width=W; tmp.height=H;
+        var tc=tmp.getContext('2d');
+        tc.fillStyle='#fff';
+        countries.features.forEach(function(f){
+          var path=geoToPath(f.geometry);
+          if(path)tc.fill(path);
+        });
+        var px=tc.getImageData(0,0,W,H).data;
+
+        /* Dot grid — only on land pixels */
+        var dotR=1.4, gap=3.5;
+        ctx.fillStyle='rgba(148,163,184,0.32)';
+        for(var x=0;x<W;x+=gap){
+          for(var y=0;y<H;y+=gap){
+            var idx=(Math.round(y)*W+Math.round(x))*4+3;
+            if(px[idx]>64){
+              ctx.beginPath();
+              ctx.arc(x,y,dotR,0,Math.PI*2);
+              ctx.fill();
+            }
+          }
+        }
+        buildSVG(svgEl,tipEl);
+      })
+      .catch(function(){
+        /* Fallback: uniform dot grid */
+        ctx.fillStyle='rgba(148,163,184,0.15)';
+        for(var x=0;x<W;x+=4){
+          for(var y=0;y<H;y+=4){
+            ctx.beginPath();
+            ctx.arc(x,y,1.2,0,Math.PI*2);
+            ctx.fill();
+          }
+        }
+        buildSVG(svgEl,tipEl);
+      });
+  }
+
+  /* ── Build SVG arcs + markers ───────────────────────────── */
+  function buildSVG(svgEl,tipEl){
+    var ns='http://www.w3.org/2000/svg';
+    var hq=CITIES.filter(function(c){return c.role==='hq';})[0];
+    var hqPos=proj(hq.lat,hq.lng);
+    var partners=CITIES.filter(function(c){return c.role!=='hq';});
+
+    /* Animated arc lines */
+    partners.forEach(function(city,i){
+      var pos=proj(city.lat,city.lng);
+      var d=arcPath(hqPos,pos);
+      var dx=pos.x-hqPos.x, dy=pos.y-hqPos.y;
+      var dashLen=Math.sqrt(dx*dx+dy*dy)*1.5;
+
+      var path=document.createElementNS(ns,'path');
+      path.setAttribute('d',d);
+      path.setAttribute('fill','none');
+      path.setAttribute('stroke',city.color);
+      path.setAttribute('stroke-width',city.role==='active'?'1.8':'1.2');
+      path.setAttribute('stroke-linecap','round');
+      path.setAttribute('opacity',city.role==='active'?'0.9':'0.5');
+      path.setAttribute('stroke-dasharray',dashLen);
+      path.setAttribute('stroke-dashoffset',dashLen);
+      path.style.animation='yt-arc 1.3s '+(0.4+i*0.22)+'s ease-out forwards';
+      svgEl.appendChild(path);
+    });
+
+    /* City markers */
+    CITIES.forEach(function(city,i){
+      var pos=proj(city.lat,city.lng);
+      var r=city.role==='hq'?5.5:3.5;
+      var g=document.createElementNS(ns,'g');
+      g.style.cursor='pointer';
+
+      /* Pulse ring */
+      var ring=document.createElementNS(ns,'circle');
+      ring.setAttribute('cx',pos.x);
+      ring.setAttribute('cy',pos.y);
+      ring.setAttribute('r',r);
+      ring.setAttribute('fill','none');
+      ring.setAttribute('stroke',city.color);
+      ring.setAttribute('stroke-width','1.5');
+      ring.setAttribute('class','yt-ring');
+      ring.style.animation='yt-ring 2.5s '+(i*0.4)+'s ease-out infinite';
+      g.appendChild(ring);
+
+      /* Solid core */
+      var dot=document.createElementNS(ns,'circle');
+      dot.setAttribute('cx',pos.x);
+      dot.setAttribute('cy',pos.y);
+      dot.setAttribute('r',r);
+      dot.setAttribute('fill',city.color);
+      g.appendChild(dot);
+
+      /* HQ badge */
+      if(city.role==='hq'){
+        var badge=document.createElementNS(ns,'text');
+        badge.setAttribute('x',pos.x+r+4);
+        badge.setAttribute('y',pos.y-r);
+        badge.setAttribute('fill',city.color);
+        badge.setAttribute('font-size','9');
+        badge.setAttribute('font-weight','700');
+        badge.setAttribute('font-family','Manrope,sans-serif');
+        badge.setAttribute('letter-spacing','0.8');
+        badge.textContent='HQ';
+        g.appendChild(badge);
+      }
+
+      /* Tooltip */
+      g.addEventListener('mouseenter',function(){
+        if(!tipEl)return;
+        tipEl.textContent=city.label;
+        tipEl.style.opacity='1';
+        tipEl.style.left=(pos.x/W*100)+'%';
+        tipEl.style.top=(pos.y/H*100)+'%';
+      });
+      g.addEventListener('mouseleave',function(){
+        if(tipEl)tipEl.style.opacity='0';
+      });
+
+      svgEl.appendChild(g);
+    });
+  }
+
+  /* ── Boot: wait for topojson CDN script ─────────────────── */
+  function boot(){
+    if(typeof topojson!=='undefined'){
+      initMap();
+    } else {
+      var tries=0;
+      var poll=setInterval(function(){
+        if(typeof topojson!=='undefined'){clearInterval(poll);initMap();}
+        else if(++tries>40)clearInterval(poll);
+      },100);
+    }
+  }
+
+  if(document.readyState==='loading'){
+    document.addEventListener('DOMContentLoaded',boot);
+  } else {
+    boot();
+  }
+}());
+</script>
 
 </body>
 </html>
