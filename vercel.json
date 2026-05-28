@@ -1,4 +1,5 @@
 {
+  "cleanUrls": false,
   "headers": [
     {
       "source": "/(.*)",
@@ -10,18 +11,18 @@
     }
   ],
   "rewrites": [
-    { "source": "/yalova-erasmus", "destination": "/yalova-erasmus.html" },
-    { "source": "/yalova-erasmus/", "destination": "/yalova-erasmus.html" },
-    { "source": "/tr",       "destination": "/" },
-    { "source": "/tr/",      "destination": "/" },
-    { "source": "/de",       "destination": "/" },
-    { "source": "/de/",      "destination": "/" },
+    { "source": "/yalova-erasmus",    "destination": "/yalova-erasmus.html" },
+    { "source": "/yalova-erasmus/",   "destination": "/yalova-erasmus.html" },
+    { "source": "/tr",                "destination": "/" },
+    { "source": "/tr/",               "destination": "/" },
+    { "source": "/de",                "destination": "/" },
+    { "source": "/de/",               "destination": "/" },
     { "source": "/tr/yalova-erasmus", "destination": "/yalova-erasmus.html" },
-    { "source": "/tr/yalova-erasmus/", "destination": "/yalova-erasmus.html" },
+    { "source": "/tr/yalova-erasmus/","destination": "/yalova-erasmus.html" },
     { "source": "/de/yalova-erasmus", "destination": "/yalova-erasmus.html" },
-    { "source": "/de/yalova-erasmus/", "destination": "/yalova-erasmus.html" },
-    { "source": "/tr/:path*", "destination": "/:path*" },
-    { "source": "/de/:path*", "destination": "/:path*" },
-    { "source": "/404",       "destination": "/404.html" }
+    { "source": "/de/yalova-erasmus/","destination": "/yalova-erasmus.html" },
+    { "source": "/tr/:path*",         "destination": "/:path*" },
+    { "source": "/de/:path*",         "destination": "/:path*" },
+    { "source": "/404",               "destination": "/404.html" }
   ]
 }
