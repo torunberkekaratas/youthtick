@@ -316,9 +316,46 @@ function applyPage() {
     '@type': 'FAQPage',
     'mainEntity': p.faqs.map(f => ({ '@type': 'Question', 'name': f.q, 'acceptedAnswer': { '@type': 'Answer', 'text': f.a } }))
   };
+  const articleSchema = {
+    '@type': 'Article',
+    'headline': p.h1,
+    'description': p.desc,
+    'url': canon,
+    'inLanguage': lang === 'tr' ? 'tr-TR' : lang === 'de' ? 'de-DE' : 'en-GB',
+    'author': { '@type': 'Organization', 'name': 'YouthTICK', 'url': 'https://youthtick.org' },
+    'publisher': { '@type': 'Organization', 'name': 'YouthTICK', 'logo': { '@type': 'ImageObject', 'url': 'https://youthtick.org/logo-square.png' } },
+    'datePublished': '2026-05-01',
+    'dateModified': '2026-05-28',
+    'about': [
+      { '@type': 'Thing', 'name': 'Erasmus+' },
+      { '@type': 'Thing', 'name': 'Yalova Erasmus' },
+      { '@type': 'Place', 'name': 'Yalova', 'containedInPlace': { '@type': 'Country', 'name': 'Türkiye' } }
+    ],
+    'mentions': [
+      { '@type': 'Organization', 'name': 'Erasmus+', 'url': 'https://erasmus-plus.ec.europa.eu' },
+      { '@type': 'Organization', 'name': 'Erasmus+ Türkiye' },
+      { '@type': 'Organization', 'name': 'Türkiye Ulusal Ajansı', 'alternateName': 'TCA Turkey' },
+      { '@type': 'EducationalOrganization', 'name': 'Yalova Üniversitesi', 'url': 'https://yalova.edu.tr' },
+      { '@type': 'Organization', 'name': 'Yalova Üniversitesi Uluslararası İlişkiler Ofisi' },
+      { '@type': 'Organization', 'name': 'European Solidarity Corps' },
+      { '@type': 'Organization', 'name': 'Avrupa Gönüllü Hizmeti' },
+      { '@type': 'Organization', 'name': 'T3 Vakfı' },
+      { '@type': 'GovernmentOrganization', 'name': 'GSB Gençlik Merkezi Yalova' },
+      { '@type': 'GovernmentOrganization', 'name': 'Gençlik ve Spor Bakanlığı' },
+      { '@type': 'GovernmentOrganization', 'name': 'Kent Konseyi Yalova' },
+      { '@type': 'GovernmentOrganization', 'name': 'Gençlik Meclisi Yalova' },
+      { '@type': 'Organization', 'name': 'Yalova Kızılay' },
+      { '@type': 'EducationalOrganization', 'name': 'Hochschule Osnabrück' },
+      { '@type': 'EducationalOrganization', 'name': 'University of Gdańsk' },
+      { '@type': 'Organization', 'name': 'YouthTICK', 'url': 'https://youthtick.org' },
+      { '@type': 'GovernmentOrganization', 'name': 'Yalova Belediyesi' },
+      { '@type': 'Organization', 'name': 'Avrupa Birliği', 'alternateName': 'European Union' }
+    ]
+  };
   const graph = {
     '@context': 'https://schema.org',
     '@graph': [
+      articleSchema,
       {
         '@type': 'WebPage',
         'name': p.h1,
