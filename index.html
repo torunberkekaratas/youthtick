@@ -4,7 +4,9 @@
   <link rel="icon" type="image/svg+xml" href="favicon.svg" />
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width,initial-scale=1"/>
-  
+  <!-- Critical CSS — placed first so browser starts download before parsing meta/schema -->
+  <link rel="stylesheet" href="assets/css/main.css"/>
+  <link rel="stylesheet" href="assets/css/home.css"/>
   <!-- Security Headers -->
   <meta http-equiv="X-Content-Type-Options" content="nosniff"/>
   <meta http-equiv="X-Frame-Options" content="SAMEORIGIN"/>
@@ -122,15 +124,17 @@
   }
   </script>
   <!-- ── Performance: resource hints ──────────────────────────── -->
-  <!-- Preload LCP image (WebP primary) before HTML parser reaches <img> -->
-  <!-- Serve right-sized hero: 720px on mobile, 1440px on desktop -->
-  <link rel="preload" href="assets/img/hero-main-720.webp" as="image" type="image/webp" fetchpriority="high" media="(max-width: 768px)">
-  <link rel="preload" href="assets/img/hero-main.webp"     as="image" type="image/webp" fetchpriority="high" media="(min-width: 769px)">
+  <!-- Preload nav logo: browser only discovers logo.svg after renderNav() JS runs
+       (≈980ms delay). Preloading here cuts that to ~0ms resource load delay. -->
+  <link rel="preload" as="image" href="logo.svg" fetchpriority="high">
+  <!-- Preload LCP hero image before HTML parser reaches <img>.
+       Three srcset breakpoints match the <picture> sizes below:
+       ≤480px → 720w, ≤768px (Lighthouse 3×DPR ≈ 945px) → 1080w, desktop → 1440w -->
+  <link rel="preload" href="assets/img/hero-main-720.webp"  as="image" type="image/webp" fetchpriority="high" media="(max-width: 480px)">
+  <link rel="preload" href="assets/img/hero-main-1080.webp" as="image" type="image/webp" fetchpriority="high" media="(min-width: 481px) and (max-width: 768px)">
+  <link rel="preload" href="assets/img/hero-main.webp"      as="image" type="image/webp" fetchpriority="high" media="(min-width: 769px)">
   <!-- Preload world-atlas data so map fetch starts before JS runs -->
   <link rel="preload" href="https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json" as="fetch" crossorigin="anonymous">
-  <!-- Start CSS download earlier in network waterfall -->
-  <link rel="preload" href="assets/css/main.css" as="style">
-  <link rel="preload" href="assets/css/home.css" as="style">
   <!-- modulepreload: download the entire JS module tree in parallel.
        Without this, browser walks app→i18n→locales sequentially = 2.5s chain.
        With modulepreload all 12 modules start at HTML parse time = ~1 RTT. -->
@@ -146,8 +150,6 @@
   <link rel="modulepreload" href="assets/js/animations/cursor.js">
   <link rel="modulepreload" href="assets/js/animations/card-tilt.js">
   <link rel="modulepreload" href="assets/js/animations/scroll.js">
-  <link rel="stylesheet" href="assets/css/main.css"/>
-  <link rel="stylesheet" href="assets/css/home.css"/>
   <script src="assets/js/lucide.min.js" defer></script>
   <script src="assets/js/home.js" defer></script>
   <script type="module" src="assets/js/core/app.js"></script>
@@ -253,8 +255,8 @@
           <picture>
             <!-- Mobile: 720px WebP (52KB) — Desktop: 1440px WebP (162KB) -->
             <source
-              srcset="assets/img/hero-main-720.webp 720w, assets/img/hero-main.webp 1440w"
-              sizes="(max-width: 768px) 720px, 1440px"
+              srcset="assets/img/hero-main-720.webp 720w, assets/img/hero-main-1080.webp 1080w, assets/img/hero-main.webp 1440w"
+              sizes="(max-width: 480px) 100vw, (max-width: 768px) 100vw, 1440px"
               type="image/webp"
             >
             <img

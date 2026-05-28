@@ -6,7 +6,7 @@ export function renderFooter() {
       <div class="footer-grid">
 
         <div class="footer-brand">
-          <img src="logoalt.png" alt="YouthTICK Light Logo" style="height: 64px; width: auto; margin-bottom:1.5rem; opacity: 0.9;" />
+          <img src="logoalt.png" alt="YouthTICK Light Logo" width="256" height="64" style="height: 64px; width: auto; margin-bottom:1.5rem; opacity: 0.9;" />
           <p class="footer-desc" data-i18n="footer.desc" style="color:var(--text-light); opacity:0.8; font-size:1.05rem; line-height:1.6; max-width: 320px;">
             A youth initiative dedicated to building intercultural bridges and civic engagement across Europe.
           </p>

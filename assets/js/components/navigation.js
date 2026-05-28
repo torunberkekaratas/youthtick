@@ -30,7 +30,7 @@ export function renderNav() {
       <div class="nav-inner">
 
         <a href="index.html" class="nav-logo" aria-label="YouthTICK Home">
-          <img src="logo.svg" alt="YouthTICK Logo" style="height: 44px; width: auto; display: block;" />
+          <img src="logo.svg" alt="YouthTICK Logo" fetchpriority="high" width="165" height="44" style="height: 44px; width: auto; display: block;" />
         </a>
 
         <ul class="nav-links" role="list">

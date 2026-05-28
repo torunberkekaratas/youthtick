@@ -114,7 +114,8 @@
       canvas.width  = section.offsetWidth;
       canvas.height = section.offsetHeight;
     }
-    resize();
+    // Defer initial layout read to rAF — prevents forced reflow on DOMContentLoaded
+    requestAnimationFrame(resize);
     window.addEventListener('resize', resize, { passive: true });
 
     /* Gentle floating specks */
