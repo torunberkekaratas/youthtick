@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>YouthTICK Blog — Erasmus+, Civic & Youth Innovation</title>
+  <meta name="description" content="In-depth articles on Erasmus+, youth participation, sustainability and intercultural dialogue — written by the YouthTICK team in Yalova, Türkiye."/>
+  <meta name="robots" content="index, follow"/>
+  <meta property="og:type" content="article"/>
+  <meta property="og:site_name" content="YouthTICK"/>
+  <meta property="og:locale" content="en_GB"/>
+  <meta property="og:image" content="https://youthtick.org/og-image.jpg"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <link rel="stylesheet" href="styles.css"/>
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
+  <script type="module" src="assets/js/core/app.js"></script>
+  <script src="assets/js/data/articles.js"></script>
+  <style>
+    .article-hero { padding:calc(var(--nav-h) + 60px) 0 60px; background:var(--bg-soft); border-bottom:1px solid var(--border-soft); text-align:center; }
+    .article-meta { color:var(--ink-ghost); font-size:0.85rem; margin-bottom:16px; display:flex; align-items:center; justify-content:center; gap:16px; flex-wrap:wrap; }
+    .article-title { font-family:var(--font-display); font-size:clamp(2rem,4vw,3.2rem); letter-spacing:-0.02em; margin-bottom:28px; max-width:800px; margin-inline:auto; line-height:1.18; }
+    .article-img { width:100%; max-height:480px; object-fit:cover; border-radius:var(--radius-xl); margin-bottom:56px; box-shadow:var(--shadow-lg); }
+    .article-body { max-width:700px; margin:0 auto; padding-bottom:100px; }
+    .article-body p { font-size:1.05rem; line-height:1.82; color:var(--ink); margin-bottom:28px; }
+    .article-body h2 { font-family:var(--font-display); font-size:1.55rem; letter-spacing:-0.015em; margin:48px 0 16px; color:var(--ink); }
+    .article-body h3 { font-size:1.15rem; font-weight:700; margin:32px 0 12px; color:var(--ink); }
+    .article-body ul { margin:0 0 28px 24px; }
+    .article-body li { font-size:1.05rem; line-height:1.75; color:var(--ink-muted); margin-bottom:8px; }
+    .article-body blockquote { border-left:3px solid var(--green); margin:36px 0; padding:16px 28px; background:var(--green-soft); border-radius:0 var(--radius-md) var(--radius-md) 0; font-style:italic; font-size:1.1rem; color:var(--green-deep); }
+    .article-back { display:inline-flex; align-items:center; gap:8px; color:var(--ink-faint); font-size:0.875rem; font-weight:600; margin-bottom:32px; transition:color .2s; }
+    .article-back:hover { color:var(--green-dark); }
+    .article-author { display:flex; align-items:center; gap:16px; padding:28px 0; border-top:1px solid var(--border-soft); border-bottom:1px solid var(--border-soft); margin-bottom:48px; }
+    .article-author-img { width:52px; height:52px; border-radius:50%; object-fit:cover; border:2px solid var(--border-soft); }
+    .article-author-name { font-weight:700; font-size:0.95rem; }
+    .article-author-role { font-size:0.8rem; color:var(--ink-ghost); margin-top:2px; }
+    .article-share { display:flex; align-items:center; gap:16px; margin-top:56px; padding-top:32px; border-top:1px solid var(--border-soft); }
+    .share-label { font-size:0.82rem; font-weight:700; color:var(--ink-ghost); text-transform:uppercase; letter-spacing:0.8px; }
+    .share-btn { display:inline-flex; align-items:center; gap:8px; padding:9px 18px; border:1.5px solid var(--border); border-radius:var(--radius-full); font-size:0.82rem; font-weight:600; color:var(--ink-muted); transition:all .2s; cursor:pointer; background:white; }
+    .share-btn:hover { border-color:var(--green); color:var(--green-dark); background:var(--green-soft); }
+    .article-newsletter { padding:60px 0; background:var(--ink); border-top:1px solid rgba(255,255,255,0.06); }
+    .article-newsletter-inner { max-width:560px; margin:0 auto; text-align:center; }
+    .art-nl-form { display:flex; gap:12px; margin-top:28px; }
+    .art-nl-input { flex:1; padding:13px 18px; border-radius:var(--radius-md); border:none; font-family:var(--font-body); font-size:0.9rem; background:rgba(255,255,255,0.1); color:white; outline:none; border:1.5px solid rgba(255,255,255,0.12); }
+    .art-nl-input::placeholder { color:rgba(255,255,255,0.35); }
+    .art-nl-input:focus { border-color:var(--green); background:rgba(255,255,255,0.15); }
+    @media(max-width:600px){ .art-nl-form{flex-direction:column;} .art-nl-input{font-size:1rem;} }
+    .related-section { padding:80px 0; background:var(--bg-soft); border-top:1px solid var(--border-soft); }
+    .related-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:24px; margin-top:40px; }
+    @media(max-width:768px){ .related-grid{grid-template-columns:1fr;} }
+  </style>
+</head>
+<body>
+<script>document.addEventListener('DOMContentLoaded',()=>{ if(window.lucide)lucide.createIcons(); setTimeout(()=>{if(window.lucide)lucide.createIcons();},400); });</script>
+
+<!-- Article hero — populated by JS -->
+<section class="article-hero" id="article-hero">
+  <div class="container">
+    <div class="article-meta" id="article-meta" data-i18n="art.loading">Loading...</div>
+    <h1 class="article-title" id="article-title" data-i18n="art.loading.title">Loading article…</h1>
+  </div>
+</section>
+
+<section class="container" style="padding-top:56px;">
+  <img id="article-img" src="" alt="Article cover" class="article-img" loading="eager"/>
+  <div class="article-body">
+    <a href="blog.html" class="article-back">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
+      <span data-i18n="art.back">Back to Blog</span>
+    </a>
+    <div class="article-author" id="article-author"></div>
+    <div id="article-content"></div>
+    <div class="article-share">
+      <span class="share-label" data-i18n="art.share">Share</span>
+      <button class="share-btn" onclick="copyLink()" id="copy-link-btn">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg>
+        <span data-i18n="art.copy">Copy Link</span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<section class="article-newsletter">
+  <div class="container">
+    <div class="article-newsletter-inner">
+      <div class="section-label" style="justify-content:center;">
+        <span class="section-label-line" style="background:var(--green);"></span>
+        <span class="section-label-text" style="color:var(--green);" data-i18n="blog.newsletter.label">Newsletter</span>
+      </div>
+      <h2 class="display-sm" style="color:white;margin-top:14px;" data-i18n="blog.newsletter.title">The YouthTICK Digest.</h2>
+      <p style="color:rgba(255,255,255,0.5);margin-top:10px;font-size:0.9rem;line-height:1.65;" data-i18n="blog.newsletter.sub">Occasional updates on our programs, partnership opportunities and resources in the youth field — no spam, no overstatement.</p>
+      <form onsubmit="handleArticleNewsletter(event)" class="art-nl-form">
+        <input type="email" name="Newsletter Email" class="art-nl-input" placeholder="your@email.com" required id="art-nl-email"/>
+        <button type="submit" class="btn btn-primary" id="art-nl-submit" data-i18n="blog.newsletter.cta">Subscribe</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section class="related-section">
+  <div class="container">
+    <div class="section-label"><span class="section-label-line"></span><span class="section-label-text" data-i18n="art.more">More Articles</span></div>
+    <h2 class="display-md" style="margin-top:16px;max-width:400px;" data-i18n="art.keep">Keep reading.</h2>
+    <div class="related-grid" id="related-grid"></div>
+  </div>
+</section>
+
+<script>
+
+function getLangCode() {
+  const l = window.currentLang || document.documentElement.lang || 'en';
+  return ['en', 'tr', 'de'].includes(l) ? l : 'en';
+}
+
+function getLangPrefix(lang) {
+  return lang === 'en' ? '' : '/' + lang;
+}
+
+function toLangLocale(lang) {
+  if (lang === 'tr') return 'tr_TR';
+  if (lang === 'de') return 'de_DE';
+  return 'en_GB';
+}
+
+function buildArticleHref(id, article, lang) {
+  const slug = article && article.slug ? '&slug=' + encodeURIComponent(article.slug) : '';
+  return `${getLangPrefix(lang)}/article.html?id=${id}${slug}`;
+}
+
+function resolveArticleDesc(article, lang, fallbackContent) {
+  const localized =
+    article['seoDesc_' + lang] ||
+    article.seoDesc ||
+    article['excerpt_' + lang] ||
+    article.excerpt ||
+    '';
+  if (localized) return localized.length > 165 ? localized.slice(0, 162) + '…' : localized;
+  const plainText = fallbackContent.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim();
+  return plainText.length > 165 ? plainText.slice(0, 162) + '…' : plainText;
+}
+
+function buildFaqSchema(article, lang) {
+  const faqs = article.faq && article.faq[lang];
+  if (!Array.isArray(faqs) || !faqs.length) return null;
+  return {
+    '@type': 'FAQPage',
+    'mainEntity': faqs.map(item => ({
+      '@type': 'Question',
+      'name': item.q,
+      'acceptedAnswer': { '@type': 'Answer', 'text': item.a }
+    }))
+  };
+}
+
+function renderFaqSection(article, lang) {
+  const faqs = article.faq && article.faq[lang];
+  if (!Array.isArray(faqs) || !faqs.length) return '';
+  const title = lang === 'tr' ? 'Sık Sorulan Sorular' : lang === 'de' ? 'Häufige Fragen' : 'Frequently Asked Questions';
+  return `
+    <section class="article-faq" style="margin-top:56px;border-top:1px solid var(--border-soft);padding-top:28px;">
+      <h2 style="font-family:var(--font-display);font-size:1.45rem;margin-bottom:18px;">${title}</h2>
+      ${faqs.map(item => `
+        <details style="border:1px solid var(--border-soft);border-radius:10px;padding:14px 16px;margin-bottom:10px;background:white;">
+          <summary style="cursor:pointer;font-weight:700;line-height:1.5;">${item.q}</summary>
+          <p style="margin-top:12px;color:var(--ink-muted);line-height:1.7;">${item.a}</p>
+        </details>
+      `).join('')}
+    </section>
+  `;
+}
+
+function loadArticle() {
+  const params  = new URLSearchParams(window.location.search);
+  const id      = params.get('id') || '0';
+  const article = ARTICLES[id] || ARTICLES['0'];
+  const lang    = getLangCode();
+  const origin  = window.location.origin;
+
+  // Language-aware field access
+  const title   = article['title_'   + lang] || article.title;
+  const content = article['content_' + lang] || article.content;
+  const seoTitle = article['seoTitle_' + lang] || article.seoTitle || title + ' | YouthTICK';
+  const desc = resolveArticleDesc(article, lang, content);
+
+  // Update page title
+  document.title = seoTitle;
+
+  // Inject dynamic SEO meta tags
+  document.querySelectorAll('[data-dynamic-meta]').forEach(el => el.remove());
+  document.querySelectorAll('meta[name="description"], meta[name="robots"], meta[property^="og:"], meta[name^="twitter:"]').forEach(el => el.remove());
+  document.querySelectorAll('link[rel="canonical"], link[rel="alternate"][hreflang]').forEach(el => el.remove());
+  const head = document.head;
+  const addMeta = (attrs) => {
+    const tag = attrs.tag || 'meta';
+    delete attrs.tag;
+    const el = document.createElement(tag);
+    Object.entries(attrs).forEach(([k, v]) => el.setAttribute(k, v));
+    el.setAttribute('data-dynamic-meta', '');
+    head.appendChild(el);
+  };
+  const canon = origin + buildArticleHref(id, article, lang);
+  addMeta({ tag: 'link', rel: 'canonical', href: canon });
+  addMeta({ name: 'description', content: desc });
+  addMeta({ name: 'robots', content: 'index, follow' });
+  addMeta({ property: 'og:type', content: 'article' });
+  addMeta({ property: 'og:title', content: seoTitle });
+  addMeta({ property: 'og:description', content: desc });
+  addMeta({ property: 'og:image', content: article.img });
+  addMeta({ property: 'og:url', content: canon });
+  addMeta({ property: 'og:site_name', content: 'YouthTICK' });
+  addMeta({ property: 'og:locale', content: toLangLocale(lang) });
+  addMeta({ name: 'twitter:card', content: 'summary_large_image' });
+  addMeta({ name: 'twitter:title', content: seoTitle });
+  addMeta({ name: 'twitter:description', content: desc });
+  addMeta({ name: 'twitter:image', content: article.img });
+  // Hreflang alternates
+  ['en', 'tr', 'de'].forEach(lng => {
+    addMeta({ tag: 'link', rel: 'alternate', hreflang: lng, href: origin + buildArticleHref(id, article, lng) });
+  });
+  addMeta({ tag: 'link', rel: 'alternate', hreflang: 'x-default', href: origin + buildArticleHref(id, article, 'en') });
+
+  // JSON-LD graph
+  const graph = [];
+  graph.push({
+    '@type': 'Article',
+    'headline': title,
+    'author': { '@type': 'Person', 'name': article.author },
+    'datePublished': article.publishedAt || article.date,
+    'dateModified': article.updatedAt || article.publishedAt || article.date,
+    'image': { '@type': 'ImageObject', 'url': article.img, 'width': 1200, 'height': 630 },
+    'publisher': {
+      '@type': 'Organization',
+      'name': 'YouthTICK',
+      'url': 'https://youthtick.org',
+      'logo': { '@type': 'ImageObject', 'url': 'https://youthtick.org/logoalt.png' }
+    },
+    'url': canon,
+    'description': desc,
+    'articleSection': article.category,
+    'inLanguage': lang === 'tr' ? 'tr-TR' : lang === 'de' ? 'de-DE' : 'en-GB',
+    'mainEntityOfPage': { '@type': 'WebPage', '@id': canon }
+  });
+  graph.push({
+    '@type': 'BreadcrumbList',
+    'itemListElement': [
+      { '@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': origin + getLangPrefix(lang) + '/' },
+      { '@type': 'ListItem', 'position': 2, 'name': 'Blog', 'item': origin + getLangPrefix(lang) + '/blog.html' },
+      { '@type': 'ListItem', 'position': 3, 'name': title, 'item': canon }
+    ]
+  });
+  const faqSchema = buildFaqSchema(article, lang);
+  if (faqSchema) graph.push(faqSchema);
+
+  const ld = document.createElement('script');
+  ld.type = 'application/ld+json';
+  ld.setAttribute('data-dynamic-meta', '');
+  ld.textContent = JSON.stringify({ '@context': 'https://schema.org', '@graph': graph });
+  head.appendChild(ld);
+
+  // Meta
+  const readText = lang === 'tr' ? 'okuma' : lang === 'de' ? 'Lesezeit' : 'read';
+  document.getElementById('article-meta').innerHTML = `
+    <span class="tag ${article.catClass}">${article.category}</span>
+    <span>${article.date}</span>
+    <span>·</span>
+    <span>${article.readTime} ${readText}</span>
+  `;
+
+  // Title
+  document.getElementById('article-title').textContent = title;
+
+  // Image
+  const img = document.getElementById('article-img');
+  img.src = article.img;
+  img.alt = title;
+
+  // Author
+  document.getElementById('article-author').innerHTML = `
+    <img src="${article.authorImg}" alt="${article.author}" class="article-author-img" loading="lazy"/>
+    <div>
+      <div class="article-author-name">${article.author}</div>
+      <div class="article-author-role">${article.authorRole} · YouthTICK</div>
+    </div>
+  `;
+
+  // Content
+  document.getElementById('article-content').innerHTML = content + renderFaqSection(article, lang);
+
+  // Related articles (same category first, up to 3)
+  const related = Object.entries(ARTICLES)
+    .filter(([k]) => k !== id)
+    .sort((a, b) => {
+      const aSame = a[1].category === article.category ? 0 : 1;
+      const bSame = b[1].category === article.category ? 0 : 1;
+      if (aSame !== bSame) return aSame - bSame;
+      return new Date(b[1].publishedAt || '2000-01-01') - new Date(a[1].publishedAt || '2000-01-01');
+    })
+    .slice(0, 3);
+
+  const readLabel = lang === 'tr' ? 'Oku →' : lang === 'de' ? 'Lesen →' : 'Read →';
+  document.getElementById('related-grid').innerHTML = related.map(([k, a]) => {
+    const aTitle = a['title_' + lang] || a.title;
+    return `
+    <a href="${buildArticleHref(k, a, lang)}" class="blog-card" style="text-decoration:none;">
+      <img class="blog-card-img" src="${a.img}" alt="${aTitle}" loading="lazy"/>
+      <div class="blog-card-body">
+        <span class="tag ${a.catClass}">${a.category}</span>
+        <div class="blog-card-title">${aTitle}</div>
+        <div class="blog-card-meta"><span>${a.date} · ${a.readTime}</span><span style="color:var(--green-dark);">${readLabel}</span></div>
+      </div>
+    </a>
+  `;
+  }).join('');
+}
+
+function copyLink() {
+  const lang = document.documentElement.lang || 'en';
+  const copiedTxt = lang==='tr' ? '✓ Kopyalandı!' : lang==='de' ? '✓ Kopiert!' : '✓ Copied!';
+  const copyTxt   = lang==='tr' ? 'Bağlantıyı Kopyala' : lang==='de' ? 'Link kopieren' : 'Copy Link';
+  navigator.clipboard.writeText(window.location.href).then(() => {
+    const btn = document.querySelector('.share-btn');
+    btn.textContent = copiedTxt;
+    setTimeout(() => {
+      btn.innerHTML = '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg> <span data-i18n="art.copy">' + copyTxt + '</span>';
+    }, 2000);
+  });
+}
+
+// ─── Newsletter handler — supports Mailchimp or formsubmit fallback ───────────
+// To connect Mailchimp: set window.YT_MAILCHIMP_URL before app.js loads.
+// Format: 'https://DOMAIN.us1.list-manage.com/subscribe/post?u=USERID&id=LISTID'
+// (Get this from Mailchimp → Audience → Signup forms → Embedded forms → Action URL)
+function handleArticleNewsletter(e) {
+  e.preventDefault();
+  const btn    = document.getElementById('art-nl-submit');
+  const emailEl = document.getElementById('art-nl-email');
+  const lang   = document.documentElement.lang || 'en';
+  const waitTxt = lang==='tr' ? 'Bekleyin…'          : lang==='de' ? 'Warten…'    : 'Please wait…';
+  const okTxt   = lang==='tr' ? '✓ Abone Oldunuz!'   : lang==='de' ? '✓ Abonniert!':'✓ Subscribed!';
+  const errTxt  = lang==='tr' ? 'Hata, tekrar dene.' : lang==='de' ? 'Fehler!'     : 'Error, retry.';
+  const origTxt = btn.textContent;
+  btn.textContent = waitTxt; btn.disabled = true;
+  const email = emailEl.value.trim();
+
+  // ── Option A: Mailchimp (set window.YT_MAILCHIMP_URL) ────────────────────
+  if (window.YT_MAILCHIMP_URL) {
+    const body = new URLSearchParams({ EMAIL: email, b_tag: '' }); // b_ is honeypot
+    fetch(window.YT_MAILCHIMP_URL.replace('/post?', '/post-json?') + '&c=?', {
+      method: 'POST', mode: 'no-cors', body
+    }).then(() => {
+      btn.textContent = okTxt; btn.style.background = '#16a34a'; e.target.reset();
+    }).catch(() => {
+      btn.textContent = okTxt; btn.style.background = '#16a34a'; e.target.reset(); // no-cors always succeeds
+    });
+    return;
+  }
+
+  // ── Option B: formsubmit fallback ─────────────────────────────────────────
+  const formData = new FormData(e.target);
+  formData.set('_subject', 'Newsletter signup — YouthTICK');
+  fetch('https://formsubmit.co/ajax/torunberkekaratas@gmail.com', {
+    method: 'POST', headers: { 'Accept': 'application/json' }, body: formData
+  })
+  .then(r => r.json())
+  .then(() => { btn.textContent = okTxt; btn.style.background = '#16a34a'; e.target.reset(); })
+  .catch(() => { btn.textContent = errTxt; btn.disabled = false; setTimeout(()=>{ btn.textContent = origTxt; }, 3000); });
+}
+
+// Initial load + re-render when language switches
+document.addEventListener('DOMContentLoaded', loadArticle);
+window.addEventListener('languageChanged', loadArticle);
+</script>
+
+</body>
+</html>

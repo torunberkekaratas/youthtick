@@ -22,7 +22,9 @@ Priority-Pages:
 - https://www.youthtick.org/yalova-erasmus.html (Complete Erasmus+ application guide for Yalova youth)
 - https://www.youthtick.org/yalova-universite.html (Yalova University student life, Erasmus, departments, campus guide)
 - https://www.youthtick.org/yalova-genclik-toplulugu.html (Yalova youth organizations: T3, Kızılay, Yeşilay, Gençlik Meclisi, Kent Konseyi)
-- https://www.youthtick.org/yalova-girisimcilik.html (Entrepreneurship ecosystem: YTSO, T3, TEKMER, OSB, Teknopark)
+- https://www.youthtick.org/yalova-girisimcilik.html (Entrepreneurship ecosystem: YTSO, T3, TEKMER, OSB, Teknopark — hub page)
+- https://www.youthtick.org/yalova-ytso.html (YTSO Yalova and Genç Girişimciler program: membership, application, TOBB network, KOSGEB integration)
+- https://www.youthtick.org/yalova-teknopark.html (Yalova TEKMER incubator, Yalova OSB industrial zone, Yalova Teknopark project — comparison and application guide)
 - https://www.youthtick.org/yalova-sivil-toplum.html (Civil society organizations: T3 Vakfı, Kızılay, Yeşilay, GSB gençlik merkezleri)
 - https://www.youthtick.org/yalova-ogrenci-yasami.html (Student life in Yalova: housing, transport, social life, budget tips)
 - https://www.youthtick.org/yalova-egitim.html (Education and language learning in Yalova: courses, certifications, dil okulları)
@@ -31,6 +33,7 @@ Priority-Pages:
 - https://www.youthtick.org/yalova-teknofest.html (Teknofest Yalova: kategoriler, başvuru takvimi, Yalova Üniversitesi takımları, T3 desteği)
 - https://www.youthtick.org/yalova-esc-gonullu.html (European Solidarity Corps volunteering guide: ESC application, eligibility, projects, Youthpass)
 - https://www.youthtick.org/yalova-dil-okulu.html (Language school comparison: Akın Dil, TÖMER, prices, Erasmus preparation programs)
+- https://www.youthtick.org/yalova-sks.html (Yalova SKS — Yalova Üniversitesi Sağlık, Kültür ve Spor Dairesi: student clubs, sports facilities, scholarships, health services, cultural events)
 - https://www.youthtick.org/blog.html (Research, insights, and youth mobility trends)
 - https://www.youthtick.org/partnership.html (How to collaborate with YouthTICK)
 - https://www.youthtick.org/projects.html (Current and planned programs)
@@ -48,8 +51,11 @@ Local-Topics:
 - Yalova Kızılay: yalova-genclik-toplulugu.html, yalova-sivil-toplum.html, article?id=73
 - YTSO Yalova Genç Girişimci: yalova-girisimcilik.html, article?id=74
 - Yalova Dil Okulu / Akın Dil: yalova-egitim.html, article?id=75
+- Yalova SKS / Yalova Üniversitesi SKS / Sağlık Kültür Spor Yalova: yalova-sks.html, yalova-universite.html
 - Yalova Öğrenci Yaşamı: yalova-ogrenci-yasami.html, yalova-universite.html
-- Yalova Girişimcilik: yalova-girisimcilik.html, article?id=55, article?id=56, article?id=64, article?id=74
+- Yalova Girişimcilik: yalova-girisimcilik.html, yalova-ytso.html, yalova-teknopark.html, article?id=55, article?id=56, article?id=64, article?id=74
+- YTSO Yalova / Yalova Genç Girişimciler / YTSO Genç Girişimci: yalova-ytso.html, yalova-girisimcilik.html, article?id=74
+- Yalova TEKMER / Yalova OSB / Yalova Teknopark / Yalova Organize Sanayi Bölgesi: yalova-teknopark.html, yalova-girisimcilik.html
 
 # Content Guidelines
 Update-Frequency: Weekly (blog), Monthly (main pages)
@@ -106,7 +112,7 @@ Erasmus+ Programme Countries: Available
 Volunteers: 47+
 Countries-Reached: 12
 Articles-Published: 76
-Pillar-Pages: 11
+Pillar-Pages: 14
 Active-Projects: 3
 Founding-Year: 2026
 

@@ -1,0 +1,1444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title data-titlekey="vol.pageTitle">Yalova'da Gönüllü Ol — YouthTICK Erasmus+ Gençlik Programı</title>
+  <meta name="description" content="Yalova'da YouthTICK ile gönüllü ol: gençlik katılım programlarına katıl, Erasmus+ projelerini destekle ve Avrupa ağı kur. Deneyim gerekmez."/>
+  <meta name="keywords" content="yalova gönüllülük, yalova gönüllü olmak, yalova gençlik gönüllüsü, yalova erasmus gönüllü, yalova sivil toplum gönüllü"/>
+  <link rel="canonical" href="https://youthtick.org/volunteer.html"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://youthtick.org/volunteer.html"/>
+  <meta property="og:title" content="Volunteer with YouthTICK — Youth Civic Engagement"/>
+  <meta property="og:description" content="Join YouthTICK as a volunteer: support Erasmus+ cooperation, intercultural youth exchange and civic innovation programs from Yalova, Türkiye."/>
+  <meta property="og:image" content="https://youthtick.org/og-volunteer.jpg"/>
+  <meta property="og:site_name" content="YouthTICK"/>
+  <meta property="og:locale" content="en_GB"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:title" content="Volunteer with YouthTICK — Youth Civic Engagement"/>
+  <meta name="twitter:description" content="Join youth participation programs, support Erasmus+ cooperation and contribute to civic innovation initiatives in Yalova, Türkiye and across Europe."/>
+  <meta name="twitter:image" content="https://youthtick.org/og-volunteer.jpg"/>
+  <!-- Hreflang Tags -->
+  <link rel="alternate" hreflang="en" href="https://youthtick.org/volunteer.html"/>
+  <link rel="alternate" hreflang="tr" href="https://youthtick.org/tr/volunteer.html"/>
+  <link rel="alternate" hreflang="de" href="https://youthtick.org/de/volunteer.html"/>
+  <link rel="alternate" hreflang="x-default" href="https://youthtick.org/volunteer.html"/>
+  <meta name="twitter:image" content="https://youthtick.org/og-volunteer.jpg"/>
+  <link rel="stylesheet" href="styles.css"/>
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
+      <style>
+    .vol-hero { padding:calc(var(--nav-h) + 80px) 0 80px; background:var(--bg-soft); border-bottom:1px solid var(--border-soft); }
+    .vol-hero-inner { display:grid; grid-template-columns:1fr 1fr; gap:80px; align-items:center; }
+    .vol-opportunity-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:24px; padding:80px 0; border-bottom:1px solid var(--border-soft); }
+    .vol-opp-card { background:white; border:1px solid var(--border-soft); border-radius:var(--radius-lg); padding:32px 24px; transition:all .3s var(--ease-out); cursor:pointer; position:relative; }
+    .vol-opp-card:hover { box-shadow:var(--shadow-md); transform:translateY(-4px); border-color:var(--green); }
+    .vol-opp-card::after { content:'→'; position:absolute; bottom:18px; right:20px; width:32px; height:32px; display:flex; align-items:center; justify-content:center; background:var(--green-soft); border-radius:50%; font-size:0.85rem; font-weight:700; color:var(--green-dark); opacity:0; transition:opacity .2s; }
+    .vol-opp-card:hover::after { opacity:1; }
+    .vol-opp-icon { font-size:2rem; margin-bottom:20px; display:block; }
+    .vol-opp-title { font-weight:700; font-size:1rem; margin-bottom:10px; }
+    .vol-opp-desc { font-size:0.875rem; color:var(--ink-faint); line-height:1.65; margin-bottom:16px; }
+    .vol-opp-duration { font-size:0.78rem; font-weight:600; color:var(--green-dark); }
+    /* Role Modal */
+    .role-modal-overlay { position:fixed; inset:0; background:rgba(11,26,44,0.72); z-index:9000; display:flex; align-items:center; justify-content:center; padding:20px; opacity:0; pointer-events:none; transition:opacity .3s ease; backdrop-filter:blur(4px); }
+    .role-modal-overlay.open { opacity:1; pointer-events:auto; }
+    .role-modal-box { background:white; border-radius:var(--radius-xl); max-width:880px; width:100%; max-height:88vh; overflow-y:auto; scrollbar-width:thin; position:relative; transform:translateY(28px); transition:transform .35s cubic-bezier(0.16,1,0.3,1); }
+    .role-modal-overlay.open .role-modal-box { transform:translateY(0); }
+    .role-modal-head { padding:32px 36px 0; display:flex; justify-content:space-between; align-items:center; gap:16px; }
+    /* Icon bubble */
+    .role-modal-icon-wrap { width:56px; height:56px; background:var(--green-soft); border-radius:16px; display:flex; align-items:center; justify-content:center; flex-shrink:0; }
+    .role-modal-icon { font-size:1.9rem; line-height:1; }
+    .role-modal-close-btn { width:36px; height:36px; border:none; border-radius:10px; background:var(--bg-soft); cursor:pointer; font-size:1rem; color:var(--ink-ghost); display:flex; align-items:center; justify-content:center; flex-shrink:0; transition:background .2s, color .2s; }
+    .role-modal-close-btn:hover { background:var(--border-soft); color:var(--ink); }
+    .role-modal-body { padding:18px 36px 0; }
+    .role-modal-title { font-family:var(--font-display); font-size:1.5rem; letter-spacing:-0.018em; font-weight:700; margin:14px 0 8px; color:var(--ink); }
+    .role-modal-badge { display:inline-flex; align-items:center; gap:6px; background:transparent; border:1.5px solid var(--border-soft); color:var(--ink-muted); font-size:0.78rem; font-weight:600; padding:5px 13px; border-radius:var(--radius-full); margin-bottom:22px; }
+    /* Sections */
+    .role-modal-section { margin-top:22px; padding-top:18px; border-top:1px solid var(--border-soft); }
+    .role-modal-section.no-border { border-top:none; padding-top:0; margin-top:0; }
+    .role-modal-section h4 { font-size:0.68rem; font-weight:800; letter-spacing:1.2px; text-transform:uppercase; color:var(--green-dark); margin-bottom:14px; display:flex; align-items:center; gap:8px; }
+    .role-modal-section h4::before { content:''; display:block; width:3px; height:13px; background:var(--green); border-radius:99px; flex-shrink:0; }
+    .role-modal-section p { font-size:0.9rem; color:var(--ink-muted); line-height:1.72; }
+    /* Resp — arrow list */
+    .role-modal-section .resp-list { list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:9px; }
+    .role-modal-section .resp-list li { display:grid; grid-template-columns:16px 1fr; gap:7px; font-size:0.875rem; color:var(--ink-muted); line-height:1.62; }
+    .resp-arrow { color:var(--green-dark); font-weight:800; font-size:0.82rem; padding-top:2px; }
+    /* Gain — green cards */
+    .gain-list { display:flex; flex-direction:column; gap:8px; }
+    .gain-item { display:grid; grid-template-columns:18px 1fr; gap:9px; align-items:flex-start; background:var(--green-soft); border-radius:10px; padding:10px 14px; font-size:0.85rem; color:var(--green-deep); line-height:1.55; font-weight:500; }
+    .gain-check { font-size:0.85rem; font-weight:800; color:var(--green-dark); padding-top:1px; }
+    /* Ideal — neutral box */
+    .ideal-box { background:var(--bg-soft); border:1px solid var(--border-soft); border-radius:var(--radius-md); padding:14px 16px; font-size:0.875rem; color:var(--ink-muted); line-height:1.68; }
+    /* ── Two-column desktop layout ── */
+    .role-modal-cols { display:grid; grid-template-columns:1fr 1fr; margin-top:24px; padding-top:22px; border-top:1px solid var(--border-soft); }
+    .role-modal-cols > .role-modal-section { border-top:none; padding-top:0; margin-top:0; padding-right:28px; }
+    .role-modal-col-right { border-left:1px solid var(--border-soft); padding-left:28px; display:flex; flex-direction:column; }
+    .role-modal-col-right > .role-modal-section { border-top:none; padding-top:0; margin-top:0; }
+    .role-modal-col-right > .role-modal-section + .role-modal-section { margin-top:22px; padding-top:18px; border-top:1px solid var(--border-soft); }
+    .role-modal-footer { padding:20px 36px 28px; border-top:1px solid var(--border-soft); background:white; position:sticky; bottom:0; z-index:2; border-radius:0 0 var(--radius-xl) var(--radius-xl); }
+    /* Mobile CTA — fixed to viewport, shown via JS when modal opens */
+    .mobile-apply-cta { display:none; }
+    .role-modal-apply { display:block; width:100%; border:none; cursor:pointer; box-sizing:border-box; padding:15px 0; background:var(--blue-vivid); color:#ffffff; font-weight:700; font-size:0.92rem; border-radius:var(--radius-md); text-align:center; text-decoration:none; transition:background .2s; letter-spacing:0.2px; }
+    .role-modal-apply:hover { background:var(--blue-dark); }
+    .remote-notice { display:inline-flex; align-items:center; gap:8px; background:var(--green-soft); border:1px solid var(--green-muted, #bbf7d0); color:var(--green-deep); font-size:0.82rem; font-weight:600; padding:8px 18px; border-radius:var(--radius-full); margin-top:16px; }
+    /* ── Application Role Selector ── */
+    .primary-role-card { display:flex; align-items:center; gap:14px; padding:15px 16px; background:linear-gradient(135deg,var(--green-soft) 0%,rgba(220,252,231,0.35) 100%); border:2px solid rgba(22,163,74,0.28); border-radius:var(--radius-md); margin-bottom:10px; }
+    .primary-role-icon-wrap-sm { width:44px; height:44px; background:white; border-radius:11px; display:flex; align-items:center; justify-content:center; font-size:1.45rem; flex-shrink:0; box-shadow:0 1px 6px rgba(0,0,0,0.08); }
+    .primary-role-info { flex:1; min-width:0; }
+    .primary-role-name { font-weight:700; font-size:0.9rem; color:var(--green-deep); line-height:1.3; }
+    .primary-role-badge { font-size:0.62rem; font-weight:800; text-transform:uppercase; letter-spacing:0.8px; color:var(--green-dark); margin-top:2px; opacity:0.7; }
+    .primary-role-lock { font-size:0.88rem; flex-shrink:0; opacity:0.38; }
+    /* Add-more toggle */
+    .add-more-toggle { display:flex; align-items:center; justify-content:space-between; gap:8px; padding:10px 14px; background:none; border:1.5px dashed var(--border-soft); border-radius:var(--radius-md); font-size:0.82rem; font-weight:600; color:var(--ink-muted); cursor:pointer; transition:all .2s; width:100%; margin-bottom:10px; }
+    .add-more-toggle:hover { border-color:var(--green); color:var(--green-dark); background:var(--green-soft); border-style:solid; }
+    .add-more-toggle.open { border-color:var(--green); color:var(--green-dark); background:var(--green-soft); border-style:solid; }
+    .toggle-chevron { transition:transform .25s; flex-shrink:0; }
+    .add-more-toggle.open .toggle-chevron { transform:rotate(180deg); }
+    /* Additional roles panel */
+    .additional-roles-panel { display:none; grid-template-columns:repeat(auto-fill,minmax(185px,1fr)); gap:8px; margin-bottom:12px; }
+    .additional-roles-panel.open { display:grid; animation:aRPanelIn .22s ease; }
+    @keyframes aRPanelIn { from{opacity:0;transform:translateY(-5px)} to{opacity:1;transform:translateY(0)} }
+    .role-chip-option { display:flex; align-items:center; gap:8px; padding:9px 12px; border:1.5px solid var(--border-soft); border-radius:var(--radius-md); cursor:pointer; transition:border-color .18s, background .18s; user-select:none; }
+    .role-chip-option input[type="checkbox"] { position:absolute; opacity:0; pointer-events:none; }
+    .role-chip-option:hover { border-color:var(--green); background:var(--green-soft); }
+    .role-chip-option.checked { border-color:var(--green); background:var(--green-soft); }
+    .chip-icon-sm { font-size:1rem; flex-shrink:0; line-height:1; }
+    .chip-name { font-size:0.77rem; font-weight:600; flex:1; color:var(--ink-muted); line-height:1.3; }
+    .role-chip-option.checked .chip-name { color:var(--green-deep); }
+    .chip-check-mark { width:16px; height:16px; border-radius:4px; border:1.5px solid var(--border); display:flex; align-items:center; justify-content:center; flex-shrink:0; font-size:0.6rem; font-weight:900; color:transparent; background:white; transition:all .18s; }
+    .role-chip-option.checked .chip-check-mark { background:var(--green); border-color:var(--green); color:white; }
+    /* Selected roles summary chips */
+    .selected-roles-summary { display:flex; flex-wrap:wrap; gap:6px; margin-top:8px; }
+    .role-summary-chip { display:inline-flex; align-items:center; gap:5px; border-radius:var(--radius-full); padding:3px 10px 3px 8px; font-size:0.74rem; font-weight:600; }
+    .role-summary-chip.is-primary { background:var(--green-soft); border:1.5px solid rgba(22,163,74,0.3); color:var(--green-dark); }
+    .role-summary-chip.is-extra { background:var(--bg-soft); border:1.5px solid var(--border-soft); color:var(--ink-muted); }
+    /* Form section pulse on scroll-to */
+    @keyframes formPulse { 0%{box-shadow:0 0 0 0 rgba(22,163,74,.3)} 60%{box-shadow:0 0 0 16px rgba(22,163,74,0)} 100%{box-shadow:0 0 0 0 rgba(22,163,74,0)} }
+    .form-pulse { animation:formPulse 1s ease-out; border-radius:var(--radius-lg); }
+    /* ── MOBILE ── */
+    @media(max-width:640px){
+      .vol-hero { padding:calc(var(--nav-h) + 48px) 0 48px; }
+      .vol-opportunity-grid { padding:48px 0; gap:16px; }
+      .vol-opp-card { padding:24px 20px; }
+
+      /* ── Bottom Sheet Modal ── */
+      .role-modal-overlay {
+        padding: 0;
+        align-items: flex-end;
+        background: rgba(11,26,44,0.5);
+        transition: opacity .3s ease, background .3s ease;
+      }
+      .role-modal-overlay.open { background: rgba(11,26,44,0.62); }
+
+      .role-modal-box {
+        border-radius: 22px 22px 0 0;
+        max-height: 85vh;
+        max-width: 100%;
+        transform: translateY(100%);
+        transition: transform .42s cubic-bezier(0.16,1,0.3,1);
+        box-shadow: 0 -10px 48px rgba(11,26,44,0.20);
+        padding-bottom: 4px;
+      }
+      .role-modal-footer { display: none; }
+      /* Fixed CTA shown via JS */
+      .mobile-apply-cta {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 9100;
+        background: var(--blue-vivid);
+        color: #ffffff;
+        border: none;
+        padding: 18px 20px;
+        padding-bottom: max(18px, env(safe-area-inset-bottom, 0px));
+        font-size: 1.05rem;
+        font-weight: 700;
+        cursor: pointer;
+        letter-spacing: 0.2px;
+        box-shadow: 0 -4px 24px rgba(11,26,44,0.22);
+        transition: background .2s;
+      }
+      .mobile-apply-cta:active { background: var(--blue-dark); }
+      .role-modal-overlay.open .role-modal-box { transform: translateY(0); }
+
+      /* Drag handle pill */
+      .role-modal-box::before {
+        content: '';
+        display: block;
+        width: 38px; height: 4px;
+        background: rgba(0,0,0,0.09);
+        border-radius: 99px;
+        margin: 12px auto 0;
+      }
+
+      /* Header */
+      .role-modal-head {
+        padding: 14px 20px 0;
+        gap: 12px;
+        align-items: center;
+      }
+      .role-modal-icon-wrap { width: 48px; height: 48px; border-radius: 13px; }
+      .role-modal-icon { font-size: 1.65rem; }
+
+      /* Close button — 44×44 touch target */
+      .role-modal-close-btn {
+        width: 44px; height: 44px;
+        border-radius: 12px;
+        font-size: 1rem;
+      }
+
+      /* Body */
+      .role-modal-body { padding: 12px 20px 0; }
+      .role-modal-title { font-size: 1.22rem; margin: 12px 0 6px; }
+      .role-modal-badge { font-size: 0.75rem; padding: 5px 12px; margin-bottom: 16px; }
+      .role-modal-section { margin-top: 18px; padding-top: 15px; }
+      .role-modal-section h4 { font-size: 0.65rem; letter-spacing: 1px; margin-bottom: 11px; }
+      .role-modal-section p { font-size: 0.875rem; line-height: 1.7; }
+      .role-modal-section .resp-list { gap: 8px; }
+      .role-modal-section .resp-list li { font-size: 0.86rem; }
+      .gain-list { gap: 7px; }
+      .gain-item { padding: 9px 13px; font-size: 0.825rem; gap: 8px; }
+      .ideal-box { padding: 12px 14px; font-size: 0.86rem; }
+      /* Role selector — mobile */
+      .primary-role-card { padding: 12px 14px; gap: 12px; }
+      .primary-role-icon-wrap-sm { width: 40px; height: 40px; font-size: 1.2rem; }
+      .primary-role-name { font-size: 0.88rem; }
+      .add-more-toggle { padding: 10px 13px; font-size: 0.8rem; }
+      .additional-roles-panel { grid-template-columns: 1fr 1fr; gap: 7px; }
+      .role-chip-option { padding: 8px 10px; gap: 7px; }
+      .chip-name { font-size: 0.74rem; }
+
+      /* ── Mobile: collapse two-column to single column ── */
+      .role-modal-cols { display: block; border-top: none; padding-top: 0; margin-top: 0; }
+      .role-modal-cols > .role-modal-section { border-top: 1px solid var(--border-soft); padding-top: 15px; margin-top: 18px; padding-right: 0; }
+      .role-modal-col-right { border-left: none; padding-left: 0; display: block; }
+      .role-modal-col-right > .role-modal-section { border-top: 1px solid var(--border-soft); padding-top: 15px; margin-top: 18px; }
+      .role-modal-col-right > .role-modal-section + .role-modal-section { margin-top: 18px; }
+
+
+      .form-section { padding:48px 0; }
+      .steps-bar { margin-bottom:28px; }
+      .step-label { font-size:0.62rem; letter-spacing:0.1px; }
+    }
+    /* ── TOUCH — always show tap hint, disable hover lifts ── */
+    @media(hover:none){
+      .vol-opp-card:hover { transform:none; box-shadow:none; border-color:var(--border-soft); }
+      .vol-opp-card::after { opacity:0.85; }
+      .vol-opp-card:active { box-shadow:var(--shadow-md); border-color:var(--green); }
+    }
+    .form-section { padding:80px 0; }
+    .form-container { max-width:680px; margin:0 auto; }
+    /* ── Role Banner (after Apply for this role) ── */
+    .form-role-banner { margin-bottom:28px; }
+    .frb-inner { display:flex; align-items:center; gap:14px; padding:14px 18px; background:linear-gradient(135deg,var(--green-soft) 0%,rgba(220,252,231,0.4) 100%); border:1.5px solid rgba(22,163,74,0.25); border-radius:var(--radius-md); }
+    .frb-icon { font-size:1.6rem; flex-shrink:0; }
+    .frb-info { flex:1; min-width:0; }
+    .frb-tag { font-size:0.62rem; font-weight:800; text-transform:uppercase; letter-spacing:0.9px; color:var(--green-dark); margin-bottom:2px; }
+    .frb-name { font-size:0.92rem; font-weight:700; color:var(--green-deep); white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+    .frb-clear { width:28px; height:28px; border:none; background:rgba(22,163,74,0.12); border-radius:8px; cursor:pointer; font-size:0.75rem; color:var(--green-dark); display:flex; align-items:center; justify-content:center; flex-shrink:0; transition:background .2s; }
+    .frb-clear:hover { background:rgba(22,163,74,0.22); }
+    /* ── General Volunteer Choice ── */
+    .form-general-choice { margin-bottom:28px; }
+    .fgc-btn { display:flex; align-items:center; gap:16px; width:100%; padding:18px 20px; background:white; border:2px solid var(--border-soft); border-radius:var(--radius-md); cursor:pointer; text-align:left; transition:border-color .2s, background .2s; }
+    .fgc-btn:hover { border-color:var(--blue-vivid); background:var(--blue-soft); }
+    .fgc-icon { font-size:1.8rem; flex-shrink:0; }
+    .fgc-text { flex:1; display:flex; flex-direction:column; gap:3px; }
+    .fgc-text strong { font-size:0.92rem; font-weight:700; color:var(--ink); }
+    .fgc-text span { font-size:0.82rem; color:var(--ink-muted); line-height:1.5; }
+    .fgc-arrow { font-size:1.1rem; color:var(--blue-vivid); font-weight:700; flex-shrink:0; }
+    .fgc-hint { margin-top:10px; font-size:0.78rem; color:var(--ink-ghost); text-align:center; }
+    .fgc-hint a { color:var(--blue); text-decoration:underline; }
+    .steps-bar { display:flex; gap:0; margin-bottom:48px; }
+    .step { flex:1; display:flex; flex-direction:column; align-items:center; gap:8px; position:relative; }
+    .step::after { content:''; position:absolute; top:16px; left:50%; width:100%; height:2px; background:var(--border); z-index:0; }
+    .step:last-child::after { display:none; }
+    .step-dot { width:32px;height:32px;border-radius:50%;border:2px solid var(--border);background:white;display:flex;align-items:center;justify-content:center;font-size:0.78rem;font-weight:700;color:var(--ink-ghost);position:relative;z-index:1;transition:all .3s; }
+    .step.active .step-dot { border-color:var(--green);background:var(--green);color:white; }
+    .step.done .step-dot { border-color:var(--green);background:var(--green-soft);color:var(--green-dark); }
+    .step-label { font-size:0.72rem;font-weight:600;color:var(--ink-ghost);text-align:center;letter-spacing:0.3px; }
+    .step.active .step-label { color:var(--ink); }
+    .form-step { display:none; }
+    .form-step.active { display:flex; flex-direction:column; gap:20px; }
+    .form-row { display:grid; grid-template-columns:1fr 1fr; gap:16px; }
+    .form-nav { display:flex; justify-content:space-between; align-items:center; margin-top:32px; padding-top:32px; border-top:1px solid var(--border-soft); }
+    .success-state { text-align:center; padding:60px 0; display:none; }
+    .success-icon { width:80px;height:80px;background:var(--green-soft);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:2rem;margin:0 auto 24px; }
+    @media(max-width:768px){
+      .vol-hero-inner{grid-template-columns:1fr; gap:36px;}
+      .vol-opportunity-grid{grid-template-columns:1fr;}
+      .form-row{grid-template-columns:1fr;}
+    }
+    @media(max-width:640px){
+      .vol-opportunity-grid{grid-template-columns:1fr;}
+    }
+  </style>
+</head>
+<body>
+<script>document.addEventListener('DOMContentLoaded',()=>{ if(window.lucide)lucide.createIcons(); setTimeout(()=>{if(window.lucide)lucide.createIcons();},400); });</script>
+
+<section class="vol-hero">
+  <div class="container">
+    <div class="vol-hero-inner">
+      <div data-anim="right">
+        <div class="section-label"><span class="section-label-line"></span><span class="section-label-text" data-i18n="vol.label">Join Us</span></div>
+        <h1 class="display-lg" style="margin-top:20px;" data-i18n="vol.title">Contribute to what we are<em style="color:var(--green-dark);font-style:italic;"> building.</em></h1>
+        <p class="text-lg" style="margin-top:20px;color:var(--ink-muted);" data-i18n="vol.sub">YouthTICK is a fully volunteer-based initiative. Every role here is unpaid — we are a community of people who join because they want to grow, learn and build connections, not because they are collecting a salary.</p>
+        <div style="margin-top:16px;padding:16px 20px;background:var(--green-soft);border:1px solid var(--green-muted);border-radius:var(--radius-md);">
+          <p style="font-size:0.875rem;color:var(--green-deep);font-weight:500;" data-i18n="vol.notice">🌱 <strong>Volunteer-only initiative.</strong> No paid positions exist or will be created. We are here to develop skills, build networks and learn together.</p>
+        </div>
+        <div style="margin-top:28px;display:flex;flex-direction:column;gap:14px;">
+          <div style="display:flex;gap:12px;"><span style="color:var(--green);font-size:1.1rem;">→</span><span style="color:var(--ink-muted);" data-i18n="vol.list.1">Real hands-on experience in Erasmus+ project work</span></div>
+          <div style="display:flex;gap:12px;"><span style="color:var(--green);font-size:1.1rem;">→</span><span style="color:var(--ink-muted);" data-i18n="vol.list.2">Build a European professional network from day one</span></div>
+          <div style="display:flex;gap:12px;"><span style="color:var(--green);font-size:1.1rem;">→</span><span style="color:var(--ink-muted);" data-i18n="vol.list.3">Develop skills in programme design, communications and advocacy</span></div>
+          <div style="display:flex;gap:12px;"><span style="color:var(--green);font-size:1.1rem;">→</span><span style="color:var(--ink-muted);" data-i18n="vol.list.4">Be part of shaping YouthTICK from the ground up</span></div>
+          <div style="display:flex;gap:12px;"><span style="color:var(--green);font-size:1.1rem;">→</span><span style="color:var(--ink-muted);" data-i18n="vol.list.5">Access intercultural learning opportunities and exchanges</span></div>
+        </div>
+      </div>
+      <div data-anim>
+        <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=800&q=85&auto=format&fit=crop" alt="Volunteers working together" style="width:100%;border-radius:var(--radius-xl);aspect-ratio:4/3;object-fit:cover;box-shadow:var(--shadow-xl);" loading="lazy" width="800" height="600"/>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="background:white;">
+  <div class="container">
+    <div class="section-label" data-anim><span class="section-label-line"></span><span class="section-label-text" data-i18n="vol.opp.label">Opportunities</span></div>
+    <h2 class="display-md" data-anim style="margin-top:16px;max-width:480px;" data-i18n="vol.opp.title">Find your role in the network.</h2>
+    <div data-anim>
+      <span class="remote-notice">🌐 <span data-i18n="vol.remote.notice">Tüm roller tamamen uzaktan yürütülmektedir — All positions are fully remote</span></span>
+      <p style="margin-top:12px;font-size:0.82rem;color:var(--ink-ghost);" data-i18n="vol.remote.sub">Her karta tıklayarak görev tanımını, sorumlulukları ve kazanımları görüntüleyebilirsiniz.</p>
+    </div>
+    <div class="vol-opportunity-grid">
+      <div class="vol-opp-card" onclick="openRoleModal(1)" role="button" tabindex="0" onkeydown="if(event.key==='Enter'||event.key===' ')openRoleModal(1)" data-anim>
+        <span class="vol-opp-icon">🌍</span>
+        <div class="vol-opp-title" data-i18n="vol.c1.title">Project Facilitator</div>
+        <div class="vol-opp-desc" data-i18n="vol.c1.desc">Facilitate youth exchanges, workshops and training courses across Europe. Requires facilitation skills and availability for travel.</div>
+        <div class="vol-opp-duration" data-i18n="vol.c1.meta">Flexible · Per project</div>
+      </div>
+      <div class="vol-opp-card" onclick="openRoleModal(2)" role="button" tabindex="0" onkeydown="if(event.key==='Enter'||event.key===' ')openRoleModal(2)" data-anim style="transition-delay:.08s">
+        <span class="vol-opp-icon">📝</span>
+        <div class="vol-opp-title" data-i18n="vol.c2.title">Research Assistant</div>
+        <div class="vol-opp-desc" data-i18n="vol.c2.desc">Support our research team with data collection, literature review and report writing on youth participation topics.</div>
+        <div class="vol-opp-duration" data-i18n="vol.c2.meta">6 months · Remote possible</div>
+      </div>
+      <div class="vol-opp-card" onclick="openRoleModal(3)" role="button" tabindex="0" onkeydown="if(event.key==='Enter'||event.key===' ')openRoleModal(3)" data-anim style="transition-delay:.16s">
+        <span class="vol-opp-icon">📣</span>
+        <div class="vol-opp-title" data-i18n="vol.c3.title">Communications Volunteer</div>
+        <div class="vol-opp-desc" data-i18n="vol.c3.desc">Create content, manage social media, write blog posts and help share the YouthTICK story across digital channels.</div>
+        <div class="vol-opp-duration" data-i18n="vol.c3.meta">3–6 months · Remote</div>
+      </div>
+      <div class="vol-opp-card" onclick="openRoleModal(4)" role="button" tabindex="0" onkeydown="if(event.key==='Enter'||event.key===' ')openRoleModal(4)" data-anim>
+        <span class="vol-opp-icon">🤝</span>
+        <div class="vol-opp-title" data-i18n="vol.c4.title">Partnership Coordinator</div>
+        <div class="vol-opp-desc" data-i18n="vol.c4.desc">Help develop and maintain relationships with partner organisations, universities and NGOs across Europe.</div>
+        <div class="vol-opp-duration" data-i18n="vol.c4.meta">6 months · Hybrid</div>
+      </div>
+      <div class="vol-opp-card" onclick="openRoleModal(5)" role="button" tabindex="0" onkeydown="if(event.key==='Enter'||event.key===' ')openRoleModal(5)" data-anim style="transition-delay:.08s">
+        <span class="vol-opp-icon">💡</span>
+        <div class="vol-opp-title" data-i18n="vol.c5.title">Innovation Lab Mentor</div>
+        <div class="vol-opp-desc" data-i18n="vol.c5.desc">Mentor young social entrepreneurs in our innovation lab programs. Ideal for experienced startup founders or innovators.</div>
+        <div class="vol-opp-duration" data-i18n="vol.c5.meta">3 months · Flexible</div>
+      </div>
+      <div class="vol-opp-card" onclick="openRoleModal(6)" role="button" tabindex="0" onkeydown="if(event.key==='Enter'||event.key===' ')openRoleModal(6)" data-anim style="transition-delay:.16s">
+        <span class="vol-opp-icon">🎨</span>
+        <div class="vol-opp-title" data-i18n="vol.c6.title">Creative Producer</div>
+        <div class="vol-opp-desc" data-i18n="vol.c6.desc">Design visual materials, create videos, produce event documentation and help build the YouthTICK visual identity.</div>
+        <div class="vol-opp-duration" data-i18n="vol.c6.meta">Flexible · Project-based</div>
+      </div>
+      <div class="vol-opp-card" onclick="openRoleModal(7)" role="button" tabindex="0" onkeydown="if(event.key==='Enter'||event.key===' ')openRoleModal(7)" data-anim>
+        <span class="vol-opp-icon">📅</span>
+        <div class="vol-opp-title" data-i18n="vol.c7.title">Event Coordinator</div>
+        <div class="vol-opp-desc" data-i18n="vol.c7.desc">Help plan, organize and manage local youth events, workshops, and civic gatherings in Yalova.</div>
+        <div class="vol-opp-duration" data-i18n="vol.c7.meta">Flexible · Local</div>
+      </div>
+      <div class="vol-opp-card" onclick="openRoleModal(8)" role="button" tabindex="0" onkeydown="if(event.key==='Enter'||event.key===' ')openRoleModal(8)" data-anim style="transition-delay:.08s">
+        <span class="vol-opp-icon">🏘️</span>
+        <div class="vol-opp-title" data-i18n="vol.c8.title">Local Community Mobilizer</div>
+        <div class="vol-opp-desc" data-i18n="vol.c8.desc">Engage with young people in the community, raise awareness about our programs, and build local partnerships.</div>
+        <div class="vol-opp-duration" data-i18n="vol.c8.meta">Flexible · Local</div>
+      </div>
+      <div class="vol-opp-card" onclick="openRoleModal(9)" role="button" tabindex="0" onkeydown="if(event.key==='Enter'||event.key===' ')openRoleModal(9)" data-anim style="transition-delay:.16s">
+        <span class="vol-opp-icon">🌐</span>
+        <div class="vol-opp-title" data-i18n="vol.c9.title">Translation Volunteer</div>
+        <div class="vol-opp-desc" data-i18n="vol.c9.desc">Translate project materials, blog posts, and official documents between English, Turkish, and German.</div>
+        <div class="vol-opp-duration" data-i18n="vol.c9.meta">Flexible · Remote</div>
+      </div>
+      <div class="vol-opp-card" onclick="openRoleModal(10)" role="button" tabindex="0" onkeydown="if(event.key==='Enter'||event.key===' ')openRoleModal(10)" data-anim>
+        <span class="vol-opp-icon">📊</span>
+        <div class="vol-opp-title" data-i18n="vol.c10.title">Youth Policy Analyst</div>
+        <div class="vol-opp-desc" data-i18n="vol.c10.desc">Research European and national youth policies to help shape our advocacy and strategic direction.</div>
+        <div class="vol-opp-duration" data-i18n="vol.c10.meta">3–6 months · Remote</div>
+      </div>
+      <div class="vol-opp-card" onclick="openRoleModal(11)" role="button" tabindex="0" onkeydown="if(event.key==='Enter'||event.key===' ')openRoleModal(11)" data-anim style="transition-delay:.08s">
+        <span class="vol-opp-icon">📱</span>
+        <div class="vol-opp-title" data-i18n="vol.c11.title">Digital Marketing Lead</div>
+        <div class="vol-opp-desc" data-i18n="vol.c11.desc">Plan and execute social media campaigns, grow our community across Instagram and LinkedIn, and build our digital presence across Europe.</div>
+        <div class="vol-opp-duration" data-i18n="vol.c11.meta">Flexible · Remote · 4–8 hrs/week</div>
+      </div>
+      <div class="vol-opp-card" onclick="openRoleModal(12)" role="button" tabindex="0" onkeydown="if(event.key==='Enter'||event.key===' ')openRoleModal(12)" data-anim style="transition-delay:.16s">
+        <span class="vol-opp-icon">✍️</span>
+        <div class="vol-opp-title" data-i18n="vol.c12.title">Content Writer &amp; Strategist</div>
+        <div class="vol-opp-desc" data-i18n="vol.c12.desc">Write articles, reports and communications materials that reflect YouthTICK's voice and values — honest, institutional and human.</div>
+        <div class="vol-opp-duration" data-i18n="vol.c12.meta">Flexible · Remote · 4–6 hrs/week</div>
+      </div>
+      <div class="vol-opp-card" onclick="openRoleModal(13)" role="button" tabindex="0" onkeydown="if(event.key==='Enter'||event.key===' ')openRoleModal(13)" data-anim>
+        <span class="vol-opp-icon">🎬</span>
+        <div class="vol-opp-title" data-i18n="vol.c13.title">Video Editor &amp; Multimedia</div>
+        <div class="vol-opp-desc" data-i18n="vol.c13.desc">Create short-form videos, reels and documentary content documenting our activities, team stories and programme journeys.</div>
+        <div class="vol-opp-duration" data-i18n="vol.c13.meta">Project-based · Remote</div>
+      </div>
+      <div class="vol-opp-card" onclick="openRoleModal(14)" role="button" tabindex="0" onkeydown="if(event.key==='Enter'||event.key===' ')openRoleModal(14)" data-anim style="transition-delay:.08s">
+        <span class="vol-opp-icon">🖥️</span>
+        <div class="vol-opp-title" data-i18n="vol.c14.title">Web Design &amp; UX Volunteer</div>
+        <div class="vol-opp-desc" data-i18n="vol.c14.desc">Help maintain and improve our website — updating content, improving user experience and creating new pages as our programmes develop.</div>
+        <div class="vol-opp-duration" data-i18n="vol.c14.meta">Flexible · Remote · Technical skills needed</div>
+      </div>
+      <div class="vol-opp-card" onclick="openRoleModal(15)" role="button" tabindex="0" onkeydown="if(event.key==='Enter'||event.key===' ')openRoleModal(15)" data-anim style="transition-delay:.16s">
+        <span class="vol-opp-icon">📋</span>
+        <div class="vol-opp-title" data-i18n="vol.c15.title">Grant Research Volunteer</div>
+        <div class="vol-opp-desc" data-i18n="vol.c15.desc">Research funding opportunities, track deadlines and help prepare applications for Erasmus+ and other European youth funding programmes.</div>
+        <div class="vol-opp-duration" data-i18n="vol.c15.meta">3–4 months · Remote · High impact</div>
+      </div>
+      <div class="vol-opp-card" onclick="openRoleModal(16)" role="button" tabindex="0" onkeydown="if(event.key==='Enter'||event.key===' ')openRoleModal(16)" data-anim>
+        <span class="vol-opp-icon">🤖</span>
+        <div class="vol-opp-title" data-i18n="vol.c16.title">AI &amp; Digital Skills Trainer</div>
+        <div class="vol-opp-desc" data-i18n="vol.c16.desc">Help design and deliver AI literacy and digital skills workshops for young people — translating complex topics into accessible, engaging non-formal learning.</div>
+        <div class="vol-opp-duration" data-i18n="vol.c16.meta">Flexible · Hybrid possible</div>
+      </div>
+      <div class="vol-opp-card" onclick="openRoleModal(17)" role="button" tabindex="0" onkeydown="if(event.key==='Enter'||event.key===' ')openRoleModal(17)" data-anim style="transition-delay:.08s">
+        <span class="vol-opp-icon">⚖️</span>
+        <div class="vol-opp-title" data-i18n="vol.c17.title">Legal &amp; Compliance Assistant</div>
+        <div class="vol-opp-desc" data-i18n="vol.c17.desc">Support our governance and compliance work — reviewing documents, tracking statutory obligations and helping ensure our operations meet legal standards.</div>
+        <div class="vol-opp-duration" data-i18n="vol.c17.meta">Ongoing · Remote · Law background preferred</div>
+      </div>
+      <div class="vol-opp-card" onclick="openRoleModal(18)" role="button" tabindex="0" onkeydown="if(event.key==='Enter'||event.key===' ')openRoleModal(18)" data-anim style="transition-delay:.16s">
+        <span class="vol-opp-icon">🌿</span>
+        <div class="vol-opp-title" data-i18n="vol.c18.title">Sustainability Programme Coordinator</div>
+        <div class="vol-opp-desc" data-i18n="vol.c18.desc">Help design and run our local sustainability workshops — connecting young people in Yalova with environmental topics, green careers and European youth networks.</div>
+        <div class="vol-opp-duration" data-i18n="vol.c18.meta">6 months · Local + Remote</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Role Detail Modal -->
+<div class="role-modal-overlay" id="role-modal" role="dialog" aria-modal="true" aria-labelledby="role-modal-title-el" onclick="if(event.target===this)closeRoleModal()">
+  <div class="role-modal-box">
+    <div class="role-modal-head">
+      <div class="role-modal-icon-wrap"><span class="role-modal-icon" id="rm-icon"></span></div>
+      <button class="role-modal-close-btn" onclick="closeRoleModal()" aria-label="Close">✕</button>
+    </div>
+    <div class="role-modal-body">
+      <div class="role-modal-title" id="role-modal-title-el"></div>
+      <div class="role-modal-badge"><span id="rm-meta"></span></div>
+      <div class="role-modal-section no-border">
+        <h4 id="rm-lbl-about">ABOUT THIS ROLE</h4>
+        <p id="rm-about"></p>
+      </div>
+      <div class="role-modal-cols">
+        <div class="role-modal-section">
+          <h4 id="rm-lbl-resp">WHAT YOU'LL DO</h4>
+          <ul id="rm-resp" class="resp-list"></ul>
+        </div>
+        <div class="role-modal-col-right">
+          <div class="role-modal-section">
+            <h4 id="rm-lbl-gain">WHAT YOU'LL GAIN</h4>
+            <div id="rm-gain"></div>
+          </div>
+          <div class="role-modal-section">
+            <h4 id="rm-lbl-ideal">IDEAL FOR</h4>
+            <div id="rm-ideal" class="ideal-box"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="role-modal-footer">
+      <button type="button" class="role-modal-apply" onclick="applyForRole()" id="rm-apply">Apply for this role →</button>
+    </div>
+  </div>
+</div>
+
+<script>
+const ROLES = {
+  1: {
+    icon:"🌍",
+    title:{en:"Project Facilitator",tr:"Proje Kolaylaştırıcı",de:"Projektfacilitator/in"},
+    meta:{en:"🌐 Remote · Flexible",tr:"🌐 Uzaktan · Esnek",de:"🌐 Remote · Flexibel"},
+    about:{
+      en:"Project Facilitators are at the heart of what YouthTICK does. You will plan and co-facilitate non-formal education sessions, youth exchanges and training events — guiding groups through structured learning experiences focused on civic participation, intercultural dialogue and active citizenship.",
+      tr:"Proje Kolaylaştırıcılar YouthTICK'in çalışmalarının merkezinde yer alır. Sivil katılım, kültürlerarası diyalog ve aktif vatandaşlık odaklı yapılandırılmış öğrenme deneyimleri aracılığıyla grupları yönlendirerek gençlik değişimleri, atölyeler ve eğitim etkinlikleri planlayıp kolaylaştıracaksınız.",
+      de:"Projektfacilitatoren stehen im Mittelpunkt von YouthTICK. Sie planen und co-facilitieren Jugendbegegnungen, Workshops und Trainings — und führen Gruppen durch strukturierte Lernerfahrungen zu bürgerlicher Teilhabe, interkulturellem Dialog und aktiver Bürgerschaft."
+    },
+    resp:{
+      en:["Design and co-facilitate workshops using non-formal education methods (world café, fishbowl, forum theatre)","Support project planning: timelines, participant preparation, programme design","Co-write activity reports and contribute to Youthpass documentation","Liaise with partner organisations and participants before, during and after activities","Contribute to evaluation and learning reviews after each project"],
+      tr:["Dünya kafe, balık kasesi, forum tiyatrosu gibi yöntemlerle atölye tasarlama ve kolaylaştırma","Proje planlamasını destekleme: zaman çizelgeleri, katılımcı hazırlığı, program tasarımı","Faaliyet raporları yazma ve Youthpass belgelerine katkı sağlama","Faaliyetler öncesinde, sırasında ve sonrasında ortak kuruluşlar ve katılımcılarla iletişim kurma","Her projede değerlendirme ve öğrenme incelemelerine katkıda bulunma"],
+      de:["Workshops mit non-formalen Methoden gestalten und co-facilitieren (World Café, Fishbowl, Forumtheater)","Projektplanung unterstützen: Zeitpläne, Teilnehmervorbereitung, Programmgestaltung","Aktivitätsberichte co-verfassen und zum Youthpass beitragen","Vor, während und nach Aktivitäten mit Partnerorganisationen kommunizieren","An Evaluierungs- und Lernreflexionen nach jedem Projekt mitwirken"]
+    },
+    gain:{
+      en:["Hands-on experience as a certified non-formal educator","Practical Erasmus+ project management skills","A growing European facilitation network","A reference and Youthpass certificate for every project you co-facilitate"],
+      tr:["Sertifikalı yaygın eğitimci olarak uygulamalı deneyim","Pratik Erasmus+ proje yönetimi becerileri","Büyüyen bir Avrupa kolaylaştırıcı ağı","Ortak yürüttüğünüz her proje için referans ve Youthpass sertifikası"],
+      de:["Praktische Erfahrung als zertifizierte/r non-formale/r Bildner/in","Praktische Erasmus+-Projektmanagementkompetenzen","Ein wachsendes europäisches Facilitatoren-Netzwerk","Referenz und Youthpass-Zertifikat für jedes co-facilitierte Projekt"]
+    },
+    ideal:{
+      en:"Youth workers, educators, social science students or anyone with experience in group facilitation or community work who wants to grow their European network.",
+      tr:"Grup kolaylaştırma veya toplum çalışması deneyimiyle Avrupa ağını büyütmek isteyen gençlik çalışanları, eğitimciler veya sosyal bilimler öğrencileri.",
+      de:"Jugendarbeiter/innen, Pädagogen, Sozialwissenschaftsstudierende oder alle mit Erfahrung in Gruppenarbeit, die ihr europäisches Netzwerk ausbauen möchten."
+    }
+  },
+  2: {
+    icon:"📝",
+    title:{en:"Research Assistant",tr:"Araştırma Asistanı",de:"Forschungsassistent/in"},
+    meta:{en:"🌐 Remote · 6 months",tr:"🌐 Uzaktan · 6 ay",de:"🌐 Remote · 6 Monate"},
+    about:{
+      en:"Our Research Assistants support the intellectual backbone of YouthTICK. You will help us understand the landscape of youth participation, European policy, and programme design — producing materials that directly shape our strategic direction and public communications.",
+      tr:"Araştırma Asistanları YouthTICK'in entelektüel temelini destekler. Gençlik katılımı, Avrupa politikası ve program tasarımı alanlarını anlamamıza yardımcı olacak, stratejik yönümüzü ve kamuoyu iletişimimizi doğrudan şekillendiren materyaller üreteceksiniz.",
+      de:"Forschungsassistenten stützen das intellektuelle Fundament von YouthTICK. Sie helfen uns, die Landschaft der Jugendbeteiligung, der europäischen Politik und des Programmdesigns zu verstehen — und produzieren Materialien, die unsere Strategie und Kommunikation direkt prägen."
+    },
+    resp:{
+      en:["Conduct literature reviews on youth participation, civic engagement and Erasmus+ policy","Collect and analyse data from surveys, interviews and secondary sources","Write structured summaries, briefing papers and research reports","Support grant research: tracking funding calls and summarising eligibility criteria","Contribute to the YouthTICK blog with evidence-based articles"],
+      tr:["Gençlik katılımı, sivil angajman ve Erasmus+ politikası üzerine literatür taraması yapma","Anketler, röportajlar ve ikincil kaynaklardan veri toplama ve analiz etme","Yapılandırılmış özetler, bilgi notları ve araştırma raporları yazma","Hibe araştırmasını destekleme: fon çağrılarını takip etme ve uygunluk kriterlerini özetleme","Kanıta dayalı makalelerle YouthTICK bloguna katkıda bulunma"],
+      de:["Literaturrecherchen zu Jugendbeteiligung, Bürgerengagement und Erasmus+-Politik durchführen","Daten aus Umfragen, Interviews und Sekundärquellen sammeln und analysieren","Strukturierte Zusammenfassungen, Briefingpapiere und Forschungsberichte schreiben","Förderrecherche unterstützen: Förderaufrufe verfolgen und Zulassungskriterien zusammenfassen","Mit evidenzbasierten Artikeln zum YouthTICK-Blog beitragen"]
+    },
+    gain:{
+      en:["Research skills applicable to academic and professional contexts","Deep knowledge of European youth policy and Erasmus+ frameworks","Publication credits on YouthTICK research outputs","Mentoring from team members with policy and academic backgrounds"],
+      tr:["Akademik ve profesyonel bağlamlarda uygulanabilir araştırma becerileri","Avrupa gençlik politikası ve Erasmus+ çerçeveleri hakkında derin bilgi","YouthTICK araştırma çıktılarında yayın kredisi","Politika ve akademik altyapıya sahip ekip üyelerinden mentorluk"],
+      de:["Forschungskompetenzen für akademische und berufliche Kontexte","Tiefes Wissen über europäische Jugendpolitik und Erasmus+-Rahmenwerke","Publikationsnachweis in YouthTICK-Forschungsoutputs","Mentoring durch Teammitglieder mit Politik- und Akademikhintergrund"]
+    },
+    ideal:{
+      en:"Students or graduates in social sciences, European studies, international relations, or public policy who want to apply their research skills to real-world youth work.",
+      tr:"Araştırma becerilerini gerçek dünya gençlik çalışmasına uygulamak isteyen sosyal bilimler, Avrupa çalışmaları, uluslararası ilişkiler veya kamu politikası öğrencileri veya mezunları.",
+      de:"Studierende oder Absolventen der Sozialwissenschaften, Europastudien, internationalen Beziehungen oder öffentlichen Politik, die ihre Forschungskompetenzen in der Jugendarbeit einsetzen möchten."
+    }
+  },
+  3: {
+    icon:"📣",
+    title:{en:"Communications Volunteer",tr:"İletişim Gönüllüsü",de:"Kommunikationsfreiwillige/r"},
+    meta:{en:"🌐 Remote · 3–6 months",tr:"🌐 Uzaktan · 3–6 ay",de:"🌐 Remote · 3–6 Monate"},
+    about:{
+      en:"YouthTICK's voice is shaped by our Communications team. You will create content that is honest, institutional and human — reflecting who we actually are as a developing organisation, not who we pretend to be. This is a role for people who understand that good communication is built on authenticity.",
+      tr:"YouthTICK'in sesi İletişim ekibimiz tarafından şekillendirilir. Dürüst, kurumsal ve insani içerikler üreteceksiniz — gelişmekte olan bir kuruluş olarak gerçekte kim olduğumuzu yansıtarak. Bu rol, iyi iletişimin özgünlük üzerine kurulu olduğunu anlayan kişiler içindir.",
+      de:"Die Stimme von YouthTICK wird von unserem Kommunikationsteam geprägt. Sie erstellen Inhalte, die ehrlich, institutionell und menschlich sind — und widerspiegeln, wer wir wirklich sind. Diese Rolle ist für Menschen, die verstehen, dass gute Kommunikation auf Authentizität basiert."
+    },
+    resp:{
+      en:["Write and schedule social media content for Instagram and LinkedIn","Draft blog posts, newsletters and programme announcements","Support the creation of visual content in coordination with our design team","Monitor engagement and report on what is working","Help maintain a consistent editorial tone across all channels"],
+      tr:["Instagram ve LinkedIn için sosyal medya içerikleri yazma ve planlama","Blog yazıları, bültenler ve program duyuruları taslağı hazırlama","Tasarım ekibiyle koordineli görsel içerik üretimini destekleme","Etkileşimi izleme ve nelerin işe yaradığını raporlama","Tüm kanallarda tutarlı bir editoryal ton korumaya yardımcı olma"],
+      de:["Social-Media-Inhalte für Instagram und LinkedIn verfassen und planen","Blog-Beiträge, Newsletter und Programmankündigungen entwerfen","Erstellung von visuellem Content in Koordination mit dem Designteam unterstützen","Engagement überwachen und berichten, was funktioniert","Einen konsistenten redaktionellen Ton über alle Kanäle hinweg pflegen"]
+    },
+    gain:{
+      en:["A full communications portfolio with real organisational content","Experience managing institutional social media for a European youth NGO","Skills in editorial planning, audience analysis and digital writing","A reference from the YouthTICK communications lead"],
+      tr:["Gerçek kurumsal içeriklerle dolu bir iletişim portföyü","Bir Avrupa gençlik STK'sı için kurumsal sosyal medya yönetimi deneyimi","Editoryal planlama, hedef kitle analizi ve dijital yazarlık becerileri","YouthTICK iletişim sorumlusundan referans"],
+      de:["Ein vollständiges Kommunikationsportfolio mit echten Organisationsinhalten","Erfahrung im Management institutioneller Social Media einer europäischen Jugend-NGO","Kompetenzen in Redaktionsplanung, Zielgruppenanalyse und digitalem Schreiben","Referenz von der YouthTICK-Kommunikationsleitung"]
+    },
+    ideal:{
+      en:"Journalism, communications or marketing students; writers who want to develop institutional writing skills; anyone with experience managing social media for an organisation or community.",
+      tr:"Gazetecilik, iletişim veya pazarlama öğrencileri; kurumsal yazarlık becerileri geliştirmek isteyen yazarlar; bir kuruluş veya topluluk için sosyal medya yönetimi deneyimine sahip herkes.",
+      de:"Journalismus-, Kommunikations- oder Marketingstudierende; Autor/innen, die institutionelle Schreibkompetenzen entwickeln möchten; alle mit Erfahrung im Social-Media-Management für Organisationen."
+    }
+  },
+  4: {
+    icon:"🤝",
+    title:{en:"Partnership Coordinator",tr:"Ortaklık Koordinatörü",de:"Partnerschaftskoordinator/in"},
+    meta:{en:"🌐 Remote · 6 months",tr:"🌐 Uzaktan · 6 ay",de:"🌐 Remote · 6 Monate"},
+    about:{
+      en:"Partnerships are how YouthTICK grows. As a Partnership Coordinator you will help us identify, approach and build relationships with NGOs, universities, youth centres and civic organisations across Europe — with a particular focus on organisations open to Erasmus+ cooperation.",
+      tr:"Ortaklıklar YouthTICK'in büyüme yoludur. Ortaklık Koordinatörü olarak özellikle Erasmus+ işbirliğine açık kuruluşlara odaklanarak Avrupa genelinde STK'lar, üniversiteler, gençlik merkezleri ve sivil toplum kuruluşlarıyla ilişkiler belirleme, yaklaşma ve kurma konusunda yardımcı olacaksınız.",
+      de:"Partnerschaften sind der Wachstumsweg von YouthTICK. Als Partnerschaftskoordinator/in helfen Sie uns, Beziehungen zu NGOs, Universitäten, Jugendzentren und zivilgesellschaftlichen Organisationen in ganz Europa zu identifizieren, aufzubauen und zu pflegen — mit besonderem Fokus auf Erasmus+-Kooperation."
+    },
+    resp:{
+      en:["Research potential partner organisations in Europe and maintain a contact database","Draft initial outreach emails and follow-up communications","Support the preparation of partnership agreements and MoUs","Help organise online partnership meetings and document outcomes","Track partnership pipeline and report progress to the leadership team"],
+      tr:["Avrupa'daki potansiyel ortak kuruluşları araştırma ve iletişim veritabanı tutma","İlk iletişim e-postaları ve takip yazışmaları taslağı hazırlama","Ortaklık anlaşmaları ve mutabakat muhtıralarının hazırlanmasını destekleme","Çevrimiçi ortaklık toplantıları düzenleme ve sonuçları belgeleme","Ortaklık sürecini takip etme ve liderlik ekibine ilerlemeyi raporlama"],
+      de:["Potenzielle Partnerorganisationen in Europa recherchieren und Kontaktdatenbank pflegen","Erste Kontaktmails und Follow-up-Kommunikation entwerfen","Vorbereitung von Partnerschaftsvereinbarungen und MoUs unterstützen","Online-Partnerschaftstreffen organisieren und Ergebnisse dokumentieren","Partnerschaftspipeline verfolgen und Fortschritte an das Führungsteam berichten"]
+    },
+    gain:{
+      en:["Direct experience in institutional relationship management","Understanding of the European NGO ecosystem and Erasmus+ partnership logic","Skills in professional writing, CRM tools and stakeholder mapping","Connections to partner organisations across Europe"],
+      tr:["Kurumsal ilişki yönetiminde doğrudan deneyim","Avrupa STK ekosistemi ve Erasmus+ ortaklık mantığını anlama","Profesyonel yazarlık, CRM araçları ve paydaş haritalama becerileri","Avrupa genelinde ortak kuruluşlarla bağlantılar"],
+      de:["Direkte Erfahrung im institutionellen Beziehungsmanagement","Verständnis des europäischen NGO-Ökosystems und der Erasmus+-Partnerschaftslogik","Kompetenzen in professionellem Schreiben, CRM-Tools und Stakeholder-Mapping","Verbindungen zu Partnerorganisationen in ganz Europa"]
+    },
+    ideal:{
+      en:"Students in European studies, international relations, business development or non-profit management; anyone with strong written communication skills and an interest in European civil society.",
+      tr:"Avrupa çalışmaları, uluslararası ilişkiler, iş geliştirme veya kâr amacı gütmeyen kuruluş yönetimi öğrencileri; güçlü yazılı iletişim becerileri ve Avrupa sivil toplumuna ilgi duyan herkes.",
+      de:"Studierende der Europastudien, internationalen Beziehungen, Geschäftsentwicklung oder Non-Profit-Management; alle mit starken schriftlichen Kommunikationskompetenzen und Interesse an der europäischen Zivilgesellschaft."
+    }
+  },
+  5: {
+    icon:"💡",
+    title:{en:"Innovation Lab Mentor",tr:"İnovasyon Lab Mentoru",de:"Innovationslab-Mentor/in"},
+    meta:{en:"🌐 Remote · 3 months",tr:"🌐 Uzaktan · 3 ay",de:"🌐 Remote · 3 Monate"},
+    about:{
+      en:"Our Innovation Lab Mentors work with young people who are developing social impact ideas. You will provide structured guidance, ask the right questions and share your own experience as a practitioner — helping participants move from vague ideas to concrete, testable concepts.",
+      tr:"İnovasyon Lab Mentorlarımız sosyal etki fikirleri geliştiren gençlerle çalışır. Yapılandırılmış rehberlik sağlayacak, doğru soruları soracak ve kendi deneyimlerinizi paylaşacaksınız — katılımcıların belirsiz fikirlerden somut, test edilebilir kavramlara geçmelerine yardımcı olacaksınız.",
+      de:"Unsere Innovationslab-Mentoren arbeiten mit jungen Menschen, die Ideen für sozialen Wandel entwickeln. Sie bieten strukturierte Führung, stellen die richtigen Fragen und teilen Ihre eigene Erfahrung — und helfen Teilnehmenden, von vagen Ideen zu konkreten, testbaren Konzepten zu gelangen."
+    },
+    resp:{
+      en:["Conduct 1-to-1 or small group mentoring sessions with youth participants (1–2 hrs/week)","Help participants apply design thinking and lean startup methods to social challenges","Review project proposals and give structured written feedback","Participate in online demo days and project presentations","Share your professional story and experience with the wider YouthTICK community"],
+      tr:["Gençlik katılımcılarıyla bire bir veya küçük grup mentorluk seansları düzenleme (haftada 1–2 saat)","Katılımcıların sosyal zorluklara tasarım düşüncesi ve yalın girişim yöntemleri uygulamasına yardım etme","Proje önerilerini inceleme ve yapılandırılmış yazılı geri bildirim verme","Çevrimiçi demo günlerine ve proje sunumlarına katılma","Profesyonel hikayenizi ve deneyiminizi daha geniş YouthTICK topluluğuyla paylaşma"],
+      de:["1:1- oder Kleingruppenmentoringgespräche mit Jugendteilnehmenden führen (1–2 Std./Woche)","Teilnehmende bei der Anwendung von Design Thinking und Lean-Startup-Methoden unterstützen","Projektvorschläge überprüfen und strukturiertes schriftliches Feedback geben","An Online-Demo-Days und Projektpräsentationen teilnehmen","Ihre Berufsgeschichte und Erfahrung mit der YouthTICK-Community teilen"]
+    },
+    gain:{
+      en:["Mentoring experience with documented outcomes","Skills in coaching and structured feedback","Recognition in YouthTICK programme materials","Access to our growing network of European youth innovation practitioners"],
+      tr:["Belgelenmiş sonuçlarla mentorluk deneyimi","Koçluk ve yapılandırılmış geri bildirim becerileri","YouthTICK program materyallerinde tanınma","Büyüyen Avrupa gençlik inovasyon uygulayıcıları ağına erişim"],
+      de:["Mentoringerfahrung mit dokumentierten Ergebnissen","Coaching- und strukturierte Feedback-Kompetenzen","Anerkennung in YouthTICK-Programmaterialien","Zugang zu unserem wachsenden Netzwerk europäischer Jugendinnovations-Praktiker/innen"]
+    },
+    ideal:{
+      en:"Social entrepreneurs, startup founders, innovation practitioners, or professionals with experience in project design, product development or social impact who want to give back.",
+      tr:"Sosyal girişimciler, startup kurucuları, inovasyon uygulayıcıları veya proje tasarımı, ürün geliştirme ya da sosyal etki alanında deneyimli ve geri vermek isteyen profesyoneller.",
+      de:"Sozialunternehmer/innen, Startup-Gründer/innen, Innovationspraktiker/innen oder Fachleute mit Erfahrung in Projektdesign, Produktentwicklung oder Social Impact, die etwas zurückgeben möchten."
+    }
+  },
+  6: {
+    icon:"🎨",
+    title:{en:"Creative Producer",tr:"Kreatif Prodüktör",de:"Creative Producer/in"},
+    meta:{en:"🌐 Remote · Flexible",tr:"🌐 Uzaktan · Esnek",de:"🌐 Remote · Flexibel"},
+    about:{
+      en:"Creative Producers shape how YouthTICK looks and feels. You will design visual materials, create multimedia content and help build a visual identity that reflects our values — European, honest, institutional and warm. This is not a role for generic templates: we want originality.",
+      tr:"Kreatif Prodüktörler YouthTICK'in nasıl göründüğünü ve hissettirdiğini şekillendirir. Görsel materyaller tasarlayacak, multimedya içerikleri oluşturacak ve Avrupa'lı, dürüst, kurumsal ve sıcak değerlerimizi yansıtan bir görsel kimlik oluşturmaya yardımcı olacaksınız.",
+      de:"Creative Producer prägen, wie YouthTICK aussieht und wirkt. Sie gestalten visuelle Materialien, erstellen Multimedia-Inhalte und helfen beim Aufbau einer visuellen Identität, die unsere Werte widerspiegelt — europäisch, ehrlich, institutionell und warm."
+    },
+    resp:{
+      en:["Design social media assets, infographics, presentations and event materials","Create or edit short-form video content documenting our activities","Develop and maintain YouthTICK's visual identity guidelines","Collaborate with the communications team on campaigns and releases","Contribute ideas for how we can communicate more creatively"],
+      tr:["Sosyal medya görselleri, infografikler, sunumlar ve etkinlik materyalleri tasarlama","Faaliyetlerimizi belgeleyen kısa format video içerikleri oluşturma veya düzenleme","YouthTICK'in görsel kimlik kılavuzunu geliştirme ve sürdürme","Kampanyalar ve yayınlar için iletişim ekibiyle iş birliği yapma","Daha yaratıcı iletişim kurmak için fikirler katkıda bulunma"],
+      de:["Social-Media-Assets, Infografiken, Präsentationen und Veranstaltungsmaterialien gestalten","Kurzvideos unserer Aktivitäten erstellen oder bearbeiten","Visuelle Identitätsrichtlinien von YouthTICK entwickeln und pflegen","Mit dem Kommunikationsteam an Kampagnen und Veröffentlichungen zusammenarbeiten","Ideen einbringen, wie wir kreativer kommunizieren können"]
+    },
+    gain:{
+      en:["A real portfolio of institutional design work","Experience building a brand from early stage","Skills in visual storytelling for a multicultural audience","Credit in all YouthTICK materials you create"],
+      tr:["Gerçek kurumsal tasarım çalışmalarından oluşan bir portföy","Erken aşamadan marka oluşturma deneyimi","Çok kültürlü bir hedef kitle için görsel hikaye anlatımı becerileri","Oluşturduğunuz tüm YouthTICK materyallerinde kredi"],
+      de:["Ein echtes Portfolio institutioneller Designarbeit","Erfahrung im Markenaufbau von der frühen Phase an","Kompetenzen im visuellen Storytelling für ein multikulturelles Publikum","Credit in allen von Ihnen erstellten YouthTICK-Materialien"]
+    },
+    ideal:{
+      en:"Graphic design, visual communication or multimedia students; freelance designers who want NGO experience; anyone with a strong visual eye and proficiency in design tools (Figma, Adobe, Canva Pro).",
+      tr:"Grafik tasarım, görsel iletişim veya multimedya öğrencileri; STK deneyimi isteyen serbest tasarımcılar; güçlü bir görsel bakış açısına ve tasarım araçlarında (Figma, Adobe, Canva Pro) yetkinliğe sahip herkes.",
+      de:"Grafikdesign-, Visuelle-Kommunikations- oder Multimedia-Studierende; Freelance-Designer/innen, die NGO-Erfahrung suchen; alle mit starkem Blick für Visuelles und Kenntnissen in Designtools (Figma, Adobe, Canva Pro)."
+    }
+  },
+  7: {
+    icon:"📅",
+    title:{en:"Event Coordinator",tr:"Etkinlik Koordinatörü",de:"Veranstaltungskoordinator/in"},
+    meta:{en:"🌐 Remote · Flexible",tr:"🌐 Uzaktan · Esnek",de:"🌐 Remote · Flexibel"},
+    about:{
+      en:"Event Coordinators keep YouthTICK's programme calendar running. You will manage the logistics behind our online workshops, webinars, partner calls and community events — ensuring everything happens on time, with the right people in the room, and with proper documentation.",
+      tr:"Etkinlik Koordinatörleri YouthTICK'in program takviminin işleyişini sağlar. Çevrimiçi atölye çalışmalarımız, web seminerleri, ortak toplantılar ve topluluk etkinliklerinin lojistiğini yöneteceksiniz — her şeyin zamanında, doğru kişilerle ve uygun belgelerle gerçekleşmesini sağlayacaksınız.",
+      de:"Veranstaltungskoordinator/innen halten den Programmkalender von YouthTICK am Laufen. Sie verwalten die Logistik hinter unseren Online-Workshops, Webinaren, Partnercalls und Community-Events — und stellen sicher, dass alles pünktlich, mit den richtigen Personen und ordentlicher Dokumentation stattfindet."
+    },
+    resp:{
+      en:["Plan and coordinate online events: invitations, scheduling, platform setup (Zoom/Teams)","Prepare event materials: agendas, participant packs, background documents","Send communications to participants before, during and after events","Take notes during sessions and produce clean event summaries","Maintain our events calendar and track upcoming deadlines"],
+      tr:["Çevrimiçi etkinlikler planlama ve koordine etme: davetler, zamanlama, platform kurulumu","Etkinlik materyalleri hazırlama: gündemler, katılımcı paketleri, arka plan belgeleri","Etkinlikler öncesinde, sırasında ve sonrasında katılımcılara iletişim gönderme","Oturumlar sırasında not alma ve temiz etkinlik özetleri üretme","Etkinlik takvimimizi koruma ve yaklaşan son tarihleri takip etme"],
+      de:["Online-Events planen und koordinieren: Einladungen, Terminplanung, Plattform-Setup","Veranstaltungsmaterialien vorbereiten: Agenden, Teilnehmerpakete, Hintergrunddokumente","Kommunikation an Teilnehmende vor, während und nach Veranstaltungen senden","Notizen während Sitzungen machen und saubere Veranstaltungszusammenfassungen erstellen","Unseren Veranstaltungskalender pflegen und bevorstehende Fristen verfolgen"]
+    },
+    gain:{
+      en:["End-to-end event management experience in a multicultural context","Organisational and project coordination skills","Confidence managing complex group logistics remotely","A reference from the YouthTICK programme team"],
+      tr:["Çok kültürlü bir bağlamda uçtan uca etkinlik yönetimi deneyimi","Organizasyon ve proje koordinasyon becerileri","Karmaşık grup lojistiğini uzaktan yönetme özgüveni","YouthTICK program ekibinden referans"],
+      de:["End-to-End-Veranstaltungsmanagement-Erfahrung in einem multikulturellen Kontext","Organisations- und Projektkoordinationskompetenzen","Sicherheit im Umgang mit komplexer Gruppenlogistik auf Distanz","Referenz vom YouthTICK-Programmteam"]
+    },
+    ideal:{
+      en:"Anyone with strong organisational skills, attention to detail and experience working with calendars, online platforms and multiple stakeholders simultaneously.",
+      tr:"Güçlü organizasyon becerileri, ayrıntılara dikkat ve takvimler, çevrimiçi platformlar ve birden fazla paydaşla aynı anda çalışma deneyimine sahip herkes.",
+      de:"Alle mit starken Organisationskompetenzen, Detailgenauigkeit und Erfahrung im Umgang mit Kalendern, Online-Plattformen und mehreren Stakeholdern gleichzeitig."
+    }
+  },
+  8: {
+    icon:"🏘️",
+    title:{en:"Community Mobilizer",tr:"Topluluk Mobilizatörü",de:"Community Mobilizer/in"},
+    meta:{en:"🌐 Remote · Flexible",tr:"🌐 Uzaktan · Esnek",de:"🌐 Remote · Flexibel"},
+    about:{
+      en:"Community Mobilizers are the connectors. You will help us grow our community of engaged young people across Europe — through outreach, relationship building and the kind of genuine human contact that no algorithm can replicate. This role suits people who are naturally good at bringing others in.",
+      tr:"Topluluk Mobilizatörleri bağlantı kurucularıdır. Erişim, ilişki kurma ve hiçbir algoritmanın taklit edemeyeceği gerçek insan teması aracılığıyla Avrupa genelinde katılımcı gençlerden oluşan topluluğumuzu büyütmemize yardımcı olacaksınız.",
+      de:"Community Mobilizer sind die Verbinder. Sie helfen uns, unsere Gemeinschaft engagierter junger Menschen in ganz Europa zu vergrößern — durch Outreach, Beziehungsaufbau und echten menschlichen Kontakt, den kein Algorithmus ersetzen kann."
+    },
+    resp:{
+      en:["Identify and engage potential community members through online channels","Manage our community spaces (Discord, mailing list, social groups)","Organise informal online community events, check-ins and Q&A sessions","Welcome and onboard new volunteers and supporters","Gather feedback from the community and report it back to the team"],
+      tr:["Çevrimiçi kanallar aracılığıyla potansiyel topluluk üyelerini belirleme ve etkileşime geçme","Topluluk alanlarımızı yönetme (Discord, e-posta listesi, sosyal gruplar)","Gayri resmi çevrimiçi topluluk etkinlikleri, kontrol görüşmeleri ve S&C oturumları düzenleme","Yeni gönüllüleri ve destekçileri karşılama ve başlatma","Topluluktan geri bildirim toplama ve ekibe geri bildirme"],
+      de:["Potenzielle Community-Mitglieder über Online-Kanäle identifizieren und ansprechen","Unsere Community-Räume verwalten (Discord, Mailingliste, soziale Gruppen)","Informelle Online-Community-Events, Check-ins und Q&A-Sitzungen organisieren","Neue Freiwillige und Unterstützende willkommen heißen und onboarden","Feedback aus der Community sammeln und ans Team zurückmelden"]
+    },
+    gain:{
+      en:["Community management experience applicable to any organisation or business","Understanding of online community dynamics in a multicultural context","A growing personal network of European young people and youth workers","Skills in moderation, facilitation and online community tools"],
+      tr:["Herhangi bir kuruluş veya işletmeye uygulanabilir topluluk yönetimi deneyimi","Çok kültürlü bir bağlamda çevrimiçi topluluk dinamiklerini anlama","Büyüyen kişisel Avrupalı genç ve gençlik çalışanları ağı","Moderasyon, kolaylaştırma ve çevrimiçi topluluk araçlarında beceriler"],
+      de:["Community-Management-Erfahrung, anwendbar auf jede Organisation","Verständnis von Online-Community-Dynamiken in einem multikulturellen Kontext","Ein wachsendes persönliches Netzwerk europäischer junger Menschen und Jugendarbeiter/innen","Kompetenzen in Moderation, Facilitation und Online-Community-Tools"]
+    },
+    ideal:{
+      en:"Communicative people who enjoy building connections; community managers, social workers, youth workers or anyone who thrives in roles built around human contact and relationship maintenance.",
+      tr:"Bağlantı kurmaktan zevk alan iletişimci insanlar; topluluk yöneticileri, sosyal çalışanlar, gençlik çalışanları veya insan teması ve ilişki sürdürme üzerine kurulu rollerde başarılı olan herkes.",
+      de:"Kommunikative Menschen, die gerne Verbindungen aufbauen; Community Manager, Sozialarbeiter/innen, Jugendarbeiter/innen oder alle, die in Rollen rund um menschlichen Kontakt aufblühen."
+    }
+  },
+  9: {
+    icon:"🌐",
+    title:{en:"Translation Volunteer",tr:"Çeviri Gönüllüsü",de:"Übersetzungsfreiwillige/r"},
+    meta:{en:"🌐 Remote · Flexible",tr:"🌐 Uzaktan · Esnek",de:"🌐 Remote · Flexibel"},
+    about:{
+      en:"YouthTICK operates in three languages — English, Turkish and German. Our Translation Volunteers make that possible. You will translate project documents, blog posts, website content and official materials — ensuring that our message reaches every part of our community with the same clarity and care.",
+      tr:"YouthTICK üç dilde faaliyet gösterir — İngilizce, Türkçe ve Almanca. Çeviri Gönüllülerimiz bunu mümkün kılar. Proje belgelerini, blog yazılarını, web sitesi içeriklerini ve resmi materyalleri çevirerek mesajımızın topluluğumuzun her kesimine aynı netlik ve özenle ulaşmasını sağlayacaksınız.",
+      de:"YouthTICK arbeitet in drei Sprachen — Englisch, Türkisch und Deutsch. Unsere Übersetzungsfreiwilligen machen das möglich. Sie übersetzen Projektdokumente, Blog-Beiträge, Website-Inhalte und offizielle Materialien — und stellen sicher, dass unsere Botschaft jeden Teil unserer Gemeinschaft klar erreicht."
+    },
+    resp:{
+      en:["Translate documents between English, Turkish and German (or two of the three)","Review existing translations for accuracy, tone and cultural appropriateness","Help maintain consistency in YouthTICK multilingual terminology","Flag content that needs cultural adaptation, not just literal translation","Support the proofreading of final published materials"],
+      tr:["İngilizce, Türkçe ve Almanca arasında belge çevirme (veya üçten ikisi arasında)","Mevcut çevirileri doğruluk, ton ve kültürel uygunluk açısından inceleme","YouthTICK çok dilli terminolojisinde tutarlılık sağlamaya yardım etme","Yalnızca kelimesi kelimesine çevirinin ötesinde kültürel uyarlamaya ihtiyaç duyan içerikleri belirleme","Yayınlanan nihai materyallerin son okumasını destekleme"],
+      de:["Dokumente zwischen Englisch, Türkisch und Deutsch übersetzen (oder zwei der drei)","Bestehende Übersetzungen auf Genauigkeit, Ton und kulturelle Angemessenheit überprüfen","Konsistenz in der mehrsprachigen Terminologie von YouthTICK sicherstellen","Inhalte kennzeichnen, die kulturelle Anpassung brauchen, nicht nur wörtliche Übersetzung","Korrekturlesen finaler veröffentlichter Materialien unterstützen"]
+    },
+    gain:{
+      en:["Professional translation experience with institutional texts","Terminology knowledge across youth work, civic participation and EU policy","Credit in all translated materials","Skills in translation memory tools and multilingual content management"],
+      tr:["Kurumsal metinlerle profesyonel çeviri deneyimi","Gençlik çalışması, sivil katılım ve AB politikasında terminoloji bilgisi","Çevrilen tüm materyallerde kredi","Çeviri belleği araçları ve çok dilli içerik yönetimi becerileri"],
+      de:["Professionelle Übersetzungserfahrung mit institutionellen Texten","Terminologiewissen in Jugendarbeit, bürgerlicher Beteiligung und EU-Politik","Credit in allen übersetzten Materialien","Kompetenzen in Translation-Memory-Tools und mehrsprachigem Content-Management"]
+    },
+    ideal:{
+      en:"Bilingual or trilingual speakers of English, Turkish and/or German; translation or linguistics students; anyone with strong writing skills in multiple languages who wants to contribute to multilingual European communications.",
+      tr:"İngilizce, Türkçe ve/veya Almanca'yı iki ya da üç dilde konuşanlar; çeviri veya dilbilim öğrencileri; çok dilli Avrupa iletişimine katkıda bulunmak isteyen güçlü çokdilli yazarlık becerilerine sahip herkes.",
+      de:"Zwei- oder mehrsprachige Sprecher/innen von Englisch, Türkisch und/oder Deutsch; Übersetzungs- oder Linguistikstudierende; alle mit starken Schreibkompetenzen in mehreren Sprachen, die zu mehrsprachiger europäischer Kommunikation beitragen möchten."
+    }
+  },
+  10: {
+    icon:"📊",
+    title:{en:"Youth Policy Analyst",tr:"Gençlik Politika Analisti",de:"Jugendpolitik-Analyst/in"},
+    meta:{en:"🌐 Remote · 3–6 months",tr:"🌐 Uzaktan · 3–6 ay",de:"🌐 Remote · 3–6 Monate"},
+    about:{
+      en:"Policy Analysts at YouthTICK track the European and national policy landscape as it relates to young people. Your work directly informs our strategy, our grant applications and our public positions. This is a role for people who read policy documents with genuine interest and know how to extract what matters.",
+      tr:"YouthTICK'teki Politika Analistleri gençleri ilgilendiren Avrupa ve ulusal politika ortamını takip eder. Çalışmanız stratejimizi, hibe başvurularımızı ve kamuoyu tutumlarımızı doğrudan bilgilendirir. Bu rol, politika belgelerini gerçek bir ilgiyle okuyan ve önemli olanı nasıl çıkaracaklarını bilen kişiler içindir.",
+      de:"Politikanalyst/innen bei YouthTICK verfolgen die europäische und nationale Politiklandschaft in Bezug auf junge Menschen. Ihre Arbeit informiert direkt unsere Strategie, Förderanträge und öffentlichen Positionen. Diese Rolle ist für Menschen, die Politikdokumente mit echtem Interesse lesen."
+    },
+    resp:{
+      en:["Monitor EU and national youth policy developments and summarise key changes","Research specific policy areas on request (e.g. Erasmus+ revisions, youth employment, civic space)","Produce concise policy briefings for internal and external audiences","Support the development of YouthTICK advocacy positions","Contribute to grant applications with relevant policy background sections"],
+      tr:["AB ve ulusal gençlik politikası gelişmelerini izleme ve temel değişiklikleri özetleme","İstek üzerine belirli politika alanlarını araştırma (örn. Erasmus+ revizyonları, gençlik istihdamı)","İç ve dış hedef kitleler için kısa politika brifingleri üretme","YouthTICK savunuculuk tutumlarının geliştirilmesini destekleme","İlgili politika arka plan bölümleriyle hibe başvurularına katkıda bulunma"],
+      de:["EU- und nationale Jugendpolitikentwicklungen überwachen und wichtige Änderungen zusammenfassen","Auf Anfrage spezifische Politikbereiche recherchieren (z.B. Erasmus+-Revisionen, Jugendbeschäftigung)","Prägnante Politikbriefings für interne und externe Zielgruppen erstellen","Entwicklung von YouthTICK-Advocacy-Positionen unterstützen","Zu Förderanträgen mit relevanten Politikhintergrundabschnitten beitragen"]
+    },
+    gain:{
+      en:["Deep expertise in European youth policy and Erasmus+ frameworks","Experience writing policy briefings for a real organisation","A reference relevant to careers in EU institutions, think tanks or NGOs","An understanding of how European civil society finances itself"],
+      tr:["Avrupa gençlik politikası ve Erasmus+ çerçevelerinde derin uzmanlık","Gerçek bir kuruluş için politika brifingleri yazma deneyimi","AB kurumları, düşünce kuruluşları veya STK'larda kariyer için ilgili referans","Avrupa sivil toplumunun kendini nasıl finanse ettiğine dair anlayış"],
+      de:["Tiefes Fachwissen in europäischer Jugendpolitik und Erasmus+-Rahmenwerken","Erfahrung im Verfassen von Politikbriefings für eine echte Organisation","Referenz relevant für Karrieren in EU-Institutionen, Denkfabriken oder NGOs","Verständnis, wie sich die europäische Zivilgesellschaft finanziert"]
+    },
+    ideal:{
+      en:"Students or graduates in European studies, political science, law or public policy; anyone working towards a career in EU institutions, civil society organisations or policy-facing research.",
+      tr:"Avrupa çalışmaları, siyaset bilimi, hukuk veya kamu politikası öğrencileri veya mezunları; AB kurumları, sivil toplum kuruluşları veya politika odaklı araştırmada kariyer hedefleyenler.",
+      de:"Studierende oder Absolventen der Europastudien, Politikwissenschaft, Rechtswissenschaft oder öffentlichen Politik; alle, die auf eine Karriere in EU-Institutionen, zivilgesellschaftlichen Organisationen oder politikorientierter Forschung hinarbeiten."
+    }
+  },
+  11: {
+    icon:"📱",
+    title:{en:"Digital Marketing Lead",tr:"Dijital Pazarlama Lideri",de:"Digital Marketing Lead"},
+    meta:{en:"🌐 Remote · 4–8 hrs/week",tr:"🌐 Uzaktan · Haftada 4–8 saat",de:"🌐 Remote · 4–8 Std./Woche"},
+    about:{
+      en:"The Digital Marketing Lead owns our online presence strategy. You will develop and execute campaigns that grow our audience, build community and communicate YouthTICK's work to the right people in the right way — across Instagram, LinkedIn and wherever else our audience lives.",
+      tr:"Dijital Pazarlama Lideri çevrimiçi varlık stratejimize sahiptir. Hedef kitlemizi büyüten, topluluk inşa eden ve YouthTICK'in çalışmalarını doğru kişilere doğru şekilde ileten kampanyalar geliştirecek ve yürüteceksiniz — Instagram, LinkedIn ve hedef kitlemizin bulunduğu her yerde.",
+      de:"Der Digital Marketing Lead verantwortet unsere Online-Präsenzstrategie. Sie entwickeln und setzen Kampagnen um, die unsere Zielgruppe vergrößern, Community aufbauen und YouthTICKs Arbeit den richtigen Menschen richtig kommunizieren — auf Instagram, LinkedIn und überall, wo unsere Zielgruppe ist."
+    },
+    resp:{
+      en:["Develop and execute a social media content calendar across Instagram and LinkedIn","Analyse performance metrics and produce monthly reports with recommendations","Plan and run occasional paid campaigns (if budget is available)","Collaborate with the design and communications teams on visual content","Identify growth opportunities and new channels relevant to our audience"],
+      tr:["Instagram ve LinkedIn genelinde sosyal medya içerik takvimi geliştirme ve yürütme","Performans metriklerini analiz etme ve önerilerle aylık raporlar üretme","Zaman zaman ücretli kampanyalar planlama ve yürütme (bütçe varsa)","Görsel içerik için tasarım ve iletişim ekipleriyle iş birliği yapma","Hedef kitlemizle ilgili büyüme fırsatlarını ve yeni kanalları belirleme"],
+      de:["Social-Media-Inhaltskalender über Instagram und LinkedIn entwickeln und umsetzen","Leistungsmetriken analysieren und monatliche Berichte mit Empfehlungen erstellen","Gelegentliche bezahlte Kampagnen planen und durchführen (bei vorhandenem Budget)","Mit Design- und Kommunikationsteams an visuellem Content zusammenarbeiten","Wachstumschancen und neue Kanäle für unsere Zielgruppe identifizieren"]
+    },
+    gain:{
+      en:["Real institutional social media management experience","Proficiency in analytics tools, scheduling platforms and growth strategy","A demonstrable track record of building an audience for a European NGO","A reference from YouthTICK's digital team lead"],
+      tr:["Gerçek kurumsal sosyal medya yönetimi deneyimi","Analitik araçlar, planlama platformları ve büyüme stratejisinde yetkinlik","Bir Avrupa STK'sı için hedef kitle oluşturmanın kanıtlanabilir sicili","YouthTICK dijital ekip liderinden referans"],
+      de:["Echte institutionelle Social-Media-Management-Erfahrung","Kompetenz in Analysetools, Planungsplattformen und Wachstumsstrategie","Nachweisbare Erfolgsbilanz beim Aufbau einer Zielgruppe für eine europäische NGO","Referenz von YouthTICKs Digital-Team-Lead"]
+    },
+    ideal:{
+      en:"Marketing students; digital marketers who want NGO experience; social media managers looking to add European institutional work to their portfolio.",
+      tr:"Pazarlama öğrencileri; STK deneyimi isteyen dijital pazarlamacılar; portföylerine Avrupa kurumsal çalışması eklemek isteyen sosyal medya yöneticileri.",
+      de:"Marketingstudierende; digitale Marketer/innen, die NGO-Erfahrung suchen; Social-Media-Manager/innen, die europäische institutionelle Arbeit zu ihrem Portfolio hinzufügen möchten."
+    }
+  },
+  12: {
+    icon:"✍️",
+    title:{en:"Content Writer & Strategist",tr:"İçerik Yazarı ve Stratejisti",de:"Content Writer/in & Strateg/in"},
+    meta:{en:"🌐 Remote · 4–6 hrs/week",tr:"🌐 Uzaktan · Haftada 4–6 saat",de:"🌐 Remote · 4–6 Std./Woche"},
+    about:{
+      en:"Our Content Writer and Strategist shapes the narrative of YouthTICK. You will write long-form articles, strategic communications and programme materials — always in a voice that is honest, grounded and human. No corporate jargon. No empty optimism. Just clear, substantive writing.",
+      tr:"İçerik Yazarı ve Stratejistimiz YouthTICK'in anlatısını şekillendirir. Uzun biçimli makaleler, stratejik iletişimler ve program materyalleri yazacaksınız — her zaman dürüst, sağlam ve insani bir sesle. Kurumsal jargon yok. Boş iyimserlik yok. Sadece net, içerikli yazarlık.",
+      de:"Unser/e Content Writer/in und Strateg/in prägt die Erzählung von YouthTICK. Sie schreiben Langformatartikel, strategische Kommunikation und Programmaterialien — immer in einer ehrlichen, fundierten und menschlichen Stimme. Kein Unternehmensjargon. Kein leerer Optimismus."
+    },
+    resp:{
+      en:["Write SEO-optimised blog articles on Erasmus+, civic participation and youth innovation","Draft organisational communications: newsletters, reports, strategic updates","Develop content briefs and maintain an editorial calendar","Edit and review content produced by other team members","Help define and document YouthTICK editorial tone and style"],
+      tr:["Erasmus+, sivil katılım ve gençlik inovasyonu üzerine SEO optimize edilmiş blog makaleleri yazma","Kurumsal iletişimler taslağı hazırlama: bültenler, raporlar, stratejik güncellemeler","İçerik brifingleri geliştirme ve editoryal takvim tutma","Diğer ekip üyeleri tarafından üretilen içerikleri düzenleme ve inceleme","YouthTICK editoryal tonunu ve stilini tanımlamaya ve belgelemeye yardım etme"],
+      de:["SEO-optimierte Blog-Artikel zu Erasmus+, bürgerlicher Beteiligung und Jugendinnovation schreiben","Organisationskommunikation entwerfen: Newsletter, Berichte, strategische Updates","Content-Briefs entwickeln und Redaktionskalender führen","Von anderen Teammitgliedern erstellte Inhalte bearbeiten und überprüfen","Redaktionellen Ton und Stil von YouthTICK definieren und dokumentieren"]
+    },
+    gain:{
+      en:["A substantial portfolio of published institutional content","SEO and editorial strategy skills","Experience writing for a multicultural European audience","A reference from YouthTICK's editorial team"],
+      tr:["Yayınlanmış kurumsal içerikten oluşan kapsamlı bir portföy","SEO ve editoryal strateji becerileri","Çok kültürlü bir Avrupa hedef kitlesi için yazarlık deneyimi","YouthTICK editoryal ekibinden referans"],
+      de:["Ein umfangreiches Portfolio veröffentlichter institutioneller Inhalte","SEO- und Redaktionsstrategiekompetenzen","Erfahrung im Schreiben für ein multikulturelles europäisches Publikum","Referenz vom YouthTICK-Redaktionsteam"]
+    },
+    ideal:{
+      en:"Journalists, English or communications graduates, copywriters or anyone with strong long-form writing skills and an interest in European youth affairs, civic engagement or international development.",
+      tr:"Gazeteciler, İngilizce veya iletişim mezunları, metin yazarları veya güçlü uzun biçimli yazarlık becerilerine ve Avrupa gençlik meselelerine, sivil katılıma ya da uluslararası kalkınmaya ilgi duyan herkes.",
+      de:"Journalist/innen, Englisch- oder Kommunikationsabsolventen, Texter/innen oder alle mit starken Langformat-Schreibkompetenzen und Interesse an europäischen Jugendfragen, bürgerlichem Engagement oder internationaler Entwicklung."
+    }
+  },
+  13: {
+    icon:"🎬",
+    title:{en:"Video Editor & Multimedia",tr:"Video Editörü ve Multimedya",de:"Video Editor/in & Multimedia"},
+    meta:{en:"🌐 Remote · Project-based",tr:"🌐 Uzaktan · Proje bazlı",de:"🌐 Remote · Projektbasiert"},
+    about:{
+      en:"Video Editors at YouthTICK document what we do and tell stories that written content cannot. You will produce short-form videos, reels, event recaps and team story features — creating content that feels real and personal, not polished and corporate.",
+      tr:"YouthTICK'teki Video Editörleri yaptıklarımızı belgeler ve yazılı içeriğin anlatamayacağı hikayeleri anlatır. Kısa format videolar, reels, etkinlik özetleri ve ekip hikayesi özellikleri üreteceksiniz — parlak ve kurumsal değil, gerçek ve kişisel hissettiren içerikler oluşturacaksınız.",
+      de:"Video-Editoren bei YouthTICK dokumentieren, was wir tun, und erzählen Geschichten, die schriftliche Inhalte nicht können. Sie produzieren Kurzvideos, Reels, Event-Recaps und Team-Story-Features — Inhalte, die sich real und persönlich anfühlen, nicht poliert und korporativ."
+    },
+    resp:{
+      en:["Edit raw footage into finished short-form videos (30s–5min)","Create Instagram Reels, YouTube clips and documentary-style programme recaps","Work with the communications team to align video content with editorial strategy","Develop motion graphics or subtitles as needed","Help build a video content archive documenting YouthTICK's journey"],
+      tr:["Ham görüntüleri bitmiş kısa format videolara düzenleme (30sn–5dak)","Instagram Reels, YouTube klipleri ve belgesel tarzı program özetleri oluşturma","İletişim ekibiyle video içeriğini editoryal stratejiyle uyumlu hale getirme","Gerektiğinde hareketli grafikler veya altyazılar geliştirme","YouthTICK'in yolculuğunu belgeleyen video içerik arşivi oluşturmaya yardım etme"],
+      de:["Rohmaterial in fertige Kurzvideos schneiden (30 Sek.–5 Min.)","Instagram Reels, YouTube-Clips und dokumentarische Programmzusammenfassungen erstellen","Mit dem Kommunikationsteam Video-Content mit der Redaktionsstrategie abstimmen","Bewegungsgrafiken oder Untertitel nach Bedarf entwickeln","Beim Aufbau eines Videoinhaltsarchivs helfen, das YouthTICKs Reise dokumentiert"]
+    },
+    gain:{
+      en:["A diverse multimedia portfolio with real organisational content","Experience in non-profit storytelling and documentary-style editing","Credits on all produced content","Collaboration with a multilingual, multicultural creative team"],
+      tr:["Gerçek kurumsal içerikle çeşitli multimedya portföyü","Kâr amacı gütmeyen hikaye anlatımı ve belgesel tarzı düzenleme deneyimi","Üretilen tüm içeriklerde kredi","Çok dilli, çok kültürlü bir yaratıcı ekiple iş birliği"],
+      de:["Ein vielfältiges Multimedia-Portfolio mit echten Organisationsinhalten","Erfahrung im Non-Profit-Storytelling und Dokumentarfilm-Schnitt","Credits auf allen produzierten Inhalten","Zusammenarbeit mit einem mehrsprachigen, multikulturellen Kreativteam"]
+    },
+    ideal:{
+      en:"Film, media studies or communications students; freelance video editors who want NGO portfolio pieces; anyone proficient in Premiere Pro, Final Cut, CapCut or similar tools.",
+      tr:"Film, medya çalışmaları veya iletişim öğrencileri; STK portföy parçaları isteyen serbest video editörleri; Premiere Pro, Final Cut, CapCut veya benzer araçlarda yetkin herkes.",
+      de:"Film-, Medienwissenschafts- oder Kommunikationsstudierende; Freelance-Video-Editoren, die NGO-Portfoliostücke suchen; alle, die Premiere Pro, Final Cut, CapCut oder ähnliche Tools beherrschen."
+    }
+  },
+  14: {
+    icon:"🖥️",
+    title:{en:"Web Design & UX Volunteer",tr:"Web Tasarım ve UX Gönüllüsü",de:"Web Design & UX Freiwillige/r"},
+    meta:{en:"🌐 Remote · Flexible",tr:"🌐 Uzaktan · Esnek",de:"🌐 Remote · Flexibel"},
+    about:{
+      en:"Web Design and UX Volunteers maintain and evolve the YouthTICK website — adding pages, improving usability and ensuring that our digital presence genuinely reflects who we are. This is a hands-on technical role with real creative input.",
+      tr:"Web Tasarım ve UX Gönüllüleri YouthTICK web sitesini korur ve geliştirir — sayfalar ekleyerek, kullanılabilirliği iyileştirerek ve dijital varlığımızın gerçekte kim olduğumuzu yansıtmasını sağlayarak. Bu, gerçek yaratıcı katkısı olan uygulamalı teknik bir roldür.",
+      de:"Web-Design- und UX-Freiwillige pflegen und entwickeln die YouthTICK-Website — fügen Seiten hinzu, verbessern die Benutzerfreundlichkeit und stellen sicher, dass unsere digitale Präsenz wirklich widerspiegelt, wer wir sind. Das ist eine praktische technische Rolle mit echtem kreativem Input."
+    },
+    resp:{
+      en:["Update and improve existing website pages (HTML/CSS/JS)","Design and build new pages as YouthTICK programmes develop","Conduct basic UX reviews: test user flows, identify friction points","Implement SEO improvements and accessibility fixes","Coordinate with the design team on visual consistency"],
+      tr:["Mevcut web sitesi sayfalarını güncelleme ve iyileştirme (HTML/CSS/JS)","YouthTICK programları geliştikçe yeni sayfalar tasarlama ve oluşturma","Temel UX incelemeleri yapma: kullanıcı akışlarını test etme, sorun noktalarını belirleme","SEO iyileştirmeleri ve erişilebilirlik düzeltmelerini uygulama","Görsel tutarlılık için tasarım ekibiyle koordinasyon sağlama"],
+      de:["Bestehende Website-Seiten aktualisieren und verbessern (HTML/CSS/JS)","Neue Seiten gestalten und aufbauen, wenn YouthTICK-Programme sich entwickeln","Grundlegende UX-Reviews durchführen: Benutzerflüsse testen, Reibungspunkte identifizieren","SEO-Verbesserungen und Barrierefreiheitsfixes implementieren","Mit dem Designteam bei visueller Konsistenz koordinieren"]
+    },
+    gain:{
+      en:["Real-world web development experience in a live production environment","UX design skills tested against actual user behaviour","A portfolio of deployed web work for a European NGO","Technical mentoring from experienced team members"],
+      tr:["Canlı üretim ortamında gerçek dünya web geliştirme deneyimi","Gerçek kullanıcı davranışına karşı test edilen UX tasarım becerileri","Avrupa STK'sı için dağıtılan web çalışmalarından oluşan portföy","Deneyimli ekip üyelerinden teknik mentorluk"],
+      de:["Praxisnahe Web-Entwicklungserfahrung in einer Live-Produktionsumgebung","UX-Design-Kompetenzen, getestet gegen echtes Benutzerverhalten","Portfolio bereitgestellter Web-Arbeit für eine europäische NGO","Technisches Mentoring von erfahrenen Teammitgliedern"]
+    },
+    ideal:{
+      en:"Web development, UX/UI design or computer science students; junior developers who want to build their portfolio; anyone with solid HTML/CSS skills and a genuine interest in user experience.",
+      tr:"Web geliştirme, UX/UI tasarım veya bilgisayar bilimi öğrencileri; portföylerini oluşturmak isteyen genç geliştiriciler; sağlam HTML/CSS becerilerine ve kullanıcı deneyimine gerçek ilgiye sahip herkes.",
+      de:"Web-Entwicklungs-, UX/UI-Design- oder Informatik-Studierende; Junior-Entwickler/innen, die ihr Portfolio aufbauen möchten; alle mit soliden HTML/CSS-Kenntnissen und echtem Interesse an User Experience."
+    }
+  },
+  15: {
+    icon:"📋",
+    title:{en:"Grant Research Volunteer",tr:"Hibe Araştırma Gönüllüsü",de:"Förderrecherche-Freiwillige/r"},
+    meta:{en:"🌐 Remote · 3–4 months",tr:"🌐 Uzaktan · 3–4 ay",de:"🌐 Remote · 3–4 Monate"},
+    about:{
+      en:"Grant Research Volunteers track the funding landscape so that YouthTICK never misses an opportunity. You will identify relevant calls, summarise eligibility and requirements, and support our applications — directly enabling the programmes that everything else depends on.",
+      tr:"Hibe Araştırma Gönüllüleri YouthTICK'in hiçbir fırsatı kaçırmaması için fon ortamını takip eder. İlgili çağrıları belirleyecek, uygunluk ve gereksinimleri özetleyecek ve başvurularımızı destekleyeceksiniz — her şeyin dayandığı programları doğrudan etkinleştireceksiniz.",
+      de:"Förderrecherche-Freiwillige verfolgen die Förderlandschaft, damit YouthTICK keine Chance verpasst. Sie identifizieren relevante Ausschreibungen, fassen Förderfähigkeit und Anforderungen zusammen und unterstützen unsere Anträge — und ermöglichen so direkt die Programme, von denen alles andere abhängt."
+    },
+    resp:{
+      en:["Research and monitor EU, national and foundation funding opportunities relevant to youth organisations","Produce structured funding summaries: eligibility, deadlines, budget rules, fit assessment","Maintain a grant calendar with upcoming deadlines and submission requirements","Support the drafting of application sections (needs assessment, activity design, budget logic)","Liaise with the programme team to match project priorities to funding sources"],
+      tr:["Gençlik kuruluşlarıyla ilgili AB, ulusal ve vakıf fon fırsatlarını araştırma ve izleme","Yapılandırılmış fon özetleri üretme: uygunluk, son tarihler, bütçe kuralları, uyum değerlendirmesi","Yaklaşan son tarihler ve başvuru gereksinimleriyle hibe takvimi tutma","Başvuru bölümlerinin taslağını destekleme (ihtiyaç değerlendirmesi, etkinlik tasarımı, bütçe mantığı)","Proje önceliklerini fon kaynaklarıyla eşleştirmek için program ekibiyle iletişim kurma"],
+      de:["EU-, nationale und Stiftungsförderchancen für Jugendorganisationen recherchieren und überwachen","Strukturierte Förderzusammenfassungen erstellen: Förderfähigkeit, Fristen, Budgetregeln, Eignungsbewertung","Förderkalender mit bevorstehenden Fristen und Einreichungsanforderungen führen","Ausarbeitung von Antragsabschnitten unterstützen (Bedarfsanalyse, Aktivitätsdesign, Budgetlogik)","Mit dem Programmteam kommunizieren, um Projektprioritäten mit Förderquellen abzugleichen"]
+    },
+    gain:{
+      en:["Expert knowledge of European funding mechanisms and grant writing","Direct experience supporting successful applications","A reference highly relevant to careers in NGO management, EU affairs or development","An understanding of how European civil society finances itself"],
+      tr:["Avrupa finansman mekanizmaları ve hibe yazımında uzman bilgisi","Başarılı başvuruları destekleme konusunda doğrudan deneyim","STK yönetimi, AB işleri veya kalkınmadaki kariyer için son derece ilgili referans","Avrupa sivil toplumunun kendini nasıl finanse ettiğine dair anlayış"],
+      de:["Expertenwissen zu europäischen Fördermechanismen und Antragschreiben","Direkte Erfahrung bei der Unterstützung erfolgreicher Anträge","Referenz, die für Karrieren in NGO-Management, EU-Angelegenheiten oder Entwicklung sehr relevant ist","Verständnis, wie sich die europäische Zivilgesellschaft finanziert"]
+    },
+    ideal:{
+      en:"Students in European studies, non-profit management, public administration or law; anyone interested in EU funding mechanisms, grant writing or strategic development in the non-profit sector.",
+      tr:"Avrupa çalışmaları, kâr amacı gütmeyen kuruluş yönetimi, kamu yönetimi veya hukuk öğrencileri; AB finansman mekanizmalarına, hibe yazıma veya kâr amacı gütmeyen sektörde stratejik gelişime ilgi duyan herkes.",
+      de:"Studierende der Europastudien, Non-Profit-Management, öffentlichen Verwaltung oder Rechtswissenschaft; alle, die an EU-Fördermechanismen, Antragschreiben oder strategischer Entwicklung im Non-Profit-Sektor interessiert sind."
+    }
+  },
+  16: {
+    icon:"🤖",
+    title:{en:"AI & Digital Skills Trainer",tr:"Yapay Zeka ve Dijital Beceriler Eğitmeni",de:"KI & Digitalkompetenzen Trainer/in"},
+    meta:{en:"🌐 Remote · Flexible",tr:"🌐 Uzaktan · Esnek",de:"🌐 Remote · Flexibel"},
+    about:{
+      en:"Our AI and Digital Skills Trainers design and deliver learning experiences that make complex technology topics accessible to young people. You will apply non-formal education methods to subjects like AI literacy, data privacy, digital citizenship and future skills — making them relevant, engaging and practical.",
+      tr:"Yapay Zeka ve Dijital Beceriler Eğitmenlerimiz karmaşık teknoloji konularını gençler için erişilebilir kılan öğrenme deneyimleri tasarlar ve sunar. YZ okuryazarlığı, veri gizliliği, dijital vatandaşlık ve gelecek becerileri gibi konulara yaygın eğitim yöntemleri uygulayacaksınız.",
+      de:"Unsere KI- und Digitalkompetenzen-Trainer/innen gestalten und liefern Lernerfahrungen, die komplexe Technologiethemen für junge Menschen zugänglich machen. Sie wenden non-formale Bildungsmethoden auf Themen wie KI-Kompetenz, Datenschutz, digitale Bürgerschaft und Zukunftskompetenzen an."
+    },
+    resp:{
+      en:["Design session plans for AI and digital skills workshops (2–4 hrs each)","Facilitate online and hybrid workshops for groups of 8–20 young participants","Develop supporting materials: activity cards, case studies, reflection tools","Research current AI and digital trends relevant to young people","Contribute to YouthTICK digital literacy curriculum development"],
+      tr:["YZ ve dijital beceriler atölyeleri için oturum planları tasarlama (her biri 2–4 saat)","8–20 genç katılımcı grubu için çevrimiçi ve hibrit atölyeler kolaylaştırma","Destekleyici materyaller geliştirme: etkinlik kartları, vaka çalışmaları, yansıma araçları","Gençler için ilgili mevcut YZ ve dijital trendleri araştırma","YouthTICK dijital okuryazarlık müfredatı geliştirmeye katkıda bulunma"],
+      de:["Sitzungspläne für KI- und Digitalkompetenzen-Workshops gestalten (je 2–4 Std.)","Online- und Hybrid-Workshops für Gruppen von 8–20 jungen Teilnehmenden facilitieren","Unterstützungsmaterialien entwickeln: Aktivitätskarten, Fallstudien, Reflexionstools","Aktuelle KI- und Digital-Trends recherchieren, die für junge Menschen relevant sind","Zur Entwicklung des YouthTICK-Digitalkompetenz-Curriculums beitragen"]
+    },
+    gain:{
+      en:["Non-formal facilitation skills applied to a high-demand topic","Experience designing curriculum for diverse, multilingual audiences","A portfolio of workshop materials and session reports","Recognition as a practitioner in the emerging field of youth digital literacy"],
+      tr:["Yüksek talep gören bir konuya uygulanan yaygın kolaylaştırma becerileri","Çeşitli, çok dilli hedef kitleler için müfredat tasarlama deneyimi","Atölye materyalleri ve oturum raporlarından oluşan portföy","Gelişmekte olan gençlik dijital okuryazarlığı alanında uygulayıcı olarak tanınma"],
+      de:["Non-formale Facilitation-Kompetenzen angewendet auf ein stark gefragtes Thema","Erfahrung in der Curriculum-Gestaltung für vielfältige, mehrsprachige Zielgruppen","Portfolio von Workshop-Materialien und Sitzungsberichten","Anerkennung als Praktiker/in im aufstrebenden Bereich der digitalen Jugendkompetenz"]
+    },
+    ideal:{
+      en:"Tech professionals who want to give back; computer science, AI or digital media students; educators with an interest in technology; anyone who can make complex digital topics engaging and approachable for young people.",
+      tr:"Geri vermek isteyen teknoloji profesyonelleri; bilgisayar bilimi, YZ veya dijital medya öğrencileri; teknolojiye ilgi duyan eğitimciler; karmaşık dijital konuları gençler için ilgi çekici ve ulaşılabilir kılabilen herkes.",
+      de:"Tech-Fachleute, die etwas zurückgeben möchten; Informatik-, KI- oder Digitale-Medien-Studierende; Pädagog/innen mit Interesse an Technologie; alle, die komplexe digitale Themen für junge Menschen ansprechend und zugänglich machen können."
+    }
+  },
+  17: {
+    icon:"⚖️",
+    title:{en:"Legal & Compliance Assistant",tr:"Hukuki ve Uyumluluk Asistanı",de:"Rechts- & Compliance-Assistent/in"},
+    meta:{en:"🌐 Remote · Ongoing",tr:"🌐 Uzaktan · Sürekli",de:"🌐 Remote · Fortlaufend"},
+    about:{
+      en:"Legal and Compliance Assistants support the governance foundations of YouthTICK. As a developing organisation, we are building our legal structures, policies and compliance frameworks from the ground up — and we need people with legal knowledge to help us do it properly.",
+      tr:"Hukuki ve Uyumluluk Asistanları YouthTICK'in yönetim temellerini destekler. Gelişmekte olan bir kuruluş olarak hukuki yapılarımızı, politikalarımızı ve uyumluluk çerçevelerimizi sıfırdan inşa ediyoruz — ve bunu doğru şekilde yapmamıza yardımcı olacak hukuki bilgiye sahip kişilere ihtiyacımız var.",
+      de:"Rechts- und Compliance-Assistent/innen unterstützen die Governance-Grundlagen von YouthTICK. Als sich entwickelnde Organisation bauen wir unsere rechtlichen Strukturen, Richtlinien und Compliance-Rahmen von Grund auf — und wir brauchen Menschen mit juristischem Wissen, die uns dabei helfen, es richtig zu machen."
+    },
+    resp:{
+      en:["Review and help draft internal policies (data protection, volunteer agreements, codes of conduct)","Monitor statutory obligations relevant to Turkish and EU non-profit law","Support the preparation of governance documents (board minutes, annual reports, constitutional amendments)","Advise on GDPR compliance and data handling practices","Flag legal risks and recommend mitigation strategies"],
+      tr:["İç politikaları inceleme ve taslak hazırlamaya yardım etme (veri koruma, gönüllü anlaşmaları, davranış kuralları)","Türk ve AB kâr amacı gütmeyen kuruluş hukukuyla ilgili yasal yükümlülükleri izleme","Yönetim belgelerinin hazırlanmasını destekleme (yönetim kurulu tutanakları, yıllık raporlar)","GDPR uyumluluğu ve veri işleme uygulamaları konusunda tavsiye verme","Hukuki riskleri belirleme ve azaltma stratejileri önerme"],
+      de:["Interne Richtlinien überprüfen und helfen zu entwerfen (Datenschutz, Freiwilligenvereinbarungen, Verhaltenskodizes)","Gesetzliche Verpflichtungen nach türkischem und EU-Non-Profit-Recht überwachen","Vorbereitung von Governance-Dokumenten unterstützen (Vorstandsprotokolle, Jahresberichte)","Zu DSGVO-Compliance und Datenverarbeitungspraktiken beraten","Rechtliche Risiken kennzeichnen und Minderungsstrategien empfehlen"]
+    },
+    gain:{
+      en:["Direct experience in NGO governance and compliance in a European context","Applied knowledge of EU and Turkish non-profit law","A professional reference from YouthTICK leadership","Skills in policy drafting, risk analysis and institutional governance"],
+      tr:["Avrupa bağlamında STK yönetimi ve uyumluluk konusunda doğrudan deneyim","AB ve Türk kâr amacı gütmeyen kuruluş hukukunun uygulamalı bilgisi","YouthTICK liderliğinden profesyonel referans","Politika taslağı, risk analizi ve kurumsal yönetim becerileri"],
+      de:["Direkte Erfahrung in NGO-Governance und Compliance in einem europäischen Kontext","Angewandtes Wissen des EU- und türkischen Non-Profit-Rechts","Professionelle Referenz von YouthTICK-Führung","Kompetenzen in Richtlinienentwurf, Risikoanalyse und institutioneller Governance"]
+    },
+    ideal:{
+      en:"Law students (especially those specialising in EU law, international law or non-profit/charity law); junior lawyers interested in civil society; compliance professionals who want to contribute to a values-driven organisation.",
+      tr:"Hukuk öğrencileri (özellikle AB hukuku, uluslararası hukuk veya kâr amacı gütmeyen kuruluş hukukunda uzmanlaşanlar); sivil topluma ilgi duyan genç avukatlar; değer odaklı bir kuruluşa katkıda bulunmak isteyen uyumluluk profesyonelleri.",
+      de:"Jurastudierende (besonders jene, die sich auf EU-Recht, Internationales Recht oder Non-Profit-/Spendenrecht spezialisieren); Junganwälte/-anwältinnen mit Interesse an Zivilgesellschaft; Compliance-Fachleute, die zu einer werteorientierten Organisation beitragen möchten."
+    }
+  },
+  18: {
+    icon:"🌿",
+    title:{en:"Sustainability Programme Coordinator",tr:"Sürdürülebilirlik Program Koordinatörü",de:"Nachhaltigkeitsprogramm-Koordinator/in"},
+    meta:{en:"🌐 Remote · 6 months",tr:"🌐 Uzaktan · 6 ay",de:"🌐 Remote · 6 Monate"},
+    about:{
+      en:"Sustainability Programme Coordinators help YouthTICK connect young people to the green transition. You will help design and deliver programmes focused on environmental awareness, sustainable careers and the practical intersection of youth participation and climate action.",
+      tr:"Sürdürülebilirlik Program Koordinatörleri YouthTICK'in gençleri yeşil dönüşüme bağlamasına yardımcı olur. Çevre farkındalığı, sürdürülebilir kariyerler ve gençlik katılımı ile iklim eyleminin pratik kesişimine odaklanan programlar tasarlamaya ve sunmaya yardım edeceksiniz.",
+      de:"Nachhaltigkeitsprogramm-Koordinator/innen helfen YouthTICK, junge Menschen mit dem grünen Wandel zu verbinden. Sie helfen bei der Gestaltung und Durchführung von Programmen zu Umweltbewusstsein, nachhaltigen Karrieren und der praktischen Schnittstelle von Jugendbeteiligung und Klimahandeln."
+    },
+    resp:{
+      en:["Research sustainability topics relevant to young people in Türkiye and Europe","Design workshop content on green careers, circular economy and climate action for youth audiences","Coordinate with partner organisations working in the sustainability space","Help produce sustainability-focused content for our communications channels","Track EU green policy developments relevant to youth organisations"],
+      tr:["Türkiye ve Avrupa'daki gençler için ilgili sürdürülebilirlik konularını araştırma","Gençlik hedef kitlesi için yeşil kariyer, döngüsel ekonomi ve iklim eyleminde atölye içerikleri tasarlama","Sürdürülebilirlik alanında çalışan ortak kuruluşlarla koordinasyon sağlama","İletişim kanallarımız için sürdürülebilirlik odaklı içerik üretmeye yardım etme","Gençlik kuruluşları için ilgili AB yeşil politika gelişmelerini takip etme"],
+      de:["Nachhaltigkeitsthemen recherchieren, die für junge Menschen in der Türkei und Europa relevant sind","Workshop-Inhalte zu grünen Karrieren, Kreislaufwirtschaft und Klimahandeln für Jugendzielgruppen gestalten","Mit Partnerorganisationen im Nachhaltigkeitsbereich koordinieren","Nachhaltigkeitsorientierte Inhalte für unsere Kommunikationskanäle mitproduzieren","EU-Grünpolitikentwicklungen verfolgen, die für Jugendorganisationen relevant sind"]
+    },
+    gain:{
+      en:["Programme design experience in a rapidly growing thematic area","Understanding of the EU green transition and its implications for youth","A portfolio of sustainability workshop materials","Connections to the European youth sustainability and climate network"],
+      tr:["Hızla büyüyen bir tematik alanda program tasarımı deneyimi","AB yeşil dönüşümü ve gençler için çıkarımlarını anlama","Sürdürülebilirlik atölyesi materyallerinden oluşan portföy","Avrupa gençlik sürdürülebilirliği ve iklim ağına bağlantılar"],
+      de:["Programmdesign-Erfahrung in einem schnell wachsenden Themenbereich","Verständnis des EU-Grünen Wandels und seiner Auswirkungen auf Jugendliche","Portfolio von Nachhaltigkeits-Workshop-Materialien","Verbindungen zum europäischen Jugend-Nachhaltigkeits- und Klimanetzwerk"]
+    },
+    ideal:{
+      en:"Environmental studies, sustainability or geography students; young professionals working in green sectors; anyone who wants to connect their commitment to the environment with youth participation and European civic work.",
+      tr:"Çevre çalışmaları, sürdürülebilirlik veya coğrafya öğrencileri; yeşil sektörlerde çalışan genç profesyoneller; çevreye olan bağlılıklarını gençlik katılımı ve Avrupa sivil çalışmasıyla buluşturmak isteyenler.",
+      de:"Umweltwissenschafts-, Nachhaltigkeits- oder Geographiestudierende; junge Fachleute in grünen Sektoren; alle, die ihr Engagement für die Umwelt mit Jugendbeteiligung und europäischer Zivilarbeit verbinden möchten."
+    }
+  }
+};
+
+let _bodyScrollY = 0;
+function _lockScroll() {
+  _bodyScrollY = window.scrollY;
+  document.body.style.overflow = 'hidden';
+  document.body.style.position = 'fixed';
+  document.body.style.top = `-${_bodyScrollY}px`;
+  document.body.style.width = '100%';
+}
+function _unlockScroll() {
+  document.body.style.overflow = '';
+  document.body.style.position = '';
+  document.body.style.top = '';
+  document.body.style.width = '';
+  window.scrollTo(0, _bodyScrollY);
+}
+
+// ── Application flow state ─────────────────────────────
+let _applyingRoleId = null;
+const _additionalRoleIds = new Set();
+
+function openRoleModal(id) {
+  _applyingRoleId = id;          // track for applyForRole()
+  const r = ROLES[id];
+  if (!r) return;
+  const lang = document.documentElement.lang || 'en';
+  const l = (obj) => obj[lang] || obj['en'];
+  document.getElementById('rm-icon').textContent = r.icon;
+  document.getElementById('role-modal-title-el').textContent = l(r.title);
+  document.getElementById('rm-meta').textContent = l(r.meta);
+  document.getElementById('rm-about').textContent = l(r.about);
+  document.getElementById('rm-lbl-about').textContent = lang==='tr'?'BU ROL HAKKINDA':lang==='de'?'ÜBER DIESE STELLE':'ABOUT THIS ROLE';
+  document.getElementById('rm-lbl-resp').textContent  = lang==='tr'?'YAPACAKLARIN':lang==='de'?'DEINE AUFGABEN':"WHAT YOU'LL DO";
+  document.getElementById('rm-lbl-gain').textContent  = lang==='tr'?'KAZANIMLAR':lang==='de'?'WAS DU GEWINNST':"WHAT YOU'LL GAIN";
+  document.getElementById('rm-lbl-ideal').textContent = lang==='tr'?'İDEAL ADAY':lang==='de'?'IDEAL FÜR':'IDEAL FOR';
+  document.getElementById('rm-ideal').textContent = l(r.ideal);
+  const applyLabel = lang==='tr'?'Bu role başvur →':lang==='de'?'Jetzt bewerben →':'Apply for this role →';
+  document.getElementById('rm-apply').textContent = applyLabel;
+  // Show mobile fixed CTA
+  const mobileCta = document.getElementById('mobile-apply-cta');
+  if (mobileCta) { mobileCta.textContent = applyLabel; mobileCta.style.display = 'block'; }
+  document.getElementById('rm-resp').innerHTML = l(r.resp).map(t =>
+    `<li><span class="resp-arrow">→</span><span>${t}</span></li>`
+  ).join('');
+  document.getElementById('rm-gain').innerHTML =
+    `<div class="gain-list">${l(r.gain).map(t =>
+      `<div class="gain-item"><span class="gain-check">✓</span><span>${t}</span></div>`
+    ).join('')}</div>`;
+  // Reset scroll to top of sheet
+  const box = document.querySelector('.role-modal-box');
+  if (box) box.scrollTop = 0;
+  document.getElementById('role-modal').classList.add('open');
+  _lockScroll();
+}
+
+function closeRoleModal() {
+  document.getElementById('role-modal').classList.remove('open');
+  _unlockScroll();
+  // Hide mobile fixed CTA
+  const mobileCta = document.getElementById('mobile-apply-cta');
+  if (mobileCta) mobileCta.style.display = 'none';
+}
+
+// ── applyForRole — triggered by modal Apply button ─────
+function applyForRole() {
+  const id = _applyingRoleId;
+  if (!id) return;
+  closeRoleModal();
+  // Small delay to let modal animate out
+  setTimeout(() => {
+    _selectPrimaryRole(id);
+    const sec = document.getElementById('vol-form-section');
+    if (sec) {
+      sec.scrollIntoView({ behavior:'smooth', block:'start' });
+      sec.classList.add('form-pulse');
+      setTimeout(() => sec.classList.remove('form-pulse'), 1100);
+    }
+  }, 320);
+}
+
+// ── Populate the smart role selector ──────────────────
+function _showRoleBanner(icon, name) {
+  document.getElementById('frb-icon').textContent = icon;
+  document.getElementById('frb-name').textContent = name;
+  document.getElementById('form-role-banner').style.display = 'block';
+  document.getElementById('form-general-choice').style.display = 'none';
+}
+
+function clearApplyRole() {
+  document.getElementById('form-role-banner').style.display = 'none';
+  document.getElementById('form-general-choice').style.display = 'block';
+  // Reset step 2 selector back to classic dropdown
+  document.getElementById('primary-role-display').style.display = 'none';
+  document.getElementById('role-select-fallback').style.display = 'block';
+  const fallbackSel = document.getElementById('vol-role');
+  if (fallbackSel) fallbackSel.setAttribute('data-required', 'true');
+  document.getElementById('vol-primary-role').value = '';
+  _additionalRoleIds.clear();
+  _applyingRoleId = null;
+}
+
+function applyGeneral() {
+  const lang = document.documentElement.lang || 'en';
+  const icon = '🌱';
+  const name = lang==='tr' ? 'Genel Gönüllü — Yoğun görev almak istemiyorum' :
+                lang==='de' ? 'Allgemeiner Freiwilliger' :
+                'General Volunteer — No heavy role';
+  const label = lang==='tr' ? 'Genel Başvuru' : lang==='de' ? 'Allgemeine Bewerbung' : 'General Application';
+  _showRoleBanner(icon, name);
+  // Fill smart selector
+  document.getElementById('primary-role-display').style.display = 'block';
+  document.getElementById('role-select-fallback').style.display = 'none';
+  document.getElementById('form-primary-icon').textContent = icon;
+  document.getElementById('form-primary-name').textContent = lang==='tr' ? 'Genel Gönüllü' : 'General Volunteer';
+  document.getElementById('form-primary-label').textContent = label;
+  document.getElementById('vol-primary-role').value = lang==='tr' ? 'Genel Gönüllü' : 'General Volunteer';
+  document.getElementById('vol-additional-roles').value = '';
+  const fallbackSel = document.getElementById('vol-role');
+  if (fallbackSel) fallbackSel.setAttribute('data-required', 'false');
+  _additionalRoleIds.clear();
+  const addMoreLabel = document.getElementById('add-more-label');
+  if (addMoreLabel) addMoreLabel.textContent = lang==='tr' ? '+ Belirli bir role de başvur?' : '+ Also apply for a specific role?';
+  _buildAdditionalRolesPanel(0, obj => obj[lang] || obj['en']);
+  _updateRolesSummary(lang==='tr' ? 'Genel Gönüllü' : 'General Volunteer', obj => obj[lang] || obj['en']);
+}
+
+function _selectPrimaryRole(id) {
+  const lang = document.documentElement.lang || 'en';
+  const l = obj => obj[lang] || obj['en'];
+  const r = ROLES[id];
+  if (!r) return;
+
+  _additionalRoleIds.clear();
+
+  // Update top banner
+  _showRoleBanner(r.icon, l(r.title));
+
+  // Show smart selector, hide classic select
+  document.getElementById('primary-role-display').style.display = 'block';
+  document.getElementById('role-select-fallback').style.display = 'none';
+
+  // Fill primary role card
+  document.getElementById('form-primary-icon').textContent = r.icon;
+  document.getElementById('form-primary-name').textContent = l(r.title);
+  document.getElementById('form-primary-label').textContent =
+    lang==='tr' ? 'Birincil Başvuru' : lang==='de' ? 'Hauptbewerbung' : 'Primary Application';
+
+  // Add-more button label
+  document.getElementById('add-more-label').textContent =
+    lang==='tr' ? '+ Başka bir role de başvur?' :
+    lang==='de' ? '+ Für eine weitere Stelle bewerben?' :
+    '+ Also apply for another role?';
+
+  // Hidden form fields
+  document.getElementById('vol-primary-role').value = l(r.title);
+  document.getElementById('vol-additional-roles').value = '';
+
+  // Disable required on classic select (it's hidden now)
+  const fallbackSel = document.getElementById('vol-role');
+  if (fallbackSel) fallbackSel.setAttribute('data-required', 'false');
+
+  // Reset add-more panel
+  const panel = document.getElementById('additional-roles-panel');
+  const btn   = document.getElementById('add-more-btn');
+  panel.classList.remove('open');
+  btn.classList.remove('open');
+  btn.setAttribute('aria-expanded','false');
+
+  // Build chips (all roles except primary)
+  _buildAdditionalRolesPanel(id, l);
+
+  // Hide summary
+  _updateRolesSummary(l(r.title), l);
+}
+
+function _buildAdditionalRolesPanel(excludeId, l) {
+  const panel = document.getElementById('additional-roles-panel');
+  panel.innerHTML = Object.entries(ROLES)
+    .filter(([id]) => parseInt(id) !== parseInt(excludeId))
+    .map(([id, r]) => {
+      const title = l(r.title);
+      return `<label class="role-chip-option" data-role-id="${id}" tabindex="0"
+        onclick="toggleRoleChip(event,${id})"
+        onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleRoleChip(event,${id})}"
+        role="checkbox" aria-checked="false" aria-label="${title}">
+        <input type="checkbox" aria-hidden="true">
+        <span class="chip-icon-sm">${r.icon}</span>
+        <span class="chip-name">${title}</span>
+        <span class="chip-check-mark" aria-hidden="true">✓</span>
+      </label>`;
+    }).join('');
+}
+
+function toggleRoleChip(e, id) {
+  e.preventDefault();
+  const chip = document.querySelector(`.role-chip-option[data-role-id="${id}"]`);
+  if (!chip) return;
+  const isChecked = _additionalRoleIds.has(id);
+  if (isChecked) {
+    _additionalRoleIds.delete(id);
+    chip.classList.remove('checked');
+    chip.setAttribute('aria-checked','false');
+  } else {
+    _additionalRoleIds.add(id);
+    chip.classList.add('checked');
+    chip.setAttribute('aria-checked','true');
+  }
+  // Update hidden input
+  const lang = document.documentElement.lang || 'en';
+  const l = obj => obj[lang] || obj['en'];
+  const primaryTitle = document.getElementById('form-primary-name').textContent;
+  document.getElementById('vol-additional-roles').value =
+    Array.from(_additionalRoleIds).map(rid => l(ROLES[rid].title)).join(', ');
+  _updateRolesSummary(primaryTitle, l);
+}
+
+function toggleAddMoreRoles() {
+  const panel = document.getElementById('additional-roles-panel');
+  const btn   = document.getElementById('add-more-btn');
+  const open  = panel.classList.toggle('open');
+  btn.classList.toggle('open', open);
+  btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+}
+
+function _updateRolesSummary(primaryTitle, l) {
+  const summary = document.getElementById('roles-summary');
+  if (_additionalRoleIds.size === 0) {
+    summary.style.display = 'none';
+    return;
+  }
+  const extras = Array.from(_additionalRoleIds)
+    .map(id => `<span class="role-summary-chip is-extra">${ROLES[id].icon} ${l(ROLES[id].title)}</span>`)
+    .join('');
+  summary.innerHTML =
+    `<span class="role-summary-chip is-primary">🔒 ${primaryTitle}</span>${extras}`;
+  summary.style.display = 'flex';
+}
+
+document.addEventListener('keydown', e => { if(e.key === 'Escape') closeRoleModal(); });
+</script>
+
+<section class="form-section" id="vol-form-section" style="background:var(--bg-soft);border-top:1px solid var(--border-soft);">
+  <div class="container">
+    <div class="form-container">
+      <div class="section-label" data-anim><span class="section-label-line"></span><span class="section-label-text" data-i18n="vol.form.title">Apply Now</span></div>
+      <h2 class="display-md" data-anim style="margin-top:16px;margin-bottom:32px;" data-i18n="vol.form.title">Volunteer application.</h2>
+
+      <!-- ── Role context: shown after clicking "Apply for this role" ── -->
+      <div id="form-role-banner" class="form-role-banner" style="display:none;">
+        <div class="frb-inner">
+          <span class="frb-icon" id="frb-icon">📋</span>
+          <div class="frb-info">
+            <div class="frb-tag" data-i18n="vol.frb.label">Başvurulan Rol</div>
+            <div class="frb-name" id="frb-name"></div>
+          </div>
+          <button type="button" class="frb-clear" onclick="clearApplyRole()" title="Rolü kaldır" aria-label="Rolü kaldır">✕</button>
+        </div>
+      </div>
+
+      <!-- ── General volunteer: shown on direct form access ── -->
+      <div id="form-general-choice" class="form-general-choice">
+        <button type="button" class="fgc-btn" id="fgc-btn" onclick="applyGeneral()">
+          <span class="fgc-icon">🌱</span>
+          <div class="fgc-text">
+            <strong data-i18n="vol.general.title">Genel gönüllü olarak başvur</strong>
+            <span data-i18n="vol.general.sub">Yoğun bir rol almadan YouthTICK etkinliklerine ve projelerine katıl</span>
+          </div>
+          <span class="fgc-arrow">→</span>
+        </button>
+        <p class="fgc-hint" data-i18n="vol.general.hint">ya da yukarıdan belirli bir role tıklayıp oradan başvur</p>
+      </div>
+
+      <div class="steps-bar" id="steps-bar">
+        <div class="step active" id="step-ind-1"><div class="step-dot">1</div><div class="step-label" data-i18n="vol.step.personal">Personal</div></div>
+        <div class="step" id="step-ind-2"><div class="step-dot">2</div><div class="step-label" data-i18n="vol.step.background">Background</div></div>
+        <div class="step" id="step-ind-3"><div class="step-dot">3</div><div class="step-label" data-i18n="vol.step.motivation">Motivation</div></div>
+      </div>
+
+      <form id="vol-form">
+        <!-- Step 1 -->
+        <div class="form-step active" id="form-step-1">
+          <div class="form-row">
+            <div class="form-group"><label class="form-label" data-i18n="contact.form.name">First Name</label><input type="text" name="First Name" class="form-input" data-i18n-placeholder="vol.form.fname.pl" placeholder="Mia" id="vol-first" data-required="true" /></div>
+            <div class="form-group"><label class="form-label" data-i18n="contact.form.name">Last Name</label><input type="text" name="Last Name" class="form-input" data-i18n-placeholder="vol.form.lname.pl" placeholder="Schneider" id="vol-last" data-required="true" /></div>
+          </div>
+          <div class="form-group"><label class="form-label" data-i18n="contact.form.email">Email</label><input type="email" name="Email" class="form-input" data-i18n-placeholder="vol.form.email.pl" placeholder="mia@example.com" id="vol-email" data-required="true" /></div>
+          <div class="form-group"><label class="form-label" data-i18n="contact.form.phone">Phone Number</label><input type="tel" name="Phone" class="form-input" data-i18n-placeholder="contact.form.phone.pl" placeholder="+90 532 000 00 00" id="vol-phone" data-required="true" pattern="^\+?[0-9\s\-\(\)]{7,20}$" oninvalid="this.setCustomValidity(document.documentElement.lang==='tr'?'Lütfen telefon numaranızı giriniz':document.documentElement.lang==='de'?'Bitte geben Sie Ihre Telefonnummer ein':'Please enter your phone number')" oninput="this.setCustomValidity('')"/></div>
+          <div class="form-row">
+            <div class="form-group"><label class="form-label" data-i18n="vol.form.country">Country</label>
+              <select class="form-select" name="Country" id="vol-country" data-required="true">
+                <option value="" data-i18n="vol.country.0">Select country...</option>
+                <option>Afghanistan</option><option>Albania</option><option>Algeria</option><option>Andorra</option><option>Angola</option><option>Antigua and Barbuda</option><option>Argentina</option><option>Armenia</option><option>Australia</option><option>Austria</option><option>Azerbaijan</option><option>Bahamas</option><option>Bahrain</option><option>Bangladesh</option><option>Barbados</option><option>Belarus</option><option>Belgium</option><option>Belize</option><option>Benin</option><option>Bhutan</option><option>Bolivia</option><option>Bosnia and Herzegovina</option><option>Botswana</option><option>Brazil</option><option>Brunei</option><option>Bulgaria</option><option>Burkina Faso</option><option>Burundi</option><option>Cabo Verde</option><option>Cambodia</option><option>Cameroon</option><option>Canada</option><option>Central African Republic</option><option>Chad</option><option>Chile</option><option>China</option><option>Colombia</option><option>Comoros</option><option>Congo</option><option>Costa Rica</option><option>Croatia</option><option>Cuba</option><option>Cyprus</option><option>Czech Republic</option><option>Denmark</option><option>Djibouti</option><option>Dominica</option><option>Dominican Republic</option><option>Ecuador</option><option>Egypt</option><option>El Salvador</option><option>Equatorial Guinea</option><option>Eritrea</option><option>Estonia</option><option>Eswatini</option><option>Ethiopia</option><option>Fiji</option><option>Finland</option><option>France</option><option>Gabon</option><option>Gambia</option><option>Georgia</option><option>Germany</option><option>Ghana</option><option>Greece</option><option>Grenada</option><option>Guatemala</option><option>Guinea</option><option>Guinea-Bissau</option><option>Guyana</option><option>Haiti</option><option>Honduras</option><option>Hungary</option><option>Iceland</option><option>India</option><option>Indonesia</option><option>Iran</option><option>Iraq</option><option>Ireland</option><option>Israel</option><option>Italy</option><option>Jamaica</option><option>Japan</option><option>Jordan</option><option>Kazakhstan</option><option>Kenya</option><option>Kiribati</option><option>Kosovo</option><option>Kuwait</option><option>Kyrgyzstan</option><option>Laos</option><option>Latvia</option><option>Lebanon</option><option>Lesotho</option><option>Liberia</option><option>Libya</option><option>Liechtenstein</option><option>Lithuania</option><option>Luxembourg</option><option>Madagascar</option><option>Malawi</option><option>Malaysia</option><option>Maldives</option><option>Mali</option><option>Malta</option><option>Marshall Islands</option><option>Mauritania</option><option>Mauritius</option><option>Mexico</option><option>Micronesia</option><option>Moldova</option><option>Monaco</option><option>Mongolia</option><option>Montenegro</option><option>Morocco</option><option>Mozambique</option><option>Myanmar</option><option>Namibia</option><option>Nauru</option><option>Nepal</option><option>Netherlands</option><option>New Zealand</option><option>Nicaragua</option><option>Niger</option><option>Nigeria</option><option>North Korea</option><option>North Macedonia</option><option>Norway</option><option>Oman</option><option>Pakistan</option><option>Palau</option><option>Palestine</option><option>Panama</option><option>Papua New Guinea</option><option>Paraguay</option><option>Peru</option><option>Philippines</option><option>Poland</option><option>Portugal</option><option>Qatar</option><option>Romania</option><option>Russia</option><option>Rwanda</option><option>Saint Kitts and Nevis</option><option>Saint Lucia</option><option>Saint Vincent and the Grenadines</option><option>Samoa</option><option>San Marino</option><option>Sao Tome and Principe</option><option>Saudi Arabia</option><option>Senegal</option><option>Serbia</option><option>Seychelles</option><option>Sierra Leone</option><option>Singapore</option><option>Slovakia</option><option>Slovenia</option><option>Solomon Islands</option><option>Somalia</option><option>South Africa</option><option>South Korea</option><option>South Sudan</option><option>Spain</option><option>Sri Lanka</option><option>Sudan</option><option>Suriname</option><option>Sweden</option><option>Switzerland</option><option>Syria</option><option>Taiwan</option><option>Tajikistan</option><option>Tanzania</option><option>Thailand</option><option>Timor-Leste</option><option>Togo</option><option>Tonga</option><option>Trinidad and Tobago</option><option>Tunisia</option><option>Türkiye</option><option>Turkmenistan</option><option>Tuvalu</option><option>Uganda</option><option>Ukraine</option><option>United Arab Emirates</option><option>United Kingdom</option><option>United States</option><option>Uruguay</option><option>Uzbekistan</option><option>Vanuatu</option><option>Vatican City</option><option>Venezuela</option><option>Vietnam</option><option>Yemen</option><option>Zambia</option><option>Zimbabwe</option>
+              </select>
+            </div>
+            <div class="form-group"><label class="form-label" data-i18n="vol.form.age">Age</label><input type="number" name="Age" class="form-input" data-i18n-placeholder="vol.form.age.pl" placeholder="24" min="16" max="35" id="vol-age" data-required="true"/></div>
+          </div>
+          <div class="form-nav"><div></div><button type="button" class="btn btn-primary" onclick="nextStep()" id="step1-next" data-i18n="vol.btn.next.bg">Next: Background →</button></div>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="form-step" id="form-step-2">
+          <div class="form-group">
+            <label class="form-label" data-i18n="vol.form.role">Role of Interest</label>
+            <!-- ── Smart Role Selector (shown when coming via modal Apply) ── -->
+            <div id="primary-role-display" style="display:none;">
+              <div class="primary-role-card">
+                <div class="primary-role-icon-wrap-sm" id="form-primary-icon">📋</div>
+                <div class="primary-role-info">
+                  <div class="primary-role-name" id="form-primary-name"></div>
+                  <div class="primary-role-badge" id="form-primary-label">Primary Application</div>
+                </div>
+                <span class="primary-role-lock" title="Your selected role">🔒</span>
+              </div>
+              <button type="button" class="add-more-toggle" id="add-more-btn" onclick="toggleAddMoreRoles()" aria-expanded="false">
+                <span id="add-more-label">+ Also apply for another role?</span>
+                <svg class="toggle-chevron" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m6 9 6 6 6-6"/></svg>
+              </button>
+              <div class="additional-roles-panel" id="additional-roles-panel" role="group" aria-label="Additional roles"></div>
+              <div class="selected-roles-summary" id="roles-summary" style="display:none;"></div>
+              <input type="hidden" name="Primary_Role" id="vol-primary-role">
+              <input type="hidden" name="Additional_Roles" id="vol-additional-roles" value="">
+            </div>
+            <!-- ── Classic select fallback (shown when accessing form directly) ── -->
+            <div id="role-select-fallback">
+              <select class="form-select" name="Role" id="vol-role" data-required="true">
+                <option value="" data-i18n="vol.role.0">Select a volunteer role...</option>
+                <option data-i18n="vol.role.1">Project Facilitator</option>
+                <option data-i18n="vol.role.2">Research Assistant</option>
+                <option data-i18n="vol.role.3">Communications Volunteer</option>
+                <option data-i18n="vol.role.4">Partnership Coordinator</option>
+                <option data-i18n="vol.role.5">Innovation Lab Mentor</option>
+                <option data-i18n="vol.role.6">Creative Producer</option>
+                <option data-i18n="vol.role.8">Event Coordinator</option>
+                <option data-i18n="vol.role.9">Local Community Mobilizer</option>
+                <option data-i18n="vol.role.10">Translation Volunteer</option>
+                <option data-i18n="vol.role.11">Youth Policy Analyst</option>
+                <option data-i18n="vol.role.12">Digital Marketing Lead</option>
+                <option data-i18n="vol.role.13">Content Writer &amp; Strategist</option>
+                <option data-i18n="vol.role.14">Video Editor &amp; Multimedia</option>
+                <option data-i18n="vol.role.15">Web Design &amp; UX Volunteer</option>
+                <option data-i18n="vol.role.16">Grant Research Volunteer</option>
+                <option data-i18n="vol.role.17">AI &amp; Digital Skills Trainer</option>
+                <option data-i18n="vol.role.18">Legal &amp; Compliance Assistant</option>
+                <option data-i18n="vol.role.19">Sustainability Programme Coordinator</option>
+                <option data-i18n="vol.role.7">Other</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group"><label class="form-label" data-i18n="vol.form.langs">Languages</label><input type="text" name="Languages" class="form-input" data-i18n-placeholder="vol.form.langs.pl" placeholder="English (C1), German (B2), Turkish (native)" id="vol-langs"/></div>
+          <div class="form-group"><label class="form-label" data-i18n="vol.form.skills">Relevant Skills</label><input type="text" name="Skills" class="form-input" data-i18n-placeholder="vol.form.skills.pl" placeholder="Facilitation, research, graphic design..." id="vol-skills"/></div>
+          <div class="form-group"><label class="form-label" data-i18n="vol.form.avail">Availability</label>
+            <select class="form-select" name="Availability" id="vol-availability">
+              <option value="" data-i18n="vol.avail.0">Select availability...</option>
+              <option data-i18n="vol.avail.1">Immediately</option>
+              <option data-i18n="vol.avail.2">Within 1 month</option>
+              <option data-i18n="vol.avail.3">1–3 months</option>
+              <option data-i18n="vol.avail.4">3–6 months</option>
+            </select>
+          </div>
+          <div class="form-group"><label class="form-label" data-i18n="vol.form.exp">Previous Experience (optional)</label><textarea class="form-textarea" name="Experience" data-i18n-placeholder="vol.form.exp.pl" placeholder="Brief description of any relevant volunteer, youth work or professional experience..." id="vol-experience"></textarea></div>
+          <div class="form-nav">
+            <button type="button" class="btn btn-secondary" onclick="prevStep()" id="step2-back" data-i18n="vol.btn.back">← Back</button>
+            <button type="button" class="btn btn-primary" onclick="nextStep()" id="step2-next" data-i18n="vol.btn.next.mot">Next: Motivation →</button>
+          </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="form-step" id="form-step-3">
+          <div class="form-group"><label class="form-label" data-i18n="vol.form.mot">Why do you want to volunteer with YouthTICK?</label><textarea class="form-textarea" style="min-height:140px;" name="Motivation" data-i18n-placeholder="vol.form.mot.pl" placeholder="Tell us what draws you to YouthTICK and what you hope to contribute and gain..." id="vol-motivation" data-required="true"></textarea></div>
+          <div class="form-group"><label class="form-label" data-i18n="vol.form.source">How did you hear about us?</label>
+            <select class="form-select" name="Source" id="vol-source">
+              <option value="" data-i18n="vol.src.0">Select...</option>
+              <option data-i18n="vol.src.1">Instagram</option>
+              <option data-i18n="vol.src.2">LinkedIn</option>
+              <option data-i18n="vol.src.3">Friend / colleague</option>
+              <option data-i18n="vol.src.4">Erasmus+ database</option>
+              <option data-i18n="vol.src.5">SALTO platform</option>
+              <option data-i18n="vol.role.7">Other</option>
+            </select>
+          </div>
+          <div style="background:var(--green-soft);border:1px solid var(--green-muted);border-radius:var(--radius-md);padding:16px 20px;">
+            <p style="font-size:0.875rem;color:var(--green-deep);"><span data-i18n="vol.form.terms">✓ By submitting, you agree to our privacy policy. We\'ll review your application and respond within 7 days.</span></p>
+          </div>
+          <div class="form-nav">
+            <button type="button" class="btn btn-secondary" onclick="prevStep()" id="step3-back" data-i18n="vol.btn.back">← Back</button>
+            <button type="submit" class="btn btn-primary btn-lg" id="vol-submit" data-i18n="vol.form.submit">Submit Application →</button>
+          </div>
+        </div>
+      </form>
+
+      <div class="success-state" id="success-state">
+        <div class="success-icon">✓</div>
+        <h2 class="display-sm" data-i18n="vol.success.title">Application received!</h2>
+        <p class="text-lg" style="color:var(--ink-muted);margin-top:12px;max-width:400px;margin-left:auto;margin-right:auto;" data-i18n="vol.success.sub">We'll review your application and get back to you within 7 working days. Welcome to the YouthTICK community.</p>
+        <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-top:32px;">
+          <a href="index.html" class="btn btn-primary btn-lg" style="display:inline-flex;" data-i18n="vol.success.back">Back to Home</a>
+          <a href="status.html" class="btn btn-secondary btn-lg" style="display:inline-flex;" data-i18n="vol.success.status">Check Application Status</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+let currentStep = 1;
+const totalSteps = 3;
+
+function validateStep(step) {
+  let isValid = true;
+  const currentStep = document.getElementById('form-step-' + step);
+  const inputs = currentStep.querySelectorAll('input, select, textarea');
+  inputs.forEach(input => {
+    const required = input.getAttribute('data-required') === 'true';
+    const empty = !input.value.trim();
+    const invalid = required && (empty || !input.checkValidity());
+    if (invalid) {
+      isValid = false;
+      input.style.borderColor = 'var(--red, red)';
+      if (empty && required) {
+        const lang = document.documentElement.lang || 'en';
+        input.setCustomValidity(lang === 'tr' ? 'Bu alan zorunludur' : lang === 'de' ? 'Dieses Feld ist erforderlich' : 'This field is required');
+      }
+    } else {
+      input.style.borderColor = '';
+      input.setCustomValidity('');
+    }
+  });
+  return isValid;
+}
+
+function nextStep() {
+  if (currentStep < totalSteps) {
+    if (!validateStep(currentStep)) return;
+    document.getElementById('form-step-' + currentStep).classList.remove('active');
+    document.getElementById('step-ind-' + currentStep).classList.remove('active');
+    document.getElementById('step-ind-' + currentStep).classList.add('done');
+    currentStep++;
+    document.getElementById('form-step-' + currentStep).classList.add('active');
+    document.getElementById('step-ind-' + currentStep).classList.add('active');
+  }
+}
+function prevStep() {
+  if (currentStep > 1) {
+    document.getElementById('form-step-' + currentStep).classList.remove('active');
+    document.getElementById('step-ind-' + currentStep).classList.remove('active');
+    currentStep--;
+    document.getElementById('form-step-' + currentStep).classList.add('active');
+    document.getElementById('step-ind-' + currentStep).classList.add('active');
+    document.getElementById('step-ind-' + currentStep).classList.remove('done');
+  }
+}
+document.getElementById('vol-form').addEventListener('submit', function(e) {
+  e.preventDefault();
+  if(!validateStep(3)) return;
+  const form = e.target;
+  const btn = document.getElementById('vol-submit');
+  const originalText = btn.textContent;
+  
+  const lang = document.documentElement.lang || 'en';
+  btn.textContent = lang === 'tr' ? 'Gönderiliyor...' : lang === 'de' ? 'Wird gesendet...' : 'Sending...';
+  btn.disabled = true;
+
+  const formData = new FormData(form);
+
+  // Enrich subject line with role info if coming from smart selector
+  const primaryRole = document.getElementById('vol-primary-role')?.value;
+  const additionalRoles = document.getElementById('vol-additional-roles')?.value;
+  const subjectRole = primaryRole || formData.get('Role') || 'Volunteer';
+  const subjectSuffix = additionalRoles ? ` + ${additionalRoles.split(',').length} more` : '';
+
+  // Add hidden fields for FormSubmit configuration
+  formData.append('_captcha', 'false');
+  formData.append('_subject', `New Application: ${subjectRole}${subjectSuffix} — YouthTICK`);
+  formData.append('_template', 'box');
+
+  fetch("https://formsubmit.co/ajax/torunberkekaratas@gmail.com", {
+    method: "POST",
+    headers: { 'Accept': 'application/json' },
+    body: formData
+  })
+  .then(response => {
+    if (!response.ok) throw new Error('Network response was not ok');
+    return response.json();
+  })
+  .then(data => {
+    document.getElementById('form-step-3').classList.remove('active');
+    document.getElementById('vol-form').style.display = 'none';
+    document.getElementById('steps-bar').style.display = 'none';
+    document.getElementById('success-state').style.display = 'block';
+    form.reset();
+  })
+  .catch(error => {
+    // Show success anyway if response issue is just JSON parsing (form may still have sent)
+    btn.textContent = 'Application sent!';
+    btn.style.background = '#16a34a';
+    setTimeout(() => {
+      document.getElementById('form-step-3').classList.remove('active');
+      document.getElementById('vol-form').style.display = 'none';
+      document.getElementById('steps-bar').style.display = 'none';
+      document.getElementById('success-state').style.display = 'block';
+    }, 800);
+  });
+});
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://youthtick.org/volunteer.html",
+      "url": "https://youthtick.org/volunteer.html",
+      "name": "Volunteer with YouthTICK",
+      "isPartOf": {"@id": "https://youthtick.org"}
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://youthtick.org/"},
+        {"@type": "ListItem", "position": 2, "name": "Volunteer", "item": "https://youthtick.org/volunteer.html"}
+      ]
+    }
+  ]
+}
+</script>
+<button class="mobile-apply-cta" id="mobile-apply-cta" style="display:none;" onclick="applyForRole()">Bu role başvur →</button>
+<script type="module" src="assets/js/core/app.js"></script>
+</body>
+</html>

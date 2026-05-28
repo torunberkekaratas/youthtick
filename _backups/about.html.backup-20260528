@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title data-titlekey="about.pageTitle">Yalova Gençlik İnisiyatifi Hakkında — YouthTICK | Misyon & Avrupa Vizyonu</title>
+  <meta name="description" content="YouthTICK, Yalova merkezli Erasmus+ gençlik inisiyatifidir. Kültürlerarası programlar, sivil katılım ve Avrupa gençlik işbirliği için Yalova'nın önde gelen gençlik platformu."/>
+  <meta name="keywords" content="yalova gençlik inisiyatifi, yalova sivil toplum kuruluşu, yalova erasmus, yalova gençlik topluluğu, youthtick yalova"/>
+  <link rel="canonical" href="https://youthtick.org/about.html"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://youthtick.org/about.html"/>
+  <meta property="og:title" content="About YouthTICK — Mission, Values & European Vision"/>
+  <meta property="og:description" content="A youth-led organisation in Yalova, Türkiye building Erasmus+ cooperation, civic participation and intercultural dialogue across Europe."/>
+  <meta property="og:image" content="https://youthtick.org/og-about.jpg"/>
+  <meta property="og:site_name" content="YouthTICK"/>
+  <meta property="og:locale" content="en_GB"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:title" content="About YouthTICK — Mission, Values & European Youth Vision"/>
+  <meta name="twitter:description" content="A youth organisation from Yalova, Türkiye committed to civic participation, intercultural dialogue and Erasmus+ cooperation across Europe."/>
+  <meta name="twitter:image" content="https://youthtick.org/og-about.jpg"/>
+  <!-- Hreflang Tags -->
+  <link rel="alternate" hreflang="en" href="https://youthtick.org/about.html"/>
+  <link rel="alternate" hreflang="tr" href="https://youthtick.org/tr/about.html"/>
+  <link rel="alternate" hreflang="de" href="https://youthtick.org/de/about.html"/>
+  <link rel="alternate" hreflang="x-default" href="https://youthtick.org/about.html"/>
+  <meta name="twitter:image" content="https://youthtick.org/og-about.jpg"/>
+  <link rel="stylesheet" href="styles.css"/>
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
+      <style>
+    .about-manifesto {
+      padding: calc(var(--nav-h) + 80px) 0 100px;
+      background: var(--bg-soft);
+      border-bottom: 1px solid var(--border-soft);
+    }
+    .about-manifesto-inner {
+      display: grid;
+      grid-template-columns: 1fr 1.6fr;
+      gap: 80px;
+      align-items: start;
+    }
+    .manifesto-sticky { position: sticky; top: calc(var(--nav-h) + 40px); }
+    .manifesto-body { max-width: 640px; }
+    .manifesto-lead {
+      font-family: var(--font-display);
+      font-size: clamp(1.5rem, 3vw, 2.2rem);
+      line-height: 1.3;
+      color: var(--ink);
+      font-style: italic;
+      margin-bottom: 36px;
+      padding-bottom: 36px;
+      border-bottom: 1px solid var(--border-soft);
+    }
+    .manifesto-para {
+      font-size: 1.05rem;
+      line-height: 1.8;
+      color: var(--ink-muted);
+      margin-bottom: 24px;
+    }
+    .mvv-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 28px;
+      margin-top: 48px;
+    }
+    .mvv-card {
+      background: white;
+      border: 1px solid var(--border-soft);
+      border-radius: var(--radius-lg);
+      padding: 32px;
+    }
+    .mvv-icon {
+      width: 44px; height: 44px;
+      background: var(--blue-soft);
+      border-radius: var(--radius-md);
+      display: flex; align-items: center; justify-content: center;
+      color: var(--blue);
+      margin-bottom: 20px;
+    }
+    .mvv-title { font-weight: 700; font-size: 1rem; margin-bottom: 10px; }
+    .mvv-text  { font-size: 0.875rem; color: var(--ink-faint); line-height: 1.65; }
+    .values-section { padding: 100px 0; }
+    .values-grid {
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      gap: 28px;
+      margin-top: 56px;
+    }
+    .value-item {
+      padding: 36px 28px;
+      border: 1px solid var(--border-soft);
+      border-radius: var(--radius-lg);
+      background: white;
+      position: relative;
+      overflow: hidden;
+      transition: all 0.3s var(--ease-out);
+    }
+    .value-item::after {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 3px;
+      background: var(--blue);
+    }
+    .value-item:hover { box-shadow: var(--shadow-md); transform: translateY(-4px); }
+    .value-num {
+      font-family: var(--font-display);
+      font-size: 3rem;
+      color: var(--border);
+      line-height: 1;
+      margin-bottom: 16px;
+    }
+    .value-title { font-weight: 700; font-size: 1.05rem; margin-bottom: 10px; }
+    .value-text  { font-size: 0.875rem; color: var(--ink-faint); line-height: 1.65; }
+    .about-img-split {
+      padding: 100px 0;
+      background: var(--bg-soft);
+      border-top: 1px solid var(--border-soft);
+    }
+    .img-split-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 64px;
+      align-items: center;
+    }
+    .img-split-imgs {
+      display: grid;
+      grid-template-rows: auto auto;
+      gap: 16px;
+    }
+    .img-split-main {
+      border-radius: var(--radius-xl);
+      overflow: hidden;
+      box-shadow: var(--shadow-lg);
+    }
+    .img-split-main img {
+      width:100%; aspect-ratio:4/3; object-fit:cover;
+    }
+    .img-split-sub {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+    .img-split-sub > div {
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: var(--shadow-sm);
+    }
+    .img-split-sub img { width:100%; aspect-ratio:1; object-fit:cover; }
+    .timeline { margin-top: 48px; }
+    .timeline-item {
+      display: flex;
+      gap: 24px;
+      padding-bottom: 36px;
+      border-left: 2px solid var(--border);
+      margin-left: 12px;
+      padding-left: 32px;
+      position: relative;
+    }
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      left: -7px;
+      top: 4px;
+      width: 12px; height: 12px;
+      background: var(--blue);
+      border-radius: 50%;
+      border: 2px solid white;
+      box-shadow: 0 0 0 3px rgba(27,77,142,0.15);
+    }
+    .timeline-year { font-weight: 700; color: var(--blue); font-size: 0.875rem; white-space: nowrap; }
+    .timeline-text { font-size: 0.9rem; color: var(--ink-muted); }
+    @media (max-width:768px) {
+      .about-manifesto-inner { grid-template-columns:1fr; }
+      .manifesto-sticky { position:static; }
+      .mvv-grid { grid-template-columns:1fr; }
+      .values-grid { grid-template-columns:1fr; }
+      .img-split-grid { grid-template-columns:1fr; }
+    }
+    @media (max-width:640px) {
+      .timeline-item { gap:16px; }
+      .timeline-year { min-width:44px; }
+    }
+    @media(hover:none) {
+      .value-card:hover { transform:none; box-shadow:var(--shadow-xs); }
+    }
+  </style>
+</head>
+<body>
+<script>document.addEventListener('DOMContentLoaded',()=>{ if(window.lucide)lucide.createIcons(); setTimeout(()=>{if(window.lucide)lucide.createIcons();},400); });</script>
+
+<section class="about-manifesto">
+  <div class="container">
+    <div class="about-manifesto-inner">
+      <div class="manifesto-sticky" data-anim="right">
+        <div class="section-label">
+          <span class="section-label-line"></span>
+          <span class="section-label-text" data-i18n="about.label">Who We Are</span>
+        </div>
+        <h1 class="display-lg" style="margin-top:20px;" data-i18n="about.page.title">About YouthTICK</h1>
+        <div class="mvv-grid">
+          <div class="mvv-card">
+            <div class="mvv-icon"><i data-lucide="target" width="20" height="20"></i></div>
+            <div class="mvv-title" data-i18n="about.mission.title">Mission</div>
+            <div class="mvv-text" data-i18n="about.mission.text">To empower young people with tools, networks and opportunities to shape their own futures and contribute meaningfully to European society.</div>
+          </div>
+          <div class="mvv-card">
+            <div class="mvv-icon"><i data-lucide="eye" width="20" height="20"></i></div>
+            <div class="mvv-title" data-i18n="about.vision.title">Vision</div>
+            <div class="mvv-text" data-i18n="about.vision.text">A Europe where every young person—regardless of background—has an equal voice, equal opportunity and equal agency to lead change.</div>
+          </div>
+        </div>
+      </div>
+      <div class="manifesto-body" data-anim>
+        <p class=”manifesto-para” data-i18n=”about.s.1”>TICK was born from a simple but meaningful idea:</p>
+        <p class=”manifesto-lead” data-i18n=”about.s.2”>Young people should not only adapt to a changing world — they should actively help shape a more sustainable, innovative and connected future.</p>
+        <p class=”manifesto-para” data-i18n=”about.s.3”>Founded in Yalova by young people who share a common vision, TICK is an independent youth initiative focused on social innovation, environmental awareness and collective learning.</p>
+        <p class=”manifesto-para” data-i18n=”about.s.4”>The name “TICK” represents the values and vision that define who we are and what we aim to build.</p>
+
+        <hr style=”border:0;height:1px;background:var(--border-soft);margin:32px 0;”>
+
+        <h3 style="color:var(--ink);margin-bottom:12px;font-weight:700;" data-i18n="about.s.t.title">T — Toplumsal / Together</h3>
+        <p class="manifesto-para" data-i18n="about.s.t.1">TICK believes real progress begins when people come together.</p>
+        <p class="manifesto-para" data-i18n="about.s.t.2">“Toplumsal” represents community, solidarity and active participation. Its English reflection, “Together”, symbolizes collaboration between individuals, cultures and ideas.</p>
+        <p class="manifesto-para" data-i18n="about.s.t.3">For us, no meaningful impact is created alone. Every project, every idea and every opportunity grows through shared effort and collective learning.</p>
+
+        <hr style="border:0;height:1px;background:var(--border-soft);margin:32px 0;">
+
+        <h3 style="color:var(--ink);margin-bottom:12px;font-weight:700;" data-i18n="about.s.i.title">I — İnovasyon / Innovation</h3>
+        <p class="manifesto-para" data-i18n="about.s.i.1">Innovation is not only about technology. It is about finding better ways to create social value.</p>
+        <p class="manifesto-para" data-i18n="about.s.i.2">“İnovasyon” reflects creativity, initiative and the courage to imagine new possibilities for young people and communities.</p>
+        <p class="manifesto-para" data-i18n="about.s.i.3">Its English equivalent, “Innovation”, carries the same spirit: developing ideas that are sustainable, forward-looking and impactful.</p>
+        <p class="manifesto-para" data-i18n="about.s.i.4">TICK believes young people should not only adapt to change — they should become part of creating it.</p>
+
+        <hr style="border:0;height:1px;background:var(--border-soft);margin:32px 0;">
+
+        <h3 style=”color:var(--ink);margin-bottom:12px;font-weight:700;” data-i18n=”about.s.c.title”>C — Çevre / Climate</h3>
+        <p class=”manifesto-para” data-i18n=”about.s.c.1”>TICK believes the future of younger generations is directly connected to the future of the planet.</p>
+        <p class=”manifesto-para” data-i18n=”about.s.c.2”>”Çevre” represents environmental awareness, sustainability and responsibility toward nature and society.</p>
+        <p class=”manifesto-para” data-i18n=”about.s.c.3”>Its English reflection, “Climate”, emphasizes climate awareness, ecological thinking and sustainable development.</p>
+        <p class=”manifesto-para” data-i18n=”about.s.c.4”>For TICK, environmental responsibility is not a trend — it is a long-term commitment.</p>
+
+        <hr style="border:0;height:1px;background:var(--border-soft);margin:32px 0;">
+
+        <h3 style="color:var(--ink);margin-bottom:12px;font-weight:700;" data-i18n="about.s.k.title">K — Kültür / Knowledge</h3>
+        <p class="manifesto-para" data-i18n="about.s.k.1">“Kültür” represents the richness created when people with different experiences come together.</p>
+        <p class="manifesto-para" data-i18n="about.s.k.2">For TICK, culture is not limited to traditions. It also includes: shared experiences, dialogue, learning, collective memory and mutual understanding.</p>
+        <p class="manifesto-para" data-i18n="about.s.k.3">Its English reflection, “Knowledge”, highlights the importance of intellectual growth, education and accessible learning opportunities.</p>
+        <p class="manifesto-para" data-i18n="about.s.k.4">Because sustainable communities are built not only through connection — but also through understanding.</p>
+
+        <hr style="border:0;height:1px;background:var(--border-soft);margin:32px 0;">
+
+        <h3 style="color:var(--blue);margin-bottom:16px;font-weight:700;font-style:italic;" data-i18n="about.s.end.title">Together for Innovation, Climate & Knowledge</h3>
+        <p class="manifesto-para" data-i18n="about.s.end.1">This phrase reflects TICK’s international perspective and long-term vision.</p>
+        <p class="manifesto-para" data-i18n="about.s.end.2">It represents the belief that young people from different backgrounds can collaborate, exchange ideas and create meaningful opportunities together.</p>
+        <p class="manifesto-para" data-i18n="about.s.end.3">Although TICK is not yet a formal association, it is a growing youth community preparing to build long-term projects and international collaborations in the fields of: youth participation, sustainability, entrepreneurship, intercultural dialogue, and social innovation.</p>
+        <p class="manifesto-para" data-i18n="about.s.end.4">Starting from Yalova, TICK aims to connect local potential with international opportunities and become part of a wider European youth ecosystem over time.</p>
+        <p class="manifesto-para" data-i18n="about.s.end.5">Rather than pretending to already be a large institution, TICK embraces its real identity: a young initiative that is still growing, still learning and still building.</p>
+        <p class="manifesto-para" data-i18n="about.s.end.6">Because we believe authenticity creates stronger connections than exaggeration.</p>
+        <p class="manifesto-para" data-i18n="about.s.end.7">Every meaningful journey begins with a small step. Every collaboration begins with a conversation. And every future begins with people willing to act.</p>
+        <p class="manifesto-lead" style="color:var(--blue);margin-top:32px;font-weight:700;" data-i18n="about.s.end.8">That step is TICK.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="values-section">
+  <div class="container">
+    <div class="section-label" data-anim>
+      <span class="section-label-line"></span>
+      <span class="section-label-text" data-i18n="about.values.label">What We Stand For</span>
+    </div>
+    <h2 class="display-md" data-anim style="margin-top:16px;max-width:480px;" data-i18n="about.values.title">Six values that drive everything we do.</h2>
+    <div class="values-grid">
+      <div class="value-item" data-anim>
+        <div class="value-num">01</div>
+        <div class="value-title" data-i18n="about.v1.title">Agency over participation</div>
+        <div class="value-text" data-i18n="about.v1.desc">We design for decision-making power, not just inclusion. Young people shape our programs, not just attend them.</div>
+      </div>
+      <div class="value-item" data-anim style="transition-delay:.1s">
+        <div class="value-num">02</div>
+        <div class="value-title" data-i18n="about.v2.title">Openness as infrastructure</div>
+        <div class="value-text" data-i18n="about.v2.desc">All our methodologies, toolkits and reports are open-source by default. Knowledge should compound, not be hoarded.</div>
+      </div>
+      <div class="value-item" data-anim style="transition-delay:.2s">
+        <div class="value-num">03</div>
+        <div class="value-title" data-i18n="about.v3.title">Impact before optics</div>
+        <div class="value-text" data-i18n="about.v3.desc">We measure outcomes, not outputs. Depth of transformation beats width of reach in everything we do.</div>
+      </div>
+      <div class="value-item" data-anim style="transition-delay:.3s">
+        <div class="value-num">04</div>
+        <div class="value-title" data-i18n="about.v4.title">Cultural humility</div>
+        <div class="value-text" data-i18n="about.v4.desc">International cooperation requires genuine curiosity about other perspectives — not assumptions, not stereotypes.</div>
+      </div>
+      <div class="value-item" data-anim style="transition-delay:.4s">
+        <div class="value-num">05</div>
+        <div class="value-title" data-i18n="about.v5.title">Radical collaboration</div>
+        <div class="value-text" data-i18n="about.v5.desc">The most complex youth challenges require NGOs, governments, startups and universities at the same table.</div>
+      </div>
+      <div class="value-item" data-anim style="transition-delay:.5s">
+        <div class="value-num">06</div>
+        <div class="value-title" data-i18n="about.v6.title">Sustainability at the core</div>
+        <div class="value-text" data-i18n="about.v6.desc">Environmental, social and institutional sustainability isn't a focus area — it's a lens applied to everything we do.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="about-img-split">
+  <div class="container">
+    <div class="img-split-grid">
+      <div class="img-split-imgs" data-anim="right">
+        <div class="img-split-main">
+          <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=900&q=85&auto=format&fit=crop" alt="Team working together in a collaborative space" loading="lazy" width="900" height="675"/>
+        </div>
+        <div class="img-split-sub">
+          <div><img src="https://images.unsplash.com/photo-1528605248644-14dd04022da1?w=400&q=80&auto=format&fit=crop" alt="Youth workshop" loading="lazy" width="400" height="300"/></div>
+          <div><img src="https://images.unsplash.com/photo-1521737852567-6949f3f9f2b5?w=400&q=80&auto=format&fit=crop" alt="International meeting" loading="lazy" width="400" height="300"/></div>
+        </div>
+      </div>
+      <div data-anim>
+        <div class="section-label">
+          <span class="section-label-line"></span>
+          <span class="section-label-text" data-i18n="about.journey.label">Our Journey</span>
+        </div>
+        <h2 class="display-md" style="margin-top:16px;margin-bottom:40px;" data-i18n="about.journey.title">Our journey — from idea to network.</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div>
+              <div class="timeline-year" data-i18n="about.j1.date">Q1 2026</div>
+              <div class="timeline-text" data-i18n="about.j1.text">YouthTICK founded in Yalova, Türkiye. Core team assembled. Organisational identity and focus areas defined.</div>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div>
+              <div class="timeline-year" data-i18n="about.j2.date">Q2 2026</div>
+              <div class="timeline-text" data-i18n="about.j2.text">First local activities organised. International contacts initiated. Website and communication channels established.</div>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div>
+              <div class="timeline-year" data-i18n="about.j3.date">Q3 2026</div>
+              <div class="timeline-text" data-i18n="about.j3.text">First partnership conversations with international organisations. Erasmus+ preparation begins. Community grows.</div>
+            </div>
+          </div>
+          <div class="timeline-item" style="border-left-color:transparent;padding-bottom:0;">
+            <div>
+              <div class="timeline-year" data-i18n="about.j4.date">H2 2026 — Planned</div>
+              <div class="timeline-text" data-i18n="about.j4.text">First international youth exchange or training planned. Erasmus+ application submitted. Network continues to expand.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "AboutPage",
+      "@id": "https://youthtick.org/about.html",
+      "url": "https://youthtick.org/about.html",
+      "name": "About YouthTICK",
+      "isPartOf": {"@id": "https://youthtick.org"}
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://youthtick.org/"},
+        {"@type": "ListItem", "position": 2, "name": "About", "item": "https://youthtick.org/about.html"}
+      ]
+    }
+  ]
+}
+</script>
+<script type="module" src="assets/js/core/app.js"></script>
+</body>
+</html>
