@@ -775,11 +775,11 @@
 
   /* ── City data ──────────────────────────────────────────── */
   var CITIES=[
-    {id:'yalova',label:'Yalova, Türkiye', lat:40.655,lng:29.272,role:'hq',        color:'#f87171'},
-    {id:'berlin',label:'Berlin, Germany', lat:52.520,lng:13.405,role:'active',    color:'#4ade80'},
-    {id:'athens',label:'Athens, Greece',  lat:37.983,lng:23.727,role:'exploring', color:'#60a5fa'},
-    {id:'warsaw',label:'Warsaw, Poland',  lat:52.237,lng:21.012,role:'exploring', color:'#60a5fa'},
-    {id:'madrid',label:'Madrid, Spain',   lat:40.416,lng:-3.703,role:'exploring', color:'#60a5fa'}
+    {id:'yalova',label:'Yalova, Türkiye', name:'Türkiye', lat:40.655,lng:29.272,role:'hq',        color:'#f87171'},
+    {id:'berlin',label:'Berlin, Germany', name:'Germany', lat:52.520,lng:13.405,role:'active',    color:'#4ade80'},
+    {id:'athens',label:'Athens, Greece',  name:'Greece',  lat:37.983,lng:23.727,role:'exploring', color:'#60a5fa'},
+    {id:'warsaw',label:'Warsaw, Poland',  name:'Poland',  lat:52.237,lng:21.012,role:'exploring', color:'#60a5fa'},
+    {id:'madrid',label:'Madrid, Spain',   name:'Spain',   lat:40.416,lng:-3.703,role:'exploring', color:'#60a5fa'}
   ];
 
   /* ── GeoJSON polygon → Path2D (Europe-viewport projection) */
@@ -923,16 +923,32 @@
       dot.setAttribute('fill',city.color);
       g.appendChild(dot);
 
-      /* HQ badge */
+      /* Country / city name label — shown for every marker */
+      var lbl=document.createElementNS(ns,'text');
+      lbl.setAttribute('x', pos.x);
+      /* HQ label goes below dot; others above */
+      lbl.setAttribute('y', city.role==='hq' ? pos.y+r+11 : pos.y-r-5);
+      lbl.setAttribute('text-anchor','middle');
+      lbl.setAttribute('fill', city.color);
+      lbl.setAttribute('font-size','9');
+      lbl.setAttribute('font-weight','700');
+      lbl.setAttribute('font-family','Manrope,sans-serif');
+      lbl.setAttribute('letter-spacing','0.6');
+      lbl.setAttribute('opacity','0.92');
+      lbl.textContent=city.name;
+      g.appendChild(lbl);
+
+      /* HQ badge (right side of dot, in addition to country label) */
       if(city.role==='hq'){
         var badge=document.createElementNS(ns,'text');
         badge.setAttribute('x',pos.x+r+4);
         badge.setAttribute('y',pos.y-r);
         badge.setAttribute('fill',city.color);
-        badge.setAttribute('font-size','9');
+        badge.setAttribute('font-size','8');
         badge.setAttribute('font-weight','700');
         badge.setAttribute('font-family','Manrope,sans-serif');
         badge.setAttribute('letter-spacing','0.8');
+        badge.setAttribute('opacity','0.8');
         badge.textContent='HQ';
         g.appendChild(badge);
       }
