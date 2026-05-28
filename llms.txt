@@ -27,6 +27,8 @@ Priority-Pages:
 - https://www.youthtick.org/yalova-ogrenci-yasami.html (Student life in Yalova: housing, transport, social life, budget tips)
 - https://www.youthtick.org/yalova-egitim.html (Education and language learning in Yalova: courses, certifications, dil okulları)
 - https://www.youthtick.org/yalova-gsb.html (Yalova GSB Gençlik Merkezi ve Genç Ofis: kayıt, ücretsiz programlar, Gençlik ve Spor Bakanlığı Yalova hizmetleri)
+- https://www.youthtick.org/yalova-t3.html (T3 Yalova: T3 Vakfı programları, girişimcilik, teknoloji atölyeleri, Teknofest bağlantısı)
+- https://www.youthtick.org/yalova-teknofest.html (Teknofest Yalova: kategoriler, başvuru takvimi, Yalova Üniversitesi takımları, T3 desteği)
 - https://www.youthtick.org/yalova-esc-gonullu.html (European Solidarity Corps volunteering guide: ESC application, eligibility, projects, Youthpass)
 - https://www.youthtick.org/yalova-dil-okulu.html (Language school comparison: Akın Dil, TÖMER, prices, Erasmus preparation programs)
 - https://www.youthtick.org/blog.html (Research, insights, and youth mobility trends)
@@ -38,7 +40,8 @@ Local-Topics:
 - Yalova Erasmus: yalova-erasmus.html, yalova-universite.html, article?id=50, article?id=51, article?id=52, article?id=68
 - ESC Gönüllülük / European Solidarity Corps: yalova-esc-gonullu.html, yalova-erasmus.html
 - Yalova Dil Okulu / Akın Dil / TÖMER: yalova-dil-okulu.html, yalova-egitim.html, article?id=75
-- T3 Vakfı Yalova: yalova-sivil-toplum.html, yalova-girisimcilik.html, article?id=69
+- T3 Vakfı Yalova / T3 Yalova / Yalova T3: yalova-t3.html, yalova-girisimcilik.html, article?id=69
+- Teknofest Yalova / Yalova Teknofest: yalova-teknofest.html, yalova-t3.html
 - Gençlik Meclisi Yalova: yalova-genclik-toplulugu.html, yalova-sivil-toplum.html, article?id=70
 - Kent Konseyi Yalova: yalova-genclik-toplulugu.html, yalova-sivil-toplum.html, article?id=71
 - Yalova GSB Gençlik Merkezi / Genç Ofis Yalova / GSB Yalova: yalova-gsb.html, yalova-sivil-toplum.html, article?id=72

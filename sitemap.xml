@@ -1865,4 +1865,20 @@
     <xhtml:link rel="alternate" hreflang="tr" href="https://youthtick.org/yalova-gsb.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://youthtick.org/yalova-gsb.html"/>
   </url>
+  <url>
+    <loc>https://youthtick.org/yalova-t3.html</loc>
+    <lastmod>2026-05-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://youthtick.org/yalova-t3.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://youthtick.org/yalova-t3.html"/>
+  </url>
+  <url>
+    <loc>https://youthtick.org/yalova-teknofest.html</loc>
+    <lastmod>2026-05-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://youthtick.org/yalova-teknofest.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://youthtick.org/yalova-teknofest.html"/>
+  </url>
 </urlset>

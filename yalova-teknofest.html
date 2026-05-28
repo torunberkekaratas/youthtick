@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Teknofest Yalova — Kategoriler, Başvuru Takvimi ve Yalova Takım Rehberi 2026</title>
+  <meta name="description" content="Yalova Teknofest rehberi: Teknofest'e Yalova'dan nasıl katılınır, hangi kategoriler var, başvuru takvimi, Yalova Üniversitesi takımları ve T3 Vakfı desteği."/>
+  <meta name="keywords" content="teknofest yalova, yalova teknofest, teknofest yalova başvuru, teknofest 2026 yalova, yalova teknofest takım, t3 teknofest yalova"/>
+  <meta name="robots" content="index, follow"/>
+  <link rel="canonical" href="https://youthtick.org/yalova-teknofest.html"/>
+  <meta property="og:type" content="article"/>
+  <meta property="og:site_name" content="YouthTICK"/>
+  <meta property="og:title" content="Teknofest Yalova: Kategoriler, Başvuru ve Takım Kurma Rehberi 2026"/>
+  <meta property="og:description" content="Yalova'dan Teknofest'e katılım rehberi: kategoriler, başvuru takvimi, Yalova Üniversitesi takımları ve T3 Vakfı desteği."/>
+  <meta property="og:image" content="https://youthtick.org/og-blog.jpg"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <link rel="alternate" hreflang="tr" href="https://youthtick.org/yalova-teknofest.html"/>
+  <link rel="alternate" hreflang="x-default" href="https://youthtick.org/yalova-teknofest.html"/>
+  <link rel="stylesheet" href="styles.css"/>
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
+  <style>
+    .landing-hero { padding: calc(var(--nav-h) + 72px) 0 56px; background: linear-gradient(135deg, #fce7f3 0%, #fbcfe8 100%); border-bottom: 1px solid var(--border-soft); }
+    .landing-kicker { display:inline-flex; align-items:center; gap:10px; font-size:.78rem; font-weight:700; text-transform:uppercase; letter-spacing:.08em; color:#be185d; }
+    .landing-kicker::before { content:''; width:26px; height:2px; background:#be185d; }
+    .landing-title { margin-top:16px; max-width:900px; font-family:var(--font-display); font-size:clamp(2rem, 4vw, 3.1rem); line-height:1.15; letter-spacing:-.02em; }
+    .landing-sub { margin-top:18px; max-width:760px; color:var(--ink-muted); font-size:1.05rem; line-height:1.75; }
+    .landing-meta { margin-top:24px; display:flex; flex-wrap:wrap; gap:10px; }
+    .landing-pill { border:1px solid var(--border); border-radius:999px; padding:7px 12px; font-size:.78rem; color:var(--ink-faint); background:white; }
+    .landing-main { padding: 52px 0 90px; }
+    .landing-grid { display:grid; grid-template-columns: minmax(0,1fr) 300px; gap:38px; }
+    .landing-content p { font-size:1.03rem; line-height:1.84; color:var(--ink); margin:0 0 22px; }
+    .landing-content h2 { margin:46px 0 14px; font-family:var(--font-display); font-size:1.65rem; letter-spacing:-.015em; color:var(--ink); }
+    .landing-content h3 { margin:32px 0 12px; font-size:1.15rem; font-weight:700; color:var(--ink); }
+    .landing-content ul { margin:0 0 22px 24px; }
+    .landing-content ol { margin:0 0 22px 24px; }
+    .landing-content li { margin:0 0 10px; color:var(--ink-muted); line-height:1.7; }
+    .landing-content a { color:var(--blue); text-decoration:underline; text-underline-offset:3px; }
+    .landing-content strong { color:var(--ink); font-weight:700; }
+    .quick-nav { position:sticky; top:calc(var(--nav-h) + 24px); padding:18px; border:1px solid var(--border-soft); border-radius:14px; background:white; box-shadow:0 2px 8px rgba(0,0,0,0.04); }
+    .quick-nav h3 { margin:0 0 14px; font-size:.9rem; font-weight:700; color:var(--ink); }
+    .quick-nav a { display:block; padding:8px 0; font-size:.86rem; color:var(--ink-muted); text-decoration:none; transition:color .2s; }
+    .quick-nav a:hover { color:#be185d; }
+    .cat-table { width:100%; border-collapse:collapse; margin:20px 0 28px; font-size:.92rem; }
+    .cat-table th { background:#be185d; color:white; padding:11px 14px; text-align:left; font-weight:600; }
+    .cat-table td { padding:10px 14px; border-bottom:1px solid #fce7f3; color:var(--ink-muted); vertical-align:top; }
+    .cat-table tr:hover td { background:#fdf2f8; }
+    .cat-table .cat-badge { display:inline-block; padding:2px 8px; border-radius:4px; font-size:.75rem; font-weight:700; }
+    .cat-badge.lise { background:#fce7f3; color:#be185d; }
+    .cat-badge.uni { background:#ede9fe; color:#7c3aed; }
+    .cat-badge.acik { background:#dcfce7; color:#16a34a; }
+    .info-box { background:#fdf2f8; border-left:4px solid #ec4899; padding:20px; border-radius:8px; margin:28px 0; }
+    .info-box strong { color:#9d174d; }
+    .tip-box { background:#f0fdf4; border-left:4px solid #22c55e; padding:20px; border-radius:8px; margin:28px 0; }
+    .tip-box strong { color:#16a34a; }
+    .timeline { margin:20px 0 28px; }
+    .timeline-item { display:flex; gap:16px; margin-bottom:16px; align-items:flex-start; }
+    .timeline-dot { flex-shrink:0; width:14px; height:14px; border-radius:50%; background:#be185d; margin-top:5px; }
+    .timeline-item strong { display:block; color:var(--ink); font-size:.95rem; }
+    .timeline-item span { font-size:.9rem; color:var(--ink-muted); }
+    .steps-list { counter-reset: steps; list-style:none; margin:0 0 28px; padding:0; }
+    .steps-list li { counter-increment: steps; display:flex; gap:16px; margin-bottom:20px; align-items:flex-start; }
+    .steps-list li::before { content: counter(steps); flex-shrink:0; width:32px; height:32px; border-radius:50%; background:#be185d; color:white; font-weight:700; display:flex; align-items:center; justify-content:center; font-size:.9rem; }
+    .steps-list li > div { flex:1; padding-top:4px; }
+    .steps-list li > div strong { display:block; margin-bottom:4px; color:var(--ink); }
+    .steps-list li > div span { font-size:.95rem; color:var(--ink-muted); line-height:1.6; }
+    .breadcrumbs { padding:20px 0; font-size:.88rem; color:var(--ink-muted); }
+    .breadcrumbs a { color:var(--blue); text-decoration:none; }
+    .breadcrumbs a:hover { text-decoration:underline; }
+    .author-meta { display:flex; align-items:center; gap:16px; padding:20px; background:white; border-radius:12px; margin:24px 0; border:1px solid var(--border-soft); }
+    .author-meta img { width:52px; height:52px; border-radius:50%; object-fit:cover; }
+    .author-info { flex:1; }
+    .author-name { font-weight:700; color:var(--ink); font-size:1.05rem; }
+    .author-role { font-size:.88rem; color:var(--ink-muted); margin-top:2px; }
+    .publish-date { font-size:.88rem; color:var(--ink-faint); text-align:right; }
+    @media(max-width:960px){ .landing-grid { grid-template-columns: 1fr; } .quick-nav { position:relative; top:0; margin-bottom:32px; } }
+  </style>
+</head>
+<body>
+<section class="landing-hero">
+  <div class="container">
+    <nav class="breadcrumbs">
+      <a href="/">Ana Sayfa</a> / <a href="/yalova-t3.html">T3 Yalova</a> / <span>Teknofest Yalova</span>
+    </nav>
+    <span class="landing-kicker">TEKNOFest YALOVA</span>
+    <h1 class="landing-title">Teknofest Yalova: Kategoriler, Başvuru Takvimi ve Takım Kurma Rehberi 2026</h1>
+    <div class="author-meta">
+      <img src="https://ui-avatars.com/api/?name=Elif+Yildiz&background=be185d&color=fff&size=128" alt="Elif Yıldız" loading="lazy"/>
+      <div class="author-info">
+        <div class="author-name">Elif Yıldız</div>
+        <div class="author-role">Teknoloji ve Yarışma Koordinatörü, YouthTICK</div>
+      </div>
+      <div class="publish-date">
+        <time datetime="2026-05-28">28 Mayıs 2026</time>
+        <div style="font-size:.78rem;margin-top:2px;">Son Güncelleme: 28 Mayıs 2026</div>
+      </div>
+    </div>
+    <p class="landing-sub">Türkiye'nin en büyük teknoloji yarışması Teknofest'e Yalova'dan katılmak isteyenler için kapsamlı rehber: kategoriler, başvuru adımları, Yalova Üniversitesi takımları ve T3 Vakfı desteği.</p>
+    <div class="landing-meta">
+      <span class="landing-pill">Teknofest 2026</span>
+      <span class="landing-pill">Yalova Üniversitesi Takımları</span>
+      <span class="landing-pill">T3 Vakfı</span>
+      <span class="landing-pill">Lise &amp; Üniversite</span>
+    </div>
+  </div>
+</section>
+
+<section class="landing-main">
+  <div class="container">
+    <div class="landing-grid">
+      <article class="landing-content">
+
+        <!-- AI-citable answer block -->
+        <div id="answer-block" style="background:#fdf2f8;border:1px solid #fbcfe8;border-radius:12px;padding:22px 24px;margin-bottom:32px;">
+          <p style="margin:0;font-size:1rem;line-height:1.8;"><strong>Teknofest Yalova</strong>, Yalova'dan Teknofest yarışmasına katılımı ifade eder. <strong>Teknofest</strong>, T3 Vakfı ve TUSAŞ'ın organize ettiği Türkiye'nin en büyük teknoloji, havacılık ve uzay festivalidir. Etkinlikler İstanbul, Ankara ve diğer büyük şehirlerde yapılsa da <strong>Yalova'dan bireyler ve takımlar</strong> tüm kategorilere online başvurabilir. Yalova Üniversitesi öğrencileri ve lise gençleri İHA, yapay zeka, robotik ve sosyal inovasyon kategorilerinde proje geliştirerek Teknofest'e katılmaktadır. Başvurular teknofest.org üzerinden ücretsiz yapılmaktadır.</p>
+        </div>
+
+        <h2 id="nedir">Teknofest Nedir? Yalova Bağlantısı</h2>
+        <p><strong>Teknofest</strong>, Türkiye Teknoloji Takımı Vakfı (T3 Vakfı) ve Türk Havacılık ve Uzay Sanayii (TUSAŞ) öncülüğünde her yıl düzenlenen Türkiye'nin en büyük teknoloji festivali ve yarışmasıdır. Lise çağındaki çocuklardan üniversite mezunu genç profesyonellere kadar geniş bir kitleyi hedefler.</p>
+
+        <p><strong>Yalova Teknofest</strong> araması çoğunlukla şu soruların yanıtını arar: <em>"Yalova'da Teknofest var mı?"</em>, <em>"Yalova'dan Teknofest'e nasıl katılırım?"</em>, <em>"Yalova Üniversitesi öğrencileri Teknofest'e katılabilir mi?"</em> Yanıt: Evet, Yalova'dan tüm kategorilere başvurulabilir.</p>
+
+        <h2 id="kategoriler">Teknofest Kategorileri: Yalova Gençlerine Uygun Olanlar</h2>
+
+        <table class="cat-table">
+          <thead>
+            <tr>
+              <th>Kategori</th>
+              <th>Hedef Kitle</th>
+              <th>Zorluk</th>
+              <th>Yalova Avantajı</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Yapay Zeka</strong></td>
+              <td><span class="cat-badge uni">Üniversite</span></td>
+              <td>Orta–Yüksek</td>
+              <td>Yalova Üniv. Bilgisayar Müh.</td>
+            </tr>
+            <tr>
+              <td><strong>İHA Sistemleri</strong></td>
+              <td><span class="cat-badge uni">Üniversite</span></td>
+              <td>Yüksek</td>
+              <td>Mühendislik Fakültesi takımları</td>
+            </tr>
+            <tr>
+              <td><strong>Robotik Kodlama</strong></td>
+              <td><span class="cat-badge lise">Lise</span></td>
+              <td>Orta</td>
+              <td>Yalova Fen ve Anadolu liseleri</td>
+            </tr>
+            <tr>
+              <td><strong>Sosyal İnovasyon</strong></td>
+              <td><span class="cat-badge acik">Her Yaş</span></td>
+              <td>Düşük–Orta</td>
+              <td>YouthTICK ekiplerine uygun</td>
+            </tr>
+            <tr>
+              <td><strong>Biyoteknoloji &amp; Genetik</strong></td>
+              <td><span class="cat-badge uni">Üniversite</span></td>
+              <td>Yüksek</td>
+              <td>Yalova Üniv. Fen Bilimleri</td>
+            </tr>
+            <tr>
+              <td><strong>Yarı İletken</strong></td>
+              <td><span class="cat-badge uni">Üniversite</span></td>
+              <td>Yüksek</td>
+              <td>Elektrik-Elektronik ekipleri</td>
+            </tr>
+            <tr>
+              <td><strong>Akıllı Ulaşım</strong></td>
+              <td><span class="cat-badge acik">Her Yaş</span></td>
+              <td>Orta</td>
+              <td>Yalova OSB iş birliği potansiyeli</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h2 id="takvim">Teknofest 2026 Başvuru Takvimi</h2>
+        <p>Teknofest başvuru takvimi yıla göre değişebilir; aşağıdaki bilgiler genel döngüyü yansıtmaktadır. Güncel tarihler için teknofest.org'u takip edin.</p>
+
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div><strong>Ocak — Başvurular açılır</strong><span>Çoğu kategori için online başvuru dönemi başlar. Takım oluşturma ve proje fikri geliştirme başlar.</span></div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div><strong>Mart — Ön eleme teslimi</strong><span>Proje özeti, teknik dokümantasyon ve video sunumu yüklenir. Bu aşama en kritik filtre.</span></div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div><strong>Nisan–Mayıs — Ön eleme sonuçları</strong><span>Finale kalan takımlar açıklanır. Prototip geliştirme süreci yoğunlaşır.</span></div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div><strong>Ağustos–Eylül — Teknofest Finali</strong><span>Finaller büyük şehirlerde (İstanbul, Ankara, Bursa) gerçekleşir. Yalova takımları finale ulaştıklarında bu şehirlere gider.</span></div>
+          </div>
+        </div>
+
+        <div class="info-box">
+          <strong>Yalova'da Teknofest etkinliği var mı?</strong> Teknofest şu an Yalova'da ana etkinlik düzenlememiştir. Ancak T3 Vakfı'nın Yalova'daki iş birliği etkinlikleri ve Yalova Üniversitesi'nin önceden düzenlediği bilim şenlikleri yerel bir ön hazırlık ortamı oluşturuyor.
+        </div>
+
+        <h2 id="basvuru">Yalova'dan Teknofest'e Adım Adım Başvuru</h2>
+
+        <ol class="steps-list">
+          <li>
+            <div>
+              <strong>teknofest.org'a kayıt olun</strong>
+              <span>Resmi Teknofest sitesinde ücretsiz hesap oluşturun. Aynı hesap T3 Vakfı etkinlikleri için de geçerlidir.</span>
+            </div>
+          </li>
+          <li>
+            <div>
+              <strong>Kategorinizi seçin</strong>
+              <span>Yaşınıza ve uzmanlık alanınıza göre kategori seçin. Tabloya bakarak Yalova'dan en uygun kategoriyi belirleyin. İlk Teknofest için "Sosyal İnovasyon" veya "Robotik Kodlama" başlangıç olarak uygundur.</span>
+            </div>
+          </li>
+          <li>
+            <div>
+              <strong>Takımınızı kurun (2–5 kişi)</strong>
+              <span>Yalova Üniversitesi öğrencileri: bölüm grupları ve WhatsApp toplulukları üzerinden takım arayın. Lise öğrencileri: teknoloji kulüplerini veya öğretmeninizi dahil edin.</span>
+            </div>
+          </li>
+          <li>
+            <div>
+              <strong>Danışman akademisyen bulun</strong>
+              <span>Danışmanı olan takımlar finalist olma şansını önemli ölçüde artırır. Yalova Üniversitesi'nden ilgili bölüm hocalarına danışın.</span>
+            </div>
+          </li>
+          <li>
+            <div>
+              <strong>Proje özetinizi hazırlayın</strong>
+              <span>Problem tanımı → Çözüm yaklaşımı → Prototip planı → Beklenen etki. Jürinin aradığı: uygulanabilirlik ve özgünlük.</span>
+            </div>
+          </li>
+          <li>
+            <div>
+              <strong>T3 Yalova ağından destek alın</strong>
+              <span>T3 Vakfı yerel ağı ve YouthTICK üzerinden mentorluk bağlantısı, teknik geri bildirim ve ağ desteği edinin.</span>
+            </div>
+          </li>
+        </ol>
+
+        <h2 id="yalova-uni">Yalova Üniversitesi ve Teknofest</h2>
+        <p>Yalova Üniversitesi, öğrencilerin Teknofest'e katılımını desteklemektedir. Üniversite bünyesinde teknoloji toplulukları ve IEEE gibi öğrenci kulüpleri, Teknofest takım kurma sürecinde koordinasyon sağlamaktadır. Mühendislik Fakültesi öğrencileri özellikle İHA, yapay zeka ve robotik kategorilerinde aktif olmuştur.</p>
+
+        <div class="tip-box">
+          <strong>İpucu — Sosyal İnovasyon kategorisi:</strong> Teknoloji ağırlıklı olmayan projeleri olan gençler için "Sosyal İnovasyon" kategorisi oldukça erişilebilir. Yalova'nın gençlik, çevre veya kentsel sorunlarına teknoloji ile çözüm öneren projeler bu kategoriye uyar. YouthTICK bu tür projeleri Erasmus+ bağlantısıyla da destekleyebilir.
+        </div>
+
+        <h2 id="faq-section">Sık Sorulan Sorular</h2>
+
+        <h3>Teknofest Yalova'da yapılıyor mu?</h3>
+        <p>Teknofest'in resmi etkinlikleri şu an Yalova'da düzenlenmemektedir. Ana final etkinlikleri İstanbul, Ankara, Bursa ve diğer büyük şehirlerdedir. Ancak Yalova'dan bireyler ve takımlar tüm kategorilere başvurabilir ve finale gidebilir.</p>
+
+        <h3>Yalova'dan Teknofest'e nasıl katılırım?</h3>
+        <p>teknofest.org'dan ücretsiz hesap oluşturun, kategorinizi seçin, takımınızı kurun (2–5 kişi) ve başvurunuzu tamamlayın. Başvurular tamamen online yapılmaktadır.</p>
+
+        <h3>Yalova Üniversitesi öğrencileri Teknofest'e katılabilir mi?</h3>
+        <p>Evet. Yalova Üniversitesi öğrencileri Teknofest'in üniversite kategorilerine bireysel veya takım olarak katılabilir. Danışman akademisyen bulmak için bölüm koordinatörlerine başvurabilirsiniz.</p>
+
+        <h3>Teknofest başvurusu ücretsiz mi?</h3>
+        <p>Evet, Teknofest'e başvurmak tamamen ücretsizdir. Finale kalan takımlar için ulaşım ve konaklama desteği bazı kategorilerde sağlanabilir; detaylar teknofest.org'da yayınlanır.</p>
+
+        <h3>Yalova Teknofest için T3 desteği alabilir miyim?</h3>
+        <p>T3 Vakfı yerel etkinlikleri ve mentorluk ağı üzerinden destek sağlamaktadır. t3.org.tr'ye üye olun ve Yalova'daki T3 ortaklı etkinlikleri takip edin. YouthTICK de Yalova'daki T3 duyurularını paylaşmaktadır.</p>
+
+        <h2 id="related">İlgili YouthTICK Rehberleri</h2>
+        <ul>
+          <li><a href="/yalova-t3.html"><strong>T3 Yalova Programları ve Girişimcilik Rehberi →</strong></a></li>
+          <li><a href="/yalova-girisimcilik.html">Yalova Girişimcilik Ekosistemi (YTSO, TEKMER, OSB) →</a></li>
+          <li><a href="/yalova-universite.html">Yalova Üniversitesi Proje ve Erasmus Rehberi →</a></li>
+          <li><a href="/yalova-genclik-toplulugu.html">Yalova Gençlik Toplulukları →</a></li>
+          <li><a href="/blog.html">YouthTICK Blog →</a></li>
+        </ul>
+
+      </article>
+
+      <aside class="quick-nav">
+        <h3>Hızlı Geçiş</h3>
+        <a href="#nedir">Teknofest Nedir?</a>
+        <a href="#kategoriler">Kategoriler Tablosu</a>
+        <a href="#takvim">Başvuru Takvimi</a>
+        <a href="#basvuru">Başvuru Adımları</a>
+        <a href="#yalova-uni">Yalova Üniversitesi</a>
+        <a href="#faq-section">Sık Sorulan Sorular</a>
+        <hr style="margin:14px 0;border-color:var(--border-soft)"/>
+        <a href="https://teknofest.org" target="_blank" rel="noopener" style="color:#be185d;font-weight:700;">Teknofest.org Başvuru →</a>
+        <a href="/yalova-t3.html" style="color:#be185d;font-weight:700;margin-top:6px;display:block;">T3 Yalova Rehberi →</a>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  if (window.lucide) lucide.createIcons();
+  const schema = {
+    '@context': 'https://schema.org',
+    '@graph': [
+      {
+        '@type': 'Article',
+        'headline': 'Teknofest Yalova: Kategoriler, Başvuru Takvimi ve Takım Kurma Rehberi 2026',
+        'description': 'Yalova\'dan Teknofest\'e katılım rehberi: kategoriler, başvuru adımları, Yalova Üniversitesi takımları ve T3 Vakfı desteği.',
+        'author': { '@type': 'Organization', 'name': 'YouthTICK', 'url': 'https://youthtick.org' },
+        'publisher': { '@type': 'Organization', 'name': 'YouthTICK', 'logo': { '@type': 'ImageObject', 'url': 'https://youthtick.org/logo-square.png' } },
+        'datePublished': '2026-05-28',
+        'dateModified': '2026-05-28',
+        'inLanguage': 'tr-TR',
+        'url': 'https://youthtick.org/yalova-teknofest.html',
+        'about': [
+          { '@type': 'Event', 'name': 'Teknofest', 'alternateName': ['Teknofest Yalova', 'Yalova Teknofest', 'Teknofest 2026'], 'url': 'https://teknofest.org' },
+          { '@type': 'Organization', 'name': 'T3 Vakfı', 'alternateName': ['T3 Foundation', 'T3 Yalova', 'Yalova T3'] },
+          { '@type': 'Place', 'name': 'Yalova', 'containedInPlace': { '@type': 'Country', 'name': 'Türkiye' } }
+        ],
+        'mentions': [
+          { '@type': 'Event', 'name': 'Teknofest', 'alternateName': ['Teknofest Yalova', 'Yalova Teknofest'], 'url': 'https://teknofest.org' },
+          { '@type': 'Organization', 'name': 'T3 Vakfı', 'alternateName': ['T3 Foundation', 'Türkiye Teknoloji Takımı Vakfı', 'T3 Yalova', 'Yalova T3'], 'url': 'https://t3.org.tr' },
+          { '@type': 'Organization', 'name': 'TUSAŞ', 'alternateName': 'Türk Havacılık ve Uzay Sanayii' },
+          { '@type': 'EducationalOrganization', 'name': 'Yalova Üniversitesi', 'url': 'https://yalova.edu.tr' },
+          { '@type': 'Organization', 'name': 'Yalova Üniversitesi IEEE Öğrenci Kulübü' },
+          { '@type': 'Organization', 'name': 'TÜBİTAK' },
+          { '@type': 'Organization', 'name': 'YouthTICK' }
+        ]
+      },
+      {
+        '@type': 'Event',
+        '@id': 'https://youthtick.org/yalova-teknofest.html#teknofest',
+        'name': 'Teknofest',
+        'alternateName': ['Teknofest Yalova', 'Yalova Teknofest', 'Teknofest 2026 Yalova'],
+        'description': 'T3 Vakfı ve TUSAŞ tarafından organize edilen Türkiye\'nin en büyük teknoloji, havacılık ve uzay festivali. Yalova\'dan bireyler ve takımlar tüm kategorilere başvurabilir.',
+        'url': 'https://teknofest.org',
+        'organizer': { '@type': 'Organization', 'name': 'T3 Vakfı', 'url': 'https://t3.org.tr' },
+        'location': { '@type': 'Country', 'name': 'Türkiye' },
+        'eventAttendanceMode': 'https://schema.org/MixedEventAttendanceMode',
+        'eventStatus': 'https://schema.org/EventScheduled'
+      },
+      {
+        '@type': 'BreadcrumbList',
+        'itemListElement': [
+          { '@type': 'ListItem', 'position': 1, 'name': 'Ana Sayfa', 'item': 'https://youthtick.org/' },
+          { '@type': 'ListItem', 'position': 2, 'name': 'T3 Yalova', 'item': 'https://youthtick.org/yalova-t3.html' },
+          { '@type': 'ListItem', 'position': 3, 'name': 'Teknofest Yalova', 'item': 'https://youthtick.org/yalova-teknofest.html' }
+        ]
+      },
+      {
+        '@type': 'FAQPage',
+        'mainEntity': [
+          { '@type': 'Question', 'name': 'Teknofest Yalova\'da yapılıyor mu?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'Teknofest\'in resmi etkinlikleri Yalova\'da düzenlenmemektedir. Ana final etkinlikleri İstanbul, Ankara ve Bursa gibi büyük şehirlerdedir. Ancak Yalova\'dan bireyler ve takımlar tüm kategorilere online başvurabilir ve finale katılabilir.' } },
+          { '@type': 'Question', 'name': 'Yalova\'dan Teknofest\'e nasıl katılırım?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'teknofest.org\'dan ücretsiz hesap oluşturun, kategorinizi seçin, 2–5 kişilik takım kurun ve başvurunuzu tamamlayın. Tüm başvurular online yapılmaktadır.' } },
+          { '@type': 'Question', 'name': 'Yalova Teknofest için T3 Vakfı destek veriyor mu?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'T3 Vakfı, t3.org.tr üzerinden yerel etkinlikler ve mentorluk ağı aracılığıyla destek sağlamaktadır. Yalova\'da T3 programlarına katılarak Teknofest hazırlık sürecinde rehberlik alabilirsiniz.' } },
+          { '@type': 'Question', 'name': 'Yalova Üniversitesi öğrencileri Teknofest\'e katılabilir mi?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'Evet. Yalova Üniversitesi öğrencileri tüm üniversite kategorilerine katılabilir. Danışman akademisyen bulmak için bölüm koordinatörlerine başvurabilirsiniz.' } },
+          { '@type': 'Question', 'name': 'Teknofest başvurusu ücretsiz mi?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'Evet, Teknofest başvurusu tamamen ücretsizdir. Teknofest.org üzerinden yapılır.' } }
+        ]
+      }
+    ]
+  };
+  const script = document.createElement('script');
+  script.type = 'application/ld+json';
+  script.textContent = JSON.stringify(schema);
+  document.head.appendChild(script);
+});
+</script>
+<script type="module" src="assets/js/core/app.js"></script>
+</body>
+</html>
