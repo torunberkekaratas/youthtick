@@ -120,6 +120,12 @@
     }
   }
   </script>
+  <!-- ── Performance: resource hints ──────────────────────────── -->
+  <!-- Preload LCP image (WebP primary) before HTML parser reaches <img> -->
+  <link rel="preload" href="assets/img/hero-main.webp" as="image" type="image/webp" fetchpriority="high">
+  <!-- Start CSS download earlier in network waterfall -->
+  <link rel="preload" href="assets/css/main.css" as="style">
+  <link rel="preload" href="assets/css/home.css" as="style">
   <link rel="stylesheet" href="assets/css/main.css"/>
   <link rel="stylesheet" href="assets/css/home.css"/>
   <script src="assets/js/lucide.min.js" defer></script>
@@ -150,7 +156,13 @@
       0%  {transform:scale(1);opacity:.7}
       100%{transform:scale(3.2);opacity:0}
     }
-    .yt-ring{transform-box:fill-box;transform-origin:center}
+    /* GPU-composited: transform+opacity only — avoids non-composited animation warning */
+    .yt-ring{
+      transform-box:fill-box;transform-origin:center;
+      will-change:transform,opacity;
+    }
+    /* Hint browser to promote arc paths to their own layer during animation */
+    #yt-map-svg path{will-change:stroke-dashoffset;}
     .network-visual{display:flex;flex-direction:column;gap:0;}
   </style>
 </head>
@@ -218,14 +230,17 @@
 
         <!-- Primary image -->
         <div class="hero-img-wrap">
-          <img
-            src="assets/img/hero-main.jpg"
-            alt="Diverse young people connected across borders — YouthTICK"
-            class="hero-img"
-            loading="eager"
-            fetchpriority="high"
-            width="1200" height="900"
-          />
+          <picture>
+            <source srcset="assets/img/hero-main.webp" type="image/webp">
+            <img
+              src="assets/img/hero-main.jpg"
+              alt="Diverse young people connected across borders — YouthTICK"
+              class="hero-img"
+              loading="eager"
+              fetchpriority="high"
+              width="1200" height="900"
+            />
+          </picture>
 
           <!-- Badge 1: Location — bottom left -->
           <div class="hero-badge hero-badge-1">
@@ -253,24 +268,30 @@
         <!-- Mini image grid — 2 side by side -->
         <div class="hero-imgs-grid">
           <div class="hero-img-mini hero-img-mini--a">
-            <img
-              src="assets/img/hero-youth-exchange.jpg"
-              alt="Youth workshop and collaboration"
-              loading="lazy"
-              width="500" height="334"
-            />
+            <picture>
+              <source srcset="assets/img/hero-youth-exchange.webp" type="image/webp">
+              <img
+                src="assets/img/hero-youth-exchange.jpg"
+                alt="Youth workshop and collaboration"
+                loading="lazy"
+                width="500" height="334"
+              />
+            </picture>
             <div class="hero-img-mini-label">
               <i data-lucide="users" width="12" height="12"></i>
               <span data-i18n="hero.mini1.label">Workshop</span>
             </div>
           </div>
           <div class="hero-img-mini hero-img-mini--b">
-            <img
-              src="https://images.unsplash.com/photo-1531482615713-2afd69097998?w=500&q=80&auto=format&fit=crop"
-              alt="Intercultural dialogue and exchange"
-              loading="lazy"
-              width="500" height="334"
-            />
+            <picture>
+              <source srcset="assets/img/intercultural-dialogue.webp" type="image/webp">
+              <img
+                src="assets/img/intercultural-dialogue.jpg"
+                alt="Intercultural dialogue and exchange"
+                loading="lazy"
+                width="500" height="334"
+              />
+            </picture>
             <div class="hero-img-mini-label">
               <i data-lucide="globe" width="12" height="12"></i>
               <span data-i18n="hero.mini2.label">Dialogue</span>
@@ -399,7 +420,10 @@
         <div class="testi-stars">★★★★★</div>
         <p class="testi-quote" data-i18n="testi.q1">The exchange completely changed how I see Europe. I came back to Yalova with 12 new friends across 6 countries and a real sense of what's possible.</p>
         <div class="testi-author">
-          <img src="assets/img/avatar-ayse.jpg" alt="Ayşe K." class="testi-avatar" loading="lazy"/>
+          <picture>
+            <source srcset="assets/img/avatar-ayse.webp" type="image/webp">
+            <img src="assets/img/avatar-ayse.jpg" alt="Ayşe K." class="testi-avatar" loading="lazy" width="46" height="46"/>
+          </picture>
           <div>
             <div class="testi-name" data-i18n="testi.n1">Ayşe K.</div>
             <div class="testi-role" data-i18n="testi.r1">Youth Exchange · Germany · 2025</div>
@@ -410,7 +434,10 @@
         <div class="testi-stars">★★★★★</div>
         <p class="testi-quote" data-i18n="testi.q2">I volunteered in Lisbon for 8 months through ESC. YouthTICK helped me navigate the application — without them I honestly would not have known where to start.</p>
         <div class="testi-author">
-          <img src="assets/img/avatar-mehmet.jpg" alt="Mehmet T." class="testi-avatar" loading="lazy"/>
+          <picture>
+            <source srcset="assets/img/avatar-mehmet.webp" type="image/webp">
+            <img src="assets/img/avatar-mehmet.jpg" alt="Mehmet T." class="testi-avatar" loading="lazy" width="46" height="46"/>
+          </picture>
           <div>
             <div class="testi-name" data-i18n="testi.n2">Mehmet T.</div>
             <div class="testi-role" data-i18n="testi.r2">ESC Volunteer · Portugal · 2025</div>
@@ -421,7 +448,10 @@
         <div class="testi-stars">★★★★★</div>
         <p class="testi-quote" data-i18n="testi.q3">As a German partner, working with YouthTICK was professional from day one. The Turkish participants brought perspectives our group had never encountered before.</p>
         <div class="testi-author">
-          <img src="assets/img/avatar-celine.jpg" alt="Céline B." class="testi-avatar" loading="lazy"/>
+          <picture>
+            <source srcset="assets/img/avatar-celine.webp" type="image/webp">
+            <img src="assets/img/avatar-celine.jpg" alt="Céline B." class="testi-avatar" loading="lazy" width="46" height="46"/>
+          </picture>
           <div>
             <div class="testi-name" data-i18n="testi.n3">Céline B.</div>
             <div class="testi-role" data-i18n="testi.r3">Programme Manager · Germany · 2025</div>
@@ -506,7 +536,10 @@
     <div class="project-cards-grid" data-stagger>
       <a href="projects.html" class="card project-card-home" data-anim id="proj-card-1">
         <div class="card-img-wrap card-img-zoom">
-          <img class="card-img" src="assets/img/hero-youth-exchange.jpg" alt="Youth and Urban Futures initiative" loading="lazy" style="filter:contrast(1.05) saturate(0.9);" width="700" height="525"/>
+          <picture>
+            <source srcset="assets/img/hero-youth-exchange.webp" type="image/webp">
+            <img class="card-img" src="assets/img/hero-youth-exchange.jpg" alt="Youth and Urban Futures initiative" loading="lazy" style="filter:contrast(1.05) saturate(0.9);" width="700" height="525"/>
+          </picture>
         </div>
         <div class="card-body">
           <div style="display:flex;gap:8px;margin-bottom:14px;flex-wrap:wrap;">
@@ -523,7 +556,10 @@
       </a>
       <a href="projects.html" class="card project-card-home" data-anim style="transition-delay:.09s" id="proj-card-2">
         <div class="card-img-wrap card-img-zoom">
-          <img class="card-img" src="assets/img/entrepreneurship.jpg" alt="Youth for Sustainability initiative" loading="lazy" style="filter:contrast(1.05) saturate(0.9);" width="700" height="525"/>
+          <picture>
+            <source srcset="assets/img/entrepreneurship.webp" type="image/webp">
+            <img class="card-img" src="assets/img/entrepreneurship.jpg" alt="Youth for Sustainability initiative" loading="lazy" style="filter:contrast(1.05) saturate(0.9);" width="700" height="525"/>
+          </picture>
         </div>
         <div class="card-body">
           <div style="display:flex;gap:8px;margin-bottom:14px;flex-wrap:wrap;">
@@ -644,8 +680,11 @@
         YouthTICK gave me a platform I didn't know I needed — to connect across borders, to build something lasting, and to lead with real purpose.
       </blockquote>
       <div class="pullquote-author">
-        <img src="assets/img/avatar-ayse.jpg"
-             alt="Mia Schneider" class="pullquote-avatar" loading="lazy" width="96" height="72"/>
+        <picture>
+          <source srcset="assets/img/avatar-ayse.webp" type="image/webp">
+          <img src="assets/img/avatar-ayse.jpg"
+               alt="Mia Schneider" class="pullquote-avatar" loading="lazy" width="96" height="72"/>
+        </picture>
         <div>
           <div class="pullquote-name" data-i18n="quote.author">Mia Schneider</div>
           <div class="pullquote-role" data-i18n="quote.role">Early Community Member · 2026</div>
@@ -840,32 +879,36 @@
         });
         var px=tc.getImageData(0,0,W,H).data;
 
-        /* Dot grid — only on land pixels */
-        var dotR=1.4, gap=3.5;
-        ctx.fillStyle='rgba(148,163,184,0.32)';
-        for(var x=0;x<W;x+=gap){
-          for(var y=0;y<H;y+=gap){
-            var idx=(Math.round(y)*W+Math.round(x))*4+3;
-            if(px[idx]>64){
+        /* Dot grid — deferred to next frame so it never blocks FCP/LCP */
+        requestAnimationFrame(function(){
+          var dotR=1.4, gap=3.5;
+          ctx.fillStyle='rgba(148,163,184,0.32)';
+          for(var x=0;x<W;x+=gap){
+            for(var y=0;y<H;y+=gap){
+              var idx=(Math.round(y)*W+Math.round(x))*4+3;
+              if(px[idx]>64){
+                ctx.beginPath();
+                ctx.arc(x,y,dotR,0,Math.PI*2);
+                ctx.fill();
+              }
+            }
+          }
+          buildSVG(svgEl,tipEl);
+        });
+      })
+      .catch(function(){
+        /* Fallback: uniform dot grid, also deferred */
+        requestAnimationFrame(function(){
+          ctx.fillStyle='rgba(148,163,184,0.15)';
+          for(var x=0;x<W;x+=4){
+            for(var y=0;y<H;y+=4){
               ctx.beginPath();
-              ctx.arc(x,y,dotR,0,Math.PI*2);
+              ctx.arc(x,y,1.2,0,Math.PI*2);
               ctx.fill();
             }
           }
-        }
-        buildSVG(svgEl,tipEl);
-      })
-      .catch(function(){
-        /* Fallback: uniform dot grid */
-        ctx.fillStyle='rgba(148,163,184,0.15)';
-        for(var x=0;x<W;x+=4){
-          for(var y=0;y<H;y+=4){
-            ctx.beginPath();
-            ctx.arc(x,y,1.2,0,Math.PI*2);
-            ctx.fill();
-          }
-        }
-        buildSVG(svgEl,tipEl);
+          buildSVG(svgEl,tipEl);
+        });
       });
   }
 
@@ -893,6 +936,10 @@
       path.setAttribute('stroke-dasharray',dashLen);
       path.setAttribute('stroke-dashoffset',dashLen);
       path.style.animation='yt-arc 1.3s '+(0.4+i*0.22)+'s ease-out forwards';
+      /* Free GPU layer once animation finishes (one-shot animation) */
+      path.addEventListener('animationend',function(){
+        this.style.willChange='auto';
+      },{once:true});
       svgEl.appendChild(path);
     });
 
