@@ -13,8 +13,9 @@
   <!-- Font: async load to prevent render-blocking -->
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-  <link rel="stylesheet" media="print" onload="this.media='all'" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=DM+Serif+Display:ital@0;1&display=swap"/>
-  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=DM+Serif+Display:ital@0;1&display=swap"/></noscript>
+  <!-- Weights 300+500 added to match what was in the (now removed) main.css @import -->
+  <link rel="stylesheet" media="print" onload="this.media='all'" href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=DM+Serif+Display:ital@0;1&display=swap"/>
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=DM+Serif+Display:ital@0;1&display=swap"/></noscript>
   <title data-titlekey="home.pageTitle">YouthTICK — Yalova Erasmus+ Gençlik İnisiyatifi | Yalova, Türkiye</title>
   <meta name="description" content="YouthTICK, Yalova merkezli Erasmus+ gençlik inisiyatifidir. Yalova'dan Avrupa'ya gençlik projeleri, Erasmus+ başvuru desteği, gönüllülük ve sivil katılım. youthtick.org"/>
   <meta name="keywords" content="yalova erasmus, yalova gençlik, yalova gönüllülük, yalova gençlik topluluğu, yalova erasmus başvuru, yalova sivil toplum, yalova avrupa programları, yalova gençlik projesi, YouthTICK, tick youth, youth tick, youthtick yalova"/>
@@ -123,6 +124,8 @@
   <!-- ── Performance: resource hints ──────────────────────────── -->
   <!-- Preload LCP image (WebP primary) before HTML parser reaches <img> -->
   <link rel="preload" href="assets/img/hero-main.webp" as="image" type="image/webp" fetchpriority="high">
+  <!-- Preload world-atlas data so map fetch starts before JS runs -->
+  <link rel="preload" href="https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json" as="fetch" crossorigin="anonymous">
   <!-- Start CSS download earlier in network waterfall -->
   <link rel="preload" href="assets/css/main.css" as="style">
   <link rel="preload" href="assets/css/home.css" as="style">
@@ -131,8 +134,8 @@
   <script src="assets/js/lucide.min.js" defer></script>
   <script src="assets/js/home.js" defer></script>
   <script type="module" src="assets/js/core/app.js"></script>
-  <!-- Network world-map dependencies -->
-  <script src="https://cdn.jsdelivr.net/npm/topojson-client@3/dist/topojson-client.min.js" defer></script>
+  <!-- Network world-map: self-hosted to remove 3rd-party DNS/RTT cost -->
+  <script src="assets/js/topojson-client.min.js" defer></script>
   <style>
     /* ── YouthTICK Network Map ──────────────────────── */
     .yt-map-card{

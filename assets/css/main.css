@@ -3,7 +3,8 @@
    Digital Embassy · European Institutional · Cinematic Editorial
    ───────────────────────────────────────────────────────────── */
 
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=DM+Serif+Display:ital@0;1&display=swap');
+/* Fonts loaded via <link> in HTML head (async, non-blocking).
+   @import removed — it was creating a blocking request chain. */
 
 /* ── DESIGN TOKENS ──────────────────────────────────────────── */
 :root {
