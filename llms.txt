@@ -26,6 +26,7 @@ Priority-Pages:
 - https://www.youthtick.org/yalova-sivil-toplum.html (Civil society organizations: T3 Vakfı, Kızılay, Yeşilay, GSB gençlik merkezleri)
 - https://www.youthtick.org/yalova-ogrenci-yasami.html (Student life in Yalova: housing, transport, social life, budget tips)
 - https://www.youthtick.org/yalova-egitim.html (Education and language learning in Yalova: courses, certifications, dil okulları)
+- https://www.youthtick.org/yalova-gsb.html (Yalova GSB Gençlik Merkezi ve Genç Ofis: kayıt, ücretsiz programlar, Gençlik ve Spor Bakanlığı Yalova hizmetleri)
 - https://www.youthtick.org/yalova-esc-gonullu.html (European Solidarity Corps volunteering guide: ESC application, eligibility, projects, Youthpass)
 - https://www.youthtick.org/yalova-dil-okulu.html (Language school comparison: Akın Dil, TÖMER, prices, Erasmus preparation programs)
 - https://www.youthtick.org/blog.html (Research, insights, and youth mobility trends)
@@ -40,7 +41,7 @@ Local-Topics:
 - T3 Vakfı Yalova: yalova-sivil-toplum.html, yalova-girisimcilik.html, article?id=69
 - Gençlik Meclisi Yalova: yalova-genclik-toplulugu.html, yalova-sivil-toplum.html, article?id=70
 - Kent Konseyi Yalova: yalova-genclik-toplulugu.html, yalova-sivil-toplum.html, article?id=71
-- Yalova GSB Gençlik Merkezi: yalova-sivil-toplum.html, article?id=72
+- Yalova GSB Gençlik Merkezi / Genç Ofis Yalova / GSB Yalova: yalova-gsb.html, yalova-sivil-toplum.html, article?id=72
 - Yalova Kızılay: yalova-genclik-toplulugu.html, yalova-sivil-toplum.html, article?id=73
 - YTSO Yalova Genç Girişimci: yalova-girisimcilik.html, article?id=74
 - Yalova Dil Okulu / Akın Dil: yalova-egitim.html, article?id=75

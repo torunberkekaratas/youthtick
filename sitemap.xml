@@ -1857,4 +1857,12 @@
     <xhtml:link rel="alternate" hreflang="tr" href="https://youthtick.org/yalova-dil-okulu.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://youthtick.org/yalova-dil-okulu.html"/>
   </url>
+  <url>
+    <loc>https://youthtick.org/yalova-gsb.html</loc>
+    <lastmod>2026-05-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://youthtick.org/yalova-gsb.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://youthtick.org/yalova-gsb.html"/>
+  </url>
 </urlset>
