@@ -93,9 +93,14 @@ function applyTranslations(lang) {
     const val = dict[key] ?? TRANSLATIONS.en[key];
     if (val === undefined) return;
     if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
-      el.placeholder = val;
+      if (el.placeholder !== val) el.placeholder = val;
     } else {
-      el.innerHTML = val;
+      // Skip innerHTML write if content is already correct.
+      // This prevents spurious LCP re-measurement when English text
+      // is already pre-rendered in the HTML (no DOM mutation needed).
+      if (el.innerHTML.trim() !== val.trim()) {
+        el.innerHTML = val;
+      }
     }
   });
 

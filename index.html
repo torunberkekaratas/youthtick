@@ -123,12 +123,29 @@
   </script>
   <!-- ── Performance: resource hints ──────────────────────────── -->
   <!-- Preload LCP image (WebP primary) before HTML parser reaches <img> -->
-  <link rel="preload" href="assets/img/hero-main.webp" as="image" type="image/webp" fetchpriority="high">
+  <!-- Serve right-sized hero: 720px on mobile, 1440px on desktop -->
+  <link rel="preload" href="assets/img/hero-main-720.webp" as="image" type="image/webp" fetchpriority="high" media="(max-width: 768px)">
+  <link rel="preload" href="assets/img/hero-main.webp"     as="image" type="image/webp" fetchpriority="high" media="(min-width: 769px)">
   <!-- Preload world-atlas data so map fetch starts before JS runs -->
   <link rel="preload" href="https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json" as="fetch" crossorigin="anonymous">
   <!-- Start CSS download earlier in network waterfall -->
   <link rel="preload" href="assets/css/main.css" as="style">
   <link rel="preload" href="assets/css/home.css" as="style">
+  <!-- modulepreload: download the entire JS module tree in parallel.
+       Without this, browser walks app→i18n→locales sequentially = 2.5s chain.
+       With modulepreload all 12 modules start at HTML parse time = ~1 RTT. -->
+  <link rel="modulepreload" href="assets/js/core/app.js">
+  <link rel="modulepreload" href="assets/js/core/i18n.js">
+  <link rel="modulepreload" href="assets/js/core/content-bridge.js">
+  <link rel="modulepreload" href="assets/js/locales/en.js">
+  <link rel="modulepreload" href="assets/js/locales/tr.js">
+  <link rel="modulepreload" href="assets/js/locales/de.js">
+  <link rel="modulepreload" href="assets/js/components/navigation.js">
+  <link rel="modulepreload" href="assets/js/components/footer.js">
+  <link rel="modulepreload" href="assets/js/components/cookie-banner.js">
+  <link rel="modulepreload" href="assets/js/animations/cursor.js">
+  <link rel="modulepreload" href="assets/js/animations/card-tilt.js">
+  <link rel="modulepreload" href="assets/js/animations/scroll.js">
   <link rel="stylesheet" href="assets/css/main.css"/>
   <link rel="stylesheet" href="assets/css/home.css"/>
   <script src="assets/js/lucide.min.js" defer></script>
@@ -234,7 +251,12 @@
         <!-- Primary image -->
         <div class="hero-img-wrap">
           <picture>
-            <source srcset="assets/img/hero-main.webp" type="image/webp">
+            <!-- Mobile: 720px WebP (52KB) — Desktop: 1440px WebP (162KB) -->
+            <source
+              srcset="assets/img/hero-main-720.webp 720w, assets/img/hero-main.webp 1440w"
+              sizes="(max-width: 768px) 720px, 1440px"
+              type="image/webp"
+            >
             <img
               src="assets/img/hero-main.jpg"
               alt="Diverse young people connected across borders — YouthTICK"

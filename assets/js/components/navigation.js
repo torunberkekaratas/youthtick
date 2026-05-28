@@ -80,7 +80,8 @@ export function renderNav() {
     nav.classList.toggle('scrolled', window.scrollY > 24);
   };
   window.addEventListener('scroll', onScroll, { passive: true });
-  onScroll();
+  // Defer initial scrollY read to rAF — avoids forced reflow after insertAdjacentHTML
+  requestAnimationFrame(onScroll);
 
   const hamburger = document.getElementById('nav-hamburger');
   const mobileMenu = document.getElementById('mobile-menu');

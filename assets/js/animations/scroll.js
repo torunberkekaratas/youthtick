@@ -24,7 +24,8 @@ export function tickScrollProgress() {
     if (!ticking) { requestAnimationFrame(upd); ticking = true; }
   }, { passive: true });
 
-  upd();
+  // Defer initial read to rAF — prevents forced reflow right after DOM insert
+  requestAnimationFrame(upd);
 }
 
 /* ── Scroll-Reveal: [data-anim] → adds .visible when in viewport ── */
