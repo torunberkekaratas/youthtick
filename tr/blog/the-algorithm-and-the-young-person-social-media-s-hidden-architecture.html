@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <link rel="stylesheet" href="../../assets/css/main.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link rel="stylesheet" media="print" onload="this.media='all'" href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=DM+Serif+Display:ital@0;1&display=swap"/>
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=DM+Serif+Display:ital@0;1&display=swap"/></noscript>
+  <title>Algoritma ve Genç İnsan: Sosyal Medyanın Gizli Mimarisi — YouthTICK</title>
+  <meta name="description" content="Gençler ortalama günde 4-6 saat sosyal medya platformlarında vakit geçiriyor. Çoğunun bu platformların ne gördüklerini, neden gördüklerini ve bu seçim süre"/>
+  <meta name="robots" content="index, follow"/>
+  <link rel="canonical" href="https://youthtick.org/tr/blog/the-algorithm-and-the-young-person-social-media-s-hidden-architecture.html"/>
+  <link rel="alternate" hreflang="en" href="https://youthtick.org/blog/the-algorithm-and-the-young-person-social-media-s-hidden-architecture.html"/>
+  <link rel="alternate" hreflang="tr" href="https://youthtick.org/tr/blog/the-algorithm-and-the-young-person-social-media-s-hidden-architecture.html"/>
+  <link rel="alternate" hreflang="de" href="https://youthtick.org/de/blog/the-algorithm-and-the-young-person-social-media-s-hidden-architecture.html"/>
+  <link rel="alternate" hreflang="x-default" href="https://youthtick.org/blog/the-algorithm-and-the-young-person-social-media-s-hidden-architecture.html"/>
+  <meta property="og:type" content="article"/>
+  <meta property="og:title" content="Algoritma ve Genç İnsan: Sosyal Medyanın Gizli Mimarisi"/>
+  <meta property="og:description" content="Gençler ortalama günde 4-6 saat sosyal medya platformlarında vakit geçiriyor. Çoğunun bu platformların ne gördüklerini, neden gördüklerini ve bu seçim süre"/>
+  <meta property="og:image" content="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&q=85&auto=format&fit=crop"/>
+  <meta property="og:url" content="https://youthtick.org/tr/blog/the-algorithm-and-the-young-person-social-media-s-hidden-architecture.html"/>
+  <meta property="og:site_name" content="YouthTICK"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Algoritma ve Genç İnsan: Sosyal Medyanın Gizli Mimarisi",
+  "description": "Gençler ortalama günde 4-6 saat sosyal medya platformlarında vakit geçiriyor. Çoğunun bu platformların ne gördüklerini, neden gördüklerini ve bu seçim süre",
+  "author": {
+    "@type": "Person",
+    "name": "Nikos Papadopoulos"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "YouthTICK",
+    "url": "https://youthtick.org"
+  },
+  "datePublished": "2024-06-15",
+  "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&q=85&auto=format&fit=crop",
+  "url": "https://youthtick.org/tr/blog/the-algorithm-and-the-young-person-social-media-s-hidden-architecture.html",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://youthtick.org/tr/blog/the-algorithm-and-the-young-person-social-media-s-hidden-architecture.html"
+  }
+}
+  </script>
+  <script src="../../assets/js/lucide.min.js" defer></script>
+  <script type="module" src="../../assets/js/core/app.js"></script>
+  <style>
+    .abh{padding:calc(var(--nav-h,72px) + 56px) 0 48px;background:var(--bg-soft,#F3F2EC);border-bottom:1px solid var(--border-soft,#E3E1D8);text-align:center}
+    .acat{display:inline-block;padding:4px 14px;border-radius:999px;font-size:.75rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;background:var(--blue-soft,#EBF1FA);color:var(--blue,#1A4B8A);margin-bottom:18px}
+    .ath{font-family:var(--font-display,'DM Serif Display',Georgia,serif);font-size:clamp(1.8rem,4vw,3rem);line-height:1.18;letter-spacing:-.02em;max-width:820px;margin:0 auto 24px;color:var(--ink,#0B1A2C)}
+    .amt{color:var(--ink-ghost,#7896A8);font-size:.85rem;display:flex;align-items:center;justify-content:center;gap:16px;flex-wrap:wrap}
+    .ab{max-width:700px;margin:0 auto;padding:56px 20px 100px}
+    .ab p{font-size:1.06rem;line-height:1.84;color:var(--ink,#0B1A2C);margin-bottom:28px}
+    .ab h2{font-family:var(--font-display,'DM Serif Display',Georgia,serif);font-size:1.6rem;letter-spacing:-.015em;margin:52px 0 16px}
+    .ab h3{font-size:1.15rem;font-weight:700;margin:32px 0 12px}
+    .ab ul,.ab ol{margin:0 0 28px 24px}
+    .ab li{font-size:1.06rem;line-height:1.78;color:var(--ink-muted,#243448);margin-bottom:6px}
+    .ab blockquote{border-left:3px solid var(--blue,#1A4B8A);margin:36px 0;padding:16px 28px;background:var(--blue-soft,#EBF1FA);border-radius:0 12px 12px 0;font-style:italic;font-size:1.08rem;color:var(--blue-dark,#0F3166)}
+    .abk{display:inline-flex;align-items:center;gap:8px;color:var(--ink-faint,#446070);font-size:.875rem;font-weight:600;margin-bottom:32px;text-decoration:none;transition:color .2s}
+    .abk:hover{color:var(--blue,#1A4B8A)}
+    .aat{display:flex;align-items:center;gap:16px;padding:28px 0;border-top:1px solid var(--border-soft,#E3E1D8);border-bottom:1px solid var(--border-soft,#E3E1D8);margin-bottom:48px}
+    .aat img{width:52px;height:52px;border-radius:50%;object-fit:cover}
+    .aan{font-weight:700;font-size:.95rem}
+    .aar{font-size:.8rem;color:var(--ink-ghost,#7896A8);margin-top:2px}
+    .ahimg{width:100%;max-height:460px;object-fit:cover;border-radius:24px;margin-bottom:52px;box-shadow:0 12px 36px rgba(5,15,28,.12)}
+  </style>
+</head>
+<body>
+<noscript>
+  <nav style="padding:8px;background:#0a1828;">
+    <a href="../../index.html" style="color:#fff;margin-right:8px;">Home</a>
+    <a href="../../blog.html" style="color:#fff;margin-right:8px;">Blog</a>
+    <a href="../../about.html" style="color:#fff;margin-right:8px;">About</a>
+    <a href="../../contact.html" style="color:#fff;">Contact</a>
+  </nav>
+</noscript>
+
+<section class="abh">
+  <div class="container">
+    <span class="acat">AI & Youth</span>
+    <h1 class="ath">Algoritma ve Genç İnsan: Sosyal Medyanın Gizli Mimarisi</h1>
+    <div class="amt">
+      <span>June 2024</span>
+      <span>·</span><span>8 min read</span>
+      <span>·</span><span>Nikos Papadopoulos</span>
+    </div>
+  </div>
+</section>
+
+<div class="ab">
+  <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&q=85&auto=format&fit=crop" alt="Algoritma ve Genç İnsan: Sosyal Medyanın Gizli Mimarisi" class="ahimg" loading="eager" fetchpriority="high" width="1200" height="460"/>
+  <a href="../../blog.html" class="abk">← Back to Blog</a>
+  
+  <div class="aat">
+    <img src="https://images.unsplash.com/photo-1552058544-f2b08422138a?w=80&q=80&auto=format&fit=crop&crop=face" alt="Nikos Papadopoulos" loading="lazy" width="52" height="52"/>
+    <div>
+      <div class="aan">Nikos Papadopoulos</div>
+      <div class="aar">Youth Worker & Trainer</div>
+    </div>
+  </div>
+  
+      <p>Gençler ortalama günde 4-6 saat sosyal medya platformlarında vakit geçiriyor. Çoğunun bu platformların ne gördüklerini, neden gördüklerini ve bu seçim sürecinin neyi başarmak için tasarlandığını nasıl belirlediği konusunda neredeyse hiç anlayışı yok. Bu cehalet tesadüfi değil; iş modeli buna bağlı olan platformların bilinçli bir tasarım tercihi.</p>
+      <h2>Öneri Algoritmaları Nasıl Çalışır</h2>
+      <p>Öneri algoritması her büyük sosyal medya platformunun motorudur. Hangi gönderilerin akışınızda görüneceğine, hangi videoların otomatik oynanacağına, hangi hesapların size önerileceğine karar verir. Hedefi — her durumda — "etkileşimi" en üst düzeye çıkarmaktır: platformda geçirdiğiniz süre, yaptığınız eylemler, oluşturduğunuz içerik.</p>
+      <blockquote>Algoritma kimseyi radikalize etmeye niyet etmez. Sadece zaten tükettiğinizden biraz daha aşırı içeriğin dikkatinizi daha fazla çekeceğini biliyor. Bunu yüzlerce kez tekrarlayın ve birikimli etki derin olabilir.</blockquote>
+      <h2>Filtre Balonları ve Yankı Odaları</h2>
+      <p>Öneri algoritmaları ayrıca filtre balonları oluşturur: ağırlıklı olarak mevcut inançlarınızı doğrulayan görüşlerle karşılaştığınız bilgi ortamları. Bunun sonucu, farklı algoritmik balonlardaki insanların gerçekten farklı bilgi gerçekliklerinde yaşamasıdır.</p>
+      <h2>Gençlerin Anlaması Gerekenler</h2>
+      <ul>
+        <li>Gençlere kendi algoritmalarını denetlemeyi öğretin: onlara ne gösteriyor? Neyi gizliyor?</li>
+        <li>Kasıtlı medya tüketimi pratiği yapın: algoritmanın sunduklarını almak yerine ne tüketeceğini seçmek</li>
+        <li>Kronolojik akışlar kullanın: size en fazla etkileşim sağlayacak içeriği değil, takip etmeyi seçtiklerinizi gösterir</li>
+        <li>Düzenli molalar verin ve ruh halinizin ve dünya görüşünüzün nasıl değiştiğini fark edin</li>
+      </ul>
+
+</div>
+
+</body>
+</html>
