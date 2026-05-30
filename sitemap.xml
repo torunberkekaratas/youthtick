@@ -534,6 +534,26 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://youthtick.org/yalova-kultur-sanat.html"/>
   </url>
   <url>
+    <loc>https://youthtick.org/faq.html</loc>
+    <lastmod>2026-05-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://youthtick.org/faq.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://youthtick.org/tr/faq.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://youthtick.org/de/faq.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://youthtick.org/faq.html"/>
+  </url>
+  <url>
+    <loc>https://youthtick.org/yalova-erasmus-article.html</loc>
+    <lastmod>2026-05-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://youthtick.org/yalova-erasmus-article.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://youthtick.org/tr/yalova-erasmus-article.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://youthtick.org/de/yalova-erasmus-article.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://youthtick.org/yalova-erasmus-article.html"/>
+  </url>
+  <url>
     <loc>https://youthtick.org/blog/the-complete-guide-to-your-first-erasmus-youth-exchange-in-2026.html</loc>
     <lastmod>2026-05-15</lastmod>
     <changefreq>monthly</changefreq>
