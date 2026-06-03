@@ -2,12 +2,13 @@
 
 import fs from 'node:fs';
 
-const HOST = 'www.youthtick.org';
+const HOST = 'youthtick.org';
 const BASE = `https://${HOST}`;
 const INDEXNOW_ENDPOINT = 'https://api.indexnow.org/indexnow';
 const KEY = process.env.INDEXNOW_KEY || 'youthtick-indexnow-20260526';
 const KEY_LOCATION = process.env.INDEXNOW_KEY_LOCATION || `${BASE}/youthtick-indexnow-20260526.txt`;
 
+// Article blog slugs — TR and DE versions exist as real files
 const articleSlugs = {
   50: 'youthtick-yalova-genclik-erasmus-ve-uluslararasi-firsatlar-rehberi',
   51: 'youthtick-yalova-erasmus-basvuru-rehberi-2026',
@@ -21,24 +22,49 @@ const articleSlugs = {
 
 function buildUrls() {
   const urls = [
+    // Canonical root pages
     `${BASE}/`,
-    `${BASE}/tr/`,
-    `${BASE}/de/`,
-    `${BASE}/yalova-erasmus`,
-    `${BASE}/tr/yalova-erasmus`,
-    `${BASE}/de/yalova-erasmus`,
     `${BASE}/blog.html`,
-    `${BASE}/tr/blog.html`,
-    `${BASE}/de/blog.html`,
     `${BASE}/sitemap.xml`,
-    `${BASE}/rss.xml`
+    `${BASE}/rss.xml`,
+    // Main site pages
+    `${BASE}/events.html`,
+    `${BASE}/focus.html`,
+    `${BASE}/impact.html`,
+    `${BASE}/opportunities.html`,
+    `${BASE}/team.html`,
+    `${BASE}/partnership.html`,
+    `${BASE}/privacy.html`,
+    // Yalova landing pages (canonical .html URLs, no /tr/ or /de/ duplicates)
+    `${BASE}/yalova-burs.html`,
+    `${BASE}/yalova-dil-okulu.html`,
+    `${BASE}/yalova-egitim.html`,
+    `${BASE}/yalova-erasmus.html`,
+    `${BASE}/yalova-erasmus-istatistik.html`,
+    `${BASE}/yalova-esc-gonullu.html`,
+    `${BASE}/yalova-genclik-toplulugu.html`,
+    `${BASE}/yalova-girisimcilik.html`,
+    `${BASE}/yalova-gsb.html`,
+    `${BASE}/yalova-kariyer.html`,
+    `${BASE}/yalova-konut.html`,
+    `${BASE}/yalova-kultur-sanat.html`,
+    `${BASE}/yalova-ogrenci-yasami.html`,
+    `${BASE}/yalova-sivil-toplum.html`,
+    `${BASE}/yalova-sks.html`,
+    `${BASE}/yalova-spor.html`,
+    `${BASE}/yalova-staj.html`,
+    `${BASE}/yalova-t3.html`,
+    `${BASE}/yalova-teknofest.html`,
+    `${BASE}/yalova-teknopark.html`,
+    `${BASE}/yalova-universite.html`,
+    `${BASE}/yalova-ytso.html`
   ];
 
-  const langs = ['', '/tr', '/de'];
+  // Blog articles — canonical URLs use /tr/blog/:slug (Turkish) and /de/blog/:slug (German)
+  // as those are real files. Also include /blog/:slug if it exists.
   for (const [id, slug] of Object.entries(articleSlugs)) {
-    for (const prefix of langs) {
-      urls.push(`${BASE}${prefix}/article.html?id=${id}&slug=${slug}`);
-    }
+    urls.push(`${BASE}/tr/blog/${id}-${slug}`);
+    urls.push(`${BASE}/de/blog/${id}-${slug}`);
   }
 
   return [...new Set(urls)];
@@ -72,7 +98,8 @@ async function main() {
 
   const bad = checks.filter(x => !x.ok);
   if (bad.length) {
-    console.warn(`Warning: ${bad.length} URL failed reachability check`);
+    console.warn(`Warning: ${bad.length} URL(s) failed reachability check`);
+    bad.forEach(b => console.warn(`  ${b.status} ${b.url}`));
   }
 
   const submitUrls = checks.filter(x => x.ok).map(x => x.url);

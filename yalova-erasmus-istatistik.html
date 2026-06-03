@@ -75,6 +75,64 @@
     .publish-date { font-size:.88rem; color:rgba(255,255,255,0.6); text-align:right; }
     @media(max-width:960px){ .stat-grid { grid-template-columns:1fr; } .comparison-table { font-size:.85rem; } .comparison-table th, .comparison-table td { padding:10px 12px; } }
   </style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "Yalova Erasmus+ İstatistik Dashboard 2024-2026",
+      "description": "Yalova Üniversitesi Erasmus mobilite verileri, partner üniversite karşılaştırması ve fakülte bazlı analiz.",
+      "author": {
+        "@type": "Organization",
+        "name": "YouthTICK"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "YouthTICK",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://youthtick.org/logo-square.png"
+        }
+      },
+      "datePublished": "2026-05-26",
+      "dateModified": "2026-05-26",
+      "inLanguage": "tr-TR",
+      "about": [
+        {
+          "@type": "EducationalOrganization",
+          "name": "Yalova Üniversitesi"
+        },
+        {
+          "@type": "Thing",
+          "name": "Erasmus+ İstatistik"
+        }
+      ],
+      "citation": [
+        {
+          "@type": "Organization",
+          "name": "Yalova Üniversitesi Öğrenci İşleri"
+        },
+        {
+          "@type": "Organization",
+          "name": "Erasmus+ National Agency Türkiye"
+        }
+      ]
+    },
+    {
+      "@type": "Dataset",
+      "name": "Yalova Erasmus+ Mobilite Verileri 2024-2026",
+      "description": "Yalova Üniversitesi fakülte bazlı Erasmus giden öğrenci sayıları ve partner üniversite karşılaştırma verileri.",
+      "creator": {
+        "@type": "Organization",
+        "name": "YouthTICK"
+      },
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "temporalCoverage": "2024/2026"
+    }
+  ]
+}
+</script>
 </head>
 <body>
 <!-- Static nav links for Googlebot first-pass (no-JS crawl). renderNav() replaces this. -->
@@ -398,150 +456,6 @@
 <script>
 document.addEventListener('DOMContentLoaded', () => {
   if (window.lucide) lucide.createIcons();
-
-  // Faculty Chart
-  const facultyCtx = document.getElementById('facultyChart');
-  if (facultyCtx) {
-    new Chart(facultyCtx, {
-      type: 'bar',
-      data: {
-        labels: ['Mühendislik', 'İİBF', 'Fen-Edebiyat', 'Sağlık Bilimleri', 'Tıp', 'Hukuk', 'İlahiyat', 'Eğitim', 'Mimarlık'],
-        datasets: [{
-          label: 'Giden Öğrenci (2025-2026)',
-          data: [35, 28, 22, 18, 14, 10, 8, 7, 5],
-          backgroundColor: 'rgba(37, 99, 235, 0.8)',
-          borderColor: 'rgba(37, 99, 235, 1)',
-          borderWidth: 1
-        }]
-      },
-      options: {
-        responsive: true,
-        maintainAspectRatio: true,
-        plugins: {
-          legend: { display: false },
-          title: { display: false }
-        },
-        scales: {
-          y: { beginAtZero: true, title: { display: true, text: 'Öğrenci Sayısı' } },
-          x: { title: { display: true, text: 'Fakülte' } }
-        }
-      }
-    });
-  }
-
-  // Comparison Chart (Yalova vs Turkey)
-  const comparisonCtx = document.getElementById('comparisonChart');
-  if (comparisonCtx) {
-    new Chart(comparisonCtx, {
-      type: 'radar',
-      data: {
-        labels: ['Giden Öğrenci Oranı', 'Kabul Oranı', 'Partner Üniversite', 'Memnuniyet', 'Dil Yeterliliği', 'Burs Alma'],
-        datasets: [
-          {
-            label: 'Yalova Üniversitesi',
-            data: [75, 68, 83, 84, 72, 88],
-            backgroundColor: 'rgba(37, 99, 235, 0.2)',
-            borderColor: 'rgba(37, 99, 235, 1)',
-            borderWidth: 2
-          },
-          {
-            label: 'Türkiye Ortalaması',
-            data: [67, 62, 78, 87, 75, 82],
-            backgroundColor: 'rgba(220, 38, 38, 0.2)',
-            borderColor: 'rgba(220, 38, 38, 1)',
-            borderWidth: 2
-          }
-        ]
-      },
-      options: {
-        responsive: true,
-        maintainAspectRatio: true,
-        scales: {
-          r: {
-            beginAtZero: true,
-            max: 100
-          }
-        }
-      }
-    });
-  }
-
-  // Funnel Chart (Erasmus Application Process)
-  const funnelCtx = document.getElementById('funnelChart');
-  if (funnelCtx) {
-    new Chart(funnelCtx, {
-      type: 'bar',
-      data: {
-        labels: ['Başvuru', 'Not+Dil Kontrolü', 'Mülakat', 'Fakülte Onayı', 'Karşı Taraf Onayı', 'Gidiş'],
-        datasets: [{
-          label: 'Öğrenci Sayısı',
-          data: [216, 198, 175, 167, 155, 147],
-          backgroundColor: [
-            'rgba(34, 197, 94, 0.8)',
-            'rgba(59, 130, 246, 0.8)',
-            'rgba(251, 146, 60, 0.8)',
-            'rgba(234, 179, 8, 0.8)',
-            'rgba(239, 68, 68, 0.8)',
-            'rgba(168, 85, 247, 0.8)'
-          ],
-          borderWidth: 0
-        }]
-      },
-      options: {
-        indexAxis: 'y',
-        responsive: true,
-        maintainAspectRatio: true,
-        plugins: {
-          legend: { display: false }
-        },
-        scales: {
-          x: { beginAtZero: true, title: { display: true, text: 'Öğrenci Sayısı' } }
-        }
-      }
-    });
-  }
-
-  // Schema.org Markup
-  const schema = {
-    '@context': 'https://schema.org',
-    '@graph': [
-      {
-        '@type': 'Article',
-        'headline': 'Yalova Erasmus+ İstatistik Dashboard 2024-2026',
-        'description': 'Yalova Üniversitesi Erasmus mobilite verileri, partner üniversite karşılaştırması ve fakülte bazlı analiz.',
-        'author': { '@type': 'Organization', 'name': 'YouthTICK' },
-        'publisher': {
-          '@type': 'Organization',
-          'name': 'YouthTICK',
-          'logo': { '@type': 'ImageObject', 'url': 'https://youthtick.org/logo-square.png' }
-        },
-        'datePublished': '2026-05-26',
-        'dateModified': '2026-05-26',
-        'inLanguage': 'tr-TR',
-        'about': [
-          { '@type': 'EducationalOrganization', 'name': 'Yalova Üniversitesi' },
-          { '@type': 'Thing', 'name': 'Erasmus+ İstatistik' }
-        ],
-        'citation': [
-          { '@type': 'Organization', 'name': 'Yalova Üniversitesi Öğrenci İşleri' },
-          { '@type': 'Organization', 'name': 'Erasmus+ National Agency Türkiye' }
-        ]
-      },
-      {
-        '@type': 'Dataset',
-        'name': 'Yalova Erasmus+ Mobilite Verileri 2024-2026',
-        'description': 'Yalova Üniversitesi fakülte bazlı Erasmus giden öğrenci sayıları ve partner üniversite karşılaştırma verileri.',
-        'creator': { '@type': 'Organization', 'name': 'YouthTICK' },
-        'license': 'https://creativecommons.org/licenses/by/4.0/',
-        'temporalCoverage': '2024/2026'
-      }
-    ]
-  };
-  
-  const script = document.createElement('script');
-  script.type = 'application/ld+json';
-  script.textContent = JSON.stringify(schema);
-  document.head.appendChild(script);
 });
 </script>
 <script type="module" src="assets/js/core/app.js"></script>
