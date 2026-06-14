@@ -757,8 +757,8 @@ a:focus-visible, button:focus-visible, .icon-btn:focus-visible, .tab:focus-visib
   .player-feat{ flex-basis: 90vw; }
   .footer-cols{ grid-template-columns: repeat(2,1fr); }
   .topbar-center{ display:none; }
-  .header-crest{ width:68px; height:68px; }
-  .header-crest img{ width:54px; height:54px; }
+  .header-crest{ width:auto; height:auto; }
+  .header-crest img{ width:auto; height:40px; }
 }
 @media (max-width: 760px){
   .more-cards{ grid-template-columns: repeat(3,1fr); }
