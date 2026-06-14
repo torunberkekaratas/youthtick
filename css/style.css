@@ -98,6 +98,29 @@ h1,h2,h3,h4{
 .link-arrow.small{ font-size:12px; border-bottom-width:1px; }
 
 /* =========================================================
+   Dil seçici (TR / EN / DE)
+   ========================================================= */
+.lang-switch{
+  position: fixed; top: 14px; right: 16px; z-index: 300;
+  display: flex; gap: 2px; padding: 4px;
+  background: rgba(11,26,44,.72); backdrop-filter: blur(8px);
+  border: 1px solid rgba(255,255,255,.18); border-radius: 999px;
+  box-shadow: 0 6px 20px rgba(0,0,0,.35);
+}
+.lang-switch button{
+  border: none; background: none; cursor: pointer; line-height: 1;
+  font-family: var(--heading); font-weight: 600; font-size: 12px; letter-spacing: .5px;
+  color: var(--white); padding: 6px 10px; border-radius: 999px;
+  transition: background .15s ease, color .15s ease;
+}
+.lang-switch button:hover{ color: var(--yellow); }
+.lang-switch button.active{ background: var(--yellow); color: var(--bg-dark); }
+@media (max-width: 760px){
+  .lang-switch{ top: 10px; right: 10px; padding: 3px; }
+  .lang-switch button{ font-size: 11px; padding: 5px 8px; }
+}
+
+/* =========================================================
    Page frame
    ========================================================= */
 .page-frame{ position: relative; background: rgba(16, 42, 71, .46); }
