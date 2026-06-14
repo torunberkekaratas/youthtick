@@ -136,8 +136,8 @@ h1,h2,h3,h4{
 .sponsor-text em{ font-style:normal; color: var(--red); font-weight:800; }
 .header-crest{ justify-self:center; display:flex; align-items:center; justify-content:center; height:48px; transition: transform .25s cubic-bezier(.2,.7,.3,1); }
 .header-crest:hover{ transform: translateY(-2px) scale(1.04); }
-.header-crest img{ height:46px; width:auto; object-fit: contain; filter: drop-shadow(0 4px 14px rgba(0,0,0,.5)); }
-.header-actions{ display:flex; align-items:center; justify-content:flex-end; gap:12px; }
+.header-crest img{ height:46px; width:auto; object-fit: contain; }
+.header-actions{ display:none; align-items:center; justify-content:flex-end; gap:12px; }
 .icon-btn{ display:flex; align-items:center; justify-content:center; width:44px; height:44px; border-radius:50%; border:none; background: rgba(255,255,255,.96); color:#102A47; cursor:pointer; transition: background .15s ease, transform .15s ease; }
 .icon-btn:hover{ transform: translateY(-2px); background:#fff; }
 
@@ -790,6 +790,12 @@ a:focus-visible, button:focus-visible, .icon-btn:focus-visible, .tab:focus-visib
 
   /* Partner tiles: allow slightly smaller tiles to avoid overflow */
   .partner-tile{ min-width: 72px; padding: 0 10px; }
+
+  /* ---- Mobile header: sadece ortalanmış logo ---- */
+  .topbar{ display:none; }                         /* metin utility bar kalksın */
+  .hero{ border-radius: 22px 22px 0 0; }           /* üst köşeler yuvarlak kalsın */
+  .site-header{ display:flex; justify-content:center; padding: 16px 16px; }
+  .header-sponsors{ display:none; }                /* soldaki sponsor kalksın */
 }
 @media (max-width: 480px){
   /* Daha Fazla overlay: smaller cards/spacing so the panel fits without scrolling */
