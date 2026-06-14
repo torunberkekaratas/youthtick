@@ -1,0 +1,32 @@
+# YouthTICK
+> Erasmus+ ve Avrupa Dayanışma Programı (ESC) ile gençleri Avrupa'yla buluşturan, Yalova merkezli bağımsız bir gençlik organizasyonu. Gençlik değişimleri, gönüllülük, eğitim kursları ve Avrupa fırsatları konusunda rehberlik sağlar.
+
+## Ana sayfalar
+- [Hakkımızda](https://youthtick.org/about): YouthTICK'in misyonu, değerleri ve yolculuğu
+- [Fırsatlar](https://youthtick.org/opportunities): Güncel Erasmus+ ve ESC fırsatları
+- [Projeler](https://youthtick.org/projects): Yürütülen ve hazırlık aşamasındaki programlar
+- [Gönüllülük](https://youthtick.org/volunteer): Gönüllü olma yolları ve ESC
+- [Ortaklık](https://youthtick.org/partnership): Kurumlar ve STK'lar için iş birliği
+- [Blog](https://youthtick.org/blog): Erasmus, gençlik çalışması ve Yalova rehberleri
+- [SSS](https://youthtick.org/faq): Sık sorulan sorular ve yanıtları
+- [İletişim](https://youthtick.org/contact): info@youthtick.org
+
+## Öne çıkan rehberler
+- [Gençlik Değişimi Nedir?](https://youthtick.org/what-is-a-youth-exchange-everything-you-need-to-know): Kimler katılabilir, masraflar, süreç
+- [Erasmus'a Nasıl Başvurulur (2026)](https://youthtick.org/how-to-apply-for-erasmus-step-by-step-guide-2026): Adım adım başvuru rehberi
+- [Erasmus Gençlik Değişimi vs ESC](https://youthtick.org/erasmus-youth-exchange-vs-esc-which-eu-programme-is-right-for-you): İki programın karşılaştırması
+- [Güçlü Bir KA1 Başvurusu Yazmak](https://youthtick.org/how-to-write-a-strong-erasmus-ka1-application-that-gets-funded): Fon alan başvurular için ipuçları
+- [Türkiye'de Erasmus (2026)](https://youthtick.org/erasmus-in-turkey-what-young-people-need-to-know-in-2026): Türkiyeli gençler için rehber
+
+## Yalova yerel rehberleri
+- [Yalova'da Erasmus Fırsatları (Üniversite Öğrencileri)](https://youthtick.org/youthtick-guide-erasmus-opportunities-for-university-students-in-yalov)
+- [Yalova STK ve Gençlik Organizasyonları](https://youthtick.org/youthtick-guide-ngos-and-youth-organizations-in-yalova)
+- [Yalova Gençlik Toplulukları ve Gönüllülük](https://youthtick.org/youthtick-guide-yalova-youth-communities-and-volunteering-pathways)
+
+## Temel bilgiler
+- Tür: Bağımsız gençlik organizasyonu (NGO)
+- Merkez: Yalova, Türkiye
+- Hizmet alanı: Avrupa
+- Odak: Erasmus+ KA1/KA2, Avrupa Dayanışma Programı (ESC), gençlik değişimleri, gönüllülük
+- İletişim: info@youthtick.org
+- Diller: Türkçe
