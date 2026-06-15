@@ -1295,4 +1295,656 @@
     "YouthTICK uzun vadede Erasmus+ ve Avrupa Dayanışma Programı (ESC) kapsamında akredite olmayı hedefliyor. Şu an kuruluş aşamasındayız; bu gönüllülük rolleri, o yolculuğun temelini birlikte inşa etmenin bir parçası.":
       "Langfristig strebt YouthTICK eine Akkreditierung im Rahmen von Erasmus+ und dem Europäischen Solidaritätskorps (ESC) an. Wir befinden uns derzeit in der Gründungsphase; diese Freiwilligenrollen sind Teil davon, das Fundament dieser Reise gemeinsam aufzubauen."
   });
+
+  /* ================= opportunities ================= */
+  Object.assign(M.en, {
+    "Avrupa Fırsatları": "European Opportunities",
+    "Kapılar açık.": "The doors are open.",
+    "Onları bulmana yardım ediyoruz.": "We help you find them.",
+    "Avrupa'da gençler için önemli fon, hareketlilik ve ortaklık programları bulunuyor. Türkiye'deki birçok genç bu programlara katılma hakkına sahip, ancak bundan habersiz. Bu sayfa, mevcut fırsatları dürüst ve net bir şekilde özetler — ücretli ilan yok, sadece AB kaynaklı program verileri.":
+      "Europe offers significant funding, mobility and partnership programmes for young people. Many young people in Turkey are eligible for these programmes, but unaware of them. This page summarises the available opportunities honestly and clearly — no paid listings, just EU-sourced programme data.",
+    "AB'nin amiral gemisi": "The EU's flagship",
+    "gençlik programı": "youth programme",
+    "Erasmus+, Avrupa Birliği'nin eğitim, öğretim, gençlik ve spor programıdır. 2021–2027 için 26,2 milyar Euro'luk bütçesiyle dünyanın en büyük uluslararası hareketlilik programıdır. Türkiye, Erasmus+ Program Ülkesi'dir — yani Türk gençlik kuruluşları, AB kuruluşlarıyla eşit şartlarda fon başvurusunda bulunabilir.":
+      "Erasmus+ is the European Union's programme for education, training, youth and sport. With a budget of €26.2 billion for 2021–2027, it's the world's largest international mobility programme. Turkey is an Erasmus+ Programme Country — meaning Turkish youth organisations can apply for funding on equal terms with EU organisations.",
+    "KA1 · Hareketlilik": "KA1 · Mobility",
+    "Yaş 13-30": "Ages 13-30",
+    "Gençlik Değişimleri": "Youth Exchanges",
+    "Farklı ülkelerden 13-30 yaş arası gruplar, ortak bir konuda çalışmak için 5-21 gün bir araya gelir. Genellikle 10-60 katılımcı. Tüm masraflar Erasmus+ hibesi ile karşılanır.":
+      "Groups aged 13-30 from different countries come together for 5-21 days to work on a shared topic. Usually 10-60 participants. All costs are covered by an Erasmus+ grant.",
+    "Daha fazla bilgi": "Learn more",
+    "Yetişkinler 18+": "Adults 18+",
+    "Eğitim Kursları": "Training Courses",
+    "Gençlerle çalışan kişiler için mesleki gelişim. Kolaylaştırıcılık, yaygın eğitim, proje yönetimi ve kültürlerarası diyalog konularını kapsar. 5-14 gün sürer.":
+      "Professional development for people working with young people. Covers facilitation, non-formal education, project management and intercultural dialogue. Lasts 5-14 days.",
+    "KA2 · Ortaklıklar": "KA2 · Partnerships",
+    "3+ ülke": "3+ countries",
+    "İşbirliği Ortaklıkları": "Cooperation Partnerships",
+    "3'ten fazla kuruluş arasında 12-36 ay süren çok yıllı ortaklıklar. Ortak bir gençlik sorunu etrafında uygulamalar ve materyaller geliştirir. 60.000-400.000 Euro arası bütçeler.":
+      "Multi-year partnerships lasting 12-36 months between more than 3 organisations. Develops practices and materials around a shared youth issue. Budgets between €60,000-400,000.",
+    "Giriş seviyesi": "Entry level",
+    "Küçük Ölçekli Ortaklıklar": "Small-scale Partnerships",
+    "Erasmus+'a yeni olan kuruluşlar için basitleştirilmiş hibe. İki veya daha fazla ortak, esnek formatlar, maksimum 30.000 Euro bütçe — ilk Erasmus+ projesi için ideal.":
+      "A simplified grant for organisations new to Erasmus+. Two or more partners, flexible formats, a maximum budget of €30,000 — ideal for a first Erasmus+ project.",
+    "Resmi Erasmus+ sitesi": "Official Erasmus+ site",
+    "Dayanışma Programı": "Solidarity Programme",
+    "Avrupa Dayanışma Programı (ESC), 18-30 yaş arası gençlere Avrupa çapındaki kuruluşlarda gönüllü olma, çalışma veya staj yapma şansı verir — tamamen finanse edilir. Türk gençleri katılma hakkına sahiptir ve Türk kuruluşları gönüllü ağırlayabilir veya gönderebilir. ESC, Erasmus+'tan ayrıdır ancak benzer bir çerçeve kullanır.":
+      "The European Solidarity Corps (ESC) gives young people aged 18-30 the chance to volunteer, work or do an internship at organisations across Europe — fully funded. Turkish youth are eligible to take part, and Turkish organisations can host or send volunteers. ESC is separate from Erasmus+ but uses a similar framework.",
+    "Bireysel Gönüllülük": "Individual Volunteering",
+    "Başka bir Avrupa ülkesindeki bir kuruluşta 2-12 ay gönüllü olun. Konaklama, yemek, cep harçlığı, seyahat ve sigortanın tamamı karşılanır — anlamlı bir boşluk yılı için ideal.":
+      "Volunteer for 2-12 months at an organisation in another European country. Accommodation, food, pocket money, travel and insurance are all covered — ideal for a meaningful gap year.",
+    "Yaş 18-30 · Tamamen fonlanmış": "Ages 18-30 · Fully funded",
+    "Dayanışma Projeleri": "Solidarity Projects",
+    "Aynı ülkeden 5 veya daha fazla gençten oluşan gruplar, topluluklarındaki bir ihtiyacı karşılamak için kendi yerel projelerini düzenler ve yürütür — ev sahibi kuruluşa gerek yoktur.":
+      "Groups of 5 or more young people from the same country design and run their own local project to address a need in their community — no host organisation required.",
+    "Toplum temelli": "Community-based",
+    "Türkiye'de Gönüllü Ağırlama": "Hosting Volunteers in Turkey",
+    "Akredite Türk kuruluşları Avrupalı gönüllüleri ağırlayabilir. Bu, YouthTICK'in araştırdığı yollardan biri — yerel sivil projelere katkıda bulunmak için genç Avrupalıları Yalova'ya getirmek.":
+      "Accredited Turkish organisations can host European volunteers. This is one of the avenues YouthTICK is exploring — bringing young Europeans to Yalova to contribute to local civic projects.",
+    "Hazırlık aşamasında": "In preparation",
+    "Resmi ESC sitesi": "Official ESC site",
+    "ESC'ye katılmak isteyen her gencin AB Gençlik Portalı'nda ücretsiz bir": "Every young person who wants to join ESC needs a free",
+    "profili oluşturması gerekir — 10 dakika sürer ve tüm ESC faaliyetleri için başlangıç noktasıdır.":
+      "profile on the EU Youth Portal — it takes 10 minutes and is the starting point for all ESC activities.",
+    "AB Gençlik Programları": "EU Youth Programmes",
+    "Bilinmesi gereken": "Other European programmes",
+    "diğer Avrupa programları": "worth knowing about",
+    "Erasmus+ ve ESC'nin ötesinde, Avrupa bir dizi gençlik ve sivil toplum programını finanse ediyor. Birçoğu Türk gençlik kuruluşlarına açıktır.":
+      "Beyond Erasmus+ and ESC, Europe funds a range of youth and civil society programmes. Many are open to Turkish youth organisations.",
+    "Avrupa Konseyi — Gençlik Departmanı": "Council of Europe — Youth Department",
+    "Gençlik çalışanları ve gençler için eğitim kursları, seminerler ve çalışma oturumları düzenler. Strazburg ve Budapeşte'deki Avrupa Gençlik Merkezleri yılda yüzlerce etkinliğe ev sahipliği yapıyor. Türkiye'ye açık.":
+      "Organises training courses, seminars and study sessions for youth workers and young people. The European Youth Centres in Strasbourg and Budapest host hundreds of events a year. Open to Turkey.",
+    "Anna Lindh Vakfı": "Anna Lindh Foundation",
+    "Avrupa ve Akdeniz toplumları arasındaki kültürlerarası diyaloğa odaklanır. Türkiye üye devlettir — YouthTICK'in kültürlerarası çalışmalarıyla güçlü bir uyum içindedir.":
+      "Focuses on intercultural dialogue between European and Mediterranean societies. Turkey is a member state — a strong fit with YouthTICK's intercultural work.",
+    "SALTO Kaynak Merkezleri": "SALTO Resource Centres",
+    "Erasmus+ uygulamasını destekleyen kaynak merkezleri ağı. SALTO Youth, eğitim takvimleri, araç kitleri ve ortak bulma araçları yayınlar.":
+      "A network of resource centres supporting Erasmus+ implementation. SALTO Youth publishes training calendars, toolkits and partner-finding tools.",
+    "Avrupa düzeyinde 180 gençlik kuruluşunu temsil eden platform. Üyelik, savunuculuk ağlarına ve AB kurumlarıyla bağlantılara erişim sağlar — YouthTICK için uzun vadeli bir hedef.":
+      "A platform representing 180 youth organisations at European level. Membership provides access to advocacy networks and connections with EU institutions — a long-term goal for YouthTICK.",
+    "Almanya–Türkiye": "Germany–Turkey",
+    "Almanya-Türkiye": "Germany-Turkey",
+    "koridoru": "corridor",
+    "Almanya, Türkiye ile en derin ikili gençlik işbirliği ilişkilerinden birine sahiptir. Özel programlar ve kurumlar, her iki ülkede gençlik değişimlerini, dil öğrenimini ve sivil katılımı finanse eder. Bu, YouthTICK'in öncelikli koridorudur — bu alanda güvenilir bir köprü olmak için çalışıyoruz.":
+      "Germany has one of the deepest bilateral youth cooperation relationships with Turkey. Dedicated programmes and institutions fund youth exchanges, language learning and civic participation in both countries. This is YouthTICK's priority corridor — we're working to become a trusted bridge in this space.",
+    "Erasmus+ için Alman Ulusal Ajansı": "German National Agency for Erasmus+",
+    "Ziyaret et": "Visit",
+    "Alman-Türk Gençlik Çalışması (DTTJ)": "German-Turkish Youth Work (DTTJ)",
+    "TR–DE değişimleri": "TR–DE exchanges",
+    "DAAD Akademik Değişim": "DAAD Academic Exchange",
+    "Burslar + sivil eğitim": "Scholarships + civic education",
+    "Türkiye Ulusal Ajansı": "Turkish National Agency",
+    "Erasmus+ Türkiye Ulusal Ajansı": "Erasmus+ Turkish National Agency",
+    "TR hibe başvuruları": "TR grant applications",
+    "YouthTICK Nasıl Yardımcı Olur": "How YouthTICK Helps",
+    "Bilgiden": "From awareness",
+    "katılıma": "to participation",
+    "Bu programların var olduğunu bilmek ilk adımdır. Bunlar üzerinde harekete geçmek destek gerektirir. Biz YouthTICK'i bunu sağlamak için inşa ediyoruz.":
+      "Knowing these programmes exist is the first step. Acting on them requires support. We're building YouthTICK to provide exactly that.",
+    "Adım 01": "Step 01",
+    "Oryantasyon": "Orientation",
+    "Hangi programların hedeflerinize, kuruluşunuzun aşamasına ve kapasitenize uygun olduğunu anlamanıza yardımcı oluyoruz.":
+      "We help you understand which programmes fit your goals, your organisation's stage and your capacity.",
+    "Adım 02": "Step 02",
+    "Ağ (Network)": "Network",
+    "Sizi, Almanya'da ve Avrupa çapında sizin gibi ortak çalışanlar arayan potansiyel ortak kuruluşlarla buluşturuyoruz.":
+      "We connect you with potential partner organisations in Germany and across Europe who are looking for partners like you.",
+    "Adım 03": "Step 03",
+    "Başvuru Desteği": "Application Support",
+    "Büyüdükçe, ortak kuruluşları ilk Erasmus+ başvurularını hazırlamada desteklemeyi planlıyoruz — yazma, yapılandırma, sunma.":
+      "As we grow, we plan to support partner organisations in preparing their first Erasmus+ applications — writing, structuring, submitting.",
+    "Adım 04": "Step 04",
+    "Uygulama": "Implementation",
+    "Projeleri birlikte uygulayın — uzmanlığı, lojistiği ve etkiyi sınırların ötesinde uzun vadeli paylaşın.":
+      "Implement projects together — sharing expertise, logistics and impact across borders for the long term.",
+    "Açık Çağrılar · Güncellendi: Mayıs 2026": "Open Calls · Updated: May 2026",
+    "Şu an": "Currently",
+    "aktif fırsatlar": "active opportunities",
+    "Erasmus+ KA1 · Açık": "Erasmus+ KA1 · Open",
+    "Gençlik Değişimi — Ortak Arama (Almanya)": "Youth Exchange — Partner Search (Germany)",
+    "YouthTICK, sivil katılım temalı ikili gençlik değişimi için bir Alman ortak kuruluş arıyor. 16 katılımcı, 8 gün, Yalova 2026. Yaş 16-26 · Son Başvuru: Temmuz 2026.":
+      "YouthTICK is looking for a German partner organisation for a bilateral youth exchange on civic participation. 16 participants, 8 days, Yalova 2026. Ages 16-26 · Deadline: July 2026.",
+    "İlginizi bildirin": "Express your interest",
+    "ESC Gönüllülüğü · Sürekli Açık": "ESC Volunteering · Always Open",
+    "Avrupa Dayanışma Kolu — Sürekli Başvurular": "European Solidarity Corps — Rolling Applications",
+    "AB Gençlik Portalı, Avrupa genelinde ESC gönüllüleri için sürekli açık ilanlar yayınlıyor. 18-30 yaş arası Türk gençler başvurabilir — tamamen karşılanıyor. Başlamak için PASS profili oluşturun.":
+      "The EU Youth Portal regularly publishes open listings for ESC volunteers across Europe. Turkish youth aged 18-30 can apply — fully funded. Create a PASS profile to get started.",
+    "AB Portalından Başvur": "Apply via the EU Portal",
+    "18+ gençlik çalışanları · Birden fazla son tarih": "18+ youth workers · Multiple deadlines",
+    "Gençlik Çalışanları için Eğitim Kursları — 2026 Takvimi": "Training Courses for Youth Workers — 2026 Calendar",
+    "SALTO, Erasmus+ gençlik çalışanları için kapsamlı bir eğitim takvimi yayınlıyor. Kolaylaştırma, kültürlerarası öğrenme, proje yönetimi ve yaygın eğitim yöntemleri dahil.":
+      "SALTO publishes a comprehensive training calendar for Erasmus+ youth workers, including facilitation, intercultural learning, project management and non-formal education methods.",
+    "Takvimi incele": "View calendar",
+    "💡 Listelememizi istediğiniz bir açık çağrı var mı?": "💡 Have an open call you'd like us to list?",
+    "Bize bildirin →": "Let us know →",
+    "2026 Son Tarihleri": "2026 Deadlines",
+    "Başvuru Son Tarihleri": "Application Deadlines",
+    "Resmi TUA (Türkiye Ulusal Ajansı) son tarihleri. Bir turu kaçırmak 6 ay bekleme anlamına gelir — önceden planlayın.":
+      "Official TUA (Turkish National Agency) deadlines. Missing a round means a 6-month wait — plan ahead.",
+    "1. Tur — Kapalı": "Round 1 — Closed",
+    "KA1 Gençlik — 1. Tur:": "KA1 Youth — Round 1:",
+    "Gençlik değişimleri, eğitim kursları, gönüllülük.": "Youth exchanges, training courses, volunteering.",
+    "KA2 Ortaklıklar — 1. Tur:": "KA2 Partnerships — Round 1:",
+    "İşbirliği ortaklıkları, küçük ölçekli ortaklıklar.": "Cooperation partnerships, small-scale partnerships.",
+    "2. Tur — Yaklaşıyor": "Round 2 — Upcoming",
+    "KA1 Gençlik — 2. Tur:": "KA1 Youth — Round 2:",
+    "KA2 Ortaklıklar — 2. Tur:": "KA2 Partnerships — Round 2:",
+    "3. Tur — Yaklaşıyor": "Round 3 — Upcoming",
+    "KA1 Gençlik — 3. Tur:": "KA1 Youth — Round 3:",
+    "Her Zaman Açık": "Always Open",
+    "ADB Bireysel Gönüllülük:": "ADB Individual Volunteering:",
+    "AB Gençlik Portalı PASS profili üzerinden her zaman başvurulabilir.": "Applications can be submitted at any time via an EU Youth Portal PASS profile.",
+    "Resmi TUA sitesi": "Official TUA site",
+    "Fırsatlar hakkında": "What you need to know",
+    "bilmen gerekenler": "about opportunities",
+    "Erasmus+ Başvurusu nasıl yapılır?": "How do I apply for Erasmus+?",
+    "ESC gönüllülüğü ücretsiz mi?": "Is ESC volunteering free?",
+    "Evet. Avrupa Dayanışma Programı (ESC), 18-30 yaş arası gençlere yurt dışında tamamen finanse edilen gönüllülük imkânı sunar — konaklama, yemek, cep harçlığı, seyahat ve sigorta dahildir.":
+      "Yes. The European Solidarity Corps (ESC) offers young people aged 18-30 a fully funded volunteering opportunity abroad — including accommodation, food, pocket money, travel and insurance.",
+    "PASS profili nedir, nasıl oluşturulur?": "What is a PASS profile and how do I create one?",
+    "PASS, AB Gençlik Portalı üzerinden oluşturduğun ücretsiz bir profildir ve tüm ESC faaliyetleri için başlangıç noktasıdır. Oluşturması yaklaşık 10 dakika sürer.":
+      "PASS is a free profile you create on the EU Youth Portal, and it's the starting point for all ESC activities. Creating one takes about 10 minutes.",
+    "Bir turu kaçırırsam ne olur?": "What happens if I miss a round?",
+    "Erasmus+ başvuru turları yılda birkaç kez açılır. Bir turu kaçırmak genellikle bir sonraki tura kadar (yaklaşık 6 ay) beklemek anlamına gelir — bu yüzden takvimi önceden takip etmek önemlidir.":
+      "Erasmus+ application rounds open a few times a year. Missing a round usually means waiting until the next one (around 6 months) — so it's important to follow the calendar in advance.",
+    "Listelenmesini istediğim bir çağrı var, ne yapmalıyım?": "I have a call I'd like listed — what should I do?",
+    "İletişim sayfamızdan": "Through our contact page",
+    "bize ulaşabilirsin — uygun bulduğumuz açık çağrıları bu sayfada paylaşmaktan memnuniyet duyarız.":
+      "you can reach us — we're happy to share open calls we find suitable on this page.",
+    "Hiçbir açık çağrıyı": "Don't",
+    "Beni Bildir": "Notify me",
+    "Yeni Erasmus+ çağrıları, ortak aramaları veya fırsatlar yayınlandığında e-posta ile haberdar ederiz. Spam yok — her ilgili çağrı için bir e-posta. E-postanız yalnızca seçtiğiniz bildirimler için kullanılır, istediğiniz zaman abonelikten çıkabilirsiniz.":
+      "We'll let you know by email whenever new Erasmus+ calls, partner searches or opportunities are published. No spam — one email per relevant call. Your email is only used for the notifications you choose, and you can unsubscribe at any time.",
+    "Senin için doğru": "Let's find the right",
+    "fırsatı bulalım": "opportunity for you",
+    "Ortaklık Talebi": "Partnership Request"
+  });
+  Object.assign(M.de, {
+    "Avrupa Fırsatları": "Europäische Möglichkeiten",
+    "Kapılar açık.": "Die Türen stehen offen.",
+    "Onları bulmana yardım ediyoruz.": "Wir helfen dir, sie zu finden.",
+    "Avrupa'da gençler için önemli fon, hareketlilik ve ortaklık programları bulunuyor. Türkiye'deki birçok genç bu programlara katılma hakkına sahip, ancak bundan habersiz. Bu sayfa, mevcut fırsatları dürüst ve net bir şekilde özetler — ücretli ilan yok, sadece AB kaynaklı program verileri.":
+      "Europa bietet jungen Menschen bedeutende Förder-, Mobilitäts- und Partnerschaftsprogramme. Viele junge Menschen in der Türkei sind berechtigt, an diesen Programmen teilzunehmen, wissen aber nichts davon. Diese Seite fasst die verfügbaren Möglichkeiten ehrlich und klar zusammen — keine bezahlten Anzeigen, nur EU-Programmdaten.",
+    "AB'nin amiral gemisi": "Das Flaggschiff der EU",
+    "gençlik programı": "Jugendprogramm",
+    "Erasmus+, Avrupa Birliği'nin eğitim, öğretim, gençlik ve spor programıdır. 2021–2027 için 26,2 milyar Euro'luk bütçesiyle dünyanın en büyük uluslararası hareketlilik programıdır. Türkiye, Erasmus+ Program Ülkesi'dir — yani Türk gençlik kuruluşları, AB kuruluşlarıyla eşit şartlarda fon başvurusunda bulunabilir.":
+      "Erasmus+ ist das Programm der Europäischen Union für Bildung, Ausbildung, Jugend und Sport. Mit einem Budget von 26,2 Milliarden Euro für 2021–2027 ist es das größte internationale Mobilitätsprogramm der Welt. Die Türkei ist Erasmus+-Programmland — das heißt, türkische Jugendorganisationen können sich gleichberechtigt mit EU-Organisationen um Förderung bewerben.",
+    "KA1 · Hareketlilik": "KA1 · Mobilität",
+    "Yaş 13-30": "Alter 13-30",
+    "Gençlik Değişimleri": "Jugendaustausch",
+    "Farklı ülkelerden 13-30 yaş arası gruplar, ortak bir konuda çalışmak için 5-21 gün bir araya gelir. Genellikle 10-60 katılımcı. Tüm masraflar Erasmus+ hibesi ile karşılanır.":
+      "Gruppen im Alter von 13-30 Jahren aus verschiedenen Ländern kommen für 5-21 Tage zusammen, um an einem gemeinsamen Thema zu arbeiten. Normalerweise 10-60 Teilnehmer. Alle Kosten werden durch einen Erasmus+-Zuschuss gedeckt.",
+    "Daha fazla bilgi": "Mehr erfahren",
+    "Yetişkinler 18+": "Erwachsene 18+",
+    "Eğitim Kursları": "Schulungskurse",
+    "Gençlerle çalışan kişiler için mesleki gelişim. Kolaylaştırıcılık, yaygın eğitim, proje yönetimi ve kültürlerarası diyalog konularını kapsar. 5-14 gün sürer.":
+      "Berufliche Weiterbildung für Personen, die mit jungen Menschen arbeiten. Umfasst Moderation, non-formale Bildung, Projektmanagement und interkulturellen Dialog. Dauert 5-14 Tage.",
+    "KA2 · Ortaklıklar": "KA2 · Partnerschaften",
+    "3+ ülke": "3+ Länder",
+    "İşbirliği Ortaklıkları": "Kooperationspartnerschaften",
+    "3'ten fazla kuruluş arasında 12-36 ay süren çok yıllı ortaklıklar. Ortak bir gençlik sorunu etrafında uygulamalar ve materyaller geliştirir. 60.000-400.000 Euro arası bütçeler.":
+      "Mehrjährige Partnerschaften mit einer Laufzeit von 12-36 Monaten zwischen mehr als 3 Organisationen. Entwickelt Praktiken und Materialien zu einem gemeinsamen Jugendthema. Budgets zwischen 60.000 und 400.000 Euro.",
+    "Giriş seviyesi": "Einstiegsniveau",
+    "Küçük Ölçekli Ortaklıklar": "Kleinere Partnerschaften",
+    "Erasmus+'a yeni olan kuruluşlar için basitleştirilmiş hibe. İki veya daha fazla ortak, esnek formatlar, maksimum 30.000 Euro bütçe — ilk Erasmus+ projesi için ideal.":
+      "Ein vereinfachter Zuschuss für Organisationen, die neu bei Erasmus+ sind. Zwei oder mehr Partner, flexible Formate, maximales Budget von 30.000 Euro — ideal für ein erstes Erasmus+-Projekt.",
+    "Resmi Erasmus+ sitesi": "Offizielle Erasmus+-Website",
+    "Dayanışma Programı": "Solidaritätsprogramm",
+    "Avrupa Dayanışma Programı (ESC), 18-30 yaş arası gençlere Avrupa çapındaki kuruluşlarda gönüllü olma, çalışma veya staj yapma şansı verir — tamamen finanse edilir. Türk gençleri katılma hakkına sahiptir ve Türk kuruluşları gönüllü ağırlayabilir veya gönderebilir. ESC, Erasmus+'tan ayrıdır ancak benzer bir çerçeve kullanır.":
+      "Das Europäische Solidaritätskorps (ESC) gibt jungen Menschen im Alter von 18-30 Jahren die Möglichkeit, sich in Organisationen in ganz Europa zu engagieren, zu arbeiten oder ein Praktikum zu absolvieren — vollständig finanziert. Türkische Jugendliche sind teilnahmeberechtigt, und türkische Organisationen können Freiwillige aufnehmen oder entsenden. ESC ist von Erasmus+ getrennt, nutzt aber einen ähnlichen Rahmen.",
+    "Bireysel Gönüllülük": "Individuelles Freiwilligenengagement",
+    "Başka bir Avrupa ülkesindeki bir kuruluşta 2-12 ay gönüllü olun. Konaklama, yemek, cep harçlığı, seyahat ve sigortanın tamamı karşılanır — anlamlı bir boşluk yılı için ideal.":
+      "Engagiere dich 2-12 Monate als Freiwilliger bei einer Organisation in einem anderen europäischen Land. Unterkunft, Verpflegung, Taschengeld, Reisekosten und Versicherung sind alle abgedeckt — ideal für ein sinnvolles Zwischenjahr.",
+    "Yaş 18-30 · Tamamen fonlanmış": "Alter 18-30 · Vollständig finanziert",
+    "Dayanışma Projeleri": "Solidaritätsprojekte",
+    "Aynı ülkeden 5 veya daha fazla gençten oluşan gruplar, topluluklarındaki bir ihtiyacı karşılamak için kendi yerel projelerini düzenler ve yürütür — ev sahibi kuruluşa gerek yoktur.":
+      "Gruppen von 5 oder mehr jungen Menschen aus demselben Land entwerfen und führen ihr eigenes lokales Projekt durch, um ein Bedürfnis in ihrer Gemeinschaft zu adressieren — keine Gastorganisation erforderlich.",
+    "Toplum temelli": "Gemeinschaftsbasiert",
+    "Türkiye'de Gönüllü Ağırlama": "Freiwillige in der Türkei aufnehmen",
+    "Akredite Türk kuruluşları Avrupalı gönüllüleri ağırlayabilir. Bu, YouthTICK'in araştırdığı yollardan biri — yerel sivil projelere katkıda bulunmak için genç Avrupalıları Yalova'ya getirmek.":
+      "Akkreditierte türkische Organisationen können europäische Freiwillige aufnehmen. Dies ist einer der Wege, die YouthTICK erforscht — junge Europäer nach Yalova zu bringen, um zu lokalen zivilgesellschaftlichen Projekten beizutragen.",
+    "Hazırlık aşamasında": "In Vorbereitung",
+    "Resmi ESC sitesi": "Offizielle ESC-Website",
+    "ESC'ye katılmak isteyen her gencin AB Gençlik Portalı'nda ücretsiz bir": "Jeder junge Mensch, der dem ESC beitreten möchte, benötigt ein kostenloses",
+    "profili oluşturması gerekir — 10 dakika sürer ve tüm ESC faaliyetleri için başlangıç noktasıdır.":
+      "Profil im EU-Jugendportal — es dauert 10 Minuten und ist der Ausgangspunkt für alle ESC-Aktivitäten.",
+    "AB Gençlik Programları": "EU-Jugendprogramme",
+    "Bilinmesi gereken": "Andere europäische Programme,",
+    "diğer Avrupa programları": "die du kennen solltest",
+    "Erasmus+ ve ESC'nin ötesinde, Avrupa bir dizi gençlik ve sivil toplum programını finanse ediyor. Birçoğu Türk gençlik kuruluşlarına açıktır.":
+      "Über Erasmus+ und ESC hinaus finanziert Europa eine Reihe von Jugend- und Zivilgesellschaftsprogrammen. Viele stehen türkischen Jugendorganisationen offen.",
+    "Avrupa Konseyi — Gençlik Departmanı": "Europarat — Jugendabteilung",
+    "Gençlik çalışanları ve gençler için eğitim kursları, seminerler ve çalışma oturumları düzenler. Strazburg ve Budapeşte'deki Avrupa Gençlik Merkezleri yılda yüzlerce etkinliğe ev sahipliği yapıyor. Türkiye'ye açık.":
+      "Organisiert Schulungskurse, Seminare und Studiensitzungen für Jugendarbeiter und junge Menschen. Die Europäischen Jugendzentren in Straßburg und Budapest veranstalten jährlich Hunderte von Veranstaltungen. Offen für die Türkei.",
+    "Anna Lindh Vakfı": "Anna-Lindh-Stiftung",
+    "Avrupa ve Akdeniz toplumları arasındaki kültürlerarası diyaloğa odaklanır. Türkiye üye devlettir — YouthTICK'in kültürlerarası çalışmalarıyla güçlü bir uyum içindedir.":
+      "Konzentriert sich auf den interkulturellen Dialog zwischen europäischen und mediterranen Gesellschaften. Die Türkei ist Mitgliedstaat — eine starke Übereinstimmung mit der interkulturellen Arbeit von YouthTICK.",
+    "SALTO Kaynak Merkezleri": "SALTO-Ressourcenzentren",
+    "Erasmus+ uygulamasını destekleyen kaynak merkezleri ağı. SALTO Youth, eğitim takvimleri, araç kitleri ve ortak bulma araçları yayınlar.":
+      "Ein Netzwerk von Ressourcenzentren, das die Umsetzung von Erasmus+ unterstützt. SALTO Youth veröffentlicht Schulungskalender, Toolkits und Partnersuche-Tools.",
+    "Avrupa düzeyinde 180 gençlik kuruluşunu temsil eden platform. Üyelik, savunuculuk ağlarına ve AB kurumlarıyla bağlantılara erişim sağlar — YouthTICK için uzun vadeli bir hedef.":
+      "Eine Plattform, die 180 Jugendorganisationen auf europäischer Ebene vertritt. Die Mitgliedschaft bietet Zugang zu Interessenvertretungsnetzwerken und Verbindungen zu EU-Institutionen — ein langfristiges Ziel für YouthTICK.",
+    "Almanya–Türkiye": "Deutschland–Türkei",
+    "Almanya-Türkiye": "Deutschland-Türkei",
+    "koridoru": "Korridor",
+    "Almanya, Türkiye ile en derin ikili gençlik işbirliği ilişkilerinden birine sahiptir. Özel programlar ve kurumlar, her iki ülkede gençlik değişimlerini, dil öğrenimini ve sivil katılımı finanse eder. Bu, YouthTICK'in öncelikli koridorudur — bu alanda güvenilir bir köprü olmak için çalışıyoruz.":
+      "Deutschland unterhält eine der tiefsten bilateralen Jugendkooperationsbeziehungen mit der Türkei. Spezielle Programme und Institutionen fördern Jugendaustausch, Sprachenlernen und zivilgesellschaftliches Engagement in beiden Ländern. Dies ist der vorrangige Korridor von YouthTICK — wir arbeiten daran, eine vertrauenswürdige Brücke in diesem Bereich zu werden.",
+    "Erasmus+ için Alman Ulusal Ajansı": "Deutsche Nationale Agentur für Erasmus+",
+    "Ziyaret et": "Besuchen",
+    "Alman-Türk Gençlik Çalışması (DTTJ)": "Deutsch-türkische Jugendarbeit (DTTJ)",
+    "TR–DE değişimleri": "TR–DE-Austausch",
+    "DAAD Akademik Değişim": "DAAD Akademischer Austausch",
+    "Burslar + sivil eğitim": "Stipendien + politische Bildung",
+    "Türkiye Ulusal Ajansı": "Türkische Nationale Agentur",
+    "Erasmus+ Türkiye Ulusal Ajansı": "Erasmus+ Türkische Nationale Agentur",
+    "TR hibe başvuruları": "TR-Förderanträge",
+    "YouthTICK Nasıl Yardımcı Olur": "Wie YouthTICK hilft",
+    "Bilgiden": "Von Wissen",
+    "katılıma": "zu Beteiligung",
+    "Bu programların var olduğunu bilmek ilk adımdır. Bunlar üzerinde harekete geçmek destek gerektirir. Biz YouthTICK'i bunu sağlamak için inşa ediyoruz.":
+      "Zu wissen, dass diese Programme existieren, ist der erste Schritt. Sie zu nutzen erfordert Unterstützung. Genau das wollen wir mit YouthTICK bieten.",
+    "Adım 01": "Schritt 01",
+    "Oryantasyon": "Orientierung",
+    "Hangi programların hedeflerinize, kuruluşunuzun aşamasına ve kapasitenize uygun olduğunu anlamanıza yardımcı oluyoruz.":
+      "Wir helfen dir zu verstehen, welche Programme zu deinen Zielen, dem Entwicklungsstand deiner Organisation und deiner Kapazität passen.",
+    "Adım 02": "Schritt 02",
+    "Ağ (Network)": "Netzwerk",
+    "Sizi, Almanya'da ve Avrupa çapında sizin gibi ortak çalışanlar arayan potansiyel ortak kuruluşlarla buluşturuyoruz.":
+      "Wir verbinden dich mit potenziellen Partnerorganisationen in Deutschland und ganz Europa, die nach Partnern wie dir suchen.",
+    "Adım 03": "Schritt 03",
+    "Başvuru Desteği": "Antragsunterstützung",
+    "Büyüdükçe, ortak kuruluşları ilk Erasmus+ başvurularını hazırlamada desteklemeyi planlıyoruz — yazma, yapılandırma, sunma.":
+      "Mit unserem Wachstum planen wir, Partnerorganisationen bei der Vorbereitung ihrer ersten Erasmus+-Anträge zu unterstützen — beim Schreiben, Strukturieren und Einreichen.",
+    "Adım 04": "Schritt 04",
+    "Uygulama": "Umsetzung",
+    "Projeleri birlikte uygulayın — uzmanlığı, lojistiği ve etkiyi sınırların ötesinde uzun vadeli paylaşın.":
+      "Setzt Projekte gemeinsam um — teilt Expertise, Logistik und Wirkung langfristig über Grenzen hinweg.",
+    "Açık Çağrılar · Güncellendi: Mayıs 2026": "Offene Ausschreibungen · Aktualisiert: Mai 2026",
+    "Şu an": "Derzeit",
+    "aktif fırsatlar": "aktive Möglichkeiten",
+    "Erasmus+ KA1 · Açık": "Erasmus+ KA1 · Offen",
+    "Gençlik Değişimi — Ortak Arama (Almanya)": "Jugendaustausch — Partnersuche (Deutschland)",
+    "YouthTICK, sivil katılım temalı ikili gençlik değişimi için bir Alman ortak kuruluş arıyor. 16 katılımcı, 8 gün, Yalova 2026. Yaş 16-26 · Son Başvuru: Temmuz 2026.":
+      "YouthTICK sucht eine deutsche Partnerorganisation für einen bilateralen Jugendaustausch zum Thema zivilgesellschaftliche Beteiligung. 16 Teilnehmer, 8 Tage, Yalova 2026. Alter 16-26 · Frist: Juli 2026.",
+    "İlginizi bildirin": "Interesse bekunden",
+    "ESC Gönüllülüğü · Sürekli Açık": "ESC-Freiwilligenarbeit · Immer offen",
+    "Avrupa Dayanışma Kolu — Sürekli Başvurular": "Europäisches Solidaritätskorps — laufende Bewerbungen",
+    "AB Gençlik Portalı, Avrupa genelinde ESC gönüllüleri için sürekli açık ilanlar yayınlıyor. 18-30 yaş arası Türk gençler başvurabilir — tamamen karşılanıyor. Başlamak için PASS profili oluşturun.":
+      "Das EU-Jugendportal veröffentlicht regelmäßig offene Ausschreibungen für ESC-Freiwillige in ganz Europa. Türkische Jugendliche zwischen 18 und 30 Jahren können sich bewerben — vollständig finanziert. Erstelle ein PASS-Profil, um zu starten.",
+    "AB Portalından Başvur": "Über das EU-Portal bewerben",
+    "18+ gençlik çalışanları · Birden fazla son tarih": "18+ Jugendarbeiter · Mehrere Fristen",
+    "Gençlik Çalışanları için Eğitim Kursları — 2026 Takvimi": "Schulungskurse für Jugendarbeiter — Kalender 2026",
+    "SALTO, Erasmus+ gençlik çalışanları için kapsamlı bir eğitim takvimi yayınlıyor. Kolaylaştırma, kültürlerarası öğrenme, proje yönetimi ve yaygın eğitim yöntemleri dahil.":
+      "SALTO veröffentlicht einen umfassenden Schulungskalender für Erasmus+-Jugendarbeiter, einschließlich Moderation, interkulturellem Lernen, Projektmanagement und non-formalen Bildungsmethoden.",
+    "Takvimi incele": "Kalender ansehen",
+    "💡 Listelememizi istediğiniz bir açık çağrı var mı?": "💡 Hast du eine offene Ausschreibung, die wir aufnehmen sollten?",
+    "Bize bildirin →": "Sag uns Bescheid →",
+    "2026 Son Tarihleri": "Fristen 2026",
+    "Başvuru Son Tarihleri": "Bewerbungsfristen",
+    "Resmi TUA (Türkiye Ulusal Ajansı) son tarihleri. Bir turu kaçırmak 6 ay bekleme anlamına gelir — önceden planlayın.":
+      "Offizielle Fristen der TUA (Türkische Nationale Agentur). Eine Runde zu verpassen bedeutet 6 Monate Wartezeit — plane voraus.",
+    "1. Tur — Kapalı": "Runde 1 — Geschlossen",
+    "KA1 Gençlik — 1. Tur:": "KA1 Jugend — Runde 1:",
+    "Gençlik değişimleri, eğitim kursları, gönüllülük.": "Jugendaustausch, Schulungskurse, Freiwilligenarbeit.",
+    "KA2 Ortaklıklar — 1. Tur:": "KA2 Partnerschaften — Runde 1:",
+    "İşbirliği ortaklıkları, küçük ölçekli ortaklıklar.": "Kooperationspartnerschaften, kleinere Partnerschaften.",
+    "2. Tur — Yaklaşıyor": "Runde 2 — Bevorstehend",
+    "KA1 Gençlik — 2. Tur:": "KA1 Jugend — Runde 2:",
+    "KA2 Ortaklıklar — 2. Tur:": "KA2 Partnerschaften — Runde 2:",
+    "3. Tur — Yaklaşıyor": "Runde 3 — Bevorstehend",
+    "KA1 Gençlik — 3. Tur:": "KA1 Jugend — Runde 3:",
+    "Her Zaman Açık": "Immer offen",
+    "ADB Bireysel Gönüllülük:": "ADB Individuelles Freiwilligenengagement:",
+    "AB Gençlik Portalı PASS profili üzerinden her zaman başvurulabilir.": "Bewerbungen können jederzeit über ein PASS-Profil im EU-Jugendportal eingereicht werden.",
+    "Resmi TUA sitesi": "Offizielle TUA-Website",
+    "Fırsatlar hakkında": "Was du",
+    "bilmen gerekenler": "über Möglichkeiten wissen musst",
+    "Erasmus+ Başvurusu nasıl yapılır?": "Wie bewerbe ich mich für Erasmus+?",
+    "ESC gönüllülüğü ücretsiz mi?": "Ist die ESC-Freiwilligenarbeit kostenlos?",
+    "Evet. Avrupa Dayanışma Programı (ESC), 18-30 yaş arası gençlere yurt dışında tamamen finanse edilen gönüllülük imkânı sunar — konaklama, yemek, cep harçlığı, seyahat ve sigorta dahildir.":
+      "Ja. Das Europäische Solidaritätskorps (ESC) bietet jungen Menschen im Alter von 18-30 Jahren eine vollständig finanzierte Freiwilligentätigkeit im Ausland — einschließlich Unterkunft, Verpflegung, Taschengeld, Reisekosten und Versicherung.",
+    "PASS profili nedir, nasıl oluşturulur?": "Was ist ein PASS-Profil und wie erstelle ich eines?",
+    "PASS, AB Gençlik Portalı üzerinden oluşturduğun ücretsiz bir profildir ve tüm ESC faaliyetleri için başlangıç noktasıdır. Oluşturması yaklaşık 10 dakika sürer.":
+      "PASS ist ein kostenloses Profil, das du im EU-Jugendportal erstellst, und es ist der Ausgangspunkt für alle ESC-Aktivitäten. Die Erstellung dauert etwa 10 Minuten.",
+    "Bir turu kaçırırsam ne olur?": "Was passiert, wenn ich eine Runde verpasse?",
+    "Erasmus+ başvuru turları yılda birkaç kez açılır. Bir turu kaçırmak genellikle bir sonraki tura kadar (yaklaşık 6 ay) beklemek anlamına gelir — bu yüzden takvimi önceden takip etmek önemlidir.":
+      "Die Erasmus+-Bewerbungsrunden öffnen mehrmals im Jahr. Eine Runde zu verpassen bedeutet in der Regel, bis zur nächsten zu warten (etwa 6 Monate) — daher ist es wichtig, den Kalender im Voraus zu verfolgen.",
+    "Listelenmesini istediğim bir çağrı var, ne yapmalıyım?": "Ich habe eine Ausschreibung, die aufgenommen werden soll — was soll ich tun?",
+    "İletişim sayfamızdan": "Über unsere Kontaktseite",
+    "bize ulaşabilirsin — uygun bulduğumuz açık çağrıları bu sayfada paylaşmaktan memnuniyet duyarız.":
+      "kannst du uns erreichen — wir teilen gerne passende offene Ausschreibungen auf dieser Seite.",
+    "Hiçbir açık çağrıyı": "Verpasse",
+    "Beni Bildir": "Benachrichtige mich",
+    "Yeni Erasmus+ çağrıları, ortak aramaları veya fırsatlar yayınlandığında e-posta ile haberdar ederiz. Spam yok — her ilgili çağrı için bir e-posta. E-postanız yalnızca seçtiğiniz bildirimler için kullanılır, istediğiniz zaman abonelikten çıkabilirsiniz.":
+      "Wir informieren dich per E-Mail, wann immer neue Erasmus+-Ausschreibungen, Partnersuchen oder Möglichkeiten veröffentlicht werden. Kein Spam — eine E-Mail pro relevanter Ausschreibung. Deine E-Mail wird nur für die von dir gewählten Benachrichtigungen verwendet, und du kannst dich jederzeit abmelden.",
+    "Senin için doğru": "Lass uns die richtige",
+    "fırsatı bulalım": "Möglichkeit für dich finden",
+    "Ortaklık Talebi": "Partnerschaftsanfrage"
+  });
+
+  /* ================= blog ================= */
+  Object.assign(M.en, {
+    "Avrupa'daki gençlik fırsatlarından Erasmus+ çağrılarına, gençlik katılımından gönüllülük deneyimlerine — YouthTICK topluluğundan ilham veren yazılar ve pratik rehberler.":
+      "From European youth opportunities to Erasmus+ calls, from youth participation to volunteering experiences — inspiring articles and practical guides from the YouthTICK community.",
+    "Hepsi bir arada": "All in one place",
+    "Son": "Latest",
+    "yazılar": "posts",
+    "Anasayfaya dön": "Back to homepage",
+
+    "Bir Gençlik Hakkı Olarak Yapay Zeka Okuryazarlığı: Dijital Eşitliğe Neden Şimdi İhtiyacımız Var":
+      "AI Literacy as a Youth Right: Why We Need Digital Equity Now",
+    "Biyoçeşitlilik Kaybı ve Gençlik Çalışması: Doğanın Programlarınızda Neden Yeri Var":
+      "Biodiversity Loss and Youth Work: Why Nature Belongs in Your Programmes",
+    "İlk Erasmus+ Projenizi Oluşturmak: Adım Adım Zaman Çizelgesi":
+      "Building Your First Erasmus+ Project: A Step-by-Step Timeline",
+    "Gençlerde İklim Kaygısı: Çevre Korkusunu Eyleme Dönüştürmek":
+      "Climate Anxiety in Young People: Turning Eco-Fear into Action",
+    "Küresel Çağda Kültürel Kimlik: Genç Avrupalıların 2025'te Söyledikleri":
+      "Cultural Identity in a Global Age: What Young Europeans Are Saying in 2025",
+    "Deepfake'ler, Dezenformasyon ve Demokrasi: Gençlik Çalışanlarının Bilmesi Gerekenler":
+      "Deepfakes, Disinformation and Democracy: What Youth Workers Need to Know",
+    "Gençlik Çalışanları İçin Tasarım Düşüncesi: 5 Adımlı Pratik Rehber":
+      "Design Thinking for Youth Workers: A 5-Step Practical Guide",
+    "Yapay Zeka Çağında Dijital Vatandaşlık: Gençlik Çalışanları İçin Rehber":
+      "Digital Citizenship in the Age of AI: A Guide for Youth Workers",
+    "Türkiye'de Erasmus+: 2026'da Gençlerin Bilmesi Gereken Her Şey":
+      "Erasmus+ in Turkey: Everything Young People Need to Know in 2026",
+    "Erasmus+ Gençlik Değişimi mi ESC mi: Hangi AB Programı Size Uygun?":
+      "Erasmus+ Youth Exchange or ESC: Which EU Programme Is Right for You?",
+    "Yerel Fikirden Avrupa Ölçeğine: Gençlik Öncülüğündeki Kuruluşlardan Dersler":
+      "From Local Idea to European Scale: Lessons from Youth-Led Organisations",
+    "Başlangıç Seviyesi Hibe Yazarlığı: İlk Avrupa Gençlik Finansmanı Başvurunuz":
+      "Entry-Level Grant Writing: Your First European Youth Funding Application",
+    "Gençler İçin Yeşil Beceriler: Neler ve Neden Önemli":
+      "Green Skills for Young People: What They Are and Why They Matter",
+    "Yapay Zeka Araçları Gençlik Çalışma Pratiğini Nasıl Dönüştürüyor":
+      "How AI Tools Are Transforming Youth Work Practice",
+    "Ulusal Ajanslar Erasmus+ Gençlik Başvurularını Nasıl Değerlendirir":
+      "How National Agencies Assess Erasmus+ Youth Applications",
+    "Erasmus+ Başvurusu Nasıl Yapılır: 2026 Adım Adım Rehber":
+      "How to Apply for Erasmus+: A Step-by-Step Guide for 2026",
+    "Avrupa Parlamentosu Üyenize Nasıl Ulaşırsınız: Genç Avrupalılar İçin Pratik Savunuculuk Rehberi":
+      "How to Contact Your Member of the European Parliament: A Practical Advocacy Guide for Young Europeans",
+    "Doğru Erasmus+ Ortakları Nasıl Bulunur (6 Ay Harcamadan)":
+      "How to Find the Right Erasmus+ Partners (Without Wasting 6 Months)",
+    "Gönüllüleri Elde Tutmak: İnsanları Gerçekten Meşgul Tutan Stratejiler":
+      "How to Keep Volunteers: Strategies That Actually Keep People Engaged",
+    "Anlamlı Bir Gençlik İstişare Süreci Nasıl Yürütülür":
+      "How to Run a Meaningful Youth Consultation Process",
+    "Topluluğunuzda Gençlik Öncülüğünde Çevre Projesi Nasıl Başlatılır":
+      "How to Start a Youth-Led Environmental Project in Your Community",
+    "Fon Alan Güçlü Bir Erasmus+ KA1 Başvurusu Nasıl Yazılır":
+      "How to Write a Strong Erasmus+ KA1 Application That Gets Funded",
+    "Gençlik Çalışmasında Etki Ölçümü: Yaptığınız İşin İşe Yaradığını Kanıtlamak":
+      "Impact Measurement in Youth Work: Proving That What You Do Works",
+    "Yerel Demokrasi ve Gençler: Katılım İçin Rehber":
+      "Local Democracy and Young People: A Guide to Participation",
+    "Süper Güç Olarak Çok Dillilik: Gençlik Programlarında Dil Öğrenimi":
+      "Multilingualism as a Superpower: Language Learning in Youth Programmes",
+    "Gençlik Çalışmasında Dini Çeşitlilikle Başa Çıkmak: Pratik Rehber":
+      "Navigating Religious Diversity in Youth Work: A Practical Guide",
+    "Net Sıfır ve Gençlik: Avrupa'nın 2050 İklim Yol Haritasını Anlamak":
+      "Net Zero and Youth: Understanding Europe's 2050 Climate Roadmap",
+    "Katılımcı Bütçeleme: Gençler Yerel Harcamaları Kontrol Ettiğinde":
+      "Participatory Budgeting: When Young People Control Local Spending",
+    "Gençlik Örgütleri İçin Proje Yönetimi: İşe Yarayan Araçlar ve Yöntemler":
+      "Project Management for Youth Organisations: Tools and Methods That Work",
+    "İkinci Nesil Gençler ve Kültürel Kimlik: İki Dünya Arasında":
+      "Second-Generation Youth and Cultural Identity: Between Two Worlds",
+    "Sosyal Girişim mi STK mı: Hangi Model Gençlik Girişiminize Uyar?":
+      "Social Enterprise or NGO: Which Model Fits Your Youth Initiative?",
+    "Gençlik Grupları İçin Sürdürülebilir Etkinlik Planlaması: Pratik Kontrol Listesi":
+      "Sustainable Event Planning for Youth Groups: A Practical Checklist",
+    "Algoritma ve Genç İnsan: Sosyal Medyanın Gizli Mimarisi":
+      "The Algorithm and the Young Person: Social Media's Hidden Architecture",
+    "Döngüsel Ekonomi ve Gençlik: Yarının Yeşil İşleri İçin Beceriler":
+      "The Circular Economy and Youth: Skills for Tomorrow's Green Jobs",
+    "2026'da İlk Erasmus+ Gençlik Değişiminiz İçin Tam Kılavuz":
+      "The Complete Guide to Your First Erasmus+ Youth Exchange in 2026",
+    "Avrupa Vatandaşları Girişimi: Genç Savunucular İçin Rehber":
+      "The European Citizens' Initiative: A Guide for Young Advocates",
+    "Avrupa Yeşil Mutabakatı: Gençlik Kuruluşları İçin Ne Anlama Geliyor":
+      "The European Green Deal: What It Means for Youth Organisations",
+    "YZ Dünyasında Gençlik Çalışmasının Geleceği: Ne Değişiyor, Ne Kalıyor":
+      "The Future of Youth Work in an AI World: What's Changing, What Stays",
+    "Yeşil Nesil: Gençler İklim Politikasını Nasıl Yönlendiriyor":
+      "The Green Generation: How Young People Are Shaping Climate Policy",
+    "Youthpass: Erasmus+ Öğreniminizi Görünür Kılmak":
+      "Youthpass: Making Your Erasmus+ Learning Visible",
+    "Türk-Alman Gençlik Diyaloğu: Değişim Yoluyla Önyargıları Kırmak":
+      "Turkish-German Youth Dialogue: Breaking Down Stereotypes Through Exchange",
+    "Erasmus+ KA2'yi Anlamak: STK'lar İçin İşbirliği Projeleri":
+      "Understanding Erasmus+ KA2: Cooperation Projects for NGOs",
+    "Gençlik Programı Tasarımında YZ Araçlarını Kullanmak: Pratik Rehber":
+      "Using AI Tools in Youth Programme Design: A Practical Guide",
+    "Avrupalı Olmak Ne Anlama Geliyor? 2025'te Gençlerin Yanıtları":
+      "What Does It Mean to Be European? Young People's Answers in 2025",
+    "Kültürlerarası Diyalog Gerçekte Nasıl Görünür (İpucu: Dağınık)":
+      "What Intercultural Dialogue Actually Looks Like (Hint: It's Messy)",
+    "Gençlik Değişimi Nedir? Bilmeniz Gereken Her Şey":
+      "What Is a Youth Exchange? Everything You Need to Know",
+    "Yaygın Eğitim Nedir — ve Erasmus+ Neden Onun Üzerine İnşa Edilmiştir":
+      "What Is Non-Formal Education — and Why Erasmus+ Is Built on It",
+    "Z Kuşağı Neden 1960'lardan Bu Yana Her Nesilden Daha Siyasi Olarak Aktif":
+      "Why Gen Z Is More Politically Active Than Any Generation Since the 1960s",
+    "Yalova Erasmus 2026: Bütçe, Ülke Seçimi ve Hazırlık Rehberi":
+      "Yalova Erasmus 2026: Budget, Country Choice and Preparation Guide",
+    "Gerçekten İşleyen Gençlik Konseyleri: Avrupa Genelinden Dersler":
+      "Youth Councils That Actually Work: Lessons from Across Europe",
+    "Gençlik Öncülüğündeki Girişimler Avrupa'da Sosyal Etkiyi Yeniden Tanımlıyor":
+      "Youth-Led Startups Are Redefining Social Impact in Europe",
+
+    "Youthtick Yalova Gençlik, Erasmus+ ve Uluslararası Fırsatlar Rehberi (2026)":
+      "Youthtick Guide to Yalova Youth, Erasmus+ and International Opportunities (2026)",
+    "Youthtick Rehberi: Yalova’daki Üniversite Öğrencileri İçin Erasmus+ Fırsatları":
+      "Youthtick Guide: Erasmus+ Opportunities for University Students in Yalova",
+    "Youthtick Rehberi: Yalova’da Dil Okulu ve Yurtdışı Eğitim Alternatifleri":
+      "Youthtick Guide: Language Schools and Study-Abroad Alternatives in Yalova",
+    "Youthtick Rehberi: Yalova’daki STK ve Gençlik Kuruluşları":
+      "Youthtick Guide: NGOs and Youth Organisations in Yalova",
+    "Youthtick Rehberi: Yalova’da Tekmer, OSB ve Teknopark Fırsatları":
+      "Youthtick Guide: Tekmer, Industrial Zone and Technopark Opportunities in Yalova",
+    "Youthtick Rehberi: Yalova Gençlik Toplulukları ve Gönüllülük Yolları":
+      "Youthtick Guide: Yalova Youth Communities and Volunteering Pathways",
+    "Youthtick Rehberi: Yalova Genç Girişimcilik Ekosistemi":
+      "Youthtick Guide: Yalova's Young Entrepreneurship Ecosystem",
+    "Youthtick Yalova Erasmus Başvuru Rehberi 2026: Takvim, Belgeler ve Strateji":
+      "Youthtick Yalova Erasmus Application Guide 2026: Timeline, Documents and Strategy",
+    "Yalova Gençleri İçin Kariyer Planlama ve İş Piyasası Rehberi":
+      "Career Planning and Job Market Guide for Yalova Youth",
+    "Yalova Kültürel Etkinlikler ve Yaratıcı Ağlar":
+      "Yalova Cultural Events and Creative Networks",
+    "Yalova Gençleri İçin Dijital Beceriler ve Uzaktan Çalışma Rehberi":
+      "Digital Skills and Remote Work Guide for Yalova Youth",
+    "Yalova'da Eğitim Desteği ve Mentorluk":
+      "Educational Support and Mentoring in Yalova",
+    "Yalova GSB Gençlik Merkezleri: Ücretsiz Programlar ve Kayıt Rehberi":
+      "Yalova GSB Youth Centres: Free Programmes and Registration Guide",
+    "Yalova Gençleri İçin Sağlık ve Wellness Rehberi":
+      "Health and Wellness Guide for Yalova Youth",
+    "Yalova Gençleri İçin Uluslararası Ortaklıklar ve Ağlar":
+      "International Partnerships and Networks for Yalova Youth",
+    "Yalova Gençleri İçin Kişisel Gelişim ve Soft Skills Rehberi":
+      "Personal Development and Soft Skills Guide for Yalova Youth",
+    "Yalova'da Sosyal Girişimcilik ve Etki Odaklı Startuplar":
+      "Social Entrepreneurship and Impact-Driven Startups in Yalova",
+    "Yalova Gençleri İçin Spor ve Aktif Yaşam Programları":
+      "Sports and Active Living Programmes for Yalova Youth",
+    "Yalova'da Sürdürülebilir Yaşam ve Yeşil Projeler":
+      "Sustainable Living and Green Projects in Yalova",
+    "T3 Vakfı Yalova: Teknoloji, Girişimcilik ve Gençlik Programları Rehberi":
+      "T3 Foundation Yalova: Guide to Technology, Entrepreneurship and Youth Programmes",
+    "Kent Konseyi Yalova: Gençlik Katılımı ve Sivil Demokrasi Rehberi":
+      "Yalova City Council: Guide to Youth Participation and Civic Democracy",
+    "Yalova Dil Okulları 2026: Akın Dil ve Seçenekleriniz":
+      "Yalova Language Schools 2026: Akın Dil and Your Options",
+    "Yalova Kızılay: Gönüllülük Rehberi ve Başvuru Adımları":
+      "Yalova Red Crescent: Volunteering Guide and Application Steps",
+    "Gençlik Meclisi Yalova: Nasıl Üye Olunur ve Neler Kazanılır?":
+      "Yalova Youth Assembly: How to Become a Member and What You Gain",
+    "YTSO Yalova Genç Girişimci: Üyelik ve Destek Rehberi":
+      "YTSO Yalova Young Entrepreneur: Membership and Support Guide"
+  });
+  Object.assign(M.de, {
+    "Avrupa'daki gençlik fırsatlarından Erasmus+ çağrılarına, gençlik katılımından gönüllülük deneyimlerine — YouthTICK topluluğundan ilham veren yazılar ve pratik rehberler.":
+      "Von europäischen Jugendmöglichkeiten bis zu Erasmus+-Ausschreibungen, von Jugendbeteiligung bis zu Freiwilligenerfahrungen — inspirierende Artikel und praktische Leitfäden aus der YouthTICK-Community.",
+    "Hepsi bir arada": "Alles an einem Ort",
+    "Son": "Neueste",
+    "yazılar": "Beiträge",
+    "Anasayfaya dön": "Zurück zur Startseite",
+
+    "Bir Gençlik Hakkı Olarak Yapay Zeka Okuryazarlığı: Dijital Eşitliğe Neden Şimdi İhtiyacımız Var":
+      "KI-Kompetenz als Jugendrecht: Warum wir digitale Gerechtigkeit jetzt brauchen",
+    "Biyoçeşitlilik Kaybı ve Gençlik Çalışması: Doğanın Programlarınızda Neden Yeri Var":
+      "Biodiversitätsverlust und Jugendarbeit: Warum die Natur in eure Programme gehört",
+    "İlk Erasmus+ Projenizi Oluşturmak: Adım Adım Zaman Çizelgesi":
+      "Euer erstes Erasmus+-Projekt aufbauen: Eine Schritt-für-Schritt-Zeitleiste",
+    "Gençlerde İklim Kaygısı: Çevre Korkusunu Eyleme Dönüştürmek":
+      "Klimaangst bei jungen Menschen: Öko-Angst in Handeln verwandeln",
+    "Küresel Çağda Kültürel Kimlik: Genç Avrupalıların 2025'te Söyledikleri":
+      "Kulturelle Identität im globalen Zeitalter: Was junge Europäer 2025 sagen",
+    "Deepfake'ler, Dezenformasyon ve Demokrasi: Gençlik Çalışanlarının Bilmesi Gerekenler":
+      "Deepfakes, Desinformation und Demokratie: Was Jugendarbeiter wissen müssen",
+    "Gençlik Çalışanları İçin Tasarım Düşüncesi: 5 Adımlı Pratik Rehber":
+      "Design Thinking für Jugendarbeiter: Ein praktischer 5-Schritte-Leitfaden",
+    "Yapay Zeka Çağında Dijital Vatandaşlık: Gençlik Çalışanları İçin Rehber":
+      "Digitale Bürgerschaft im Zeitalter der KI: Ein Leitfaden für Jugendarbeiter",
+    "Türkiye'de Erasmus+: 2026'da Gençlerin Bilmesi Gereken Her Şey":
+      "Erasmus+ in der Türkei: Alles, was junge Menschen 2026 wissen müssen",
+    "Erasmus+ Gençlik Değişimi mi ESC mi: Hangi AB Programı Size Uygun?":
+      "Erasmus+-Jugendaustausch oder ESC: Welches EU-Programm passt zu dir?",
+    "Yerel Fikirden Avrupa Ölçeğine: Gençlik Öncülüğündeki Kuruluşlardan Dersler":
+      "Von der lokalen Idee zur europäischen Dimension: Lektionen von jugendgeführten Organisationen",
+    "Başlangıç Seviyesi Hibe Yazarlığı: İlk Avrupa Gençlik Finansmanı Başvurunuz":
+      "Förderanträge für Einsteiger: Euer erster Antrag für europäische Jugendförderung",
+    "Gençler İçin Yeşil Beceriler: Neler ve Neden Önemli":
+      "Grüne Kompetenzen für junge Menschen: Was sie sind und warum sie wichtig sind",
+    "Yapay Zeka Araçları Gençlik Çalışma Pratiğini Nasıl Dönüştürüyor":
+      "Wie KI-Tools die Praxis der Jugendarbeit verändern",
+    "Ulusal Ajanslar Erasmus+ Gençlik Başvurularını Nasıl Değerlendirir":
+      "Wie Nationale Agenturen Erasmus+-Jugendanträge bewerten",
+    "Erasmus+ Başvurusu Nasıl Yapılır: 2026 Adım Adım Rehber":
+      "Wie man sich für Erasmus+ bewirbt: Schritt-für-Schritt-Leitfaden für 2026",
+    "Avrupa Parlamentosu Üyenize Nasıl Ulaşırsınız: Genç Avrupalılar İçin Pratik Savunuculuk Rehberi":
+      "Wie man sein Mitglied des Europäischen Parlaments kontaktiert: Ein praktischer Leitfaden für junge Europäer",
+    "Doğru Erasmus+ Ortakları Nasıl Bulunur (6 Ay Harcamadan)":
+      "Wie man die richtigen Erasmus+-Partner findet (ohne 6 Monate zu verschwenden)",
+    "Gönüllüleri Elde Tutmak: İnsanları Gerçekten Meşgul Tutan Stratejiler":
+      "Freiwillige halten: Strategien, die Menschen wirklich engagiert halten",
+    "Anlamlı Bir Gençlik İstişare Süreci Nasıl Yürütülür":
+      "Wie man einen sinnvollen Jugendkonsultationsprozess durchführt",
+    "Topluluğunuzda Gençlik Öncülüğünde Çevre Projesi Nasıl Başlatılır":
+      "Wie man ein jugendgeführtes Umweltprojekt in der eigenen Gemeinde startet",
+    "Fon Alan Güçlü Bir Erasmus+ KA1 Başvurusu Nasıl Yazılır":
+      "Wie man einen starken Erasmus+-KA1-Antrag schreibt, der gefördert wird",
+    "Gençlik Çalışmasında Etki Ölçümü: Yaptığınız İşin İşe Yaradığını Kanıtlamak":
+      "Wirkungsmessung in der Jugendarbeit: Beweisen, dass eure Arbeit wirkt",
+    "Yerel Demokrasi ve Gençler: Katılım İçin Rehber":
+      "Lokale Demokratie und junge Menschen: Ein Leitfaden zur Beteiligung",
+    "Süper Güç Olarak Çok Dillilik: Gençlik Programlarında Dil Öğrenimi":
+      "Mehrsprachigkeit als Superkraft: Sprachenlernen in Jugendprogrammen",
+    "Gençlik Çalışmasında Dini Çeşitlilikle Başa Çıkmak: Pratik Rehber":
+      "Religiöse Vielfalt in der Jugendarbeit: Ein praktischer Leitfaden",
+    "Net Sıfır ve Gençlik: Avrupa'nın 2050 İklim Yol Haritasını Anlamak":
+      "Net Zero und Jugend: Europas Klima-Roadmap für 2050 verstehen",
+    "Katılımcı Bütçeleme: Gençler Yerel Harcamaları Kontrol Ettiğinde":
+      "Bürgerhaushalt: Wenn junge Menschen lokale Ausgaben kontrollieren",
+    "Gençlik Örgütleri İçin Proje Yönetimi: İşe Yarayan Araçlar ve Yöntemler":
+      "Projektmanagement für Jugendorganisationen: Tools und Methoden, die funktionieren",
+    "İkinci Nesil Gençler ve Kültürel Kimlik: İki Dünya Arasında":
+      "Jugendliche der zweiten Generation und kulturelle Identität: Zwischen zwei Welten",
+    "Sosyal Girişim mi STK mı: Hangi Model Gençlik Girişiminize Uyar?":
+      "Sozialunternehmen oder NGO: Welches Modell passt zu eurer Jugendinitiative?",
+    "Gençlik Grupları İçin Sürdürülebilir Etkinlik Planlaması: Pratik Kontrol Listesi":
+      "Nachhaltige Veranstaltungsplanung für Jugendgruppen: Eine praktische Checkliste",
+    "Algoritma ve Genç İnsan: Sosyal Medyanın Gizli Mimarisi":
+      "Der Algorithmus und der junge Mensch: Die verborgene Architektur sozialer Medien",
+    "Döngüsel Ekonomi ve Gençlik: Yarının Yeşil İşleri İçin Beceriler":
+      "Die Kreislaufwirtschaft und Jugend: Kompetenzen für die grünen Jobs von morgen",
+    "2026'da İlk Erasmus+ Gençlik Değişiminiz İçin Tam Kılavuz":
+      "Der komplette Leitfaden für euren ersten Erasmus+-Jugendaustausch 2026",
+    "Avrupa Vatandaşları Girişimi: Genç Savunucular İçin Rehber":
+      "Die Europäische Bürgerinitiative: Ein Leitfaden für junge Aktivisten",
+    "Avrupa Yeşil Mutabakatı: Gençlik Kuruluşları İçin Ne Anlama Geliyor":
+      "Der europäische Grüne Deal: Was er für Jugendorganisationen bedeutet",
+    "YZ Dünyasında Gençlik Çalışmasının Geleceği: Ne Değişiyor, Ne Kalıyor":
+      "Die Zukunft der Jugendarbeit in einer KI-Welt: Was sich ändert, was bleibt",
+    "Yeşil Nesil: Gençler İklim Politikasını Nasıl Yönlendiriyor":
+      "Die grüne Generation: Wie junge Menschen die Klimapolitik mitgestalten",
+    "Youthpass: Erasmus+ Öğreniminizi Görünür Kılmak":
+      "Youthpass: Euer Erasmus+-Lernen sichtbar machen",
+    "Türk-Alman Gençlik Diyaloğu: Değişim Yoluyla Önyargıları Kırmak":
+      "Türkisch-deutscher Jugenddialog: Vorurteile durch Austausch abbauen",
+    "Erasmus+ KA2'yi Anlamak: STK'lar İçin İşbirliği Projeleri":
+      "Erasmus+ KA2 verstehen: Kooperationsprojekte für NGOs",
+    "Gençlik Programı Tasarımında YZ Araçlarını Kullanmak: Pratik Rehber":
+      "KI-Tools im Design von Jugendprogrammen einsetzen: Ein praktischer Leitfaden",
+    "Avrupalı Olmak Ne Anlama Geliyor? 2025'te Gençlerin Yanıtları":
+      "Was bedeutet es, Europäer zu sein? Antworten junger Menschen 2025",
+    "Kültürlerarası Diyalog Gerçekte Nasıl Görünür (İpucu: Dağınık)":
+      "Wie interkultureller Dialog wirklich aussieht (Hinweis: Es ist chaotisch)",
+    "Gençlik Değişimi Nedir? Bilmeniz Gereken Her Şey":
+      "Was ist ein Jugendaustausch? Alles, was du wissen musst",
+    "Yaygın Eğitim Nedir — ve Erasmus+ Neden Onun Üzerine İnşa Edilmiştir":
+      "Was ist non-formale Bildung — und warum Erasmus+ darauf aufbaut",
+    "Z Kuşağı Neden 1960'lardan Bu Yana Her Nesilden Daha Siyasi Olarak Aktif":
+      "Warum die Generation Z politisch aktiver ist als jede Generation seit den 1960er-Jahren",
+    "Yalova Erasmus 2026: Bütçe, Ülke Seçimi ve Hazırlık Rehberi":
+      "Yalova Erasmus 2026: Budget-, Länderauswahl- und Vorbereitungsleitfaden",
+    "Gerçekten İşleyen Gençlik Konseyleri: Avrupa Genelinden Dersler":
+      "Jugendräte, die wirklich funktionieren: Lektionen aus ganz Europa",
+    "Gençlik Öncülüğündeki Girişimler Avrupa'da Sosyal Etkiyi Yeniden Tanımlıyor":
+      "Jugendgeführte Start-ups definieren soziale Wirkung in Europa neu",
+
+    "Youthtick Yalova Gençlik, Erasmus+ ve Uluslararası Fırsatlar Rehberi (2026)":
+      "Youthtick-Leitfaden zu Yalova Jugend, Erasmus+ und internationalen Möglichkeiten (2026)",
+    "Youthtick Rehberi: Yalova’daki Üniversite Öğrencileri İçin Erasmus+ Fırsatları":
+      "Youthtick-Leitfaden: Erasmus+-Möglichkeiten für Studierende in Yalova",
+    "Youthtick Rehberi: Yalova’da Dil Okulu ve Yurtdışı Eğitim Alternatifleri":
+      "Youthtick-Leitfaden: Sprachschulen und Auslandsstudium-Alternativen in Yalova",
+    "Youthtick Rehberi: Yalova’daki STK ve Gençlik Kuruluşları":
+      "Youthtick-Leitfaden: NGOs und Jugendorganisationen in Yalova",
+    "Youthtick Rehberi: Yalova’da Tekmer, OSB ve Teknopark Fırsatları":
+      "Youthtick-Leitfaden: Tekmer-, Industriegebiets- und Technopark-Möglichkeiten in Yalova",
+    "Youthtick Rehberi: Yalova Gençlik Toplulukları ve Gönüllülük Yolları":
+      "Youthtick-Leitfaden: Yalovas Jugendgemeinschaften und Freiwilligenwege",
+    "Youthtick Rehberi: Yalova Genç Girişimcilik Ekosistemi":
+      "Youthtick-Leitfaden: Yalovas Ökosystem für junges Unternehmertum",
+    "Youthtick Yalova Erasmus Başvuru Rehberi 2026: Takvim, Belgeler ve Strateji":
+      "Youthtick Yalova Erasmus-Bewerbungsleitfaden 2026: Zeitplan, Unterlagen und Strategie",
+    "Yalova Gençleri İçin Kariyer Planlama ve İş Piyasası Rehberi":
+      "Karriereplanung und Arbeitsmarktleitfaden für junge Menschen in Yalova",
+    "Yalova Kültürel Etkinlikler ve Yaratıcı Ağlar":
+      "Kulturelle Veranstaltungen und kreative Netzwerke in Yalova",
+    "Yalova Gençleri İçin Dijital Beceriler ve Uzaktan Çalışma Rehberi":
+      "Leitfaden für digitale Kompetenzen und Remote-Arbeit für junge Menschen in Yalova",
+    "Yalova'da Eğitim Desteği ve Mentorluk":
+      "Bildungsförderung und Mentoring in Yalova",
+    "Yalova GSB Gençlik Merkezleri: Ücretsiz Programlar ve Kayıt Rehberi":
+      "Yalova GSB-Jugendzentren: Kostenlose Programme und Anmeldeleitfaden",
+    "Yalova Gençleri İçin Sağlık ve Wellness Rehberi":
+      "Gesundheits- und Wellness-Leitfaden für junge Menschen in Yalova",
+    "Yalova Gençleri İçin Uluslararası Ortaklıklar ve Ağlar":
+      "Internationale Partnerschaften und Netzwerke für junge Menschen in Yalova",
+    "Yalova Gençleri İçin Kişisel Gelişim ve Soft Skills Rehberi":
+      "Leitfaden für persönliche Entwicklung und Soft Skills für junge Menschen in Yalova",
+    "Yalova'da Sosyal Girişimcilik ve Etki Odaklı Startuplar":
+      "Sozialunternehmertum und wirkungsorientierte Startups in Yalova",
+    "Yalova Gençleri İçin Spor ve Aktif Yaşam Programları":
+      "Sport- und Aktivlebenprogramme für junge Menschen in Yalova",
+    "Yalova'da Sürdürülebilir Yaşam ve Yeşil Projeler":
+      "Nachhaltiges Leben und grüne Projekte in Yalova",
+    "T3 Vakfı Yalova: Teknoloji, Girişimcilik ve Gençlik Programları Rehberi":
+      "T3-Stiftung Yalova: Leitfaden zu Technologie, Unternehmertum und Jugendprogrammen",
+    "Kent Konseyi Yalova: Gençlik Katılımı ve Sivil Demokrasi Rehberi":
+      "Stadtrat Yalova: Leitfaden zu Jugendbeteiligung und ziviler Demokratie",
+    "Yalova Dil Okulları 2026: Akın Dil ve Seçenekleriniz":
+      "Sprachschulen in Yalova 2026: Akın Dil und eure Optionen",
+    "Yalova Kızılay: Gönüllülük Rehberi ve Başvuru Adımları":
+      "Roter Halbmond Yalova: Freiwilligenleitfaden und Bewerbungsschritte",
+    "Gençlik Meclisi Yalova: Nasıl Üye Olunur ve Neler Kazanılır?":
+      "Jugendparlament Yalova: Wie man Mitglied wird und was man gewinnt",
+    "YTSO Yalova Genç Girişimci: Üyelik ve Destek Rehberi":
+      "YTSO Yalova Junger Unternehmer: Mitgliedschafts- und Unterstützungsleitfaden"
+  });
 })();
