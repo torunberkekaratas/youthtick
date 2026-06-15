@@ -780,4 +780,519 @@
 
   M.en["18–30 yaş"] = "18–30";
   M.de["18–30 yaş"] = "18–30 Jahren";
+
+  /* ================= projects / partnership / volunteer ================= */
+  Object.assign(M.en, {
+    /* shared */
+    "Sürdürülebilirlik": "Sustainability",
+    "Sıkça Sorulan Sorular": "Frequently Asked Questions",
+    "1. Adım": "Step 1",
+    "2. Adım": "Step 2",
+    "3. Adım": "Step 3",
+    "4. Adım": "Step 4",
+    "E-posta Gönder": "Send Email",
+    "Başvuru Formu": "Application Form",
+
+    /* ---- projects.html ---- */
+    "Yakında": "Coming soon",
+    "Programlar ve": "Programmes and",
+    "İnisiyatifler": "Initiatives",
+    "İlk programlarımızı tasarlıyoruz. Hedeflediğimiz yön burada.": "We're designing our first programmes. Here's the direction we're aiming for.",
+    "Hazırlık Aşamasında": "In Preparation",
+    "Hazırlık aşamasındaki": "Programmes in",
+    "programlar.": "preparation.",
+    "Gençlik ve Kentsel Gelecekler": "Youth and Urban Futures",
+    "Sürdürülebilir kentsel gelişim ve sivil inovasyona ilgi duyan gençleri bir araya getirmeyi planlayan girişim — şu an konsept aşamasında.":
+      "An initiative planned to bring together young people interested in sustainable urban development and civic innovation — currently in the concept stage.",
+    "Sürdürülebilirlik için Gençlik": "Youth for Sustainability",
+    "Yalova'daki gençler arasında çevre farkındalığı, iklim okuryazarlığı ve sürdürülebilir yaşam tarzlarını keşfeden yerel atölye serisi.":
+      "A local workshop series exploring environmental awareness, climate literacy and sustainable lifestyles among young people in Yalova.",
+    "Dijital Okuryazarlık ve Vatandaşlık": "Digital Literacy and Citizenship",
+    "Medya okuryazarlığı, sorumlu dijital iletişim ve çevrimiçi sivil katılımı desteklemeyi hedefleyen planlı program.":
+      "A planned programme aiming to support media literacy, responsible digital communication and online civic participation.",
+    "Program Odağı": "Programme Focus",
+    "Bu programlar": "About these",
+    "hakkında": "programmes",
+    "Henüz hiçbir programımız uygulamaya geçmedi — şu an kavram ve planlama aşamasındayız. Aşağıda, her bir girişim için düşündüğümüz olası aktiviteleri ve aradığımız ortaklık türlerini paylaşıyoruz.":
+      "None of our programmes have launched yet — we are currently in the concept and planning stage. Below, we share the possible activities we're considering for each initiative and the types of partnership we're looking for.",
+    "Gençlik ve Kentsel Gelecekler — Planlanan Aktiviteler": "Youth and Urban Futures — Planned Activities",
+    "Yalova'daki gençlerle keşif atölyeleri · Kentsel zorlukların araştırılması · Yerel kurumlar ve sivil aktörlerle diyalog":
+      "Discovery workshops with young people in Yalova · Research into urban challenges · Dialogue with local institutions and civic actors",
+    "Sürdürülebilirlik için Gençlik — Planlanan Aktiviteler": "Youth for Sustainability — Planned Activities",
+    "Çevre farkındalığı atölyeleri · İklim okuryazarlığı oturumları · Sürdürülebilir yaşam pratikleri üzerine yerel etkinlikler":
+      "Environmental awareness workshops · Climate literacy sessions · Local events on sustainable living practices",
+    "Dijital Okuryazarlık ve Vatandaşlık — Planlanan Aktiviteler": "Digital Literacy and Citizenship — Planned Activities",
+    "Medya okuryazarlığı eğitimleri · Sorumlu dijital iletişim seminerleri · Çevrimiçi sivil katılım projeleri":
+      "Media literacy trainings · Responsible digital communication seminars · Online civic participation projects",
+    "Potansiyel ortaklar": "Potential partners",
+    "Kentsel veya sivil bağlamlarda gençlerle çalışan kuruluşları, çevre ve sürdürülebilirlik odaklı STK'ları ve dijital vatandaşlık alanında deneyimli kurumları arıyoruz. İlginizi paylaşıyorsanız sizden haber almak isteriz.":
+      "We're looking for organisations working with young people in urban or civic contexts, NGOs focused on the environment and sustainability, and institutions experienced in digital citizenship. If you share our interest, we'd love to hear from you.",
+    "Konseptler ve Fikirler": "Concepts and Ideas",
+    "Hedeflediğimiz": "The direction",
+    "yön": "we're aiming for",
+    "Erasmus+, İnovasyon, Kültür ve Katılım odak alanlarımızı yansıtan bu üç program, kuruluş aşamasındaki kimliğimizin doğal bir uzantısı. Her biri yerel başlayıp, zamanla uluslararası ortaklıklara ve Erasmus+ çerçevesine açılma potansiyeli taşıyor.":
+      "Reflecting our focus areas of Erasmus+, Innovation, Culture and Participation, these three programmes are a natural extension of our founding-stage identity. Each starts locally and has the potential to open up to international partnerships and the Erasmus+ framework over time.",
+    "Programlarımız hazır olduğunda, bu sayfa güncel ortak çağrıları, başvuru süreçleri ve katılım fırsatlarıyla genişleyecek. O zamana kadar, en güncel gelişmeleri sosyal medya kanallarımızdan ve bültenimizden takip edebilirsin.":
+      "When our programmes are ready, this page will expand with current partner calls, application processes and participation opportunities. Until then, you can follow the latest developments through our social media channels and newsletter.",
+
+    /* ---- partnership.html ---- */
+    "İşbirliği": "Cooperation",
+    "Ortaklığa": "Open to",
+    "açığız": "partnership",
+    "Uluslararası ağımızı kurmanın erken aşamalarındayız. Kültürlerarası gençlik işbirliği ve Erasmus+ işbirliğine ilgi duyan kuruluşları aktif olarak arıyoruz.":
+      "We're in the early stages of building our international network. We are actively looking for organisations interested in intercultural youth cooperation and Erasmus+ collaboration.",
+    "Gençlik katılımı, Erasmus+ işbirliği ve kültürlerarası değişime ilgi duyan STK'lar, okullar, gençlik merkezleri ve sivil kurumlar gibi ortak kuruluşlar arıyoruz.":
+      "We're looking for partner organisations such as NGOs, schools, youth centres and civic institutions interested in youth participation, Erasmus+ cooperation and intercultural exchange.",
+    "Bizimle işbirliği yapın": "Cooperate with us",
+    "Dürüst bir": "An honest",
+    "davet": "invitation",
+    "Kuruluş Aşaması": "Founding Stage",
+    "Bugün durduğumuz yer: YouthTICK henüz kuruluş aşamasındaki bağımsız bir gençlik inisiyatifi. Kimliğimizi ve ilişkilerimizi şeffaflıkla inşa ediyoruz.":
+      "Where we stand today: YouthTICK is still an independent youth initiative in its founding stage. We're building our identity and relationships with transparency.",
+    "Diyaloğa Açık": "Open to Dialogue",
+    "Dürüst davetimiz: Değerlerimizi ve ilgi alanlarımızı paylaşan herhangi bir ülkeden kuruluşlarla keşif niteliğinde görüşmelere açığız.":
+      "Our honest invitation: we are open to exploratory talks with organisations from any country that share our values and interests.",
+    "Gençlik değişimleri, kültürlerarası öğrenme ve sivil katılım alanlarında çalışan üniversiteler, STK'lar, belediyeler, gençlik merkezleri ve işletmelerle anlamlı, uzun vadeli ilişkiler kurmak istiyoruz. İster bir gençlik kuruluşu, okul, belediye veya sivil vakıf olun — gençlerle çalışıyorsanız ve uluslararası diyaloğa açıksanız, sizinle konuşmak isteriz.":
+      "We want to build meaningful, long-term relationships with universities, NGOs, municipalities, youth centres and businesses working in youth exchanges, intercultural learning and civic participation. Whether you're a youth organisation, school, municipality or civic foundation — if you work with young people and are open to international dialogue, we'd like to talk with you.",
+    "Ortaklık İlgi Alanları: bağlanmak istediğimiz yerler aşağıda özetlenmiştir.":
+      "Partnership Interests: the areas we'd like to connect in are outlined below.",
+    "Ortaklık İlgi Alanları": "Partnership Interests",
+    "Bağlanmak istediğimiz": "Where we'd like to",
+    "yerler": "connect",
+    "İlk Erasmus+ projelerimizi hazırlıyoruz ve Avrupa'da işbirliği yapabileceğimiz deneyimli ortak kuruluşlar arıyoruz. (Gençlik Değişimleri ve Projeler)":
+      "We're preparing our first Erasmus+ projects and looking for experienced partner organisations in Europe to collaborate with. (Youth Exchanges and Projects)",
+    "Bilgi Alışverişi": "Knowledge Exchange",
+    "Metodolojileri ve en iyi uygulamaları paylaşabilecek araştırmacılar, gençlik çalışanları ve uygulayıcılarla bağlantı kurmakla ilgileniyoruz. (Yöntemler ve En İyi Uygulamalar)":
+      "We're interested in connecting with researchers, youth workers and practitioners who can share methodologies and best practices. (Methods and Best Practices)",
+    "Yerel Sivil İşbirliği": "Local Civic Cooperation",
+    "Gençlerin katılımı için destekleyici bir ortam yaratmak amacıyla Yalova'daki yerel kurumlarla ilişkiler kuruyoruz. (Yerel Kurumlar)":
+      "We're building relationships with local institutions in Yalova to create a supportive environment for youth participation. (Local Institutions)",
+    "Uluslararası Diyalog": "International Dialogue",
+    "Değerlerimizi ve ilgi alanlarımızı paylaşan herhangi bir ülkeden kuruluşlarla keşif niteliğinde görüşmelere açığız. (Görüşmelere Açık)":
+      "We are open to exploratory talks with organisations from any country that share our values and interests. (Open to Talks)",
+    "Almanya–Türkiye Koridoru": "Germany–Turkey Corridor",
+    "Uluslararası alandaki ilk odağımız Almanya–Türkiye gençlik koridorudur. Özellikle ikili değişime açık Alman gençlik kuruluşlarıyla bağlantı kurmakla ilgileniyoruz. (Öncelikli Bölge)":
+      "Our first international focus is the Germany–Turkey youth corridor. We're particularly interested in connecting with German youth organisations open to bilateral exchange. (Priority Region)",
+    "Gelecek Bağlantılar": "Future Connections",
+    "Almanya'nın ötesinde, güçlü Erasmus+ gelenekleri ve sivil gençlik sektörleri olan Yunanistan, Polonya ve İspanya'daki gençlik kuruluşlarıyla bağlantıları araştırıyoruz. (Büyüyen Ağ)":
+      "Beyond Germany, we're exploring connections with youth organisations in Greece, Poland and Spain, which have strong Erasmus+ traditions and civic youth sectors. (Growing Network)",
+    "Türkiye–Almanya Odağı": "Turkey–Germany Focus",
+    "İki ülke.": "Two countries.",
+    "Ortak bir ilgi.": "A shared interest.",
+    "Türkiye–Almanya ilişkisi, erken ağ oluşturma çabalarımızın merkezinde yer alıyor. Almanya'daki büyük Türk diasporası ve uzun süredir devam eden kültürel bağlarla bu koridor, gençlik değişimi ve işbirliği için doğal bir başlangıç noktası sunuyor.":
+      "The Turkey–Germany relationship is at the heart of our early networking efforts. With the large Turkish diaspora in Germany and long-standing cultural ties, this corridor offers a natural starting point for youth exchange and cooperation.",
+    "Gerçek ikili diyaloğun neye benzeyebileceğini keşfediyoruz — bitmiş bir program olarak değil, her iki ülkeden gençler arasında dürüst bir konuşma olarak.":
+      "We're exploring what genuine bilateral dialogue could look like — not as a finished programme, but as an honest conversation between young people from both countries.",
+    "Bugün durduğumuz yer.": "Where we stand today.",
+    "Dürüst davetimiz.": "Our honest invitation.",
+    "Ortak ağımız": "Our partner network",
+    "& ilgi alanlarımız": "& areas of interest",
+    "Almanya Gençlik Kuruluşları": "German Youth Organisations",
+    "Kimlerle çalışmak istiyoruz": "Who we want to work with",
+    "kategorileri": "categories",
+    "Akademi & Araştırma": "Academia & Research",
+    "Üniversiteler": "Universities",
+    "araştırma & değişim ortaklığı": "research & exchange partnership",
+    "Sivil Toplum": "Civil Society",
+    "STK'lar & Gençlik Merkezleri": "NGOs & Youth Centres",
+    "ortak proje & gönüllülük": "joint projects & volunteering",
+    "Yerel Yönetim": "Local Government",
+    "Belediyeler & Kamu Kurumları": "Municipalities & Public Institutions",
+    "yerel katılım & altyapı": "local participation & infrastructure",
+    "Özel Sektör": "Private Sector",
+    "İşletmeler & Vakıflar": "Businesses & Foundations",
+    "destek & finansman ortaklığı": "support & funding partnership",
+    "Araştırma iş birlikleri, akademik değişim programları ve gençlik çalışmaları alanında ortak projeler için üniversitelerle bağlantı kurmak istiyoruz.":
+      "We want to connect with universities for research collaborations, academic exchange programmes and joint projects in the field of youth work.",
+    "STK'lar / Sivil Toplum": "NGOs / Civil Society",
+    "Gençlik değişimleri, gönüllülük (ESC) ve metodoloji paylaşımı konularında deneyimli sivil toplum kuruluşlarıyla işbirliği arıyoruz.":
+      "We're looking for cooperation with civil society organisations experienced in youth exchanges, volunteering (ESC) and methodology sharing.",
+    "Yalova ve çevresindeki belediyeler ve kamu kurumlarıyla, gençlerin katılımı için destekleyici bir yerel ortam oluşturmak istiyoruz.":
+      "We want to create a supportive local environment for youth participation together with municipalities and public institutions in and around Yalova.",
+    "Girişimcilik, finansman ve kurumsal sosyal sorumluluk alanlarında gençlik projelerimize destek olabilecek işletme ve vakıflarla iletişimdeyiz.":
+      "We're in contact with businesses and foundations that can support our youth projects in entrepreneurship, funding and corporate social responsibility.",
+    "Ortak Olun": "Become a Partner",
+    "ortak olunur?": "become a partner?",
+    "İletişime geçin — kuruluşunuzu ve ilgi alanınızı kısaca tanıtan bir e-posta veya iletişim formu mesajı gönderin.":
+      "Get in touch — send an email or a contact form message briefly introducing your organisation and area of interest.",
+    "İhtiyaçları birlikte değerlendirelim — ortak hedefleri, olası proje fikirlerini ve işbirliği alanlarını keşif niteliğinde bir görüşmede konuşalım.":
+      "Let's assess the needs together — discuss shared goals, possible project ideas and areas of cooperation in an exploratory conversation.",
+    "Ortaklığı resmileştirelim — şeffaf, uzun vadeli ve karşılıklı saygıya dayalı bir ilişkinin temelini birlikte atalım.":
+      "Let's formalise the partnership — together laying the foundation of a transparent, long-term relationship based on mutual respect.",
+    "Bize katılarak şunları birlikte yapabiliriz:": "By joining us, we can do the following together:",
+    "Erasmus+ proje fırsatlarının ortak keşfi": "Joint exploration of Erasmus+ project opportunities",
+    "Yöntem ve öğrenme deneyimlerinin açık paylaşımı": "Open sharing of methods and learning experiences",
+    "Karşılıklı saygıya dayalı şeffaf, uzun vadeli ilişki": "A transparent, long-term relationship based on mutual respect",
+    "Türkiye gençlik sektöründe gerçek bir temas noktası": "A genuine point of contact in the Turkish youth sector",
+    "Ortak olmak": "Want to become",
+    "ister misiniz?": "a partner?",
+
+    /* ---- volunteer.html ---- */
+    "İnşa ettiklerimize": "Contribute to",
+    "katkı sağla": "what we're building",
+    "YouthTICK tamamen gönüllülük esaslı bir inisiyatiftir. Buradaki hiçbir rol ücretli değildir — büyümek, öğrenmek ve bağlantılar kurmak isteyen insanların oluşturduğu bir topluluğuz; maaş almak için değil.":
+      "YouthTICK is an entirely volunteer-based initiative. None of the roles here are paid — we are a community of people who want to grow, learn and build connections, not earn a salary.",
+    "🌱 Yalnızca gönüllülük esaslıdır. Ücretli pozisyon yoktur ve oluşturulmayacaktır. Buradaki amacımız beceri geliştirmek, ağ kurmak ve birlikte öğrenmektir.":
+      "🌱 Volunteer-based only. There are no paid positions and none will be created. Our purpose here is to build skills, network and learn together.",
+    "Neden Katılmalısın": "Why You Should Join",
+    "Ağdaki": "Find your role in",
+    "rolünü bul": "the network",
+    "Projelere Destek Ver": "Support Projects",
+    "Sadece yardım etme. Yerel girişimlerin tasarımına katıl ve gelecekteki uluslararası gençlik değişimleri için fikir üret.":
+      "Don't just help. Take part in designing local initiatives and generate ideas for future international youth exchanges.",
+    "Ağını Kur": "Build Your Network",
+    "Hem Türkiye içinde hem de uluslararası düzeyde STK'lar, gençlik çalışanları ve eğitmenlerle bağlantı kur.":
+      "Connect with NGOs, youth workers and trainers both within Turkey and internationally.",
+    "Yaparak Öğren": "Learn by Doing",
+    "Proje yönetimi, hibe yazımı ve etkinlik prodüksiyonunda uygulamalı deneyim kazan.":
+      "Gain hands-on experience in project management, grant writing and event production.",
+    "YouthTICK'i Şekillendir": "Shape YouthTICK",
+    "Sıfırdan inşa edilen bir gençlik kuruluşunun bir parçası ol; kültürlerarası öğrenme fırsatlarına ve değişimlere erişim kazan.":
+      "Be part of a youth organisation built from scratch; gain access to intercultural learning opportunities and exchanges.",
+    "Erasmus+ proje çalışmasında gerçek uygulamalı deneyim kazanırsın, ilk günden itibaren Avrupa çapında profesyonel bir ağ kurarsın ve program tasarımı, iletişim ile savunuculuk alanlarında becerilerini geliştirirsin.":
+      "You'll gain real hands-on experience in Erasmus+ project work, build a Europe-wide professional network from day one, and develop your skills in programme design, communication and advocacy.",
+    "Fırsatlar · 🌐 Tüm pozisyonlar tamamen uzaktan": "Opportunities · 🌐 All positions fully remote",
+    "Gönüllülük": "Volunteering",
+    "rolleri": "roles",
+    "Proje Kolaylaştırıcısı": "Project Facilitator",
+    "Avrupa genelinde gençlik değişimlerini, atölyeleri ve eğitim kurslarını planlayın ve çevrimiçi olarak kolaylaştırın. Sunum ve grup yönetimi becerileri önemlidir.":
+      "Plan and facilitate youth exchanges, workshops and training courses across Europe online. Presentation and group management skills are important.",
+    "🌐 Tamamen uzaktan · Esnek": "🌐 Fully remote · Flexible",
+    "Detaylı başvuru formu": "Detailed application form",
+    "Araştırma Asistanı": "Research Assistant",
+    "Gençlik katılımı konularında veri toplama, literatür taraması ve rapor yazımı ile araştırma ekibimize destek olun.":
+      "Support our research team with data collection, literature reviews and report writing on youth participation topics.",
+    "🌐 Tamamen uzaktan · 6 ay": "🌐 Fully remote · 6 months",
+    "İletişim & Sosyal Medya Uzmanı": "Communications & Social Media Specialist",
+    "İçerik takvimi oluşturun, sosyal medya hesaplarını yönetin, blog yazıları yazın ve YouthTICK hikayesini dijital kanallarda büyütün.":
+      "Create a content calendar, manage social media accounts, write blog posts and grow the YouthTICK story across digital channels.",
+    "🌐 Tamamen uzaktan · 3–6 ay": "🌐 Fully remote · 3–6 months",
+    "Ortaklık & Ağ Koordinatörü": "Partnership & Network Coordinator",
+    "Avrupa çapındaki ortak kuruluşlar, üniversiteler ve STK'larla ilişkiler geliştirin ve sürdürün. Yazışma ve sunum becerileri önemlidir.":
+      "Develop and maintain relationships with partner organisations, universities and NGOs across Europe. Correspondence and presentation skills are important.",
+    "İnovasyon Laboratuvarı Mentoru": "Innovation Lab Mentor",
+    "İnovasyon programlarımızdaki genç sosyal girişimcilere çevrimiçi mentorluk yapın. Deneyimli girişim kurucuları veya profesyoneller için idealdir.":
+      "Mentor young social entrepreneurs in our innovation programmes online. Ideal for experienced startup founders or professionals.",
+    "🌐 Tamamen uzaktan · 3 ay": "🌐 Fully remote · 3 months",
+    "Kreatif Yapımcı & Tasarımcı": "Creative Producer & Designer",
+    "Görsel materyaller tasarlayın, kısa videolar üretin, etkinlik dokümantasyonu hazırlayın ve görsel kimliğimizi geliştirmeye yardımcı olun.":
+      "Design visual materials, produce short videos, prepare event documentation and help develop our visual identity.",
+    "Çeviri & Yerelleştirme Uzmanı": "Translation & Localisation Specialist",
+    "Proje materyallerini, web sitesi içeriklerini ve başvuru belgelerini Türkçe, İngilizce ve diğer Avrupa dilleri arasında çevirin.":
+      "Translate project materials, website content and application documents between Turkish, English and other European languages.",
+    "Hibe & Fon Araştırmacısı": "Grant & Funding Researcher",
+    "Erasmus+, ESC ve diğer AB fonlama programlarını araştırın, uygunluk kriterlerini değerlendirin ve başvuru taslaklarına destek olun.":
+      "Research Erasmus+, ESC and other EU funding programmes, assess eligibility criteria and support application drafts.",
+    "Web & Dijital Platform Gönüllüsü": "Web & Digital Platform Volunteer",
+    "Web sitemizi güncelleyin, kullanıcı deneyimini iyileştirin ve dijital araçlarımızın bakımını yapın. Temel web bilgisi yeterlidir.":
+      "Update our website, improve the user experience and maintain our digital tools. Basic web knowledge is enough.",
+    "Etkinlik Planlama Asistanı": "Event Planning Assistant",
+    "Çevrimiçi atölye, webinar ve eğitimlerin planlanmasına, ajandasına ve katılımcı takibine destek olun. Organizasyon becerisi önemlidir.":
+      "Support the planning, agenda and participant tracking of online workshops, webinars and trainings. Organisational skills are important.",
+    "Bunlar yalnızca örnekler — dijital pazarlama, mali raporlama, hibe yazımı ve daha fazlası gibi pek çok başka rol için de açığız.":
+      "These are just examples — we're also open to many other roles such as digital marketing, financial reporting, grant writing and more.",
+    "İlgi alanına uyan bir rol görmüyorsan, aşağıdaki formu \"Diğer / Henüz kararsızım\" seçeneğiyle doldur; birlikte bir yol bulalım.":
+      "If you don't see a role that matches your interests, fill in the form below with the \"Other / Not sure yet\" option and let's find a way together.",
+    "Hemen Başla · 🌐 Tamamen uzaktan": "Start Now · 🌐 Fully remote",
+    "Detaylı": "Detailed",
+    "başvuru formu": "application form",
+    "Aşağıdaki formu doldur, ilgilendiğin rolü ve müsaitlik durumunu seç — ekibimiz başvurunu inceleyip genellikle 7 gün içinde e-posta ile geri dönecektir.":
+      "Fill in the form below, select the role you're interested in and your availability — our team will review your application and usually get back to you by email within 7 days.",
+    "Ülke / Şehir": "Country / City",
+    "İlgilendiğin rol": "Role you're interested in",
+    "Diğer / Henüz kararsızım": "Other / Not sure yet",
+    "Haftalık müsaitlik": "Weekly availability",
+    "1-3 saat / hafta": "1-3 hours / week",
+    "4-6 saat / hafta": "4-6 hours / week",
+    "7-10 saat / hafta": "7-10 hours / week",
+    "10+ saat / hafta": "10+ hours / week",
+    "LinkedIn / Portfolyo (opsiyonel)": "LinkedIn / Portfolio (optional)",
+    "Kendinden ve motivasyonundan bahset": "Tell us about yourself and your motivation",
+    "Başvuruyu gönder": "Submit application",
+    "Nasıl İşliyor": "How It Works",
+    "Başvuru": "Application",
+    "süreci": "process",
+    "İlgini çeken role veya genel olarak gönüllülüğe e-posta ile başvur. Kısa bir tanıtım, ilgi alanların ve müsaitlik durumun yeterli.":
+      "Apply by email to a role that interests you or to volunteering in general. A short introduction, your interests and availability are enough.",
+    "Ekibimiz başvurunu inceler ve genellikle 7 gün içinde geri döner. Uygunsa kısa bir tanışma görüşmesi planlarız.":
+      "Our team reviews your application and usually responds within 7 days. If it's a fit, we'll arrange a short introductory call.",
+    "Sana en uygun rolü ve ekibi birlikte belirleriz — beceri setine, zaman ayırabildiğin süreye ve ilgi alanlarına göre eşleştirme yapılır.":
+      "We determine the role and team that suit you best together — matching is based on your skill set, the time you can give and your interests.",
+    "Katkı sağlamaya başlarsın! Uzaktan, esnek bir şekilde, kendi hızında çalışır; düzenli olarak ekiple bağlantıda kalırsın.":
+      "You start contributing! You work remotely, flexibly and at your own pace, staying regularly connected with the team.",
+    "Bilmen": "What you",
+    "gerekenler": "need to know",
+    "Gönüllülük için ücret ödeniyor mu?": "Is volunteering paid?",
+    "Hayır. YouthTICK tamamen gönüllülük esaslı bir inisiyatiftir — şu anda ücretli pozisyon yoktur ve oluşturulmayacaktır. Amacımız beceri geliştirmek, ağ kurmak ve birlikte öğrenmektir.":
+      "No. YouthTICK is an entirely volunteer-based initiative — there are currently no paid positions and none will be created. Our goal is to build skills, network and learn together.",
+    "Roller tamamen uzaktan mı?": "Are the roles fully remote?",
+    "Evet, tüm pozisyonlar tamamen uzaktan yürütülmektedir. Kuruluş aşamasında olduğumuz için ekip Türkiye ve Avrupa'nın farklı yerlerinden çalışıyor; her şey dijital araçlar üzerinden koordine ediliyor.":
+      "Yes, all positions are fully remote. As we're in the founding stage, the team works from different parts of Turkey and Europe; everything is coordinated through digital tools.",
+    "Ne kadar zaman ayırmam gerekiyor?": "How much time do I need to commit?",
+    "Role göre değişir — bazı roller haftada birkaç saat, bazıları ise birkaç aylık proje bazlı taahhüt gerektirir. Başvurunda müsaitlik durumunu belirtmen, sana en uygun rolü bulmamıza yardımcı olur.":
+      "It depends on the role — some roles require a few hours a week, others a project-based commitment of a few months. Stating your availability in your application helps us find the role that suits you best.",
+    "Daha önce gönüllülük deneyimim olması gerekiyor mu?": "Do I need previous volunteering experience?",
+    "Hayır, çoğu rol için ön deneyim şart değildir. Motivasyon, güvenilirlik ve öğrenmeye açıklık bizim için deneyimden en az o kadar önemlidir.":
+      "No, prior experience is not required for most roles. Motivation, reliability and openness to learning are at least as important to us as experience.",
+    "Erasmus+ veya ESC kapsamında mı?": "Is it under Erasmus+ or ESC?",
+    "YouthTICK uzun vadede Erasmus+ ve Avrupa Dayanışma Programı (ESC) kapsamında akredite olmayı hedefliyor. Şu an kuruluş aşamasındayız; bu gönüllülük rolleri, o yolculuğun temelini birlikte inşa etmenin bir parçası.":
+      "In the long term, YouthTICK aims to become accredited under Erasmus+ and the European Solidarity Corps (ESC). We are currently in the founding stage; these volunteering roles are part of building the foundation of that journey together."
+  });
+
+  Object.assign(M.de, {
+    /* shared */
+    "Sürdürülebilirlik": "Nachhaltigkeit",
+    "Sıkça Sorulan Sorular": "Häufig gestellte Fragen",
+    "1. Adım": "Schritt 1",
+    "2. Adım": "Schritt 2",
+    "3. Adım": "Schritt 3",
+    "4. Adım": "Schritt 4",
+    "E-posta Gönder": "E-Mail senden",
+    "Başvuru Formu": "Bewerbungsformular",
+
+    /* ---- projects.html ---- */
+    "Yakında": "Demnächst",
+    "Programlar ve": "Programme und",
+    "İnisiyatifler": "Initiativen",
+    "İlk programlarımızı tasarlıyoruz. Hedeflediğimiz yön burada.": "Wir gestalten unsere ersten Programme. Hier ist die Richtung, die wir anstreben.",
+    "Hazırlık Aşamasında": "In Vorbereitung",
+    "Hazırlık aşamasındaki": "Programme in",
+    "programlar.": "Vorbereitung.",
+    "Gençlik ve Kentsel Gelecekler": "Jugend und urbane Zukünfte",
+    "Sürdürülebilir kentsel gelişim ve sivil inovasyona ilgi duyan gençleri bir araya getirmeyi planlayan girişim — şu an konsept aşamasında.":
+      "Eine Initiative, die junge Menschen mit Interesse an nachhaltiger Stadtentwicklung und ziviler Innovation zusammenbringen soll — derzeit in der Konzeptphase.",
+    "Sürdürülebilirlik için Gençlik": "Jugend für Nachhaltigkeit",
+    "Yalova'daki gençler arasında çevre farkındalığı, iklim okuryazarlığı ve sürdürülebilir yaşam tarzlarını keşfeden yerel atölye serisi.":
+      "Eine lokale Workshop-Reihe, die Umweltbewusstsein, Klimakompetenz und nachhaltige Lebensstile unter jungen Menschen in Yalova erkundet.",
+    "Dijital Okuryazarlık ve Vatandaşlık": "Digitale Kompetenz und Bürgerschaft",
+    "Medya okuryazarlığı, sorumlu dijital iletişim ve çevrimiçi sivil katılımı desteklemeyi hedefleyen planlı program.":
+      "Ein geplantes Programm, das Medienkompetenz, verantwortungsvolle digitale Kommunikation und Online-Bürgerbeteiligung fördern soll.",
+    "Program Odağı": "Programmschwerpunkt",
+    "Bu programlar": "Über diese",
+    "hakkında": "Programme",
+    "Henüz hiçbir programımız uygulamaya geçmedi — şu an kavram ve planlama aşamasındayız. Aşağıda, her bir girişim için düşündüğümüz olası aktiviteleri ve aradığımız ortaklık türlerini paylaşıyoruz.":
+      "Noch ist keines unserer Programme gestartet — wir befinden uns derzeit in der Konzept- und Planungsphase. Im Folgenden teilen wir die möglichen Aktivitäten, die wir für jede Initiative in Betracht ziehen, und die Art von Partnerschaft, die wir suchen.",
+    "Gençlik ve Kentsel Gelecekler — Planlanan Aktiviteler": "Jugend und urbane Zukünfte — Geplante Aktivitäten",
+    "Yalova'daki gençlerle keşif atölyeleri · Kentsel zorlukların araştırılması · Yerel kurumlar ve sivil aktörlerle diyalog":
+      "Entdeckungs-Workshops mit jungen Menschen in Yalova · Erforschung urbaner Herausforderungen · Dialog mit lokalen Institutionen und zivilgesellschaftlichen Akteuren",
+    "Sürdürülebilirlik için Gençlik — Planlanan Aktiviteler": "Jugend für Nachhaltigkeit — Geplante Aktivitäten",
+    "Çevre farkındalığı atölyeleri · İklim okuryazarlığı oturumları · Sürdürülebilir yaşam pratikleri üzerine yerel etkinlikler":
+      "Workshops zum Umweltbewusstsein · Sitzungen zur Klimakompetenz · Lokale Veranstaltungen zu nachhaltigen Lebenspraktiken",
+    "Dijital Okuryazarlık ve Vatandaşlık — Planlanan Aktiviteler": "Digitale Kompetenz und Bürgerschaft — Geplante Aktivitäten",
+    "Medya okuryazarlığı eğitimleri · Sorumlu dijital iletişim seminerleri · Çevrimiçi sivil katılım projeleri":
+      "Schulungen zur Medienkompetenz · Seminare zu verantwortungsvoller digitaler Kommunikation · Online-Projekte zur Bürgerbeteiligung",
+    "Potansiyel ortaklar": "Potenzielle Partner",
+    "Kentsel veya sivil bağlamlarda gençlerle çalışan kuruluşları, çevre ve sürdürülebilirlik odaklı STK'ları ve dijital vatandaşlık alanında deneyimli kurumları arıyoruz. İlginizi paylaşıyorsanız sizden haber almak isteriz.":
+      "Wir suchen Organisationen, die mit jungen Menschen in urbanen oder zivilgesellschaftlichen Kontexten arbeiten, NGOs mit Fokus auf Umwelt und Nachhaltigkeit sowie Einrichtungen mit Erfahrung in digitaler Bürgerschaft. Wenn du unser Interesse teilst, würden wir uns freuen, von dir zu hören.",
+    "Konseptler ve Fikirler": "Konzepte und Ideen",
+    "Hedeflediğimiz": "Die Richtung,",
+    "yön": "die wir anstreben",
+    "Erasmus+, İnovasyon, Kültür ve Katılım odak alanlarımızı yansıtan bu üç program, kuruluş aşamasındaki kimliğimizin doğal bir uzantısı. Her biri yerel başlayıp, zamanla uluslararası ortaklıklara ve Erasmus+ çerçevesine açılma potansiyeli taşıyor.":
+      "Diese drei Programme spiegeln unsere Schwerpunkte Erasmus+, Innovation, Kultur und Beteiligung wider und sind eine natürliche Erweiterung unserer Identität in der Gründungsphase. Jedes beginnt lokal und hat das Potenzial, sich mit der Zeit für internationale Partnerschaften und den Erasmus+-Rahmen zu öffnen.",
+    "Programlarımız hazır olduğunda, bu sayfa güncel ortak çağrıları, başvuru süreçleri ve katılım fırsatlarıyla genişleyecek. O zamana kadar, en güncel gelişmeleri sosyal medya kanallarımızdan ve bültenimizden takip edebilirsin.":
+      "Wenn unsere Programme bereit sind, wird diese Seite um aktuelle Partneraufrufe, Bewerbungsprozesse und Teilnahmemöglichkeiten erweitert. Bis dahin kannst du die neuesten Entwicklungen über unsere Social-Media-Kanäle und unseren Newsletter verfolgen.",
+
+    /* ---- partnership.html ---- */
+    "İşbirliği": "Zusammenarbeit",
+    "Ortaklığa": "Offen für",
+    "açığız": "Partnerschaft",
+    "Uluslararası ağımızı kurmanın erken aşamalarındayız. Kültürlerarası gençlik işbirliği ve Erasmus+ işbirliğine ilgi duyan kuruluşları aktif olarak arıyoruz.":
+      "Wir befinden uns in der frühen Phase des Aufbaus unseres internationalen Netzwerks. Wir suchen aktiv Organisationen, die an interkultureller Jugendzusammenarbeit und Erasmus+-Kooperation interessiert sind.",
+    "Gençlik katılımı, Erasmus+ işbirliği ve kültürlerarası değişime ilgi duyan STK'lar, okullar, gençlik merkezleri ve sivil kurumlar gibi ortak kuruluşlar arıyoruz.":
+      "Wir suchen Partnerorganisationen wie NGOs, Schulen, Jugendzentren und zivilgesellschaftliche Einrichtungen, die an Jugendbeteiligung, Erasmus+-Kooperation und interkulturellem Austausch interessiert sind.",
+    "Bizimle işbirliği yapın": "Arbeite mit uns zusammen",
+    "Dürüst bir": "Eine ehrliche",
+    "davet": "Einladung",
+    "Kuruluş Aşaması": "Gründungsphase",
+    "Bugün durduğumuz yer: YouthTICK henüz kuruluş aşamasındaki bağımsız bir gençlik inisiyatifi. Kimliğimizi ve ilişkilerimizi şeffaflıkla inşa ediyoruz.":
+      "Wo wir heute stehen: YouthTICK ist noch eine unabhängige Jugendinitiative in der Gründungsphase. Wir bauen unsere Identität und Beziehungen mit Transparenz auf.",
+    "Diyaloğa Açık": "Offen für Dialog",
+    "Dürüst davetimiz: Değerlerimizi ve ilgi alanlarımızı paylaşan herhangi bir ülkeden kuruluşlarla keşif niteliğinde görüşmelere açığız.":
+      "Unsere ehrliche Einladung: Wir sind offen für Sondierungsgespräche mit Organisationen aus jedem Land, die unsere Werte und Interessen teilen.",
+    "Gençlik değişimleri, kültürlerarası öğrenme ve sivil katılım alanlarında çalışan üniversiteler, STK'lar, belediyeler, gençlik merkezleri ve işletmelerle anlamlı, uzun vadeli ilişkiler kurmak istiyoruz. İster bir gençlik kuruluşu, okul, belediye veya sivil vakıf olun — gençlerle çalışıyorsanız ve uluslararası diyaloğa açıksanız, sizinle konuşmak isteriz.":
+      "Wir möchten bedeutungsvolle, langfristige Beziehungen zu Universitäten, NGOs, Kommunen, Jugendzentren und Unternehmen aufbauen, die in den Bereichen Jugendaustausch, interkulturelles Lernen und Bürgerbeteiligung tätig sind. Ob Jugendorganisation, Schule, Kommune oder zivilgesellschaftliche Stiftung — wenn ihr mit jungen Menschen arbeitet und offen für internationalen Dialog seid, würden wir gerne mit euch sprechen.",
+    "Ortaklık İlgi Alanları: bağlanmak istediğimiz yerler aşağıda özetlenmiştir.":
+      "Partnerschaftsinteressen: Die Bereiche, in denen wir uns verbinden möchten, sind unten zusammengefasst.",
+    "Ortaklık İlgi Alanları": "Partnerschaftsinteressen",
+    "Bağlanmak istediğimiz": "Wo wir uns",
+    "yerler": "verbinden möchten",
+    "İlk Erasmus+ projelerimizi hazırlıyoruz ve Avrupa'da işbirliği yapabileceğimiz deneyimli ortak kuruluşlar arıyoruz. (Gençlik Değişimleri ve Projeler)":
+      "Wir bereiten unsere ersten Erasmus+-Projekte vor und suchen erfahrene Partnerorganisationen in Europa für die Zusammenarbeit. (Jugendaustausche und Projekte)",
+    "Bilgi Alışverişi": "Wissensaustausch",
+    "Metodolojileri ve en iyi uygulamaları paylaşabilecek araştırmacılar, gençlik çalışanları ve uygulayıcılarla bağlantı kurmakla ilgileniyoruz. (Yöntemler ve En İyi Uygulamalar)":
+      "Wir sind daran interessiert, uns mit Forschenden, Jugendarbeitern und Praktikern zu vernetzen, die Methoden und bewährte Praktiken teilen können. (Methoden und bewährte Praktiken)",
+    "Yerel Sivil İşbirliği": "Lokale zivilgesellschaftliche Zusammenarbeit",
+    "Gençlerin katılımı için destekleyici bir ortam yaratmak amacıyla Yalova'daki yerel kurumlarla ilişkiler kuruyoruz. (Yerel Kurumlar)":
+      "Wir bauen Beziehungen zu lokalen Institutionen in Yalova auf, um ein unterstützendes Umfeld für die Jugendbeteiligung zu schaffen. (Lokale Institutionen)",
+    "Uluslararası Diyalog": "Internationaler Dialog",
+    "Değerlerimizi ve ilgi alanlarımızı paylaşan herhangi bir ülkeden kuruluşlarla keşif niteliğinde görüşmelere açığız. (Görüşmelere Açık)":
+      "Wir sind offen für Sondierungsgespräche mit Organisationen aus jedem Land, die unsere Werte und Interessen teilen. (Offen für Gespräche)",
+    "Almanya–Türkiye Koridoru": "Deutschland–Türkei-Korridor",
+    "Uluslararası alandaki ilk odağımız Almanya–Türkiye gençlik koridorudur. Özellikle ikili değişime açık Alman gençlik kuruluşlarıyla bağlantı kurmakla ilgileniyoruz. (Öncelikli Bölge)":
+      "Unser erster internationaler Schwerpunkt ist der Deutschland–Türkei-Jugendkorridor. Wir sind besonders daran interessiert, uns mit deutschen Jugendorganisationen zu vernetzen, die für bilateralen Austausch offen sind. (Prioritäre Region)",
+    "Gelecek Bağlantılar": "Zukünftige Verbindungen",
+    "Almanya'nın ötesinde, güçlü Erasmus+ gelenekleri ve sivil gençlik sektörleri olan Yunanistan, Polonya ve İspanya'daki gençlik kuruluşlarıyla bağlantıları araştırıyoruz. (Büyüyen Ağ)":
+      "Über Deutschland hinaus erkunden wir Verbindungen zu Jugendorganisationen in Griechenland, Polen und Spanien, die über starke Erasmus+-Traditionen und zivilgesellschaftliche Jugendsektoren verfügen. (Wachsendes Netzwerk)",
+    "Türkiye–Almanya Odağı": "Türkei–Deutschland-Fokus",
+    "İki ülke.": "Zwei Länder.",
+    "Ortak bir ilgi.": "Ein gemeinsames Interesse.",
+    "Türkiye–Almanya ilişkisi, erken ağ oluşturma çabalarımızın merkezinde yer alıyor. Almanya'daki büyük Türk diasporası ve uzun süredir devam eden kültürel bağlarla bu koridor, gençlik değişimi ve işbirliği için doğal bir başlangıç noktası sunuyor.":
+      "Die Beziehung zwischen der Türkei und Deutschland steht im Mittelpunkt unserer frühen Vernetzungsbemühungen. Mit der großen türkischen Diaspora in Deutschland und den langjährigen kulturellen Verbindungen bietet dieser Korridor einen natürlichen Ausgangspunkt für Jugendaustausch und Zusammenarbeit.",
+    "Gerçek ikili diyaloğun neye benzeyebileceğini keşfediyoruz — bitmiş bir program olarak değil, her iki ülkeden gençler arasında dürüst bir konuşma olarak.":
+      "Wir erkunden, wie ein echter bilateraler Dialog aussehen könnte — nicht als fertiges Programm, sondern als ehrliches Gespräch zwischen jungen Menschen aus beiden Ländern.",
+    "Bugün durduğumuz yer.": "Wo wir heute stehen.",
+    "Dürüst davetimiz.": "Unsere ehrliche Einladung.",
+    "Ortak ağımız": "Unser Partnernetzwerk",
+    "& ilgi alanlarımız": "& Interessenbereiche",
+    "Almanya Gençlik Kuruluşları": "Deutsche Jugendorganisationen",
+    "Kimlerle çalışmak istiyoruz": "Mit wem wir arbeiten möchten",
+    "kategorileri": "Kategorien",
+    "Akademi & Araştırma": "Wissenschaft & Forschung",
+    "Üniversiteler": "Universitäten",
+    "araştırma & değişim ortaklığı": "Forschungs- & Austauschpartnerschaft",
+    "Sivil Toplum": "Zivilgesellschaft",
+    "STK'lar & Gençlik Merkezleri": "NGOs & Jugendzentren",
+    "ortak proje & gönüllülük": "gemeinsame Projekte & Freiwilligenarbeit",
+    "Yerel Yönetim": "Kommunalverwaltung",
+    "Belediyeler & Kamu Kurumları": "Kommunen & öffentliche Einrichtungen",
+    "yerel katılım & altyapı": "lokale Beteiligung & Infrastruktur",
+    "Özel Sektör": "Privatsektor",
+    "İşletmeler & Vakıflar": "Unternehmen & Stiftungen",
+    "destek & finansman ortaklığı": "Förder- & Finanzierungspartnerschaft",
+    "Araştırma iş birlikleri, akademik değişim programları ve gençlik çalışmaları alanında ortak projeler için üniversitelerle bağlantı kurmak istiyoruz.":
+      "Wir möchten uns mit Universitäten für Forschungskooperationen, akademische Austauschprogramme und gemeinsame Projekte im Bereich der Jugendarbeit vernetzen.",
+    "STK'lar / Sivil Toplum": "NGOs / Zivilgesellschaft",
+    "Gençlik değişimleri, gönüllülük (ESC) ve metodoloji paylaşımı konularında deneyimli sivil toplum kuruluşlarıyla işbirliği arıyoruz.":
+      "Wir suchen die Zusammenarbeit mit zivilgesellschaftlichen Organisationen, die Erfahrung mit Jugendaustauschen, Freiwilligenarbeit (ESC) und dem Teilen von Methoden haben.",
+    "Yalova ve çevresindeki belediyeler ve kamu kurumlarıyla, gençlerin katılımı için destekleyici bir yerel ortam oluşturmak istiyoruz.":
+      "Wir möchten gemeinsam mit Kommunen und öffentlichen Einrichtungen in und um Yalova ein unterstützendes lokales Umfeld für die Jugendbeteiligung schaffen.",
+    "Girişimcilik, finansman ve kurumsal sosyal sorumluluk alanlarında gençlik projelerimize destek olabilecek işletme ve vakıflarla iletişimdeyiz.":
+      "Wir stehen in Kontakt mit Unternehmen und Stiftungen, die unsere Jugendprojekte in den Bereichen Unternehmertum, Finanzierung und soziale Unternehmensverantwortung unterstützen können.",
+    "Ortak Olun": "Partner werden",
+    "ortak olunur?": "wird man Partner?",
+    "İletişime geçin — kuruluşunuzu ve ilgi alanınızı kısaca tanıtan bir e-posta veya iletişim formu mesajı gönderin.":
+      "Nimm Kontakt auf — sende eine E-Mail oder eine Nachricht über das Kontaktformular, in der du deine Organisation und dein Interessengebiet kurz vorstellst.",
+    "İhtiyaçları birlikte değerlendirelim — ortak hedefleri, olası proje fikirlerini ve işbirliği alanlarını keşif niteliğinde bir görüşmede konuşalım.":
+      "Lass uns die Bedürfnisse gemeinsam einschätzen — besprechen wir gemeinsame Ziele, mögliche Projektideen und Bereiche der Zusammenarbeit in einem Sondierungsgespräch.",
+    "Ortaklığı resmileştirelim — şeffaf, uzun vadeli ve karşılıklı saygıya dayalı bir ilişkinin temelini birlikte atalım.":
+      "Lass uns die Partnerschaft formalisieren — legen wir gemeinsam die Grundlage für eine transparente, langfristige und auf gegenseitigem Respekt beruhende Beziehung.",
+    "Bize katılarak şunları birlikte yapabiliriz:": "Wenn du dich uns anschließt, können wir gemeinsam Folgendes tun:",
+    "Erasmus+ proje fırsatlarının ortak keşfi": "Gemeinsame Erkundung von Erasmus+-Projektmöglichkeiten",
+    "Yöntem ve öğrenme deneyimlerinin açık paylaşımı": "Offener Austausch von Methoden und Lernerfahrungen",
+    "Karşılıklı saygıya dayalı şeffaf, uzun vadeli ilişki": "Eine transparente, langfristige Beziehung auf Basis gegenseitigen Respekts",
+    "Türkiye gençlik sektöründe gerçek bir temas noktası": "Ein echter Ansprechpartner im türkischen Jugendsektor",
+    "Ortak olmak": "Möchtest du",
+    "ister misiniz?": "Partner werden?",
+
+    /* ---- volunteer.html ---- */
+    "İnşa ettiklerimize": "Trag bei zu dem,",
+    "katkı sağla": "was wir aufbauen",
+    "YouthTICK tamamen gönüllülük esaslı bir inisiyatiftir. Buradaki hiçbir rol ücretli değildir — büyümek, öğrenmek ve bağlantılar kurmak isteyen insanların oluşturduğu bir topluluğuz; maaş almak için değil.":
+      "YouthTICK ist eine vollständig auf Freiwilligenarbeit basierende Initiative. Keine der Rollen hier ist bezahlt — wir sind eine Gemeinschaft von Menschen, die wachsen, lernen und Verbindungen aufbauen wollen, nicht um ein Gehalt zu verdienen.",
+    "🌱 Yalnızca gönüllülük esaslıdır. Ücretli pozisyon yoktur ve oluşturulmayacaktır. Buradaki amacımız beceri geliştirmek, ağ kurmak ve birlikte öğrenmektir.":
+      "🌱 Nur auf Freiwilligenbasis. Es gibt keine bezahlten Stellen und es werden keine geschaffen. Unser Ziel hier ist es, Fähigkeiten aufzubauen, zu netzwerken und gemeinsam zu lernen.",
+    "Neden Katılmalısın": "Warum du mitmachen solltest",
+    "Ağdaki": "Finde deine Rolle im",
+    "rolünü bul": "Netzwerk",
+    "Projelere Destek Ver": "Projekte unterstützen",
+    "Sadece yardım etme. Yerel girişimlerin tasarımına katıl ve gelecekteki uluslararası gençlik değişimleri için fikir üret.":
+      "Hilf nicht nur. Beteilige dich an der Gestaltung lokaler Initiativen und entwickle Ideen für künftige internationale Jugendaustausche.",
+    "Ağını Kur": "Baue dein Netzwerk auf",
+    "Hem Türkiye içinde hem de uluslararası düzeyde STK'lar, gençlik çalışanları ve eğitmenlerle bağlantı kur.":
+      "Vernetze dich mit NGOs, Jugendarbeitern und Trainern sowohl innerhalb der Türkei als auch international.",
+    "Yaparak Öğren": "Lernen durch Tun",
+    "Proje yönetimi, hibe yazımı ve etkinlik prodüksiyonunda uygulamalı deneyim kazan.":
+      "Sammle praktische Erfahrung im Projektmanagement, im Verfassen von Förderanträgen und in der Veranstaltungsproduktion.",
+    "YouthTICK'i Şekillendir": "Gestalte YouthTICK mit",
+    "Sıfırdan inşa edilen bir gençlik kuruluşunun bir parçası ol; kültürlerarası öğrenme fırsatlarına ve değişimlere erişim kazan.":
+      "Sei Teil einer von Grund auf aufgebauten Jugendorganisation; erhalte Zugang zu interkulturellen Lernmöglichkeiten und Austauschen.",
+    "Erasmus+ proje çalışmasında gerçek uygulamalı deneyim kazanırsın, ilk günden itibaren Avrupa çapında profesyonel bir ağ kurarsın ve program tasarımı, iletişim ile savunuculuk alanlarında becerilerini geliştirirsin.":
+      "Du sammelst echte praktische Erfahrung in der Erasmus+-Projektarbeit, baust vom ersten Tag an ein europaweites professionelles Netzwerk auf und entwickelst deine Fähigkeiten in Programmgestaltung, Kommunikation und Interessenvertretung.",
+    "Fırsatlar · 🌐 Tüm pozisyonlar tamamen uzaktan": "Chancen · 🌐 Alle Stellen vollständig remote",
+    "Gönüllülük": "Freiwilligen-",
+    "rolleri": "rollen",
+    "Proje Kolaylaştırıcısı": "Projektmoderator",
+    "Avrupa genelinde gençlik değişimlerini, atölyeleri ve eğitim kurslarını planlayın ve çevrimiçi olarak kolaylaştırın. Sunum ve grup yönetimi becerileri önemlidir.":
+      "Plane und moderiere Jugendaustausche, Workshops und Trainingskurse in ganz Europa online. Präsentations- und Gruppenmanagementfähigkeiten sind wichtig.",
+    "🌐 Tamamen uzaktan · Esnek": "🌐 Vollständig remote · Flexibel",
+    "Detaylı başvuru formu": "Detailliertes Bewerbungsformular",
+    "Araştırma Asistanı": "Forschungsassistent",
+    "Gençlik katılımı konularında veri toplama, literatür taraması ve rapor yazımı ile araştırma ekibimize destek olun.":
+      "Unterstütze unser Forschungsteam mit Datenerhebung, Literaturrecherche und Berichterstellung zu Themen der Jugendbeteiligung.",
+    "🌐 Tamamen uzaktan · 6 ay": "🌐 Vollständig remote · 6 Monate",
+    "İletişim & Sosyal Medya Uzmanı": "Kommunikations- & Social-Media-Spezialist",
+    "İçerik takvimi oluşturun, sosyal medya hesaplarını yönetin, blog yazıları yazın ve YouthTICK hikayesini dijital kanallarda büyütün.":
+      "Erstelle einen Content-Kalender, verwalte Social-Media-Konten, schreibe Blogbeiträge und lass die YouthTICK-Geschichte über digitale Kanäle wachsen.",
+    "🌐 Tamamen uzaktan · 3–6 ay": "🌐 Vollständig remote · 3–6 Monate",
+    "Ortaklık & Ağ Koordinatörü": "Partnerschafts- & Netzwerkkoordinator",
+    "Avrupa çapındaki ortak kuruluşlar, üniversiteler ve STK'larla ilişkiler geliştirin ve sürdürün. Yazışma ve sunum becerileri önemlidir.":
+      "Entwickle und pflege Beziehungen zu Partnerorganisationen, Universitäten und NGOs in ganz Europa. Korrespondenz- und Präsentationsfähigkeiten sind wichtig.",
+    "İnovasyon Laboratuvarı Mentoru": "Innovationslabor-Mentor",
+    "İnovasyon programlarımızdaki genç sosyal girişimcilere çevrimiçi mentorluk yapın. Deneyimli girişim kurucuları veya profesyoneller için idealdir.":
+      "Betreue junge Sozialunternehmer in unseren Innovationsprogrammen online. Ideal für erfahrene Start-up-Gründer oder Fachleute.",
+    "🌐 Tamamen uzaktan · 3 ay": "🌐 Vollständig remote · 3 Monate",
+    "Kreatif Yapımcı & Tasarımcı": "Kreativproduzent & Designer",
+    "Görsel materyaller tasarlayın, kısa videolar üretin, etkinlik dokümantasyonu hazırlayın ve görsel kimliğimizi geliştirmeye yardımcı olun.":
+      "Gestalte visuelle Materialien, produziere kurze Videos, erstelle Veranstaltungsdokumentationen und hilf, unsere visuelle Identität zu entwickeln.",
+    "Çeviri & Yerelleştirme Uzmanı": "Übersetzungs- & Lokalisierungsspezialist",
+    "Proje materyallerini, web sitesi içeriklerini ve başvuru belgelerini Türkçe, İngilizce ve diğer Avrupa dilleri arasında çevirin.":
+      "Übersetze Projektmaterialien, Website-Inhalte und Bewerbungsunterlagen zwischen Türkisch, Englisch und anderen europäischen Sprachen.",
+    "Hibe & Fon Araştırmacısı": "Förder- & Finanzierungsrechercheur",
+    "Erasmus+, ESC ve diğer AB fonlama programlarını araştırın, uygunluk kriterlerini değerlendirin ve başvuru taslaklarına destek olun.":
+      "Recherchiere Erasmus+, ESC und andere EU-Förderprogramme, bewerte Teilnahmekriterien und unterstütze bei Bewerbungsentwürfen.",
+    "Web & Dijital Platform Gönüllüsü": "Web- & Digitalplattform-Freiwilliger",
+    "Web sitemizi güncelleyin, kullanıcı deneyimini iyileştirin ve dijital araçlarımızın bakımını yapın. Temel web bilgisi yeterlidir.":
+      "Aktualisiere unsere Website, verbessere die Nutzererfahrung und pflege unsere digitalen Tools. Grundlegende Webkenntnisse genügen.",
+    "Etkinlik Planlama Asistanı": "Veranstaltungsplanungsassistent",
+    "Çevrimiçi atölye, webinar ve eğitimlerin planlanmasına, ajandasına ve katılımcı takibine destek olun. Organizasyon becerisi önemlidir.":
+      "Unterstütze die Planung, Agenda und Teilnehmerverwaltung von Online-Workshops, Webinaren und Schulungen. Organisationsgeschick ist wichtig.",
+    "Bunlar yalnızca örnekler — dijital pazarlama, mali raporlama, hibe yazımı ve daha fazlası gibi pek çok başka rol için de açığız.":
+      "Dies sind nur Beispiele — wir sind auch offen für viele weitere Rollen wie digitales Marketing, Finanzberichterstattung, Verfassen von Förderanträgen und mehr.",
+    "İlgi alanına uyan bir rol görmüyorsan, aşağıdaki formu \"Diğer / Henüz kararsızım\" seçeneğiyle doldur; birlikte bir yol bulalım.":
+      "Wenn du keine Rolle siehst, die deinen Interessen entspricht, fülle das Formular unten mit der Option \"Sonstiges / Noch unentschlossen\" aus und lass uns gemeinsam einen Weg finden.",
+    "Hemen Başla · 🌐 Tamamen uzaktan": "Jetzt starten · 🌐 Vollständig remote",
+    "Detaylı": "Detailliertes",
+    "başvuru formu": "Bewerbungsformular",
+    "Aşağıdaki formu doldur, ilgilendiğin rolü ve müsaitlik durumunu seç — ekibimiz başvurunu inceleyip genellikle 7 gün içinde e-posta ile geri dönecektir.":
+      "Fülle das Formular unten aus, wähle die Rolle, die dich interessiert, und deine Verfügbarkeit — unser Team prüft deine Bewerbung und meldet sich in der Regel innerhalb von 7 Tagen per E-Mail.",
+    "Ülke / Şehir": "Land / Stadt",
+    "İlgilendiğin rol": "Rolle, die dich interessiert",
+    "Diğer / Henüz kararsızım": "Sonstiges / Noch unentschlossen",
+    "Haftalık müsaitlik": "Wöchentliche Verfügbarkeit",
+    "1-3 saat / hafta": "1-3 Stunden / Woche",
+    "4-6 saat / hafta": "4-6 Stunden / Woche",
+    "7-10 saat / hafta": "7-10 Stunden / Woche",
+    "10+ saat / hafta": "10+ Stunden / Woche",
+    "LinkedIn / Portfolyo (opsiyonel)": "LinkedIn / Portfolio (optional)",
+    "Kendinden ve motivasyonundan bahset": "Erzähl uns von dir und deiner Motivation",
+    "Başvuruyu gönder": "Bewerbung senden",
+    "Nasıl İşliyor": "So funktioniert es",
+    "Başvuru": "Bewerbungs-",
+    "süreci": "prozess",
+    "İlgini çeken role veya genel olarak gönüllülüğe e-posta ile başvur. Kısa bir tanıtım, ilgi alanların ve müsaitlik durumun yeterli.":
+      "Bewirb dich per E-Mail auf eine Rolle, die dich interessiert, oder allgemein auf die Freiwilligenarbeit. Eine kurze Vorstellung, deine Interessen und deine Verfügbarkeit genügen.",
+    "Ekibimiz başvurunu inceler ve genellikle 7 gün içinde geri döner. Uygunsa kısa bir tanışma görüşmesi planlarız.":
+      "Unser Team prüft deine Bewerbung und meldet sich in der Regel innerhalb von 7 Tagen. Wenn es passt, vereinbaren wir ein kurzes Kennenlerngespräch.",
+    "Sana en uygun rolü ve ekibi birlikte belirleriz — beceri setine, zaman ayırabildiğin süreye ve ilgi alanlarına göre eşleştirme yapılır.":
+      "Wir bestimmen gemeinsam die Rolle und das Team, die am besten zu dir passen — die Zuordnung erfolgt nach deinen Fähigkeiten, der Zeit, die du investieren kannst, und deinen Interessen.",
+    "Katkı sağlamaya başlarsın! Uzaktan, esnek bir şekilde, kendi hızında çalışır; düzenli olarak ekiple bağlantıda kalırsın.":
+      "Du beginnst beizutragen! Du arbeitest remote, flexibel und in deinem eigenen Tempo und bleibst regelmäßig mit dem Team in Verbindung.",
+    "Bilmen": "Was du",
+    "gerekenler": "wissen musst",
+    "Gönüllülük için ücret ödeniyor mu?": "Wird Freiwilligenarbeit bezahlt?",
+    "Hayır. YouthTICK tamamen gönüllülük esaslı bir inisiyatiftir — şu anda ücretli pozisyon yoktur ve oluşturulmayacaktır. Amacımız beceri geliştirmek, ağ kurmak ve birlikte öğrenmektir.":
+      "Nein. YouthTICK ist eine vollständig auf Freiwilligenarbeit basierende Initiative — derzeit gibt es keine bezahlten Stellen und es werden keine geschaffen. Unser Ziel ist es, Fähigkeiten aufzubauen, zu netzwerken und gemeinsam zu lernen.",
+    "Roller tamamen uzaktan mı?": "Sind die Rollen vollständig remote?",
+    "Evet, tüm pozisyonlar tamamen uzaktan yürütülmektedir. Kuruluş aşamasında olduğumuz için ekip Türkiye ve Avrupa'nın farklı yerlerinden çalışıyor; her şey dijital araçlar üzerinden koordine ediliyor.":
+      "Ja, alle Stellen sind vollständig remote. Da wir uns in der Gründungsphase befinden, arbeitet das Team aus verschiedenen Teilen der Türkei und Europas; alles wird über digitale Tools koordiniert.",
+    "Ne kadar zaman ayırmam gerekiyor?": "Wie viel Zeit muss ich investieren?",
+    "Role göre değişir — bazı roller haftada birkaç saat, bazıları ise birkaç aylık proje bazlı taahhüt gerektirir. Başvurunda müsaitlik durumunu belirtmen, sana en uygun rolü bulmamıza yardımcı olur.":
+      "Das hängt von der Rolle ab — einige Rollen erfordern ein paar Stunden pro Woche, andere ein projektbezogenes Engagement von einigen Monaten. Wenn du in deiner Bewerbung deine Verfügbarkeit angibst, hilft uns das, die für dich passende Rolle zu finden.",
+    "Daha önce gönüllülük deneyimim olması gerekiyor mu?": "Brauche ich vorherige Erfahrung in der Freiwilligenarbeit?",
+    "Hayır, çoğu rol için ön deneyim şart değildir. Motivasyon, güvenilirlik ve öğrenmeye açıklık bizim için deneyimden en az o kadar önemlidir.":
+      "Nein, für die meisten Rollen ist keine Vorerfahrung erforderlich. Motivation, Zuverlässigkeit und Lernbereitschaft sind für uns mindestens so wichtig wie Erfahrung.",
+    "Erasmus+ veya ESC kapsamında mı?": "Ist es im Rahmen von Erasmus+ oder ESC?",
+    "YouthTICK uzun vadede Erasmus+ ve Avrupa Dayanışma Programı (ESC) kapsamında akredite olmayı hedefliyor. Şu an kuruluş aşamasındayız; bu gönüllülük rolleri, o yolculuğun temelini birlikte inşa etmenin bir parçası.":
+      "Langfristig strebt YouthTICK eine Akkreditierung im Rahmen von Erasmus+ und dem Europäischen Solidaritätskorps (ESC) an. Wir befinden uns derzeit in der Gründungsphase; diese Freiwilligenrollen sind Teil davon, das Fundament dieser Reise gemeinsam aufzubauen."
+  });
 })();
