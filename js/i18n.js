@@ -7,8 +7,12 @@
 (function () {
   var STORE = 'ytlang';
   var SUPPORTED = ['tr', 'en', 'de'];
-  var MAP = window.YT_I18N || { en: {}, de: {} };
   var nodes = null; // [{ node, tr }]
+
+  function dictFor(lang) {
+    var M = window.YT_I18N || {};
+    return M[lang] || {};
+  }
 
   function shouldSkip(parent) {
     if (!parent) return true;
@@ -34,7 +38,7 @@
   function apply(lang) {
     if (SUPPORTED.indexOf(lang) === -1) lang = 'tr';
     if (!nodes) collect();
-    var dict = lang === 'tr' ? null : (MAP[lang] || {});
+    var dict = lang === 'tr' ? null : dictFor(lang);
     for (var i = 0; i < nodes.length; i++) {
       var o = nodes[i];
       if (lang === 'tr') { o.node.nodeValue = o.tr; continue; }
